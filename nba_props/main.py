@@ -98,6 +98,33 @@ def backtest_summary(all_picks, shown) -> dict:
     return out
 
 
+def backtest_range(start: str, end: str, **kw) -> dict:
+    """Backtest every date in [start, end]; write per-night pages + a season summary."""
+    d0, d1 = datetime.fromisoformat(start), datetime.fromisoformat(end)
+    nights = []
+    d = d0
+    while d <= d1:
+        try:
+            pl = run(d.strftime("%Y-%m-%d"), backtest=True, **kw)
+            if pl["games"]:
+                nights.append(pl)
+        except Exception as e:
+            log(f"   {d:%Y-%m-%d} failed: {e}")
+        d += timedelta(days=1)
+    bdir = Path(kw.get("backtest_dir", "backtests"))
+    allp = [p for n in nights for p in n["all"]]
+    for n in nights:
+        for p in n["all"]:
+            p["date"] = n["date"]
+    shown = [dict(p, date=n["date"]) for n in nights for p in
+             {(q["player_id"], q["stat"]): q for q in n["top"] + [x for v in n["by_game"].values() for x in v]}.values()]
+    summary = {"nights": [{"date": n["date"], "games": len(n["games"]), "record": {k: n["record"][k] for k in ("all", "A", "B", "C", "all_positive_edge")}} for n in nights],
+               "shown": len(shown)}
+    (bdir / "season_props.json").write_text(json.dumps({"all": allp, "shown": shown}))
+    (bdir / "season_summary.json").write_text(json.dumps(summary, indent=1))
+    return summary
+
+
 def summarize(results: dict) -> dict:
     out = {}
     for label, filt in (("all", lambda r: True), ("A", lambda r: r["grade"] == "A"),
@@ -144,7 +171,7 @@ def run(date: str | None = None, out_dir: str = "site", cache_dir: str = ".cache
             log(f"   roster {tid} failed: {e}")
 
     log(f"[3/6] Game logs for {len(players)} players")
-    espn.load_logs(players, [season, season - 1], season, current_ttl=600 if backtest else 3 * 3600)
+    espn.load_logs(players, [season, season - 1], season, current_ttl=1800 if backtest else 3 * 3600)
 
     actual = {}                                   # (player_id, event_id) -> GameLine
     final_ids = {g.id for g in games if "final" in g.status.lower()}
@@ -286,8 +313,13 @@ def cli():
     ap.add_argument("--slate-only", action="store_true", help="only load teams playing today (faster, weaker DvP)")
     ap.add_argument("--stats", help="comma list, e.g. PTS,REB,AST,3PM,PRA")
     ap.add_argument("--backtest", metavar="YYYY-MM-DD", help="project a past date blind, grade vs actual results")
+    ap.add_argument("--backtest-range", nargs=2, metavar=("START", "END"))
     ap.add_argument("--markets", default=os.environ.get("ODDS_MARKETS", DEFAULT_MARKETS))
     a = ap.parse_args()
+    if a.backtest_range:
+        print(json.dumps(backtest_range(*a.backtest_range, out_dir=a.out, cache_dir=a.cache,
+                                        hist_dir=a.history, slate_only=a.slate_only), indent=1))
+        return
     if a.backtest:
         run(a.backtest, a.out, a.cache, a.history, a.slate_only,
             a.stats.split(",") if a.stats else None, None, a.markets, backtest=True)

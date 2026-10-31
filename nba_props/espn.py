@@ -198,6 +198,14 @@ class Espn:
                      teams["home"], teams["away"],
                      status=((ev.get("status") or {}).get("type") or {}).get("description", ""))
             self._parse_odds(g, comp.get("odds") or [])
+            if g.total is None:
+                # Past games drop odds from the scoreboard; the game summary's
+                # "pickcenter" usually keeps the closing line.
+                try:
+                    summ = self.http.get_json(f"{SITE}/summary", {"event": g.id}, ttl=6 * 3600) or {}
+                    self._parse_odds(g, summ.get("pickcenter") or summ.get("odds") or [])
+                except Exception:
+                    pass
             games.append(g)
         return games
 
