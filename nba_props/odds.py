@@ -23,7 +23,10 @@ MARKET_TO_STAT = {
     "player_points_rebounds": "PR", "player_points_assists": "PA",
     "player_rebounds_assists": "RA", "player_blocks_steals": "STOCKS",
 }
-DEFAULT_MARKETS = "player_points,player_rebounds,player_assists,player_threes"
+# Two markets x ~8 games/night x 30 nights ~= 480 credits: fits the 500/month free tier
+# with one pull a day. Add markets if you upgrade.
+DEFAULT_MARKETS = "player_points,player_rebounds"
+USAGE: dict = {}
 
 
 @dataclass
@@ -56,11 +59,21 @@ def fetch_props(http: Http, api_key: str, home_names: dict[str, str],
     events = http.get_json(f"{BASE}/events", {"apiKey": api_key}, ttl=1800) or []
     out: dict[tuple[str, str], PropLine] = {}
     for ev in events:
-        if norm_name(ev.get("home_team", "")) not in home_names:
+        if norm_name((ev.get("home_team") or "x").split()[-1]) not in home_names:   # match on nickname ("LA" vs "Los Angeles")
             continue
-        data = http.get_json(f"{BASE}/events/{ev['id']}/odds",
-                             {"apiKey": api_key, "regions": "us", "markets": markets,
-                              "oddsFormat": "american"}, ttl=1800) or {}
+        params = {"apiKey": api_key, "regions": "us", "markets": markets, "oddsFormat": "american"}
+        sess = getattr(http, "session", None)
+        if sess is not None:
+            r = sess.get(f"{BASE}/events/{ev['id']}/odds", params=params, timeout=20)
+            for h in ("x-requests-remaining", "x-requests-used", "x-requests-last"):
+                if r.headers.get(h) is not None:
+                    USAGE[h.replace("x-requests-", "")] = r.headers[h]
+            if r.status_code in (401, 429):
+                USAGE["error"] = f"HTTP {r.status_code}: {r.text[:200]}"
+                break
+            data = r.json() if r.ok else {}
+        else:
+            data = http.get_json(f"{BASE}/events/{ev['id']}/odds", params, ttl=1800) or {}
         # collect per (player, stat): lines and prices across books
         acc: dict[tuple[str, str], dict] = {}
         for bk in data.get("bookmakers", []):

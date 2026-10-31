@@ -46,7 +46,10 @@ jobs:
 
       - name: Build today's picks
         env:
-          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          # Pull real lines once a day (5 PM run + manual runs) to stay inside the
+          # free tier's 500 credits/month.
+          ODDS_API_KEY: ${{ github.event.schedule == '0 17 * * *' && '' || secrets.ODDS_API_KEY }}
+          ODDS_MARKETS: ${{ vars.ODDS_MARKETS }}
         run: |
           python -m nba_props.main --out site --history history
           mkdir -p site/backtests

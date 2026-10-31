@@ -19,7 +19,7 @@ from .espn import Espn, Injury, season_for
 from .http import Http
 from .model import (DEFAULT_PROP_STATS, League, best_picks, build_profile, evaluate,
                     project_team)
-from .odds import DEFAULT_MARKETS, fetch_props, norm_name
+from .odds import DEFAULT_MARKETS, USAGE, PropLine, fetch_props, norm_name
 from .report import render
 
 ET = ZoneInfo("America/New_York")
@@ -155,6 +155,7 @@ def run(date: str | None = None, out_dir: str = "site", cache_dir: str = ".cache
     out.mkdir(parents=True, exist_ok=True)
     (hist / "picks").mkdir(parents=True, exist_ok=True)
 
+    lines: dict = {}
     log(f"[1/6] Schedule for {day_s} (season {season})")
     games = espn.games(day.strftime("%Y%m%d"))
     teams = espn.teams()
@@ -192,7 +193,11 @@ def run(date: str | None = None, out_dir: str = "site", cache_dir: str = ".cache
                 for p in players:
                     if p.team_id == team.id and p.id not in played.get(g.id, set()):
                         injuries[p.id] = Injury(p.id, p.name, team.id, "Out", "did not play")
-        odds_key = None                            # no historical prop lines
+        odds_key = None
+        saved = hist / "lines" / f"{day_s}.json"     # real lines saved on the night, if any
+        if saved.exists():
+            lines = {(r["name"], r["stat"]): PropLine(r["line"], r["over"], r["under"], r["books"])
+                     for r in json.loads(saved.read_text())}
 
     log("[4/6] Building profiles, defense-vs-position, projections")
     profiles = {p.id: pr for p in players if (pr := build_profile(p, season))}
@@ -200,13 +205,21 @@ def run(date: str | None = None, out_dir: str = "site", cache_dir: str = ".cache
     tts = [t for g in games for tid in (g.home.id, g.away.id) if (t := g.implied_total(tid))]
     slate_tt = sum(tts) / len(tts) if tts else 0.0
 
-    lines = {}
+    if not backtest:
+        lines = {}
     if odds_key and games:
         log("   Fetching sportsbook prop lines")
         try:
-            lines = fetch_props(http, odds_key, {norm_name(g.home.name): g.id for g in games}, odds_markets)
+            lines = fetch_props(http, odds_key, {norm_name(g.home.name.split()[-1]): g.id for g in games}, odds_markets)
         except Exception as e:
             log(f"   odds fetch failed, falling back to estimated lines: {e}")
+        if lines:
+            (hist / "lines").mkdir(parents=True, exist_ok=True)
+            (hist / "lines" / f"{day_s}.json").write_text(json.dumps(
+                [{"name": k[0], "stat": k[1], "line": v.line, "over": v.over_price, "under": v.under_price,
+                  "books": v.books} for k, v in lines.items()]))
+        (hist / "odds_usage.json").write_text(json.dumps(
+            {"date": day_s, "props_found": len(lines), **USAGE}, indent=1))
 
     by_team = {}
     for p in players:
@@ -275,6 +288,7 @@ def run(date: str | None = None, out_dir: str = "site", cache_dir: str = ".cache
     payload = {
         "date": day_s, "generated": now_et.strftime("%b %d, %I:%M %p ET").replace(" 0", " "), "season": season,
         "line_mode": "sportsbook" if lines else "estimated",
+        "odds_usage": dict(USAGE),
         "games": game_info,
         "top": [p.to_dict() for p in top],
         "by_game": {gid: [p.to_dict() for p in ps] for gid, ps in by_game.items()},
@@ -314,7 +328,7 @@ def cli():
     ap.add_argument("--stats", help="comma list, e.g. PTS,REB,AST,3PM,PRA")
     ap.add_argument("--backtest", metavar="YYYY-MM-DD", help="project a past date blind, grade vs actual results")
     ap.add_argument("--backtest-range", nargs=2, metavar=("START", "END"))
-    ap.add_argument("--markets", default=os.environ.get("ODDS_MARKETS", DEFAULT_MARKETS))
+    ap.add_argument("--markets", default=os.environ.get("ODDS_MARKETS") or DEFAULT_MARKETS)
     a = ap.parse_args()
     if a.backtest_range:
         print(json.dumps(backtest_range(*a.backtest_range, out_dir=a.out, cache_dir=a.cache,
