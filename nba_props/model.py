@@ -33,6 +33,17 @@ DEFAULT_PROP_STATS = ["PTS", "REB", "AST", "3PM", "PRA", "PR", "PA", "RA", "STL"
 ENV_ELASTICITY = {"PTS": 0.9, "REB": 0.3, "AST": 0.6, "3PM": 0.7, "STL": 0.3, "BLK": 0.2, "TOV": 0.4}
 # Share of an injured teammate's volume the remaining roster typically absorbs.
 ABSORB = {"PTS": 0.55, "REB": 0.65, "AST": 0.55, "3PM": 0.45, "STL": 0.4, "BLK": 0.45, "TOV": 0.5}
+# Tunable knobs, tuned on the 2026-10-24..30 backtest (tests/tune.py)
+KNOBS = {
+    "dvp_prior": 120.0,     # player-games of shrinkage toward neutral defense
+    "dvp_power": 1.0,      # 0 disables opponent adjustment
+    "absorb_scale": 0.35,   # scales ABSORB (injured teammates' volume)
+    "b2b": 0.96,           # minutes factor for heavy-minute players on a back-to-back
+    "min_scale": 0.95,     # global minutes calibration
+    "env_scale": 0.5,      # scales Vegas-total elasticities
+    "rate_l10": 0.35,      # weight of last-10 in per-minute rate
+    "blowout": 0.0,        # blowout minute trims (off: hurt in backtest)
+}
 VIG_PROB = 110 / 210                                            # -110 implied
 MODEL_WEIGHT = 0.6                                              # model vs market blend
 
@@ -146,9 +157,11 @@ def build_profile(p: Player, season: int) -> Profile | None:
     for s in BASE_STATS:
         rc, rp, r10 = _rate(cur, s), _rate(prev, s), _rate(last10, s) or 0.0
         if rc is not None and rp is not None:
-            rates[s] = w * (0.65 * rc + 0.35 * r10) + (1 - w) * (0.6 * rp + 0.4 * r10)
+            a = KNOBS["rate_l10"]
+            rates[s] = w * ((1 - a) * rc + a * r10) + (1 - w) * ((1 - a - .05) * rp + (a + .05) * r10)
         elif rc is not None:
-            rates[s] = 0.65 * rc + 0.35 * r10
+            a = KNOBS["rate_l10"]
+            rates[s] = (1 - a) * rc + a * r10
         else:
             rates[s] = 0.6 * (rp or 0) + 0.4 * r10
     m5 = _mean(g.min for g in last5)
@@ -226,12 +239,12 @@ class League:
         for key, e in exp.items():
             _, pg, s = key
             per_game = exp_all[(pg, s)] / max(1, cnt_all[(pg, s)])
-            k = per_game * 30            # prior worth ~30 player-games
+            k = per_game * KNOBS["dvp_prior"]
             out[key] = _clip((obs[key] + k) / (e + k), 0.82, 1.18)
         return out
 
     def dvp_factor(self, opp_id: str, pos_group: str, stat: str) -> float:
-        return self.dvp.get((opp_id, pos_group, stat), 1.0)
+        return self.dvp.get((opp_id, pos_group, stat), 1.0) ** KNOBS["dvp_power"]
 
 
 # ----------------------------------------------------------------------------- per-player projection
@@ -330,7 +343,7 @@ def project_team(team_players: list[Player], team_id: str, team_abbr: str, opp_i
     env_note = ""
     if tt and slate_tt_avg:
         ratio = tt / slate_tt_avg
-        env = {s: _clip(ratio ** ENV_ELASTICITY[s], 0.9, 1.1) for s in BASE_STATS}
+        env = {s: _clip(ratio ** (ENV_ELASTICITY[s] * KNOBS["env_scale"]), 0.9, 1.1) for s in BASE_STATS}
         if abs(ratio - 1) >= 0.025:
             env_note = f"Implied team total {tt:.1f} ({'high' if ratio > 1 else 'low'} vs slate avg {slate_tt_avg:.1f})"
     spread = game.spread_home if team_id == game.home.id else (-game.spread_home if game.spread_home is not None else None)
@@ -352,11 +365,11 @@ def project_team(team_players: list[Player], team_id: str, team_abbr: str, opp_i
         mins = prof.min_base
         mf = 1.0
         if rest_days == 1:
-            mf *= 0.96 if mins >= 30 else 0.99
+            mf *= KNOBS["b2b"] if mins >= 30 else 1 - (1 - KNOBS["b2b"]) / 4
             reasons.append("Back-to-back")
         elif rest_days is not None and rest_days >= 3:
             mf *= 1.01
-        if spread is not None and abs(spread) >= 9:
+        if spread is not None and abs(spread) >= 9 and KNOBS["blowout"]:
             if mins >= 28:
                 mf *= max(0.93, 1 - 0.007 * (abs(spread) - 8))
                 reasons.append(f"Blowout risk (spread {spread:+.1f}) trims starter minutes")
@@ -364,7 +377,7 @@ def project_team(team_players: list[Player], team_id: str, team_abbr: str, opp_i
                 mf *= 1.03
         if status == "QUESTIONABLE":
             mf *= 0.97
-        mins_adj = mins * mf
+        mins_adj = mins * mf * KNOBS["min_scale"]
         mins_shown = min(40.0, mins_adj + vac_min * (prof.min_base / act_min) * 0.8)
 
         # home/away personal split (shrunk)
@@ -392,9 +405,9 @@ def project_team(team_players: list[Player], team_id: str, team_abbr: str, opp_i
                 stat_reasons[s].append(env_note)
             # injury volume
             if out_mates:
-                redis = vacated[s] * ABSORB[s] * (prof.base_vol[s] / act_vol[s])
+                redis = vacated[s] * ABSORB[s] * KNOBS["absorb_scale"] * (prof.base_vol[s] / act_vol[s])
                 add = redis
-                if wow:
+                if wow and KNOBS["absorb_scale"] > 0:
                     w_with, w_without, n_wo = wow
                     delta = _clip(w_without[s] - w_with[s], -0.4 * base - 0.5, 0.4 * base + 0.5)
                     k = n_wo / (n_wo + 6)
@@ -502,9 +515,10 @@ def evaluate(proj: Projection, stats: list[str], lines: dict[tuple[str, str], Pr
         stability = 1 - _clip(prof.min_cv - 0.12, 0, 0.45)
         status_f = {"QUESTIONABLE": 0.6, "PROBABLE": 0.95}.get(proj.status, 1.0)
         reliability = sample * stability * status_f
-        hit_bonus = ((h10[0] / h10[1]) - 0.5) * 6 if h10[1] >= 5 else 0
-        score = edge * 100 * reliability + hit_bonus * reliability
-        grade = "A" if score >= 9 else "B" if score >= 6 else "C" if score >= 3 else "-"
+        # Backtest showed edge itself ranks picks best; recent hit rates added noise.
+        score = edge * 100 * reliability
+        grade = ("A" if edge >= .08 and reliability >= .5 else "B" if edge >= .05 else
+                 "C" if edge >= .03 else "-")
         reasons = list(proj.stat_reasons.get(s, [])) + list(proj.reasons)
         if h10[1] >= 5:
             reasons.append(f"{side.title()} hit {h10[0]}/{h10[1]} of last {h10[1]} at {line}")
@@ -524,7 +538,7 @@ def evaluate(proj: Projection, stats: list[str], lines: dict[tuple[str, str], Pr
 def best_picks(picks: list[Pick], per_game: int = 6, per_player: int = 1, top_n: int = 15):
     """Top picks per game (max `per_player` per player) plus a best-overall list
     (one per player). Only positive-edge picks are kept."""
-    good = sorted([p for p in picks if p.edge > 0.02 and p.score >= 3], key=lambda p: -p.score)
+    good = sorted([p for p in picks if p.edge >= 0.03 and p.grade != "-"], key=lambda p: -p.score)
     by_game: dict[str, list[Pick]] = defaultdict(list)
     used: dict[tuple[str, str], int] = defaultdict(int)
     for p in good:

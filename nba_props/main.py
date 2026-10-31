@@ -79,7 +79,7 @@ def backtest_summary(all_picks, shown) -> dict:
     out = {"all": rec(shown)}
     for g in ("A", "B", "C"):
         out[g] = rec([p for p in shown if p["grade"] == g])
-    pos = [p.to_dict() for p in all_picks if p.edge > 0.02]
+    pos = [p.to_dict() for p in all_picks if p.edge >= 0.03]
     out["all_positive_edge"] = rec(pos)
     # projection accuracy vs simply using the player's recent average (the est. line)
     acc = {}

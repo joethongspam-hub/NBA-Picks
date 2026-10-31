@@ -156,7 +156,7 @@ function renderBest() {
   const stats = ["ALL", ...new Set(D.top.concat(Object.values(D.by_game).flat()).map(p => p.stat))];
   $("#statChips").innerHTML = stats.map(s => `<button class="chip ${s===statFilter?"on":""}" data-s="${s}">${s==="ALL"?"All":s}</button>`).join("");
   let list = statFilter === "ALL" ? D.top
-    : D.all.filter(p => p.stat === statFilter && p.edge > 0.02 && p.score >= 3).slice(0, 15);
+    : D.all.filter(p => p.stat === statFilter && p.edge >= 0.03 && p.grade !== "-").slice(0, 15);
   $("#bestList").innerHTML = list.length ? list.map(p => pickHTML(p, true)).join("")
     : `<div class="empty">${D.games.length ? "No props cleared the bar today." : "No NBA games on this date."}</div>`;
 }
