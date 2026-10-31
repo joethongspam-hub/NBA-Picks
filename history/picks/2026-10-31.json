@@ -31,7 +31,9 @@
    "Blowout risk (spread -9.5) trims starter minutes",
    "Over hit 2/10 of last 10 at 24.5",
    "Last 1 vs MIL: 33"
-  ]
+  ],
+  "actual": null,
+  "result": null
  },
  {
   "game_id": "401909900",
@@ -64,7 +66,9 @@
    "Blowout risk (spread -9.5) trims starter minutes",
    "Over hit 6/10 of last 10 at 24.5",
    "Last 3 vs MIL: 19, 37, 24"
-  ]
+  ],
+  "actual": null,
+  "result": null
  },
  {
   "game_id": "401909902",
@@ -98,7 +102,9 @@
    "Caruso, Holmgren, Wallace out: +0.7 assists (with/without split)",
    "Over hit 5/10 of last 10 at 21.5",
    "Last 2 vs HOU: 23, 19"
-  ]
+  ],
+  "actual": null,
+  "result": null
  },
  {
   "game_id": "401909896",
@@ -130,7 +136,9 @@
    "Implied team total 119.0 (high vs slate avg 115.5)",
    "Under hit 10/10 of last 10 at 3.5",
    "Last 2 vs UTAH: 3, 4"
-  ]
+  ],
+  "actual": null,
+  "result": null
  },
  {
   "game_id": "401909896",
@@ -165,7 +173,9 @@
    "Morant out: +1.0 assists (usage share)",
    "Over hit 5/10 of last 10 at 30.5",
    "Last 3 vs UTAH: 25, 42, 24"
-  ]
+  ],
+  "actual": null,
+  "result": null
  },
  {
   "game_id": "401909896",
@@ -197,7 +207,9 @@
    "Implied team total 112.5 (low vs slate avg 115.5)",
    "Under hit 5/10 of last 10 at 7.5",
    "Last 3 vs POR: 2, 11, 5"
-  ]
+  ],
+  "actual": null,
+  "result": null
  },
  {
   "game_id": "401909899",
@@ -229,7 +241,9 @@
    "Implied team total 122.0 (high vs slate avg 115.5)",
    "Over hit 5/10 of last 10 at 17.5",
    "Last 4 vs SAC: 18, 11, 12, 23"
-  ]
+  ],
+  "actual": null,
+  "result": null
  },
  {
   "game_id": "401909900",
@@ -263,7 +277,9 @@
    "MIL allows assists to Gs (+7% vs expected)",
    "Over hit 4/10 of last 10 at 14.5",
    "Last 4 vs MIL: 25, 21, 25, 21"
-  ]
+  ],
+  "actual": null,
+  "result": null
  },
  {
   "game_id": "401909899",
@@ -295,7 +311,9 @@
    "Blowout risk (spread +10.5) trims starter minutes",
    "Over hit 7/10 of last 10 at 13.5",
    "Last 2 vs MEM: 15, 15"
-  ]
+  ],
+  "actual": null,
+  "result": null
  },
  {
   "game_id": "401909902",
@@ -327,7 +345,9 @@
    "Caruso, Holmgren, Wallace out: +1.4 rebounds (with/without split)",
    "Over hit 5/10 of last 10 at 3.5",
    "Last 2 vs HOU: 2, 5"
-  ]
+  ],
+  "actual": null,
+  "result": null
  },
  {
   "game_id": "401909896",
@@ -357,7 +377,9 @@
   "reasons": [
    "Under hit 10/10 of last 10 at 11.5",
    "Last 4 vs UTAH: 15, 18, 17, 7"
-  ]
+  ],
+  "actual": null,
+  "result": null
  },
  {
   "game_id": "401909902",
@@ -389,7 +411,9 @@
    "Back-to-back",
    "Over hit 4/10 of last 10 at 6.5",
    "Last 2 vs OKC: 8, 6"
-  ]
+  ],
+  "actual": null,
+  "result": null
  },
  {
   "game_id": "401909902",
@@ -421,7 +445,9 @@
    "HOU limits rebounds to Gs (-7% vs expected)",
    "Over hit 5/10 of last 10 at 19.5",
    "Last 2 vs HOU: 22, 18"
-  ]
+  ],
+  "actual": null,
+  "result": null
  },
  {
   "game_id": "401909900",
@@ -452,7 +478,9 @@
    "Blowout risk (spread +9.5) trims starter minutes",
    "Over hit 6/10 of last 10 at 3.5",
    "Last 4 vs CLE: 3, 5, 4, 7"
-  ]
+  ],
+  "actual": null,
+  "result": null
  },
  {
   "game_id": "401909898",
@@ -482,7 +510,9 @@
   "reasons": [
    "Missi, Poole out: +0.7 rebounds (with/without split)",
    "Over hit 5/10 of last 10 at 27.5"
-  ]
+  ],
+  "actual": null,
+  "result": null
  },
  {
   "game_id": "401909900",
@@ -513,7 +543,9 @@
    "Blowout risk (spread -9.5) trims starter minutes",
    "Over hit 5/10 of last 10 at 4.5",
    "Last 1 vs MIL: 8"
-  ]
+  ],
+  "actual": null,
+  "result": null
  },
  {
   "game_id": "401909900",
@@ -543,7 +575,9 @@
   "reasons": [
    "Over hit 7/10 of last 10 at 6.5",
    "Last 4 vs CLE: 6, 15, 12, 20"
-  ]
+  ],
+  "actual": null,
+  "result": null
  },
  {
   "game_id": "401909902",
@@ -575,7 +609,9 @@
    "Back-to-back",
    "Under hit 6/10 of last 10 at 1.5",
    "Last 2 vs OKC: 2, 1"
-  ]
+  ],
+  "actual": null,
+  "result": null
  },
  {
   "game_id": "401909902",
@@ -608,7 +644,9 @@
    "Caruso, Holmgren, Wallace out: +0.7 assists (with/without split)",
    "Over hit 5/10 of last 10 at 3.5",
    "Last 1 vs HOU: 3"
-  ]
+  ],
+  "actual": null,
+  "result": null
  },
  {
   "game_id": "401909896",
@@ -640,7 +678,9 @@
    "Jackson out: -0.6 assists (with/without split)",
    "Under hit 6/10 of last 10 at 10.5",
    "Last 3 vs POR: 12, 11, 11"
-  ]
+  ],
+  "actual": null,
+  "result": null
  },
  {
   "game_id": "401909896",
@@ -673,7 +713,9 @@
    "UTAH allows assists to Gs (+10% vs expected)",
    "Over hit 3/10 of last 10 at 6.5",
    "Last 3 vs UTAH: 16, 9, 16"
-  ]
+  ],
+  "actual": null,
+  "result": null
  },
  {
   "game_id": "401909899",
@@ -705,7 +747,9 @@
    "Implied team total 122.0 (high vs slate avg 115.5)",
    "Over hit 6/10 of last 10 at 15.5",
    "Last 5 vs SAC: 23, 15, 21, 18, 14"
-  ]
+  ],
+  "actual": null,
+  "result": null
  },
  {
   "game_id": "401909899",
@@ -739,7 +783,9 @@
    "Blowout risk (spread +10.5) trims starter minutes",
    "Over hit 6/10 of last 10 at 8.5",
    "Last 4 vs MEM: 10, 12, 7, 7"
-  ]
+  ],
+  "actual": null,
+  "result": null
  },
  {
   "game_id": "401909899",
@@ -773,7 +819,9 @@
    "Listed Day-To-Day: Back Soreness - Jerome (back) is listed as questionable for Saturday's game against the Kings.",
    "Over hit 5/10 of last 10 at 28.5",
    "Last 2 vs SAC: 38, 35"
-  ]
+  ],
+  "actual": null,
+  "result": null
  },
  {
   "game_id": "401909899",
@@ -806,7 +854,9 @@
    "Blowout risk (spread +10.5) trims starter minutes",
    "Over hit 4/10 of last 10 at 5.5",
    "Last 3 vs MEM: 6, 3, 6"
-  ]
+  ],
+  "actual": null,
+  "result": null
  },
  {
   "game_id": "401909898",
@@ -836,7 +886,9 @@
   "reasons": [
    "Over hit 5/10 of last 10 at 27.5",
    "Last 1 vs ATL: 36"
-  ]
+  ],
+  "actual": null,
+  "result": null
  },
  {
   "game_id": "401909898",
@@ -867,7 +919,9 @@
    "Implied team total 122.0 (high vs slate avg 115.5)",
    "Over hit 5/10 of last 10 at 28.5",
    "Last 2 vs NO: 27, 29"
-  ]
+  ],
+  "actual": null,
+  "result": null
  },
  {
   "game_id": "401909898",
@@ -898,7 +952,9 @@
    "Missi, Poole out: -0.7 rebounds (with/without split)",
    "Under hit 5/10 of last 10 at 8.5",
    "Last 2 vs ATL: 10, 9"
-  ]
+  ],
+  "actual": null,
+  "result": null
  },
  {
   "game_id": "401909898",
@@ -930,7 +986,9 @@
    "NO allows assists to Gs (+7% vs expected)",
    "Over hit 6/10 of last 10 at 11.5",
    "Last 2 vs NO: 14, 16"
-  ]
+  ],
+  "actual": null,
+  "result": null
  },
  {
   "game_id": "401909898",
@@ -960,7 +1018,9 @@
   "reasons": [
    "ATL allows assists to Cs (+7% vs expected)",
    "Over hit 4/10 of last 10 at 1.5"
-  ]
+  ],
+  "actual": null,
+  "result": null
  },
  {
   "game_id": "401909897",
@@ -992,7 +1052,9 @@
    "Back-to-back",
    "Under hit 4/10 of last 10 at 15.5",
    "Last 1 vs PHI: 12"
-  ]
+  ],
+  "actual": null,
+  "result": null
  },
  {
   "game_id": "401909897",
@@ -1024,7 +1086,9 @@
    "Back-to-back",
    "Under hit 6/10 of last 10 at 22.5",
    "Last 3 vs PHI: 29, 30, 4"
-  ]
+  ],
+  "actual": null,
+  "result": null
  },
  {
   "game_id": "401909897",
@@ -1056,7 +1120,9 @@
    "Back-to-back",
    "Under hit 7/10 of last 10 at 8.5",
    "Last 2 vs PHI: 17, 11"
-  ]
+  ],
+  "actual": null,
+  "result": null
  },
  {
   "game_id": "401909901",
@@ -1088,7 +1154,9 @@
    "MIN limits assists to Fs (-7% vs expected)",
    "Over hit 5/10 of last 10 at 14.5",
    "Last 5 vs MIN: 2, 23, 8, 14, 20"
-  ]
+  ],
+  "actual": null,
+  "result": null
  },
  {
   "game_id": "401909901",
@@ -1121,7 +1189,9 @@
    "Blowout risk (spread -11.5) trims starter minutes",
    "Under hit 6/10 of last 10 at 2.5",
    "Last 5 vs MIN: 3, 2, 2, 1, 2"
-  ]
+  ],
+  "actual": null,
+  "result": null
  },
  {
   "game_id": "401909901",
@@ -1154,7 +1224,9 @@
    "Blowout risk (spread -11.5) trims starter minutes",
    "Under hit 5/10 of last 10 at 2.5",
    "Last 5 vs MIN: 4, 2, 0, 2, 4"
-  ]
+  ],
+  "actual": null,
+  "result": null
  },
  {
   "game_id": "401909901",
@@ -1188,6 +1260,8 @@
    "Back-to-back",
    "Over hit 6/10 of last 10 at 17.5",
    "Last 5 vs SA: 11, 25, 15, 18, 0"
-  ]
+  ],
+  "actual": null,
+  "result": null
  }
 ]
