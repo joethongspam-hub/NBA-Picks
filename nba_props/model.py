@@ -446,6 +446,8 @@ class Pick:
     season_avg: float
     l10_avg: float
     reasons: list[str]
+    actual: float | None = None
+    result: str | None = None
 
     def to_dict(self):
         return self.__dict__.copy()

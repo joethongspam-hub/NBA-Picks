@@ -15,7 +15,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from .espn import Espn, season_for
+from .espn import Espn, Injury, season_for
 from .http import Http
 from .model import (DEFAULT_PROP_STATS, League, best_picks, build_profile, evaluate,
                     project_team)
@@ -71,6 +71,33 @@ def _slim(pk):
     return {k: pk[k] for k in keep}
 
 
+def backtest_summary(all_picks, shown) -> dict:
+    def rec(ps):
+        w = sum(p["result"] == "WIN" for p in ps)
+        l = sum(p["result"] == "LOSS" for p in ps)
+        return {"w": w, "l": l, "pct": round(w / (w + l), 3) if w + l else None}
+    out = {"all": rec(shown)}
+    for g in ("A", "B", "C"):
+        out[g] = rec([p for p in shown if p["grade"] == g])
+    pos = [p.to_dict() for p in all_picks if p.edge > 0.02]
+    out["all_positive_edge"] = rec(pos)
+    # projection accuracy vs simply using the player's recent average (the est. line)
+    acc = {}
+    for stat in ("PTS", "REB", "AST", "3PM", "PRA"):
+        rows = [p for p in all_picks if p.stat == stat and getattr(p, "actual", None) is not None]
+        if rows:
+            acc[stat] = {"n": len(rows),
+                         "model_mae": round(sum(abs(p.projection - p.actual) for p in rows) / len(rows), 2),
+                         "avg_mae": round(sum(abs(p.line - p.actual) for p in rows) / len(rows), 2)}
+    out["accuracy"] = acc
+    out["pending"] = sum(p.result == "PENDING" for p in all_picks)
+    out["recent"] = sorted([p for p in shown if p.get("result") in ("WIN", "LOSS", "PUSH")],
+                           key=lambda p: -p["score"])
+    for r in out["recent"]:
+        r.setdefault("date", "")
+    return out
+
+
 def summarize(results: dict) -> dict:
     out = {}
     for label, filt in (("all", lambda r: True), ("A", lambda r: r["grade"] == "A"),
@@ -85,7 +112,11 @@ def summarize(results: dict) -> dict:
 
 def run(date: str | None = None, out_dir: str = "site", cache_dir: str = ".cache",
         hist_dir: str = "history", slate_only: bool = False, stats: list[str] | None = None,
-        odds_key: str | None = None, odds_markets: str = DEFAULT_MARKETS, http: Http | None = None):
+        odds_key: str | None = None, odds_markets: str = DEFAULT_MARKETS, http: Http | None = None,
+        backtest: bool = False, backtest_dir: str = "backtests"):
+    """backtest=True: project a past date using only games played before it, then
+    grade every prop against the real box scores. Who sat that night is taken from
+    the box scores (stand-in for the pre-game injury report)."""
     stats = stats or DEFAULT_PROP_STATS
     now_et = datetime.now(ET)
     day = datetime.fromisoformat(date).replace(tzinfo=ET) if date else now_et
@@ -113,7 +144,28 @@ def run(date: str | None = None, out_dir: str = "site", cache_dir: str = ".cache
             log(f"   roster {tid} failed: {e}")
 
     log(f"[3/6] Game logs for {len(players)} players")
-    espn.load_logs(players, [season, season - 1], season)
+    espn.load_logs(players, [season, season - 1], season, current_ttl=600 if backtest else 3 * 3600)
+
+    actual = {}                                   # (player_id, event_id) -> GameLine
+    final_ids = {g.id for g in games if "final" in g.status.lower()}
+    if backtest:
+        slate_events = {g.id for g in games}
+        played = {}
+        for p in players:
+            for gl in p.logs:
+                if gl.event_id in slate_events:
+                    actual[(p.id, gl.event_id)] = gl
+                    played.setdefault(gl.event_id, set()).add(p.id)
+            p.logs = [gl for gl in p.logs if gl.date.astimezone(ET).strftime("%Y-%m-%d") < day_s]
+        injuries = {}
+        for g in games:
+            if g.id not in final_ids:
+                continue
+            for team in (g.home, g.away):
+                for p in players:
+                    if p.team_id == team.id and p.id not in played.get(g.id, set()):
+                        injuries[p.id] = Injury(p.id, p.name, team.id, "Out", "did not play")
+        odds_key = None                            # no historical prop lines
 
     log("[4/6] Building profiles, defense-vs-position, projections")
     profiles = {p.id: pr for p in players if (pr := build_profile(p, season))}
@@ -164,6 +216,17 @@ def run(date: str | None = None, out_dir: str = "site", cache_dir: str = ".cache
                                    for pr in game_projs], key=lambda x: -x["PRA"]),
         })
 
+    if backtest:
+        for pk in all_picks:
+            gl = actual.get((pk.player_id, pk.game_id))
+            if pk.game_id not in final_ids:
+                pk.result = "PENDING"
+            elif gl is None:
+                pk.result = "VOID"
+            else:
+                pk.actual = gl.get(pk.stat)
+                pk.result = "PUSH" if pk.actual == pk.line else \
+                    ("WIN" if (pk.actual > pk.line) == (pk.side == "OVER") else "LOSS")
     top, by_game = best_picks(all_picks)
     log(f"[5/6] {len(all_picks)} props evaluated, {len(top)} top picks")
 
@@ -172,12 +235,15 @@ def run(date: str | None = None, out_dir: str = "site", cache_dir: str = ".cache
     for ps in by_game.values():
         for p in ps:
             shown[(p.player_id, p.stat, p.side)] = p.to_dict()
-    if shown:
+    if shown and not backtest:
         (hist / "picks" / f"{day_s}.json").write_text(json.dumps(list(shown.values()), indent=1))
 
-    log("[6/6] Grading earlier picks + writing report")
-    results = grade_history(hist, {p.id: p for p in players}, day_s)
-    record = summarize(results)
+    log("[6/6] Grading + writing report")
+    if backtest:
+        record = backtest_summary(all_picks, list(shown.values()))
+    else:
+        results = grade_history(hist, {p.id: p for p in players}, day_s)
+        record = summarize(results)
 
     payload = {
         "date": day_s, "generated": now_et.strftime("%b %d, %I:%M %p ET").replace(" 0", " "), "season": season,
@@ -187,7 +253,17 @@ def run(date: str | None = None, out_dir: str = "site", cache_dir: str = ".cache
         "by_game": {gid: [p.to_dict() for p in ps] for gid, ps in by_game.items()},
         "all": [p.to_dict() for p in sorted(all_picks, key=lambda p: -p.score)],
         "record": record,
+        "backtest": backtest,
+        "backtests": sorted((f.stem for f in Path(backtest_dir).glob("*.html")), reverse=True)
+                     if Path(backtest_dir).exists() else [],
     }
+    if backtest:
+        bdir = Path(backtest_dir)
+        bdir.mkdir(parents=True, exist_ok=True)
+        (bdir / f"{day_s}.html").write_text(render(payload))
+        (bdir / f"{day_s}.json").write_text(json.dumps(payload))
+        log(f"Backtest -> {bdir / (day_s + '.html')}")
+        return payload
     (out / "picks.json").write_text(json.dumps(payload))
     (out / "index.html").write_text(render(payload))
     with open(out / "picks.csv", "w", newline="") as f:
@@ -209,8 +285,13 @@ def cli():
     ap.add_argument("--history", default="history")
     ap.add_argument("--slate-only", action="store_true", help="only load teams playing today (faster, weaker DvP)")
     ap.add_argument("--stats", help="comma list, e.g. PTS,REB,AST,3PM,PRA")
+    ap.add_argument("--backtest", metavar="YYYY-MM-DD", help="project a past date blind, grade vs actual results")
     ap.add_argument("--markets", default=os.environ.get("ODDS_MARKETS", DEFAULT_MARKETS))
     a = ap.parse_args()
+    if a.backtest:
+        run(a.backtest, a.out, a.cache, a.history, a.slate_only,
+            a.stats.split(",") if a.stats else None, None, a.markets, backtest=True)
+        return
     run(a.date, a.out, a.cache, a.history, a.slate_only,
         a.stats.split(",") if a.stats else None, os.environ.get("ODDS_API_KEY"), a.markets)
 

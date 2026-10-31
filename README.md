@@ -58,11 +58,26 @@ The first run loads about 400 players' game logs, which takes a minute or two. A
 It then runs at 11 AM and 5 PM Central, publishes the page to `https://<you>.github.io/<repo>/`,
 and saves each day's picks in `history/` so the **Track record** tab can grade them the next day.
 
+## Backtest a past date
+
+See how the model would have done on a night that's already played:
+
+```bash
+python -m nba_props.main --backtest 2026-10-30
+```
+
+It hides every game from that date onward, projects the slate, then grades each pick against the real
+box scores. You get a page with the win-loss record by grade and the model's average miss compared with just
+using the player's recent average. On GitHub: **Actions → Daily NBA props → Run workflow** and fill in
+`backtest_date`. The result appears at `.../backtests/<date>.html` and is linked from the Track record tab.
+(Who sat out is taken from the box scores, which is slightly cleaner than the real pre-game injury report.)
+
 ## Tests
 
 ```bash
 python tests/test_pipeline.py   # full run against a simulated league in ESPN's JSON format
 python tests/test_grading.py
+python tests/test_backtest.py
 ```
 
 ## Data sources

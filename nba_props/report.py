@@ -71,6 +71,9 @@ input[type=search]{width:100%;background:var(--panel);border:1px solid var(--lin
 .rec strong{display:block;font:700 18px var(--mono)}
 .rec span{font-size:11.5px;color:var(--mute)}
 .WIN{color:var(--over)}.LOSS{color:var(--under)}.PUSH,.VOID{color:var(--mute)}
+.res{font:700 12px var(--mono);margin-top:2px}
+.PENDING{color:var(--gold)}
+.links a{color:var(--blue);margin-right:12px}
 .empty{color:var(--mute);text-align:center;padding:40px 10px}
 .note{color:var(--mute);font-size:12px;margin:14px 2px;line-height:1.5}
 .sect{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--mute);margin:16px 2px 8px}
@@ -110,8 +113,11 @@ const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;
 const pct = x => (x*100).toFixed(0) + "%";
 const fmtPrice = p => p == null ? "" : (p > 0 ? "+" + p : p);
 
-$("#mode").textContent = D.line_mode === "sportsbook" ? "live lines" : "est. lines";
-$("#sub").textContent = `${D.date} · ${D.games.length} game${D.games.length===1?"":"s"} · updated ${D.generated}`;
+$("#mode").textContent = D.backtest ? "backtest" : (D.line_mode === "sportsbook" ? "live lines" : "est. lines");
+$("#sub").innerHTML = D.backtest
+  ? `${D.date} · ${D.games.length} games · projected blind (only games before ${D.date}) · <a href="../" style="color:var(--blue)">today's picks</a>`
+  : `${D.date} · ${D.games.length} game${D.games.length===1?"":"s"} · updated ${D.generated}`;
+if (D.backtest) document.querySelector('nav button[data-v=record]').textContent = "Results";
 
 function pickHTML(p, showGame) {
   const lo = Math.min(p.line, p.projection) * 0.6, hi = Math.max(p.line, p.projection) * 1.25 + 0.5;
@@ -123,7 +129,8 @@ function pickHTML(p, showGame) {
       <div class="who"><div class="name">${esc(p.player)}</div>
         <div class="meta">${esc(p.team)} vs ${esc(p.opp)}${showGame ? "" : ""} · ${p.stat} · L10 ${p.hit_l10}${p.status!=="ACTIVE"?` · <span style="color:var(--gold)">${p.status}</span>`:""}</div></div>
       <div class="bet"><div class="side ${p.side}">${p.side==="OVER"?"O":"U"} ${p.line}</div>
-        <div class="small">proj ${p.projection} · ${pct(p.prob)}</div></div>
+        <div class="small">proj ${p.projection} · ${pct(p.prob)}</div>
+        ${p.result ? `<div class="res ${p.result}">${p.actual!=null?"actual "+p.actual+" · ":""}${p.result}</div>` : ""}</div>
     </div>
     <div class="bar"><b style="left:${a}%;width:${b-a}%;background:var(--${p.side==="OVER"?"over":"under"});opacity:.55"></b><i style="left:${pos(p.line)}%" title="line"></i></div>
     <div class="detail">
@@ -190,11 +197,26 @@ $("#q").addEventListener("input", renderAll);
 function renderRecord() {
   const r = D.record || {};
   const cell = (k, label) => { const x = r[k] || {w:0,l:0}; return `<div><strong>${x.w}-${x.l}</strong><span>${label}${x.pct!=null?" · "+pct(x.pct):""}</span></div>`; };
+  const links = (D.backtests||[]).length && !D.backtest
+    ? `<div class="sect">Backtests</div><div class="card" style="padding:12px 14px" class="links">${D.backtests.map(d=>`<a style="color:var(--blue);margin-right:14px" href="backtests/${d}.html">${d}</a>`).join("")}</div>` : "";
+  if (D.backtest) {
+    const acc = r.accuracy || {};
+    const pe = r.all_positive_edge || {w:0,l:0};
+    $("#recordBox").innerHTML = `<div class="rec">${cell("all","Shown picks")}${cell("A","Grade A")}${cell("B","Grade B")}${cell("C","Grade C")}</div>
+      <div class="note" style="margin-top:0">Every prop with a positive edge: <b>${pe.w}-${pe.l}</b>${pe.pct!=null?" ("+pct(pe.pct)+")":""}. Break-even at -110 is 52.4%.${r.pending?` ${r.pending} props still pending (games not final when this ran).`:""}</div>
+      <div class="sect">Projection accuracy (average miss)</div>
+      <div class="card scroll"><table><tr><th>Stat</th><th>Props</th><th>Model</th><th>Recent avg</th></tr>
+      ${Object.entries(acc).map(([k,v])=>`<tr><td>${k}</td><td>${v.n}</td><td class="${v.model_mae<=v.avg_mae?"WIN":"LOSS"}">${v.model_mae}</td><td>${v.avg_mae}</td></tr>`).join("")}</table></div>
+      <div class="note">Lower is better. "Recent avg" is the estimated line (last 10 + season average). Note: who sat out is taken from the actual box scores, which is a little cleaner than the pre-game injury report.</div>
+      <div class="sect">Every graded pick</div>
+      <div class="card">${(r.recent||[]).map(p=>pickHTML(p)).join("") || '<div class="empty">No final games yet.</div>'}</div>`;
+    return;
+  }
   const recent = r.recent || [];
   $("#recordBox").innerHTML = `<div class="rec">${cell("all","All")}${cell("A","Grade A")}${cell("B","Grade B")}${cell("C","Grade C")}</div>
     ${recent.length ? `<div class="card scroll"><table><tr><th>Date</th><th>Pick</th><th>Line</th><th>Actual</th><th>Result</th></tr>
     ${recent.map(x => `<tr><td>${x.date.slice(5)} <span class="small">${esc(x.player)}</span></td><td class="${x.side}">${x.side[0]} ${x.stat}</td><td>${x.line}</td><td>${x.actual ?? "–"}</td><td class="${x.result}">${x.result}</td></tr>`).join("")}
-    </table></div>` : `<div class="empty">Results appear here after the first day's games are graded.</div>`}`;
+    </table></div>` : `<div class="empty">Results appear here after the first day's games are graded.</div>`}${links}`;
 }
 
 document.querySelector("nav").addEventListener("click", e => {

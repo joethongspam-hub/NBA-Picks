@@ -105,6 +105,20 @@ class League:
                             "odds": [{"details": details, "overUnder": [228.5, 214.5, 231.0, 222.0, 219.5][i]}]}]})
         return {"events": evs}
 
+    def past_scoreboard(self, yyyymmdd):
+        evs = []
+        for eid, e in self.events.items():
+            if e["date"].strftime("%Y%m%d") != yyyymmdd:
+                continue
+            h, a = e["home"], e["away"]
+            evs.append({"id": eid, "date": e["date"].strftime("%Y-%m-%dT%H:%MZ"),
+                        "status": {"type": {"description": "Final"}},
+                        "competitions": [{"competitors": [
+                            {"homeAway": "home", "team": {"id": h, "abbreviation": TEAMS[h], "displayName": TEAMS[h]}},
+                            {"homeAway": "away", "team": {"id": a, "abbreviation": TEAMS[a], "displayName": TEAMS[a]}}],
+                            "odds": [{"details": f"{TEAMS[h]} -2.5", "overUnder": 224.5}]}]})
+        return {"events": evs} if evs else None
+
     def injuries_json(self):
         return {"injuries": [
             {"id": "1", "displayName": "ATL Team", "injuries": [
@@ -154,7 +168,8 @@ class FakeHttp:
         self.calls += 1
         params = params or {}
         if url.endswith("/scoreboard"):
-            return self.lg.scoreboard_json()
+            past = self.lg.past_scoreboard(params.get("dates", ""))
+            return past or self.lg.scoreboard_json()
         if url.endswith("/injuries"):
             return self.lg.injuries_json()
         if url.endswith("/roster"):

@@ -273,11 +273,12 @@ class Espn:
         data = self.http.get_json(f"{COMMON}/athletes/{athlete_id}/gamelog", {"season": season}, ttl=ttl)
         return parse_gamelog(data, season) if data else []
 
-    def load_logs(self, players: list[Player], seasons: list[int], current: int) -> None:
+    def load_logs(self, players: list[Player], seasons: list[int], current: int,
+                  current_ttl: int = 3 * 3600) -> None:
         def job(args):
             p, s = args
             # Past seasons never change: cache them for a month.
-            ttl = 3 * 3600 if s == current else 30 * 86400
+            ttl = current_ttl if s == current else 30 * 86400
             try:
                 return p, self.gamelog(p.id, s, ttl)
             except Exception:
