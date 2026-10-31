@@ -97,6 +97,11 @@ def est_line(v: float) -> float:
     return max(0.5, best)
 
 
+def _short(name: str) -> str:
+    parts = [x for x in name.split() if x.rstrip(".").lower() not in ("jr", "sr", "ii", "iii", "iv")]
+    return parts[-1] if parts else name
+
+
 def _mean(xs):
     xs = list(xs)
     return sum(xs) / len(xs) if xs else 0.0
@@ -396,7 +401,7 @@ def project_team(team_players: list[Player], team_id: str, team_abbr: str, opp_i
                     add = (1 - k * 0.6) * redis + k * 0.6 * delta
                 v += add
                 if abs(add) >= max(0.6, 0.06 * base):
-                    names = ", ".join(m.name.split()[-1] for m, _, _ in out_mates[:3])
+                    names = ", ".join(_short(m.name) for m, _, _ in out_mates[:3])
                     stat_reasons[s].append(f"{names} out: {add:+.1f} {FULL[s]}"
                                            + (" (with/without split)" if wow else " (usage share)"))
             mean[s] = max(0.0, v)
