@@ -1,5 +1,5 @@
 {
- "made": "2026-10-31T21:12:16.656722-04:00",
+ "made": "2026-10-31T21:14:31.962021-04:00",
  "picks": [
   {
    "game_id": "401873035",
@@ -2420,38 +2420,6 @@
   {
    "game_id": "401873026",
    "game": "BAL @ BUF",
-   "player": "Tyler Huntley",
-   "player_id": "4035671",
-   "team": "BAL",
-   "opp": "BUF",
-   "stat": "PASS_TD",
-   "side": "OVER",
-   "line": 0.5,
-   "line_source": "est.",
-   "price": -124,
-   "projection": 1.11,
-   "prob": 0.608,
-   "edge": 0.055,
-   "score": 5.49,
-   "grade": "B",
-   "hit_l5": "3/5",
-   "hit_l10": "5/10",
-   "hit_season": "3/5",
-   "vs_opp": "0/0",
-   "minutes": 22.3,
-   "status": "ACTIVE",
-   "season_avg": 0.6,
-   "l10_avg": 1.0,
-   "reasons": [
-    "Implied team total 25.8 (high vs avg 22.8)",
-    "Over hit 3/5 last 5, 5/10 last 10 at 0.5"
-   ],
-   "actual": null,
-   "result": null
-  },
-  {
-   "game_id": "401873026",
-   "game": "BAL @ BUF",
    "player": "Josh Allen",
    "player_id": "3918298",
    "team": "BUF",
@@ -2478,6 +2446,39 @@
     "Implied team total 28.8 (high vs avg 22.8)",
     "Over hit 2/5 last 5, 4/10 last 10 at 1.5",
     "Last 1 vs BAL: 2"
+   ],
+   "actual": null,
+   "result": null
+  },
+  {
+   "game_id": "401873026",
+   "game": "BAL @ BUF",
+   "player": "Lamar Jackson",
+   "player_id": "3916387",
+   "team": "BAL",
+   "opp": "BUF",
+   "stat": "INT",
+   "side": "OVER",
+   "line": 0.5,
+   "line_source": "est.",
+   "price": 229,
+   "projection": 0.52,
+   "prob": 0.35,
+   "edge": 0.046,
+   "score": 4.63,
+   "grade": "C",
+   "hit_l5": "2/5",
+   "hit_l10": "5/10",
+   "hit_season": "1/4",
+   "vs_opp": "0/1",
+   "minutes": 25.5,
+   "status": "ACTIVE",
+   "season_avg": 0.4,
+   "l10_avg": 0.2,
+   "reasons": [
+    "Lamar Jackson cleared to return as the starter",
+    "Over hit 2/5 last 5, 5/10 last 10 at 0.5",
+    "Last 1 vs BUF: 0"
    ],
    "actual": null,
    "result": null
