@@ -1,0 +1,90 @@
+name: Weekly NFL props
+
+on:
+  schedule:
+    - cron: "0 17 * * 3"    # Wed 11 AM CT: early look at the week
+    - cron: "0 21 * * 4"    # Thu 3 PM CT: before Thursday night
+    - cron: "0 16 * * 0"    # Sun 10 AM CT: after final injury reports, before 12 PM kickoffs
+  workflow_dispatch:
+    inputs:
+      backtest_first:
+        description: "Optional: first week to backtest (e.g. 3)"
+        required: false
+        default: ""
+      backtest_last:
+        description: "Optional: last week to backtest (e.g. 8)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: props
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+
+      - name: Restore data cache
+        uses: actions/cache@v4
+        with:
+          path: .cache
+          key: espn-nfl-${{ github.run_id }}
+          restore-keys: espn-nfl-
+
+      - name: Load the current site (NBA + NFL pages)
+        run: |
+          mkdir -p public
+          if git fetch -q origin site-data; then git archive FETCH_HEAD | tar -x -C public; fi
+
+      - name: Backtest weeks
+        if: ${{ github.event.inputs.backtest_first != '' && github.event.inputs.backtest_last != '' }}
+        run: python -m nfl_props.main --backtest-weeks ${{ github.event.inputs.backtest_first }} ${{ github.event.inputs.backtest_last }}
+
+      - name: Build this week's picks
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          NFL_ODDS: ${{ vars.NFL_ODDS }}
+          NFL_ODDS_MARKETS: ${{ vars.NFL_ODDS_MARKETS }}
+        run: python -m nfl_props.main
+
+      - name: Save pick history
+        run: |
+          git config user.name "props-bot"
+          git config user.email "props-bot@users.noreply.github.com"
+          git add history
+          git diff --cached --quiet || git commit -m "nfl picks $(date -u +%F)"
+          git pull --rebase -q && git push
+
+      - name: Save site
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd public && rm -rf .git && git init -q && git add -A
+          git -c user.name=props-bot -c user.email=props-bot@users.noreply.github.com commit -qm "site $(date -u +%F)"
+          git push -fq "https://x-access-token:${TOKEN}@github.com/${{ github.repository }}.git" HEAD:site-data
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

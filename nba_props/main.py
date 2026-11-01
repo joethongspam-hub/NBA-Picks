@@ -301,12 +301,12 @@ def run(date: str | None = None, out_dir: str = "site", cache_dir: str = ".cache
     if backtest:
         bdir = Path(backtest_dir)
         bdir.mkdir(parents=True, exist_ok=True)
-        (bdir / f"{day_s}.html").write_text(render(payload))
+        (bdir / f"{day_s}.html").write_text(render(payload, switch=("NFL", "../nfl/")))
         (bdir / f"{day_s}.json").write_text(json.dumps(payload))
         log(f"Backtest -> {bdir / (day_s + '.html')}")
         return payload
     (out / "picks.json").write_text(json.dumps(payload))
-    (out / "index.html").write_text(render(payload))
+    (out / "index.html").write_text(render(payload, switch=("NFL", "nfl/")))
     with open(out / "picks.csv", "w", newline="") as f:
         cols = ["game", "player", "team", "opp", "stat", "side", "line", "line_source", "price", "projection",
                 "prob", "edge", "grade", "score", "hit_l5", "hit_l10", "hit_season", "vs_opp", "minutes", "status"]

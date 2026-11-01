@@ -8,7 +8,7 @@ TEMPLATE = r"""<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>NBA Props · __DATE__</title>
+<title>__TITLE__ · __DATE__</title>
 <style>
 :root{
   --bg:#0c1016; --panel:#141a23; --panel2:#1b2330; --line:#263041; --ink:#e8edf4; --mute:#8b97a8;
@@ -81,7 +81,7 @@ input[type=search]{width:100%;background:var(--panel);border:1px solid var(--lin
 </head>
 <body>
 <header>
-  <h1>NBA Player Props <span class="badge" id="mode"></span></h1>
+  <h1>__TITLE__ <span class="badge" id="mode"></span>__SWITCH__</h1>
   <div class="sub" id="sub"></div>
 </header>
 <nav><div class="in">
@@ -101,13 +101,12 @@ input[type=search]{width:100%;background:var(--panel);border:1px solid var(--lin
     <div class="card" id="allList"></div>
   </section>
   <section class="view" id="v-record"><div id="recordBox"></div></section>
-  <p class="note">Projections blend per-minute production, projected minutes, opponent defense vs position,
-  Vegas implied team totals, rest, blowout risk, home/away splits and injured-teammate usage. When the
-  line says “est.”, no sportsbook feed is connected and the line is an estimate of where books open;
-  check your book's actual number before betting. For entertainment and research only.</p>
+  <p class="note">__NOTE__</p>
 </main>
 <script>
 const D = __DATA__;
+const LBL = D.labels || {};
+const COLS = D.proj_cols || [["min","Min"],["PTS","Pts"],["REB","Reb"],["AST","Ast"],["3PM","3PM"],["PRA","PRA"]];
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const pct = x => (x*100).toFixed(0) + "%";
@@ -139,10 +138,10 @@ function pickHTML(p, showGame) {
         <div><span>Line</span><strong>${p.line}</strong></div>
         <div><span>Win prob</span><strong>${pct(p.prob)}</strong></div>
         <div><span>Edge</span><strong>${(p.edge*100).toFixed(1)}%</strong></div>
-        <div><span>Season avg</span><strong>${p.season_avg}</strong></div>
-        <div><span>L10 avg</span><strong>${p.l10_avg}</strong></div>
+        <div><span>${LBL.season||"Season avg"}</span><strong>${p.season_avg}</strong></div>
+        <div><span>${LBL.recent||"L10 avg"}</span><strong>${p.l10_avg}</strong></div>
         <div><span>Hit L5/L10</span><strong>${p.hit_l5} · ${p.hit_l10}</strong></div>
-        <div><span>Proj min</span><strong>${p.minutes}</strong></div>
+        <div><span>${LBL.min||"Proj min"}</span><strong>${p.minutes}</strong></div>
       </div>
       <div class="small">Line source: ${esc(p.line_source)}${p.price!=null?` · best price ${fmtPrice(p.price)}`:""} · season hit ${p.hit_season} · vs ${esc(p.opp)} ${p.vs_opp}</div>
       <ul class="why">${p.reasons.map(r=>`<li>${esc(r)}</li>`).join("")}</ul>
@@ -177,8 +176,8 @@ function renderGames() {
       ${inj.length ? `<div class="inj">${inj.map(i => `<span class="${i.level==="OUT"||i.level==="DOUBTFUL"?"o":"q"}">${esc(i.team)} ${esc(i.player)} (${esc(i.status)})</span>`).join(" · ")}</div>` : ""}
       ${picks.map(p => pickHTML(p)).join("")}
       <div class="gbody"><div class="sect" style="margin-left:14px">Projections</div><div class="scroll"><table>
-        <tr><th>Player</th><th>Min</th><th>Pts</th><th>Reb</th><th>Ast</th><th>3PM</th><th>PRA</th></tr>
-        ${g.projections.map(r => `<tr><td>${esc(r.player)} <span class="small">${esc(r.team)}${r.status!=="ACTIVE"?" · "+r.status[0]:""}</span></td><td>${r.min}</td><td>${r.PTS}</td><td>${r.REB}</td><td>${r.AST}</td><td>${r["3PM"]}</td><td>${r.PRA}</td></tr>`).join("")}
+        <tr><th>Player</th>${COLS.map(c=>`<th>${c[1]}</th>`).join("")}</tr>
+        ${g.projections.map(r => `<tr><td>${esc(r.player)} <span class="small">${esc(r.pos?r.pos+" · ":"")}${esc(r.team)}${r.status!=="ACTIVE"?" · "+r.status[0]:""}</span></td>${COLS.map(c=>`<td>${r[c[0]] ?? "–"}</td>`).join("")}</tr>`).join("")}
       </table></div></div>
     </div>`;
   }).join("");
@@ -231,6 +230,16 @@ renderBest(); renderGames(); renderAll(); renderRecord();
 """
 
 
-def render(payload: dict) -> str:
+NBA_NOTE = ("Projections blend per-minute production, projected minutes, opponent defense vs position, "
+            "Vegas implied team totals, rest, home/away splits and injured-teammate usage. When the line says "
+            "“est.”, no sportsbook line was available and the line is an estimate of where books open; check your "
+            "book's actual number before betting. For entertainment and research only.")
+
+
+def render(payload: dict, title: str = "NBA Player Props", note: str = NBA_NOTE,
+           switch: tuple[str, str] | None = None) -> str:
     data = json.dumps(payload).replace("</", "<\\/")
-    return TEMPLATE.replace("__DATE__", payload["date"]).replace("__DATA__", data)
+    sw = (f' <a class="badge" style="color:var(--blue);text-decoration:none" href="{switch[1]}">{switch[0]} →</a>'
+          if switch else "")
+    return (TEMPLATE.replace("__TITLE__", title).replace("__SWITCH__", sw).replace("__NOTE__", note)
+            .replace("__DATE__", payload.get("label") or payload["date"]).replace("__DATA__", data))

@@ -1,4 +1,4 @@
-# NBA Player Props Finder
+# NBA + NFL Player Props Finder
 
 Every day this app pulls the NBA schedule, injury report, Vegas lines and every player's game logs,
 projects each rotation player's stat line, and ranks the props with the biggest edge. The output is a
@@ -72,12 +72,34 @@ using the player's recent average. On GitHub: **Actions → Daily NBA props → 
 `backtest_date`. The result appears at `.../backtests/<date>.html` and is linked from the Track record tab.
 (Who sat out is taken from the box scores, which is slightly cleaner than the real pre-game injury report.)
 
+## NFL
+
+Same idea, weekly: `python -m nfl_props.main` (this week's upcoming games) and
+`python -m nfl_props.main --backtest-weeks 3 8`. The page lives at `/nfl/` on your site.
+
+The NFL model projects **opportunities × efficiency**:
+
+* **Opportunities:** pass attempts, carries and targets per game, weighted toward the last 4 games, with last season fading out.
+* **Game script:** underdogs throw more and favorites run more (from the Vegas spread).
+* **Injured teammates:** their targets and carries get redistributed. If the starting QB is out, the backup is projected and his receivers' efficiency is trimmed.
+* **Efficiency:** yards per attempt/carry/target, catch rate and TD rate, pulled hard toward position averages, because NFL samples are tiny.
+* **Defense vs position and scoring environment:** opponent defense against QBs, RBs, WRs and TEs, plus the implied team total.
+
+Props: passing yards/TDs/attempts/completions/INTs, rushing yards/carries, receptions, receiving yards,
+rush+rec yards, anytime TD. The workflow runs Wednesday, Thursday and Sunday morning (**Actions → Weekly NFL props**,
+with optional backtest weeks).
+
+Real NFL lines use the same `ODDS_API_KEY` but are **off by default**, because the free tier's 500 credits
+are used by the NBA. To turn them on, add a repo variable `NFL_ODDS` = `on`. Optionally set `NFL_ODDS_MARKETS`
+(default `player_pass_yds,player_reception_yds`, about 30 credits per week).
+
 ## Tests
 
 ```bash
 python tests/test_pipeline.py   # full run against a simulated league in ESPN's JSON format
 python tests/test_grading.py
 python tests/test_backtest.py
+python tests/test_nfl.py
 ```
 
 ## Data sources

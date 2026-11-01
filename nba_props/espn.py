@@ -240,29 +240,8 @@ class Espn:
 
     # --- injuries
     def injuries(self) -> dict[str, Injury]:
-        data = self.http.get_json(f"{SITE}/injuries", ttl=1200) or {}
-        out: dict[str, Injury] = {}
-        groups = data.get("injuries") or data.get("items") or []
-        for grp in groups:
-            team_id = str(grp.get("id") or (grp.get("team") or {}).get("id") or "")
-            for it in grp.get("injuries", [grp]):
-                ath = it.get("athlete") or {}
-                aid = str(ath.get("id") or "")
-                if not aid:
-                    m = re.search(r"/athletes/(\d+)", str(ath.get("links") or ath.get("$ref") or ""))
-                    aid = m.group(1) if m else ""
-                name = ath.get("displayName") or ath.get("fullName") or ""
-                if not (aid or name):
-                    continue
-                tid = str((it.get("team") or ath.get("team") or {}).get("id") or team_id)
-                detail = it.get("shortComment") or it.get("longComment") or ""
-                det = it.get("details") or {}
-                if isinstance(det, dict) and det.get("type"):
-                    detail = f"{det.get('type')} {det.get('detail', '')} - {detail}".strip(" -")
-                out[aid or name] = Injury(aid, name, tid, str(it.get("status") or ""), detail)
-        return out
+        return parse_injuries(self.http.get_json(f"{SITE}/injuries", ttl=1200) or {})
 
-    # --- rosters
     def roster(self, team_id: str) -> list[Player]:
         data = self.http.get_json(f"{SITE}/teams/{team_id}/roster", ttl=6 * 3600) or {}
         raw = data.get("athletes") or []
@@ -304,6 +283,29 @@ class Espn:
                     seen.add(g.event_id)
                     uniq.append(g)
             p.logs = uniq
+
+
+def parse_injuries(data: dict) -> dict[str, Injury]:
+    out: dict[str, Injury] = {}
+    groups = data.get("injuries") or data.get("items") or []
+    for grp in groups:
+        team_id = str(grp.get("id") or (grp.get("team") or {}).get("id") or "")
+        for it in grp.get("injuries", [grp]):
+            ath = it.get("athlete") or {}
+            aid = str(ath.get("id") or "")
+            if not aid:
+                m = re.search(r"/athletes/(\d+)", str(ath.get("links") or ath.get("$ref") or ""))
+                aid = m.group(1) if m else ""
+            name = ath.get("displayName") or ath.get("fullName") or ""
+            if not (aid or name):
+                continue
+            tid = str((it.get("team") or ath.get("team") or {}).get("id") or team_id)
+            detail = it.get("shortComment") or it.get("longComment") or ""
+            det = it.get("details") or {}
+            if isinstance(det, dict) and det.get("type"):
+                detail = f"{det.get('type')} {det.get('detail', '')} - {detail}".strip(" -")
+            out[aid or name] = Injury(aid, name, tid, str(it.get("status") or ""), detail)
+    return out
 
 
 # ----------------------------------------------------------------------------- gamelog parser

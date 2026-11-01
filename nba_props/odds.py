@@ -15,7 +15,8 @@ from dataclasses import dataclass
 
 from .http import Http
 
-BASE = "https://api.the-odds-api.com/v4/sports/basketball_nba"
+API = "https://api.the-odds-api.com/v4/sports"
+BASE = f"{API}/basketball_nba"
 MARKET_TO_STAT = {
     "player_points": "PTS", "player_rebounds": "REB", "player_assists": "AST",
     "player_threes": "3PM", "player_steals": "STL", "player_blocks": "BLK",
@@ -50,13 +51,16 @@ def american_to_prob(p: int | None) -> float | None:
 
 
 def fetch_props(http: Http, api_key: str, home_names: dict[str, str],
-                markets: str = DEFAULT_MARKETS) -> dict[tuple[str, str], PropLine]:
+                markets: str = DEFAULT_MARKETS, sport: str = "basketball_nba",
+                market_map: dict | None = None) -> dict[tuple[str, str], PropLine]:
     """Return {(normalized player name, STAT): PropLine} for tonight's games.
 
     home_names maps normalized home-team display name -> ESPN game id, used only
     to restrict requests to games on our slate.
     """
-    events = http.get_json(f"{BASE}/events", {"apiKey": api_key}, ttl=1800) or []
+    base = f"{API}/{sport}"
+    market_map = market_map or MARKET_TO_STAT
+    events = http.get_json(f"{base}/events", {"apiKey": api_key}, ttl=1800) or []
     out: dict[tuple[str, str], PropLine] = {}
     for ev in events:
         if norm_name((ev.get("home_team") or "x").split()[-1]) not in home_names:   # match on nickname ("LA" vs "Los Angeles")
@@ -64,7 +68,7 @@ def fetch_props(http: Http, api_key: str, home_names: dict[str, str],
         params = {"apiKey": api_key, "regions": "us", "markets": markets, "oddsFormat": "american"}
         sess = getattr(http, "session", None)
         if sess is not None:
-            r = sess.get(f"{BASE}/events/{ev['id']}/odds", params=params, timeout=20)
+            r = sess.get(f"{base}/events/{ev['id']}/odds", params=params, timeout=20)
             for h in ("x-requests-remaining", "x-requests-used", "x-requests-last"):
                 if r.headers.get(h) is not None:
                     USAGE[h.replace("x-requests-", "")] = r.headers[h]
@@ -73,18 +77,23 @@ def fetch_props(http: Http, api_key: str, home_names: dict[str, str],
                 break
             data = r.json() if r.ok else {}
         else:
-            data = http.get_json(f"{BASE}/events/{ev['id']}/odds", params, ttl=1800) or {}
+            data = http.get_json(f"{base}/events/{ev['id']}/odds", params, ttl=1800) or {}
         # collect per (player, stat): lines and prices across books
         acc: dict[tuple[str, str], dict] = {}
         for bk in data.get("bookmakers", []):
             for mk in bk.get("markets", []):
-                stat = MARKET_TO_STAT.get(mk.get("key"))
+                stat = market_map.get(mk.get("key"))
                 if not stat:
                     continue
                 for oc in mk.get("outcomes", []):
                     player = oc.get("description") or ""
-                    if oc.get("point") is None or not player:
+                    if not player:
                         continue
+                    if oc.get("point") is None:
+                        if (oc.get("name") or "").lower() in ("yes", "no"):     # anytime-TD style market
+                            oc = {**oc, "point": 0.5, "name": "Over" if oc["name"].lower() == "yes" else "Under"}
+                        else:
+                            continue
                     key = (norm_name(player), stat)
                     a = acc.setdefault(key, {"lines": [], "over": {}, "under": {}})
                     pt = float(oc["point"])
