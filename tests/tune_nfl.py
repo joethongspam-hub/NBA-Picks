@@ -6,6 +6,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 CACHE = sys.argv[1]
 CONFIGS = {
     "baseline": {},
+    "no_weather": {"weather": 0},
+    "wind_k_.015": {"wind_k": 0.015},
+    "wind_start_10": {"wind_start": 10.0},
     "absorb_0.4": {"absorb": 0.4},
     "vol_0.95": {"vol_scale": 0.95},
     "qb_shrink_0.4": {"qb_shrink": 0.4},
@@ -34,7 +37,7 @@ def one(name):
     M.log = lambda *a: None
     Mo.KNOBS.update(CONFIGS[name])
     t = tempfile.mkdtemp()
-    M.backtest_weeks(3, 7, out_dir=t + "/nfl", hist_dir=t + "/h", http=OfflineHttp(CACHE))
+    M.backtest_weeks(3, 8, out_dir=t + "/nfl", hist_dir=t + "/h", http=OfflineHttp(CACHE))
     d = json.loads(Path(t + "/nfl/backtests/season_props.json").read_text())
     allp = [p for p in d["all"] if p["result"] in ("WIN", "LOSS", "PUSH")]
     pos = [p for p in allp if p["edge"] >= .03]

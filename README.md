@@ -102,6 +102,10 @@ The NFL model projects **opportunities × efficiency**:
 * **Efficiency:** yards per attempt/carry/target, catch rate and TD rate, pulled hard toward position averages, because NFL samples are tiny.
 * **Defense vs position and scoring environment:** opponent defense against QBs, RBs, WRs and TEs, plus the implied team total.
 
+* **Weather:** domes and retractable roofs count as indoors. For outdoor games, the Open-Meteo game-time
+  forecast (free) is used: wind above about 12 mph trims passing efficiency (about 1% per mph, up to 20%) and shifts
+  volume toward the run; rain or snow trims passing about 4% more, and temperatures at or below 20°F about 2%.
+
 Props: passing yards/TDs/attempts/completions/INTs, rushing yards/carries, receptions, receiving yards,
 rush+rec yards, anytime TD. The workflow runs Wednesday, Thursday and Sunday morning (**Actions → Weekly NFL props**,
 with optional backtest weeks).
