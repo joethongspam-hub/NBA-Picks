@@ -177,7 +177,7 @@ def run(week: int | None = None, out_dir: str = "public/nfl", cache_dir: str = "
             for p in by_team.get(team.id, []):
                 i = injuries.get(p.id) or injuries.get(p.name)
                 prof = profiles.get(p.id)
-                if i and prof and (prof.opps["tgt"] + prof.opps["rush_att"] + prof.opps["pass_att"]) >= 3:
+                if i and i.level != "ACTIVE" and prof and (prof.opps["tgt"] + prof.opps["rush_att"] + prof.opps["pass_att"]) >= 3:
                     inj_list.append({"team": team.abbr, "player": f"{p.name} ({p.pos})", "status": i.status,
                                      "level": i.level, "detail": i.detail,
                                      "min": round(prof.opps["tgt"] + prof.opps["rush_att"] + prof.opps["pass_att"], 1)})

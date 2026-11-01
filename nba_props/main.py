@@ -236,7 +236,7 @@ def run(date: str | None = None, out_dir: str = "site", cache_dir: str = ".cache
         for team in (g.away, g.home):
             for p in by_team.get(team.id, []):
                 i = injuries.get(p.id) or injuries.get(p.name)
-                if i:
+                if i and i.level != "ACTIVE":
                     prof = profiles.get(p.id)
                     inj_list.append({"team": team.abbr, "player": p.name, "status": i.status,
                                      "level": i.level, "detail": i.detail,

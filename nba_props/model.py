@@ -303,6 +303,7 @@ def project_team(team_players: list[Player], team_id: str, team_abbr: str, opp_i
                  slate_tt_avg: float, today: datetime) -> list[Projection]:
     profiles = league.profiles
     inj = {p.id: injuries.get(p.id) or injuries.get(p.name) for p in team_players}
+    inj = {k: v for k, v in inj.items() if v and v.level != "ACTIVE"}       # "Active" = cleared to play
     recent5 = league.recent_events(team_id, 5)
     team_n = len(league.team_events.get(team_id, {}))
 

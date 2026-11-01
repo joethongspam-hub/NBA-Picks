@@ -275,7 +275,8 @@ class Projection:
 def project_team(team_players, team_id, team_abbr, opp_id, opp_abbr, game: Game, league: League,
                  injuries: dict[str, Injury], league_tt: float) -> list[Projection]:
     profs = league.profiles
-    inj = {p.id: injuries.get(p.id) or injuries.get(p.name) for p in team_players}
+    listed = {p.id: injuries.get(p.id) or injuries.get(p.name) for p in team_players}
+    inj = {k: v for k, v in listed.items() if v and v.level != "ACTIVE"}        # "Active" = cleared to play
     recent3 = league.recent_events(team_id, 3)
 
     def played_recent(p):
@@ -289,18 +290,16 @@ def project_team(team_players, team_id, team_abbr, opp_id, opp_abbr, game: Game,
     # starting QB = most attempts over the team's last 2 games
     qbs = [p for p in team_players if p.pos == "QB" and p.id in profs]
     recent2 = set(league.recent_events(team_id, 2))
-    recent4 = set(league.recent_events(team_id, 4))
+    qb_note = None
     starter = max(qbs, key=lambda q: sum(g.s["pass_att"] for g in q.logs if g.event_id in recent2), default=None)
     # A healthy QB returning from injury (on the report but not out, or recently
     # active) with more attempts per game than the stand-in gets the start back.
-    returning = [q for q in qbs if not is_out(q) and (inj.get(q.id) or any(g.event_id in recent4 for g in q.logs))
-                 and profs[q.id].opps["pass_att"] >= 20]
+    returning = [q for q in qbs if not is_out(q) and listed.get(q.id) and profs[q.id].opps["pass_att"] >= 20]
     if starter and not is_out(starter) and returning:
         best = max(returning, key=lambda q: profs[q.id].opps["pass_att"])
-        if best.id != starter.id and profs[best.id].opps["pass_att"] > profs[starter.id].opps["pass_att"] + 3 \
-                and inj.get(best.id):
+        if best.id != starter.id and profs[best.id].opps["pass_att"] > profs[starter.id].opps["pass_att"] + 3:
+            qb_note = f"{best.name} cleared to return as the starter"
             starter = best
-    qb_note = None
     qb_eff_f = 1.0
     starter_override = None
     if starter and is_out(starter):

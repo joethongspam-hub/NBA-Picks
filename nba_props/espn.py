@@ -306,9 +306,7 @@ def parse_injuries(data: dict) -> dict[str, Injury]:
             det = it.get("details") or {}
             if isinstance(det, dict) and det.get("type"):
                 detail = f"{det.get('type')} {det.get('detail', '')} - {detail}".strip(" -")
-            inj = Injury(aid, name, tid, str(it.get("status") or ""), detail)
-            if inj.level != "ACTIVE":
-                out[aid or name] = inj
+            out[aid or name] = Injury(aid, name, tid, str(it.get("status") or ""), detail)
     return out
 
 
