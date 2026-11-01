@@ -39,7 +39,37 @@ KNOBS = {
     "prev_weight": 0.4,      # weight of last-season games
     "qb_shrink": 1.0,        # extra multiplier on QB efficiency prior strength
     "qb_vol": 1.08,          # QB pass-attempt calibration
+    "weather": 1.0,          # 0 disables weather adjustments
+    "wind_start": 12.0,      # mph (10 m height) where wind starts to bite
+    "wind_k": 0.01,          # passing efficiency lost per mph above wind_start
 }
+
+
+def weather_factors(wx: dict | None) -> tuple[dict, str | None]:
+    """Multipliers for passing efficiency/volume and rushing volume from game weather."""
+    f = {"pass_eff": 1.0, "pass_vol": 1.0, "rush_vol": 1.0, "td": 1.0}
+    if not wx or wx.get("indoor") is not False or not KNOBS["weather"]:
+        return f, None
+    s = KNOBS["weather"]
+    notes = []
+    wind = max(wx.get("wind", 0), 0.75 * wx.get("gust", 0))
+    if wind > KNOBS["wind_start"]:
+        loss = min(0.2, KNOBS["wind_k"] * (wind - KNOBS["wind_start"])) * s
+        f["pass_eff"] *= 1 - loss
+        f["pass_vol"] *= 1 - loss / 3
+        f["rush_vol"] *= 1 + loss / 2
+        f["td"] *= 1 - loss / 2
+        notes.append(f"wind {wx.get('wind', 0):.0f} mph" + (f" (gusts {wx['gust']:.0f})" if wx.get("gust", 0) > wind + 5 else ""))
+    if wx.get("snow", 0) >= 0.1 or wx.get("precip", 0) >= 0.04:
+        f["pass_eff"] *= 1 - 0.04 * s
+        f["rush_vol"] *= 1 + 0.02 * s
+        notes.append("snow" if wx.get("snow", 0) >= 0.1 else "rain")
+    if wx.get("temp", 60) <= 20:
+        f["pass_eff"] *= 1 - 0.02 * s
+        notes.append(f"{wx['temp']}°F")
+    if not notes or f["pass_eff"] > 0.995:
+        return f, None
+    return f, f"Weather: {', '.join(notes)}: passing trimmed {(1 - f['pass_eff']) * 100:.0f}%"
 
 # Efficiency priors: (league-average value, prior strength in opportunities)
 PRIORS = {
@@ -273,7 +303,8 @@ class Projection:
 
 
 def project_team(team_players, team_id, team_abbr, opp_id, opp_abbr, game: Game, league: League,
-                 injuries: dict[str, Injury], league_tt: float) -> list[Projection]:
+                 injuries: dict[str, Injury], league_tt: float, wx: dict | None = None) -> list[Projection]:
+    wf, wx_note = weather_factors(wx)
     profs = league.profiles
     listed = {p.id: injuries.get(p.id) or injuries.get(p.name) for p in team_players}
     inj = {k: v for k, v in listed.items() if v and v.level != "ACTIVE"}        # "Active" = cleared to play
@@ -378,14 +409,14 @@ def project_team(team_players, team_id, team_abbr, opp_id, opp_abbr, game: Game,
             reasons.append(script_note)
         m, opps = {}, {}
         if pos == "QB":
-            att = (starter_override if starter_override else pr.opps["pass_att"]) * pass_vol * vs * KNOBS["qb_vol"]
+            att = (starter_override if starter_override else pr.opps["pass_att"]) * pass_vol * vs * KNOBS["qb_vol"] * wf["pass_vol"]
             ra = pr.opps["rush_att"] * vs
             d_y = league.dvp(opp_id, "QB", "pass_yds")
             d_t = league.dvp(opp_id, "QB", "pass_td")
             m["PASS_ATT"] = att
-            m["PASS_CMP"] = att * e["cmp_pct"] * qb_eff_f
-            m["PASS_YDS"] = att * e["ypa"] * d_y * env_y * qb_eff_f
-            m["PASS_TD"] = att * e["ptd"] * d_t * env_td * qb_eff_f
+            m["PASS_CMP"] = att * e["cmp_pct"] * qb_eff_f * wf["pass_eff"] ** 0.5
+            m["PASS_YDS"] = att * e["ypa"] * d_y * env_y * qb_eff_f * wf["pass_eff"]
+            m["PASS_TD"] = att * e["ptd"] * d_t * env_td * qb_eff_f * wf["td"]
             m["INT"] = att * e["int"] / qb_eff_f
             m["RUSH_YDS"] = ra * e["ypc"] * env_y
             m["RUSH_ATT"] = ra
@@ -396,8 +427,8 @@ def project_team(team_players, team_id, team_abbr, opp_id, opp_abbr, game: Game,
             if qb_note:
                 reasons.append(qb_note)
         else:
-            tgt = pr.opps["tgt"] * pass_vol * vs
-            ra = pr.opps["rush_att"] * rush_vol * vs
+            tgt = pr.opps["tgt"] * pass_vol * vs * wf["pass_vol"]
+            ra = pr.opps["rush_att"] * rush_vol * vs * wf["rush_vol"]
             add_t = vac["tgt"] * KNOBS["absorb"] * pr.opps["tgt"] / act_tot["tgt"]
             add_r = vac["rush_att"] * KNOBS["absorb"] * pr.opps["rush_att"] / act_tot["rush_att"]
             tgt += add_t
@@ -411,13 +442,13 @@ def project_team(team_players, team_id, team_abbr, opp_id, opp_abbr, game: Game,
             d_cy = league.dvp(opp_id, pos, "rec_yds")
             d_rec = league.dvp(opp_id, pos, "rec") if pos != "RB" else 1.0
             d_td = league.dvp(opp_id, pos, "td")
-            ypt = e["ypt"] * qb_eff_f
+            ypt = e["ypt"] * qb_eff_f * wf["pass_eff"]
             m["RUSH_ATT"] = ra
             m["RUSH_YDS"] = ra * e["ypc"] * d_ry * env_y
-            m["REC"] = tgt * e["catch"] * d_rec * (qb_eff_f ** 0.5)
+            m["REC"] = tgt * e["catch"] * d_rec * (qb_eff_f ** 0.5) * wf["pass_eff"] ** 0.5
             m["REC_YDS"] = tgt * ypt * d_cy * env_y
             m["RUSH_REC_YDS"] = m["RUSH_YDS"] + m["REC_YDS"]
-            m["ANY_TD"] = (ra * e["rtd"] + tgt * e["ctd"] * qb_eff_f) * d_td * env_td
+            m["ANY_TD"] = (ra * e["rtd"] + tgt * e["ctd"] * qb_eff_f * wf["td"]) * d_td * env_td
             opps = {"tgt": tgt, "car": ra}
             for s, d in (("RUSH_YDS", d_ry), ("REC_YDS", d_cy), ("REC", d_rec), ("ANY_TD", d_td)):
                 if abs(d - 1) >= 0.06:
@@ -427,6 +458,9 @@ def project_team(team_players, team_id, team_abbr, opp_id, opp_abbr, game: Game,
         if env_note:
             for s in ("PASS_YDS", "PASS_TD", "ANY_TD", "REC_YDS", "RUSH_YDS", "RUSH_REC_YDS"):
                 sr[s].append(env_note)
+        if wx_note:
+            for s in ("PASS_YDS", "PASS_CMP", "PASS_TD", "PASS_ATT", "REC", "REC_YDS", "RUSH_ATT", "RUSH_YDS"):
+                sr[s].insert(0, wx_note)
         sr["RUSH_REC_YDS"] = sr["RUSH_YDS"] + [x for x in sr["REC_YDS"] if x not in sr["RUSH_YDS"]]
         out.append(Projection(p, team_abbr, opp_abbr, game, m, opps, status, reasons, dict(sr), pr))
     return out

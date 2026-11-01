@@ -23,6 +23,7 @@ from nba_props.espn_props import NFL_TYPES, fetch_espn_props
 from nba_props.main import game_started
 
 from .espn_nfl import EspnNfl, season_for
+from .weather import game_weather
 from .model import KNOBS, League, build_profile, evaluate, project_team
 
 ET = ZoneInfo("America/New_York")
@@ -185,9 +186,10 @@ def run(week: int | None = None, out_dir: str = "public/nfl", cache_dir: str = "
     all_picks, game_info = [], []
     for g in games:
         projs = []
+        wx = game_weather(http, g) if g.id not in started else {"label": ""}
         for team, opp in ((g.home, g.away), (g.away, g.home)):
             projs += project_team(by_team.get(team.id, []), team.id, team.abbr, opp.id, opp.abbr, g,
-                                  league, injuries, league_tt)
+                                  league, injuries, league_tt, wx)
         if g.id not in started:
             for pr in projs:
                 all_picks += evaluate(pr, lines, season)
@@ -204,7 +206,7 @@ def run(week: int | None = None, out_dir: str = "public/nfl", cache_dir: str = "
         game_info.append({
             "id": g.id, "label": g.label, "home": g.home.abbr, "away": g.away.abbr,
             "time": g.date.astimezone(ET).strftime("%a %I:%M %p ET").replace(" 0", " "), "status": g.status,
-            "odds": g.odds_text, "total": g.total,
+            "odds": g.odds_text, "total": g.total, "weather": wx.get("label", ""),
             "tt_home": round(g.implied_total(g.home.id), 1) if g.total else None,
             "tt_away": round(g.implied_total(g.away.id), 1) if g.total else None,
             "injuries": inj_list,

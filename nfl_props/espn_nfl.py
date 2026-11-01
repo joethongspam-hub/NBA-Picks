@@ -112,6 +112,9 @@ class EspnNfl:
             st = (ev.get("status") or {}).get("type") or {}
             g = Game(str(ev.get("id")), _date(ev.get("date") or comp.get("date")) or datetime.now(),
                      teams["home"], teams["away"], status=st.get("description", "") or st.get("name", ""))
+            v = comp.get("venue") or {}
+            g.venue = {"name": v.get("fullName", ""), "indoor": v.get("indoor"),
+                       "neutral": bool(comp.get("neutralSite"))}
             Espn._parse_odds(g, comp.get("odds") or [])
             if g.total is None:
                 try:

@@ -170,7 +170,7 @@ function renderGames() {
     const vegas = g.total ? `${esc(g.odds)} · O/U ${g.total} · team totals ${g.away} ${g.tt_away} / ${g.home} ${g.tt_home}` : "No Vegas line posted yet";
     return `<div class="card">
       <div class="gh" onclick="this.parentNode.classList.toggle('open')">
-        <div><h3>${esc(g.away)} @ ${esc(g.home)}</h3><div class="meta">${esc(g.time)} · ${vegas}</div></div>
+        <div><h3>${esc(g.away)} @ ${esc(g.home)}</h3><div class="meta">${esc(g.time)} · ${vegas}${g.weather?" · "+esc(g.weather):""}</div></div>
         <div class="small">${picks.length} pick${picks.length===1?"":"s"} ▾</div>
       </div>
       ${inj.length ? `<div class="inj">${inj.map(i => `<span class="${i.level==="OUT"||i.level==="DOUBTFUL"?"o":"q"}">${esc(i.team)} ${esc(i.player)} (${esc(i.status)})</span>`).join(" · ")}</div>` : ""}
