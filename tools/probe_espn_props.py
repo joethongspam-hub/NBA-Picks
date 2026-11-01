@@ -27,7 +27,7 @@ for sport, league in (("basketball", "nba"), ("football", "nfl")):
     events = (sb or {}).get("events", []) if isinstance(sb, dict) else []
     info["scoreboard_status"] = st
     info["n_events"] = len(events)
-    for ev in events[:3]:
+    for ev in events[:1]:
         eid = ev["id"]
         e = {"id": eid, "name": ev.get("shortName"), "status": ev.get("status", {}).get("type", {}).get("description")}
         st, odds = get(f"{CORE}/{sport}/leagues/{league}/events/{eid}/competitions/{eid}/odds", limit=50)
@@ -39,13 +39,19 @@ for sport, league in (("basketball", "nba"), ("football", "nfl")):
                 provs.append({"id": p.get("id"), "name": p.get("name"),
                               "has_propBets_ref": "propBets" in json.dumps(it)[:100000]})
         e["providers"] = provs
-        tried = {str(p["id"]) for p in provs if p.get("id")} | {"58", "100", "38", "40", "41", "45", "1002", "2000", "25", "59"}
+        tried = {str(p["id"]) for p in provs if p.get("id")} | {"100"}
         e["propBets"] = {}
         for pid in sorted(tried):
             st, pb = get(f"{CORE}/{sport}/leagues/{league}/events/{eid}/competitions/{eid}/odds/{pid}/propBets", limit=1000)
             rec = {"status": st}
             if isinstance(pb, dict):
                 items = pb.get("items", [])
+                for page in range(2, (pb.get("pageCount") or 1) + 1):
+                    _, more = get(f"{CORE}/{sport}/leagues/{league}/events/{eid}/competitions/{eid}/odds/{pid}/propBets", limit=1000, page=page)
+                    if isinstance(more, dict):
+                        items += more.get("items", [])
+                if pid == "100" and not out.get(f"raw_{league}"):
+                    out[f"raw_{league}"] = items
                 rec["count"] = pb.get("count", len(items))
                 rec["pageCount"] = pb.get("pageCount")
                 rec["sample"] = items[:3]
@@ -53,7 +59,7 @@ for sport, league in (("basketball", "nba"), ("football", "nfl")):
                 for it in items:
                     t = (it.get("type") or {}).get("name") or (it.get("type") or {}).get("id") or "?"
                     types[t] = types.get(t, 0) + 1
-                rec["types"] = dict(sorted(types.items(), key=lambda kv: -kv[1])[:40])
+                rec["types"] = dict(sorted(types.items(), key=lambda kv: -kv[1]))
             else:
                 rec["body"] = str(pb)[:200]
             e["propBets"][pid] = rec
