@@ -60,6 +60,8 @@ class Injury:
     @property
     def level(self) -> str:
         s = self.status.lower()
+        if s.strip() == "active":
+            return "ACTIVE"
         if "out" in s or "suspen" in s or "injured reserve" in s:
             return "OUT"
         if "doubt" in s:
@@ -304,7 +306,9 @@ def parse_injuries(data: dict) -> dict[str, Injury]:
             det = it.get("details") or {}
             if isinstance(det, dict) and det.get("type"):
                 detail = f"{det.get('type')} {det.get('detail', '')} - {detail}".strip(" -")
-            out[aid or name] = Injury(aid, name, tid, str(it.get("status") or ""), detail)
+            inj = Injury(aid, name, tid, str(it.get("status") or ""), detail)
+            if inj.level != "ACTIVE":
+                out[aid or name] = inj
     return out
 
 

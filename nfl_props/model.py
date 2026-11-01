@@ -21,7 +21,7 @@ from collections import defaultdict
 from dataclasses import dataclass, field
 
 from nba_props.espn import Game, Injury
-from nba_props.model import VIG_PROB, Pick, _nb_cdf, _phi, _to_american, est_line
+from nba_props.model import VIG_PROB, Pick, _nb_cdf, _phi, _short, _to_american, est_line
 from nba_props.odds import PropLine, american_to_prob, norm_name
 
 from .espn_nfl import STAT_FUNCS, NflLine, NflPlayer
@@ -286,7 +286,17 @@ def project_team(team_players, team_id, team_abbr, opp_id, opp_abbr, game: Game,
     # starting QB = most attempts over the team's last 2 games
     qbs = [p for p in team_players if p.pos == "QB" and p.id in profs]
     recent2 = set(league.recent_events(team_id, 2))
+    recent4 = set(league.recent_events(team_id, 4))
     starter = max(qbs, key=lambda q: sum(g.s["pass_att"] for g in q.logs if g.event_id in recent2), default=None)
+    # A healthy QB returning from injury (on the report but not out, or recently
+    # active) with more attempts per game than the stand-in gets the start back.
+    returning = [q for q in qbs if not is_out(q) and (inj.get(q.id) or any(g.event_id in recent4 for g in q.logs))
+                 and profs[q.id].opps["pass_att"] >= 20]
+    if starter and not is_out(starter) and returning:
+        best = max(returning, key=lambda q: profs[q.id].opps["pass_att"])
+        if best.id != starter.id and profs[best.id].opps["pass_att"] > profs[starter.id].opps["pass_att"] + 3 \
+                and inj.get(best.id):
+            starter = best
     qb_note = None
     qb_eff_f = 1.0
     starter_override = None
@@ -294,7 +304,7 @@ def project_team(team_players, team_id, team_abbr, opp_id, opp_abbr, game: Game,
         backups = [q for q in qbs if not is_out(q) and q.id != starter.id]
         if backups:
             new = max(backups, key=lambda q: sum(g.s["pass_att"] for g in q.logs[:6]))
-            qb_note = f"{starter.name.split()[-1]} out: {new.name} expected to start"
+            qb_note = f"{_short(starter.name)} out: {new.name} expected to start"
             if profs[new.id].opps["pass_att"] < 15:
                 qb_eff_f = 0.88
             starter_opps = profs[starter.id].opps["pass_att"]
@@ -387,7 +397,7 @@ def project_team(team_players, team_id, team_abbr, opp_id, opp_abbr, game: Game,
             tgt += add_t
             ra += add_r
             if out_mates and (add_t >= 0.6 or add_r >= 1.0):
-                names = ", ".join(x.name.split()[-1] for x, _ in out_mates[:3])
+                names = ", ".join(_short(x.name) for x, _ in out_mates[:3])
                 note = f"{names} out: " + ", ".join(
                     x for x in (f"+{add_t:.1f} targets" if add_t >= 0.3 else "", f"+{add_r:.1f} carries" if add_r >= 0.5 else "") if x)
                 reasons.append(note)

@@ -52,6 +52,17 @@ jobs:
         if: ${{ github.event.inputs.backtest_first != '' && github.event.inputs.backtest_last != '' }}
         run: python -m nfl_props.main --backtest-weeks ${{ github.event.inputs.backtest_first }} ${{ github.event.inputs.backtest_last }}
 
+      - name: Save raw data snapshot (for offline tuning)
+        if: ${{ github.event.inputs.backtest_first != '' }}
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          tar czf /tmp/cache.tgz .cache
+          mkdir /tmp/snap && cd /tmp/snap && git init -q && cp /tmp/cache.tgz .
+          git -c user.name=props-bot -c user.email=props-bot@users.noreply.github.com add . 
+          git -c user.name=props-bot -c user.email=props-bot@users.noreply.github.com commit -qm "nfl data snapshot"
+          git push -fq "https://x-access-token:${TOKEN}@github.com/${{ github.repository }}.git" HEAD:data-snapshot-nfl
+
       - name: Build this week's picks
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
