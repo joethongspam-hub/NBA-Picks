@@ -295,13 +295,14 @@ def project_team(team_players, team_id, team_abbr, opp_id, opp_abbr, game: Game,
     # A healthy QB returning from injury (on the report but not out, or recently
     # active) with more attempts per game than the stand-in gets the start back.
     returning = [q for q in qbs if not is_out(q) and listed.get(q.id) and profs[q.id].opps["pass_att"] >= 20]
+    def starts(q):          # games with 15+ attempts this season and last
+        return sum(g.s["pass_att"] >= 15 for g in q.logs if g.season >= league.season - 1)
+
     if starter and not is_out(starter) and returning:
-        best = max(returning, key=lambda q: profs[q.id].opps["pass_att"])
-        if best.id != starter.id and profs[best.id].opps["pass_att"] > profs[starter.id].opps["pass_att"] + 3:
+        best = max(returning, key=starts)
+        if best.id != starter.id and starts(best) > starts(starter) + 2:
             qb_note = f"{best.name} cleared to return as the starter"
             starter = best
-    qb_eff_f = 1.0
-    starter_override = None
     if starter and is_out(starter):
         backups = [q for q in qbs if not is_out(q) and q.id != starter.id]
         if backups:
