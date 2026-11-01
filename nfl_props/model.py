@@ -291,10 +291,13 @@ def project_team(team_players, team_id, team_abbr, opp_id, opp_abbr, game: Game,
     qbs = [p for p in team_players if p.pos == "QB" and p.id in profs]
     recent2 = set(league.recent_events(team_id, 2))
     qb_note = None
+    qb_eff_f = 1.0
+    starter_override = None
     starter = max(qbs, key=lambda q: sum(g.s["pass_att"] for g in q.logs if g.event_id in recent2), default=None)
-    # A healthy QB returning from injury (on the report but not out, or recently
-    # active) with more attempts per game than the stand-in gets the start back.
+    # A QB on the report but cleared to play (e.g. back from injury) who has
+    # clearly more starts than the stand-in gets the job back.
     returning = [q for q in qbs if not is_out(q) and listed.get(q.id) and profs[q.id].opps["pass_att"] >= 20]
+
     def starts(q):          # games with 15+ attempts this season and last
         return sum(g.s["pass_att"] >= 15 for g in q.logs if g.season >= league.season - 1)
 
