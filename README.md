@@ -55,7 +55,9 @@ The first run loads about 400 players' game logs, which takes a minute or two. A
 3. (Optional) **Settings → Secrets → Actions →** add `ODDS_API_KEY`.
 4. **Actions → Daily NBA props → Run workflow** once to test it.
 
-It then runs at 11 AM and 5 PM Central, publishes the page to `https://<you>.github.io/<repo>/`,
+It then runs at 11 AM, 3:30 PM (real lines) and 5:45 PM Central. **Picks lock at tip-off**: once a game starts,
+later runs keep its pregame picks (and never use live in-game lines), so the track record only grades bets you could
+actually have made. It publishes the page to `https://<you>.github.io/<repo>/`,
 and saves each day's picks in `history/` so the **Track record** tab can grade them the next day.
 
 ## Backtest a past date

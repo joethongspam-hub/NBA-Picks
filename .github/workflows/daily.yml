@@ -2,10 +2,10 @@ name: Daily NBA props
 
 on:
   schedule:
-    # 11:00 AM and 5:00 PM Central (standard time). The second run catches
-    # late injury news and posted lines before most tip-offs.
-    - cron: "0 17 * * *"
-    - cron: "0 23 * * *"
+    # Times are UTC. Games lock at tip-off, so later runs never touch started games.
+    - cron: "0 17 * * *"     # 11:00 AM CT: morning picks (estimated lines)
+    - cron: "30 21 * * *"    # 3:30 PM CT: main pregame run, pulls real sportsbook lines
+    - cron: "45 23 * * *"    # 5:45 PM CT: late injury news for games not yet started (reuses saved lines)
   workflow_dispatch:
     inputs:
       backtest_date:
@@ -51,9 +51,9 @@ jobs:
 
       - name: Build today's picks
         env:
-          # Pull real lines once a day (5 PM run + manual runs) to stay inside the
+          # Pull real lines once a day (3:30 PM run + manual runs) to stay inside the
           # free tier's 500 credits/month.
-          ODDS_API_KEY: ${{ github.event.schedule == '0 17 * * *' && '' || secrets.ODDS_API_KEY }}
+          ODDS_API_KEY: ${{ (github.event_name == 'workflow_dispatch' || github.event.schedule == '30 21 * * *') && secrets.ODDS_API_KEY || '' }}
           ODDS_MARKETS: ${{ vars.ODDS_MARKETS }}
         run: |
           python -m nba_props.main --out public --history history

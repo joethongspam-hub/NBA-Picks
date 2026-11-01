@@ -25,6 +25,16 @@ from .report import render
 ET = ZoneInfo("America/New_York")
 
 
+def game_started(g, now) -> bool:
+    """True once a game has tipped (by status, or by clock as a fallback)."""
+    s = (g.status or "").lower()
+    if any(x in s for x in ("progress", "half", "end of", "final", "overtime", "delayed")):
+        return True
+    if "postponed" in s or "canceled" in s:
+        return False
+    return now is not None and now >= g.date
+
+
 def log(*a):
     print(*a, file=sys.stderr, flush=True)
 
@@ -205,12 +215,26 @@ def run(date: str | None = None, out_dir: str = "site", cache_dir: str = ".cache
     tts = [t for g in games for tid in (g.home.id, g.away.id) if (t := g.implied_total(tid))]
     slate_tt = sum(tts) / len(tts) if tts else 0.0
 
+    # Lock games at tip-off: started games keep the picks saved before tip and
+    # get no new picks or odds (the odds feed returns live in-game lines).
+    use_clock = day_s == now_et.strftime("%Y-%m-%d")
+    started = set() if backtest else {g.id for g in games if game_started(g, now_et if use_clock else None)}
+    upcoming = [g for g in games if g.id not in started]
+    pick_file = hist / "picks" / f"{day_s}.json"
+    locked = []
+    if not backtest and pick_file.exists():
+        locked = [dict(p, locked=True) for p in json.loads(pick_file.read_text()) if p["game_id"] in started]
+    lines_file = hist / "lines" / f"{day_s}.json"
     if not backtest:
         lines = {}
-    if odds_key and games:
+        if lines_file.exists():          # lines saved by an earlier run today (pregame)
+            lines = {(r["name"], r["stat"]): PropLine(r["line"], r["over"], r["under"], r["books"])
+                     for r in json.loads(lines_file.read_text())}
+    if odds_key and upcoming:
         log("   Fetching sportsbook prop lines")
         try:
-            lines = fetch_props(http, odds_key, {norm_name(g.home.name.split()[-1]): g.id for g in games}, odds_markets)
+            fresh = fetch_props(http, odds_key, {norm_name(g.home.name.split()[-1]): g.id for g in upcoming}, odds_markets)
+            lines.update(fresh)
         except Exception as e:
             log(f"   odds fetch failed, falling back to estimated lines: {e}")
         if lines:
@@ -230,8 +254,9 @@ def run(date: str | None = None, out_dir: str = "site", cache_dir: str = ".cache
         for team, opp in ((g.home, g.away), (g.away, g.home)):
             game_projs += project_team(by_team.get(team.id, []), team.id, team.abbr, opp.id, opp.abbr,
                                        g, league, injuries, slate_tt, day)
-        for pr in game_projs:
-            all_picks += evaluate(pr, stats, lines, season)
+        if g.id not in started:
+            for pr in game_projs:
+                all_picks += evaluate(pr, stats, lines, season)
         inj_list = []
         for team in (g.away, g.home):
             for p in by_team.get(team.id, []):
@@ -268,15 +293,26 @@ def run(date: str | None = None, out_dir: str = "site", cache_dir: str = ".cache
                 pk.result = "PUSH" if pk.actual == pk.line else \
                     ("WIN" if (pk.actual > pk.line) == (pk.side == "OVER") else "LOSS")
     top, by_game = best_picks(all_picks)
-    log(f"[5/6] {len(all_picks)} props evaluated, {len(top)} top picks")
+    log(f"[5/6] {len(all_picks)} props evaluated, {len(top)} top picks, {len(locked)} locked")
 
-    # save today's shown picks for tomorrow's grading
+    # save today's shown picks for grading: locked (started games) + fresh (upcoming)
     shown = {(p.player_id, p.stat, p.side): p.to_dict() for p in top}
     for ps in by_game.values():
         for p in ps:
             shown[(p.player_id, p.stat, p.side)] = p.to_dict()
+    for p in locked:
+        shown[(p["player_id"], p["stat"], p["side"])] = p
     if shown and not backtest:
-        (hist / "picks" / f"{day_s}.json").write_text(json.dumps(list(shown.values()), indent=1))
+        pick_file.write_text(json.dumps(list(shown.values()), indent=1))
+    top_d = sorted([p.to_dict() for p in top] + locked, key=lambda p: -p["score"])
+    seen_pl, top_out = set(), []
+    for p in top_d:
+        if p["player_id"] not in seen_pl and len(top_out) < 15:
+            top_out.append(p)
+            seen_pl.add(p["player_id"])
+    by_game_out = {gid: [p.to_dict() for p in ps] for gid, ps in by_game.items()}
+    for p in locked:
+        by_game_out.setdefault(p["game_id"], []).append(p)
 
     log("[6/6] Grading + writing report")
     if backtest:
@@ -290,8 +326,8 @@ def run(date: str | None = None, out_dir: str = "site", cache_dir: str = ".cache
         "line_mode": "sportsbook" if lines else "estimated",
         "odds_usage": dict(USAGE),
         "games": game_info,
-        "top": [p.to_dict() for p in top],
-        "by_game": {gid: [p.to_dict() for p in ps] for gid, ps in by_game.items()},
+        "top": top_out,
+        "by_game": by_game_out,
         "all": [p.to_dict() for p in sorted(all_picks, key=lambda p: -p.score)],
         "record": record,
         "backtest": backtest,

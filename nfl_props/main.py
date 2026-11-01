@@ -19,6 +19,8 @@ from nba_props.model import best_picks
 from nba_props.odds import USAGE, PropLine, fetch_props, norm_name
 from nba_props.report import render
 
+from nba_props.main import game_started
+
 from .espn_nfl import EspnNfl, season_for
 from .model import KNOBS, League, build_profile, evaluate, project_team
 
@@ -93,11 +95,8 @@ def run(week: int | None = None, out_dir: str = "public/nfl", cache_dir: str = "
 
     if week is None:
         wk, games = espn.week()
-        upcoming = [g for g in games if not any(x in g.status.lower() for x in ("final", "progress", "half"))]
-        if not upcoming and wk:
+        if wk and games and all(game_started(g, now) for g in games):     # week is over: move on
             wk, games = espn.week(season, wk + 1)
-            upcoming = games
-        games = upcoming
     else:
         wk, games = espn.week(season, week)
         wk = wk or week
@@ -148,10 +147,19 @@ def run(week: int | None = None, out_dir: str = "public/nfl", cache_dir: str = "
     tts = [t for g in games for tid in (g.home.id, g.away.id) if (t := g.implied_total(tid))]
     league_tt = sum(tts) / len(tts) if tts else 22.5
 
-    if odds_key and games and not backtest:
+    # Lock games at kickoff: keep the picks saved before kickoff, no new picks/odds.
+    started = set() if backtest else {g.id for g in games if game_started(g, now if week is None else None)}
+    upcoming = [g for g in games if g.id not in started]
+    pick_file = hist / "picks" / f"{key}.json"
+    prior = json.loads(pick_file.read_text()) if (pick_file.exists() and not backtest) else {}
+    locked = [dict(p, locked=True) for p in prior.get("picks", []) if p["game_id"] in started]
+    if not backtest and (hist / "lines" / f"{key}.json").exists():
+        lines = {(r["name"], r["stat"]): PropLine(r["line"], r["over"], r["under"], r["books"])
+                 for r in json.loads((hist / "lines" / f"{key}.json").read_text())}
+    if odds_key and upcoming and not backtest:
         try:
-            lines = fetch_props(http, odds_key, {norm_name(g.home.name.split()[-1]): g.id for g in games},
-                                markets, sport="americanfootball_nfl", market_map=NFL_MARKETS)
+            lines.update(fetch_props(http, odds_key, {norm_name(g.home.name.split()[-1]): g.id for g in upcoming},
+                                     markets, sport="americanfootball_nfl", market_map=NFL_MARKETS))
         except Exception as e:
             log(f"   odds fetch failed: {e}")
         if lines:
@@ -170,8 +178,9 @@ def run(week: int | None = None, out_dir: str = "public/nfl", cache_dir: str = "
         for team, opp in ((g.home, g.away), (g.away, g.home)):
             projs += project_team(by_team.get(team.id, []), team.id, team.abbr, opp.id, opp.abbr, g,
                                   league, injuries, league_tt)
-        for pr in projs:
-            all_picks += evaluate(pr, lines, season)
+        if g.id not in started:
+            for pr in projs:
+                all_picks += evaluate(pr, lines, season)
         inj_list = []
         for team in (g.away, g.home):
             for p in by_team.get(team.id, []):
@@ -211,7 +220,18 @@ def run(week: int | None = None, out_dir: str = "public/nfl", cache_dir: str = "
 
     top, by_game = best_picks(all_picks)
     shown = {(p.player_id, p.stat): p.to_dict() for p in top + [x for v in by_game.values() for x in v]}
-    log(f"   {len(all_picks)} props evaluated, {len(top)} top picks")
+    for p in locked:
+        shown[(p["player_id"], p["stat"])] = p
+    top_d = sorted([p.to_dict() for p in top] + locked, key=lambda p: -p["score"])
+    seen_pl, top_out = set(), []
+    for p in top_d:
+        if p["player_id"] not in seen_pl and len(top_out) < 15:
+            top_out.append(p)
+            seen_pl.add(p["player_id"])
+    by_game_out = {gid: [p.to_dict() for p in ps] for gid, ps in by_game.items()}
+    for p in locked:
+        by_game_out.setdefault(p["game_id"], []).append(p)
+    log(f"   {len(all_picks)} props evaluated, {len(top)} top picks, {len(locked)} locked")
 
     if backtest:
         sh = list(shown.values())
@@ -229,14 +249,14 @@ def run(week: int | None = None, out_dir: str = "public/nfl", cache_dir: str = "
             r.setdefault("date", key)
     else:
         if shown:
-            (hist / "picks" / f"{key}.json").write_text(json.dumps({"made": now.isoformat(), "picks": list(shown.values())}, indent=1))
+            pick_file.write_text(json.dumps({"made": prior.get("made", now.isoformat()), "picks": list(shown.values())}, indent=1))
         record = grade_history(hist, {p.id: p for p in players}, now)
 
     payload = {
         "date": key, "label": f"Week {wk} · {season}", "generated": now.strftime("%b %d, %I:%M %p ET").replace(" 0", " "),
         "season": season, "line_mode": "sportsbook" if lines else "estimated", "backtest": backtest,
-        "games": game_info, "top": [p.to_dict() for p in top],
-        "by_game": {gid: [p.to_dict() for p in ps] for gid, ps in by_game.items()},
+        "games": game_info, "top": top_out if not backtest else [p.to_dict() for p in top],
+        "by_game": by_game_out if not backtest else {gid: [p.to_dict() for p in ps] for gid, ps in by_game.items()},
         "all": [p.to_dict() for p in sorted(all_picks, key=lambda p: -p.score)],
         "record": record, "proj_cols": PROJ_COLS, "labels": LABELS,
         "backtests": sorted((f.stem for f in (out / "backtests").glob("*.html")), reverse=True)

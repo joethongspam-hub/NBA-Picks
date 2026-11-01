@@ -126,7 +126,7 @@ function pickHTML(p, showGame) {
     <div class="row">
       <div class="grade g${p.grade}">${p.grade}</div>
       <div class="who"><div class="name">${esc(p.player)}</div>
-        <div class="meta">${esc(p.team)} vs ${esc(p.opp)}${showGame ? "" : ""} · ${p.stat} · L10 ${p.hit_l10}${p.status!=="ACTIVE"?` · <span style="color:var(--gold)">${p.status}</span>`:""}</div></div>
+        <div class="meta">${esc(p.team)} vs ${esc(p.opp)}${showGame ? "" : ""} · ${p.stat} · L10 ${p.hit_l10}${p.status!=="ACTIVE"?` · <span style="color:var(--gold)">${p.status}</span>`:""}${p.locked?` · <span title="locked at tip-off">locked</span>`:""}</div></div>
       <div class="bet"><div class="side ${p.side}">${p.side==="OVER"?"O":"U"} ${p.line}</div>
         <div class="small">proj ${p.projection} · ${pct(p.prob)}</div>
         ${p.result ? `<div class="res ${p.result}">${p.actual!=null?"actual "+p.actual+" · ":""}${p.result}</div>` : ""}</div>
