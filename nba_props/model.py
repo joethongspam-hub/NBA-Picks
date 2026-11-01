@@ -484,7 +484,7 @@ def evaluate(proj: Projection, stats: list[str], lines: dict[tuple[str, str], Pr
         real = lines.get((norm_name(p.name), s))
         book_view = 0.55 * prof.l10_avg[s] + 0.45 * prof.season_avg[s]
         if real:
-            line, src = real.line, f"{real.books} books"
+            line, src = real.line, real.label
         else:
             if book_view < 0.7:
                 continue

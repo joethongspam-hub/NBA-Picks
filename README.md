@@ -27,6 +27,11 @@ how steady his minutes are, injury status), and grades are A ≥ 9, B ≥ 6, C �
 
 ## Lines: estimated vs. real
 
+**DraftKings lines are pulled free from ESPN on every run** (no key needed) for points, rebounds, assists,
+threes and the combos (NBA), and passing/rushing/receiving props plus anytime TD (NFL) when ESPN publishes them.
+Props without a DraftKings line fall back to the options below.
+
+
 * **No key (default):** the app estimates where a book would open (a mix of the last 10 games and the
   season average, rounded to x.5) and prices it the way a book would. Edges then come only from what
   the market's simple average misses: matchups, injuries, pace, rest. The page shows **est. lines**.

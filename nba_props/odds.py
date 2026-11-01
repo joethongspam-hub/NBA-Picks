@@ -36,6 +36,11 @@ class PropLine:
     over_price: int | None
     under_price: int | None
     books: int
+    source: str = ""
+
+    @property
+    def label(self) -> str:
+        return self.source or f"{self.books} books"
 
 
 def norm_name(s: str) -> str:

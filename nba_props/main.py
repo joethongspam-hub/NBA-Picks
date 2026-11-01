@@ -19,6 +19,7 @@ from .espn import Espn, Injury, season_for
 from .http import Http
 from .model import (DEFAULT_PROP_STATS, League, best_picks, build_profile, evaluate,
                     project_team)
+from .espn_props import NBA_TYPES, fetch_espn_props
 from .odds import DEFAULT_MARKETS, USAGE, PropLine, fetch_props, norm_name
 from .report import render
 
@@ -206,7 +207,7 @@ def run(date: str | None = None, out_dir: str = "site", cache_dir: str = ".cache
         odds_key = None
         saved = hist / "lines" / f"{day_s}.json"     # real lines saved on the night, if any
         if saved.exists():
-            lines = {(r["name"], r["stat"]): PropLine(r["line"], r["over"], r["under"], r["books"])
+            lines = {(r["name"], r["stat"]): PropLine(r["line"], r["over"], r["under"], r["books"], r.get("source", ""))
                      for r in json.loads(saved.read_text())}
 
     log("[4/6] Building profiles, defense-vs-position, projections")
@@ -228,22 +229,32 @@ def run(date: str | None = None, out_dir: str = "site", cache_dir: str = ".cache
     if not backtest:
         lines = {}
         if lines_file.exists():          # lines saved by an earlier run today (pregame)
-            lines = {(r["name"], r["stat"]): PropLine(r["line"], r["over"], r["under"], r["books"])
+            lines = {(r["name"], r["stat"]): PropLine(r["line"], r["over"], r["under"], r["books"], r.get("source", ""))
                      for r in json.loads(lines_file.read_text())}
-    if odds_key and upcoming:
-        log("   Fetching sportsbook prop lines")
+    if upcoming and not backtest:
+        try:      # free DraftKings lines via ESPN
+            dk = fetch_espn_props(http, [g.id for g in upcoming], "basketball", "nba", NBA_TYPES,
+                                  {p.id: p.name for p in players})
+            for v in dk.values():
+                v.source = "DraftKings"
+            lines.update(dk)
+            log(f"   DraftKings lines via ESPN: {len(dk)}")
+        except Exception as e:
+            log(f"   ESPN prop lines failed: {e}")
+    if odds_key and upcoming:              # optional: multi-book consensus (costs credits)
+        log("   Fetching sportsbook prop lines (Odds API)")
+        fresh = {}
         try:
             fresh = fetch_props(http, odds_key, {norm_name(g.home.name.split()[-1]): g.id for g in upcoming}, odds_markets)
             lines.update(fresh)
         except Exception as e:
-            log(f"   odds fetch failed, falling back to estimated lines: {e}")
-        if lines:
-            (hist / "lines").mkdir(parents=True, exist_ok=True)
-            (hist / "lines" / f"{day_s}.json").write_text(json.dumps(
-                [{"name": k[0], "stat": k[1], "line": v.line, "over": v.over_price, "under": v.under_price,
-                  "books": v.books} for k, v in lines.items()]))
-        (hist / "odds_usage.json").write_text(json.dumps(
-            {"date": day_s, "props_found": len(lines), **USAGE}, indent=1))
+            log(f"   odds fetch failed: {e}")
+        (hist / "odds_usage.json").write_text(json.dumps({"date": day_s, "props_found": len(fresh), **USAGE}, indent=1))
+    if lines and not backtest:
+        lines_file.parent.mkdir(parents=True, exist_ok=True)
+        lines_file.write_text(json.dumps(
+            [{"name": k[0], "stat": k[1], "line": v.line, "over": v.over_price, "under": v.under_price,
+              "books": v.books, "source": v.source} for k, v in lines.items()]))
 
     by_team = {}
     for p in players:

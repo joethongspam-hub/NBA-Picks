@@ -453,7 +453,7 @@ def evaluate(proj: Projection, lines: dict[tuple[str, str], PropLine], season: i
         view = 0.4 * pr.l4_avg[s] + 0.6 * pr.season_avg[s]
         real = lines.get((norm_name(p.name), s))
         if real:
-            line, src = real.line, f"{real.books} books"
+            line, src = real.line, real.label
         else:
             if view < MIN_VIEW.get(s, 1):
                 continue
@@ -461,7 +461,11 @@ def evaluate(proj: Projection, lines: dict[tuple[str, str], PropLine], season: i
             src = "est."
         cv = pr.cv.get(s, .6)
         over_m, under_m = prob_over_under(s, mu, cv, line)
-        if real:
+        if real and real.under_price is None:
+            # one-sided market (anytime TD "yes"): strip ~8% vig, under not bettable
+            io = american_to_prob(real.over_price) or VIG_PROB
+            fair_o, iu = io * 0.92, 1.0
+        elif real:
             io = american_to_prob(real.over_price) or VIG_PROB
             iu = american_to_prob(real.under_price) or VIG_PROB
             fair_o = io / (io + iu)

@@ -19,6 +19,7 @@ from nba_props.model import best_picks
 from nba_props.odds import USAGE, PropLine, fetch_props, norm_name
 from nba_props.report import render
 
+from nba_props.espn_props import NFL_TYPES, fetch_espn_props
 from nba_props.main import game_started
 
 from .espn_nfl import EspnNfl, season_for
@@ -127,7 +128,7 @@ def run(week: int | None = None, out_dir: str = "public/nfl", cache_dir: str = "
             p.logs = [gl for gl in p.logs if gl.date.astimezone(ET).strftime("%Y-%m-%d") < cutoff]
         saved = hist / "lines" / f"{key}.json"
         if saved.exists():
-            lines = {(r["name"], r["stat"]): PropLine(r["line"], r["over"], r["under"], r["books"])
+            lines = {(r["name"], r["stat"]): PropLine(r["line"], r["over"], r["under"], r["books"], r.get("source", ""))
                      for r in json.loads(saved.read_text())}
 
     profiles = {p.id: pr for p in players if (pr := build_profile(p, season))}
@@ -154,20 +155,29 @@ def run(week: int | None = None, out_dir: str = "public/nfl", cache_dir: str = "
     prior = json.loads(pick_file.read_text()) if (pick_file.exists() and not backtest) else {}
     locked = [dict(p, locked=True) for p in prior.get("picks", []) if p["game_id"] in started]
     if not backtest and (hist / "lines" / f"{key}.json").exists():
-        lines = {(r["name"], r["stat"]): PropLine(r["line"], r["over"], r["under"], r["books"])
+        lines = {(r["name"], r["stat"]): PropLine(r["line"], r["over"], r["under"], r["books"], r.get("source", ""))
                  for r in json.loads((hist / "lines" / f"{key}.json").read_text())}
+    if upcoming and not backtest:
+        try:      # free DraftKings lines via ESPN
+            dk = fetch_espn_props(http, [g.id for g in upcoming], "football", "nfl", NFL_TYPES,
+                                  {p.id: p.name for p in players})
+            for v in dk.values():
+                v.source = "DraftKings"
+            lines.update(dk)
+            log(f"   DraftKings lines via ESPN: {len(dk)}")
+        except Exception as e:
+            log(f"   ESPN prop lines failed: {e}")
     if odds_key and upcoming and not backtest:
         try:
             lines.update(fetch_props(http, odds_key, {norm_name(g.home.name.split()[-1]): g.id for g in upcoming},
                                      markets, sport="americanfootball_nfl", market_map=NFL_MARKETS))
         except Exception as e:
             log(f"   odds fetch failed: {e}")
-        if lines:
-            (hist / "lines").mkdir(parents=True, exist_ok=True)
-            (hist / "lines" / f"{key}.json").write_text(json.dumps(
-                [{"name": k[0], "stat": k[1], "line": v.line, "over": v.over_price, "under": v.under_price,
-                  "books": v.books} for k, v in lines.items()]))
-        (hist / "odds_usage.json").write_text(json.dumps({"week": key, "props_found": len(lines), **USAGE}, indent=1))
+    if lines and not backtest:
+        (hist / "lines").mkdir(parents=True, exist_ok=True)
+        (hist / "lines" / f"{key}.json").write_text(json.dumps(
+            [{"name": k[0], "stat": k[1], "line": v.line, "over": v.over_price, "under": v.under_price,
+              "books": v.books, "source": v.source} for k, v in lines.items()]))
 
     by_team = {}
     for p in players:
