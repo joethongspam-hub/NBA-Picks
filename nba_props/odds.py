@@ -83,9 +83,12 @@ def fetch_props(http: Http, api_key: str, home_names: dict[str, str],
             data = r.json() if r.ok else {}
         else:
             data = http.get_json(f"{base}/events/{ev['id']}/odds", params, ttl=1800) or {}
-        # collect per (player, stat): lines and prices across books
-        acc: dict[tuple[str, str], dict] = {}
+        # Per book, a player can have several points (main + alternates). The main
+        # line is the point whose over/under prices are closest to even; then take
+        # the consensus (median) of the books' main lines.
+        per_book: dict[tuple[str, str], list[tuple[float, int | None, int | None]]] = {}
         for bk in data.get("bookmakers", []):
+            book_sides: dict[tuple[str, str], dict[float, dict]] = {}
             for mk in bk.get("markets", []):
                 stat = market_map.get(mk.get("key"))
                 if not stat:
@@ -99,20 +102,23 @@ def fetch_props(http: Http, api_key: str, home_names: dict[str, str],
                             oc = {**oc, "point": 0.5, "name": "Over" if oc["name"].lower() == "yes" else "Under"}
                         else:
                             continue
-                    key = (norm_name(player), stat)
-                    a = acc.setdefault(key, {"lines": [], "over": {}, "under": {}})
-                    pt = float(oc["point"])
                     side = (oc.get("name") or "").lower()
-                    if side == "over":
-                        a["lines"].append(pt)
-                        a["over"].setdefault(pt, []).append(int(oc["price"]))
-                    elif side == "under":
-                        a["under"].setdefault(pt, []).append(int(oc["price"]))
-        for key, a in acc.items():
-            if not a["lines"]:
-                continue
-            line = statistics.median_low(a["lines"])     # consensus line
-            best_over = max(a["over"].get(line, []), default=None)
-            best_under = max(a["under"].get(line, []), default=None)
-            out[key] = PropLine(line, best_over, best_under, len(a["lines"]))
+                    if side not in ("over", "under"):
+                        continue
+                    key = (norm_name(player), stat)
+                    book_sides.setdefault(key, {}).setdefault(float(oc["point"]), {})[side] = int(oc["price"])
+            for key, pts in book_sides.items():
+                two = {pt: sd for pt, sd in pts.items() if "over" in sd and "under" in sd}
+                if two:
+                    pt = min(two, key=lambda x: abs(american_to_prob(two[x]["over"]) - american_to_prob(two[x]["under"])))
+                    per_book.setdefault(key, []).append((pt, two[pt]["over"], two[pt]["under"]))
+                elif len(pts) == 1:                                   # one-sided (e.g. anytime TD)
+                    pt, sd = next(iter(pts.items()))
+                    per_book.setdefault(key, []).append((pt, sd.get("over"), sd.get("under")))
+        for key, rows in per_book.items():
+            line = statistics.median_low([r[0] for r in rows])
+            at = [r for r in rows if r[0] == line]
+            overs = [r[1] for r in at if r[1] is not None]
+            unders = [r[2] for r in at if r[2] is not None]
+            out[key] = PropLine(line, max(overs) if overs else None, max(unders) if unders else None, len(rows))
     return out
