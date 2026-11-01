@@ -26,16 +26,19 @@ from nba_props.odds import PropLine, american_to_prob, norm_name
 
 from .espn_nfl import STAT_FUNCS, NflLine, NflPlayer
 
+# Tuned on the 2026 weeks 3-7 backtest (tests/tune_nfl.py)
 KNOBS = {
     "model_weight": 0.6,     # blend of model vs market probability
-    "vol_scale": 1.0,        # global opportunity calibration
+    "vol_scale": 0.97,       # global opportunity calibration
     "eff_shrink": 1.0,       # multiplies efficiency prior strength
     "dvp_prior": 40.0,       # player-games of shrinkage for defense-vs-position
     "dvp_power": 1.0,
     "script": 1.0,           # strength of spread -> pass/run mix
     "env_scale": 1.0,        # strength of implied team total
-    "absorb": 0.8,           # share of injured teammates' opportunities redistributed
+    "absorb": 0.4,           # share of injured teammates' opportunities redistributed
     "prev_weight": 0.4,      # weight of last-season games
+    "qb_shrink": 1.0,        # extra multiplier on QB efficiency prior strength
+    "qb_vol": 1.08,          # QB pass-attempt calibration
 }
 
 # Efficiency priors: (league-average value, prior strength in opportunities)
@@ -172,7 +175,7 @@ def build_profile(p: NflPlayer, season: int) -> Profile | None:
 
     def shrunk(num_key, den_key, prior_key, ratio=1.0):
         mean, k = PRIORS[pos][prior_key]
-        k *= KNOBS["eff_shrink"]
+        k *= KNOBS["eff_shrink"] * (KNOBS["qb_shrink"] if pos == "QB" else 1.0)
         num = sum(g.s[num_key] * w for g, w in gw)
         den = sum(g.s[den_key] * w for g, w in gw)
         return (num + k * mean) / (den + k)
@@ -372,7 +375,7 @@ def project_team(team_players, team_id, team_abbr, opp_id, opp_abbr, game: Game,
             reasons.append(script_note)
         m, opps = {}, {}
         if pos == "QB":
-            att = (starter_override if starter_override else pr.opps["pass_att"]) * pass_vol * vs
+            att = (starter_override if starter_override else pr.opps["pass_att"]) * pass_vol * vs * KNOBS["qb_vol"]
             ra = pr.opps["rush_att"] * vs
             d_y = league.dvp(opp_id, "QB", "pass_yds")
             d_t = league.dvp(opp_id, "QB", "pass_td")
