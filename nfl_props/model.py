@@ -21,7 +21,7 @@ from collections import defaultdict
 from dataclasses import dataclass, field
 
 from nba_props.espn import Game, Injury
-from nba_props.model import VIG_PROB, Pick, _nb_cdf, _phi, _short, _to_american, est_line
+from nba_props.model import VIG_PROB, Pick, _nb_cdf, _phi, _short, _to_american, est_line, market_disagrees
 from nba_props.odds import PropLine, american_to_prob, norm_name
 
 from .espn_nfl import STAT_FUNCS, NflLine, NflPlayer
@@ -487,6 +487,10 @@ def evaluate(proj: Projection, lines: dict[tuple[str, str], PropLine], season: i
         score = edge * 100 * reliability
         grade = ("A" if edge >= .08 and reliability >= .5 else "B" if edge >= .05 else "C" if edge >= .03 else "-")
         reasons = list(proj.stat_reasons.get(s, [])) + list(proj.reasons)
+        if market_disagrees(real, line, mu):
+            grade, score = "-", 0.0
+            reasons.insert(0, f"Market strongly disagrees ({real.books} books at {line:g} vs projection {mu:.1f}): "
+                              "likely news the model can't see; skipped")
         if h10[1] >= 5:
             reasons.append(f"{side.title()} hit {h5[0]}/{h5[1]} last 5, {h10[0]}/{h10[1]} last 10 at {line}")
         if hv[1]:

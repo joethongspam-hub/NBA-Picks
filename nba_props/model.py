@@ -48,6 +48,15 @@ VIG_PROB = 110 / 210                                            # -110 implied
 MODEL_WEIGHT = 0.6                                              # model vs market blend
 
 
+def market_disagrees(real, line: float, mu: float) -> bool:
+    """A real multi-book line far from our projection usually means news the model
+    can't see (injury, role change, snap limit): trust the market, skip the pick."""
+    if not real or real.books < 3 or line < 3:
+        return False
+    r = (mu + 0.5) / (line + 0.5)
+    return r > 1.6 or r < 1 / 1.6
+
+
 def _to_american(p: float) -> int:
     p = min(max(p, 0.02), 0.98)
     return int(round(-100 * p / (1 - p))) if p >= 0.5 else int(round(100 * (1 - p) / p))
@@ -520,7 +529,12 @@ def evaluate(proj: Projection, stats: list[str], lines: dict[tuple[str, str], Pr
         score = edge * 100 * reliability
         grade = ("A" if edge >= .08 and reliability >= .5 else "B" if edge >= .05 else
                  "C" if edge >= .03 else "-")
+        flag = market_disagrees(real, line, mu)
+        if flag:
+            grade, score = "-", 0.0
         reasons = list(proj.stat_reasons.get(s, [])) + list(proj.reasons)
+        if flag:
+            reasons.insert(0, f"Market strongly disagrees ({real.books} books at {line:g} vs projection {mu:.1f}): likely news the model can't see; skipped")
         if h10[1] >= 5:
             reasons.append(f"{side.title()} hit {h10[0]}/{h10[1]} of last {h10[1]} at {line}")
         if hv[1]:
