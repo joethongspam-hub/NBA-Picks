@@ -60,6 +60,16 @@ later runs keep its pregame picks (and never use live in-game lines), so the tra
 actually have made. It publishes the page to `https://<you>.github.io/<repo>/`,
 and saves each day's picks in `history/` so the **Track record** tab can grade them the next day.
 
+## Phone notifications
+
+1. Install the free **ntfy** app (iOS / Android) and subscribe to a topic name only you know,
+   e.g. `nba-picks-` followed by random letters. Anyone who knows the topic can read it, so keep it unguessable.
+2. In the repo: **Settings → Secrets and variables → Actions → New repository secret**, Name `NTFY_TOPIC`,
+   Secret = that topic name.
+
+Every scheduled run that produces new or changed picks then sends a notification listing the top picks. Tap it to open the page.
+To test: **Actions → Daily NBA props → Run workflow**, notify = `test`.
+
 ## Backtest a past date
 
 See how the model would have done on a night that's already played:

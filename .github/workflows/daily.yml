@@ -8,6 +8,10 @@ on:
     - cron: "45 23 * * *"    # 5:45 PM CT: late injury news for games not yet started (reuses saved lines)
   workflow_dispatch:
     inputs:
+      notify:
+        description: "Phone notification: no / yes (if picks changed) / test (always send)"
+        required: false
+        default: "no"
       backtest_date:
         description: "Optional: backtest a past date (YYYY-MM-DD) and grade it vs real results"
         required: false
@@ -44,6 +48,7 @@ jobs:
         run: |
           mkdir -p public
           if git fetch -q origin site-data; then git archive FETCH_HEAD | tar -x -C public; fi
+          cp public/picks.json /tmp/before_nba.json 2>/dev/null || true
 
       - name: Backtest a past date
         if: ${{ github.event.inputs.backtest_date != '' }}
@@ -68,6 +73,19 @@ jobs:
           git diff --cached --quiet || git commit -m "picks $(date -u +%F)"
           git pull --rebase -q && git push
 
+      - name: Prepare phone notification
+        if: ${{ github.event_name == 'schedule' || github.event.inputs.notify == 'yes' || github.event.inputs.notify == 'test' }}
+        run: |
+          python -m nba_props.notify --sport NBA --before /tmp/before_nba.json --after public/picks.json \
+            --url "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/" \
+            --out notify.json ${{ github.event.inputs.notify == 'test' && '--force' || '' }} || true
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: notify
+          path: notify.json
+          if-no-files-found: ignore
+
       - name: Save site
         env:
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -89,3 +107,19 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
+  notify:
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: notify
+        continue-on-error: true
+      - name: Send to phone (ntfy)
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: |
+          pip install -q requests
+          python -m nba_props.notify --send-json notify.json || true
