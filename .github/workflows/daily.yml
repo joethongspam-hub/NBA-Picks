@@ -3,9 +3,10 @@ name: Daily NBA props
 on:
   schedule:
     # Times are UTC. Games lock at tip-off, so later runs never touch started games.
-    - cron: "0 17 * * *"     # 11:00 AM CT: morning picks (estimated lines)
-    - cron: "30 21 * * *"    # 3:30 PM CT: main pregame run, pulls real sportsbook lines
-    - cron: "45 23 * * *"    # 5:45 PM CT: late injury news for games not yet started (reuses saved lines)
+    # UTC times, off the top of the hour (GitHub delays/drops busy-hour schedules).
+    - cron: "47 16 * * *"    # ~10:45 AM CT: morning picks
+    - cron: "17 21 * * *"    # ~3:15 PM CT: main pregame run (+ Odds API if NBA_ODDS=on)
+    - cron: "43 23 * * *"    # ~5:45 PM CT: late injury news for games not yet started
   workflow_dispatch:
     inputs:
       notify:
@@ -59,7 +60,7 @@ jobs:
           # DraftKings lines come free from ESPN on every run. The Odds API (multi-book
           # consensus, costs credits) is optional: set repo variable NBA_ODDS=on to use it
           # once a day on the 3:30 PM run.
-          ODDS_API_KEY: ${{ vars.NBA_ODDS == 'on' && (github.event_name == 'workflow_dispatch' || github.event.schedule == '30 21 * * *') && secrets.ODDS_API_KEY || '' }}
+          ODDS_API_KEY: ${{ vars.NBA_ODDS == 'on' && (github.event_name == 'workflow_dispatch' || github.event.schedule == '17 21 * * *') && secrets.ODDS_API_KEY || '' }}
           ODDS_MARKETS: ${{ vars.ODDS_MARKETS }}
         run: |
           python -m nba_props.main --out public --history history
