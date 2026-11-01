@@ -71,7 +71,8 @@ jobs:
       - name: Build this week's picks
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
-          NFL_ODDS: ${{ vars.NFL_ODDS }}
+          # Odds API for NFL only on the Thursday + Sunday runs (and manual runs) to save credits
+          NFL_ODDS: ${{ github.event.schedule == '0 17 * * 3' && 'off' || vars.NFL_ODDS }}
           NFL_ODDS_MARKETS: ${{ vars.NFL_ODDS_MARKETS }}
         run: python -m nfl_props.main
 

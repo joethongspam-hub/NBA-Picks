@@ -106,9 +106,10 @@ Props: passing yards/TDs/attempts/completions/INTs, rushing yards/carries, recep
 rush+rec yards, anytime TD. The workflow runs Wednesday, Thursday and Sunday morning (**Actions → Weekly NFL props**,
 with optional backtest weeks).
 
-Real NFL lines use the same `ODDS_API_KEY` but are **off by default**, because the free tier's 500 credits
-are used by the NBA. To turn them on, add a repo variable `NFL_ODDS` = `on`. Optionally set `NFL_ODDS_MARKETS`
-(default `player_pass_yds,player_reception_yds`, about 30 credits per week).
+Multi-book NFL lines from the Odds API use the same `ODDS_API_KEY` and are opt-in: add a repo **variable**
+`NFL_ODDS` = `on`. They're pulled on the Thursday and Sunday runs only (about 60 credits/week). Optionally set
+`NFL_ODDS_MARKETS` (default `player_pass_yds,player_reception_yds`). The NBA's Odds API pull is likewise opt-in
+(`NBA_ODDS` = `on`), since the NBA gets free DraftKings lines from ESPN.
 
 ## Tests
 
