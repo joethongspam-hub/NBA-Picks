@@ -43,6 +43,7 @@ KNOBS = {
     "env_scale": 0.5,      # scales Vegas-total elasticities
     "rate_l10": 0.35,      # weight of last-10 in per-minute rate
     "blowout": 0.0,        # blowout minute trims (off: hurt in backtest)
+    "depleted_outs": 3,    # rotation players out that make a team "depleted" (no unders); 0 disables
 }
 VIG_PROB = 110 / 210                                            # -110 implied
 MODEL_WEIGHT = 0.6                                              # model vs market blend
@@ -270,6 +271,7 @@ class Projection:
     reasons: list[str]
     stat_reasons: dict[str, list[str]]
     profile: Profile
+    depleted: list = field(default_factory=list)    # rotation players out (team-level)
 
 
 def _sd_from_logs(p: Player, stat: str, proj: float, hist_mean: float) -> float:
@@ -340,6 +342,20 @@ def project_team(team_players: list[Player], team_id: str, team_abbr: str, opp_i
         if team_n >= 4 and sum(e in played for e in recent5) < 2 and not i:
             continue                                   # fell out of the rotation
         active.append((p, prof))
+
+    # Depleted roster: several rotation players out -> remaining players' roles grow
+    # in ways the model underestimates, so unders on this team are skipped.
+    recent10 = league.recent_events(team_id, 10)
+    depleted = []
+    for p in team_players:
+        i = inj.get(p.id)
+        prof = profiles.get(p.id)
+        if i and i.level in ("OUT", "DOUBTFUL") and prof and prof.min_base >= 18:
+            played = {g.event_id for g in p.logs}
+            if not recent10 or any(e in played for e in recent10):
+                depleted.append(p.name)
+    if not KNOBS["depleted_outs"] or len(depleted) < KNOBS["depleted_outs"]:
+        depleted = []
 
     vacated = {s: sum(pr.base_vol[s] * pres for _, pr, pres in out_mates) for s in BASE_STATS}
     vac_min = sum(pr.min_base * pres for _, pr, pres in out_mates)
@@ -437,7 +453,7 @@ def project_team(team_players: list[Player], team_id: str, team_abbr: str, opp_i
 
         sd = {s: _sd_from_logs(p, s, mean[s], prof.season_avg.get(s, 0)) for s in mean}
         out.append(Projection(p, team_abbr, opp_abbr, game, mins_shown, mean, sd, status,
-                              reasons, dict(stat_reasons), prof))
+                              reasons, dict(stat_reasons), prof, depleted))
     return out
 
 
@@ -532,7 +548,12 @@ def evaluate(proj: Projection, stats: list[str], lines: dict[tuple[str, str], Pr
         flag = market_disagrees(real, line, mu)
         if flag:
             grade, score = "-", 0.0
+        if side == "UNDER" and proj.depleted:
+            grade, score = "-", 0.0
         reasons = list(proj.stat_reasons.get(s, [])) + list(proj.reasons)
+        if side == "UNDER" and proj.depleted:
+            reasons.insert(0, f"{proj.team_abbr} missing {len(proj.depleted)} rotation players "
+                              f"({', '.join(_short(n) for n in proj.depleted[:4])}): unders skipped")
         if flag:
             reasons.insert(0, f"Market strongly disagrees ({real.books} books at {line:g} vs projection {mu:.1f}): likely news the model can't see; skipped")
         if h10[1] >= 5:

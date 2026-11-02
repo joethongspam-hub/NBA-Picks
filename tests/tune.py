@@ -15,6 +15,8 @@ CONFIGS = {
     "no_env": {"env_scale": 0},
     "l10_0.2": {"rate_l10": 0.2},
     "tuned": {},
+    "no_depleted_rule": {"depleted_outs": 0},
+    "depleted_2": {"depleted_outs": 2},
     "tuned_no_blowout": {"blowout": 0},
     "tuned_b2b_off": {"b2b": 1.0},
     "c1_min95_abs35": {"min_scale": 0.95, "absorb_scale": 0.35},

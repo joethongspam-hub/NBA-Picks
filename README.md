@@ -25,6 +25,10 @@ probabilities are blended 60/40 with the market price, because books are sharp. 
 probability − implied probability from the price**. The score is edge × reliability (sample size,
 how steady his minutes are, injury status), and grades are A ≥ 9, B ≥ 6, C ≥ 3.
 
+**Depleted rosters:** when a team has 3+ rotation players out (18+ minutes, played within its last 10 games),
+under picks on that team are skipped. The remaining players' roles grow in ways the model underestimates; in the
+backtest those unders hit only 53% (43% for scoring unders) compared with 64% for other unders.
+
 ## Lines: estimated vs. real
 
 **DraftKings lines are pulled free from ESPN on every run** (no key needed) for points, rebounds, assists,
