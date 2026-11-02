@@ -89,7 +89,8 @@ def main():
             print("notify: nothing to send" if topic else "notify: NTFY_TOPIC not set")
             return
         m = json.loads(Path(a.send_json).read_text())
-        send(topic, m["title"], m["body"], m["url"])
+        url = m.get("url") or a.url or ""
+        send(topic, m["title"], m["body"], url)
         print("notify: sent")
         return
     before = json.loads(Path(a.before).read_text()) if a.before and Path(a.before).exists() else None

@@ -8,8 +8,14 @@ on:
     - cron: "13 21 * * 4"   # Thu ~3 PM CT: before Thursday night
     - cron: "37 15 * * 0"   # Sun ~9:40 AM CT: after final injury reports
     - cron: "23 17 * * 0"   # Sun ~11:20 AM CT: backup run + late inactives before noon kickoffs
+    - cron: "33 6 * * 1"    # Mon ~12:30 AM CT: results after Sunday night (no odds, no new picks)
+    - cron: "33 6 * * 2"    # Tue ~12:30 AM CT: results after Monday night
   workflow_dispatch:
     inputs:
+      results:
+        description: "Results only: grade finished picks, no new picks or odds (yes/no)"
+        required: false
+        default: "no"
       notify:
         description: "Phone notification: no / yes (if picks changed) / test (always send)"
         required: false
@@ -71,7 +77,12 @@ jobs:
           git -c user.name=props-bot -c user.email=props-bot@users.noreply.github.com commit -qm "nfl data snapshot"
           git push -fq "https://x-access-token:${TOKEN}@github.com/${{ github.repository }}.git" HEAD:data-snapshot-nfl
 
+      - name: Grade results (no odds, no new picks)
+        if: ${{ github.event.schedule == '33 6 * * 1' || github.event.schedule == '33 6 * * 2' || github.event.inputs.results == 'yes' }}
+        run: python -m nfl_props.main --results-only --out public/nfl --history history/nfl --notify-out notify.json
+
       - name: Build this week's picks
+        if: ${{ !(github.event.schedule == '33 6 * * 1' || github.event.schedule == '33 6 * * 2' || github.event.inputs.results == 'yes') }}
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
           # Odds API for NFL only on the Thursday + Sunday runs (and manual runs) to save credits
@@ -88,7 +99,7 @@ jobs:
           git pull --rebase -q && git push
 
       - name: Prepare phone notification
-        if: ${{ github.event_name == 'schedule' || github.event.inputs.notify == 'yes' || github.event.inputs.notify == 'test' }}
+        if: ${{ !(github.event.schedule == '33 6 * * 1' || github.event.schedule == '33 6 * * 2' || github.event.inputs.results == 'yes') && (github.event_name == 'schedule' || github.event.inputs.notify == 'yes' || github.event.inputs.notify == 'test') }}
         run: |
           python -m nba_props.notify --sport NFL --before /tmp/before_nfl.json --after public/nfl/picks.json \
             --url "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/nfl/" \
@@ -136,4 +147,5 @@ jobs:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
         run: |
           pip install -q requests
-          python -m nba_props.notify --send-json notify.json || true
+          python -m nba_props.notify --send-json notify.json \
+            --url "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/nfl/" || true

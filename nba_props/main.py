@@ -136,6 +136,76 @@ def backtest_range(start: str, end: str, **kw) -> dict:
     return summary
 
 
+def results_message(sport: str, new: list[dict], record: dict) -> dict | None:
+    """Notification text for picks graded in this run."""
+    rows = [r for r in new if r.get("result") in ("WIN", "LOSS", "PUSH")]
+    if not rows:
+        return None
+
+    def wl(rs):
+        w = sum(r["result"] == "WIN" for r in rs)
+        l = sum(r["result"] == "LOSS" for r in rs)
+        return f"{w}-{l}" + (f" ({w / (w + l) * 100:.0f}%)" if w + l else "")
+    label = max(r.get("date", "") for r in rows)
+    lines = [f"{wl(rows)} · " + ", ".join(f"{g} {wl([r for r in rows if r['grade'] == g])}"
+                                         for g in "ABC" if any(r["grade"] == g for r in rows))]
+    a = record.get("A") or {}
+    if a.get("w", 0) + a.get("l", 0):
+        lines.append(f"Grade A all-time: {a['w']}-{a['l']}")
+    best = sorted([r for r in rows if r["result"] == "WIN"], key=lambda r: -r.get("score", 0))[:3]
+    for r in best:
+        lines.append(f"✓ {r['player']} {'O' if r['side'] == 'OVER' else 'U'} {r['line']:g} {r['stat']} ({r['actual']:g})")
+    return {"title": f"{sport} results · {label}", "body": "\n".join(lines)}
+
+
+def annotate_results(payload: dict, graded: list[dict], key: str = "date") -> None:
+    """Stamp actual/result onto the picks shown on the page for that slate."""
+    res = {(r["player_id"], r["stat"], r["side"]): r for r in graded if r.get(key) == payload.get("date")}
+    for lst in [payload.get("top", []), payload.get("all", [])] + list(payload.get("by_game", {}).values()):
+        for p in lst:
+            r = res.get((p["player_id"], p["stat"], p["side"]))
+            if r:
+                p["actual"], p["result"] = r.get("actual"), r["result"]
+
+
+def results_only(out_dir: str = "public", cache_dir: str = ".cache", hist_dir: str = "history",
+                 http: Http | None = None, notify_out: str | None = None) -> dict:
+    """Grade finished picks with fresh box scores; no odds, no new picks."""
+    now_et = datetime.now(ET)
+    today = now_et.strftime("%Y-%m-%d")
+    hist, out = Path(hist_dir), Path(out_dir)
+    path = hist / "results.json"
+    before = json.loads(path.read_text()) if path.exists() else {"graded": []}
+    done = {(r["date"], r["player_id"], r["stat"], r["side"]) for r in before["graded"]}
+    pending = {}
+    for f in sorted((hist / "picks").glob("*.json")):
+        if f.stem >= today:
+            continue
+        for pk in json.loads(f.read_text()):
+            if (f.stem, pk["player_id"], pk["stat"], pk["side"]) not in done:
+                pending[pk["player_id"]] = pk
+    from .espn import Player
+    players = [Player(pid, pk["player"], "", "") for pid, pk in pending.items()]
+    log(f"[results] {len(players)} players with ungraded picks")
+    if players:
+        Espn(http or Http(cache_dir)).load_logs(players, [season_for(now_et)], season_for(now_et), current_ttl=0)
+    results = grade_history(hist, {p.id: p for p in players}, today)
+    new = [r for r in results["graded"] if (r["date"], r["player_id"], r["stat"], r["side"]) not in done]
+    record = summarize(results)
+    pj = out / "picks.json"
+    if pj.exists():
+        payload = json.loads(pj.read_text())
+        payload["record"] = record
+        annotate_results(payload, results["graded"])
+        pj.write_text(json.dumps(payload))
+        (out / "index.html").write_text(render(payload, switch=("NFL", "nfl/")))
+    msg = results_message("NBA", new, record)
+    if notify_out and msg:
+        Path(notify_out).write_text(json.dumps({**msg, "url": ""}))
+    log(f"[results] graded {len(new)} picks")
+    return {"new": new, "record": record}
+
+
 def summarize(results: dict) -> dict:
     out = {}
     for label, filt in (("all", lambda r: True), ("A", lambda r: r["grade"] == "A"),
@@ -375,8 +445,13 @@ def cli():
     ap.add_argument("--stats", help="comma list, e.g. PTS,REB,AST,3PM,PRA")
     ap.add_argument("--backtest", metavar="YYYY-MM-DD", help="project a past date blind, grade vs actual results")
     ap.add_argument("--backtest-range", nargs=2, metavar=("START", "END"))
+    ap.add_argument("--results-only", action="store_true", help="grade finished picks only (no odds, no new picks)")
+    ap.add_argument("--notify-out", help="with --results-only: write a results notification to this file")
     ap.add_argument("--markets", default=os.environ.get("ODDS_MARKETS") or DEFAULT_MARKETS)
     a = ap.parse_args()
+    if a.results_only:
+        results_only(a.out, a.cache, a.history, notify_out=a.notify_out)
+        return
     if a.backtest_range:
         print(json.dumps(backtest_range(*a.backtest_range, out_dir=a.out, cache_dir=a.cache,
                                         hist_dir=a.history, slate_only=a.slate_only), indent=1))

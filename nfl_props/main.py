@@ -84,6 +84,42 @@ def grade_history(hist: Path, players_by_id: dict, today: datetime) -> dict:
     return out
 
 
+def results_only(out_dir: str = "public/nfl", cache_dir: str = ".cache", hist_dir: str = "history/nfl",
+                 http: Http | None = None, notify_out: str | None = None) -> dict:
+    """Grade finished NFL picks with fresh box scores; no odds, no new picks."""
+    from nba_props.main import annotate_results, results_message
+    from .espn_nfl import NflPlayer
+    now = datetime.now(ET)
+    hist, out = Path(hist_dir), Path(out_dir)
+    path = hist / "results.json"
+    before = json.loads(path.read_text()) if path.exists() else {"graded": []}
+    done = {(r["week"], r["player_id"], r["stat"], r["side"]) for r in before["graded"]}
+    pending = {}
+    for f in sorted((hist / "picks").glob("*.json")):
+        for pk in json.loads(f.read_text())["picks"]:
+            if (f.stem, pk["player_id"], pk["stat"], pk["side"]) not in done:
+                pending[pk["player_id"]] = pk
+    players = [NflPlayer(pid, pk["player"], "", "") for pid, pk in pending.items()]
+    log(f"[results] {len(players)} players with ungraded picks")
+    if players:
+        EspnNfl(http or Http(cache_dir)).load_logs(players, [season_for(now)], season_for(now), current_ttl=0)
+    record = grade_history(hist, {p.id: p for p in players}, now)
+    graded = json.loads(path.read_text())["graded"]
+    new = [r for r in graded if (r["week"], r["player_id"], r["stat"], r["side"]) not in done]
+    pj = out / "picks.json"
+    if pj.exists():
+        payload = json.loads(pj.read_text())
+        payload["record"] = record
+        annotate_results(payload, graded, key="week")
+        pj.write_text(json.dumps(payload))
+        (out / "index.html").write_text(render(payload, "NFL Player Props", NOTE, ("NBA", "../")))
+    msg = results_message("NFL", new, record)
+    if notify_out and msg:
+        Path(notify_out).write_text(json.dumps({**msg, "url": ""}))
+    log(f"[results] graded {len(new)} picks")
+    return {"new": new, "record": record}
+
+
 def run(week: int | None = None, out_dir: str = "public/nfl", cache_dir: str = ".cache",
         hist_dir: str = "history/nfl", backtest: bool = False, http: Http | None = None,
         odds_key: str | None = None, markets: str = DEFAULT_NFL_MARKETS, season: int | None = None):
@@ -312,7 +348,12 @@ def cli():
     ap.add_argument("--history", default="history/nfl")
     ap.add_argument("--cache", default=".cache")
     ap.add_argument("--backtest-weeks", nargs=2, type=int, metavar=("FIRST", "LAST"))
+    ap.add_argument("--results-only", action="store_true", help="grade finished picks only (no odds, no new picks)")
+    ap.add_argument("--notify-out")
     a = ap.parse_args()
+    if a.results_only:
+        results_only(a.out, a.cache, a.history, notify_out=a.notify_out)
+        return
     if a.backtest_weeks:
         print(json.dumps(backtest_weeks(*a.backtest_weeks, out_dir=a.out, hist_dir=a.history, cache_dir=a.cache), indent=1))
         return

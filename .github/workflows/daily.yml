@@ -7,8 +7,13 @@ on:
     - cron: "47 16 * * *"    # ~10:45 AM CT: morning picks
     - cron: "17 21 * * *"    # ~3:15 PM CT: main pregame run (+ Odds API if NBA_ODDS=on)
     - cron: "43 23 * * *"    # ~5:45 PM CT: late injury news for games not yet started
+    - cron: "33 6 * * *"     # ~12:30 AM CT: results only: grade the day's picks (no odds, no new picks)
   workflow_dispatch:
     inputs:
+      results:
+        description: "Results only: grade finished picks, no new picks or odds (yes/no)"
+        required: false
+        default: "no"
       notify:
         description: "Phone notification: no / yes (if picks changed) / test (always send)"
         required: false
@@ -55,7 +60,12 @@ jobs:
         if: ${{ github.event.inputs.backtest_date != '' }}
         run: python -m nba_props.main --backtest "${{ github.event.inputs.backtest_date }}" --out public
 
+      - name: Grade results (no odds, no new picks)
+        if: ${{ github.event.schedule == '33 6 * * *' || github.event.inputs.results == 'yes' }}
+        run: python -m nba_props.main --results-only --out public --history history --notify-out notify.json
+
       - name: Build today's picks
+        if: ${{ !(github.event.schedule == '33 6 * * *' || github.event.inputs.results == 'yes') }}
         env:
           # DraftKings lines come free from ESPN on every run. The Odds API (multi-book
           # consensus, costs credits) is optional: set repo variable NBA_ODDS=on to use it
@@ -76,7 +86,7 @@ jobs:
           git pull --rebase -q && git push
 
       - name: Prepare phone notification
-        if: ${{ github.event_name == 'schedule' || github.event.inputs.notify == 'yes' || github.event.inputs.notify == 'test' }}
+        if: ${{ !(github.event.schedule == '33 6 * * *' || github.event.inputs.results == 'yes') && (github.event_name == 'schedule' || github.event.inputs.notify == 'yes' || github.event.inputs.notify == 'test') }}
         run: |
           python -m nba_props.notify --sport NBA --before /tmp/before_nba.json --after public/picks.json \
             --url "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/" \
@@ -124,4 +134,5 @@ jobs:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
         run: |
           pip install -q requests
-          python -m nba_props.notify --send-json notify.json || true
+          python -m nba_props.notify --send-json notify.json \
+            --url "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/" || true
