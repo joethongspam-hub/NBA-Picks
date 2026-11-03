@@ -1,0 +1,91 @@
+{
+ "made": "2026-11-03T18:25:09.408540-05:00",
+ "picks": [
+  {
+   "game_id": "401892634",
+   "game": "WPG @ MTL",
+   "market": "Moneyline",
+   "pick": "MTL ML",
+   "side": "home",
+   "line": null,
+   "price": -166,
+   "prob": 0.642,
+   "model_prob": 0.719,
+   "edge": 0.017,
+   "grade": "C",
+   "proj": "MTL 3.87 \u2013 WPG 2.41",
+   "mu_h": 3.87,
+   "mu_a": 2.41,
+   "home": "MTL",
+   "away": "WPG",
+   "notes": [
+    "MTL goalie Jacob Fowler (0.905): opponent goals -5%",
+    "WPG goalie Stuart Skinner (0.893): opponent goals +7% (starter uncertain)"
+   ],
+   "score": 1.75
+  },
+  {
+   "game_id": "401892635",
+   "game": "DET @ TB",
+   "market": "Moneyline",
+   "pick": "DET ML",
+   "side": "away",
+   "line": null,
+   "price": 225,
+   "prob": 0.329,
+   "model_prob": 0.393,
+   "edge": 0.022,
+   "grade": "C",
+   "proj": "TB 3.72 \u2013 DET 3.03",
+   "mu_h": 3.72,
+   "mu_a": 3.03,
+   "home": "TB",
+   "away": "DET",
+   "notes": [],
+   "score": 2.17
+  },
+  {
+   "game_id": "401892635",
+   "game": "DET @ TB",
+   "market": "Puck line",
+   "pick": "DET +1.5",
+   "side": "away",
+   "line": -1.5,
+   "price": -108,
+   "prob": 0.542,
+   "model_prob": 0.627,
+   "edge": 0.023,
+   "grade": "C",
+   "proj": "TB 3.72 \u2013 DET 3.03",
+   "mu_h": 3.72,
+   "mu_a": 3.03,
+   "home": "TB",
+   "away": "DET",
+   "notes": [],
+   "score": 2.25
+  },
+  {
+   "game_id": "401892643",
+   "game": "ANA @ VAN",
+   "market": "Total",
+   "pick": "Over 6.5",
+   "side": "over",
+   "line": 6.5,
+   "price": -142,
+   "prob": 0.613,
+   "model_prob": 0.705,
+   "edge": 0.026,
+   "grade": "C",
+   "proj": "VAN 3.82 \u2013 ANA 4.33",
+   "mu_h": 3.82,
+   "mu_a": 4.33,
+   "home": "VAN",
+   "away": "ANA",
+   "notes": [
+    "VAN goalie Leevi Merilainen (0.890): opponent goals +10%",
+    "ANA goalie Lukas Dostal (0.887): opponent goals +13% (starter uncertain)"
+   ],
+   "score": 2.64
+  }
+ ]
+}
