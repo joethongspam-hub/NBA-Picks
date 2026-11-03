@@ -371,10 +371,13 @@ async function loadLive() {
     const desc = (st.type || {}).shortDetail || (st.type || {}).description || "";
     $("#hStatus").textContent = `${desc} · ${abbrs.map(a => `${a} ${scores[a]}`).join(" – ")} · loading lines…`;
     LIVE.lines = {};
-    try {
-      let page = 1, pages = 1;
+    // DraftKings live props are provider 200; provider 100 is the pregame feed (fallback, flagged).
+    async function loadProvider(pid, live) {
+      let page = 1, pages = 1, found = 0;
       while (page <= pages && page <= 3) {
-        const pb = await getJSON(`https://sports.core.api.espn.com/v2/sports/basketball/leagues/nba/events/${gid}/competitions/${gid}/odds/100/propBets?limit=1000&page=${page}`);
+        let pb;
+        try { pb = await getJSON(`https://sports.core.api.espn.com/v2/sports/basketball/leagues/nba/events/${gid}/competitions/${gid}/odds/${pid}/propBets?limit=1000&page=${page}`); }
+        catch (e) { return found; }
         pages = pb.pageCount || 1; page++;
         const grp = {};
         (pb.items || []).forEach(it => {
@@ -383,15 +386,18 @@ async function loadLive() {
           (grp[m[1] + "|" + stat] = grp[m[1] + "|" + stat] || []).push(it);
         });
         Object.entries(grp).forEach(([k, its]) => {
-          if (its.length < 2) return;
+          if (its.length < 2 || LIVE.lines[k]) return;          // one side suspended -> skip
           const ln = parseFloat(((its[0].odds || {}).total || {}).value), ln2 = parseFloat(((its[1].odds || {}).total || {}).value);
           if (isNaN(ln) || ln !== ln2) return;
           const pr = it => parseInt(String(((it.odds || {}).american || {}).value || "").replace("+", "")) || null;
-          const upd = Date.parse(its[0].lastUpdated || "") || 0, start = Date.parse(g.start || "") || 0;
-          LIVE.lines[k] = {line: ln, over: pr(its[0]), under: pr(its[1]), live: !!(upd && start && upd >= start)};
+          LIVE.lines[k] = {line: ln, over: pr(its[0]), under: pr(its[1]), live};
+          found++;
         });
       }
-    } catch (e) { /* lines optional */ }
+      return found;
+    }
+    if (LIVE.elapsed > 0 && LIVE.elapsed < 48) await loadProvider(200, true);
+    await loadProvider(100, LIVE.elapsed <= 0);     // pregame lines fill any gaps (flagged once the game starts)
     const nLines = Object.keys(LIVE.lines).length, nLive = Object.values(LIVE.lines).filter(x => x.live).length;
     const lineTxt = !nLines ? "no DraftKings lines" : nLive ? `${nLive} live DraftKings lines` : `${nLines} DraftKings lines (pregame, not live: check your book)`;
     $("#hStatus").textContent = `${desc} · ${abbrs.map(a => `${a} ${scores[a]}`).join(" – ")} · ${lineTxt} · updated ${new Date().toLocaleTimeString([], {hour: "numeric", minute: "2-digit"})}`;
@@ -417,7 +423,7 @@ function scanLive(g) {
   rows.sort((a, b) => b.res.edge - a.res.edge);
   const seen = new Set(), top = rows.filter(x => !seen.has(x.r.pid) && seen.add(x.r.pid)).slice(0, 12);
   $("#hScan").innerHTML = top.length ? top.map((x, i) => `<div class="pick" data-i="${i}">
-      <div class="row"><div class="grade ${x.res.edge >= 0.06 ? "gA" : "gB"}">${x.res.edge >= 0.06 ? "Bet" : "Lean"}</div>
+      <div class="row"><div class="grade ${!x.L.live ? "gC" : x.res.edge >= 0.06 ? "gA" : "gB"}" style="width:auto;padding:0 6px">${!x.L.live ? "Check" : x.res.edge >= 0.06 ? "Bet" : "Lean"}</div>
       <div class="who"><div class="name">${esc(x.r.player)}</div>
         <div class="meta">${esc(x.r.team)} · ${x.stat} · has ${statVal(x.b, x.stat)} in ${x.b.min} min${x.b.pf >= 3 ? ` · ${x.b.pf} fouls` : ""}${x.L.live ? "" : ` · <span style="color:var(--gold)">pregame line: check book</span>`}</div></div>
       <div class="bet"><div class="side ${x.res.side}">${x.res.side === "OVER" ? "O" : "U"} ${x.L.line}</div>
