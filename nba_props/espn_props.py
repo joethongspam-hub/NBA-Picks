@@ -48,6 +48,19 @@ def _american(it):
         return None
 
 
+def _open(it):
+    o = it.get("odds") or {}
+    line = _num((o.get("total") or {}).get("open"))
+    if line is None:
+        line = _num(((it.get("open") or {}).get("target") or {}).get("value"))
+    a = (o.get("american") or {}).get("open")
+    try:
+        price = int(str(a).replace("+", "")) if a not in (None, "", "EVEN") else (100 if a == "EVEN" else None)
+    except ValueError:
+        price = None
+    return line, price
+
+
 def _line(it):
     o = it.get("odds") or {}
     v = _num((o.get("total") or {}).get("value"))
@@ -95,5 +108,8 @@ def fetch_espn_props(http: Http, game_ids: list[str], sport: str, league: str, t
                 lo, lu = _line(over), _line(under)
                 if lo is None or lo != lu:
                     continue
-                out[(norm_name(name), stat)] = PropLine(lo, _american(over), _american(under), 1)
+                ol, oo = _open(over)
+                _, ou = _open(under)
+                out[(norm_name(name), stat)] = PropLine(lo, _american(over), _american(under), 1,
+                                                        open_line=ol, open_over=oo, open_under=ou)
     return out

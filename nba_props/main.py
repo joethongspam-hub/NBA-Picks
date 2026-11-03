@@ -21,6 +21,7 @@ from .model import (DEFAULT_PROP_STATS, League, best_picks, build_profile, evalu
                     project_team)
 from .espn_props import NBA_TYPES, fetch_espn_props
 from .odds import DEFAULT_MARKETS, USAGE, PropLine, fetch_props, norm_name
+from .model_report import model_report
 from .report import render
 
 ET = ZoneInfo("America/New_York")
@@ -64,6 +65,7 @@ def grade_history(hist_dir: Path, players_by_id: dict, today: str) -> dict:
                     graded_keys.add(key)
                 continue
             actual = g.get(pk["stat"])
+            pk = {**pk, "actual_min": g.min}
             if actual == pk["line"]:
                 res = "PUSH"
             elif (actual > pk["line"]) == (pk["side"] == "OVER"):
@@ -78,8 +80,9 @@ def grade_history(hist_dir: Path, players_by_id: dict, today: str) -> dict:
 
 def _slim(pk):
     keep = ("game_id", "game", "player", "player_id", "team", "opp", "stat", "side", "line",
-            "line_source", "projection", "prob", "edge", "grade", "score")
-    return {k: pk[k] for k in keep}
+            "line_source", "projection", "prob", "edge", "grade", "score", "price", "minutes", "actual_min",
+            "status", "last_game", "open_line", "open_price", "hit_l10", "reasons", "locked")
+    return {k: pk.get(k) for k in keep}
 
 
 def backtest_summary(all_picks, shown) -> dict:
@@ -215,6 +218,7 @@ def summarize(results: dict) -> dict:
         out[label] = {"w": w, "l": len(rs) - w, "pct": round(w / len(rs), 3) if rs else None}
     recent = sorted(results["graded"], key=lambda r: r["date"], reverse=True)[:40]
     out["recent"] = recent
+    out["report"] = model_report(results["graded"], "min")
     return out
 
 
@@ -277,7 +281,8 @@ def run(date: str | None = None, out_dir: str = "site", cache_dir: str = ".cache
         odds_key = None
         saved = hist / "lines" / f"{day_s}.json"     # real lines saved on the night, if any
         if saved.exists():
-            lines = {(r["name"], r["stat"]): PropLine(r["line"], r["over"], r["under"], r["books"], r.get("source", ""))
+            lines = {(r["name"], r["stat"]): PropLine(r["line"], r["over"], r["under"], r["books"], r.get("source", ""),
+                                 r.get("open_line"), r.get("open_over"), r.get("open_under"))
                      for r in json.loads(saved.read_text())}
 
     log("[4/6] Building profiles, defense-vs-position, projections")
@@ -299,7 +304,8 @@ def run(date: str | None = None, out_dir: str = "site", cache_dir: str = ".cache
     if not backtest:
         lines = {}
         if lines_file.exists():          # lines saved by an earlier run today (pregame)
-            lines = {(r["name"], r["stat"]): PropLine(r["line"], r["over"], r["under"], r["books"], r.get("source", ""))
+            lines = {(r["name"], r["stat"]): PropLine(r["line"], r["over"], r["under"], r["books"], r.get("source", ""),
+                                 r.get("open_line"), r.get("open_over"), r.get("open_under"))
                      for r in json.loads(lines_file.read_text())}
     if upcoming and not backtest:
         try:      # free DraftKings lines via ESPN
@@ -324,7 +330,8 @@ def run(date: str | None = None, out_dir: str = "site", cache_dir: str = ".cache
         lines_file.parent.mkdir(parents=True, exist_ok=True)
         lines_file.write_text(json.dumps(
             [{"name": k[0], "stat": k[1], "line": v.line, "over": v.over_price, "under": v.under_price,
-              "books": v.books, "source": v.source} for k, v in lines.items()]))
+              "books": v.books, "source": v.source,
+              "open_line": v.open_line, "open_over": v.open_over, "open_under": v.open_under} for k, v in lines.items()]))
 
     by_team = {}
     for p in players:

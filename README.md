@@ -71,6 +71,16 @@ later runs keep its pregame picks (and never use live in-game lines), so the tra
 actually have made. It publishes the page to `https://<you>.github.io/<repo>/`,
 and saves each day's picks in `history/` so the **Track record** tab can grade them the next day.
 
+## Model report
+
+The Track record tab includes a **model report**, rebuilt every night from graded live picks:
+- **Profit by grade:** 1 unit per pick as a single at its price.
+- **Calibration:** do picks the model rates at 65% actually win about 65%?
+- **Market movement:** did DraftKings' line move toward or against the pick between open and close? Winning
+  "toward" picks is the best early sign of real edge.
+- **Why losses lost:** role misses (minutes far off the projection) vs. production misses (normal minutes, bad night).
+- **Win rate by type:** side, real vs. estimated line, against/with the last game, back-to-back, injury boost, defense, stat.
+
 ## Phone notifications
 
 1. Install the free **ntfy** app (iOS / Android) and subscribe to a topic name only you know,

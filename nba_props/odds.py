@@ -37,6 +37,9 @@ class PropLine:
     under_price: int | None
     books: int
     source: str = ""
+    open_line: float | None = None
+    open_over: int | None = None
+    open_under: int | None = None
 
     @property
     def label(self) -> str:

@@ -487,6 +487,9 @@ class Pick:
     reasons: list[str]
     actual: float | None = None
     result: str | None = None
+    last_game: float | None = None       # player's stat in his most recent game
+    open_line: float | None = None       # DraftKings opening line (for market-movement tracking)
+    open_price: int | None = None
 
     def to_dict(self):
         return self.__dict__.copy()
@@ -558,6 +561,9 @@ def evaluate(proj: Projection, stats: list[str], lines: dict[tuple[str, str], Pr
             reasons.insert(0, f"Market strongly disagrees ({real.books} books at {line:g} vs projection {mu:.1f}): likely news the model can't see; skipped")
         if h10[1] >= 5:
             reasons.append(f"{side.title()} hit {h10[0]}/{h10[1]} of last {h10[1]} at {line}")
+        if p.logs:
+            lg = p.logs[0].get(s)
+            reasons.append(f"Last game: {lg:g} ({'over' if lg > line else 'under' if lg < line else 'at'} the line)")
         if hv[1]:
             reasons.append(f"Last {hv[1]} vs {proj.opp_abbr}: " + ", ".join(f"{g.get(s):g}" for g in opp_logs))
         picks.append(Pick(
@@ -567,7 +573,10 @@ def evaluate(proj: Projection, stats: list[str], lines: dict[tuple[str, str], Pr
             score=round(score, 2), grade=grade,
             hit_l5=f"{h5[0]}/{h5[1]}", hit_l10=f"{h10[0]}/{h10[1]}", hit_season=f"{hs[0]}/{hs[1]}",
             vs_opp=f"{hv[0]}/{hv[1]}", minutes=round(proj.minutes, 1), status=proj.status,
-            season_avg=round(prof.season_avg[s], 1), l10_avg=round(prof.l10_avg[s], 1), reasons=reasons))
+            season_avg=round(prof.season_avg[s], 1), l10_avg=round(prof.l10_avg[s], 1), reasons=reasons,
+            last_game=p.logs[0].get(s) if p.logs else None,
+            open_line=getattr(real, "open_line", None) if real else None,
+            open_price=(getattr(real, "open_over", None) if side == "OVER" else getattr(real, "open_under", None)) if real else None))
     return picks
 
 

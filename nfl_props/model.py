@@ -527,6 +527,9 @@ def evaluate(proj: Projection, lines: dict[tuple[str, str], PropLine], season: i
                               "likely news the model can't see; skipped")
         if h10[1] >= 5:
             reasons.append(f"{side.title()} hit {h5[0]}/{h5[1]} last 5, {h10[0]}/{h10[1]} last 10 at {line}")
+        if p.logs:
+            lg = p.logs[0].get(s)
+            reasons.append(f"Last game: {lg:g} ({'over' if lg > line else 'under' if lg < line else 'at'} the line)")
         if hv[1]:
             reasons.append(f"Last {hv[1]} vs {proj.opp_abbr}: " + ", ".join(f"{g.get(s):g}" for g in vs_opp))
         opp_txt = proj.opps.get("att") or proj.opps.get("tgt", 0) + proj.opps.get("car", 0)
@@ -537,5 +540,7 @@ def evaluate(proj: Projection, lines: dict[tuple[str, str], PropLine], season: i
             score=round(score, 2), grade=grade, hit_l5=f"{h5[0]}/{h5[1]}", hit_l10=f"{h10[0]}/{h10[1]}",
             hit_season=f"{hs[0]}/{hs[1]}", vs_opp=f"{hv[0]}/{hv[1]}", minutes=round(opp_txt, 1),
             status=proj.status, season_avg=round(pr.season_avg[s], 1), l10_avg=round(pr.l4_avg[s], 1),
-            reasons=reasons))
+            reasons=reasons, last_game=p.logs[0].get(s) if p.logs else None,
+            open_line=getattr(real, "open_line", None) if real else None,
+            open_price=(getattr(real, "open_over", None) if side == "OVER" else getattr(real, "open_under", None)) if real else None))
     return picks

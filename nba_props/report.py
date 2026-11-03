@@ -192,6 +192,29 @@ function renderAll() {
 }
 $("#q").addEventListener("input", renderAll);
 
+// ---- model report
+function reportHTML(rep) {
+  if (!rep || !rep.n) return "";
+  const pctTxt = x => x == null ? "–" : (x * 100).toFixed(0) + "%";
+  const u = x => (x > 0 ? "+" : "") + x.toFixed(1) + "u";
+  const tbl = (rows, extra) => `<div class="card scroll"><table><tr><th></th><th>W-L</th><th>Win%</th>${extra ? "<th>Model said</th>" : ""}<th>Profit</th></tr>
+    ${rows.map(x => `<tr><td>${esc(x.label)}</td><td>${x.w}-${x.l}</td><td>${pctTxt(x.pct)}</td>${extra ? `<td>${pctTxt(x.predicted)}</td>` : ""}<td class="${x.units >= 0 ? "WIN" : "LOSS"}">${u(x.units)}</td></tr>`).join("")}</table></div>`;
+  const m = rep.misses || {};
+  const unit = m.unit === "opps" ? "opportunities" : "minutes";
+  return `<div class="sect">Model report · ${rep.n} graded picks</div>
+    <div class="note" style="margin-top:0">Profit assumes 1 unit per pick as a single at the listed price (estimated lines at -110).</div>
+    <div class="sect">Profit by grade</div>${tbl(rep.profit)}
+    <div class="sect">Calibration: does a 65% pick win 65%?</div>${tbl(rep.calibration, true)}
+    ${(rep.market || []).length ? `<div class="sect">Market movement (DraftKings open → close)</div>${tbl(rep.market)}
+      <div class="note" style="margin-top:4px">Winning the "moved toward our side" row over time is the best early sign of real edge.</div>` : ""}
+    ${m.losses ? `<div class="sect">Why losses lost</div><div class="card" style="padding:12px 14px;font-size:13.5px">
+      <b>${m.role}</b> of ${m.losses} losses were <b>role misses</b>: ${unit} far off the projection
+      (${m.role_more} played more, ${m.role_less} less). <b>${m.variance}</b> were <b>production misses</b>: normal ${unit}, just a bad night.
+      ${(m.examples || []).length ? `<ul class="why">${m.examples.map(e => `<li>${esc(e.player)} ${e.side[0]} ${e.line} ${e.stat}: actual ${e.actual} · ${unit} ${e.proj_min} projected, ${e.actual_min} actual</li>`).join("")}</ul>` : ""}
+      <div class="small" style="margin-top:6px">Mostly role misses → the model needs better lineup/injury info. Mostly production misses → variance; stay the course.</div></div>` : ""}
+    ${(rep.segments || []).map(s => `<div class="sect">By ${esc(s.title.toLowerCase())}</div>${tbl(s.rows)}`).join("")}`;
+}
+
 // ---- record
 function renderRecord() {
   const r = D.record || {};
@@ -214,8 +237,8 @@ function renderRecord() {
   const recent = r.recent || [];
   $("#recordBox").innerHTML = `<div class="rec">${cell("all","All")}${cell("A","Grade A")}${cell("B","Grade B")}${cell("C","Grade C")}</div>
     ${recent.length ? `<div class="card scroll"><table><tr><th>Date</th><th>Pick</th><th>Line</th><th>Actual</th><th>Result</th></tr>
-    ${recent.map(x => `<tr><td>${x.date.slice(5)} <span class="small">${esc(x.player)}</span></td><td class="${x.side}">${x.side[0]} ${x.stat}</td><td>${x.line}</td><td>${x.actual ?? "–"}</td><td class="${x.result}">${x.result}</td></tr>`).join("")}
-    </table></div>` : `<div class="empty">Results appear here after the first day's games are graded.</div>`}${links}`;
+    ${recent.slice(0, 15).map(x => `<tr><td>${x.date.slice(5)} <span class="small">${esc(x.player)}</span></td><td class="${x.side}">${x.side[0]} ${x.stat}</td><td>${x.line}</td><td>${x.actual ?? "–"}</td><td class="${x.result}">${x.result}</td></tr>`).join("")}
+    </table></div>` : `<div class="empty">Results appear here after the first day's games are graded.</div>`}${reportHTML(r.report)}${links}`;
 }
 
 document.querySelector("nav").addEventListener("click", e => {
