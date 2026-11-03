@@ -137,7 +137,8 @@ def backtest_range(start: str, end: str, **kw) -> dict:
     summary_team = TB.summarize_team([p for p in team if p["grade"] != "-"])
     summary = {"nights": [{"date": n["date"], "games": len(n["games"]), "record": {k: n["record"][k] for k in ("all", "A", "B", "C", "all_positive_edge")}} for n in nights],
                "shown": len(shown), "team": summary_team}
-    (bdir / "season_props.json").write_text(json.dumps({"all": allp, "shown": shown, "team": team}))
+    diag = [x for n in nights for x in (n.get("team") or {}).get("diag", [])]
+    (bdir / "season_props.json").write_text(json.dumps({"all": allp, "shown": shown, "team": team, "team_diag": diag}))
     (bdir / "season_summary.json").write_text(json.dumps(summary, indent=1))
     return summary
 
@@ -383,7 +384,7 @@ def run(date: str | None = None, out_dir: str = "site", cache_dir: str = ".cache
         })
 
     # ---- team bets (moneyline / spread / total)
-    team_picks_all, team_shown, team_record = [], [], {}
+    team_picks_all, team_shown, team_record, team_diag = [], [], {}, []
     try:
         results = TB.team_results(http, "nba", sorted(teams), [season, season - 1], season)
         asof = datetime.fromisoformat(day_s).replace(tzinfo=ET)
@@ -412,7 +413,26 @@ def run(date: str | None = None, out_dir: str = "site", cache_dir: str = ".cache
                         mu_h -= loss
                     else:
                         mu_a -= loss
+            # player-sum projection: roster-aware, computed WITHOUT the Vegas total (slate_tt=0)
+            ps = {}
+            for team, opp in ((g.home, g.away), (g.away, g.home)):
+                pj = project_team(by_team.get(team.id, []), team.id, team.abbr, opp.id, opp.abbr, g, league,
+                                  injuries, 0.0, day)
+                pts = sum(pr.mean["PTS"] for pr in pj)
+                mins = sum(pr.play_min for pr in pj)
+                ps[team.id] = (pts + max(0.0, 240 - mins) * 0.33, mins)
             odds = TB.game_odds(http, "nba", g.id, ttl=86400 if backtest else 900)
+            r_h, r_a = ratings.predict(g.home.id, g.away.id)
+            fin = by_event.get(g.id) if backtest else None
+            team_diag.append({"game_id": g.id, "home": g.home.abbr, "away": g.away.abbr, "date": day_s,
+                              "r_h": round(r_h, 2), "r_a": round(r_a, 2), "inj_h": round(r_h - mu_h, 2), "inj_a": round(r_a - mu_a, 2),
+                              "ps_h": round(ps[g.home.id][0], 2), "ps_a": round(ps[g.away.id][0], 2),
+                              "ps_min_h": round(ps[g.home.id][1], 1), "ps_min_a": round(ps[g.away.id][1], 1),
+                              "spread_home": odds.spread_home if odds else None, "sp_h_price": odds.spread_home_price if odds else None,
+                              "sp_a_price": odds.spread_away_price if odds else None, "total": odds.total if odds else None,
+                              "over_price": odds.over_price if odds else None, "under_price": odds.under_price if odds else None,
+                              "ml_home": odds.ml_home if odds else None, "ml_away": odds.ml_away if odds else None,
+                              "hs": fin.hs if fin else None, "as": fin.as_ if fin else None, "n_games": round(ratings.n_games / max(1, len(teams)) * 2, 1)})
             eff = ratings.n_games / max(1, len(teams)) * 2 + (TB.SPORT["nba"]["prior_games"] if any(r.season == season - 1 for r in results) else 0)
             tp = TB.team_picks("nba", g, mu_h, mu_a, odds, notes, eff)
             if backtest and g.id in by_event:
@@ -480,7 +500,7 @@ def run(date: str | None = None, out_dir: str = "site", cache_dir: str = ".cache
         "all": [p.to_dict() for p in sorted(all_picks, key=lambda p: -p.score)],
         "record": record,
         "backtest": backtest,
-        "team": {"picks": team_shown, "all": team_picks_all, "record": team_record},
+        "team": {"picks": team_shown, "all": team_picks_all, "record": team_record, "diag": team_diag},
         "backtests": sorted((f.stem for f in Path(backtest_dir).glob("*.html")), reverse=True)
                      if Path(backtest_dir).exists() else [],
     }
