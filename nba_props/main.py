@@ -433,8 +433,18 @@ def run(date: str | None = None, out_dir: str = "site", cache_dir: str = ".cache
                               "over_price": odds.over_price if odds else None, "under_price": odds.under_price if odds else None,
                               "ml_home": odds.ml_home if odds else None, "ml_away": odds.ml_away if odds else None,
                               "hs": fin.hs if fin else None, "as": fin.as_ if fin else None, "n_games": round(ratings.n_games / max(1, len(teams)) * 2, 1)})
-            eff = ratings.n_games / max(1, len(teams)) * 2 + (TB.SPORT["nba"]["prior_games"] if any(r.season == season - 1 for r in results) else 0)
-            tp = TB.team_picks("nba", g, mu_h, mu_a, odds, notes, eff)
+            # Backtest (Oct 24 - Nov 2): roster-aware player-sum projections carried a spread signal
+            # (36-28 on 2+ pt disagreements) where team ratings were anti-predictive (22-36).
+            # Use player-sum for margin/moneyline; totals showed no signal -> shown but not graded.
+            k_tot = 0.978                               # removes the player-sum total bias seen in the backtest
+            mu_h = ps[g.home.id][0] * k_tot + 1.0       # +/- 1.0 = 2-pt home court split across the two teams
+            mu_a = ps[g.away.id][0] * k_tot - 1.0
+            notes.insert(0, "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)")
+            tp = TB.team_picks("nba", g, mu_h, mu_a, odds, notes, 20)
+            for pk in tp:
+                if pk["market"] == "Total":
+                    pk["grade"], pk["score"] = "-", 0.0
+                    pk["notes"] = pk["notes"] + ["Totals: no signal in the backtest, so shown for reference only"]
             if backtest and g.id in by_event:
                 r = by_event[g.id]
                 for pk in tp:
@@ -500,7 +510,10 @@ def run(date: str | None = None, out_dir: str = "site", cache_dir: str = ".cache
         "all": [p.to_dict() for p in sorted(all_picks, key=lambda p: -p.score)],
         "record": record,
         "backtest": backtest,
-        "team": {"picks": team_shown, "all": team_picks_all, "record": team_record, "diag": team_diag},
+        "team": {"picks": team_shown, "all": team_picks_all, "record": team_record, "diag": team_diag,
+                 "banner": ("NBA spreads and moneylines come from roster-aware player projections. In the Oct 24 – Nov 2 backtest, "
+                            "spread bets where it disagreed with the line by 2+ points went 36–28 (+4.5u), while the old team-ratings "
+                            "model went 22–36. That's promising, but a small sample. Totals showed no signal and aren't graded.")},
         "backtests": sorted((f.stem for f in Path(backtest_dir).glob("*.html")), reverse=True)
                      if Path(backtest_dir).exists() else [],
     }

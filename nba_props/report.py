@@ -315,9 +315,9 @@ function renderTeam() {
   }).join("");
   const r = rec.all || {w: 0, l: 0};
   const tbl = rows => (rows || []).length ? `<div class="card scroll"><table><tr><th></th><th>W-L</th><th>Win%</th><th>Profit</th></tr>${rows.map(x => `<tr><td>${esc(x.label)}</td><td>${x.w}-${x.l}</td><td>${x.pct == null ? "–" : (x.pct * 100).toFixed(0) + "%"}</td><td class="${x.units >= 0 ? "WIN" : "LOSS"}">${(x.units > 0 ? "+" : "") + x.units.toFixed(1)}u</td></tr>`).join("")}</table></div>` : "";
-  $("#teamBox").innerHTML = `<div class="card" style="padding:12px 14px;border-color:var(--gold)"><b style="color:var(--gold)">Experimental: no proven edge.</b>
-    <span class="small">In the October backtests, team bets graded A–C lost money in every sport (65–109 combined, about −32 units).
-    Sides and totals are the sharpest markets in betting. Use these as a second opinion, not as bets. The live record below shows whether that changes.</span></div>
+  $("#teamBox").innerHTML = `<div class="card" style="padding:12px 14px;border-color:var(--gold)"><b style="color:var(--gold)">Experimental${T.banner ? "" : ": no proven edge"}.</b>
+    <span class="small">${T.banner ? esc(T.banner) : `In the October backtests, team bets graded A–C lost money in every sport (65–109 combined, about −32 units).
+    Sides and totals are the sharpest markets in betting. Use these as a second opinion, not as bets. The live record below shows whether that changes.`}</span></div>
     <div class="note">Moneyline, spread/puck line and total for every game. Grades: A ≥ 5% edge, B ≥ 3%, C ≥ 1.5%.</div>
     ${cards || '<div class="empty">No team lines yet.</div>'}
     ${(r.w + r.l) ? `<div class="sect">Team bets track record · ${r.w}-${r.l}</div>${tbl(rec.by_grade)}${tbl(rec.by_market)}` : ""}`;
