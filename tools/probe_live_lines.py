@@ -12,7 +12,8 @@ for ev in sb.get("events", []):
         base = f"https://sports.core.api.espn.com/v2/sports/basketball/leagues/nba/events/{ev['id']}/competitions/{ev['id']}/odds"
         odds = S.get(base, timeout=20).json()
         g["providers"] = [(it.get("provider", {}).get("id"), it.get("provider", {}).get("name")) for it in odds.get("items", [])]
-        pb = S.get(base + "/100/propBets", params={"limit": 1000}, timeout=20).json()
+        pb = S.get(base + "/200/propBets", params={"limit": 1000}, timeout=20).json()
+        g["status200"] = "ok" if pb.get("items") is not None else str(pb)[:200]
         items = pb.get("items", [])
         g["count"] = pb.get("count"); g["pages"] = pb.get("pageCount")
         grp = defaultdict(list)
