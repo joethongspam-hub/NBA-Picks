@@ -133,10 +133,10 @@ def backtest_range(start: str, end: str, **kw) -> dict:
             p["date"] = n["date"]
     shown = [dict(p, date=n["date"]) for n in nights for p in
              {(q["player_id"], q["stat"]): q for q in n["top"] + [x for v in n["by_game"].values() for x in v]}.values()]
-    summary = {"nights": [{"date": n["date"], "games": len(n["games"]), "record": {k: n["record"][k] for k in ("all", "A", "B", "C", "all_positive_edge")}} for n in nights],
-               "shown": len(shown), "team": summary_team}
     team = [dict(p, date=n["date"]) for n in nights for p in (n.get("team") or {}).get("all", [])]
     summary_team = TB.summarize_team([p for p in team if p["grade"] != "-"])
+    summary = {"nights": [{"date": n["date"], "games": len(n["games"]), "record": {k: n["record"][k] for k in ("all", "A", "B", "C", "all_positive_edge")}} for n in nights],
+               "shown": len(shown), "team": summary_team}
     (bdir / "season_props.json").write_text(json.dumps({"all": allp, "shown": shown, "team": team}))
     (bdir / "season_summary.json").write_text(json.dumps(summary, indent=1))
     return summary
