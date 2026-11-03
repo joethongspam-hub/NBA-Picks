@@ -74,6 +74,11 @@ input[type=search]{width:100%;background:var(--panel);border:1px solid var(--lin
 .res{font:700 12px var(--mono);margin-top:2px}
 .PENDING{color:var(--gold)}
 .links a{color:var(--blue);margin-right:12px}
+.hgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.hgrid label{display:flex;flex-direction:column;font-size:12px;color:var(--mute);gap:4px}
+.hgrid .full{grid-column:1 / -1}
+.hgrid select,.hgrid input{background:var(--panel2);border:1px solid var(--line);color:var(--ink);border-radius:9px;padding:9px 10px;font-size:16px;width:100%}
+.verdict{font:700 20px var(--mono);margin:2px 0 6px}
 .empty{color:var(--mute);text-align:center;padding:40px 10px}
 .note{color:var(--mute);font-size:12px;margin:14px 2px;line-height:1.5}
 .sect{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--mute);margin:16px 2px 8px}
@@ -89,6 +94,7 @@ input[type=search]{width:100%;background:var(--panel);border:1px solid var(--lin
   <button data-v="games">Games</button>
   <button data-v="all">All props</button>
   <button data-v="record">Track record</button>
+  <button data-v="half" id="halfBtn" style="display:none">Halftime</button>
 </div></nav>
 <main>
   <section class="view on" id="v-best">
@@ -101,6 +107,26 @@ input[type=search]{width:100%;background:var(--panel);border:1px solid var(--lin
     <div class="card" id="allList"></div>
   </section>
   <section class="view" id="v-record"><div id="recordBox"></div></section>
+  <section class="view" id="v-half">
+    <div class="card" style="padding:14px">
+      <div class="hgrid">
+        <label class="full">Game<select id="hGame"></select></label>
+        <label class="full">Player<select id="hPlayer"></select></label>
+        <label>Stat<select id="hStat"></select></label>
+        <label>Live line<input id="hLine" type="number" inputmode="decimal" step="0.5" placeholder="e.g. 14.5"></label>
+        <label>1st-half minutes<input id="hMin" type="number" inputmode="decimal" step="1" placeholder="e.g. 16"></label>
+        <label>1st-half stat so far<input id="hVal" type="number" inputmode="decimal" step="1" placeholder="e.g. 9"></label>
+        <label>Fouls<input id="hFouls" type="number" inputmode="numeric" step="1" value="0"></label>
+        <label>His team's lead (−if trailing)<input id="hMargin" type="number" inputmode="numeric" step="1" value="0"></label>
+        <label>Over price<input id="hOver" type="number" inputmode="numeric" placeholder="-115"></label>
+        <label>Under price<input id="hUnder" type="number" inputmode="numeric" placeholder="-115"></label>
+      </div>
+    </div>
+    <div id="hOut"></div>
+    <p class="note">How it works: first-half <b>minutes</b> count as real information (role, foul trouble, blowout), while
+    first-half <b>shooting</b> mostly regresses. Per-minute production is 80% pregame, 20% first half. The second half
+    uses the pregame model's game-to-game variance. Live markets carry more vig, so only bet clear edges.</p>
+  </section>
   <p class="note">__NOTE__</p>
 </main>
 <script>
@@ -246,6 +272,85 @@ document.querySelector("nav").addEventListener("click", e => {
   document.querySelectorAll("nav button").forEach(b => b.classList.toggle("on", b.dataset.v === v));
   document.querySelectorAll(".view").forEach(s => s.classList.toggle("on", s.id === "v-" + v));
 });
+// ---- halftime calculator
+const HSTATS = ["PTS","REB","AST","3PM","PRA","PR","PA","RA","STL","BLK"];
+const COUNT = new Set(["3PM","STL","BLK"]);
+const hasRates = !D.backtest && D.games.some(g => (g.projections || []).some(r => r.rate));
+function phi(x){ const t=1/(1+0.2316419*Math.abs(x)); const d=0.3989423*Math.exp(-x*x/2);
+  const p=d*t*(0.3193815+t*(-0.3565638+t*(1.781478+t*(-1.821256+t*1.330274)))); return x>0?1-p:p; }
+function poissonCdf(k, mu){ if(k<0) return 0; let s=0, term=Math.exp(-mu); for(let i=0;i<=k;i++){ if(i>0) term*=mu/i; s+=term; } return Math.min(1,s); }
+function impl(p){ p=Number(p); if(!p) return null; return p>0?100/(p+100):-p/(-p+100); }
+function halfCalc() {
+  const g = D.games.find(x => x.id === $("#hGame").value); if (!g) return;
+  const r = (g.projections || []).find(x => x.player === $("#hPlayer").value); if (!r || !r.rate) return;
+  const stat = $("#hStat").value, line = parseFloat($("#hLine").value);
+  const m1 = parseFloat($("#hMin").value), v1 = parseFloat($("#hVal").value);
+  const fouls = parseInt($("#hFouls").value || "0"), margin = parseInt($("#hMargin").value || "0");
+  if ([line, m1, v1].some(x => isNaN(x))) { $("#hOut").innerHTML = `<div class="card" style="padding:14px"><div class="small">Pregame: ${r.pmin} min, ${(r.rate[stat]*r.pmin).toFixed(1)} ${stat} projected. Enter the 1st-half numbers and live line.</div></div>`; return; }
+  const notes = [];
+  const half = r.pmin / 2;
+  const role = Math.max(0.5, Math.min(1.6, m1 / Math.max(half, 1)));
+  let m2 = half * (0.5 + 0.5 * role);
+  if (role >= 1.2) notes.push(`Played ${m1} min vs ~${half.toFixed(0)} expected: bigger role, 2nd-half minutes raised`);
+  if (role <= 0.8) notes.push(`Played ${m1} min vs ~${half.toFixed(0)} expected: smaller role, 2nd-half minutes cut`);
+  if (fouls >= 4) { m2 *= 0.8; notes.push(`${fouls} fouls: minutes trimmed 20%`); }
+  else if (fouls === 3) { m2 *= 0.92; notes.push("3 fouls at the half: minutes trimmed 8%"); }
+  const starter = r.pmin >= 28, am = Math.abs(margin);
+  if (am >= 20) { m2 *= starter ? 0.75 : 1.15; notes.push(`${am}-point game: blowout risk, ${starter ? "starter minutes cut 25%" : "bench minutes up"}`); }
+  else if (am >= 15) { m2 *= starter ? 0.88 : 1.08; notes.push(`${am}-point game: some blowout risk`); }
+  m2 = Math.min(m2, 23);
+  const pre = r.rate[stat];
+  const r1 = m1 >= 4 ? v1 / m1 : pre;
+  const rate2 = 0.8 * pre + 0.2 * r1;
+  if (r1 > pre * 1.4) notes.push("Hot 1st half: shooting/production regressed toward pregame rate");
+  if (r1 < pre * 0.6 && m1 >= 4) notes.push("Cold 1st half: production expected to bounce back toward pregame rate");
+  const mu2 = Math.max(0.01, rate2 * m2), proj = v1 + mu2, need = line - v1;
+  let pOver, pUnder;
+  if (need <= 0) { pOver = 1; pUnder = 0; }
+  else if (COUNT.has(stat)) { const k = Math.floor(need); const integer = Math.abs(need - Math.round(need)) < 1e-9;
+    if (integer) { pUnder = poissonCdf(need - 1, mu2); pOver = 1 - poissonCdf(need, mu2); } else { pUnder = poissonCdf(k, mu2); pOver = 1 - pUnder; } }
+  else { const sdg = (r.sd || {})[stat] || Math.sqrt(Math.max(r.rate[stat]*r.pmin,1)); const sd = Math.max(Math.sqrt(mu2), sdg * Math.sqrt(Math.max(m2, 1) / Math.max(r.pmin, 1)));
+    const integer = Math.abs(line - Math.round(line)) < 1e-9;
+    if (integer) { pOver = 1 - phi((need + 0.5 - mu2) / sd); pUnder = phi((need - 0.5 - mu2) / sd); } else { pOver = 1 - phi((need - mu2) / sd); pUnder = 1 - pOver; } }
+  // blend with market like the pregame model (live books are sharp)
+  const io = impl($("#hOver").value) ?? impl(-115), iu = impl($("#hUnder").value) ?? impl(-115);
+  const fair = io / (io + iu);
+  pOver = fair + 0.6 * (pOver - fair); pUnder = (1 - fair) + 0.6 * (pUnder - (1 - fair));
+  const eo = pOver - io, eu = pUnder - iu;
+  const side = eo >= eu ? "OVER" : "UNDER", edge = Math.max(eo, eu), prob = side === "OVER" ? pOver : pUnder;
+  const verdict = need <= 0 ? ["Already over the line", "var(--over)"]
+    : edge >= 0.06 ? [`Bet ${side}`, side === "OVER" ? "var(--over)" : "var(--under)"]
+    : edge >= 0.03 ? [`Lean ${side}`, "var(--gold)"] : ["Pass", "var(--mute)"];
+  $("#hOut").innerHTML = `<div class="card" style="padding:14px">
+    <div class="verdict" style="color:${verdict[1]}">${verdict[0]}</div>
+    <div class="stats">
+      <div><span>Projected final</span><strong>${proj.toFixed(1)}</strong></div>
+      <div><span>Needs in 2nd half</span><strong>${Math.max(0, need).toFixed(1)}</strong></div>
+      <div><span>${side === "OVER" ? "Over" : "Under"} prob</span><strong>${pct(prob)}</strong></div>
+      <div><span>Edge</span><strong>${(edge * 100).toFixed(1)}%</strong></div>
+      <div><span>2nd-half min</span><strong>${m2.toFixed(1)}</strong></div>
+      <div><span>2nd-half ${stat}</span><strong>${mu2.toFixed(1)}</strong></div>
+      <div><span>Pregame proj</span><strong>${(pre * r.pmin).toFixed(1)}</strong></div>
+      <div><span>Pregame min</span><strong>${r.pmin}</strong></div>
+    </div>
+    ${notes.length ? `<ul class="why">${notes.map(n => `<li>${esc(n)}</li>`).join("")}</ul>` : ""}
+    <div class="small" style="margin-top:6px">"Bet" needs a 6%+ edge and "Lean" 3–6%, set higher than pregame because live markets carry more vig.</div></div>`;
+}
+function halfPlayers() {
+  const g = D.games.find(x => x.id === $("#hGame").value) || D.games[0];
+  const rows = (g.projections || []).filter(r => r.rate).sort((a, b) => a.team.localeCompare(b.team) || b.pmin - a.pmin);
+  $("#hPlayer").innerHTML = rows.map(r => `<option value="${esc(r.player)}">${esc(r.team)} · ${esc(r.player)}</option>`).join("");
+  halfCalc();
+}
+if (hasRates) {
+  $("#halfBtn").style.display = "";
+  $("#hGame").innerHTML = D.games.map(g => `<option value="${g.id}">${esc(g.away)} @ ${esc(g.home)} · ${esc(g.time)}</option>`).join("");
+  $("#hStat").innerHTML = HSTATS.map(s => `<option>${s}</option>`).join("");
+  $("#hGame").addEventListener("change", halfPlayers);
+  ["hPlayer","hStat","hLine","hMin","hVal","hFouls","hMargin","hOver","hUnder"].forEach(id => $("#" + id).addEventListener("input", halfCalc));
+  halfPlayers();
+}
+
 renderBest(); renderGames(); renderAll(); renderRecord();
 </script>
 </body>

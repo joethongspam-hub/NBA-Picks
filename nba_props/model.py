@@ -272,6 +272,7 @@ class Projection:
     stat_reasons: dict[str, list[str]]
     profile: Profile
     depleted: list = field(default_factory=list)    # rotation players out (team-level)
+    play_min: float = 0.0                           # projected minutes actually used in the projection
 
 
 def _sd_from_logs(p: Player, stat: str, proj: float, hist_mean: float) -> float:
@@ -453,7 +454,7 @@ def project_team(team_players: list[Player], team_id: str, team_abbr: str, opp_i
 
         sd = {s: _sd_from_logs(p, s, mean[s], prof.season_avg.get(s, 0)) for s in mean}
         out.append(Projection(p, team_abbr, opp_abbr, game, mins_shown, mean, sd, status,
-                              reasons, dict(stat_reasons), prof, depleted))
+                              reasons, dict(stat_reasons), prof, depleted, mins_adj))
     return out
 
 

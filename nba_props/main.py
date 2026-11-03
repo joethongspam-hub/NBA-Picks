@@ -365,7 +365,11 @@ def run(date: str | None = None, out_dir: str = "site", cache_dir: str = ".cache
             "injuries": inj_list,
             "projections": sorted([{"player": pr.player.name, "team": pr.team_abbr, "min": round(pr.minutes, 1),
                                     "status": pr.status,
-                                    **{s: round(pr.mean[s], 1) for s in ("PTS", "REB", "AST", "3PM", "PRA")}}
+                                    **{s: round(pr.mean[s], 1) for s in ("PTS", "REB", "AST", "3PM", "PRA")},
+                                    # for the halftime calculator
+                                    "pmin": round(pr.play_min, 1),
+                                    "rate": {s: round(pr.mean[s] / max(pr.play_min, 1), 4) for s in pr.mean},
+                                    "sd": {s: round(pr.sd[s], 2) for s in pr.sd}}
                                    for pr in game_projs], key=lambda x: -x["PRA"]),
         })
 

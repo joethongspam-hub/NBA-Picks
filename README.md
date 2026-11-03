@@ -81,6 +81,14 @@ The Track record tab includes a **model report**, rebuilt every night from grade
 - **Why losses lost:** role misses (minutes far off the projection) vs. production misses (normal minutes, bad night).
 - **Win rate by type:** side, real vs. estimated line, against/with the last game, back-to-back, injury boost, defense, stat.
 
+## Halftime calculator (NBA)
+
+The **Halftime** tab updates a pregame projection with first-half reality. Pick the player and stat, then enter
+his first-half minutes, the stat so far, fouls, the score margin and the live line/prices. First-half minutes count as
+real information (bigger or smaller role, foul trouble, blowout risk); first-half shooting mostly regresses (per-minute
+rate is 80% pregame, 20% first half). It shows the projected final, over/under probability, edge, and a
+Bet (6%+ edge) / Lean (3–6%) / Pass verdict.
+
 ## Phone notifications
 
 1. Install the free **ntfy** app (iOS / Android) and subscribe to a topic name only you know,
