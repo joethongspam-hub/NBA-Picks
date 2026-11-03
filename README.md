@@ -1,4 +1,4 @@
-# NBA + NFL Player Props Finder
+# NBA + NFL + NHL Player Props & Team Bets
 
 Every day this app pulls the NBA schedule, injury report, Vegas lines and every player's game logs,
 projects each rotation player's stat line, and ranks the props with the biggest edge. The output is a
@@ -140,6 +140,32 @@ Multi-book NFL lines from the Odds API use the same `ODDS_API_KEY` and are opt-i
 `NFL_ODDS_MARKETS` (default `player_pass_yds,player_reception_yds`). The NBA's Odds API pull is likewise opt-in
 (`NBA_ODDS` = `on`), since the NBA gets free DraftKings lines from ESPN.
 
+## NHL
+
+`python -m nhl_props.main` (today) · `--backtest-range 2026-10-15 2026-11-02` · `--results-only`. Page at `/nhl/`.
+
+* **Skaters:** ice time × per-60 shot and assist rates. Goals = shots × shooting %, pulled hard toward position
+  averages (forwards about 10.5%, defense about 4.5%). Adjusted for the opponent's shot suppression vs. forwards and
+  defense, the opposing goalie's save %, Vegas-implied team goals (solved from the moneyline and total) and injured
+  teammates. Props: shots on goal, points, assists, anytime goal.
+* **Goalies:** saves = projected shots against (opponent's shots for, own team's shots allowed) × save %, pulled
+  toward .900. Only offered when one goalie has clearly been starting (and not on a likely back-to-back rest day).
+* DraftKings lines via ESPN; same locking, grading, results run, notifications and model report as the NBA.
+
+## Team bets (all sports)
+
+Each page has a **Team** tab with the moneyline, spread (puck line for the NHL) and total for every game:
+* **Team ratings:** offense and defense ratings fit to this season's scores (recency-weighted, adjusted for
+  opponent, with home advantage), blended with last season early on.
+* **Injury adjustments:** NBA scoring lost from rotation players out; NFL backup QB about −3 points;
+  NHL starting goalie's save %.
+* **From scores to probabilities:** normal distributions for NBA/NFL margins and totals; Poisson goals for the NHL
+  (moneyline including overtime, puck line ±1.5, total).
+* **Probabilities are blended heavily toward the no-vig DraftKings price,** because these are the sharpest markets.
+  Grades: A ≥ 5% edge, B ≥ 3%, C ≥ 1.5%.
+
+Team bets are graded by the results runs and tracked separately on the Team tab.
+
 ## Tests
 
 ```bash
@@ -147,6 +173,7 @@ python tests/test_pipeline.py   # full run against a simulated league in ESPN's 
 python tests/test_grading.py
 python tests/test_backtest.py
 python tests/test_nfl.py
+python tests/test_nhl.py
 ```
 
 ## Data sources

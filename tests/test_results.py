@@ -30,7 +30,7 @@ def test_results():
             return super().get_json(url, params, ttl)
     out = M.results_only(out_dir=str(t / "s"), hist_dir=str(t / "h"), http=Spy(lg), notify_out=str(t / "n.json"))
     assert out["new"] and all(r["result"] in ("WIN", "LOSS", "PUSH", "VOID") for r in out["new"])
-    assert all("/gamelog" in u for u in calls), "results run must only fetch box scores"
+    assert not any(("/odds" in u or "propBets" in u or "the-odds-api" in u) for u in calls), "results run must not fetch odds"
     page = json.loads((t / "s/picks.json").read_text())
     assert any(p.get("result") in ("WIN", "LOSS") for p in page["top"])
     msg = json.loads((t / "n.json").read_text())

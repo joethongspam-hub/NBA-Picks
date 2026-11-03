@@ -21,6 +21,7 @@ from .model import (DEFAULT_PROP_STATS, League, best_picks, build_profile, evalu
                     project_team)
 from .espn_props import NBA_TYPES, fetch_espn_props
 from .odds import DEFAULT_MARKETS, USAGE, PropLine, fetch_props, norm_name
+from . import teambets as TB
 from .model_report import model_report
 from .report import render
 
@@ -133,8 +134,10 @@ def backtest_range(start: str, end: str, **kw) -> dict:
     shown = [dict(p, date=n["date"]) for n in nights for p in
              {(q["player_id"], q["stat"]): q for q in n["top"] + [x for v in n["by_game"].values() for x in v]}.values()]
     summary = {"nights": [{"date": n["date"], "games": len(n["games"]), "record": {k: n["record"][k] for k in ("all", "A", "B", "C", "all_positive_edge")}} for n in nights],
-               "shown": len(shown)}
-    (bdir / "season_props.json").write_text(json.dumps({"all": allp, "shown": shown}))
+               "shown": len(shown), "team": summary_team}
+    team = [dict(p, date=n["date"]) for n in nights for p in (n.get("team") or {}).get("all", [])]
+    summary_team = TB.summarize_team([p for p in team if p["grade"] != "-"])
+    (bdir / "season_props.json").write_text(json.dumps({"all": allp, "shown": shown, "team": team}))
     (bdir / "season_summary.json").write_text(json.dumps(summary, indent=1))
     return summary
 
@@ -199,9 +202,14 @@ def results_only(out_dir: str = "public", cache_dir: str = ".cache", hist_dir: s
     if pj.exists():
         payload = json.loads(pj.read_text())
         payload["record"] = record
+        try:
+            tr = TB.grade_team_history(http or Http(cache_dir), "nba", hist, now_et)
+            payload.setdefault("team", {})["record"] = tr
+        except Exception as e:
+            log(f"[results] team grading failed: {e!r}")
         annotate_results(payload, results["graded"])
         pj.write_text(json.dumps(payload))
-        (out / "index.html").write_text(render(payload, switch=("NFL", "nfl/")))
+        (out / "index.html").write_text(render(payload, switch=[("NFL", "nfl/"), ("NHL", "nhl/")]))
     msg = results_message("NBA", new, record)
     if notify_out and msg:
         Path(notify_out).write_text(json.dumps({**msg, "url": ""}))
@@ -374,6 +382,54 @@ def run(date: str | None = None, out_dir: str = "site", cache_dir: str = ".cache
                                    for pr in game_projs], key=lambda x: -x["PRA"]),
         })
 
+    # ---- team bets (moneyline / spread / total)
+    team_picks_all, team_shown, team_record = [], [], {}
+    try:
+        results = TB.team_results(http, "nba", sorted(teams), [season, season - 1], season)
+        asof = datetime.fromisoformat(day_s).replace(tzinfo=ET)
+        ratings = TB.Ratings("nba", results, asof, season)
+        by_event = {r.event_id: r for r in results}
+        for g in games:
+            if g.id in started:
+                continue
+            mu_h, mu_a = ratings.predict(g.home.id, g.away.id)
+            notes = []
+            for team, sign in ((g.home, 1), (g.away, -1)):
+                recent5 = league.recent_events(team.id, 5)
+                loss = 0.0
+                names = []
+                for p in by_team.get(team.id, []):
+                    i = injuries.get(p.id) or injuries.get(p.name)
+                    prof = profiles.get(p.id)
+                    if i and i.level in ("OUT", "DOUBTFUL") and prof and prof.min_base >= 12 and recent5:
+                        pres = sum(e in {x.event_id for x in p.logs} for e in recent5) / len(recent5)
+                        if pres > 0:
+                            loss += 0.25 * prof.base_vol["PTS"] * pres
+                            names.append(p.name.split()[-1])
+                if loss >= 0.5:
+                    notes.append(f"{team.abbr} injuries ({', '.join(names[:3])}): -{loss:.1f} pts")
+                    if sign == 1:
+                        mu_h -= loss
+                    else:
+                        mu_a -= loss
+            odds = TB.game_odds(http, "nba", g.id, ttl=86400 if backtest else 900)
+            eff = ratings.n_games / max(1, len(teams)) * 2 + (TB.SPORT["nba"]["prior_games"] if any(r.season == season - 1 for r in results) else 0)
+            tp = TB.team_picks("nba", g, mu_h, mu_a, odds, notes, eff)
+            if backtest and g.id in by_event:
+                r = by_event[g.id]
+                for pk in tp:
+                    pk["result"] = TB.grade_team_pick(pk, r.hs, r.as_)
+                    pk["final"] = f"{pk['home']} {r.hs:g} – {pk['away']} {r.as_:g}"
+            team_picks_all += tp
+        if not backtest:
+            team_shown = TB.save_team_picks(hist, day_s, team_picks_all, started, now_et)
+            team_record = TB.grade_team_history(http, "nba", hist, now_et)
+        else:
+            team_shown = [p for p in team_picks_all if p["grade"] != "-"]
+            team_record = TB.summarize_team([dict(p, date=day_s) for p in team_shown])
+    except Exception as e:
+        log(f"   team bets failed: {e!r}")
+
     if backtest:
         for pk in all_picks:
             gl = actual.get((pk.player_id, pk.game_id))
@@ -424,18 +480,19 @@ def run(date: str | None = None, out_dir: str = "site", cache_dir: str = ".cache
         "all": [p.to_dict() for p in sorted(all_picks, key=lambda p: -p.score)],
         "record": record,
         "backtest": backtest,
+        "team": {"picks": team_shown, "all": team_picks_all, "record": team_record},
         "backtests": sorted((f.stem for f in Path(backtest_dir).glob("*.html")), reverse=True)
                      if Path(backtest_dir).exists() else [],
     }
     if backtest:
         bdir = Path(backtest_dir)
         bdir.mkdir(parents=True, exist_ok=True)
-        (bdir / f"{day_s}.html").write_text(render(payload, switch=("NFL", "../nfl/")))
+        (bdir / f"{day_s}.html").write_text(render(payload, switch=[("NFL", "../nfl/"), ("NHL", "../nhl/")]))
         (bdir / f"{day_s}.json").write_text(json.dumps(payload))
         log(f"Backtest -> {bdir / (day_s + '.html')}")
         return payload
     (out / "picks.json").write_text(json.dumps(payload))
-    (out / "index.html").write_text(render(payload, switch=("NFL", "nfl/")))
+    (out / "index.html").write_text(render(payload, switch=[("NFL", "nfl/"), ("NHL", "nhl/")]))
     with open(out / "picks.csv", "w", newline="") as f:
         cols = ["game", "player", "team", "opp", "stat", "side", "line", "line_source", "price", "projection",
                 "prob", "edge", "grade", "score", "hit_l5", "hit_l10", "hit_season", "vs_opp", "minutes", "status"]

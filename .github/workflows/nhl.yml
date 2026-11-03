@@ -1,0 +1,143 @@
+name: Daily NHL props
+
+on:
+  schedule:
+    # UTC, off the top of the hour. Picks lock at puck drop.
+    - cron: "53 16 * * *"    # ~10:50 AM CT: morning picks
+    - cron: "23 21 * * *"    # ~3:20 PM CT: main pregame run
+    - cron: "49 23 * * *"    # ~5:50 PM CT: late scratches / goalie news for games not started
+    - cron: "39 6 * * *"     # ~12:40 AM CT: results only (no odds, no new picks)
+  workflow_dispatch:
+    inputs:
+      results:
+        description: "Results only: grade finished picks, no new picks or odds (yes/no)"
+        required: false
+        default: "no"
+      notify:
+        description: "Phone notification: no / yes (if picks changed) / test (always send)"
+        required: false
+        default: "no"
+      backtest_start:
+        description: "Optional: first date to backtest (YYYY-MM-DD)"
+        required: false
+        default: ""
+      backtest_end:
+        description: "Optional: last date to backtest (YYYY-MM-DD)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: props
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+
+      - name: Restore data cache
+        uses: actions/cache@v4
+        with:
+          path: .cache
+          key: espn-nhl-${{ github.run_id }}
+          restore-keys: espn-nhl-
+
+      - name: Load the current site (NBA + NFL pages)
+        run: |
+          mkdir -p public
+          if git fetch -q origin site-data; then git archive FETCH_HEAD | tar -x -C public; fi
+          cp public/nhl/picks.json /tmp/before_nhl.json 2>/dev/null || true
+
+      - name: Backtest dates
+        if: ${{ github.event.inputs.backtest_start != '' && github.event.inputs.backtest_end != '' }}
+        run: python -m nhl_props.main --backtest-range ${{ github.event.inputs.backtest_start }} ${{ github.event.inputs.backtest_end }}
+
+      - name: Save raw data snapshot (for offline tuning)
+        if: ${{ github.event.inputs.backtest_start != '' }}
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          tar czf /tmp/cache.tgz .cache
+          mkdir /tmp/snap && cd /tmp/snap && git init -q && cp /tmp/cache.tgz .
+          git -c user.name=props-bot -c user.email=props-bot@users.noreply.github.com add . 
+          git -c user.name=props-bot -c user.email=props-bot@users.noreply.github.com commit -qm "nhl data snapshot"
+          git push -fq "https://x-access-token:${TOKEN}@github.com/${{ github.repository }}.git" HEAD:data-snapshot-nhl
+
+      - name: Grade results (no odds, no new picks)
+        if: ${{ github.event.schedule == '39 6 * * *' || github.event.inputs.results == 'yes' }}
+        run: python -m nhl_props.main --results-only --out public/nhl --history history/nhl --notify-out notify.json
+
+      - name: Build today's picks
+        if: ${{ !(github.event.schedule == '39 6 * * *' || github.event.inputs.results == 'yes') }}
+        run: python -m nhl_props.main
+
+      - name: Save pick history
+        run: |
+          git config user.name "props-bot"
+          git config user.email "props-bot@users.noreply.github.com"
+          git add history
+          git diff --cached --quiet || git commit -m "nhl picks $(date -u +%F)"
+          git pull --rebase -q && git push
+
+      - name: Prepare phone notification
+        if: ${{ !(github.event.schedule == '39 6 * * *' || github.event.inputs.results == 'yes') && (github.event_name == 'schedule' || github.event.inputs.notify == 'yes' || github.event.inputs.notify == 'test') }}
+        run: |
+          python -m nba_props.notify --sport NHL --before /tmp/before_nhl.json --after public/nhl/picks.json \
+            --url "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/nhl/" \
+            --out notify.json ${{ github.event.inputs.notify == 'test' && '--force' || '' }} || true
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: notify
+          path: notify.json
+          if-no-files-found: ignore
+
+      - name: Save site
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd public && rm -rf .git && git init -q && git add -A
+          git -c user.name=props-bot -c user.email=props-bot@users.noreply.github.com commit -qm "site $(date -u +%F)"
+          git push -fq "https://x-access-token:${TOKEN}@github.com/${{ github.repository }}.git" HEAD:site-data
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
+
+  notify:
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: notify
+        continue-on-error: true
+      - name: Send to phone (ntfy)
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: |
+          pip install -q requests
+          python -m nba_props.notify --send-json notify.json \
+            --url "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/nhl/" || true

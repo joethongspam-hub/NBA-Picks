@@ -92,6 +92,7 @@ input[type=search]{width:100%;background:var(--panel);border:1px solid var(--lin
 <nav><div class="in">
   <button data-v="best" class="on">Best bets</button>
   <button data-v="games">Games</button>
+  <button data-v="team" id="teamBtn" style="display:none">Team</button>
   <button data-v="all">All props</button>
   <button data-v="record">Track record</button>
   <button data-v="half" id="halfBtn" style="display:none">Live</button>
@@ -102,6 +103,7 @@ input[type=search]{width:100%;background:var(--panel);border:1px solid var(--lin
     <div class="card" id="bestList"></div>
   </section>
   <section class="view" id="v-games"><div id="gameList"></div></section>
+  <section class="view" id="v-team"><div id="teamBox"></div></section>
   <section class="view" id="v-all">
     <input type="search" id="q" placeholder="Search player, team or stat (e.g. 'PTS', 'LAL')">
     <div class="card" id="allList"></div>
@@ -283,6 +285,43 @@ document.querySelector("nav").addEventListener("click", e => {
   document.querySelectorAll("nav button").forEach(b => b.classList.toggle("on", b.dataset.v === v));
   document.querySelectorAll(".view").forEach(s => s.classList.toggle("on", s.id === "v-" + v));
 });
+// ---- team bets
+function renderTeam() {
+  const T = D.team || {}; const all = T.all || [], shown = T.picks || [], rec = T.record || {};
+  if (!all.length && !shown.length && !(rec.all && (rec.all.w + rec.all.l))) return;
+  $("#teamBtn").style.display = "";
+  const shownKey = new Set(shown.map(p => p.game_id + "|" + p.market));
+  const byGame = {};
+  (all.length ? all : shown).forEach(p => (byGame[p.game_id] = byGame[p.game_id] || []).push(p));
+  shown.filter(p => p.locked).forEach(p => { if (!(byGame[p.game_id] || []).some(x => x.market === p.market)) (byGame[p.game_id] = byGame[p.game_id] || []).push(p); });
+  const g2 = Object.fromEntries(D.games.map(g => [g.id, g]));
+  const row = p => {
+    const gr = p.grade || "-";
+    return `<div class="pick" onclick="this.classList.toggle('open')"><div class="row">
+      <div class="grade g${gr}">${gr}</div>
+      <div class="who"><div class="name">${esc(p.pick)} <span class="small">${p.price > 0 ? "+" + p.price : p.price}</span></div>
+        <div class="meta">${esc(p.market)} · proj ${esc(p.proj)}${p.locked ? " · locked" : ""}</div></div>
+      <div class="bet"><div class="side ${p.edge >= 0.015 ? "OVER" : ""}" style="font-size:14px">${(p.edge * 100).toFixed(1)}%</div>
+        <div class="small">${pct(p.prob)} win</div>
+        ${p.result ? `<div class="res ${p.result}">${esc(p.final || "")} · ${p.result}</div>` : ""}</div></div>
+      <div class="detail"><div class="small">Model alone: ${pct(p.model_prob)} · blended with the market: ${pct(p.prob)} · edge vs price ${(p.edge * 100).toFixed(1)}%</div>
+        ${(p.notes || []).length ? `<ul class="why">${p.notes.map(n => `<li>${esc(n)}</li>`).join("")}</ul>` : ""}</div></div>`;
+  };
+  const cards = Object.entries(byGame).map(([gid, ps]) => {
+    const g = g2[gid] || {}; const head = ps[0];
+    ps.sort((a, b) => ["Moneyline", "Spread", "Puck line", "Total"].indexOf(a.market) - ["Moneyline", "Spread", "Puck line", "Total"].indexOf(b.market));
+    return `<div class="card"><div class="gh" style="cursor:default"><div><h3>${esc(head.away)} @ ${esc(head.home)}</h3>
+      <div class="meta">${esc(g.time || "")}${g.odds ? " · " + esc(g.odds) : ""}${g.total ? " · O/U " + g.total : ""}</div></div></div>${ps.map(row).join("")}</div>`;
+  }).join("");
+  const r = rec.all || {w: 0, l: 0};
+  const tbl = rows => (rows || []).length ? `<div class="card scroll"><table><tr><th></th><th>W-L</th><th>Win%</th><th>Profit</th></tr>${rows.map(x => `<tr><td>${esc(x.label)}</td><td>${x.w}-${x.l}</td><td>${x.pct == null ? "–" : (x.pct * 100).toFixed(0) + "%"}</td><td class="${x.units >= 0 ? "WIN" : "LOSS"}">${(x.units > 0 ? "+" : "") + x.units.toFixed(1)}u</td></tr>`).join("")}</table></div>` : "";
+  $("#teamBox").innerHTML = `<div class="note" style="margin-top:0">Moneyline, spread${D.games.length ? "" : ""} and total for every game. Grades: A ≥ 5% edge, B ≥ 3%, C ≥ 1.5%.
+    These are the sharpest markets in betting, so the model is blended heavily toward the market and edges are small by design.</div>
+    ${cards || '<div class="empty">No team lines yet.</div>'}
+    ${(r.w + r.l) ? `<div class="sect">Team bets track record · ${r.w}-${r.l}</div>${tbl(rec.by_grade)}${tbl(rec.by_market)}` : ""}`;
+}
+renderTeam();
+
 // ---- live / halftime calculator
 const HSTATS = ["PTS","REB","AST","3PM","PRA","PR","PA","RA","STL","BLK"];
 const COUNT = new Set(["3PM","STL","BLK"]);
@@ -505,7 +544,7 @@ NBA_NOTE = ("Projections blend per-minute production, projected minutes, opponen
 def render(payload: dict, title: str = "NBA Player Props", note: str = NBA_NOTE,
            switch: tuple[str, str] | None = None) -> str:
     data = json.dumps(payload).replace("</", "<\\/")
-    sw = (f' <a class="badge" style="color:var(--blue);text-decoration:none" href="{switch[1]}">{switch[0]} →</a>'
-          if switch else "")
+    links = [switch] if isinstance(switch, tuple) else (switch or [])
+    sw = "".join(f' <a class="badge" style="color:var(--blue);text-decoration:none" href="{h}">{l} →</a>' for l, h in links)
     return (TEMPLATE.replace("__TITLE__", title).replace("__SWITCH__", sw).replace("__NOTE__", note)
             .replace("__DATE__", payload.get("label") or payload["date"]).replace("__DATA__", data))

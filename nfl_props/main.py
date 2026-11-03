@@ -17,6 +17,7 @@ from nba_props.espn import Injury
 from nba_props.http import Http
 from nba_props.model import best_picks
 from nba_props.odds import USAGE, PropLine, fetch_props, norm_name
+from nba_props import teambets as TB
 from nba_props.model_report import model_report
 from nba_props.report import render
 
@@ -113,9 +114,13 @@ def results_only(out_dir: str = "public/nfl", cache_dir: str = ".cache", hist_di
     if pj.exists():
         payload = json.loads(pj.read_text())
         payload["record"] = record
+        try:
+            payload.setdefault("team", {})["record"] = TB.grade_team_history(http or Http(cache_dir), "nfl", hist, now)
+        except Exception as e:
+            log(f"[results] team grading failed: {e!r}")
         annotate_results(payload, graded, key="week")
         pj.write_text(json.dumps(payload))
-        (out / "index.html").write_text(render(payload, "NFL Player Props", NOTE, ("NBA", "../")))
+        (out / "index.html").write_text(render(payload, "NFL Player Props", NOTE, [("NBA", "../"), ("NHL", "../nhl/")]))
     msg = results_message("NFL", new, record)
     if notify_out and msg:
         Path(notify_out).write_text(json.dumps({**msg, "url": ""}))
@@ -226,6 +231,7 @@ def run(week: int | None = None, out_dir: str = "public/nfl", cache_dir: str = "
     for p in players:
         by_team.setdefault(p.team_id, []).append(p)
     all_picks, game_info = [], []
+    team_ctx = {}                    # game id -> (backup-QB notes/adjustments, weather)
     for g in games:
         projs = []
         wx = game_weather(http, g) if g.id not in started else {"label": ""}
@@ -235,6 +241,15 @@ def run(week: int | None = None, out_dir: str = "public/nfl", cache_dir: str = "
         if g.id not in started:
             for pr in projs:
                 all_picks += evaluate(pr, lines, season)
+        adj, notes = {g.home.id: 0.0, g.away.id: 0.0}, []
+        for pr in projs:
+            if pr.player.pos == "QB" and any("expected to start" in r for r in pr.reasons):
+                tid = g.home.id if pr.team_abbr == g.home.abbr else g.away.id
+                adj[tid] -= 3.0
+                notes.append(f"{pr.team_abbr}: backup QB {pr.player.name} starting (-3 pts)")
+        if wx.get("indoor") is False and wx.get("wind", 0) >= 15:
+            notes.append(f"Wind {wx['wind']:.0f} mph (total already reflects weather in the market)")
+        team_ctx[g.id] = (adj, notes)
         inj_list = []
         for team in (g.away, g.home):
             for p in by_team.get(team.id, []):
@@ -259,6 +274,38 @@ def run(week: int | None = None, out_dir: str = "public/nfl", cache_dir: str = "
                                    for pr in projs],
                                   key=lambda r: -(r["PASS_YDS"] / 4 + r["RUSH_YDS"] + r["REC_YDS"])),
         })
+
+    # ---- team bets
+    team_picks_all, team_shown, team_record = [], [], {}
+    try:
+        results = TB.team_results(http, "nfl", sorted(teams), [season, season - 1], season)
+        asof = min((g.date for g in games), default=now)
+        ratings = TB.Ratings("nfl", results, asof, season)
+        by_event = {r.event_id: r for r in results}
+        eff = ratings.n_games / max(1, len(teams)) * 2 + (TB.SPORT["nfl"]["prior_games"] if any(r.season == season - 1 for r in results) else 0)
+        for g in games:
+            if g.id in started:
+                continue
+            mu_h, mu_a = ratings.predict(g.home.id, g.away.id)
+            adj, notes = team_ctx.get(g.id, ({}, []))
+            mu_h += adj.get(g.home.id, 0.0)
+            mu_a += adj.get(g.away.id, 0.0)
+            odds = TB.game_odds(http, "nfl", g.id, ttl=86400 if backtest else 900)
+            tp = TB.team_picks("nfl", g, mu_h, mu_a, odds, notes, eff)
+            if backtest and g.id in by_event:
+                r = by_event[g.id]
+                for pk in tp:
+                    pk["result"] = TB.grade_team_pick(pk, r.hs, r.as_)
+                    pk["final"] = f"{pk['home']} {r.hs:g} – {pk['away']} {r.as_:g}"
+            team_picks_all += tp
+        if not backtest:
+            team_shown = TB.save_team_picks(hist, key, team_picks_all, started, now)
+            team_record = TB.grade_team_history(http, "nfl", hist, now)
+        else:
+            team_shown = [p for p in team_picks_all if p["grade"] != "-"]
+            team_record = TB.summarize_team([dict(p, date=key) for p in team_shown])
+    except Exception as e:
+        log(f"   team bets failed: {e!r}")
 
     if backtest:
         for pk in all_picks:
@@ -313,17 +360,18 @@ def run(week: int | None = None, out_dir: str = "public/nfl", cache_dir: str = "
         "by_game": by_game_out if not backtest else {gid: [p.to_dict() for p in ps] for gid, ps in by_game.items()},
         "all": [p.to_dict() for p in sorted(all_picks, key=lambda p: -p.score)],
         "record": record, "proj_cols": PROJ_COLS, "labels": LABELS,
+        "team": {"picks": team_shown, "all": team_picks_all, "record": team_record},
         "backtests": sorted((f.stem for f in (out / "backtests").glob("*.html")), reverse=True)
                      if (out / "backtests").exists() else [],
     }
     if backtest:
         bdir = out / "backtests"
         bdir.mkdir(parents=True, exist_ok=True)
-        (bdir / f"{key}.html").write_text(render(payload, "NFL Player Props", NOTE, ("NBA", "../../")))
+        (bdir / f"{key}.html").write_text(render(payload, "NFL Player Props", NOTE, [("NBA", "../../"), ("NHL", "../../nhl/")]))
         (bdir / f"{key}.json").write_text(json.dumps(payload))
         return payload
     (out / "picks.json").write_text(json.dumps(payload))
-    (out / "index.html").write_text(render(payload, "NFL Player Props", NOTE, ("NBA", "../")))
+    (out / "index.html").write_text(render(payload, "NFL Player Props", NOTE, [("NBA", "../"), ("NHL", "../nhl/")]))
     return payload
 
 
@@ -337,12 +385,13 @@ def backtest_weeks(w0: int, w1: int, **kw) -> dict:
         except Exception as e:
             log(f"   week {wk} failed: {e!r}")
     allp = [dict(p, date=n["date"]) for n in nights for p in n["all"]]
+    team = [dict(p, date=n["date"]) for n in nights for p in (n.get("team") or {}).get("all", [])]
     shown = [dict(p, date=n["date"]) for n in nights for p in
              {(q["player_id"], q["stat"]): q for q in n["top"] + [x for v in n["by_game"].values() for x in v]}.values()]
     bdir = Path(kw.get("out_dir", "public/nfl")) / "backtests"
-    summary = {"weeks": [{"week": n["date"], "games": len(n["games"]),
+    summary = {"team": TB.summarize_team([p for p in team if p["grade"] != "-"]), "weeks": [{"week": n["date"], "games": len(n["games"]),
                           "record": {k: n["record"][k] for k in ("all", "A", "B", "C", "all_positive_edge")}} for n in nights]}
-    (bdir / "season_props.json").write_text(json.dumps({"all": allp, "shown": shown}))
+    (bdir / "season_props.json").write_text(json.dumps({"all": allp, "shown": shown, "team": team}))
     (bdir / "season_summary.json").write_text(json.dumps(summary, indent=1))
     return summary
 

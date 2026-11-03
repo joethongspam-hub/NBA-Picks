@@ -119,6 +119,33 @@ class League:
                             "odds": [{"details": f"{TEAMS[h]} -2.5", "overUnder": 224.5}]}]})
         return {"events": evs} if evs else None
 
+    def team_score(self, eid, tid):
+        return sum(l["pts"] for p in self.players.values() if p["team"] == tid
+                   for e, l in self.logs[p["id"]][self.events[eid].get("season", 2027)] if e == eid)
+
+    def schedule_json(self, tid, season):
+        evs = []
+        for eid, e in self.events.items():
+            if tid not in (e["home"], e["away"]):
+                continue
+            s = 2026 if e["date"].year == 2026 and e["date"].month < 8 or e["date"] < datetime(2026, 8, 1, tzinfo=timezone.utc) else 2027
+            if s != season:
+                continue
+            hs = sum(l["pts"] for p in self.players.values() if p["team"] == e["home"] for x, l in self.logs[p["id"]][s] if x == eid)
+            as_ = sum(l["pts"] for p in self.players.values() if p["team"] == e["away"] for x, l in self.logs[p["id"]][s] if x == eid)
+            evs.append({"id": eid, "date": e["date"].strftime("%Y-%m-%dT%H:%MZ"),
+                        "competitions": [{"status": {"type": {"completed": True}}, "competitors": [
+                            {"homeAway": "home", "id": e["home"], "score": {"value": float(hs)}},
+                            {"homeAway": "away", "id": e["away"], "score": {"value": float(as_)}}]}]})
+        return {"events": evs}
+
+    def core_odds_json(self, eid):
+        return {"items": [{"provider": {"id": "100"}, "overUnder": 229.5, "overOdds": -110, "underOdds": -110,
+                           "homeTeamOdds": {"favorite": True, "moneyLine": -160, "spreadOdds": -110,
+                                            "current": {"pointSpread": {"american": "-3.5"}}},
+                           "awayTeamOdds": {"favorite": False, "moneyLine": 135, "spreadOdds": -110,
+                                            "current": {"pointSpread": {"american": "+3.5"}}}}]}
+
     def injuries_json(self):
         return {"injuries": [
             {"id": "1", "displayName": "ATL Team", "injuries": [
@@ -167,6 +194,10 @@ class FakeHttp:
     def get_json(self, url, params=None, ttl=None):
         self.calls += 1
         params = params or {}
+        if url.endswith("/schedule"):
+            return self.lg.schedule_json(url.split("/teams/")[1].split("/")[0], int(params["season"]))
+        if url.endswith("/odds") and "/competitions/" in url:
+            return self.lg.core_odds_json(url.split("/events/")[1].split("/")[0])
         if url.endswith("/scoreboard"):
             past = self.lg.past_scoreboard(params.get("dates", ""))
             return past or self.lg.scoreboard_json()
