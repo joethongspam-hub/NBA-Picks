@@ -359,11 +359,12 @@ def run(date: str | None = None, out_dir: str = "site", cache_dir: str = ".cache
             "id": g.id, "label": g.label, "home": g.home.abbr, "away": g.away.abbr,
             "home_name": g.home.name, "away_name": g.away.name,
             "time": g.date.astimezone(ET).strftime("%I:%M %p ET").lstrip("0"), "status": g.status,
+            "start": g.date.isoformat(),
             "odds": g.odds_text, "total": g.total,
             "tt_home": round(g.implied_total(g.home.id), 1) if g.total else None,
             "tt_away": round(g.implied_total(g.away.id), 1) if g.total else None,
             "injuries": inj_list,
-            "projections": sorted([{"player": pr.player.name, "team": pr.team_abbr, "min": round(pr.minutes, 1),
+            "projections": sorted([{"player": pr.player.name, "pid": pr.player.id, "team": pr.team_abbr, "min": round(pr.minutes, 1),
                                     "status": pr.status,
                                     **{s: round(pr.mean[s], 1) for s in ("PTS", "REB", "AST", "3PM", "PRA")},
                                     # for the halftime calculator

@@ -81,13 +81,13 @@ The Track record tab includes a **model report**, rebuilt every night from grade
 - **Why losses lost:** role misses (minutes far off the projection) vs. production misses (normal minutes, bad night).
 - **Win rate by type:** side, real vs. estimated line, against/with the last game, back-to-back, injury boost, defense, stat.
 
-## Halftime calculator (NBA)
+## Live tab (NBA)
 
-The **Halftime** tab updates a pregame projection with first-half reality. Pick the player and stat, then enter
-his first-half minutes, the stat so far, fouls, the score margin and the live line/prices. First-half minutes count as
-real information (bigger or smaller role, foul trouble, blowout risk); first-half shooting mostly regresses (per-minute
-rate is 80% pregame, 20% first half). It shows the projected final, over/under probability, edge, and a
-Bet (6%+ edge) / Lean (3–6%) / Pass verdict.
+Pick a game and the page loads ESPN's **live box score** (minutes, stats, fouls, score, clock) and **DraftKings'
+current lines** straight from your phone's browser. Nothing to type. A scanner lists the props with a live edge
+(Bet ≥ 6%, Lean 3–6%); tap one to see the details in the calculator. Minutes so far count as real information
+(role, foul trouble, blowout); production so far mostly regresses (per-minute rate is 80% pregame). Lines DraftKings
+hasn't updated since tip-off are flagged "pregame line: check book". The calculator also works by hand at any point in the game.
 
 ## Phone notifications
 
