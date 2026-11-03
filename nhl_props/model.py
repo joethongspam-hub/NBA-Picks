@@ -362,6 +362,8 @@ def evaluate(proj: Projection, lines: dict, season: int) -> list[Pick]:
         mu = proj.mean[s]
         view = 0.55 * pr.l10_avg[s] + 0.45 * pr.season_avg[s]
         real = lines.get((norm_name(p.name), s))
+        if s == "GOALS" and not real:
+            continue                        # anytime goal: only real "yes" prices (no under to bet)
         if real:
             line, src = real.line, real.label
         else:

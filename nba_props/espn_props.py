@@ -32,7 +32,7 @@ NFL_TYPES = {
     "Total Rushing Plus Receiving Yards (incl. overtime)": "RUSH_REC_YDS",
     "Anytime Touchdown Scorer": "ANY_TD",
 }
-ONE_SIDED = {"ANY_TD"}      # "yes" price only -> treat as OVER 0.5
+ONE_SIDED = {"ANY_TD", "GOALS"}      # "yes" price only -> treat as OVER 0.5
 
 
 def _num(v):
