@@ -67,9 +67,9 @@
    "games": 9,
    "record": {
     "all": {
-     "w": 30,
-     "l": 23,
-     "pct": 0.566
+     "w": 31,
+     "l": 22,
+     "pct": 0.585
     },
     "A": {
      "w": 11,
@@ -82,14 +82,14 @@
      "pct": 0.474
     },
     "C": {
-     "w": 10,
-     "l": 12,
-     "pct": 0.455
+     "w": 11,
+     "l": 11,
+     "pct": 0.5
     },
     "all_positive_edge": {
-     "w": 205,
-     "l": 99,
-     "pct": 0.674
+     "w": 209,
+     "l": 98,
+     "pct": 0.681
     }
    }
   },
@@ -98,14 +98,14 @@
    "games": 4,
    "record": {
     "all": {
-     "w": 12,
-     "l": 14,
-     "pct": 0.462
+     "w": 11,
+     "l": 12,
+     "pct": 0.478
     },
     "A": {
-     "w": 4,
+     "w": 3,
      "l": 1,
-     "pct": 0.8
+     "pct": 0.75
     },
     "B": {
      "w": 3,
@@ -114,13 +114,13 @@
     },
     "C": {
      "w": 5,
-     "l": 8,
-     "pct": 0.385
+     "l": 6,
+     "pct": 0.455
     },
     "all_positive_edge": {
-     "w": 51,
+     "w": 52,
      "l": 74,
-     "pct": 0.408
+     "pct": 0.413
     }
    }
   },
@@ -129,9 +129,9 @@
    "games": 12,
    "record": {
     "all": {
-     "w": 42,
-     "l": 19,
-     "pct": 0.689
+     "w": 36,
+     "l": 22,
+     "pct": 0.621
     },
     "A": {
      "w": 12,
@@ -139,19 +139,19 @@
      "pct": 0.667
     },
     "B": {
-     "w": 15,
+     "w": 12,
      "l": 8,
-     "pct": 0.652
+     "pct": 0.6
     },
     "C": {
-     "w": 15,
-     "l": 5,
-     "pct": 0.75
+     "w": 12,
+     "l": 8,
+     "pct": 0.6
     },
     "all_positive_edge": {
-     "w": 207,
-     "l": 120,
-     "pct": 0.633
+     "w": 210,
+     "l": 119,
+     "pct": 0.638
     }
    }
   },
@@ -160,29 +160,29 @@
    "games": 3,
    "record": {
     "all": {
-     "w": 10,
+     "w": 9,
      "l": 8,
-     "pct": 0.556
+     "pct": 0.529
     },
     "A": {
-     "w": 4,
-     "l": 3,
-     "pct": 0.571
+     "w": 2,
+     "l": 2,
+     "pct": 0.5
     },
     "B": {
      "w": 5,
-     "l": 2,
-     "pct": 0.714
+     "l": 1,
+     "pct": 0.833
     },
     "C": {
-     "w": 1,
-     "l": 3,
-     "pct": 0.25
+     "w": 2,
+     "l": 5,
+     "pct": 0.286
     },
     "all_positive_edge": {
      "w": 59,
-     "l": 64,
-     "pct": 0.48
+     "l": 62,
+     "pct": 0.488
     }
    }
   },
@@ -191,32 +191,698 @@
    "games": 10,
    "record": {
     "all": {
-     "w": 32,
+     "w": 37,
      "l": 14,
-     "pct": 0.696
+     "pct": 0.725
     },
     "A": {
-     "w": 8,
+     "w": 9,
      "l": 4,
-     "pct": 0.667
+     "pct": 0.692
     },
     "B": {
-     "w": 14,
-     "l": 6,
-     "pct": 0.7
+     "w": 15,
+     "l": 7,
+     "pct": 0.682
     },
     "C": {
-     "w": 10,
-     "l": 4,
-     "pct": 0.714
+     "w": 13,
+     "l": 3,
+     "pct": 0.812
     },
     "all_positive_edge": {
-     "w": 214,
-     "l": 91,
-     "pct": 0.702
+     "w": 237,
+     "l": 96,
+     "pct": 0.712
+    }
+   }
+  },
+  {
+   "date": "2026-10-31",
+   "games": 7,
+   "record": {
+    "all": {
+     "w": 19,
+     "l": 18,
+     "pct": 0.514
+    },
+    "A": {
+     "w": 5,
+     "l": 8,
+     "pct": 0.385
+    },
+    "B": {
+     "w": 7,
+     "l": 6,
+     "pct": 0.538
+    },
+    "C": {
+     "w": 7,
+     "l": 4,
+     "pct": 0.636
+    },
+    "all_positive_edge": {
+     "w": 120,
+     "l": 93,
+     "pct": 0.563
+    }
+   }
+  },
+  {
+   "date": "2026-11-01",
+   "games": 4,
+   "record": {
+    "all": {
+     "w": 11,
+     "l": 12,
+     "pct": 0.478
+    },
+    "A": {
+     "w": 3,
+     "l": 5,
+     "pct": 0.375
+    },
+    "B": {
+     "w": 7,
+     "l": 4,
+     "pct": 0.636
+    },
+    "C": {
+     "w": 1,
+     "l": 3,
+     "pct": 0.25
+    },
+    "all_positive_edge": {
+     "w": 96,
+     "l": 69,
+     "pct": 0.582
+    }
+   }
+  },
+  {
+   "date": "2026-11-02",
+   "games": 15,
+   "record": {
+    "all": {
+     "w": 45,
+     "l": 37,
+     "pct": 0.549
+    },
+    "A": {
+     "w": 18,
+     "l": 13,
+     "pct": 0.581
+    },
+    "B": {
+     "w": 19,
+     "l": 14,
+     "pct": 0.576
+    },
+    "C": {
+     "w": 8,
+     "l": 10,
+     "pct": 0.444
+    },
+    "all_positive_edge": {
+     "w": 315,
+     "l": 237,
+     "pct": 0.571
     }
    }
   }
  ],
- "shown": 285
+ "shown": 419,
+ "team": {
+  "all": {
+   "label": "All team bets",
+   "w": 31,
+   "l": 51,
+   "pct": 0.378,
+   "units": -20.93,
+   "roi": -0.255
+  },
+  "by_grade": [
+   {
+    "label": "Grade A",
+    "w": 4,
+    "l": 4,
+    "pct": 0.5,
+    "units": 0.05,
+    "roi": 0.007
+   },
+   {
+    "label": "Grade B",
+    "w": 9,
+    "l": 11,
+    "pct": 0.45,
+    "units": -2.26,
+    "roi": -0.113
+   },
+   {
+    "label": "Grade C",
+    "w": 18,
+    "l": 36,
+    "pct": 0.333,
+    "units": -18.72,
+    "roi": -0.347
+   }
+  ],
+  "by_market": [
+   {
+    "label": "Moneyline",
+    "w": 5,
+    "l": 18,
+    "pct": 0.217,
+    "units": -11.4,
+    "roi": -0.495
+   },
+   {
+    "label": "Spread",
+    "w": 10,
+    "l": 18,
+    "pct": 0.357,
+    "units": -9.06,
+    "roi": -0.324
+   },
+   {
+    "label": "Total",
+    "w": 16,
+    "l": 15,
+    "pct": 0.516,
+    "units": -0.47,
+    "roi": -0.015
+   }
+  ],
+  "recent": [
+   {
+    "game_id": "401909907",
+    "game": "OKC @ CLE",
+    "market": "Moneyline",
+    "pick": "OKC ML",
+    "side": "away",
+    "line": null,
+    "price": 146,
+    "prob": 0.427,
+    "model_prob": 0.518,
+    "edge": 0.02,
+    "grade": "C",
+    "proj": "CLE 109.3 \u2013 OKC 109.9",
+    "mu_h": 109.35,
+    "mu_a": 109.91,
+    "home": "CLE",
+    "away": "OKC",
+    "notes": [
+     "CLE injuries (Tyson, Watson): -4.9 pts",
+     "OKC injuries (Caruso, Holmgren, Wallace): -5.0 pts"
+    ],
+    "score": 2.02,
+    "result": "WIN",
+    "final": "CLE 112 \u2013 OKC 117",
+    "date": "2026-11-02"
+   },
+   {
+    "game_id": "401909907",
+    "game": "OKC @ CLE",
+    "market": "Spread",
+    "pick": "OKC +4.5",
+    "side": "away",
+    "line": -4.5,
+    "price": -115,
+    "prob": 0.552,
+    "model_prob": 0.657,
+    "edge": 0.017,
+    "grade": "C",
+    "proj": "CLE 109.3 \u2013 OKC 109.9",
+    "mu_h": 109.35,
+    "mu_a": 109.91,
+    "home": "CLE",
+    "away": "OKC",
+    "notes": [
+     "CLE injuries (Tyson, Watson): -4.9 pts",
+     "OKC injuries (Caruso, Holmgren, Wallace): -5.0 pts"
+    ],
+    "score": 1.73,
+    "result": "WIN",
+    "final": "CLE 112 \u2013 OKC 117",
+    "date": "2026-11-02"
+   },
+   {
+    "game_id": "401909907",
+    "game": "OKC @ CLE",
+    "market": "Total",
+    "pick": "Under 229.5",
+    "side": "under",
+    "line": 229.5,
+    "price": -110,
+    "prob": 0.561,
+    "model_prob": 0.715,
+    "edge": 0.037,
+    "grade": "B",
+    "proj": "CLE 109.3 \u2013 OKC 109.9",
+    "mu_h": 109.35,
+    "mu_a": 109.91,
+    "home": "CLE",
+    "away": "OKC",
+    "notes": [
+     "CLE injuries (Tyson, Watson): -4.9 pts",
+     "OKC injuries (Caruso, Holmgren, Wallace): -5.0 pts"
+    ],
+    "score": 3.7,
+    "result": "WIN",
+    "final": "CLE 112 \u2013 OKC 117",
+    "date": "2026-11-02"
+   },
+   {
+    "game_id": "401909908",
+    "game": "DET @ CHA",
+    "market": "Moneyline",
+    "pick": "CHA ML",
+    "side": "home",
+    "line": null,
+    "price": 185,
+    "prob": 0.378,
+    "model_prob": 0.482,
+    "edge": 0.027,
+    "grade": "C",
+    "proj": "CHA 107.6 \u2013 DET 108.2",
+    "mu_h": 107.65,
+    "mu_a": 108.21,
+    "home": "CHA",
+    "away": "DET",
+    "notes": [
+     "DET injuries (Duren, Harkless, Joe): -2.6 pts"
+    ],
+    "score": 2.7,
+    "result": "LOSS",
+    "final": "CHA 91 \u2013 DET 124",
+    "date": "2026-11-02"
+   },
+   {
+    "game_id": "401909908",
+    "game": "DET @ CHA",
+    "market": "Spread",
+    "pick": "CHA +5.5",
+    "side": "home",
+    "line": 5.5,
+    "price": -105,
+    "prob": 0.536,
+    "model_prob": 0.654,
+    "edge": 0.023,
+    "grade": "C",
+    "proj": "CHA 107.6 \u2013 DET 108.2",
+    "mu_h": 107.65,
+    "mu_a": 108.21,
+    "home": "CHA",
+    "away": "DET",
+    "notes": [
+     "DET injuries (Duren, Harkless, Joe): -2.6 pts"
+    ],
+    "score": 2.34,
+    "result": "LOSS",
+    "final": "CHA 91 \u2013 DET 124",
+    "date": "2026-11-02"
+   },
+   {
+    "game_id": "401909908",
+    "game": "DET @ CHA",
+    "market": "Total",
+    "pick": "Over 209.5",
+    "side": "over",
+    "line": 209.5,
+    "price": -108,
+    "prob": 0.536,
+    "model_prob": 0.638,
+    "edge": 0.017,
+    "grade": "C",
+    "proj": "CHA 107.6 \u2013 DET 108.2",
+    "mu_h": 107.65,
+    "mu_a": 108.21,
+    "home": "CHA",
+    "away": "DET",
+    "notes": [
+     "DET injuries (Duren, Harkless, Joe): -2.6 pts"
+    ],
+    "score": 1.66,
+    "result": "WIN",
+    "final": "CHA 91 \u2013 DET 124",
+    "date": "2026-11-02"
+   },
+   {
+    "game_id": "401909909",
+    "game": "ATL @ IND",
+    "market": "Spread",
+    "pick": "ATL -10.5",
+    "side": "away",
+    "line": 10.5,
+    "price": -115,
+    "prob": 0.562,
+    "model_prob": 0.693,
+    "edge": 0.027,
+    "grade": "C",
+    "proj": "IND 93.5 \u2013 ATL 110.3",
+    "mu_h": 93.49,
+    "mu_a": 110.31,
+    "home": "IND",
+    "away": "ATL",
+    "notes": [
+     "IND injuries (Haliburton, Jr., Nembhard): -21.2 pts",
+     "ATL injuries (Flemings, Johnson, Landale): -8.5 pts"
+    ],
+    "score": 2.67,
+    "result": "LOSS",
+    "final": "IND 104 \u2013 ATL 108",
+    "date": "2026-11-02"
+   },
+   {
+    "game_id": "401909909",
+    "game": "ATL @ IND",
+    "market": "Total",
+    "pick": "Under 226.5",
+    "side": "under",
+    "line": 226.5,
+    "price": -105,
+    "prob": 0.604,
+    "model_prob": 0.896,
+    "edge": 0.092,
+    "grade": "A",
+    "proj": "IND 93.5 \u2013 ATL 110.3",
+    "mu_h": 93.49,
+    "mu_a": 110.31,
+    "home": "IND",
+    "away": "ATL",
+    "notes": [
+     "IND injuries (Haliburton, Jr., Nembhard): -21.2 pts",
+     "ATL injuries (Flemings, Johnson, Landale): -8.5 pts"
+    ],
+    "score": 9.19,
+    "result": "WIN",
+    "final": "IND 104 \u2013 ATL 108",
+    "date": "2026-11-02"
+   },
+   {
+    "game_id": "401909914",
+    "game": "NO @ MEM",
+    "market": "Total",
+    "pick": "Under 231.5",
+    "side": "under",
+    "line": 231.5,
+    "price": -110,
+    "prob": 0.549,
+    "model_prob": 0.674,
+    "edge": 0.025,
+    "grade": "C",
+    "proj": "MEM 113.3 \u2013 NO 110.0",
+    "mu_h": 113.34,
+    "mu_a": 110.05,
+    "home": "MEM",
+    "away": "NO",
+    "notes": [
+     "MEM injuries (Hendricks, Mashack, Jr.): -5.7 pts",
+     "NO injuries (Jordan, Missi, Murray): -5.4 pts"
+    ],
+    "score": 2.53,
+    "result": "LOSS",
+    "final": "MEM 134 \u2013 NO 135",
+    "date": "2026-11-02"
+   },
+   {
+    "game_id": "401909915",
+    "game": "MIL @ MIN",
+    "market": "Total",
+    "pick": "Under 233.5",
+    "side": "under",
+    "line": 233.5,
+    "price": -110,
+    "prob": 0.556,
+    "model_prob": 0.7,
+    "edge": 0.033,
+    "grade": "B",
+    "proj": "MIN 116.0 \u2013 MIL 108.1",
+    "mu_h": 116.0,
+    "mu_a": 108.07,
+    "home": "MIN",
+    "away": "MIL",
+    "notes": [
+     "MIN injuries (Edwards, Jr.): -5.5 pts",
+     "MIL injuries (Dieng, Jr.): -1.6 pts"
+    ],
+    "score": 3.27,
+    "result": "WIN",
+    "final": "MIN 112 \u2013 MIL 100",
+    "date": "2026-11-02"
+   },
+   {
+    "game_id": "401909919",
+    "game": "PHX @ GS",
+    "market": "Moneyline",
+    "pick": "PHX ML",
+    "side": "away",
+    "line": null,
+    "price": 115,
+    "prob": 0.485,
+    "model_prob": 0.582,
+    "edge": 0.02,
+    "grade": "C",
+    "proj": "GS 109.8 \u2013 PHX 112.4",
+    "mu_h": 109.8,
+    "mu_a": 112.39,
+    "home": "GS",
+    "away": "PHX",
+    "notes": [
+     "GS injuries (Horford, Santos, Williams): -6.1 pts"
+    ],
+    "score": 1.98,
+    "result": "LOSS",
+    "final": "GS 116 \u2013 PHX 113",
+    "date": "2026-11-02"
+   },
+   {
+    "game_id": "401909919",
+    "game": "PHX @ GS",
+    "market": "Spread",
+    "pick": "PHX +2.5",
+    "side": "away",
+    "line": -2.5,
+    "price": -113,
+    "prob": 0.549,
+    "model_prob": 0.658,
+    "edge": 0.019,
+    "grade": "C",
+    "proj": "GS 109.8 \u2013 PHX 112.4",
+    "mu_h": 109.8,
+    "mu_a": 112.39,
+    "home": "GS",
+    "away": "PHX",
+    "notes": [
+     "GS injuries (Horford, Santos, Williams): -6.1 pts"
+    ],
+    "score": 1.88,
+    "result": "LOSS",
+    "final": "GS 116 \u2013 PHX 113",
+    "date": "2026-11-02"
+   },
+   {
+    "game_id": "401909904",
+    "game": "BKN @ IND",
+    "market": "Total",
+    "pick": "Under 230.5",
+    "side": "under",
+    "line": 230.5,
+    "price": -112,
+    "prob": 0.587,
+    "model_prob": 0.801,
+    "edge": 0.058,
+    "grade": "A",
+    "proj": "IND 109.1 \u2013 BKN 106.1",
+    "mu_h": 109.14,
+    "mu_a": 106.14,
+    "home": "IND",
+    "away": "BKN",
+    "notes": [
+     "IND injuries (Haliburton, Toppin, Zubac): -7.4 pts",
+     "BKN injuries (Jr., Demin, Minott): -6.7 pts"
+    ],
+    "score": 5.85,
+    "result": "WIN",
+    "final": "IND 90 \u2013 BKN 98",
+    "date": "2026-11-01"
+   },
+   {
+    "game_id": "401909905",
+    "game": "LAC @ GS",
+    "market": "Moneyline",
+    "pick": "LAC ML",
+    "side": "away",
+    "line": null,
+    "price": 110,
+    "prob": 0.497,
+    "model_prob": 0.601,
+    "edge": 0.021,
+    "grade": "C",
+    "proj": "GS 108.3 \u2013 LAC 111.5",
+    "mu_h": 108.28,
+    "mu_a": 111.49,
+    "home": "GS",
+    "away": "LAC",
+    "notes": [
+     "GS injuries (Curry, Green): -6.3 pts"
+    ],
+    "score": 2.11,
+    "result": "LOSS",
+    "final": "GS 124 \u2013 LAC 112",
+    "date": "2026-11-01"
+   },
+   {
+    "game_id": "401909905",
+    "game": "LAC @ GS",
+    "market": "Spread",
+    "pick": "LAC +1.5",
+    "side": "away",
+    "line": -1.5,
+    "price": -102,
+    "prob": 0.528,
+    "model_prob": 0.647,
+    "edge": 0.023,
+    "grade": "C",
+    "proj": "GS 108.3 \u2013 LAC 111.5",
+    "mu_h": 108.28,
+    "mu_a": 111.49,
+    "home": "GS",
+    "away": "LAC",
+    "notes": [
+     "GS injuries (Curry, Green): -6.3 pts"
+    ],
+    "score": 2.33,
+    "result": "LOSS",
+    "final": "GS 124 \u2013 LAC 112",
+    "date": "2026-11-01"
+   },
+   {
+    "game_id": "401909897",
+    "game": "PHI @ CHA",
+    "market": "Moneyline",
+    "pick": "CHA ML",
+    "side": "home",
+    "line": null,
+    "price": -102,
+    "prob": 0.565,
+    "model_prob": 0.79,
+    "edge": 0.061,
+    "grade": "A",
+    "proj": "CHA 111.3 \u2013 PHI 101.2",
+    "mu_h": 111.27,
+    "mu_a": 101.19,
+    "home": "CHA",
+    "away": "PHI",
+    "notes": [
+     "PHI injuries (Embiid, James): -8.5 pts"
+    ],
+    "score": 6.05,
+    "result": "LOSS",
+    "final": "CHA 104 \u2013 PHI 109",
+    "date": "2026-10-31"
+   },
+   {
+    "game_id": "401909897",
+    "game": "PHI @ CHA",
+    "market": "Spread",
+    "pick": "CHA +1.5",
+    "side": "home",
+    "line": 1.5,
+    "price": -115,
+    "prob": 0.595,
+    "model_prob": 0.823,
+    "edge": 0.06,
+    "grade": "A",
+    "proj": "CHA 111.3 \u2013 PHI 101.2",
+    "mu_h": 111.27,
+    "mu_a": 101.19,
+    "home": "CHA",
+    "away": "PHI",
+    "notes": [
+     "PHI injuries (Embiid, James): -8.5 pts"
+    ],
+    "score": 6.01,
+    "result": "LOSS",
+    "final": "CHA 104 \u2013 PHI 109",
+    "date": "2026-10-31"
+   },
+   {
+    "game_id": "401909898",
+    "game": "ATL @ NO",
+    "market": "Spread",
+    "pick": "ATL -5.5",
+    "side": "away",
+    "line": 5.5,
+    "price": -102,
+    "prob": 0.52,
+    "model_prob": 0.621,
+    "edge": 0.015,
+    "grade": "C",
+    "proj": "NO 110.4 \u2013 ATL 119.7",
+    "mu_h": 110.37,
+    "mu_a": 119.73,
+    "home": "NO",
+    "away": "ATL",
+    "notes": [
+     "NO injuries (Jordan, Missi, Murray): -6.5 pts"
+    ],
+    "score": 1.5,
+    "result": "LOSS",
+    "final": "NO 121 \u2013 ATL 99",
+    "date": "2026-10-31"
+   },
+   {
+    "game_id": "401909898",
+    "game": "ATL @ NO",
+    "market": "Total",
+    "pick": "Under 239.5",
+    "side": "under",
+    "line": 239.5,
+    "price": -112,
+    "prob": 0.557,
+    "model_prob": 0.699,
+    "edge": 0.029,
+    "grade": "C",
+    "proj": "NO 110.4 \u2013 ATL 119.7",
+    "mu_h": 110.37,
+    "mu_a": 119.73,
+    "home": "NO",
+    "away": "ATL",
+    "notes": [
+     "NO injuries (Jordan, Missi, Murray): -6.5 pts"
+    ],
+    "score": 2.86,
+    "result": "WIN",
+    "final": "NO 121 \u2013 ATL 99",
+    "date": "2026-10-31"
+   },
+   {
+    "game_id": "401909899",
+    "game": "SAC @ MEM",
+    "market": "Moneyline",
+    "pick": "SAC ML",
+    "side": "away",
+    "line": null,
+    "price": 240,
+    "prob": 0.345,
+    "model_prob": 0.514,
+    "edge": 0.05,
+    "grade": "A",
+    "proj": "MEM 110.6 \u2013 SAC 111.0",
+    "mu_h": 110.56,
+    "mu_a": 111.0,
+    "home": "MEM",
+    "away": "SAC",
+    "notes": [
+     "MEM injuries (Jerome, Jr., Post): -10.0 pts",
+     "SAC injuries (Black, Murray): -1.4 pts"
+    ],
+    "score": 5.04,
+    "result": "LOSS",
+    "final": "MEM 136 \u2013 SAC 105",
+    "date": "2026-10-31"
+   }
+  ]
+ }
 }
