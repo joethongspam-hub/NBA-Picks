@@ -22,7 +22,8 @@
     "MTL goalie Jacob Fowler (0.905): opponent goals -5%",
     "WPG goalie Stuart Skinner (0.893): opponent goals +7% (starter uncertain)"
    ],
-   "score": 1.75
+   "score": 1.75,
+   "locked": true
   },
   {
    "game_id": "401892635",
@@ -42,7 +43,8 @@
    "home": "TB",
    "away": "DET",
    "notes": [],
-   "score": 2.17
+   "score": 2.17,
+   "locked": true
   },
   {
    "game_id": "401892635",
@@ -62,7 +64,8 @@
    "home": "TB",
    "away": "DET",
    "notes": [],
-   "score": 2.25
+   "score": 2.25,
+   "locked": true
   },
   {
    "game_id": "401892643",
