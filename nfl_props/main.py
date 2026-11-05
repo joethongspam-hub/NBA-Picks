@@ -9,7 +9,7 @@ import argparse
 import json
 import os
 import sys
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -36,7 +36,9 @@ NFL_MARKETS = {
     "player_reception_yds": "REC_YDS", "player_rush_reception_yds": "RUSH_REC_YDS",
     "player_anytime_td": "ANY_TD",
 }
-DEFAULT_NFL_MARKETS = "player_pass_yds,player_reception_yds"
+# Pulled only for games kicking off within 36 h and not fetched in the last 3 h, so a week
+# costs about 15 games x 4 markets = 60 credits.
+DEFAULT_NFL_MARKETS = "player_pass_yds,player_rush_yds,player_receptions,player_reception_yds"
 NOTE = ("Projections combine each player's opportunities (pass attempts, carries, targets) with his efficiency, "
         "shrunk toward position averages, then adjust for game script (Vegas spread), scoring environment "
         "(implied team total), opponent defense vs his position and injured teammates' vacated targets/carries. "
@@ -214,10 +216,19 @@ def run(week: int | None = None, out_dir: str = "public/nfl", cache_dir: str = "
             log(f"   DraftKings lines via ESPN: {len(dk)}")
         except Exception as e:
             log(f"   ESPN prop lines failed: {e}")
-    if odds_key and upcoming and not backtest:
+    fetched_file = hist / "lines" / f"{key}.fetched.json"
+    fetched = json.loads(fetched_file.read_text()) if fetched_file.exists() else {}
+    odds_games = [g for g in upcoming if g.date - now <= timedelta(hours=36)
+                  and (g.id not in fetched or now - datetime.fromisoformat(fetched[g.id]) >= timedelta(hours=3))]
+    if odds_key and odds_games and not backtest:
         try:
-            lines.update(fetch_props(http, odds_key, {norm_name(g.home.name.split()[-1]): g.id for g in upcoming},
+            lines.update(fetch_props(http, odds_key, {norm_name(g.home.name.split()[-1]): g.id for g in odds_games},
                                      markets, sport="americanfootball_nfl", market_map=NFL_MARKETS))
+            for g in odds_games:
+                fetched[g.id] = now.isoformat()
+            fetched_file.parent.mkdir(parents=True, exist_ok=True)
+            fetched_file.write_text(json.dumps(fetched))
+            log(f"   Odds API: {len(odds_games)} games within 36 h")
         except Exception as e:
             log(f"   odds fetch failed: {e}")
     if lines and not backtest:
@@ -236,8 +247,10 @@ def run(week: int | None = None, out_dir: str = "public/nfl", cache_dir: str = "
         projs = []
         wx = game_weather(http, g) if g.id not in started else {"label": ""}
         for team, opp in ((g.home, g.away), (g.away, g.home)):
+            qb_lines = [p.id for p in by_team.get(team.id, []) if p.pos == "QB"
+                        and (lines.get((norm_name(p.name), "PASS_YDS")) or PropLine(0, None, None, 0)).books >= 2]
             projs += project_team(by_team.get(team.id, []), team.id, team.abbr, opp.id, opp.abbr, g,
-                                  league, injuries, league_tt, wx)
+                                  league, injuries, league_tt, wx, market_qb=qb_lines[0] if len(qb_lines) == 1 else None)
         if g.id not in started:
             for pr in projs:
                 all_picks += evaluate(pr, lines, season)

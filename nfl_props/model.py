@@ -303,7 +303,8 @@ class Projection:
 
 
 def project_team(team_players, team_id, team_abbr, opp_id, opp_abbr, game: Game, league: League,
-                 injuries: dict[str, Injury], league_tt: float, wx: dict | None = None) -> list[Projection]:
+                 injuries: dict[str, Injury], league_tt: float, wx: dict | None = None,
+                 market_qb: str | None = None) -> list[Projection]:
     wf, wx_note = weather_factors(wx)
     profs = league.profiles
     listed = {p.id: injuries.get(p.id) or injuries.get(p.name) for p in team_players}
@@ -349,6 +350,22 @@ def project_team(team_players, team_id, team_abbr, opp_id, opp_abbr, game: Game,
             starter_override = starter_opps
         else:
             starter = None
+    # Sportsbooks only post passing props for the QB they expect to start. When that
+    # isn't our projected starter, trust the market (the injury feed can lag).
+    if market_qb and (starter is None or starter.id != market_qb):
+        mq = next((q for q in team_players if q.id == market_qb), None)
+        if mq is not None:
+            old = starter
+            if old is not None:
+                inj[old.id] = Injury(old.id, old.name, team_id, "Out", "no sportsbook passing line")
+            qb_note = (f"{_short(old.name)} not listed by sportsbooks: " if old else "") + f"{mq.name} expected to start"
+            if mq.id in profs:
+                starter_override = profs[old.id].opps["pass_att"] if (old and old.id in profs) else None
+                if profs[mq.id].opps["pass_att"] < 15:
+                    qb_eff_f = 0.88
+                starter = mq
+            else:
+                starter, qb_eff_f = None, 0.88
 
     # vacated opportunities from injured teammates who were playing lately
     out_mates = [(p, profs[p.id]) for p in team_players

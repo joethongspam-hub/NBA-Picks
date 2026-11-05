@@ -151,7 +151,8 @@ const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;
 const pct = x => (x*100).toFixed(0) + "%";
 const fmtPrice = p => p == null ? "" : (p > 0 ? "+" + p : p);
 
-$("#mode").textContent = D.backtest ? "backtest" : (D.line_mode === "sportsbook" ? "live lines" : "est. lines");
+const nReal = D.all.filter(p => p.line_source && p.line_source !== "est.").length, nEst = D.all.length - nReal;
+$("#mode").textContent = D.backtest ? "backtest" : !nReal ? "est. lines" : `${nReal} real · ${nEst} est. lines`;
 $("#sub").innerHTML = D.backtest
   ? `${D.date} · ${D.games.length} games · projected blind (only games before ${D.date}) · <a href="../" style="color:var(--blue)">today's picks</a>`
   : `${D.date} · ${D.games.length} game${D.games.length===1?"":"s"} · updated ${D.generated}`;
@@ -165,7 +166,7 @@ function pickHTML(p, showGame) {
     <div class="row">
       <div class="grade g${p.grade}">${p.grade}</div>
       <div class="who"><div class="name">${esc(p.player)}</div>
-        <div class="meta">${esc(p.team)} vs ${esc(p.opp)}${showGame ? "" : ""} · ${p.stat} · L10 ${p.hit_l10}${p.status!=="ACTIVE"?` · <span style="color:var(--gold)">${p.status}</span>`:""}${p.locked?` · <span title="locked at tip-off">locked</span>`:""}</div></div>
+        <div class="meta">${esc(p.team)} vs ${esc(p.opp)}${showGame ? "" : ""} · ${p.stat} · L10 ${p.hit_l10}${p.line_source === "est." && !D.backtest ? ` · <span style="color:var(--gold)">est. line</span>` : ""}${p.status!=="ACTIVE"?` · <span style="color:var(--gold)">${p.status}</span>`:""}${p.locked?` · <span title="locked at tip-off">locked</span>`:""}</div></div>
       <div class="bet"><div class="side ${p.side}">${p.side==="OVER"?"O":"U"} ${p.line}</div>
         <div class="small">proj ${p.projection} · ${pct(p.prob)}</div>
         ${p.result ? `<div class="res ${p.result}">${p.actual!=null?"actual "+p.actual+" · ":""}${p.result}</div>` : ""}</div>
