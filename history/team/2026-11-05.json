@@ -8,21 +8,22 @@
    "pick": "PHX ML",
    "side": "home",
    "line": null,
-   "price": -114,
-   "prob": 0.558,
-   "model_prob": 0.644,
-   "edge": 0.025,
-   "grade": "C",
-   "proj": "PHX 112.4 \u2013 ORL 107.8",
-   "mu_h": 112.41,
+   "price": -117,
+   "prob": 0.585,
+   "model_prob": 0.711,
+   "edge": 0.046,
+   "grade": "B",
+   "proj": "PHX 114.7 \u2013 ORL 107.8",
+   "mu_h": 114.74,
    "mu_a": 107.8,
    "home": "PHX",
    "away": "ORL",
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "PHX injuries (Goodwin): -1.7 pts",
     "ORL injuries (Suggs): -0.6 pts"
    ],
-   "score": 2.48
+   "score": 4.6
   },
   {
    "game_id": "401909936",
@@ -31,21 +32,68 @@
    "pick": "PHX -1.5",
    "side": "home",
    "line": -1.5,
-   "price": -104,
-   "prob": 0.526,
-   "model_prob": 0.598,
-   "edge": 0.016,
-   "grade": "C",
-   "proj": "PHX 112.4 \u2013 ORL 107.8",
-   "mu_h": 112.41,
+   "price": -102,
+   "prob": 0.547,
+   "model_prob": 0.668,
+   "edge": 0.042,
+   "grade": "B",
+   "proj": "PHX 114.7 \u2013 ORL 107.8",
+   "mu_h": 114.74,
    "mu_a": 107.8,
    "home": "PHX",
    "away": "ORL",
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "PHX injuries (Goodwin): -1.7 pts",
     "ORL injuries (Suggs): -0.6 pts"
    ],
-   "score": 1.62
+   "score": 4.21
+  },
+  {
+   "game_id": "401909937",
+   "game": "MIA @ GS",
+   "market": "Moneyline",
+   "pick": "GS ML",
+   "side": "home",
+   "line": null,
+   "price": -161,
+   "prob": 0.636,
+   "model_prob": 0.716,
+   "edge": 0.019,
+   "grade": "C",
+   "proj": "GS 123.3 \u2013 MIA 116.2",
+   "mu_h": 123.33,
+   "mu_a": 116.21,
+   "home": "GS",
+   "away": "MIA",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "GS injuries (Santos): -1.2 pts"
+   ],
+   "score": 1.89
+  },
+  {
+   "game_id": "401909937",
+   "game": "MIA @ GS",
+   "market": "Spread",
+   "pick": "GS -3.5",
+   "side": "home",
+   "line": -3.5,
+   "price": -108,
+   "prob": 0.537,
+   "model_prob": 0.614,
+   "edge": 0.018,
+   "grade": "C",
+   "proj": "GS 123.3 \u2013 MIA 116.2",
+   "mu_h": 123.33,
+   "mu_a": 116.21,
+   "home": "GS",
+   "away": "MIA",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "GS injuries (Santos): -1.2 pts"
+   ],
+   "score": 1.79
   }
  ]
 }
