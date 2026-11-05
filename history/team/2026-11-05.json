@@ -1,0 +1,51 @@
+{
+ "made": "2026-11-05T12:39:53.172916-05:00",
+ "picks": [
+  {
+   "game_id": "401909936",
+   "game": "ORL @ PHX",
+   "market": "Moneyline",
+   "pick": "PHX ML",
+   "side": "home",
+   "line": null,
+   "price": -114,
+   "prob": 0.558,
+   "model_prob": 0.644,
+   "edge": 0.025,
+   "grade": "C",
+   "proj": "PHX 112.4 \u2013 ORL 107.8",
+   "mu_h": 112.41,
+   "mu_a": 107.8,
+   "home": "PHX",
+   "away": "ORL",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "ORL injuries (Suggs): -0.6 pts"
+   ],
+   "score": 2.48
+  },
+  {
+   "game_id": "401909936",
+   "game": "ORL @ PHX",
+   "market": "Spread",
+   "pick": "PHX -1.5",
+   "side": "home",
+   "line": -1.5,
+   "price": -104,
+   "prob": 0.526,
+   "model_prob": 0.598,
+   "edge": 0.016,
+   "grade": "C",
+   "proj": "PHX 112.4 \u2013 ORL 107.8",
+   "mu_h": 112.41,
+   "mu_a": 107.8,
+   "home": "PHX",
+   "away": "ORL",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "ORL injuries (Suggs): -0.6 pts"
+   ],
+   "score": 1.62
+  }
+ ]
+}
