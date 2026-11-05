@@ -25,16 +25,39 @@
    "score": 2.35
   },
   {
+   "game_id": "401892648",
+   "game": "UTA @ MTL",
+   "market": "Puck line",
+   "pick": "MTL +1.5",
+   "side": "home",
+   "line": 1.5,
+   "price": -238,
+   "prob": 0.719,
+   "model_prob": 0.801,
+   "edge": 0.015,
+   "grade": "C",
+   "proj": "MTL 3.71 \u2013 UTA 3.05",
+   "mu_h": 3.71,
+   "mu_a": 3.05,
+   "home": "MTL",
+   "away": "UTA",
+   "notes": [
+    "MTL goalie Jacob Fowler (0.905): opponent goals -5%",
+    "UTA goalie Karel Vejmelka (0.892): opponent goals +8%"
+   ],
+   "score": 1.51
+  },
+  {
    "game_id": "401892650",
    "game": "CHI @ TB",
    "market": "Moneyline",
    "pick": "CHI ML",
    "side": "away",
    "line": null,
-   "price": 350,
-   "prob": 0.239,
+   "price": 360,
+   "prob": 0.236,
    "model_prob": 0.288,
-   "edge": 0.017,
+   "edge": 0.019,
    "grade": "C",
    "proj": "TB 4.02 \u2013 CHI 2.58",
    "mu_h": 4.02,
@@ -42,7 +65,7 @@
    "home": "TB",
    "away": "CHI",
    "notes": [],
-   "score": 1.71
+   "score": 1.89
   },
   {
    "game_id": "401892650",
@@ -62,7 +85,7 @@
    "home": "TB",
    "away": "CHI",
    "notes": [],
-   "score": 2.49
+   "score": 2.48
   },
   {
    "game_id": "401892651",
