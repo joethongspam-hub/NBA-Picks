@@ -21,7 +21,8 @@
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
    ],
-   "score": 11.92
+   "score": 11.92,
+   "locked": true
   },
   {
    "game_id": "401909922",
@@ -43,7 +44,8 @@
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
    ],
-   "score": 11.09
+   "score": 11.09,
+   "locked": true
   },
   {
    "game_id": "401909923",
@@ -67,7 +69,8 @@
     "WSH injuries (Champagnie): -0.9 pts",
     "ATL injuries (Landale): -1.4 pts"
    ],
-   "score": 14.95
+   "score": 14.95,
+   "locked": true
   },
   {
    "game_id": "401909923",
@@ -91,7 +94,8 @@
     "WSH injuries (Champagnie): -0.9 pts",
     "ATL injuries (Landale): -1.4 pts"
    ],
-   "score": 13.02
+   "score": 13.02,
+   "locked": true
   },
   {
    "game_id": "401909924",
@@ -100,13 +104,13 @@
    "pick": "MIL ML",
    "side": "away",
    "line": null,
-   "price": 394,
-   "prob": 0.417,
-   "model_prob": 0.829,
-   "edge": 0.214,
+   "price": 424,
+   "prob": 0.408,
+   "model_prob": 0.826,
+   "edge": 0.217,
    "grade": "A",
-   "proj": "BOS 103.4 \u2013 MIL 115.2",
-   "mu_h": 103.36,
+   "proj": "BOS 103.5 \u2013 MIL 115.2",
+   "mu_h": 103.49,
    "mu_a": 115.22,
    "home": "BOS",
    "away": "MIL",
@@ -114,22 +118,22 @@
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "BOS injuries (Tatum): -6.2 pts"
    ],
-   "score": 21.41
+   "score": 21.74
   },
   {
    "game_id": "401909924",
    "game": "MIL @ BOS",
    "market": "Spread",
-   "pick": "MIL +11.5",
+   "pick": "MIL +12.5",
    "side": "away",
-   "line": -11.5,
-   "price": -113,
-   "prob": 0.668,
-   "model_prob": 0.969,
-   "edge": 0.138,
+   "line": -12.5,
+   "price": -117,
+   "prob": 0.675,
+   "model_prob": 0.974,
+   "edge": 0.136,
    "grade": "A",
-   "proj": "BOS 103.4 \u2013 MIL 115.2",
-   "mu_h": 103.36,
+   "proj": "BOS 103.5 \u2013 MIL 115.2",
+   "mu_h": 103.49,
    "mu_a": 115.22,
    "home": "BOS",
    "away": "MIL",
@@ -137,7 +141,7 @@
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "BOS injuries (Tatum): -6.2 pts"
    ],
-   "score": 13.79
+   "score": 13.57
   },
   {
    "game_id": "401909925",
@@ -166,13 +170,13 @@
    "game_id": "401909925",
    "game": "CHA @ BKN",
    "market": "Spread",
-   "pick": "BKN +4.5",
+   "pick": "BKN +3.5",
    "side": "home",
-   "line": 4.5,
-   "price": -114,
-   "prob": 0.68,
-   "model_prob": 0.997,
-   "edge": 0.147,
+   "line": 3.5,
+   "price": -105,
+   "prob": 0.667,
+   "model_prob": 0.996,
+   "edge": 0.154,
    "grade": "A",
    "proj": "BKN 126.2 \u2013 CHA 96.2",
    "mu_h": 126.16,
@@ -183,7 +187,7 @@
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "BKN injuries (Demin): -0.8 pts"
    ],
-   "score": 14.69
+   "score": 15.45
   },
   {
    "game_id": "401909926",
@@ -193,43 +197,43 @@
    "side": "away",
    "line": null,
    "price": 443,
-   "prob": 0.287,
-   "model_prob": 0.491,
-   "edge": 0.103,
+   "prob": 0.288,
+   "model_prob": 0.494,
+   "edge": 0.104,
    "grade": "A",
-   "proj": "NY 113.1 \u2013 CHI 112.8",
+   "proj": "NY 113.1 \u2013 CHI 112.9",
    "mu_h": 113.12,
-   "mu_a": 112.82,
+   "mu_a": 112.92,
    "home": "NY",
    "away": "CHI",
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "NY injuries (Hart): -2.5 pts"
    ],
-   "score": 10.25
+   "score": 10.37
   },
   {
    "game_id": "401909926",
    "game": "CHI @ NY",
    "market": "Spread",
-   "pick": "CHI +12.5",
+   "pick": "CHI +11.5",
    "side": "away",
-   "line": -12.5,
-   "price": -117,
-   "prob": 0.627,
-   "model_prob": 0.836,
-   "edge": 0.088,
+   "line": -11.5,
+   "price": -103,
+   "prob": 0.601,
+   "model_prob": 0.817,
+   "edge": 0.094,
    "grade": "A",
-   "proj": "NY 113.1 \u2013 CHI 112.8",
+   "proj": "NY 113.1 \u2013 CHI 112.9",
    "mu_h": 113.12,
-   "mu_a": 112.82,
+   "mu_a": 112.92,
    "home": "NY",
    "away": "CHI",
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "NY injuries (Hart): -2.5 pts"
    ],
-   "score": 8.81
+   "score": 9.37
   },
   {
    "game_id": "401909927",
@@ -238,13 +242,13 @@
    "pick": "MEM ML",
    "side": "home",
    "line": null,
-   "price": -237,
-   "prob": 0.786,
-   "model_prob": 0.992,
-   "edge": 0.083,
+   "price": -224,
+   "prob": 0.779,
+   "model_prob": 0.993,
+   "edge": 0.088,
    "grade": "A",
-   "proj": "MEM 142.7 \u2013 IND 112.3",
-   "mu_h": 142.7,
+   "proj": "MEM 142.9 \u2013 IND 112.3",
+   "mu_h": 142.91,
    "mu_a": 112.33,
    "home": "MEM",
    "away": "IND",
@@ -253,22 +257,22 @@
     "MEM injuries (Jr.): -1.3 pts",
     "IND injuries (Haliburton, Toppin): -2.6 pts"
    ],
-   "score": 8.32
+   "score": 8.78
   },
   {
    "game_id": "401909927",
    "game": "IND @ MEM",
    "market": "Spread",
-   "pick": "MEM -6.5",
+   "pick": "MEM -5.5",
    "side": "home",
-   "line": -6.5,
-   "price": -104,
-   "prob": 0.657,
-   "model_prob": 0.972,
-   "edge": 0.147,
+   "line": -5.5,
+   "price": -115,
+   "prob": 0.674,
+   "model_prob": 0.978,
+   "edge": 0.139,
    "grade": "A",
-   "proj": "MEM 142.7 \u2013 IND 112.3",
-   "mu_h": 142.7,
+   "proj": "MEM 142.9 \u2013 IND 112.3",
+   "mu_h": 142.91,
    "mu_a": 112.33,
    "home": "MEM",
    "away": "IND",
@@ -277,7 +281,7 @@
     "MEM injuries (Jr.): -1.3 pts",
     "IND injuries (Haliburton, Toppin): -2.6 pts"
    ],
-   "score": 14.69
+   "score": 13.93
   },
   {
    "game_id": "401909928",
@@ -286,46 +290,46 @@
    "pick": "NO ML",
    "side": "home",
    "line": null,
-   "price": -203,
-   "prob": 0.688,
-   "model_prob": 0.771,
-   "edge": 0.018,
+   "price": -201,
+   "prob": 0.685,
+   "model_prob": 0.766,
+   "edge": 0.017,
    "grade": "C",
-   "proj": "NO 129.7 \u2013 UTAH 120.4",
-   "mu_h": 129.69,
+   "proj": "NO 129.5 \u2013 UTAH 120.4",
+   "mu_h": 129.5,
    "mu_a": 120.41,
    "home": "NO",
    "away": "UTAH",
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
-    "NO injuries (Poole): -1.0 pts",
+    "NO injuries (III, Poole): -5.3 pts",
     "UTAH injuries (Jr.): -1.8 pts"
    ],
-   "score": 1.79
+   "score": 1.75
   },
   {
    "game_id": "401909928",
    "game": "UTAH @ NO",
    "market": "Spread",
-   "pick": "NO -4.5",
+   "pick": "NO -5.5",
    "side": "home",
-   "line": -4.5,
-   "price": -114,
-   "prob": 0.558,
-   "model_prob": 0.649,
-   "edge": 0.025,
+   "line": -5.5,
+   "price": -104,
+   "prob": 0.531,
+   "model_prob": 0.613,
+   "edge": 0.021,
    "grade": "C",
-   "proj": "NO 129.7 \u2013 UTAH 120.4",
-   "mu_h": 129.69,
+   "proj": "NO 129.5 \u2013 UTAH 120.4",
+   "mu_h": 129.5,
    "mu_a": 120.41,
    "home": "NO",
    "away": "UTAH",
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
-    "NO injuries (Poole): -1.0 pts",
+    "NO injuries (III, Poole): -5.3 pts",
     "UTAH injuries (Jr.): -1.8 pts"
    ],
-   "score": 2.5
+   "score": 2.13
   },
   {
    "game_id": "401909929",
@@ -335,21 +339,21 @@
    "side": "away",
    "line": null,
    "price": 136,
-   "prob": 0.504,
-   "model_prob": 0.685,
-   "edge": 0.081,
+   "prob": 0.533,
+   "model_prob": 0.766,
+   "edge": 0.109,
    "grade": "A",
-   "proj": "OKC 109.3 \u2013 CLE 115.3",
-   "mu_h": 109.33,
+   "proj": "OKC 106.3 \u2013 CLE 115.3",
+   "mu_h": 106.27,
    "mu_a": 115.35,
    "home": "OKC",
    "away": "CLE",
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
-    "OKC injuries (Holmgren, Wallace, Williams): -1.8 pts",
+    "OKC injuries (Holmgren, Wallace, Williams): -2.9 pts",
     "CLE injuries (Tyson, Watson): -3.9 pts"
    ],
-   "score": 8.07
+   "score": 10.92
   },
   {
    "game_id": "401909929",
@@ -359,21 +363,21 @@
    "side": "away",
    "line": -3.5,
    "price": -113,
-   "prob": 0.601,
-   "model_prob": 0.777,
-   "edge": 0.071,
+   "prob": 0.624,
+   "model_prob": 0.843,
+   "edge": 0.094,
    "grade": "A",
-   "proj": "OKC 109.3 \u2013 CLE 115.3",
-   "mu_h": 109.33,
+   "proj": "OKC 106.3 \u2013 CLE 115.3",
+   "mu_h": 106.27,
    "mu_a": 115.35,
    "home": "OKC",
    "away": "CLE",
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
-    "OKC injuries (Holmgren, Wallace, Williams): -1.8 pts",
+    "OKC injuries (Holmgren, Wallace, Williams): -2.9 pts",
     "CLE injuries (Tyson, Watson): -3.9 pts"
    ],
-   "score": 7.06
+   "score": 9.37
   },
   {
    "game_id": "401909930",
@@ -430,10 +434,10 @@
    "pick": "DEN ML",
    "side": "home",
    "line": null,
-   "price": -191,
-   "prob": 0.715,
+   "price": -203,
+   "prob": 0.723,
    "model_prob": 0.871,
-   "edge": 0.058,
+   "edge": 0.053,
    "grade": "A",
    "proj": "DEN 121.3 \u2013 TOR 107.1",
    "mu_h": 121.27,
@@ -443,7 +447,7 @@
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
    ],
-   "score": 5.85
+   "score": 5.31
   },
   {
    "game_id": "401909931",
@@ -474,10 +478,10 @@
    "pick": "DAL ML",
    "side": "away",
    "line": null,
-   "price": 443,
-   "prob": 0.257,
+   "price": 458,
+   "prob": 0.254,
    "model_prob": 0.405,
-   "edge": 0.073,
+   "edge": 0.075,
    "grade": "A",
    "proj": "SA 113.5 \u2013 DAL 110.5",
    "mu_h": 113.55,
@@ -488,7 +492,7 @@
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "DAL injuries (Christie): -2.2 pts"
    ],
-   "score": 7.26
+   "score": 7.45
   },
   {
    "game_id": "401909933",
@@ -497,10 +501,10 @@
    "pick": "DAL +12.5",
    "side": "away",
    "line": -12.5,
-   "price": -114,
-   "prob": 0.602,
+   "price": -111,
+   "prob": 0.598,
    "model_prob": 0.776,
-   "edge": 0.07,
+   "edge": 0.072,
    "grade": "A",
    "proj": "SA 113.5 \u2013 DAL 110.5",
    "mu_h": 113.55,
@@ -511,7 +515,7 @@
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "DAL injuries (Christie): -2.2 pts"
    ],
-   "score": 6.96
+   "score": 7.21
   },
   {
    "game_id": "401909934",
@@ -521,9 +525,9 @@
    "side": "away",
    "line": 12.5,
    "price": -106,
-   "prob": 0.55,
+   "prob": 0.549,
    "model_prob": 0.658,
-   "edge": 0.035,
+   "edge": 0.034,
    "grade": "B",
    "proj": "SAC 109.5 \u2013 LAL 127.1",
    "mu_h": 109.53,
@@ -534,7 +538,7 @@
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "SAC injuries (Plowden): -1.1 pts"
    ],
-   "score": 3.51
+   "score": 3.44
   },
   {
    "game_id": "401909935",
