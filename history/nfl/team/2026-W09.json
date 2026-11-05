@@ -88,10 +88,10 @@
    "pick": "LV ML",
    "side": "away",
    "line": null,
-   "price": 390,
-   "prob": 0.222,
+   "price": 380,
+   "prob": 0.225,
    "model_prob": 0.272,
-   "edge": 0.018,
+   "edge": 0.017,
    "grade": "C",
    "proj": "SF 30.0 \u2013 LV 21.8",
    "mu_h": 30.02,
@@ -99,7 +99,7 @@
    "home": "SF",
    "away": "LV",
    "notes": [],
-   "score": 1.82
+   "score": 1.68
   },
   {
    "game_id": "401873050",
