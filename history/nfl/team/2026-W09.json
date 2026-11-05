@@ -82,26 +82,6 @@
    "score": 2.6
   },
   {
-   "game_id": "401873044",
-   "game": "NYG @ PHI",
-   "market": "Total",
-   "pick": "Over 38.5",
-   "side": "over",
-   "line": 38.5,
-   "price": -115,
-   "prob": 0.559,
-   "model_prob": 0.648,
-   "edge": 0.024,
-   "grade": "C",
-   "proj": "PHI 21.4 \u2013 NYG 22.2",
-   "mu_h": 21.42,
-   "mu_a": 22.22,
-   "home": "PHI",
-   "away": "NYG",
-   "notes": [],
-   "score": 2.41
-  },
-  {
    "game_id": "401873047",
    "game": "LV @ SF",
    "market": "Moneyline",
@@ -120,50 +100,6 @@
    "away": "LV",
    "notes": [],
    "score": 1.82
-  },
-  {
-   "game_id": "401873048",
-   "game": "ARI @ SEA",
-   "market": "Moneyline",
-   "pick": "ARI ML",
-   "side": "away",
-   "line": null,
-   "price": 350,
-   "prob": 0.254,
-   "model_prob": 0.328,
-   "edge": 0.031,
-   "grade": "B",
-   "proj": "SEA 25.5 \u2013 ARI 19.5",
-   "mu_h": 25.48,
-   "mu_a": 19.48,
-   "home": "SEA",
-   "away": "ARI",
-   "notes": [
-    "SEA: backup QB Drew Lock starting (-3 pts)"
-   ],
-   "score": 3.13
-  },
-  {
-   "game_id": "401873048",
-   "game": "ARI @ SEA",
-   "market": "Total",
-   "pick": "Over 39.5",
-   "side": "over",
-   "line": 39.5,
-   "price": -112,
-   "prob": 0.558,
-   "model_prob": 0.657,
-   "edge": 0.029,
-   "grade": "C",
-   "proj": "SEA 25.5 \u2013 ARI 19.5",
-   "mu_h": 25.48,
-   "mu_a": 19.48,
-   "home": "SEA",
-   "away": "ARI",
-   "notes": [
-    "SEA: backup QB Drew Lock starting (-3 pts)"
-   ],
-   "score": 2.94
   },
   {
    "game_id": "401873050",
