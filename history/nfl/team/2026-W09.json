@@ -68,10 +68,10 @@
    "pick": "MIA ML",
    "side": "home",
    "line": null,
-   "price": 280,
-   "prob": 0.289,
+   "price": 270,
+   "prob": 0.294,
    "model_prob": 0.358,
-   "edge": 0.026,
+   "edge": 0.023,
    "grade": "C",
    "proj": "MIA 22.1 \u2013 DET 27.0",
    "mu_h": 22.11,
@@ -79,7 +79,7 @@
    "home": "MIA",
    "away": "DET",
    "notes": [],
-   "score": 2.6
+   "score": 2.34
   },
   {
    "game_id": "401873047",
