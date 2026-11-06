@@ -22,7 +22,8 @@
     "MTL goalie Jacob Fowler (0.905): opponent goals -5%",
     "UTA goalie Karel Vejmelka (0.892): opponent goals +8%"
    ],
-   "score": 2.35
+   "score": 2.35,
+   "locked": true
   },
   {
    "game_id": "401892648",
@@ -45,7 +46,8 @@
     "MTL goalie Jacob Fowler (0.905): opponent goals -5%",
     "UTA goalie Karel Vejmelka (0.892): opponent goals +8%"
    ],
-   "score": 1.51
+   "score": 1.51,
+   "locked": true
   },
   {
    "game_id": "401892650",
@@ -65,7 +67,8 @@
    "home": "TB",
    "away": "CHI",
    "notes": [],
-   "score": 1.89
+   "score": 1.89,
+   "locked": true
   },
   {
    "game_id": "401892650",
@@ -85,7 +88,8 @@
    "home": "TB",
    "away": "CHI",
    "notes": [],
-   "score": 2.48
+   "score": 2.48,
+   "locked": true
   },
   {
    "game_id": "401892651",
@@ -108,7 +112,8 @@
     "NJ goalie Connor Hellebuyck (0.895): opponent goals +5%",
     "STL goalie Joel Hofer (0.909): opponent goals -9%"
    ],
-   "score": 3.77
+   "score": 3.77,
+   "locked": true
   },
   {
    "game_id": "401892651",
@@ -131,7 +136,8 @@
     "NJ goalie Connor Hellebuyck (0.895): opponent goals +5%",
     "STL goalie Joel Hofer (0.909): opponent goals -9%"
    ],
-   "score": 3.26
+   "score": 3.26,
+   "locked": true
   },
   {
    "game_id": "401892657",
