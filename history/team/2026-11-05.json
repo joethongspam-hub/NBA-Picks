@@ -8,10 +8,10 @@
    "pick": "PHX ML",
    "side": "home",
    "line": null,
-   "price": -117,
-   "prob": 0.585,
+   "price": -121,
+   "prob": 0.59,
    "model_prob": 0.711,
-   "edge": 0.046,
+   "edge": 0.043,
    "grade": "B",
    "proj": "PHX 114.7 \u2013 ORL 107.8",
    "mu_h": 114.74,
@@ -23,7 +23,7 @@
     "PHX injuries (Goodwin): -1.7 pts",
     "ORL injuries (Suggs): -0.6 pts"
    ],
-   "score": 4.6
+   "score": 4.26
   },
   {
    "game_id": "401909936",
@@ -32,10 +32,10 @@
    "pick": "PHX -1.5",
    "side": "home",
    "line": -1.5,
-   "price": -102,
-   "prob": 0.547,
+   "price": -108,
+   "prob": 0.556,
    "model_prob": 0.668,
-   "edge": 0.042,
+   "edge": 0.037,
    "grade": "B",
    "proj": "PHX 114.7 \u2013 ORL 107.8",
    "mu_h": 114.74,
@@ -47,7 +47,7 @@
     "PHX injuries (Goodwin): -1.7 pts",
     "ORL injuries (Suggs): -0.6 pts"
    ],
-   "score": 4.21
+   "score": 3.69
   },
   {
    "game_id": "401909937",
@@ -56,10 +56,10 @@
    "pick": "GS ML",
    "side": "home",
    "line": null,
-   "price": -161,
-   "prob": 0.636,
+   "price": -167,
+   "prob": 0.641,
    "model_prob": 0.716,
-   "edge": 0.019,
+   "edge": 0.015,
    "grade": "C",
    "proj": "GS 123.3 \u2013 MIA 116.2",
    "mu_h": 123.33,
@@ -70,30 +70,7 @@
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "GS injuries (Santos): -1.2 pts"
    ],
-   "score": 1.89
-  },
-  {
-   "game_id": "401909937",
-   "game": "MIA @ GS",
-   "market": "Spread",
-   "pick": "GS -3.5",
-   "side": "home",
-   "line": -3.5,
-   "price": -108,
-   "prob": 0.537,
-   "model_prob": 0.614,
-   "edge": 0.018,
-   "grade": "C",
-   "proj": "GS 123.3 \u2013 MIA 116.2",
-   "mu_h": 123.33,
-   "mu_a": 116.21,
-   "home": "GS",
-   "away": "MIA",
-   "notes": [
-    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
-    "GS injuries (Santos): -1.2 pts"
-   ],
-   "score": 1.79
+   "score": 1.51
   }
  ]
 }
