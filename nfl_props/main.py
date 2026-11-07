@@ -179,7 +179,7 @@ def run(week: int | None = None, out_dir: str = "public/nfl", cache_dir: str = "
         saved = hist / "lines" / f"{key}.json"
         if saved.exists():
             lines = {(r["name"], r["stat"]): PropLine(r["line"], r["over"], r["under"], r["books"], r.get("source", ""),
-                                 r.get("open_line"), r.get("open_over"), r.get("open_under"), r.get("books"))
+                                 r.get("open_line"), r.get("open_over"), r.get("open_under"), r.get("book_prices"))
                      for r in json.loads(saved.read_text())}
 
     profiles = {p.id: pr for p in players if (pr := build_profile(p, season))}
@@ -207,7 +207,7 @@ def run(week: int | None = None, out_dir: str = "public/nfl", cache_dir: str = "
     locked = [dict(p, locked=True) for p in prior.get("picks", []) if p["game_id"] in started]
     if not backtest and (hist / "lines" / f"{key}.json").exists():
         lines = {(r["name"], r["stat"]): PropLine(r["line"], r["over"], r["under"], r["books"], r.get("source", ""),
-                                 r.get("open_line"), r.get("open_over"), r.get("open_under"), r.get("books"))
+                                 r.get("open_line"), r.get("open_over"), r.get("open_under"), r.get("book_prices"))
                  for r in json.loads((hist / "lines" / f"{key}.json").read_text())}
     if upcoming and not backtest:
         try:      # free DraftKings lines via ESPN
@@ -239,7 +239,7 @@ def run(week: int | None = None, out_dir: str = "public/nfl", cache_dir: str = "
         (hist / "lines" / f"{key}.json").write_text(json.dumps(
             [{"name": k[0], "stat": k[1], "line": v.line, "over": v.over_price, "under": v.under_price,
               "books": v.books, "source": v.source,
-              "open_line": v.open_line, "open_over": v.open_over, "open_under": v.open_under, "books": v.book_prices} for k, v in lines.items()]))
+              "open_line": v.open_line, "open_over": v.open_over, "open_under": v.open_under, "book_prices": v.book_prices} for k, v in lines.items()]))
 
     by_team = {}
     for p in players:

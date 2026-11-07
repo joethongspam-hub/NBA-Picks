@@ -53,7 +53,9 @@ def shop(real, side: str) -> dict | None:
     """Each book's line and price for the chosen side (DraftKings-only lines give one entry)."""
     if not real:
         return None
-    bp = getattr(real, "book_prices", None) or ({"DraftKings": [real.line, real.over_price, real.under_price]}
+    bp = getattr(real, "book_prices", None)
+    bp = bp if isinstance(bp, dict) else None
+    bp = bp or ({"DraftKings": [real.line, real.over_price, real.under_price]}
                                                  if getattr(real, "source", "") == "DraftKings" else None)
     if not bp:
         return None

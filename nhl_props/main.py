@@ -117,7 +117,7 @@ def run(date: str | None = None, out_dir: str = "public/nhl", cache_dir: str = "
         saved = hist / "lines" / f"{day_s}.json"
         if saved.exists():
             lines = {(r["name"], r["stat"]): PropLine(r["line"], r["over"], r["under"], r["books"], r.get("source", ""),
-                                                      r.get("open_line"), r.get("open_over"), r.get("open_under"), r.get("books"))
+                                                      r.get("open_line"), r.get("open_over"), r.get("open_under"), r.get("book_prices"))
                      for r in json.loads(saved.read_text())}
 
     profiles = {p.id: pr for p in players if (pr := build_profile(p, season))}
@@ -145,7 +145,7 @@ def run(date: str | None = None, out_dir: str = "public/nhl", cache_dir: str = "
     lines_file = hist / "lines" / f"{day_s}.json"
     if not backtest and lines_file.exists():
         lines = {(r["name"], r["stat"]): PropLine(r["line"], r["over"], r["under"], r["books"], r.get("source", ""),
-                                                  r.get("open_line"), r.get("open_over"), r.get("open_under"), r.get("books"))
+                                                  r.get("open_line"), r.get("open_over"), r.get("open_under"), r.get("book_prices"))
                  for r in json.loads(lines_file.read_text())}
     if upcoming and not backtest:
         try:
@@ -167,7 +167,7 @@ def run(date: str | None = None, out_dir: str = "public/nhl", cache_dir: str = "
             lines_file.parent.mkdir(parents=True, exist_ok=True)
             lines_file.write_text(json.dumps([{"name": k[0], "stat": k[1], "line": v.line, "over": v.over_price,
                                                "under": v.under_price, "books": v.books, "source": v.source,
-                                               "open_line": v.open_line, "open_over": v.open_over, "open_under": v.open_under, "books": v.book_prices}
+                                               "open_line": v.open_line, "open_over": v.open_over, "open_under": v.open_under, "book_prices": v.book_prices}
                                               for k, v in lines.items()]))
 
     # team odds (also drives implied team goals for the player model)
