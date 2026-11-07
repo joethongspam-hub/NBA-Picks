@@ -1,0 +1,413 @@
+[
+ {
+  "legs": [
+   {
+    "game_id": "401873049",
+    "game": "GB @ NE",
+    "player": "MarShawn Lloyd",
+    "player_id": "4429023",
+    "team": "GB",
+    "opp": "NE",
+    "stat": "RUSH_YDS",
+    "side": "OVER",
+    "line": 7.5,
+    "price": -110,
+    "prob": 0.752,
+    "edge": 0.228,
+    "grade": "B",
+    "line_source": "2 books",
+    "books": {
+     "DraftKings": [
+      7.5,
+      -110
+     ],
+     "Bovada": [
+      7.5,
+      -110
+     ]
+    }
+   },
+   {
+    "game_id": "401873044",
+    "game": "NYG @ PHI",
+    "player": "J.J. McCarthy",
+    "player_id": "4433970",
+    "team": "NYG",
+    "opp": "PHI",
+    "stat": "PASS_YDS",
+    "side": "UNDER",
+    "line": 210.5,
+    "price": -111,
+    "prob": 0.721,
+    "edge": 0.195,
+    "grade": "B",
+    "line_source": "6 books",
+    "books": {
+     "DraftKings": [
+      210.5,
+      -111
+     ],
+     "FanDuel": [
+      214.5,
+      -114
+     ],
+     "BetOnline.ag": [
+      210.5,
+      -111
+     ],
+     "BetRivers": [
+      208.5,
+      -117
+     ],
+     "BetMGM": [
+      206.5,
+      -115
+     ],
+     "Bovada": [
+      210.5,
+      -115
+     ]
+    }
+   },
+   {
+    "game_id": "401873041",
+    "game": "DEN @ CAR",
+    "player": "Troy Franklin",
+    "player_id": "4431280",
+    "team": "DEN",
+    "opp": "CAR",
+    "stat": "REC",
+    "side": "OVER",
+    "line": 0.5,
+    "price": -200,
+    "prob": 0.754,
+    "edge": 0.087,
+    "grade": "A",
+    "line_source": "5 books",
+    "books": {
+     "DraftKings": [
+      1.5,
+      182
+     ],
+     "FanDuel": [
+      0.5,
+      -205
+     ],
+     "BetOnline.ag": [
+      0.5,
+      -200
+     ],
+     "BetRivers": [
+      0.5,
+      -215
+     ],
+     "Bovada": [
+      1.5,
+      180
+     ]
+    }
+   }
+  ],
+  "hit": 0.4088,
+  "payout": 5.44,
+  "odds": 444,
+  "ev": 1.225,
+  "type": "safe",
+  "label": "Safest",
+  "made": "2026-11-07T11:04:47.288949-05:00"
+ },
+ {
+  "legs": [
+   {
+    "game_id": "401873049",
+    "game": "GB @ NE",
+    "player": "MarShawn Lloyd",
+    "player_id": "4429023",
+    "team": "GB",
+    "opp": "NE",
+    "stat": "RUSH_YDS",
+    "side": "OVER",
+    "line": 7.5,
+    "price": -110,
+    "prob": 0.752,
+    "edge": 0.228,
+    "grade": "B",
+    "line_source": "2 books",
+    "books": {
+     "DraftKings": [
+      7.5,
+      -110
+     ],
+     "Bovada": [
+      7.5,
+      -110
+     ]
+    }
+   },
+   {
+    "game_id": "401873044",
+    "game": "NYG @ PHI",
+    "player": "J.J. McCarthy",
+    "player_id": "4433970",
+    "team": "NYG",
+    "opp": "PHI",
+    "stat": "PASS_YDS",
+    "side": "UNDER",
+    "line": 210.5,
+    "price": -111,
+    "prob": 0.721,
+    "edge": 0.195,
+    "grade": "B",
+    "line_source": "6 books",
+    "books": {
+     "DraftKings": [
+      210.5,
+      -111
+     ],
+     "FanDuel": [
+      214.5,
+      -114
+     ],
+     "BetOnline.ag": [
+      210.5,
+      -111
+     ],
+     "BetRivers": [
+      208.5,
+      -117
+     ],
+     "BetMGM": [
+      206.5,
+      -115
+     ],
+     "Bovada": [
+      210.5,
+      -115
+     ]
+    }
+   },
+   {
+    "game_id": "401873048",
+    "game": "ARI @ SEA",
+    "player": "Tory Horton",
+    "player_id": "4597703",
+    "team": "SEA",
+    "opp": "ARI",
+    "stat": "REC",
+    "side": "UNDER",
+    "line": 1.5,
+    "price": 142,
+    "prob": 0.567,
+    "edge": 0.154,
+    "grade": "B",
+    "line_source": "5 books",
+    "books": {
+     "DraftKings": [
+      1.5,
+      130
+     ],
+     "FanDuel": [
+      1.5,
+      142
+     ],
+     "BetOnline.ag": [
+      1.5,
+      134
+     ],
+     "Bovada": [
+      1.5,
+      130
+     ]
+    }
+   }
+  ],
+  "hit": 0.3074,
+  "payout": 8.78,
+  "odds": 778,
+  "ev": 1.7,
+  "type": "value",
+  "label": "Best value",
+  "made": "2026-11-07T11:04:47.288949-05:00"
+ },
+ {
+  "legs": [
+   {
+    "game_id": "401873049",
+    "game": "GB @ NE",
+    "player": "MarShawn Lloyd",
+    "player_id": "4429023",
+    "team": "GB",
+    "opp": "NE",
+    "stat": "RUSH_YDS",
+    "side": "OVER",
+    "line": 7.5,
+    "price": -110,
+    "prob": 0.752,
+    "edge": 0.228,
+    "grade": "B",
+    "line_source": "2 books",
+    "books": {
+     "DraftKings": [
+      7.5,
+      -110
+     ],
+     "Bovada": [
+      7.5,
+      -110
+     ]
+    }
+   },
+   {
+    "game_id": "401873044",
+    "game": "NYG @ PHI",
+    "player": "J.J. McCarthy",
+    "player_id": "4433970",
+    "team": "NYG",
+    "opp": "PHI",
+    "stat": "PASS_YDS",
+    "side": "UNDER",
+    "line": 210.5,
+    "price": -111,
+    "prob": 0.721,
+    "edge": 0.195,
+    "grade": "B",
+    "line_source": "6 books",
+    "books": {
+     "DraftKings": [
+      210.5,
+      -111
+     ],
+     "FanDuel": [
+      214.5,
+      -114
+     ],
+     "BetOnline.ag": [
+      210.5,
+      -111
+     ],
+     "BetRivers": [
+      208.5,
+      -117
+     ],
+     "BetMGM": [
+      206.5,
+      -115
+     ],
+     "Bovada": [
+      210.5,
+      -115
+     ]
+    }
+   },
+   {
+    "game_id": "401873042",
+    "game": "DET @ MIA",
+    "player": "Ollie Gordon II",
+    "player_id": "4711533",
+    "team": "MIA",
+    "opp": "DET",
+    "stat": "REC",
+    "side": "UNDER",
+    "line": 1.5,
+    "price": -106,
+    "prob": 0.691,
+    "edge": 0.176,
+    "grade": "A",
+    "line_source": "5 books",
+    "books": {
+     "DraftKings": [
+      1.5,
+      -116
+     ],
+     "FanDuel": [
+      1.5,
+      -108
+     ],
+     "BetOnline.ag": [
+      1.5,
+      -106
+     ],
+     "Bovada": [
+      1.5,
+      -120
+     ]
+    }
+   },
+   {
+    "game_id": "401873048",
+    "game": "ARI @ SEA",
+    "player": "Tory Horton",
+    "player_id": "4597703",
+    "team": "SEA",
+    "opp": "ARI",
+    "stat": "REC",
+    "side": "UNDER",
+    "line": 1.5,
+    "price": 142,
+    "prob": 0.567,
+    "edge": 0.154,
+    "grade": "B",
+    "line_source": "5 books",
+    "books": {
+     "DraftKings": [
+      1.5,
+      130
+     ],
+     "FanDuel": [
+      1.5,
+      142
+     ],
+     "BetOnline.ag": [
+      1.5,
+      134
+     ],
+     "Bovada": [
+      1.5,
+      130
+     ]
+    }
+   },
+   {
+    "game_id": "401873039",
+    "game": "CLE @ NO",
+    "player": "Jerry Jeudy",
+    "player_id": "4241463",
+    "team": "CLE",
+    "opp": "NO",
+    "stat": "REC",
+    "side": "OVER",
+    "line": 1.5,
+    "price": 120,
+    "prob": 0.604,
+    "edge": 0.149,
+    "grade": "B",
+    "line_source": "4 books",
+    "books": {
+     "DraftKings": [
+      1.5,
+      119
+     ],
+     "FanDuel": [
+      1.5,
+      114
+     ],
+     "BetOnline.ag": [
+      1.5,
+      110
+     ],
+     "Bovada": [
+      1.5,
+      120
+     ]
+    }
+   }
+  ],
+  "hit": 0.1283,
+  "payout": 37.55,
+  "odds": 3655,
+  "ev": 3.818,
+  "type": "longshot",
+  "label": "Long shot",
+  "made": "2026-11-07T11:04:47.288949-05:00"
+ }
+]
