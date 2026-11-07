@@ -99,6 +99,7 @@ input[type=search]{width:100%;background:var(--panel);border:1px solid var(--lin
 </div></nav>
 <main>
   <section class="view on" id="v-best">
+    <div class="row" style="gap:8px;margin-bottom:2px"><span class="small">Sort</span><div class="chips sortChips" style="padding:0"></div></div>
     <div class="chips" id="statChips"></div>
     <div class="card" id="bestList"></div>
   </section>
@@ -106,6 +107,7 @@ input[type=search]{width:100%;background:var(--panel);border:1px solid var(--lin
   <section class="view" id="v-team"><div id="teamBox"></div></section>
   <section class="view" id="v-all">
     <input type="search" id="q" placeholder="Search player, team or stat (e.g. 'PTS', 'LAL')">
+    <div class="row" style="gap:8px;margin-bottom:8px"><span class="small">Sort</span><div class="chips sortChips" style="padding:0"></div></div>
     <div class="card" id="allList"></div>
   </section>
   <section class="view" id="v-record"><div id="recordBox"></div></section>
@@ -189,13 +191,40 @@ function pickHTML(p, showGame) {
   </div>`;
 }
 
+// ---- sorting (Grade / Win % / Edge), remembered on this device
+const SORTS = [["grade", "Grade"], ["prob", "Win %"], ["edge", "Edge"]];
+let sortMode = "grade";
+try { sortMode = localStorage.getItem("propSort") || "grade"; } catch (e) {}
+const GR = {A: 3, B: 2, C: 1};
+function sortPicks(list) {
+  const key = sortMode === "prob" ? (p => p.prob) : sortMode === "edge" ? (p => p.edge)
+    : (p => (GR[p.grade] || 0) * 1000 + (p.score || 0));
+  return [...list].sort((a, b) => key(b) - key(a));
+}
+function onePerPlayer(list, n) {
+  const seen = new Set(), out = [];
+  for (const p of list) { if (!seen.has(p.player_id)) { seen.add(p.player_id); out.push(p); } if (out.length >= n) break; }
+  return out;
+}
+function renderSortChips() {
+  document.querySelectorAll(".sortChips").forEach(el => el.innerHTML = SORTS.map(([k, l]) =>
+    `<button class="chip ${k === sortMode ? "on" : ""}" data-sort="${k}">${l}</button>`).join(""));
+}
+document.addEventListener("click", e => {
+  const k = e.target.dataset && e.target.dataset.sort; if (!k) return;
+  sortMode = k; try { localStorage.setItem("propSort", k); } catch (err) {}
+  renderSortChips(); renderBest(); renderAll(); renderGames();
+});
+
 // ---- best bets with stat filter
 let statFilter = "ALL";
 function renderBest() {
+  renderSortChips();
   const stats = ["ALL", ...new Set(D.top.concat(Object.values(D.by_game).flat()).map(p => p.stat))];
   $("#statChips").innerHTML = stats.map(s => `<button class="chip ${s===statFilter?"on":""}" data-s="${s}">${s==="ALL"?"All":s}</button>`).join("");
-  let list = statFilter === "ALL" ? D.top
-    : D.all.filter(p => p.stat === statFilter && p.edge >= 0.03 && p.grade !== "-").slice(0, 15);
+  const pool = D.top.concat(D.all.filter(p => p.edge >= 0.03 && p.grade !== "-"))
+    .filter(p => statFilter === "ALL" || p.stat === statFilter);
+  let list = (statFilter === "ALL" && sortMode === "grade" && !D.backtest) ? D.top : onePerPlayer(sortPicks(pool), 15);
   $("#bestList").innerHTML = list.length ? list.map(p => pickHTML(p, true)).join("")
     : `<div class="empty">${D.games.length ? "No props cleared the bar today." : "No NBA games on this date."}</div>`;
 }
@@ -205,7 +234,7 @@ $("#statChips").addEventListener("click", e => { const s = e.target.dataset.s; i
 function renderGames() {
   if (!D.games.length) { $("#gameList").innerHTML = `<div class="empty">No NBA games on this date.</div>`; return; }
   $("#gameList").innerHTML = D.games.map(g => {
-    const picks = D.by_game[g.id] || [];
+    const picks = sortPicks(D.by_game[g.id] || []);
     const inj = g.injuries.filter(i => i.level !== "PROBABLE" && i.min >= 8).slice(0, 8);
     const vegas = g.total ? `${esc(g.odds)} · O/U ${g.total} · team totals ${g.away} ${g.tt_away} / ${g.home} ${g.tt_home}` : "No Vegas line posted yet";
     return `<div class="card">
@@ -227,7 +256,7 @@ function renderGames() {
 function renderAll() {
   const q = $("#q").value.trim().toLowerCase();
   const terms = q.split(/\s+/).filter(Boolean);
-  const rows = D.all.filter(p => terms.every(t => `${p.player} ${p.team} ${p.opp} ${p.stat}`.toLowerCase().includes(t))).slice(0, 120);
+  const rows = sortPicks(D.all.filter(p => terms.every(t => `${p.player} ${p.team} ${p.opp} ${p.stat}`.toLowerCase().includes(t)))).slice(0, 120);
   $("#allList").innerHTML = rows.length ? rows.map(p => pickHTML(p)).join("") : `<div class="empty">No matches.</div>`;
 }
 $("#q").addEventListener("input", renderAll);
