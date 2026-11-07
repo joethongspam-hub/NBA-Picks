@@ -8,20 +8,20 @@
    "pick": "IND ML",
    "side": "home",
    "line": null,
-   "price": 220,
-   "prob": 0.348,
+   "price": 248,
+   "prob": 0.333,
    "model_prob": 0.437,
-   "edge": 0.036,
+   "edge": 0.045,
    "grade": "B",
    "proj": "IND 121.6 \u2013 DEN 123.5",
    "mu_h": 121.56,
-   "mu_a": 123.55,
+   "mu_a": 123.54,
    "home": "IND",
    "away": "DEN",
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
    ],
-   "score": 3.56
+   "score": 4.52
   },
   {
    "game_id": "401909938",
@@ -37,7 +37,7 @@
    "grade": "B",
    "proj": "IND 121.6 \u2013 DEN 123.5",
    "mu_h": 121.56,
-   "mu_a": 123.55,
+   "mu_a": 123.54,
    "home": "IND",
    "away": "DEN",
    "notes": [
@@ -54,19 +54,19 @@
    "line": null,
    "price": 221,
    "prob": 0.401,
-   "model_prob": 0.59,
-   "edge": 0.09,
+   "model_prob": 0.589,
+   "edge": 0.089,
    "grade": "A",
    "proj": "ATL 108.2 \u2013 BKN 111.0",
-   "mu_h": 108.17,
-   "mu_a": 111.02,
+   "mu_h": 108.23,
+   "mu_a": 111.05,
    "home": "ATL",
    "away": "BKN",
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "ATL injuries (Johnson, Landale): -2.7 pts"
    ],
-   "score": 8.97
+   "score": 8.93
   },
   {
    "game_id": "401909939",
@@ -76,20 +76,20 @@
    "side": "away",
    "line": -7.5,
    "price": -117,
-   "prob": 0.614,
-   "model_prob": 0.796,
+   "prob": 0.613,
+   "model_prob": 0.795,
    "edge": 0.074,
    "grade": "A",
    "proj": "ATL 108.2 \u2013 BKN 111.0",
-   "mu_h": 108.17,
-   "mu_a": 111.02,
+   "mu_h": 108.23,
+   "mu_a": 111.05,
    "home": "ATL",
    "away": "BKN",
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "ATL injuries (Johnson, Landale): -2.7 pts"
    ],
-   "score": 7.44
+   "score": 7.41
   },
   {
    "game_id": "401909940",
@@ -98,21 +98,21 @@
    "pick": "CLE ML",
    "side": "home",
    "line": null,
-   "price": 160,
-   "prob": 0.491,
-   "model_prob": 0.718,
-   "edge": 0.107,
+   "price": 170,
+   "prob": 0.483,
+   "model_prob": 0.719,
+   "edge": 0.112,
    "grade": "A",
-   "proj": "CLE 115.5 \u2013 NY 108.3",
-   "mu_h": 115.47,
-   "mu_a": 108.25,
+   "proj": "CLE 115.5 \u2013 NY 108.2",
+   "mu_h": 115.5,
+   "mu_a": 108.24,
    "home": "CLE",
    "away": "NY",
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "NY injuries (Hart): -2.0 pts"
    ],
-   "score": 10.69
+   "score": 11.25
   },
   {
    "game_id": "401909940",
@@ -121,21 +121,21 @@
    "pick": "CLE +4.5",
    "side": "home",
    "line": 4.5,
-   "price": -110,
-   "prob": 0.614,
+   "price": -111,
+   "prob": 0.616,
    "model_prob": 0.826,
    "edge": 0.09,
    "grade": "A",
-   "proj": "CLE 115.5 \u2013 NY 108.3",
-   "mu_h": 115.47,
-   "mu_a": 108.25,
+   "proj": "CLE 115.5 \u2013 NY 108.2",
+   "mu_h": 115.5,
+   "mu_a": 108.24,
    "home": "CLE",
    "away": "NY",
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "NY injuries (Hart): -2.0 pts"
    ],
-   "score": 9.02
+   "score": 8.96
   },
   {
    "game_id": "401909941",
@@ -144,20 +144,20 @@
    "pick": "WSH ML",
    "side": "away",
    "line": null,
-   "price": 424,
-   "prob": 0.292,
-   "model_prob": 0.493,
-   "edge": 0.101,
+   "price": 443,
+   "prob": 0.27,
+   "model_prob": 0.444,
+   "edge": 0.086,
    "grade": "A",
-   "proj": "OKC 110.6 \u2013 WSH 110.4",
+   "proj": "OKC 110.6 \u2013 WSH 108.8",
    "mu_h": 110.61,
-   "mu_a": 110.38,
+   "mu_a": 108.85,
    "home": "OKC",
    "away": "WSH",
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
    ],
-   "score": 10.07
+   "score": 8.62
   },
   {
    "game_id": "401909941",
@@ -167,19 +167,19 @@
    "side": "away",
    "line": -12.5,
    "price": -117,
-   "prob": 0.628,
-   "model_prob": 0.837,
-   "edge": 0.089,
+   "prob": 0.617,
+   "model_prob": 0.805,
+   "edge": 0.077,
    "grade": "A",
-   "proj": "OKC 110.6 \u2013 WSH 110.4",
+   "proj": "OKC 110.6 \u2013 WSH 108.8",
    "mu_h": 110.61,
-   "mu_a": 110.38,
+   "mu_a": 108.85,
    "home": "OKC",
    "away": "WSH",
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
    ],
-   "score": 8.86
+   "score": 7.74
   },
   {
    "game_id": "401909942",
@@ -190,18 +190,18 @@
    "line": null,
    "price": -217,
    "prob": 0.744,
-   "model_prob": 0.904,
+   "model_prob": 0.905,
    "edge": 0.059,
    "grade": "A",
    "proj": "GS 117.1 \u2013 ORL 100.8",
-   "mu_h": 117.14,
-   "mu_a": 100.82,
+   "mu_h": 117.11,
+   "mu_a": 100.75,
    "home": "GS",
    "away": "ORL",
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
    ],
-   "score": 5.9
+   "score": 5.92
   },
   {
    "game_id": "401909942",
@@ -211,19 +211,19 @@
    "side": "home",
    "line": -5.5,
    "price": -113,
-   "prob": 0.611,
-   "model_prob": 0.806,
+   "prob": 0.612,
+   "model_prob": 0.807,
    "edge": 0.081,
    "grade": "A",
    "proj": "GS 117.1 \u2013 ORL 100.8",
-   "mu_h": 117.14,
-   "mu_a": 100.82,
+   "mu_h": 117.11,
+   "mu_a": 100.75,
    "home": "GS",
    "away": "ORL",
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
    ],
-   "score": 8.1
+   "score": 8.13
   },
   {
    "game_id": "401909943",
@@ -233,12 +233,12 @@
    "side": "home",
    "line": null,
    "price": 221,
-   "prob": 0.361,
-   "model_prob": 0.475,
+   "prob": 0.36,
+   "model_prob": 0.473,
    "edge": 0.049,
    "grade": "B",
-   "proj": "PHX 111.5 \u2013 HOU 112.2",
-   "mu_h": 111.46,
+   "proj": "PHX 111.4 \u2013 HOU 112.2",
+   "mu_h": 111.39,
    "mu_a": 112.23,
    "home": "PHX",
    "away": "HOU",
@@ -246,7 +246,7 @@
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "HOU injuries (Capela): -0.5 pts"
    ],
-   "score": 4.94
+   "score": 4.87
   },
   {
    "game_id": "401909943",
@@ -256,12 +256,12 @@
    "side": "home",
    "line": 6.5,
    "price": -110,
-   "prob": 0.562,
-   "model_prob": 0.677,
-   "edge": 0.038,
+   "prob": 0.561,
+   "model_prob": 0.675,
+   "edge": 0.037,
    "grade": "B",
-   "proj": "PHX 111.5 \u2013 HOU 112.2",
-   "mu_h": 111.46,
+   "proj": "PHX 111.4 \u2013 HOU 112.2",
+   "mu_h": 111.39,
    "mu_a": 112.23,
    "home": "PHX",
    "away": "HOU",
@@ -269,7 +269,7 @@
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "HOU injuries (Capela): -0.5 pts"
    ],
-   "score": 3.8
+   "score": 3.73
   },
   {
    "game_id": "401909944",
@@ -278,21 +278,21 @@
    "pick": "POR ML",
    "side": "home",
    "line": null,
-   "price": 180,
-   "prob": 0.439,
-   "model_prob": 0.617,
-   "edge": 0.082,
+   "price": 171,
+   "prob": 0.446,
+   "model_prob": 0.615,
+   "edge": 0.077,
    "grade": "A",
-   "proj": "POR 114.7 \u2013 SA 111.0",
-   "mu_h": 114.75,
-   "mu_a": 111.04,
+   "proj": "POR 114.8 \u2013 SA 111.1",
+   "mu_h": 114.78,
+   "mu_a": 111.11,
    "home": "POR",
    "away": "SA",
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "POR injuries (Krejci, Morant): -1.7 pts"
    ],
-   "score": 8.16
+   "score": 7.67
   },
   {
    "game_id": "401909944",
@@ -301,21 +301,21 @@
    "pick": "POR +5.5",
    "side": "home",
    "line": 5.5,
-   "price": -108,
-   "prob": 0.591,
-   "model_prob": 0.769,
-   "edge": 0.072,
+   "price": -113,
+   "prob": 0.598,
+   "model_prob": 0.768,
+   "edge": 0.068,
    "grade": "A",
-   "proj": "POR 114.7 \u2013 SA 111.0",
-   "mu_h": 114.75,
-   "mu_a": 111.04,
+   "proj": "POR 114.8 \u2013 SA 111.1",
+   "mu_h": 114.78,
+   "mu_a": 111.11,
    "home": "POR",
    "away": "SA",
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "POR injuries (Krejci, Morant): -1.7 pts"
    ],
-   "score": 7.22
+   "score": 6.76
   }
  ]
 }
