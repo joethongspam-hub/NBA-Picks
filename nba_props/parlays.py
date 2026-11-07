@@ -1,7 +1,7 @@
 """Daily parlay builder + grading (shared by NBA, NFL, NHL).
 
 Legs: the day's shown picks on real sportsbook lines with a positive edge (graded A-C),
-at most one leg per game (so legs are close to independent), priced between -250 and +200.
+at most one leg per game (so legs are close to independent), priced -250 to -101, model probability >= 60%.
 
 For each combination:  hit = product of leg probabilities,  payout = product of decimal odds,
 value (EV) = hit * payout - 1.  Three tickets:
@@ -49,7 +49,9 @@ def candidates(picks: list[dict], started: set[str]) -> list[dict]:
             pr = int(p["price"])
         except (TypeError, ValueError):
             continue
-        if not -250 <= pr <= 200:
+        # Minus-money legs with a 60%+ model probability only: in the Oct 31 - Nov 6 replay,
+        # plus-money legs hit 40% (model overrates long shots) vs 63% for minus-money legs.
+        if not -250 <= pr < 0 or p.get("prob", 0) < 0.60:
             continue
         k = (p["player_id"], p["stat"], p["side"])
         if k not in seen:
