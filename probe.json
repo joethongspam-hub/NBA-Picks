@@ -1,0 +1,338 @@
+{
+ "nba": {
+  "event": "DEN VS IND",
+  "providers": [
+   [
+    "100",
+    "Draft Kings"
+   ]
+  ],
+  "propBets": {
+   "100": {
+    "status": 200,
+    "count": 995,
+    "with_odds": 200,
+    "provider": "eagues/nba/casinos/100?lang=en&region=us",
+    "types": [
+     [
+      "Total Points",
+      24
+     ],
+     [
+      "Total Rebounds",
+      24
+     ],
+     [
+      "Total Points and Rebounds",
+      24
+     ],
+     [
+      "Total 3-Point Field Goals",
+      20
+     ]
+    ]
+   },
+   "1002": {
+    "status": 404,
+    "count": null,
+    "with_odds": 0,
+    "provider": null,
+    "types": []
+   },
+   "1004": {
+    "status": 404,
+    "count": null,
+    "with_odds": 0,
+    "provider": null,
+    "types": []
+   },
+   "2000": {
+    "status": 404,
+    "count": null,
+    "with_odds": 0,
+    "provider": null,
+    "types": []
+   },
+   "25": {
+    "status": 404,
+    "count": null,
+    "with_odds": 0,
+    "provider": null,
+    "types": []
+   },
+   "37": {
+    "status": 404,
+    "count": null,
+    "with_odds": 0,
+    "provider": null,
+    "types": []
+   },
+   "38": {
+    "status": 404,
+    "count": null,
+    "with_odds": 0,
+    "provider": null,
+    "types": []
+   },
+   "40": {
+    "status": 404,
+    "count": null,
+    "with_odds": 0,
+    "provider": null,
+    "types": []
+   },
+   "41": {
+    "status": 404,
+    "count": null,
+    "with_odds": 0,
+    "provider": null,
+    "types": []
+   },
+   "45": {
+    "status": 404,
+    "count": null,
+    "with_odds": 0,
+    "provider": null,
+    "types": []
+   },
+   "58": {
+    "status": 404,
+    "count": null,
+    "with_odds": 0,
+    "provider": null,
+    "types": []
+   },
+   "59": {
+    "status": 404,
+    "count": null,
+    "with_odds": 0,
+    "provider": null,
+    "types": []
+   }
+  }
+ },
+ "nhl": {
+  "event": "FLA @ WSH",
+  "providers": [
+   [
+    "100",
+    "Draft Kings"
+   ]
+  ],
+  "propBets": {
+   "100": {
+    "status": 200,
+    "count": 541,
+    "with_odds": 200,
+    "provider": "eagues/nhl/casinos/100?lang=en&region=us",
+    "types": [
+     [
+      "Total Points",
+      40
+     ],
+     [
+      "Total Assists",
+      40
+     ],
+     [
+      "First Goalscorer",
+      35
+     ],
+     [
+      "Last Goalscorer",
+      35
+     ]
+    ]
+   },
+   "1002": {
+    "status": 404,
+    "count": null,
+    "with_odds": 0,
+    "provider": null,
+    "types": []
+   },
+   "1004": {
+    "status": 404,
+    "count": null,
+    "with_odds": 0,
+    "provider": null,
+    "types": []
+   },
+   "2000": {
+    "status": 404,
+    "count": null,
+    "with_odds": 0,
+    "provider": null,
+    "types": []
+   },
+   "25": {
+    "status": 404,
+    "count": null,
+    "with_odds": 0,
+    "provider": null,
+    "types": []
+   },
+   "37": {
+    "status": 404,
+    "count": null,
+    "with_odds": 0,
+    "provider": null,
+    "types": []
+   },
+   "38": {
+    "status": 404,
+    "count": null,
+    "with_odds": 0,
+    "provider": null,
+    "types": []
+   },
+   "40": {
+    "status": 404,
+    "count": null,
+    "with_odds": 0,
+    "provider": null,
+    "types": []
+   },
+   "41": {
+    "status": 404,
+    "count": null,
+    "with_odds": 0,
+    "provider": null,
+    "types": []
+   },
+   "45": {
+    "status": 404,
+    "count": null,
+    "with_odds": 0,
+    "provider": null,
+    "types": []
+   },
+   "58": {
+    "status": 404,
+    "count": null,
+    "with_odds": 0,
+    "provider": null,
+    "types": []
+   },
+   "59": {
+    "status": 404,
+    "count": null,
+    "with_odds": 0,
+    "provider": null,
+    "types": []
+   }
+  }
+ },
+ "nfl": {
+  "event": "CIN VS ATL",
+  "providers": [
+   [
+    "100",
+    "Draft Kings"
+   ]
+  ],
+  "propBets": {
+   "100": {
+    "status": 200,
+    "count": 1431,
+    "with_odds": 0,
+    "provider": "eagues/nfl/casinos/100?lang=en&region=us",
+    "types": [
+     [
+      "First Touchdown Scorer",
+      28
+     ],
+     [
+      "Last Touchdown Scorer",
+      28
+     ],
+     [
+      "Total Receiving Yards (incl. overtime)",
+      26
+     ],
+     [
+      "Total Receptions (incl. overtime)",
+      26
+     ]
+    ]
+   },
+   "1002": {
+    "status": 404,
+    "count": null,
+    "with_odds": 0,
+    "provider": null,
+    "types": []
+   },
+   "1004": {
+    "status": 404,
+    "count": null,
+    "with_odds": 0,
+    "provider": null,
+    "types": []
+   },
+   "2000": {
+    "status": 404,
+    "count": null,
+    "with_odds": 0,
+    "provider": null,
+    "types": []
+   },
+   "25": {
+    "status": 404,
+    "count": null,
+    "with_odds": 0,
+    "provider": null,
+    "types": []
+   },
+   "37": {
+    "status": 404,
+    "count": null,
+    "with_odds": 0,
+    "provider": null,
+    "types": []
+   },
+   "38": {
+    "status": 404,
+    "count": null,
+    "with_odds": 0,
+    "provider": null,
+    "types": []
+   },
+   "40": {
+    "status": 404,
+    "count": null,
+    "with_odds": 0,
+    "provider": null,
+    "types": []
+   },
+   "41": {
+    "status": 404,
+    "count": null,
+    "with_odds": 0,
+    "provider": null,
+    "types": []
+   },
+   "45": {
+    "status": 404,
+    "count": null,
+    "with_odds": 0,
+    "provider": null,
+    "types": []
+   },
+   "58": {
+    "status": 404,
+    "count": null,
+    "with_odds": 0,
+    "provider": null,
+    "types": []
+   },
+   "59": {
+    "status": 404,
+    "count": null,
+    "with_odds": 0,
+    "provider": null,
+    "types": []
+   }
+  }
+ }
+}
