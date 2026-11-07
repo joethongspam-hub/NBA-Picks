@@ -30,10 +30,10 @@
    "pick": "MIN +1.5",
    "side": "home",
    "line": 1.5,
-   "price": -218,
-   "prob": 0.709,
+   "price": -205,
+   "prob": 0.701,
    "model_prob": 0.805,
-   "edge": 0.023,
+   "edge": 0.029,
    "grade": "C",
    "proj": "MIN 3.33 \u2013 TB 2.76",
    "mu_h": 3.33,
@@ -43,7 +43,7 @@
    "notes": [
     "MIN goalie Jesper Wallstedt (0.908): opponent goals -8% (starter uncertain)"
    ],
-   "score": 2.34
+   "score": 2.86
   }
  ]
 }
