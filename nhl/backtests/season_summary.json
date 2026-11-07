@@ -1,0 +1,1241 @@
+{
+ "nights": [
+  {
+   "date": "2026-10-12",
+   "games": 3,
+   "record": {
+    "all": {
+     "w": 7,
+     "l": 2,
+     "pct": 0.778
+    },
+    "A": {
+     "w": 1,
+     "l": 1,
+     "pct": 0.5
+    },
+    "B": {
+     "w": 1,
+     "l": 1,
+     "pct": 0.5
+    },
+    "C": {
+     "w": 5,
+     "l": 0,
+     "pct": 1.0
+    },
+    "all_positive_edge": {
+     "w": 7,
+     "l": 2,
+     "pct": 0.778
+    }
+   }
+  },
+  {
+   "date": "2026-10-13",
+   "games": 16,
+   "record": {
+    "all": {
+     "w": 51,
+     "l": 26,
+     "pct": 0.662
+    },
+    "A": {
+     "w": 11,
+     "l": 2,
+     "pct": 0.846
+    },
+    "B": {
+     "w": 20,
+     "l": 14,
+     "pct": 0.588
+    },
+    "C": {
+     "w": 20,
+     "l": 10,
+     "pct": 0.667
+    },
+    "all_positive_edge": {
+     "w": 65,
+     "l": 47,
+     "pct": 0.58
+    }
+   }
+  },
+  {
+   "date": "2026-10-14",
+   "games": 2,
+   "record": {
+    "all": {
+     "w": 0,
+     "l": 3,
+     "pct": 0.0
+    },
+    "A": {
+     "w": 0,
+     "l": 0,
+     "pct": null
+    },
+    "B": {
+     "w": 0,
+     "l": 2,
+     "pct": 0.0
+    },
+    "C": {
+     "w": 0,
+     "l": 1,
+     "pct": 0.0
+    },
+    "all_positive_edge": {
+     "w": 1,
+     "l": 4,
+     "pct": 0.2
+    }
+   }
+  },
+  {
+   "date": "2026-10-15",
+   "games": 11,
+   "record": {
+    "all": {
+     "w": 36,
+     "l": 16,
+     "pct": 0.692
+    },
+    "A": {
+     "w": 6,
+     "l": 6,
+     "pct": 0.5
+    },
+    "B": {
+     "w": 17,
+     "l": 6,
+     "pct": 0.739
+    },
+    "C": {
+     "w": 13,
+     "l": 4,
+     "pct": 0.765
+    },
+    "all_positive_edge": {
+     "w": 79,
+     "l": 41,
+     "pct": 0.658
+    }
+   }
+  },
+  {
+   "date": "2026-10-16",
+   "games": 2,
+   "record": {
+    "all": {
+     "w": 6,
+     "l": 3,
+     "pct": 0.667
+    },
+    "A": {
+     "w": 1,
+     "l": 0,
+     "pct": 1.0
+    },
+    "B": {
+     "w": 1,
+     "l": 3,
+     "pct": 0.25
+    },
+    "C": {
+     "w": 4,
+     "l": 0,
+     "pct": 1.0
+    },
+    "all_positive_edge": {
+     "w": 6,
+     "l": 3,
+     "pct": 0.667
+    }
+   }
+  },
+  {
+   "date": "2026-10-17",
+   "games": 14,
+   "record": {
+    "all": {
+     "w": 40,
+     "l": 27,
+     "pct": 0.597
+    },
+    "A": {
+     "w": 8,
+     "l": 3,
+     "pct": 0.727
+    },
+    "B": {
+     "w": 15,
+     "l": 10,
+     "pct": 0.6
+    },
+    "C": {
+     "w": 17,
+     "l": 14,
+     "pct": 0.548
+    },
+    "all_positive_edge": {
+     "w": 75,
+     "l": 47,
+     "pct": 0.615
+    }
+   }
+  },
+  {
+   "date": "2026-10-18",
+   "games": 2,
+   "record": {
+    "all": {
+     "w": 11,
+     "l": 6,
+     "pct": 0.647
+    },
+    "A": {
+     "w": 1,
+     "l": 0,
+     "pct": 1.0
+    },
+    "B": {
+     "w": 2,
+     "l": 0,
+     "pct": 1.0
+    },
+    "C": {
+     "w": 8,
+     "l": 6,
+     "pct": 0.571
+    },
+    "all_positive_edge": {
+     "w": 14,
+     "l": 9,
+     "pct": 0.609
+    }
+   }
+  },
+  {
+   "date": "2026-10-19",
+   "games": 4,
+   "record": {
+    "all": {
+     "w": 10,
+     "l": 8,
+     "pct": 0.556
+    },
+    "A": {
+     "w": 1,
+     "l": 0,
+     "pct": 1.0
+    },
+    "B": {
+     "w": 1,
+     "l": 3,
+     "pct": 0.25
+    },
+    "C": {
+     "w": 8,
+     "l": 5,
+     "pct": 0.615
+    },
+    "all_positive_edge": {
+     "w": 12,
+     "l": 8,
+     "pct": 0.6
+    }
+   }
+  },
+  {
+   "date": "2026-10-20",
+   "games": 11,
+   "record": {
+    "all": {
+     "w": 32,
+     "l": 23,
+     "pct": 0.582
+    },
+    "A": {
+     "w": 7,
+     "l": 3,
+     "pct": 0.7
+    },
+    "B": {
+     "w": 16,
+     "l": 8,
+     "pct": 0.667
+    },
+    "C": {
+     "w": 9,
+     "l": 12,
+     "pct": 0.429
+    },
+    "all_positive_edge": {
+     "w": 68,
+     "l": 58,
+     "pct": 0.54
+    }
+   }
+  },
+  {
+   "date": "2026-10-21",
+   "games": 2,
+   "record": {
+    "all": {
+     "w": 5,
+     "l": 6,
+     "pct": 0.455
+    },
+    "A": {
+     "w": 1,
+     "l": 1,
+     "pct": 0.5
+    },
+    "B": {
+     "w": 0,
+     "l": 2,
+     "pct": 0.0
+    },
+    "C": {
+     "w": 4,
+     "l": 3,
+     "pct": 0.571
+    },
+    "all_positive_edge": {
+     "w": 5,
+     "l": 6,
+     "pct": 0.455
+    }
+   }
+  },
+  {
+   "date": "2026-10-22",
+   "games": 12,
+   "record": {
+    "all": {
+     "w": 31,
+     "l": 24,
+     "pct": 0.564
+    },
+    "A": {
+     "w": 5,
+     "l": 2,
+     "pct": 0.714
+    },
+    "B": {
+     "w": 12,
+     "l": 11,
+     "pct": 0.522
+    },
+    "C": {
+     "w": 14,
+     "l": 11,
+     "pct": 0.56
+    },
+    "all_positive_edge": {
+     "w": 53,
+     "l": 38,
+     "pct": 0.582
+    }
+   }
+  },
+  {
+   "date": "2026-10-23",
+   "games": 2,
+   "record": {
+    "all": {
+     "w": 2,
+     "l": 5,
+     "pct": 0.286
+    },
+    "A": {
+     "w": 1,
+     "l": 1,
+     "pct": 0.5
+    },
+    "B": {
+     "w": 1,
+     "l": 1,
+     "pct": 0.5
+    },
+    "C": {
+     "w": 0,
+     "l": 3,
+     "pct": 0.0
+    },
+    "all_positive_edge": {
+     "w": 2,
+     "l": 5,
+     "pct": 0.286
+    }
+   }
+  },
+  {
+   "date": "2026-10-24",
+   "games": 12,
+   "record": {
+    "all": {
+     "w": 31,
+     "l": 23,
+     "pct": 0.574
+    },
+    "A": {
+     "w": 5,
+     "l": 1,
+     "pct": 0.833
+    },
+    "B": {
+     "w": 12,
+     "l": 9,
+     "pct": 0.571
+    },
+    "C": {
+     "w": 14,
+     "l": 13,
+     "pct": 0.519
+    },
+    "all_positive_edge": {
+     "w": 49,
+     "l": 29,
+     "pct": 0.628
+    }
+   }
+  },
+  {
+   "date": "2026-10-25",
+   "games": 5,
+   "record": {
+    "all": {
+     "w": 17,
+     "l": 10,
+     "pct": 0.63
+    },
+    "A": {
+     "w": 3,
+     "l": 1,
+     "pct": 0.75
+    },
+    "B": {
+     "w": 6,
+     "l": 4,
+     "pct": 0.6
+    },
+    "C": {
+     "w": 8,
+     "l": 5,
+     "pct": 0.615
+    },
+    "all_positive_edge": {
+     "w": 28,
+     "l": 20,
+     "pct": 0.583
+    }
+   }
+  },
+  {
+   "date": "2026-10-26",
+   "games": 3,
+   "record": {
+    "all": {
+     "w": 7,
+     "l": 2,
+     "pct": 0.778
+    },
+    "A": {
+     "w": 0,
+     "l": 0,
+     "pct": null
+    },
+    "B": {
+     "w": 5,
+     "l": 0,
+     "pct": 1.0
+    },
+    "C": {
+     "w": 2,
+     "l": 2,
+     "pct": 0.5
+    },
+    "all_positive_edge": {
+     "w": 7,
+     "l": 4,
+     "pct": 0.636
+    }
+   }
+  },
+  {
+   "date": "2026-10-27",
+   "games": 11,
+   "record": {
+    "all": {
+     "w": 24,
+     "l": 17,
+     "pct": 0.585
+    },
+    "A": {
+     "w": 5,
+     "l": 3,
+     "pct": 0.625
+    },
+    "B": {
+     "w": 9,
+     "l": 7,
+     "pct": 0.562
+    },
+    "C": {
+     "w": 10,
+     "l": 7,
+     "pct": 0.588
+    },
+    "all_positive_edge": {
+     "w": 42,
+     "l": 22,
+     "pct": 0.656
+    }
+   }
+  },
+  {
+   "date": "2026-10-28",
+   "games": 4,
+   "record": {
+    "all": {
+     "w": 13,
+     "l": 11,
+     "pct": 0.542
+    },
+    "A": {
+     "w": 1,
+     "l": 3,
+     "pct": 0.25
+    },
+    "B": {
+     "w": 8,
+     "l": 4,
+     "pct": 0.667
+    },
+    "C": {
+     "w": 4,
+     "l": 4,
+     "pct": 0.5
+    },
+    "all_positive_edge": {
+     "w": 17,
+     "l": 16,
+     "pct": 0.515
+    }
+   }
+  },
+  {
+   "date": "2026-10-29",
+   "games": 11,
+   "record": {
+    "all": {
+     "w": 32,
+     "l": 25,
+     "pct": 0.561
+    },
+    "A": {
+     "w": 3,
+     "l": 3,
+     "pct": 0.5
+    },
+    "B": {
+     "w": 13,
+     "l": 12,
+     "pct": 0.52
+    },
+    "C": {
+     "w": 16,
+     "l": 10,
+     "pct": 0.615
+    },
+    "all_positive_edge": {
+     "w": 62,
+     "l": 51,
+     "pct": 0.549
+    }
+   }
+  },
+  {
+   "date": "2026-10-30",
+   "games": 3,
+   "record": {
+    "all": {
+     "w": 7,
+     "l": 8,
+     "pct": 0.467
+    },
+    "A": {
+     "w": 1,
+     "l": 1,
+     "pct": 0.5
+    },
+    "B": {
+     "w": 1,
+     "l": 4,
+     "pct": 0.2
+    },
+    "C": {
+     "w": 5,
+     "l": 3,
+     "pct": 0.625
+    },
+    "all_positive_edge": {
+     "w": 8,
+     "l": 8,
+     "pct": 0.5
+    }
+   }
+  },
+  {
+   "date": "2026-10-31",
+   "games": 10,
+   "record": {
+    "all": {
+     "w": 24,
+     "l": 19,
+     "pct": 0.558
+    },
+    "A": {
+     "w": 0,
+     "l": 4,
+     "pct": 0.0
+    },
+    "B": {
+     "w": 12,
+     "l": 7,
+     "pct": 0.632
+    },
+    "C": {
+     "w": 12,
+     "l": 8,
+     "pct": 0.6
+    },
+    "all_positive_edge": {
+     "w": 50,
+     "l": 31,
+     "pct": 0.617
+    }
+   }
+  },
+  {
+   "date": "2026-11-01",
+   "games": 5,
+   "record": {
+    "all": {
+     "w": 11,
+     "l": 12,
+     "pct": 0.478
+    },
+    "A": {
+     "w": 2,
+     "l": 3,
+     "pct": 0.4
+    },
+    "B": {
+     "w": 3,
+     "l": 5,
+     "pct": 0.375
+    },
+    "C": {
+     "w": 6,
+     "l": 4,
+     "pct": 0.6
+    },
+    "all_positive_edge": {
+     "w": 21,
+     "l": 14,
+     "pct": 0.6
+    }
+   }
+  },
+  {
+   "date": "2026-11-02",
+   "games": 4,
+   "record": {
+    "all": {
+     "w": 9,
+     "l": 6,
+     "pct": 0.6
+    },
+    "A": {
+     "w": 0,
+     "l": 1,
+     "pct": 0.0
+    },
+    "B": {
+     "w": 3,
+     "l": 4,
+     "pct": 0.429
+    },
+    "C": {
+     "w": 6,
+     "l": 1,
+     "pct": 0.857
+    },
+    "all_positive_edge": {
+     "w": 12,
+     "l": 8,
+     "pct": 0.6
+    }
+   }
+  }
+ ],
+ "team": {
+  "all": {
+   "label": "All team bets",
+   "w": 12,
+   "l": 26,
+   "pct": 0.316,
+   "units": -13.57,
+   "roi": -0.357
+  },
+  "by_grade": [
+   {
+    "label": "Grade A",
+    "w": 1,
+    "l": 0,
+    "pct": 1.0,
+    "units": 1.3,
+    "roi": 1.3
+   },
+   {
+    "label": "Grade B",
+    "w": 3,
+    "l": 5,
+    "pct": 0.375,
+    "units": -1.93,
+    "roi": -0.241
+   },
+   {
+    "label": "Grade C",
+    "w": 8,
+    "l": 21,
+    "pct": 0.276,
+    "units": -12.94,
+    "roi": -0.446
+   }
+  ],
+  "by_market": [
+   {
+    "label": "Moneyline",
+    "w": 4,
+    "l": 13,
+    "pct": 0.235,
+    "units": -8.02,
+    "roi": -0.472
+   },
+   {
+    "label": "Puck line",
+    "w": 8,
+    "l": 7,
+    "pct": 0.533,
+    "units": 0.45,
+    "roi": 0.03
+   },
+   {
+    "label": "Total",
+    "w": 0,
+    "l": 6,
+    "pct": 0.0,
+    "units": -6.0,
+    "roi": -1.0
+   }
+  ],
+  "recent": [
+   {
+    "game_id": "401892629",
+    "game": "VGK @ BOS",
+    "market": "Moneyline",
+    "pick": "BOS ML",
+    "side": "home",
+    "line": null,
+    "price": -102,
+    "prob": 0.54,
+    "model_prob": 0.648,
+    "edge": 0.035,
+    "grade": "B",
+    "proj": "BOS 3.73 \u2013 VGK 2.77",
+    "mu_h": 3.73,
+    "mu_a": 2.77,
+    "home": "BOS",
+    "away": "VGK",
+    "notes": [
+     "BOS goalie Jeremy Swayman (0.905): opponent goals -5%",
+     "VGK goalie Adin Hill (0.890): opponent goals +10%"
+    ],
+    "score": 3.54,
+    "result": "WIN",
+    "final": "BOS 3 \u2013 VGK 2",
+    "date": "2026-11-02"
+   },
+   {
+    "game_id": "401892629",
+    "game": "VGK @ BOS",
+    "market": "Puck line",
+    "pick": "BOS +1.5",
+    "side": "home",
+    "line": 1.5,
+    "price": -265,
+    "prob": 0.745,
+    "model_prob": 0.838,
+    "edge": 0.019,
+    "grade": "C",
+    "proj": "BOS 3.73 \u2013 VGK 2.77",
+    "mu_h": 3.73,
+    "mu_a": 2.77,
+    "home": "BOS",
+    "away": "VGK",
+    "notes": [
+     "BOS goalie Jeremy Swayman (0.905): opponent goals -5%",
+     "VGK goalie Adin Hill (0.890): opponent goals +10%"
+    ],
+    "score": 1.95,
+    "result": "WIN",
+    "final": "BOS 3 \u2013 VGK 2",
+    "date": "2026-11-02"
+   },
+   {
+    "game_id": "401892614",
+    "game": "CHI @ BOS",
+    "market": "Total",
+    "pick": "Under 6.5",
+    "side": "under",
+    "line": 6.5,
+    "price": -108,
+    "prob": 0.543,
+    "model_prob": 0.63,
+    "edge": 0.023,
+    "grade": "C",
+    "proj": "BOS 3.72 \u2013 CHI 2.13",
+    "mu_h": 3.72,
+    "mu_a": 2.13,
+    "home": "BOS",
+    "away": "CHI",
+    "notes": [
+     "BOS goalie Jeremy Swayman (0.905): opponent goals -5%"
+    ],
+    "score": 2.34,
+    "result": "LOSS",
+    "final": "BOS 5 \u2013 CHI 4",
+    "date": "2026-10-31"
+   },
+   {
+    "game_id": "401892621",
+    "game": "TOR @ VAN",
+    "market": "Total",
+    "pick": "Over 6.5",
+    "side": "over",
+    "line": 6.5,
+    "price": -125,
+    "prob": 0.586,
+    "model_prob": 0.685,
+    "edge": 0.03,
+    "grade": "B",
+    "proj": "VAN 3.63 \u2013 TOR 4.35",
+    "mu_h": 3.63,
+    "mu_a": 4.35,
+    "home": "VAN",
+    "away": "TOR",
+    "notes": [
+     "VAN goalie Leevi Merilainen (0.890): opponent goals +10%",
+     "TOR goalie Sergei Bobrovsky (0.888): opponent goals +12%"
+    ],
+    "score": 3.03,
+    "result": "LOSS",
+    "final": "VAN 2 \u2013 TOR 4",
+    "date": "2026-10-31"
+   },
+   {
+    "game_id": "401892623",
+    "game": "CGY @ COL",
+    "market": "Moneyline",
+    "pick": "CGY ML",
+    "side": "away",
+    "line": null,
+    "price": 295,
+    "prob": 0.276,
+    "model_prob": 0.337,
+    "edge": 0.023,
+    "grade": "C",
+    "proj": "COL 3.59 \u2013 CGY 2.55",
+    "mu_h": 3.59,
+    "mu_a": 2.55,
+    "home": "COL",
+    "away": "CGY",
+    "notes": [],
+    "score": 2.26,
+    "result": "LOSS",
+    "final": "COL 5 \u2013 CGY 2",
+    "date": "2026-10-31"
+   },
+   {
+    "game_id": "401892623",
+    "game": "CGY @ COL",
+    "market": "Puck line",
+    "pick": "CGY +1.5",
+    "side": "away",
+    "line": -1.5,
+    "price": 140,
+    "prob": 0.463,
+    "model_prob": 0.58,
+    "edge": 0.047,
+    "grade": "B",
+    "proj": "COL 3.59 \u2013 CGY 2.55",
+    "mu_h": 3.59,
+    "mu_a": 2.55,
+    "home": "COL",
+    "away": "CGY",
+    "notes": [],
+    "score": 4.67,
+    "result": "LOSS",
+    "final": "COL 5 \u2013 CGY 2",
+    "date": "2026-10-31"
+   },
+   {
+    "game_id": "401892604",
+    "game": "BOS @ STL",
+    "market": "Puck line",
+    "pick": "BOS +1.5",
+    "side": "away",
+    "line": -1.5,
+    "price": -250,
+    "prob": 0.731,
+    "model_prob": 0.815,
+    "edge": 0.017,
+    "grade": "C",
+    "proj": "STL 2.50 \u2013 BOS 3.07",
+    "mu_h": 2.5,
+    "mu_a": 3.07,
+    "home": "STL",
+    "away": "BOS",
+    "notes": [
+     "STL goalie Joel Hofer (0.908): opponent goals -8%",
+     "BOS goalie Jeremy Swayman (0.907): opponent goals -7%"
+    ],
+    "score": 1.66,
+    "result": "LOSS",
+    "final": "STL 4 \u2013 BOS 1",
+    "date": "2026-10-29"
+   },
+   {
+    "game_id": "401892596",
+    "game": "PHI @ WSH",
+    "market": "Moneyline",
+    "pick": "PHI ML",
+    "side": "away",
+    "line": null,
+    "price": 200,
+    "prob": 0.353,
+    "model_prob": 0.417,
+    "edge": 0.02,
+    "grade": "C",
+    "proj": "WSH 3.11 \u2013 PHI 2.62",
+    "mu_h": 3.11,
+    "mu_a": 2.62,
+    "home": "WSH",
+    "away": "PHI",
+    "notes": [],
+    "score": 2.02,
+    "result": "LOSS",
+    "final": "WSH 5 \u2013 PHI 2",
+    "date": "2026-10-28"
+   },
+   {
+    "game_id": "401892596",
+    "game": "PHI @ WSH",
+    "market": "Puck line",
+    "pick": "PHI +1.5",
+    "side": "away",
+    "line": -1.5,
+    "price": -125,
+    "prob": 0.58,
+    "model_prob": 0.669,
+    "edge": 0.025,
+    "grade": "C",
+    "proj": "WSH 3.11 \u2013 PHI 2.62",
+    "mu_h": 3.11,
+    "mu_a": 2.62,
+    "home": "WSH",
+    "away": "PHI",
+    "notes": [],
+    "score": 2.49,
+    "result": "LOSS",
+    "final": "WSH 5 \u2013 PHI 2",
+    "date": "2026-10-28"
+   },
+   {
+    "game_id": "401892599",
+    "game": "TOR @ SEA",
+    "market": "Moneyline",
+    "pick": "SEA ML",
+    "side": "home",
+    "line": null,
+    "price": 110,
+    "prob": 0.499,
+    "model_prob": 0.576,
+    "edge": 0.023,
+    "grade": "C",
+    "proj": "SEA 3.81 \u2013 TOR 3.31",
+    "mu_h": 3.81,
+    "mu_a": 3.31,
+    "home": "SEA",
+    "away": "TOR",
+    "notes": [
+     "TOR goalie Sergei Bobrovsky (0.891): opponent goals +9%"
+    ],
+    "score": 2.28,
+    "result": "WIN",
+    "final": "SEA 5 \u2013 TOR 4",
+    "date": "2026-10-28"
+   },
+   {
+    "game_id": "401892586",
+    "game": "BOS @ CAR",
+    "market": "Moneyline",
+    "pick": "BOS ML",
+    "side": "away",
+    "line": null,
+    "price": 160,
+    "prob": 0.417,
+    "model_prob": 0.507,
+    "edge": 0.033,
+    "grade": "B",
+    "proj": "CAR 3.10 \u2013 BOS 3.16",
+    "mu_h": 3.1,
+    "mu_a": 3.16,
+    "home": "CAR",
+    "away": "BOS",
+    "notes": [
+     "BOS goalie Jeremy Swayman (0.907): opponent goals -7%"
+    ],
+    "score": 3.28,
+    "result": "LOSS",
+    "final": "CAR 2 \u2013 BOS 1",
+    "date": "2026-10-27"
+   },
+   {
+    "game_id": "401892586",
+    "game": "BOS @ CAR",
+    "market": "Puck line",
+    "pick": "BOS +1.5",
+    "side": "away",
+    "line": -1.5,
+    "price": -155,
+    "prob": 0.638,
+    "model_prob": 0.74,
+    "edge": 0.03,
+    "grade": "C",
+    "proj": "CAR 3.10 \u2013 BOS 3.16",
+    "mu_h": 3.1,
+    "mu_a": 3.16,
+    "home": "CAR",
+    "away": "BOS",
+    "notes": [
+     "BOS goalie Jeremy Swayman (0.907): opponent goals -7%"
+    ],
+    "score": 3.0,
+    "result": "WIN",
+    "final": "CAR 2 \u2013 BOS 1",
+    "date": "2026-10-27"
+   },
+   {
+    "game_id": "401892590",
+    "game": "NJ @ DAL",
+    "market": "Moneyline",
+    "pick": "DAL ML",
+    "side": "home",
+    "line": null,
+    "price": -118,
+    "prob": 0.557,
+    "model_prob": 0.629,
+    "edge": 0.015,
+    "grade": "C",
+    "proj": "DAL 3.21 \u2013 NJ 2.43",
+    "mu_h": 3.21,
+    "mu_a": 2.43,
+    "home": "DAL",
+    "away": "NJ",
+    "notes": [],
+    "score": 1.53,
+    "result": "LOSS",
+    "final": "DAL 1 \u2013 NJ 5",
+    "date": "2026-10-27"
+   },
+   {
+    "game_id": "401892593",
+    "game": "OTT @ VGK",
+    "market": "Moneyline",
+    "pick": "OTT ML",
+    "side": "away",
+    "line": null,
+    "price": 142,
+    "prob": 0.437,
+    "model_prob": 0.511,
+    "edge": 0.023,
+    "grade": "C",
+    "proj": "VGK 3.05 \u2013 OTT 3.14",
+    "mu_h": 3.05,
+    "mu_a": 3.14,
+    "home": "VGK",
+    "away": "OTT",
+    "notes": [
+     "OTT goalie Linus Ullmark (0.906): opponent goals -6%"
+    ],
+    "score": 2.33,
+    "result": "LOSS",
+    "final": "VGK 4 \u2013 OTT 1",
+    "date": "2026-10-27"
+   },
+   {
+    "game_id": "401892593",
+    "game": "OTT @ VGK",
+    "market": "Puck line",
+    "pick": "OTT +1.5",
+    "side": "away",
+    "line": -1.5,
+    "price": -180,
+    "prob": 0.661,
+    "model_prob": 0.744,
+    "edge": 0.018,
+    "grade": "C",
+    "proj": "VGK 3.05 \u2013 OTT 3.14",
+    "mu_h": 3.05,
+    "mu_a": 3.14,
+    "home": "VGK",
+    "away": "OTT",
+    "notes": [
+     "OTT goalie Linus Ullmark (0.906): opponent goals -6%"
+    ],
+    "score": 1.83,
+    "result": "LOSS",
+    "final": "VGK 4 \u2013 OTT 1",
+    "date": "2026-10-27"
+   },
+   {
+    "game_id": "401892569",
+    "game": "NYR @ OTT",
+    "market": "Total",
+    "pick": "Under 6.5",
+    "side": "under",
+    "line": 6.5,
+    "price": -135,
+    "prob": 0.598,
+    "model_prob": 0.685,
+    "edge": 0.024,
+    "grade": "C",
+    "proj": "OTT 2.85 \u2013 NYR 2.66",
+    "mu_h": 2.85,
+    "mu_a": 2.66,
+    "home": "OTT",
+    "away": "NYR",
+    "notes": [
+     "OTT goalie Linus Ullmark (0.906): opponent goals -6%",
+     "NYR goalie Dylan Garand (0.905): opponent goals -5%"
+    ],
+    "score": 2.35,
+    "result": "LOSS",
+    "final": "OTT 7 \u2013 NYR 4",
+    "date": "2026-10-24"
+   },
+   {
+    "game_id": "401892575",
+    "game": "TB @ UTA",
+    "market": "Moneyline",
+    "pick": "TB ML",
+    "side": "away",
+    "line": null,
+    "price": 124,
+    "prob": 0.464,
+    "model_prob": 0.532,
+    "edge": 0.018,
+    "grade": "C",
+    "proj": "UTA 3.27 \u2013 TB 3.51",
+    "mu_h": 3.27,
+    "mu_a": 3.51,
+    "home": "UTA",
+    "away": "TB",
+    "notes": [
+     "UTA goalie Karel Vejmelka (0.893): opponent goals +7%"
+    ],
+    "score": 1.8,
+    "result": "LOSS",
+    "final": "UTA 5 \u2013 TB 4",
+    "date": "2026-10-24"
+   },
+   {
+    "game_id": "401892577",
+    "game": "MIN @ SEA",
+    "market": "Moneyline",
+    "pick": "SEA ML",
+    "side": "home",
+    "line": null,
+    "price": 160,
+    "prob": 0.41,
+    "model_prob": 0.486,
+    "edge": 0.025,
+    "grade": "C",
+    "proj": "SEA 2.94 \u2013 MIN 3.05",
+    "mu_h": 2.94,
+    "mu_a": 3.05,
+    "home": "SEA",
+    "away": "MIN",
+    "notes": [],
+    "score": 2.52,
+    "result": "LOSS",
+    "final": "SEA 1 \u2013 MIN 5",
+    "date": "2026-10-24"
+   },
+   {
+    "game_id": "401892577",
+    "game": "MIN @ SEA",
+    "market": "Puck line",
+    "pick": "SEA +1.5",
+    "side": "home",
+    "line": 1.5,
+    "price": -166,
+    "prob": 0.642,
+    "model_prob": 0.72,
+    "edge": 0.018,
+    "grade": "C",
+    "proj": "SEA 2.94 \u2013 MIN 3.05",
+    "mu_h": 2.94,
+    "mu_a": 3.05,
+    "home": "SEA",
+    "away": "MIN",
+    "notes": [],
+    "score": 1.78,
+    "result": "LOSS",
+    "final": "SEA 1 \u2013 MIN 5",
+    "date": "2026-10-24"
+   },
+   {
+    "game_id": "401892557",
+    "game": "LA @ NYI",
+    "market": "Moneyline",
+    "pick": "NYI ML",
+    "side": "home",
+    "line": null,
+    "price": -105,
+    "prob": 0.546,
+    "model_prob": 0.654,
+    "edge": 0.034,
+    "grade": "B",
+    "proj": "NYI 3.29 \u2013 LA 2.35",
+    "mu_h": 3.29,
+    "mu_a": 2.35,
+    "home": "NYI",
+    "away": "LA",
+    "notes": [
+     "LA goalie Darcy Kuemper (0.892): opponent goals +8%"
+    ],
+    "score": 3.35,
+    "result": "LOSS",
+    "final": "NYI 2 \u2013 LA 3",
+    "date": "2026-10-22"
+   }
+  ]
+ }
+}
