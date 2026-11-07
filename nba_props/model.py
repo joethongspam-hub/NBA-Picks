@@ -37,7 +37,7 @@ ABSORB = {"PTS": 0.55, "REB": 0.65, "AST": 0.55, "3PM": 0.45, "STL": 0.4, "BLK":
 KNOBS = {
     "dvp_prior": 120.0,     # player-games of shrinkage toward neutral defense
     "dvp_power": 1.0,      # 0 disables opponent adjustment
-    "absorb_scale": 0.35,   # scales ABSORB (injured teammates' volume)
+    "absorb_scale": 0.18,   # scales ABSORB (injured teammates' volume); halved after live record 19-20
     "b2b": 0.96,           # minutes factor for heavy-minute players on a back-to-back
     "min_scale": 0.95,     # global minutes calibration
     "env_scale": 0.5,      # scales Vegas-total elasticities
@@ -47,6 +47,18 @@ KNOBS = {
 }
 VIG_PROB = 110 / 210                                            # -110 implied
 MODEL_WEIGHT = 0.6                                              # model vs market blend
+
+
+def against_last_game(logs, stat_get, side: str, line: float) -> bool:
+    """Pick goes against the player's most recent game (under after he went over, or vice versa)."""
+    if not logs:
+        return False
+    lg = stat_get(logs[0])
+    return (lg > line) if side == "UNDER" else (lg < line)
+
+
+DEMOTE = {"A": "B", "B": "C", "C": "-", "-": "-"}
+LAST_GAME_NOTE = "Goes against his last game: grade lowered one level (live record 42% on these)"
 
 
 def market_disagrees(real, line: float, mu: float) -> bool:
@@ -549,12 +561,17 @@ def evaluate(proj: Projection, stats: list[str], lines: dict[tuple[str, str], Pr
         score = edge * 100 * reliability
         grade = ("A" if edge >= .08 and reliability >= .5 else "B" if edge >= .05 else
                  "C" if edge >= .03 else "-")
+        vs_last = against_last_game(p.logs, lambda g: g.get(s), side, line)
+        if vs_last:
+            grade, score = DEMOTE[grade], score * 0.7
         flag = market_disagrees(real, line, mu)
         if flag:
             grade, score = "-", 0.0
         if side == "UNDER" and proj.depleted:
             grade, score = "-", 0.0
         reasons = list(proj.stat_reasons.get(s, [])) + list(proj.reasons)
+        if vs_last:
+            reasons.insert(0, LAST_GAME_NOTE)
         if side == "UNDER" and proj.depleted:
             reasons.insert(0, f"{proj.team_abbr} missing {len(proj.depleted)} rotation players "
                               f"({', '.join(_short(n) for n in proj.depleted[:4])}): unders skipped")
