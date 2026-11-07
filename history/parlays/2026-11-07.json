@@ -35,7 +35,7 @@
     "line": 19.5,
     "price": -118,
     "prob": 0.723,
-    "edge": 0.181,
+    "edge": 0.182,
     "grade": "B",
     "line_source": "DraftKings",
     "books": {
@@ -74,7 +74,7 @@
   "ev": 1.024,
   "type": "safe",
   "label": "Safest",
-  "made": "2026-11-07T11:01:57.973903-05:00"
+  "made": "2026-11-07T11:18:35.004900-05:00"
  },
  {
   "legs": [
@@ -112,7 +112,7 @@
     "line": 19.5,
     "price": -118,
     "prob": 0.723,
-    "edge": 0.181,
+    "edge": 0.182,
     "grade": "B",
     "line_source": "DraftKings",
     "books": {
@@ -151,7 +151,7 @@
   "ev": 1.164,
   "type": "value",
   "label": "Best value",
-  "made": "2026-11-07T11:01:57.973903-05:00"
+  "made": "2026-11-07T11:18:35.004900-05:00"
  },
  {
   "legs": [
@@ -189,7 +189,7 @@
     "line": 19.5,
     "price": -118,
     "prob": 0.723,
-    "edge": 0.181,
+    "edge": 0.182,
     "grade": "B",
     "line_source": "DraftKings",
     "books": {
@@ -246,32 +246,32 @@
    {
     "game_id": "401909943",
     "game": "HOU @ PHX",
-    "player": "Jalen Green",
-    "player_id": "4437244",
-    "team": "PHX",
-    "opp": "HOU",
-    "stat": "3PM",
-    "side": "UNDER",
-    "line": 1.5,
-    "price": 105,
-    "prob": 0.587,
-    "edge": 0.099,
+    "player": "Reed Sheppard",
+    "player_id": "4711272",
+    "team": "HOU",
+    "opp": "PHX",
+    "stat": "PTS",
+    "side": "OVER",
+    "line": 8.5,
+    "price": -102,
+    "prob": 0.605,
+    "edge": 0.1,
     "grade": "A",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
-      1.5,
-      105
+      8.5,
+      -102
      ]
     }
    }
   ],
-  "hit": 0.1408,
-  "payout": 22.5,
-  "odds": 2150,
-  "ev": 2.168,
+  "hit": 0.1451,
+  "payout": 21.74,
+  "odds": 2074,
+  "ev": 2.154,
   "type": "longshot",
   "label": "Long shot",
-  "made": "2026-11-07T11:01:57.973903-05:00"
+  "made": "2026-11-07T11:18:35.004900-05:00"
  }
 ]
