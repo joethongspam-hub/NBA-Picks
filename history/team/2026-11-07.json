@@ -53,20 +53,20 @@
    "side": "away",
    "line": null,
    "price": 212,
-   "prob": 0.402,
-   "model_prob": 0.578,
-   "edge": 0.082,
+   "prob": 0.409,
+   "model_prob": 0.596,
+   "edge": 0.088,
    "grade": "A",
-   "proj": "ATL 108.9 \u2013 BKN 111.3",
-   "mu_h": 108.86,
-   "mu_a": 111.31,
+   "proj": "ATL 108.2 \u2013 BKN 111.2",
+   "mu_h": 108.17,
+   "mu_a": 111.22,
    "home": "ATL",
    "away": "BKN",
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "ATL injuries (Johnson, Landale): -2.7 pts"
    ],
-   "score": 8.18
+   "score": 8.83
   },
   {
    "game_id": "401909939",
@@ -75,21 +75,21 @@
    "pick": "BKN +6.5",
    "side": "away",
    "line": -6.5,
-   "price": -109,
+   "price": -106,
    "prob": 0.591,
-   "model_prob": 0.763,
-   "edge": 0.069,
+   "model_prob": 0.778,
+   "edge": 0.076,
    "grade": "A",
-   "proj": "ATL 108.9 \u2013 BKN 111.3",
-   "mu_h": 108.86,
-   "mu_a": 111.31,
+   "proj": "ATL 108.2 \u2013 BKN 111.2",
+   "mu_h": 108.17,
+   "mu_a": 111.22,
    "home": "ATL",
    "away": "BKN",
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "ATL injuries (Johnson, Landale): -2.7 pts"
    ],
-   "score": 6.91
+   "score": 7.63
   },
   {
    "game_id": "401909940",
@@ -99,13 +99,13 @@
    "side": "home",
    "line": null,
    "price": 160,
-   "prob": 0.49,
-   "model_prob": 0.714,
-   "edge": 0.105,
+   "prob": 0.481,
+   "model_prob": 0.689,
+   "edge": 0.097,
    "grade": "A",
-   "proj": "CLE 115.8 \u2013 NY 108.7",
-   "mu_h": 115.76,
-   "mu_a": 108.7,
+   "proj": "CLE 114.4 \u2013 NY 108.3",
+   "mu_h": 114.41,
+   "mu_a": 108.25,
    "home": "CLE",
    "away": "NY",
    "notes": [
@@ -113,7 +113,7 @@
     "CLE injuries (Allen, Merrill, Tyson): -5.2 pts",
     "NY injuries (Hart): -2.0 pts"
    ],
-   "score": 10.54
+   "score": 9.66
   },
   {
    "game_id": "401909940",
@@ -123,13 +123,13 @@
    "side": "home",
    "line": 4.5,
    "price": -110,
-   "prob": 0.613,
-   "model_prob": 0.822,
-   "edge": 0.089,
+   "prob": 0.606,
+   "model_prob": 0.803,
+   "edge": 0.082,
    "grade": "A",
-   "proj": "CLE 115.8 \u2013 NY 108.7",
-   "mu_h": 115.76,
-   "mu_a": 108.7,
+   "proj": "CLE 114.4 \u2013 NY 108.3",
+   "mu_h": 114.41,
+   "mu_a": 108.25,
    "home": "CLE",
    "away": "NY",
    "notes": [
@@ -137,7 +137,7 @@
     "CLE injuries (Allen, Merrill, Tyson): -5.2 pts",
     "NY injuries (Hart): -2.0 pts"
    ],
-   "score": 8.9
+   "score": 8.23
   },
   {
    "game_id": "401909942",
@@ -191,20 +191,20 @@
    "side": "home",
    "line": null,
    "price": 249,
-   "prob": 0.344,
-   "model_prob": 0.471,
-   "edge": 0.057,
+   "prob": 0.345,
+   "model_prob": 0.475,
+   "edge": 0.059,
    "grade": "A",
-   "proj": "PHX 111.5 \u2013 HOU 112.4",
+   "proj": "PHX 111.5 \u2013 HOU 112.2",
    "mu_h": 111.46,
-   "mu_a": 112.37,
+   "mu_a": 112.23,
    "home": "PHX",
    "away": "HOU",
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "HOU injuries (Capela): -0.5 pts"
    ],
-   "score": 5.72
+   "score": 5.86
   },
   {
    "game_id": "401909943",
@@ -214,20 +214,20 @@
    "side": "home",
    "line": 7.5,
    "price": -110,
-   "prob": 0.57,
-   "model_prob": 0.701,
-   "edge": 0.047,
+   "prob": 0.572,
+   "model_prob": 0.705,
+   "edge": 0.048,
    "grade": "B",
-   "proj": "PHX 111.5 \u2013 HOU 112.4",
+   "proj": "PHX 111.5 \u2013 HOU 112.2",
    "mu_h": 111.46,
-   "mu_a": 112.37,
+   "mu_a": 112.23,
    "home": "PHX",
    "away": "HOU",
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "HOU injuries (Capela): -0.5 pts"
    ],
-   "score": 4.66
+   "score": 4.78
   },
   {
    "game_id": "401909944",
@@ -236,13 +236,13 @@
    "pick": "POR ML",
    "side": "home",
    "line": null,
-   "price": 164,
-   "prob": 0.457,
-   "model_prob": 0.63,
-   "edge": 0.078,
+   "price": 170,
+   "prob": 0.447,
+   "model_prob": 0.617,
+   "edge": 0.077,
    "grade": "A",
-   "proj": "POR 115.2 \u2013 SA 111.0",
-   "mu_h": 115.17,
+   "proj": "POR 114.7 \u2013 SA 111.0",
+   "mu_h": 114.75,
    "mu_a": 111.04,
    "home": "POR",
    "away": "SA",
@@ -250,22 +250,22 @@
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "POR injuries (Krejci, Morant): -1.7 pts"
    ],
-   "score": 7.78
+   "score": 7.67
   },
   {
    "game_id": "401909944",
    "game": "SA @ POR",
    "market": "Spread",
-   "pick": "POR +5.5",
+   "pick": "POR +6.5",
    "side": "home",
-   "line": 5.5,
-   "price": -105,
-   "prob": 0.591,
-   "model_prob": 0.78,
-   "edge": 0.079,
+   "line": 6.5,
+   "price": -117,
+   "prob": 0.612,
+   "model_prob": 0.793,
+   "edge": 0.072,
    "grade": "A",
-   "proj": "POR 115.2 \u2013 SA 111.0",
-   "mu_h": 115.17,
+   "proj": "POR 114.7 \u2013 SA 111.0",
+   "mu_h": 114.75,
    "mu_a": 111.04,
    "home": "POR",
    "away": "SA",
@@ -273,7 +273,7 @@
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "POR injuries (Krejci, Morant): -1.7 pts"
    ],
-   "score": 7.86
+   "score": 7.25
   }
  ]
 }
