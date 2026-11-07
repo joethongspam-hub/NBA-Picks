@@ -91,6 +91,7 @@ input[type=search]{width:100%;background:var(--panel);border:1px solid var(--lin
 </header>
 <nav><div class="in">
   <button data-v="best" class="on">Best bets</button>
+  <button data-v="parlay" id="parlayBtn" style="display:none">Parlays</button>
   <button data-v="games">Games</button>
   <button data-v="team" id="teamBtn" style="display:none">Team</button>
   <button data-v="all">All props</button>
@@ -103,6 +104,7 @@ input[type=search]{width:100%;background:var(--panel);border:1px solid var(--lin
     <div class="chips" id="statChips"></div>
     <div class="card" id="bestList"></div>
   </section>
+  <section class="view" id="v-parlay"><div id="parlayBox"></div></section>
   <section class="view" id="v-games"><div id="gameList"></div></section>
   <section class="view" id="v-team"><div id="teamBox"></div></section>
   <section class="view" id="v-all">
@@ -336,6 +338,39 @@ document.querySelector("nav").addEventListener("click", e => {
   document.querySelectorAll("nav button").forEach(b => b.classList.toggle("on", b.dataset.v === v));
   document.querySelectorAll(".view").forEach(s => s.classList.toggle("on", s.id === "v-" + v));
 });
+// ---- parlays
+function renderParlays() {
+  const P = D.parlays || {}, T = P.tickets || [], R = P.record || {};
+  const byType = R.by_type || {}, recent = R.recent || [];
+  const anyRec = Object.values(byType).some(x => x.w + x.l);
+  if (!T.length && !anyRec) return;
+  $("#parlayBtn").style.display = "";
+  const s = x => x.side === "OVER" ? "O" : "U";
+  const legRow = l => {
+    const bb = bestBook(l);
+    return `<div class="row" style="padding:6px 0;border-top:1px solid var(--line)">
+      <div class="grade g${l.grade}">${l.grade}</div>
+      <div class="who"><div class="name">${esc(l.player)} <span class="side ${l.side}" style="font-size:13px">${s(l)} ${l.line} ${esc(l.stat)}</span></div>
+        <div class="meta">${esc(l.game)} · ${pct(l.prob)} · ${bb ? `best: ${esc(bb[0])} ${fmtPrice(bb[1][1])}` : esc(l.line_source)}</div></div>
+      <div class="bet"><div class="small">${fmtPrice(l.price)}</div>${l.result ? `<div class="res ${l.result}">${l.result}</div>` : ""}</div></div>`;
+  };
+  const card = t => `<div class="card" style="padding:12px 14px">
+      <div class="row"><div class="who"><div class="name" style="font-size:16px">${esc(t.label)} · ${t.legs.length} legs</div>
+        <div class="meta">model hit chance ${pct(t.hit)} · value ${(t.ev * 100).toFixed(0)}%${t.locked ? " · locked" : ""}</div></div>
+        <div class="bet"><div class="side OVER" style="font-size:17px">${fmtPrice(t.odds)}</div><div class="small">pays ${t.payout.toFixed(2)}×</div>
+        ${t.result ? `<div class="res ${t.result}">${t.result}</div>` : ""}</div></div>
+      ${t.legs.map(legRow).join("")}</div>`;
+  const tbl = Object.values(byType).filter(x => x.w + x.l);
+  $("#parlayBox").innerHTML = `<div class="note" style="margin-top:0">Built from today's graded picks on real lines, one leg per game,
+      only legs with a positive edge. <b>Value</b> = model hit chance × payout − 1. Hit chance assumes the games are independent.
+      Check each line in your book before placing. Parlays swing hard, so keep stakes small.</div>
+    ${T.length ? T.map(card).join("") : `<div class="empty">No parlay with positive value today (not enough real-line edges in different games).</div>`}
+    ${tbl.length ? `<div class="sect">Parlay track record (1 unit per ticket)</div><div class="card scroll"><table><tr><th></th><th>W-L</th><th>Profit</th></tr>
+      ${tbl.map(x => `<tr><td>${esc(x.label)}</td><td>${x.w}-${x.l}</td><td class="${x.units >= 0 ? "WIN" : "LOSS"}">${(x.units > 0 ? "+" : "") + x.units.toFixed(1)}u</td></tr>`).join("")}</table></div>` : ""}
+    ${recent.filter(t => t.result).length ? `<div class="sect">Recent tickets</div>${recent.filter(t => t.result).slice(0, 6).map(t => card({...t, label: t.date + " · " + t.label})).join("")}` : ""}`;
+}
+renderParlays();
+
 // ---- team bets
 function renderTeam() {
   const T = D.team || {}; const all = T.all || [], shown = T.picks || [], rec = T.record || {};

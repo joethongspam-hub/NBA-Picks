@@ -5,6 +5,8 @@
 """
 from __future__ import annotations
 
+from nba_props import parlays as PL
+
 import argparse
 import json
 import os
@@ -112,6 +114,11 @@ def results_only(out_dir: str = "public/nfl", cache_dir: str = ".cache", hist_di
     if pj.exists():
         payload = json.loads(pj.read_text())
         payload["record"] = record
+        try:
+            payload["parlays"] = {**(payload.get("parlays") or {}),
+                                  "record": PL.grade(hist, json.loads((hist / "results.json").read_text())["graded"])}
+        except Exception as e:
+            log(f"[results] parlay grading failed: {e!r}")
         try:
             payload.setdefault("team", {})["record"] = TB.grade_team_history(http or Http(cache_dir), "nfl", hist, now)
         except Exception as e:
@@ -362,7 +369,16 @@ def run(week: int | None = None, out_dir: str = "public/nfl", cache_dir: str = "
             pick_file.write_text(json.dumps({"made": prior.get("made", now.isoformat()), "picks": list(shown.values())}, indent=1))
         record = grade_history(hist, {p.id: p for p in players}, now)
 
+    parlays = {}
+    if not backtest:
+        try:
+            parlays = {"tickets": PL.update(hist, key, list(shown.values()), started, now),
+                       "record": PL.grade(hist, json.loads((hist / "results.json").read_text())["graded"]
+                                          if (hist / "results.json").exists() else [])}
+        except Exception as e:
+            log(f"   parlays failed: {e!r}")
     payload = {
+        "parlays": parlays,
         "date": key, "label": f"Week {wk} · {season}", "generated": now.strftime("%b %d, %I:%M %p ET").replace(" 0", " "),
         "season": season, "line_mode": "sportsbook" if lines else "estimated", "backtest": backtest,
         "games": game_info, "top": top_out if not backtest else [p.to_dict() for p in top],

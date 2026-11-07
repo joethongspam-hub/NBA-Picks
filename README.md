@@ -78,6 +78,15 @@ and saves each day's picks in `history/` so the **Track record** tab can grade t
 * **NHL long shots:** NHL picks priced +150 or longer aren't graded (live record 9–22).
 * **NBA injury boost:** the share of injured teammates' production handed to others was halved again (live 19–20).
 
+## Parlays
+
+Each page has a **Parlays** tab with three tickets built from that day's picks: **Safest** (3 legs, highest hit
+chance with positive value), **Best value** (3 legs, highest value with ≥15% hit chance) and **Long shot** (4–5 legs).
+Legs must be on real lines with a positive edge (graded A–C), priced −250 to +200, and one per game.
+Hit chance = product of leg probabilities; value = hit chance × payout − 1. Tickets lock once a game starts,
+are graded by the results runs (a pushed leg drops out), and have their own track record. The pregame notification
+includes the best-value ticket.
+
 ## Line shopping
 
 When Odds API lines are pulled, every real-line pick shows each book's line and price for that side

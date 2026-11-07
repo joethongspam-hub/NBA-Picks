@@ -6,6 +6,8 @@
 """
 from __future__ import annotations
 
+from . import parlays as PL
+
 import argparse
 import csv
 import json
@@ -226,6 +228,11 @@ def results_only(out_dir: str = "public", cache_dir: str = ".cache", hist_dir: s
     if pj.exists():
         payload = json.loads(pj.read_text())
         payload["record"] = record
+        try:
+            payload["parlays"] = {**(payload.get("parlays") or {}),
+                                  "record": PL.grade(hist, json.loads((hist / "results.json").read_text())["graded"])}
+        except Exception as e:
+            log(f"[results] parlay grading failed: {e!r}")
         try:
             tr = TB.grade_team_history(http or Http(cache_dir), "nba", hist, now_et)
             payload.setdefault("team", {})["record"] = tr
@@ -514,7 +521,16 @@ def run(date: str | None = None, out_dir: str = "site", cache_dir: str = ".cache
         results = grade_history(hist, {p.id: p for p in players}, day_s)
         record = summarize(results)
 
+    parlays = {}
+    if not backtest:
+        try:
+            parlays = {"tickets": PL.update(hist, day_s, list(shown.values()), started, now_et),
+                       "record": PL.grade(hist, json.loads((hist / "results.json").read_text())["graded"]
+                                          if (hist / "results.json").exists() else [])}
+        except Exception as e:
+            log(f"   parlays failed: {e!r}")
     payload = {
+        "parlays": parlays,
         "date": day_s, "generated": now_et.strftime("%b %d, %I:%M %p ET").replace(" 0", " "), "season": season,
         "line_mode": "sportsbook" if lines else "estimated",
         "odds_usage": dict(USAGE),
