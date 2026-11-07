@@ -74,7 +74,8 @@
   "ev": 0.241,
   "type": "safe",
   "label": "Safest",
-  "made": "2026-11-07T12:23:14.914236-05:00"
+  "made": "2026-11-07T12:23:14.914236-05:00",
+  "locked": true
  },
  {
   "legs": [
@@ -151,7 +152,8 @@
   "ev": 0.455,
   "type": "value",
   "label": "Best value",
-  "made": "2026-11-07T12:23:14.914236-05:00"
+  "made": "2026-11-07T12:23:14.914236-05:00",
+  "locked": true
  },
  {
   "legs": [
@@ -165,81 +167,59 @@
     "stat": "PTS",
     "side": "UNDER",
     "line": 0.5,
-    "price": -160,
-    "prob": 0.676,
-    "edge": 0.061,
+    "price": -165,
+    "prob": 0.678,
+    "edge": 0.056,
     "grade": "C",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
       0.5,
-      -160
+      -165
      ]
     }
    },
    {
-    "game_id": "401892668",
-    "game": "CHI @ CAR",
-    "player": "Frank Nazar",
-    "player_id": "5080157",
-    "team": "CHI",
-    "opp": "CAR",
-    "stat": "PTS",
-    "side": "UNDER",
-    "line": 0.5,
-    "price": -170,
-    "prob": 0.689,
-    "edge": 0.06,
-    "grade": "B",
-    "line_source": "DraftKings",
-    "books": {
-     "DraftKings": [
-      0.5,
-      -170
-     ]
-    }
-   },
-   {
-    "game_id": "401892669",
-    "game": "SJ @ DAL",
-    "player": "Ivar Stenberg",
-    "player_id": "5361709",
-    "team": "SJ",
-    "opp": "DAL",
-    "stat": "PTS",
-    "side": "UNDER",
-    "line": 0.5,
-    "price": -145,
-    "prob": 0.651,
-    "edge": 0.059,
-    "grade": "B",
-    "line_source": "DraftKings",
-    "books": {
-     "DraftKings": [
-      0.5,
-      -145
-     ]
-    }
-   },
-   {
-    "game_id": "401892664",
-    "game": "NYR @ SEA",
-    "player": "Adam Fox",
-    "player_id": "4197146",
-    "team": "NYR",
-    "opp": "SEA",
-    "stat": "AST",
+    "game_id": "401892670",
+    "game": "TB @ MIN",
+    "player": "Brandon Hagel",
+    "player_id": "4065019",
+    "team": "TB",
+    "opp": "MIN",
+    "stat": "SOG",
     "side": "OVER",
-    "line": 0.5,
-    "price": -135,
+    "line": 2.5,
+    "price": -140,
     "prob": 0.633,
-    "edge": 0.058,
-    "grade": "B",
+    "edge": 0.05,
+    "grade": "C",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      2.5,
+      -140
+     ]
+    }
+   },
+   {
+    "game_id": "401892667",
+    "game": "NJ @ NYI",
+    "player": "Kyle Palmieri",
+    "player_id": "5517",
+    "team": "NYI",
+    "opp": "NJ",
+    "stat": "PTS",
+    "side": "UNDER",
+    "line": 0.5,
+    "price": -155,
+    "prob": 0.657,
+    "edge": 0.05,
+    "grade": "C",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
       0.5,
-      -135
+      -155
      ]
     }
    },
@@ -253,25 +233,47 @@
     "stat": "AST",
     "side": "OVER",
     "line": 0.5,
-    "price": -125,
-    "prob": 0.608,
-    "edge": 0.052,
-    "grade": "B",
+    "price": -130,
+    "prob": 0.612,
+    "edge": 0.047,
+    "grade": "C",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
       0.5,
+      -130
+     ]
+    }
+   },
+   {
+    "game_id": "401892669",
+    "game": "SJ @ DAL",
+    "player": "Jamie Benn",
+    "player_id": "3998",
+    "team": "DAL",
+    "opp": "SJ",
+    "stat": "SOG",
+    "side": "UNDER",
+    "line": 1.5,
+    "price": -125,
+    "prob": 0.6,
+    "edge": 0.045,
+    "grade": "C",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      1.5,
       -125
      ]
     }
    }
   ],
-  "hit": 0.1167,
-  "payout": 13.66,
-  "odds": 1266,
-  "ev": 0.595,
+  "hit": 0.1035,
+  "payout": 14.42,
+  "odds": 1342,
+  "ev": 0.494,
   "type": "longshot",
   "label": "Long shot",
-  "made": "2026-11-07T12:23:14.914236-05:00"
+  "made": "2026-11-07T16:54:26.315420-05:00"
  }
 ]
