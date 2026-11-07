@@ -362,7 +362,7 @@ function renderParlays() {
       ${t.legs.map(legRow).join("")}</div>`;
   const tbl = Object.values(byType).filter(x => x.w + x.l);
   $("#parlayBox").innerHTML = `<div class="note" style="margin-top:0">Built from today's graded picks on real lines, one leg per game,
-      only minus-money legs with a positive edge and a 60%+ model probability. <b>Value</b> = model hit chance × payout − 1. Hit chance assumes the games are independent.
+      only minus-money legs with a positive edge and a 60%+ model probability. <b>No player appears on more than one ticket</b>, so one bad prop can only sink one ticket. <b>Value</b> = model hit chance × payout − 1. Hit chance assumes the games are independent.
       Check each line in your book before placing. Parlays swing hard, so keep stakes small.</div>
     ${T.length ? T.map(card).join("") : `<div class="empty">No parlay with positive value today (not enough real-line edges in different games).</div>`}
     ${tbl.length ? `<div class="sect">Parlay track record (1 unit per ticket)</div><div class="card scroll"><table><tr><th></th><th>W-L</th><th>Profit</th></tr>

@@ -76,11 +76,14 @@ def _ticket(legs) -> dict:
             "odds": american(pay), "ev": round(hit * pay - 1, 3)}
 
 
-def build(picks: list[dict], started: set[str]) -> dict:
+def build(picks: list[dict], started: set[str], separate: bool = True) -> dict:
     pool = candidates(picks, started)
     best: dict[str, dict] = {}
     used: set = set()
     for key, label, sizes, ok, score in TICKETS:
+        if separate and best:      # no player appears on more than one ticket
+            taken = {l["player_id"] for t in best.values() for l in t["legs"]}
+            pool = [p for p in pool if p["player_id"] not in taken]
         top = None
         for n in sizes:
             if len(pool) < n:

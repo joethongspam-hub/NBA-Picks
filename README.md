@@ -83,7 +83,7 @@ and saves each day's picks in `history/` so the **Track record** tab can grade t
 Each page has a **Parlays** tab with three tickets built from that day's picks: **Safest** (3 legs, highest hit
 chance with positive value), **Best value** (3 legs, highest value with ≥15% hit chance) and **Long shot** (4–5 legs).
 Legs must be on real lines with a positive edge (graded A–C), priced −250 to −101 with a 60%+ model probability
-(plus-money legs hit only 40% in the Nov 7 replay), and one per game.
+(plus-money legs hit only 40% in the Nov 7 replay), one per game, and no player on more than one ticket (tickets are built in order, each from the players left over).
 Hit chance = product of leg probabilities; value = hit chance × payout − 1. Tickets lock once a game starts,
 are graded by the results runs (a pushed leg drops out), and have their own track record. The pregame notification
 includes the best-value ticket.
