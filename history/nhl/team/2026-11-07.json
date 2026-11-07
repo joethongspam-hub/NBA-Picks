@@ -2,39 +2,16 @@
  "made": "2026-11-07T03:20:22.888786-05:00",
  "picks": [
   {
-   "game_id": "401892665",
-   "game": "MTL @ TOR",
-   "market": "Puck line",
-   "pick": "MTL -1.5",
-   "side": "away",
-   "line": 1.5,
-   "price": 210,
-   "prob": 0.338,
-   "model_prob": 0.391,
-   "edge": 0.015,
-   "grade": "C",
-   "proj": "TOR 3.20 \u2013 MTL 4.00",
-   "mu_h": 3.2,
-   "mu_a": 4.0,
-   "home": "TOR",
-   "away": "MTL",
-   "notes": [
-    "TOR goalie Sergei Bobrovsky (0.888): opponent goals +12%",
-    "MTL goalie Jacob Fowler (0.905): opponent goals -5%"
-   ],
-   "score": 1.53
-  },
-  {
    "game_id": "401892670",
    "game": "TB @ MIN",
    "market": "Moneyline",
    "pick": "MIN ML",
    "side": "home",
    "line": null,
-   "price": 114,
-   "prob": 0.499,
+   "price": 120,
+   "prob": 0.491,
    "model_prob": 0.593,
-   "edge": 0.032,
+   "edge": 0.037,
    "grade": "B",
    "proj": "MIN 3.33 \u2013 TB 2.76",
    "mu_h": 3.33,
@@ -44,7 +21,7 @@
    "notes": [
     "MIN goalie Jesper Wallstedt (0.908): opponent goals -8% (starter uncertain)"
    ],
-   "score": 3.18
+   "score": 3.67
   },
   {
    "game_id": "401892670",

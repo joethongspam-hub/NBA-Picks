@@ -1,0 +1,277 @@
+[
+ {
+  "legs": [
+   {
+    "game_id": "401892663",
+    "game": "STL @ NSH",
+    "player": "Shane Wright",
+    "player_id": "5080144",
+    "team": "NSH",
+    "opp": "STL",
+    "stat": "PTS",
+    "side": "UNDER",
+    "line": 0.5,
+    "price": -220,
+    "prob": 0.76,
+    "edge": 0.073,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      0.5,
+      -220
+     ]
+    }
+   },
+   {
+    "game_id": "401892668",
+    "game": "CHI @ CAR",
+    "player": "Frank Nazar",
+    "player_id": "5080157",
+    "team": "CHI",
+    "opp": "CAR",
+    "stat": "PTS",
+    "side": "UNDER",
+    "line": 0.5,
+    "price": -170,
+    "prob": 0.689,
+    "edge": 0.06,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      0.5,
+      -170
+     ]
+    }
+   },
+   {
+    "game_id": "401892672",
+    "game": "PIT @ LA",
+    "player": "Ben Kindel",
+    "player_id": "5291947",
+    "team": "PIT",
+    "opp": "LA",
+    "stat": "AST",
+    "side": "UNDER",
+    "line": 0.5,
+    "price": -240,
+    "prob": 0.758,
+    "edge": 0.052,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      0.5,
+      -240
+     ]
+    }
+   }
+  ],
+  "hit": 0.3969,
+  "payout": 3.27,
+  "odds": 227,
+  "ev": 0.299,
+  "type": "safe",
+  "label": "Safest",
+  "made": "2026-11-07T11:03:20.259680-05:00"
+ },
+ {
+  "legs": [
+   {
+    "game_id": "401892673",
+    "game": "VAN @ EDM",
+    "player": "Connor McDavid",
+    "player_id": "3895074",
+    "team": "EDM",
+    "opp": "VAN",
+    "stat": "AST",
+    "side": "OVER",
+    "line": 1.5,
+    "price": 130,
+    "prob": 0.576,
+    "edge": 0.142,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      1.5,
+      130
+     ]
+    }
+   },
+   {
+    "game_id": "401892668",
+    "game": "CHI @ CAR",
+    "player": "Seth Jarvis",
+    "player_id": "4697396",
+    "team": "CAR",
+    "opp": "CHI",
+    "stat": "AST",
+    "side": "OVER",
+    "line": 0.5,
+    "price": 145,
+    "prob": 0.497,
+    "edge": 0.089,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      0.5,
+      145
+     ]
+    }
+   },
+   {
+    "game_id": "401892662",
+    "game": "FLA @ WSH",
+    "player": "Matthew Tkachuk",
+    "player_id": "4024854",
+    "team": "FLA",
+    "opp": "WSH",
+    "stat": "AST",
+    "side": "OVER",
+    "line": 0.5,
+    "price": -110,
+    "prob": 0.606,
+    "edge": 0.082,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      0.5,
+      -110
+     ]
+    }
+   }
+  ],
+  "hit": 0.1735,
+  "payout": 10.76,
+  "odds": 976,
+  "ev": 0.866,
+  "type": "value",
+  "label": "Best value",
+  "made": "2026-11-07T11:03:20.259680-05:00"
+ },
+ {
+  "legs": [
+   {
+    "game_id": "401892673",
+    "game": "VAN @ EDM",
+    "player": "Connor McDavid",
+    "player_id": "3895074",
+    "team": "EDM",
+    "opp": "VAN",
+    "stat": "AST",
+    "side": "OVER",
+    "line": 1.5,
+    "price": 130,
+    "prob": 0.576,
+    "edge": 0.142,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      1.5,
+      130
+     ]
+    }
+   },
+   {
+    "game_id": "401892668",
+    "game": "CHI @ CAR",
+    "player": "Seth Jarvis",
+    "player_id": "4697396",
+    "team": "CAR",
+    "opp": "CHI",
+    "stat": "AST",
+    "side": "OVER",
+    "line": 0.5,
+    "price": 145,
+    "prob": 0.497,
+    "edge": 0.089,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      0.5,
+      145
+     ]
+    }
+   },
+   {
+    "game_id": "401892662",
+    "game": "FLA @ WSH",
+    "player": "Matthew Tkachuk",
+    "player_id": "4024854",
+    "team": "FLA",
+    "opp": "WSH",
+    "stat": "AST",
+    "side": "OVER",
+    "line": 0.5,
+    "price": -110,
+    "prob": 0.606,
+    "edge": 0.082,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      0.5,
+      -110
+     ]
+    }
+   },
+   {
+    "game_id": "401892664",
+    "game": "NYR @ SEA",
+    "player": "Matty Beniers",
+    "player_id": "4781552",
+    "team": "SEA",
+    "opp": "NYR",
+    "stat": "SOG",
+    "side": "UNDER",
+    "line": 1.5,
+    "price": -105,
+    "prob": 0.591,
+    "edge": 0.079,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      1.5,
+      -105
+     ]
+    }
+   },
+   {
+    "game_id": "401892671",
+    "game": "DET @ COL",
+    "player": "Michael Brandsegg-Nygard",
+    "player_id": "5216883",
+    "team": "DET",
+    "opp": "COL",
+    "stat": "SOG",
+    "side": "UNDER",
+    "line": 1.5,
+    "price": 105,
+    "prob": 0.56,
+    "edge": 0.072,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      1.5,
+      105
+     ]
+    }
+   }
+  ],
+  "hit": 0.0574,
+  "payout": 43.06,
+  "odds": 4206,
+  "ev": 1.472,
+  "type": "longshot",
+  "label": "Long shot",
+  "made": "2026-11-07T11:03:20.259680-05:00"
+ }
+]
