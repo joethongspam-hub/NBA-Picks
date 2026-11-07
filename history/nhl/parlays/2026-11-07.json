@@ -46,35 +46,35 @@
     }
    },
    {
-    "game_id": "401892662",
-    "game": "FLA @ WSH",
-    "player": "Tom Wilson",
-    "player_id": "2970615",
-    "team": "WSH",
-    "opp": "FLA",
+    "game_id": "401892670",
+    "game": "TB @ MIN",
+    "player": "John Carlson",
+    "player_id": "5118",
+    "team": "TB",
+    "opp": "MIN",
     "stat": "AST",
     "side": "UNDER",
     "line": 0.5,
-    "price": -250,
-    "prob": 0.753,
-    "edge": 0.039,
+    "price": -225,
+    "prob": 0.724,
+    "edge": 0.032,
     "grade": "C",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
       0.5,
-      -250
+      -225
      ]
     }
    }
   ],
-  "hit": 0.4338,
-  "payout": 2.88,
-  "odds": 188,
-  "ev": 0.251,
+  "hit": 0.4171,
+  "payout": 2.98,
+  "odds": 198,
+  "ev": 0.241,
   "type": "safe",
   "label": "Safest",
-  "made": "2026-11-07T11:26:55.647749-05:00"
+  "made": "2026-11-07T12:23:14.914236-05:00"
  },
  {
   "legs": [
@@ -88,15 +88,15 @@
     "stat": "SOG",
     "side": "UNDER",
     "line": 1.5,
-    "price": -140,
-    "prob": 0.676,
-    "edge": 0.093,
+    "price": -150,
+    "prob": 0.684,
+    "edge": 0.084,
     "grade": "A",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
       1.5,
-      -140
+      -150
      ]
     }
    },
@@ -145,35 +145,35 @@
     }
    }
   ],
-  "hit": 0.2675,
-  "payout": 5.53,
-  "odds": 453,
-  "ev": 0.479,
+  "hit": 0.2707,
+  "payout": 5.38,
+  "odds": 438,
+  "ev": 0.455,
   "type": "value",
   "label": "Best value",
-  "made": "2026-11-07T11:26:55.647749-05:00"
+  "made": "2026-11-07T12:23:14.914236-05:00"
  },
  {
   "legs": [
    {
-    "game_id": "401892669",
-    "game": "SJ @ DAL",
-    "player": "Mason Marchment",
-    "player_id": "4272192",
-    "team": "SJ",
-    "opp": "DAL",
+    "game_id": "401892672",
+    "game": "PIT @ LA",
+    "player": "Erik Gustafsson",
+    "player_id": "3891922",
+    "team": "LA",
+    "opp": "PIT",
     "stat": "PTS",
     "side": "UNDER",
     "line": 0.5,
-    "price": -145,
-    "prob": 0.654,
-    "edge": 0.062,
-    "grade": "B",
+    "price": -160,
+    "prob": 0.676,
+    "edge": 0.061,
+    "grade": "C",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
       0.5,
-      -145
+      -160
      ]
     }
    },
@@ -200,6 +200,28 @@
     }
    },
    {
+    "game_id": "401892669",
+    "game": "SJ @ DAL",
+    "player": "Ivar Stenberg",
+    "player_id": "5361709",
+    "team": "SJ",
+    "opp": "DAL",
+    "stat": "PTS",
+    "side": "UNDER",
+    "line": 0.5,
+    "price": -145,
+    "prob": 0.651,
+    "edge": 0.059,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      0.5,
+      -145
+     ]
+    }
+   },
+   {
     "game_id": "401892664",
     "game": "NYR @ SEA",
     "player": "Adam Fox",
@@ -218,28 +240,6 @@
      "DraftKings": [
       0.5,
       -135
-     ]
-    }
-   },
-   {
-    "game_id": "401892662",
-    "game": "FLA @ WSH",
-    "player": "Seth Jones",
-    "player_id": "3041992",
-    "team": "FLA",
-    "opp": "WSH",
-    "stat": "PTS",
-    "side": "OVER",
-    "line": 0.5,
-    "price": -130,
-    "prob": 0.619,
-    "edge": 0.053,
-    "grade": "B",
-    "line_source": "DraftKings",
-    "books": {
-     "DraftKings": [
-      0.5,
-      -130
      ]
     }
    },
@@ -266,12 +266,12 @@
     }
    }
   ],
-  "hit": 0.1073,
-  "payout": 14.88,
-  "odds": 1388,
-  "ev": 0.597,
+  "hit": 0.1167,
+  "payout": 13.66,
+  "odds": 1266,
+  "ev": 0.595,
   "type": "longshot",
   "label": "Long shot",
-  "made": "2026-11-07T11:26:55.647749-05:00"
+  "made": "2026-11-07T12:23:14.914236-05:00"
  }
 ]
