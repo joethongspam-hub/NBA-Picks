@@ -28,48 +28,6 @@
     }
    },
    {
-    "game_id": "401873044",
-    "game": "NYG @ PHI",
-    "player": "J.J. McCarthy",
-    "player_id": "4433970",
-    "team": "NYG",
-    "opp": "PHI",
-    "stat": "PASS_YDS",
-    "side": "UNDER",
-    "line": 210.5,
-    "price": -111,
-    "prob": 0.721,
-    "edge": 0.195,
-    "grade": "B",
-    "line_source": "6 books",
-    "books": {
-     "DraftKings": [
-      210.5,
-      -111
-     ],
-     "FanDuel": [
-      214.5,
-      -114
-     ],
-     "BetOnline.ag": [
-      210.5,
-      -111
-     ],
-     "BetRivers": [
-      208.5,
-      -117
-     ],
-     "BetMGM": [
-      206.5,
-      -115
-     ],
-     "Bovada": [
-      210.5,
-      -115
-     ]
-    }
-   },
-   {
     "game_id": "401873041",
     "game": "DEN @ CAR",
     "player": "Troy Franklin",
@@ -106,15 +64,49 @@
       180
      ]
     }
+   },
+   {
+    "game_id": "401873044",
+    "game": "NYG @ PHI",
+    "player": "Theo Johnson",
+    "player_id": "4429148",
+    "team": "NYG",
+    "opp": "PHI",
+    "stat": "REC",
+    "side": "OVER",
+    "line": 0.5,
+    "price": -215,
+    "prob": 0.763,
+    "edge": 0.08,
+    "grade": "A",
+    "line_source": "4 books",
+    "books": {
+     "DraftKings": [
+      1.5,
+      175
+     ],
+     "FanDuel": [
+      0.5,
+      -220
+     ],
+     "BetRivers": [
+      0.5,
+      -215
+     ],
+     "Bovada": [
+      1.5,
+      170
+     ]
+    }
    }
   ],
-  "hit": 0.4088,
-  "payout": 5.44,
-  "odds": 444,
-  "ev": 1.225,
+  "hit": 0.4326,
+  "payout": 4.2,
+  "odds": 320,
+  "ev": 0.815,
   "type": "safe",
   "label": "Safest",
-  "made": "2026-11-07T11:04:47.288949-05:00"
+  "made": "2026-11-07T11:21:08.282950-05:00"
  },
  {
   "legs": [
@@ -187,47 +179,47 @@
     }
    },
    {
-    "game_id": "401873048",
-    "game": "ARI @ SEA",
-    "player": "Tory Horton",
-    "player_id": "4597703",
-    "team": "SEA",
-    "opp": "ARI",
+    "game_id": "401873042",
+    "game": "DET @ MIA",
+    "player": "Ollie Gordon II",
+    "player_id": "4711533",
+    "team": "MIA",
+    "opp": "DET",
     "stat": "REC",
     "side": "UNDER",
     "line": 1.5,
-    "price": 142,
-    "prob": 0.567,
-    "edge": 0.154,
-    "grade": "B",
+    "price": -106,
+    "prob": 0.691,
+    "edge": 0.176,
+    "grade": "A",
     "line_source": "5 books",
     "books": {
      "DraftKings": [
       1.5,
-      130
+      -116
      ],
      "FanDuel": [
       1.5,
-      142
+      -108
      ],
      "BetOnline.ag": [
       1.5,
-      134
+      -106
      ],
      "Bovada": [
       1.5,
-      130
+      -120
      ]
     }
    }
   ],
-  "hit": 0.3074,
-  "payout": 8.78,
-  "odds": 778,
-  "ev": 1.7,
+  "hit": 0.3747,
+  "payout": 7.05,
+  "odds": 605,
+  "ev": 1.642,
   "type": "value",
   "label": "Best value",
-  "made": "2026-11-07T11:04:47.288949-05:00"
+  "made": "2026-11-07T11:21:08.282950-05:00"
  },
  {
   "legs": [
@@ -334,80 +326,88 @@
     }
    },
    {
-    "game_id": "401873048",
-    "game": "ARI @ SEA",
-    "player": "Tory Horton",
-    "player_id": "4597703",
-    "team": "SEA",
-    "opp": "ARI",
+    "game_id": "401873050",
+    "game": "TB @ CHI",
+    "player": "Colston Loveland",
+    "player_id": "4723086",
+    "team": "CHI",
+    "opp": "TB",
     "stat": "REC",
     "side": "UNDER",
-    "line": 1.5,
-    "price": 142,
-    "prob": 0.567,
-    "edge": 0.154,
+    "line": 5.5,
+    "price": -120,
+    "prob": 0.706,
+    "edge": 0.161,
     "grade": "B",
-    "line_source": "5 books",
+    "line_source": "6 books",
     "books": {
      "DraftKings": [
-      1.5,
-      130
+      5.5,
+      -120
      ],
      "FanDuel": [
-      1.5,
-      142
+      5.5,
+      -130
      ],
      "BetOnline.ag": [
-      1.5,
-      134
+      5.5,
+      -141
+     ],
+     "BetMGM": [
+      5.5,
+      -160
      ],
      "Bovada": [
-      1.5,
-      130
+      5.5,
+      -120
      ]
     }
    },
    {
-    "game_id": "401873039",
-    "game": "CLE @ NO",
-    "player": "Jerry Jeudy",
-    "player_id": "4241463",
-    "team": "CLE",
-    "opp": "NO",
+    "game_id": "401873045",
+    "game": "NYJ @ KC",
+    "player": "Omar Cooper Jr.",
+    "player_id": "4723820",
+    "team": "NYJ",
+    "opp": "KC",
     "stat": "REC",
-    "side": "OVER",
-    "line": 1.5,
-    "price": 120,
-    "prob": 0.604,
-    "edge": 0.149,
-    "grade": "B",
-    "line_source": "4 books",
+    "side": "UNDER",
+    "line": 4.5,
+    "price": -125,
+    "prob": 0.713,
+    "edge": 0.158,
+    "grade": "A",
+    "line_source": "6 books",
     "books": {
      "DraftKings": [
-      1.5,
-      119
+      4.5,
+      -135
      ],
      "FanDuel": [
-      1.5,
-      114
+      4.5,
+      -140
      ],
      "BetOnline.ag": [
-      1.5,
-      110
+      4.5,
+      -137
+     ],
+     "BetMGM": [
+      4.5,
+      -125
      ],
      "Bovada": [
-      1.5,
-      120
+      4.5,
+      -135
      ]
     }
    }
   ],
-  "hit": 0.1283,
-  "payout": 37.55,
-  "odds": 3655,
-  "ev": 3.818,
+  "hit": 0.1886,
+  "payout": 23.27,
+  "odds": 2227,
+  "ev": 3.389,
   "type": "longshot",
   "label": "Long shot",
-  "made": "2026-11-07T11:04:47.288949-05:00"
+  "made": "2026-11-07T11:21:08.282950-05:00"
  }
 ]
