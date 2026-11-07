@@ -23,7 +23,8 @@
     "ATL injuries (Johnson, Landale): -4.0 pts",
     "WSH injuries (Champagnie, Davis): -6.0 pts"
    ],
-   "score": 8.29
+   "score": 8.29,
+   "locked": true
   },
   {
    "game_id": "401909287",
@@ -47,7 +48,8 @@
     "ATL injuries (Johnson, Landale): -4.0 pts",
     "WSH injuries (Champagnie, Davis): -6.0 pts"
    ],
-   "score": 7.35
+   "score": 7.35,
+   "locked": true
   },
   {
    "game_id": "401909288",
@@ -70,7 +72,8 @@
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "CHA injuries (Diabate, Knueppel, Schroder): -5.4 pts"
    ],
-   "score": 7.0
+   "score": 7.0,
+   "locked": true
   },
   {
    "game_id": "401909288",
@@ -93,7 +96,56 @@
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "CHA injuries (Diabate, Knueppel, Schroder): -5.4 pts"
    ],
-   "score": 6.61
+   "score": 6.61,
+   "locked": true
+  },
+  {
+   "game_id": "401909289",
+   "game": "PHI @ CLE",
+   "market": "Moneyline",
+   "pick": "CLE ML",
+   "side": "home",
+   "line": null,
+   "price": 128,
+   "prob": 0.476,
+   "model_prob": 0.578,
+   "edge": 0.037,
+   "grade": "B",
+   "proj": "CLE 125.0 \u2013 PHI 122.5",
+   "mu_h": 124.99,
+   "mu_a": 122.54,
+   "home": "CLE",
+   "away": "PHI",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "CLE injuries (Allen, Tyson): -4.1 pts",
+    "PHI injuries (Bona): -0.7 pts"
+   ],
+   "score": 3.72
+  },
+  {
+   "game_id": "401909289",
+   "game": "PHI @ CLE",
+   "market": "Spread",
+   "pick": "CLE +2.5",
+   "side": "home",
+   "line": 2.5,
+   "price": -105,
+   "prob": 0.547,
+   "model_prob": 0.654,
+   "edge": 0.035,
+   "grade": "B",
+   "proj": "CLE 125.0 \u2013 PHI 122.5",
+   "mu_h": 124.99,
+   "mu_a": 122.54,
+   "home": "CLE",
+   "away": "PHI",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "CLE injuries (Allen, Tyson): -4.1 pts",
+    "PHI injuries (Bona): -0.7 pts"
+   ],
+   "score": 3.46
   },
   {
    "game_id": "401909291",
@@ -151,19 +203,20 @@
    "side": "home",
    "line": null,
    "price": 136,
-   "prob": 0.492,
-   "model_prob": 0.65,
-   "edge": 0.068,
+   "prob": 0.568,
+   "model_prob": 0.867,
+   "edge": 0.144,
    "grade": "A",
-   "proj": "MIL 113.6 \u2013 TOR 108.8",
+   "proj": "MIL 113.6 \u2013 TOR 99.7",
    "mu_h": 113.62,
-   "mu_a": 108.8,
+   "mu_a": 99.73,
    "home": "MIL",
    "away": "TOR",
    "notes": [
-    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "TOR injuries (Barnes, Quickley): -9.8 pts"
    ],
-   "score": 6.82
+   "score": 14.39
   },
   {
    "game_id": "401909292",
@@ -172,20 +225,21 @@
    "pick": "MIL +3.5",
    "side": "home",
    "line": 3.5,
-   "price": -115,
-   "prob": 0.594,
-   "model_prob": 0.747,
-   "edge": 0.059,
+   "price": -105,
+   "prob": 0.639,
+   "model_prob": 0.918,
+   "edge": 0.127,
    "grade": "A",
-   "proj": "MIL 113.6 \u2013 TOR 108.8",
+   "proj": "MIL 113.6 \u2013 TOR 99.7",
    "mu_h": 113.62,
-   "mu_a": 108.8,
+   "mu_a": 99.73,
    "home": "MIL",
    "away": "TOR",
    "notes": [
-    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "TOR injuries (Barnes, Quickley): -9.8 pts"
    ],
-   "score": 5.87
+   "score": 12.7
   },
   {
    "game_id": "401909293",
