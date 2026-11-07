@@ -2,6 +2,28 @@
  {
   "legs": [
    {
+    "game_id": "401909941",
+    "game": "WSH @ OKC",
+    "player": "AJ Dybantsa",
+    "player_id": "5142718",
+    "team": "WSH",
+    "opp": "OKC",
+    "stat": "PA",
+    "side": "UNDER",
+    "line": 19.5,
+    "price": -114,
+    "prob": 0.721,
+    "edge": 0.188,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      19.5,
+      -114
+     ]
+    }
+   },
+   {
     "game_id": "401909944",
     "game": "SA @ POR",
     "player": "Scoot Henderson",
@@ -20,28 +42,6 @@
      "DraftKings": [
       3.5,
       -133
-     ]
-    }
-   },
-   {
-    "game_id": "401909941",
-    "game": "WSH @ OKC",
-    "player": "AJ Dybantsa",
-    "player_id": "5142718",
-    "team": "WSH",
-    "opp": "OKC",
-    "stat": "PA",
-    "side": "UNDER",
-    "line": 19.5,
-    "price": -118,
-    "prob": 0.723,
-    "edge": 0.182,
-    "grade": "B",
-    "line_source": "DraftKings",
-    "books": {
-     "DraftKings": [
-      19.5,
-      -118
      ]
     }
    },
@@ -68,137 +68,16 @@
     }
    }
   ],
-  "hit": 0.3712,
-  "payout": 5.45,
-  "odds": 445,
-  "ev": 1.024,
+  "hit": 0.3702,
+  "payout": 5.54,
+  "odds": 454,
+  "ev": 1.051,
   "type": "safe",
   "label": "Safest",
-  "made": "2026-11-07T11:18:35.004900-05:00"
+  "made": "2026-11-07T11:25:39.280349-05:00"
  },
  {
   "legs": [
-   {
-    "game_id": "401909944",
-    "game": "SA @ POR",
-    "player": "Scoot Henderson",
-    "player_id": "4683678",
-    "team": "POR",
-    "opp": "SA",
-    "stat": "AST",
-    "side": "UNDER",
-    "line": 3.5,
-    "price": -133,
-    "prob": 0.754,
-    "edge": 0.183,
-    "grade": "A",
-    "line_source": "DraftKings",
-    "books": {
-     "DraftKings": [
-      3.5,
-      -133
-     ]
-    }
-   },
-   {
-    "game_id": "401909941",
-    "game": "WSH @ OKC",
-    "player": "AJ Dybantsa",
-    "player_id": "5142718",
-    "team": "WSH",
-    "opp": "OKC",
-    "stat": "PA",
-    "side": "UNDER",
-    "line": 19.5,
-    "price": -118,
-    "prob": 0.723,
-    "edge": 0.182,
-    "grade": "B",
-    "line_source": "DraftKings",
-    "books": {
-     "DraftKings": [
-      19.5,
-      -118
-     ]
-    }
-   },
-   {
-    "game_id": "401909940",
-    "game": "NY @ CLE",
-    "player": "James Harden",
-    "player_id": "3992",
-    "team": "CLE",
-    "opp": "NY",
-    "stat": "PRA",
-    "side": "UNDER",
-    "line": 28.5,
-    "price": -124,
-    "prob": 0.679,
-    "edge": 0.126,
-    "grade": "A",
-    "line_source": "DraftKings",
-    "books": {
-     "DraftKings": [
-      28.5,
-      -124
-     ]
-    }
-   }
-  ],
-  "hit": 0.3702,
-  "payout": 5.85,
-  "odds": 485,
-  "ev": 1.164,
-  "type": "value",
-  "label": "Best value",
-  "made": "2026-11-07T11:18:35.004900-05:00"
- },
- {
-  "legs": [
-   {
-    "game_id": "401909944",
-    "game": "SA @ POR",
-    "player": "Scoot Henderson",
-    "player_id": "4683678",
-    "team": "POR",
-    "opp": "SA",
-    "stat": "AST",
-    "side": "UNDER",
-    "line": 3.5,
-    "price": -133,
-    "prob": 0.754,
-    "edge": 0.183,
-    "grade": "A",
-    "line_source": "DraftKings",
-    "books": {
-     "DraftKings": [
-      3.5,
-      -133
-     ]
-    }
-   },
-   {
-    "game_id": "401909941",
-    "game": "WSH @ OKC",
-    "player": "AJ Dybantsa",
-    "player_id": "5142718",
-    "team": "WSH",
-    "opp": "OKC",
-    "stat": "PA",
-    "side": "UNDER",
-    "line": 19.5,
-    "price": -118,
-    "prob": 0.723,
-    "edge": 0.182,
-    "grade": "B",
-    "line_source": "DraftKings",
-    "books": {
-     "DraftKings": [
-      19.5,
-      -118
-     ]
-    }
-   },
    {
     "game_id": "401909940",
     "game": "NY @ CLE",
@@ -266,12 +145,133 @@
     }
    }
   ],
-  "hit": 0.1451,
-  "payout": 21.74,
-  "odds": 2074,
-  "ev": 2.154,
+  "hit": 0.2662,
+  "payout": 6.72,
+  "odds": 572,
+  "ev": 0.788,
+  "type": "value",
+  "label": "Best value",
+  "made": "2026-11-07T11:25:39.280349-05:00"
+ },
+ {
+  "legs": [
+   {
+    "game_id": "401909944",
+    "game": "SA @ POR",
+    "player": "Dylan Harper",
+    "player_id": "5037871",
+    "team": "SA",
+    "opp": "POR",
+    "stat": "RA",
+    "side": "UNDER",
+    "line": 10.5,
+    "price": -119,
+    "prob": 0.647,
+    "edge": 0.104,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      10.5,
+      -119
+     ]
+    }
+   },
+   {
+    "game_id": "401909943",
+    "game": "HOU @ PHX",
+    "player": "Oso Ighodaro",
+    "player_id": "4601023",
+    "team": "PHX",
+    "opp": "HOU",
+    "stat": "PRA",
+    "side": "UNDER",
+    "line": 15.5,
+    "price": -108,
+    "prob": 0.613,
+    "edge": 0.094,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      15.5,
+      -108
+     ]
+    }
+   },
+   {
+    "game_id": "401909940",
+    "game": "NY @ CLE",
+    "player": "Mikal Bridges",
+    "player_id": "3147657",
+    "team": "NY",
+    "opp": "CLE",
+    "stat": "PA",
+    "side": "UNDER",
+    "line": 12.5,
+    "price": -104,
+    "prob": 0.604,
+    "edge": 0.094,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      12.5,
+      -104
+     ]
+    }
+   },
+   {
+    "game_id": "401909942",
+    "game": "ORL @ GS",
+    "player": "Franz Wagner",
+    "player_id": "4566434",
+    "team": "ORL",
+    "opp": "GS",
+    "stat": "PTS",
+    "side": "UNDER",
+    "line": 22.5,
+    "price": -118,
+    "prob": 0.633,
+    "edge": 0.092,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      22.5,
+      -118
+     ]
+    }
+   },
+   {
+    "game_id": "401909938",
+    "game": "DEN @ IND",
+    "player": "Nikola Jokic",
+    "player_id": "3112335",
+    "team": "DEN",
+    "opp": "IND",
+    "stat": "3PM",
+    "side": "UNDER",
+    "line": 1.5,
+    "price": -154,
+    "prob": 0.654,
+    "edge": 0.048,
+    "grade": "C",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      1.5,
+      -154
+     ]
+    }
+   }
+  ],
+  "hit": 0.0992,
+  "payout": 21.18,
+  "odds": 2018,
+  "ev": 1.101,
   "type": "longshot",
   "label": "Long shot",
-  "made": "2026-11-07T11:18:35.004900-05:00"
+  "made": "2026-11-07T11:25:39.280349-05:00"
  }
 ]

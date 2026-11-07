@@ -144,10 +144,10 @@
    "pick": "WSH ML",
    "side": "away",
    "line": null,
-   "price": 411,
-   "prob": 0.295,
+   "price": 424,
+   "prob": 0.292,
    "model_prob": 0.493,
-   "edge": 0.099,
+   "edge": 0.101,
    "grade": "A",
    "proj": "OKC 110.6 \u2013 WSH 110.4",
    "mu_h": 110.61,
@@ -157,19 +157,19 @@
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
    ],
-   "score": 9.89
+   "score": 10.07
   },
   {
    "game_id": "401909941",
    "game": "WSH @ OKC",
    "market": "Spread",
-   "pick": "WSH +11.5",
+   "pick": "WSH +12.5",
    "side": "away",
-   "line": -11.5,
-   "price": -106,
-   "prob": 0.604,
-   "model_prob": 0.816,
-   "edge": 0.09,
+   "line": -12.5,
+   "price": -117,
+   "prob": 0.628,
+   "model_prob": 0.837,
+   "edge": 0.089,
    "grade": "A",
    "proj": "OKC 110.6 \u2013 WSH 110.4",
    "mu_h": 110.61,
@@ -179,7 +179,7 @@
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
    ],
-   "score": 8.99
+   "score": 8.86
   },
   {
    "game_id": "401909942",
