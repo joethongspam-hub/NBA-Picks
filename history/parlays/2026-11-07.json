@@ -1,0 +1,277 @@
+[
+ {
+  "legs": [
+   {
+    "game_id": "401909944",
+    "game": "SA @ POR",
+    "player": "Scoot Henderson",
+    "player_id": "4683678",
+    "team": "POR",
+    "opp": "SA",
+    "stat": "AST",
+    "side": "UNDER",
+    "line": 3.5,
+    "price": -133,
+    "prob": 0.754,
+    "edge": 0.183,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      3.5,
+      -133
+     ]
+    }
+   },
+   {
+    "game_id": "401909941",
+    "game": "WSH @ OKC",
+    "player": "AJ Dybantsa",
+    "player_id": "5142718",
+    "team": "WSH",
+    "opp": "OKC",
+    "stat": "PA",
+    "side": "UNDER",
+    "line": 19.5,
+    "price": -118,
+    "prob": 0.723,
+    "edge": 0.181,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      19.5,
+      -118
+     ]
+    }
+   },
+   {
+    "game_id": "401909940",
+    "game": "NY @ CLE",
+    "player": "Peyton Watson",
+    "player_id": "4576087",
+    "team": "CLE",
+    "opp": "NY",
+    "stat": "3PM",
+    "side": "UNDER",
+    "line": 1.5,
+    "price": -146,
+    "prob": 0.681,
+    "edge": 0.088,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      1.5,
+      -146
+     ]
+    }
+   }
+  ],
+  "hit": 0.3712,
+  "payout": 5.45,
+  "odds": 445,
+  "ev": 1.024,
+  "type": "safe",
+  "label": "Safest",
+  "made": "2026-11-07T11:01:57.973903-05:00"
+ },
+ {
+  "legs": [
+   {
+    "game_id": "401909944",
+    "game": "SA @ POR",
+    "player": "Scoot Henderson",
+    "player_id": "4683678",
+    "team": "POR",
+    "opp": "SA",
+    "stat": "AST",
+    "side": "UNDER",
+    "line": 3.5,
+    "price": -133,
+    "prob": 0.754,
+    "edge": 0.183,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      3.5,
+      -133
+     ]
+    }
+   },
+   {
+    "game_id": "401909941",
+    "game": "WSH @ OKC",
+    "player": "AJ Dybantsa",
+    "player_id": "5142718",
+    "team": "WSH",
+    "opp": "OKC",
+    "stat": "PA",
+    "side": "UNDER",
+    "line": 19.5,
+    "price": -118,
+    "prob": 0.723,
+    "edge": 0.181,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      19.5,
+      -118
+     ]
+    }
+   },
+   {
+    "game_id": "401909940",
+    "game": "NY @ CLE",
+    "player": "James Harden",
+    "player_id": "3992",
+    "team": "CLE",
+    "opp": "NY",
+    "stat": "PRA",
+    "side": "UNDER",
+    "line": 28.5,
+    "price": -124,
+    "prob": 0.679,
+    "edge": 0.126,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      28.5,
+      -124
+     ]
+    }
+   }
+  ],
+  "hit": 0.3702,
+  "payout": 5.85,
+  "odds": 485,
+  "ev": 1.164,
+  "type": "value",
+  "label": "Best value",
+  "made": "2026-11-07T11:01:57.973903-05:00"
+ },
+ {
+  "legs": [
+   {
+    "game_id": "401909944",
+    "game": "SA @ POR",
+    "player": "Scoot Henderson",
+    "player_id": "4683678",
+    "team": "POR",
+    "opp": "SA",
+    "stat": "AST",
+    "side": "UNDER",
+    "line": 3.5,
+    "price": -133,
+    "prob": 0.754,
+    "edge": 0.183,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      3.5,
+      -133
+     ]
+    }
+   },
+   {
+    "game_id": "401909941",
+    "game": "WSH @ OKC",
+    "player": "AJ Dybantsa",
+    "player_id": "5142718",
+    "team": "WSH",
+    "opp": "OKC",
+    "stat": "PA",
+    "side": "UNDER",
+    "line": 19.5,
+    "price": -118,
+    "prob": 0.723,
+    "edge": 0.181,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      19.5,
+      -118
+     ]
+    }
+   },
+   {
+    "game_id": "401909940",
+    "game": "NY @ CLE",
+    "player": "James Harden",
+    "player_id": "3992",
+    "team": "CLE",
+    "opp": "NY",
+    "stat": "PRA",
+    "side": "UNDER",
+    "line": 28.5,
+    "price": -124,
+    "prob": 0.679,
+    "edge": 0.126,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      28.5,
+      -124
+     ]
+    }
+   },
+   {
+    "game_id": "401909942",
+    "game": "ORL @ GS",
+    "player": "Anthony Black",
+    "player_id": "4712849",
+    "team": "ORL",
+    "opp": "GS",
+    "stat": "PA",
+    "side": "UNDER",
+    "line": 20.5,
+    "price": -114,
+    "prob": 0.648,
+    "edge": 0.115,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      20.5,
+      -114
+     ]
+    }
+   },
+   {
+    "game_id": "401909943",
+    "game": "HOU @ PHX",
+    "player": "Jalen Green",
+    "player_id": "4437244",
+    "team": "PHX",
+    "opp": "HOU",
+    "stat": "3PM",
+    "side": "UNDER",
+    "line": 1.5,
+    "price": 105,
+    "prob": 0.587,
+    "edge": 0.099,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      1.5,
+      105
+     ]
+    }
+   }
+  ],
+  "hit": 0.1408,
+  "payout": 22.5,
+  "odds": 2150,
+  "ev": 2.168,
+  "type": "longshot",
+  "label": "Long shot",
+  "made": "2026-11-07T11:01:57.973903-05:00"
+ }
+]
