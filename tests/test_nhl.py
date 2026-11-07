@@ -25,7 +25,7 @@ def test_nhl():
     lg.scoreboard_json = orig
     assert len(pl["games"]) == 16 and pl["top"], "expected picks"
     stats = {p["stat"] for p in pl["all"]}
-    assert {"SOG", "PTS", "AST", "GOALS"} <= stats, stats
+    assert {"SOG", "PTS", "AST"} <= stats, stats          # anytime goal needs a real DK price (none in the fake league)
     assert not any(p["player_id"] == "101" for p in pl["all"]), "OUT player must be dropped"
     team = pl["team"]["all"]
     assert team and {p["market"] for p in team} == {"Moneyline", "Puck line", "Total"}
