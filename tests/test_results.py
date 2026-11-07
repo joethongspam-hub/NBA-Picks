@@ -22,6 +22,8 @@ def test_results():
     lg.past_scoreboard = pregame
     M.run(day, out_dir=str(t / "s"), hist_dir=str(t / "h"), http=FakeHttp(lg))
     lg.past_scoreboard = orig
+    pf = t / "h" / "picks" / f"{day}.json"                 # pretend the picks were on real lines
+    pf.write_text(json.dumps([dict(p, line_source="DraftKings") for p in json.loads(pf.read_text())]))
     calls = []
 
     class Spy(FakeHttp):

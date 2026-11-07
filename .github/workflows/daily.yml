@@ -70,7 +70,7 @@ jobs:
           # DraftKings lines come free from ESPN on every run. The Odds API (multi-book
           # consensus, costs credits) is optional: set repo variable NBA_ODDS=on to use it
           # once a day on the 3:30 PM run.
-          ODDS_API_KEY: ${{ vars.NBA_ODDS == 'on' && (github.event_name == 'workflow_dispatch' || github.event.schedule == '17 21 * * *') && secrets.ODDS_API_KEY || '' }}
+          ODDS_API_KEY: ${{ (vars.NBA_ODDS == 'all' || (vars.NBA_ODDS == 'on' && (github.event_name == 'workflow_dispatch' || github.event.schedule == '17 21 * * *'))) && secrets.ODDS_API_KEY || '' }}
           ODDS_MARKETS: ${{ vars.ODDS_MARKETS }}
         run: |
           python -m nba_props.main --out public --history history

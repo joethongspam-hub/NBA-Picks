@@ -26,7 +26,10 @@ MARKET_TO_STAT = {
 }
 # Two markets x ~8 games/night x 30 nights ~= 480 credits: fits the 500/month free tier
 # with one pull a day. Add markets if you upgrade.
-DEFAULT_MARKETS = "player_points,player_rebounds"
+DEFAULT_MARKETS = "player_points,player_rebounds,player_assists,player_threes"
+NHL_MARKET_TO_STAT = {"player_shots_on_goal": "SOG", "player_points": "PTS", "player_assists": "AST",
+                      "player_total_saves": "SAVES", "player_goals": "GOALS"}
+DEFAULT_NHL_MARKETS = "player_shots_on_goal,player_points,player_assists,player_total_saves"
 USAGE: dict = {}
 
 
@@ -40,6 +43,7 @@ class PropLine:
     open_line: float | None = None
     open_over: int | None = None
     open_under: int | None = None
+    book_prices: dict | None = None      # {"FanDuel": [line, over, under], ...}
 
     @property
     def label(self) -> str:
@@ -114,14 +118,15 @@ def fetch_props(http: Http, api_key: str, home_names: dict[str, str],
                 two = {pt: sd for pt, sd in pts.items() if "over" in sd and "under" in sd}
                 if two:
                     pt = min(two, key=lambda x: abs(american_to_prob(two[x]["over"]) - american_to_prob(two[x]["under"])))
-                    per_book.setdefault(key, []).append((pt, two[pt]["over"], two[pt]["under"]))
+                    per_book.setdefault(key, []).append((pt, two[pt]["over"], two[pt]["under"], bk.get("title") or bk.get("key")))
                 elif len(pts) == 1:                                   # one-sided (e.g. anytime TD)
                     pt, sd = next(iter(pts.items()))
-                    per_book.setdefault(key, []).append((pt, sd.get("over"), sd.get("under")))
+                    per_book.setdefault(key, []).append((pt, sd.get("over"), sd.get("under"), bk.get("title") or bk.get("key")))
         for key, rows in per_book.items():
             line = statistics.median_low([r[0] for r in rows])
             at = [r for r in rows if r[0] == line]
             overs = [r[1] for r in at if r[1] is not None]
             unders = [r[2] for r in at if r[2] is not None]
-            out[key] = PropLine(line, max(overs) if overs else None, max(unders) if unders else None, len(rows))
+            out[key] = PropLine(line, max(overs) if overs else None, max(unders) if unders else None, len(rows),
+                                book_prices={r[3]: [r[0], r[1], r[2]] for r in rows if r[3]})
     return out

@@ -80,6 +80,11 @@ jobs:
 
       - name: Build today's picks
         if: ${{ !(github.event.schedule == '39 6 * * *' || github.event.inputs.results == 'yes') }}
+        env:
+          # Optional Odds API lines (FanDuel etc.): repo variable NHL_ODDS = on (3:20 PM run) or all (every run)
+          ODDS_API_KEY: ${{ (vars.NHL_ODDS == 'all' || (vars.NHL_ODDS == 'on' && (github.event_name == 'workflow_dispatch' || github.event.schedule == '23 21 * * *'))) && secrets.ODDS_API_KEY || '' }}
+          NHL_ODDS: ${{ vars.NHL_ODDS }}
+          NHL_ODDS_MARKETS: ${{ vars.NHL_ODDS_MARKETS }}
         run: python -m nhl_props.main
 
       - name: Save pick history

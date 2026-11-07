@@ -82,12 +82,8 @@ def grade_history(hist: Path, players_by_id: dict, today: datetime) -> dict:
             res["graded"].append({**pk, "week": f.stem, "date": f.stem, "actual": a, "result": r})
             done.add(key)
     path.write_text(json.dumps(res, indent=1))
-    out = {k: _rec([r for r in res["graded"] if f(r)]) for k, f in
-           (("all", lambda r: True), ("A", lambda r: r["grade"] == "A"), ("B", lambda r: r["grade"] == "B"),
-            ("C", lambda r: r["grade"] == "C"))}
-    out["recent"] = sorted(res["graded"], key=lambda r: r["week"], reverse=True)[:40]
-    out["report"] = model_report(res["graded"], "opps")
-    return out
+    from nba_props.main import record_summary
+    return record_summary(res["graded"], "opps")
 
 
 def results_only(out_dir: str = "public/nfl", cache_dir: str = ".cache", hist_dir: str = "history/nfl",
@@ -176,7 +172,7 @@ def run(week: int | None = None, out_dir: str = "public/nfl", cache_dir: str = "
         saved = hist / "lines" / f"{key}.json"
         if saved.exists():
             lines = {(r["name"], r["stat"]): PropLine(r["line"], r["over"], r["under"], r["books"], r.get("source", ""),
-                                 r.get("open_line"), r.get("open_over"), r.get("open_under"))
+                                 r.get("open_line"), r.get("open_over"), r.get("open_under"), r.get("books"))
                      for r in json.loads(saved.read_text())}
 
     profiles = {p.id: pr for p in players if (pr := build_profile(p, season))}
@@ -204,7 +200,7 @@ def run(week: int | None = None, out_dir: str = "public/nfl", cache_dir: str = "
     locked = [dict(p, locked=True) for p in prior.get("picks", []) if p["game_id"] in started]
     if not backtest and (hist / "lines" / f"{key}.json").exists():
         lines = {(r["name"], r["stat"]): PropLine(r["line"], r["over"], r["under"], r["books"], r.get("source", ""),
-                                 r.get("open_line"), r.get("open_over"), r.get("open_under"))
+                                 r.get("open_line"), r.get("open_over"), r.get("open_under"), r.get("books"))
                  for r in json.loads((hist / "lines" / f"{key}.json").read_text())}
     if upcoming and not backtest:
         try:      # free DraftKings lines via ESPN
@@ -236,7 +232,7 @@ def run(week: int | None = None, out_dir: str = "public/nfl", cache_dir: str = "
         (hist / "lines" / f"{key}.json").write_text(json.dumps(
             [{"name": k[0], "stat": k[1], "line": v.line, "over": v.over_price, "under": v.under_price,
               "books": v.books, "source": v.source,
-              "open_line": v.open_line, "open_over": v.open_over, "open_under": v.open_under} for k, v in lines.items()]))
+              "open_line": v.open_line, "open_over": v.open_over, "open_under": v.open_under, "books": v.book_prices} for k, v in lines.items()]))
 
     by_team = {}
     for p in players:

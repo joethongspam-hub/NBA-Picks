@@ -160,6 +160,23 @@ $("#sub").innerHTML = D.backtest
   : `${D.date} · ${D.games.length} game${D.games.length===1?"":"s"} · updated ${D.generated}`;
 if (D.backtest) document.querySelector('nav button[data-v=record]').textContent = "Results";
 
+// line shopping: best = most favorable line for the side, then best price
+function bestBook(p) {
+  const b = Object.entries(p.books || {}); if (!b.length) return null;
+  const over = p.side === "OVER";
+  b.sort((x, y) => (over ? x[1][0] - y[1][0] : y[1][0] - x[1][0]) || (impl(x[1][1]) - impl(y[1][1])));
+  return b[0];
+}
+function shopHTML(p) {
+  const b = Object.entries(p.books || {}); if (!b.length) return "";
+  const best = bestBook(p), s = p.side === "OVER" ? "O" : "U";
+  const order = ["FanDuel", "DraftKings"];
+  const rank = k => { const i = order.indexOf(k); return i < 0 ? 9 : i; };
+  b.sort((x, y) => (rank(x[0]) - rank(y[0])) || x[0].localeCompare(y[0]));
+  return `<div class="small" style="margin:4px 0 2px"><b>Shop:</b> ${b.map(([k, v]) =>
+    `<span style="${k === best[0] ? "color:var(--over);font-weight:600" : ""}">${esc(k)} ${s} ${v[0]} ${fmtPrice(v[1])}${k === best[0] && b.length > 1 ? " ✓" : ""}</span>`).join(" · ")}</div>`;
+}
+
 function pickHTML(p, showGame) {
   const lo = Math.min(p.line, p.projection) * 0.6, hi = Math.max(p.line, p.projection) * 1.25 + 0.5;
   const pos = v => ((v - lo) / (hi - lo) * 100).toFixed(1);
@@ -171,6 +188,7 @@ function pickHTML(p, showGame) {
         <div class="meta">${esc(p.team)} vs ${esc(p.opp)}${showGame ? "" : ""} · ${p.stat} · L10 ${p.hit_l10}${p.line_source === "est." && !D.backtest ? ` · <span style="color:var(--gold)">est. line</span>` : ""}${p.status!=="ACTIVE"?` · <span style="color:var(--gold)">${p.status}</span>`:""}${p.locked?` · <span title="locked at tip-off">locked</span>`:""}</div></div>
       <div class="bet"><div class="side ${p.side}">${p.side==="OVER"?"O":"U"} ${p.line}</div>
         <div class="small">proj ${p.projection} · ${pct(p.prob)}</div>
+        ${(() => { const bb = bestBook(p); return bb && Object.keys(p.books).length > 1 ? `<div class="small" style="color:var(--over)">best: ${esc(bb[0])} ${fmtPrice(bb[1][1])}</div>` : ""; })()}
         ${p.result ? `<div class="res ${p.result}">${p.actual!=null?"actual "+p.actual+" · ":""}${p.result}</div>` : ""}</div>
     </div>
     <div class="bar"><b style="left:${a}%;width:${b-a}%;background:var(--${p.side==="OVER"?"over":"under"});opacity:.55"></b><i style="left:${pos(p.line)}%" title="line"></i></div>
@@ -185,7 +203,8 @@ function pickHTML(p, showGame) {
         <div><span>Hit L5/L10</span><strong>${p.hit_l5} · ${p.hit_l10}</strong></div>
         <div><span>${LBL.min||"Proj min"}</span><strong>${p.minutes}</strong></div>
       </div>
-      <div class="small">Line source: ${esc(p.line_source)}${p.price!=null?` · best price ${fmtPrice(p.price)}`:""} · season hit ${p.hit_season} · vs ${esc(p.opp)} ${p.vs_opp}</div>
+      ${shopHTML(p)}
+      <div class="small">Line source: ${esc(p.line_source)}${p.price!=null && !Object.keys(p.books || {}).length ? ` · price ${fmtPrice(p.price)}` : ""} · season hit ${p.hit_season} · vs ${esc(p.opp)} ${p.vs_opp}</div>
       <ul class="why">${p.reasons.map(r=>`<li>${esc(r)}</li>`).join("")}</ul>
     </div>
   </div>`;
@@ -304,7 +323,9 @@ function renderRecord() {
     return;
   }
   const recent = r.recent || [];
+  const est = r.est || {w: 0, l: 0};
   $("#recordBox").innerHTML = `<div class="rec">${cell("all","All")}${cell("A","Grade A")}${cell("B","Grade B")}${cell("C","Grade C")}</div>
+    <div class="note" style="margin-top:0">Counts only picks on real sportsbook lines.${est.w + est.l ? ` Estimated-line picks (${est.w}-${est.l}) aren't counted.` : ""}</div>
     ${recent.length ? `<div class="card scroll"><table><tr><th>Date</th><th>Pick</th><th>Line</th><th>Actual</th><th>Result</th></tr>
     ${recent.slice(0, 15).map(x => `<tr><td>${x.date.slice(5)} <span class="small">${esc(x.player)}</span></td><td class="${x.side}">${x.side[0]} ${x.stat}</td><td>${x.line}</td><td>${x.actual ?? "–"}</td><td class="${x.result}">${x.result}</td></tr>`).join("")}
     </table></div>` : `<div class="empty">Results appear here after the first day's games are graded.</div>`}${reportHTML(r.report)}${links}`;

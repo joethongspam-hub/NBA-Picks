@@ -78,6 +78,15 @@ and saves each day's picks in `history/` so the **Track record** tab can grade t
 * **NHL long shots:** NHL picks priced +150 or longer aren't graded (live record 9–22).
 * **NBA injury boost:** the share of injured teammates' production handed to others was halved again (live 19–20).
 
+## Line shopping
+
+When Odds API lines are pulled, every real-line pick shows each book's line and price for that side
+("Shop: FanDuel O 16.5 -110 ✓ · DraftKings O 17.5 -120 · ..."), with the best one marked. Repo variables:
+`NBA_ODDS` / `NHL_ODDS` = `on` (one pull on the afternoon run) or `all` (every pregame run); NFL uses `NFL_ODDS`.
+The free 500 credits cover the NFL only; NBA and NHL every day need the $30 / 20,000-credit plan.
+
+**Track record counts real-line picks only.** Estimated-line picks are still graded, but shown separately and not counted.
+
 ## Model report
 
 The Track record tab includes a **model report**, rebuilt every night from graded live picks:

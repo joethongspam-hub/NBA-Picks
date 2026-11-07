@@ -22,7 +22,7 @@ from dataclasses import dataclass, field
 
 from nba_props.espn import Game, Injury
 from nba_props.model import (DEMOTE, LAST_GAME_NOTE, VIG_PROB, Pick, _nb_cdf, _phi, _short, _to_american,
-                             against_last_game, est_line, market_disagrees)
+                             against_last_game, est_line, market_disagrees, shop)
 from nba_props.odds import PropLine, american_to_prob, norm_name
 
 from .espn_nfl import STAT_FUNCS, NflLine, NflPlayer
@@ -563,5 +563,6 @@ def evaluate(proj: Projection, lines: dict[tuple[str, str], PropLine], season: i
             status=proj.status, season_avg=round(pr.season_avg[s], 1), l10_avg=round(pr.l4_avg[s], 1),
             reasons=reasons, last_game=p.logs[0].get(s) if p.logs else None,
             open_line=getattr(real, "open_line", None) if real else None,
-            open_price=(getattr(real, "open_over", None) if side == "OVER" else getattr(real, "open_under", None)) if real else None))
+            open_price=(getattr(real, "open_over", None) if side == "OVER" else getattr(real, "open_under", None)) if real else None,
+            books=shop(real, side)))
     return picks

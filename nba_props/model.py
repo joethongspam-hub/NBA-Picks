@@ -49,6 +49,18 @@ VIG_PROB = 110 / 210                                            # -110 implied
 MODEL_WEIGHT = 0.6                                              # model vs market blend
 
 
+def shop(real, side: str) -> dict | None:
+    """Each book's line and price for the chosen side (DraftKings-only lines give one entry)."""
+    if not real:
+        return None
+    bp = getattr(real, "book_prices", None) or ({"DraftKings": [real.line, real.over_price, real.under_price]}
+                                                 if getattr(real, "source", "") == "DraftKings" else None)
+    if not bp:
+        return None
+    i = 1 if side == "OVER" else 2
+    return {b: [v[0], v[i]] for b, v in bp.items() if v[i] is not None}
+
+
 def against_last_game(logs, stat_get, side: str, line: float) -> bool:
     """Pick goes against the player's most recent game (under after he went over, or vice versa)."""
     if not logs:
@@ -503,6 +515,7 @@ class Pick:
     last_game: float | None = None       # player's stat in his most recent game
     open_line: float | None = None       # DraftKings opening line (for market-movement tracking)
     open_price: int | None = None
+    books: dict | None = None            # line shopping: {"FanDuel": [line, price], ...} for the pick's side
 
     def to_dict(self):
         return self.__dict__.copy()
@@ -594,7 +607,8 @@ def evaluate(proj: Projection, stats: list[str], lines: dict[tuple[str, str], Pr
             season_avg=round(prof.season_avg[s], 1), l10_avg=round(prof.l10_avg[s], 1), reasons=reasons,
             last_game=p.logs[0].get(s) if p.logs else None,
             open_line=getattr(real, "open_line", None) if real else None,
-            open_price=(getattr(real, "open_over", None) if side == "OVER" else getattr(real, "open_under", None)) if real else None))
+            open_price=(getattr(real, "open_over", None) if side == "OVER" else getattr(real, "open_under", None)) if real else None,
+            books=shop(real, side)))
     return picks
 
 

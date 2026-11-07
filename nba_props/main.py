@@ -143,9 +143,32 @@ def backtest_range(start: str, end: str, **kw) -> dict:
     return summary
 
 
+def counts(r: dict) -> bool:
+    """Only picks on real sportsbook lines count toward the track record."""
+    return r.get("line_source") not in ("est.", None)
+
+
+def record_summary(graded: list[dict], unit: str = "min") -> dict:
+    """Track record from picks on real lines; estimated-line picks reported separately, not counted."""
+    real = [r for r in graded if counts(r)]
+    est = [r for r in graded if not counts(r)]
+
+    def wl(rs):
+        rs = [r for r in rs if r["result"] in ("WIN", "LOSS")]
+        w = sum(r["result"] == "WIN" for r in rs)
+        return {"w": w, "l": len(rs) - w, "pct": round(w / len(rs), 3) if rs else None}
+    out = {k: wl([r for r in real if f(r)]) for k, f in
+           (("all", lambda r: True), ("A", lambda r: r["grade"] == "A"), ("B", lambda r: r["grade"] == "B"),
+            ("C", lambda r: r["grade"] == "C"))}
+    out["est"] = wl(est)
+    out["recent"] = sorted(real, key=lambda r: str(r.get("date", "")), reverse=True)[:40]
+    out["report"] = model_report(real, unit)
+    return out
+
+
 def results_message(sport: str, new: list[dict], record: dict) -> dict | None:
-    """Notification text for picks graded in this run."""
-    rows = [r for r in new if r.get("result") in ("WIN", "LOSS", "PUSH")]
+    """Notification text for picks graded in this run (real lines only)."""
+    rows = [r for r in new if r.get("result") in ("WIN", "LOSS", "PUSH") and counts(r)]
     if not rows:
         return None
 
@@ -219,16 +242,7 @@ def results_only(out_dir: str = "public", cache_dir: str = ".cache", hist_dir: s
 
 
 def summarize(results: dict) -> dict:
-    out = {}
-    for label, filt in (("all", lambda r: True), ("A", lambda r: r["grade"] == "A"),
-                        ("B", lambda r: r["grade"] == "B"), ("C", lambda r: r["grade"] == "C")):
-        rs = [r for r in results["graded"] if filt(r) and r["result"] in ("WIN", "LOSS")]
-        w = sum(r["result"] == "WIN" for r in rs)
-        out[label] = {"w": w, "l": len(rs) - w, "pct": round(w / len(rs), 3) if rs else None}
-    recent = sorted(results["graded"], key=lambda r: r["date"], reverse=True)[:40]
-    out["recent"] = recent
-    out["report"] = model_report(results["graded"], "min")
-    return out
+    return record_summary(results["graded"], "min")
 
 
 def run(date: str | None = None, out_dir: str = "site", cache_dir: str = ".cache",
@@ -291,7 +305,7 @@ def run(date: str | None = None, out_dir: str = "site", cache_dir: str = ".cache
         saved = hist / "lines" / f"{day_s}.json"     # real lines saved on the night, if any
         if saved.exists():
             lines = {(r["name"], r["stat"]): PropLine(r["line"], r["over"], r["under"], r["books"], r.get("source", ""),
-                                 r.get("open_line"), r.get("open_over"), r.get("open_under"))
+                                 r.get("open_line"), r.get("open_over"), r.get("open_under"), r.get("books"))
                      for r in json.loads(saved.read_text())}
 
     log("[4/6] Building profiles, defense-vs-position, projections")
@@ -314,7 +328,7 @@ def run(date: str | None = None, out_dir: str = "site", cache_dir: str = ".cache
         lines = {}
         if lines_file.exists():          # lines saved by an earlier run today (pregame)
             lines = {(r["name"], r["stat"]): PropLine(r["line"], r["over"], r["under"], r["books"], r.get("source", ""),
-                                 r.get("open_line"), r.get("open_over"), r.get("open_under"))
+                                 r.get("open_line"), r.get("open_over"), r.get("open_under"), r.get("books"))
                      for r in json.loads(lines_file.read_text())}
     if upcoming and not backtest:
         try:      # free DraftKings lines via ESPN
@@ -340,7 +354,7 @@ def run(date: str | None = None, out_dir: str = "site", cache_dir: str = ".cache
         lines_file.write_text(json.dumps(
             [{"name": k[0], "stat": k[1], "line": v.line, "over": v.over_price, "under": v.under_price,
               "books": v.books, "source": v.source,
-              "open_line": v.open_line, "open_over": v.open_over, "open_under": v.open_under} for k, v in lines.items()]))
+              "open_line": v.open_line, "open_over": v.open_over, "open_under": v.open_under, "books": v.book_prices} for k, v in lines.items()]))
 
     by_team = {}
     for p in players:

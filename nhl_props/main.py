@@ -20,7 +20,7 @@ from nba_props.http import Http
 from nba_props.main import annotate_results, game_started, results_message
 from nba_props.model import best_picks
 from nba_props.model_report import model_report
-from nba_props.odds import PropLine
+from nba_props.odds import DEFAULT_NHL_MARKETS, NHL_MARKET_TO_STAT, USAGE, PropLine, fetch_props, norm_name
 from nba_props.report import render
 
 from .espn_nhl import EspnNhl, NhlPlayer, season_for
@@ -72,16 +72,13 @@ def grade_history(hist: Path, players_by_id: dict, today: str) -> dict:
             res["graded"].append({**pk, "date": day, "actual": a, "actual_min": g.s.get("toi"), "result": r})
             done.add(key)
     path.write_text(json.dumps(res, indent=1))
-    out = {k: _rec([r for r in res["graded"] if f(r)]) for k, f in
-           (("all", lambda r: True), ("A", lambda r: r["grade"] == "A"), ("B", lambda r: r["grade"] == "B"),
-            ("C", lambda r: r["grade"] == "C"))}
-    out["recent"] = sorted(res["graded"], key=lambda r: r["date"], reverse=True)[:40]
-    out["report"] = model_report(res["graded"], "min")
-    return out
+    from nba_props.main import record_summary
+    return record_summary(res["graded"], "min")
 
 
 def run(date: str | None = None, out_dir: str = "public/nhl", cache_dir: str = ".cache",
-        hist_dir: str = "history/nhl", backtest: bool = False, http: Http | None = None):
+        hist_dir: str = "history/nhl", backtest: bool = False, http: Http | None = None,
+        odds_key: str | None = None, markets: str = DEFAULT_NHL_MARKETS):
     now = datetime.now(ET)
     day = datetime.fromisoformat(date).replace(tzinfo=ET) if date else now
     day_s = day.strftime("%Y-%m-%d")
@@ -118,7 +115,7 @@ def run(date: str | None = None, out_dir: str = "public/nhl", cache_dir: str = "
         saved = hist / "lines" / f"{day_s}.json"
         if saved.exists():
             lines = {(r["name"], r["stat"]): PropLine(r["line"], r["over"], r["under"], r["books"], r.get("source", ""),
-                                                      r.get("open_line"), r.get("open_over"), r.get("open_under"))
+                                                      r.get("open_line"), r.get("open_over"), r.get("open_under"), r.get("books"))
                      for r in json.loads(saved.read_text())}
 
     profiles = {p.id: pr for p in players if (pr := build_profile(p, season))}
@@ -146,7 +143,7 @@ def run(date: str | None = None, out_dir: str = "public/nhl", cache_dir: str = "
     lines_file = hist / "lines" / f"{day_s}.json"
     if not backtest and lines_file.exists():
         lines = {(r["name"], r["stat"]): PropLine(r["line"], r["over"], r["under"], r["books"], r.get("source", ""),
-                                                  r.get("open_line"), r.get("open_over"), r.get("open_under"))
+                                                  r.get("open_line"), r.get("open_over"), r.get("open_under"), r.get("books"))
                  for r in json.loads(lines_file.read_text())}
     if upcoming and not backtest:
         try:
@@ -157,11 +154,18 @@ def run(date: str | None = None, out_dir: str = "public/nhl", cache_dir: str = "
             log(f"   DraftKings lines via ESPN: {len(dk)}")
         except Exception as e:
             log(f"   ESPN prop lines failed: {e}")
+        if odds_key:                     # optional multi-book lines (FanDuel, DraftKings, ...) for line shopping
+            try:
+                lines.update(fetch_props(http, odds_key, {norm_name(g.home.name.split()[-1]): g.id for g in upcoming},
+                                         markets, sport="icehockey_nhl", market_map=NHL_MARKET_TO_STAT))
+                (hist / "odds_usage.json").write_text(json.dumps({"date": day_s, **USAGE}, indent=1))
+            except Exception as e:
+                log(f"   odds fetch failed: {e}")
         if lines:
             lines_file.parent.mkdir(parents=True, exist_ok=True)
             lines_file.write_text(json.dumps([{"name": k[0], "stat": k[1], "line": v.line, "over": v.over_price,
                                                "under": v.under_price, "books": v.books, "source": v.source,
-                                               "open_line": v.open_line, "open_over": v.open_over, "open_under": v.open_under}
+                                               "open_line": v.open_line, "open_over": v.open_over, "open_under": v.open_under, "books": v.book_prices}
                                               for k, v in lines.items()]))
 
     # team odds (also drives implied team goals for the player model)
@@ -400,7 +404,10 @@ def cli():
     if a.backtest_range:
         print(json.dumps(backtest_range(*a.backtest_range, out_dir=a.out, hist_dir=a.history, cache_dir=a.cache), indent=1))
         return
-    run(a.date, a.out, a.cache, a.history)
+    import os
+    use = os.environ.get("NHL_ODDS", "").lower() in ("1", "on", "all", "true", "yes")
+    run(a.date, a.out, a.cache, a.history, odds_key=os.environ.get("ODDS_API_KEY") if use else None,
+        markets=os.environ.get("NHL_ODDS_MARKETS") or DEFAULT_NHL_MARKETS)
 
 
 if __name__ == "__main__":
