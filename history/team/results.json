@@ -1161,6 +1161,58 @@
    "date": "2026-11-06",
    "final": "SAC 109 \u2013 SA 124",
    "result": "WIN"
+  },
+  {
+   "game_id": "401909938",
+   "game": "DEN @ IND",
+   "market": "Moneyline",
+   "pick": "IND ML",
+   "side": "home",
+   "line": null,
+   "price": 261,
+   "prob": 0.325,
+   "model_prob": 0.433,
+   "edge": 0.048,
+   "grade": "B",
+   "proj": "IND 121.9 \u2013 DEN 124.0",
+   "mu_h": 121.87,
+   "mu_a": 123.96,
+   "home": "IND",
+   "away": "DEN",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
+   ],
+   "score": 4.76,
+   "locked": true,
+   "date": "2026-11-07",
+   "final": "IND 102 \u2013 DEN 114",
+   "result": "LOSS"
+  },
+  {
+   "game_id": "401909938",
+   "game": "DEN @ IND",
+   "market": "Spread",
+   "pick": "IND +7.5",
+   "side": "home",
+   "line": 7.5,
+   "price": -102,
+   "prob": 0.547,
+   "model_prob": 0.667,
+   "edge": 0.042,
+   "grade": "B",
+   "proj": "IND 121.9 \u2013 DEN 124.0",
+   "mu_h": 121.87,
+   "mu_a": 123.96,
+   "home": "IND",
+   "away": "DEN",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
+   ],
+   "score": 4.23,
+   "locked": true,
+   "date": "2026-11-07",
+   "final": "IND 102 \u2013 DEN 114",
+   "result": "LOSS"
   }
  ]
 }

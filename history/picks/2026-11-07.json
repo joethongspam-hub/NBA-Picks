@@ -1,5 +1,475 @@
 [
  {
+  "game_id": "401909944",
+  "game": "SA @ POR",
+  "player": "Keldon Johnson",
+  "player_id": "4395723",
+  "team": "SA",
+  "opp": "POR",
+  "stat": "REB",
+  "side": "OVER",
+  "line": 4.5,
+  "line_source": "DraftKings",
+  "price": 117,
+  "projection": 5.3,
+  "prob": 0.554,
+  "edge": 0.093,
+  "score": 8.93,
+  "grade": "A",
+  "hit_l5": "5/5",
+  "hit_l10": "8/10",
+  "hit_season": "7/9",
+  "vs_opp": "3/5",
+  "minutes": 21.9,
+  "status": "ACTIVE",
+  "season_avg": 5.2,
+  "l10_avg": 5.5,
+  "reasons": [
+   "Back-to-back",
+   "Over hit 8/10 of last 10 at 4.5",
+   "Last game: 6 (over the line)",
+   "Last 5 vs POR: 5, 1, 5, 4, 7"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 6.0,
+  "open_line": 4.5,
+  "open_price": -109,
+  "books": {
+   "DraftKings": [
+    4.5,
+    117
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 2.301
+  }
+ },
+ {
+  "game_id": "401909944",
+  "game": "SA @ POR",
+  "player": "Deni Avdija",
+  "player_id": "4683021",
+  "team": "POR",
+  "opp": "SA",
+  "stat": "PTS",
+  "side": "UNDER",
+  "line": 22.5,
+  "line_source": "DraftKings",
+  "price": -105,
+  "projection": 20.2,
+  "prob": 0.596,
+  "edge": 0.084,
+  "score": 8.32,
+  "grade": "A",
+  "hit_l5": "2/5",
+  "hit_l10": "4/10",
+  "hit_season": "3/8",
+  "vs_opp": "3/5",
+  "minutes": 34.4,
+  "status": "ACTIVE",
+  "season_avg": 23.5,
+  "l10_avg": 23.4,
+  "reasons": [
+   "Back-to-back",
+   "Under hit 4/10 of last 10 at 22.5",
+   "Last game: 22 (under the line)",
+   "Last 5 vs SA: 22, 26, 19, 14, 30"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 22.0,
+  "open_line": 22.5,
+  "open_price": -105,
+  "books": {
+   "DraftKings": [
+    22.5,
+    -105
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 5.225
+  }
+ },
+ {
+  "game_id": "401909944",
+  "game": "SA @ POR",
+  "player": "Dylan Harper",
+  "player_id": "5037871",
+  "team": "SA",
+  "opp": "POR",
+  "stat": "RA",
+  "side": "UNDER",
+  "line": 9.5,
+  "line_source": "DraftKings",
+  "price": 104,
+  "projection": 8.3,
+  "prob": 0.566,
+  "edge": 0.076,
+  "score": 7.57,
+  "grade": "B",
+  "hit_l5": "2/5",
+  "hit_l10": "5/10",
+  "hit_season": "4/9",
+  "vs_opp": "4/5",
+  "minutes": 28.1,
+  "status": "ACTIVE",
+  "season_avg": 8.5,
+  "l10_avg": 9.6,
+  "reasons": [
+   "Implied team total 117.0 (high vs slate avg 112.6)",
+   "Back-to-back",
+   "Under hit 5/10 of last 10 at 9.5",
+   "Last game: 5 (under the line)",
+   "Last 5 vs POR: 4, 3, 13, 2, 6"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 5.0,
+  "open_line": 10.5,
+  "open_price": -123,
+  "books": {
+   "DraftKings": [
+    9.5,
+    104
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 3.492
+  }
+ },
+ {
+  "game_id": "401909944",
+  "game": "SA @ POR",
+  "player": "Scoot Henderson",
+  "player_id": "4683678",
+  "team": "POR",
+  "opp": "SA",
+  "stat": "AST",
+  "side": "UNDER",
+  "line": 2.5,
+  "line_source": "DraftKings",
+  "price": -108,
+  "projection": 2.0,
+  "prob": 0.582,
+  "edge": 0.062,
+  "score": 5.75,
+  "grade": "B",
+  "hit_l5": "5/5",
+  "hit_l10": "9/10",
+  "hit_season": "7/8",
+  "vs_opp": "4/5",
+  "minutes": 25.3,
+  "status": "ACTIVE",
+  "season_avg": 2.4,
+  "l10_avg": 1.2,
+  "reasons": [
+   "Back-to-back",
+   "Under hit 9/10 of last 10 at 2.5",
+   "Last game: 0 (under the line)",
+   "Last 5 vs SA: 0, 2, 1, 0, 3"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 0.0,
+  "open_line": 3.5,
+  "open_price": -157,
+  "books": {
+   "DraftKings": [
+    2.5,
+    -108
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 1.412
+  }
+ },
+ {
+  "game_id": "401909944",
+  "game": "SA @ POR",
+  "player": "Toumani Camara",
+  "player_id": "4431736",
+  "team": "POR",
+  "opp": "SA",
+  "stat": "PA",
+  "side": "OVER",
+  "line": 12.5,
+  "line_source": "DraftKings",
+  "price": -107,
+  "projection": 14.7,
+  "prob": 0.566,
+  "edge": 0.049,
+  "score": 4.87,
+  "grade": "C",
+  "hit_l5": "4/5",
+  "hit_l10": "7/10",
+  "hit_season": "7/8",
+  "vs_opp": "0/5",
+  "minutes": 31.1,
+  "status": "ACTIVE",
+  "season_avg": 15.4,
+  "l10_avg": 14.2,
+  "reasons": [
+   "Krejci, Morant, Williams out: +0.8 points (with/without split)",
+   "Back-to-back",
+   "Over hit 7/10 of last 10 at 12.5",
+   "Last game: 19 (over the line)",
+   "Last 5 vs SA: 9, 9, 3, 11, 9"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 19.0,
+  "open_line": 13.5,
+  "open_price": -105,
+  "books": {
+   "DraftKings": [
+    12.5,
+    -107
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 7.352
+  }
+ },
+ {
+  "game_id": "401909944",
+  "game": "SA @ POR",
+  "player": "Sidy Cissoko",
+  "player_id": "5081727",
+  "team": "POR",
+  "opp": "SA",
+  "stat": "REB",
+  "side": "OVER",
+  "line": 2.5,
+  "line_source": "DraftKings",
+  "price": -131,
+  "projection": 3.8,
+  "prob": 0.65,
+  "edge": 0.083,
+  "score": 4.82,
+  "grade": "B",
+  "hit_l5": "4/5",
+  "hit_l10": "7/10",
+  "hit_season": "6/8",
+  "vs_opp": "1/5",
+  "minutes": 21.4,
+  "status": "ACTIVE",
+  "season_avg": 2.9,
+  "l10_avg": 3.5,
+  "reasons": [
+   "Goes against his last game: grade lowered one level (live record 42% on these)",
+   "Krejci, Morant, Williams out: +0.7 rebounds (with/without split)",
+   "Back-to-back",
+   "Over hit 7/10 of last 10 at 2.5",
+   "Last game: 2 (under the line)",
+   "Last 5 vs SA: 4, 0, 0, 1, 0"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 2.0,
+  "open_line": 2.5,
+  "open_price": -127,
+  "books": {
+   "DraftKings": [
+    2.5,
+    -131
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 2.106
+  }
+ },
+ {
+  "game_id": "401909944",
+  "game": "SA @ POR",
+  "player": "Jrue Holiday",
+  "player_id": "3995",
+  "team": "POR",
+  "opp": "SA",
+  "stat": "STL",
+  "side": "UNDER",
+  "line": 0.5,
+  "line_source": "est.",
+  "price": 142,
+  "projection": 0.7,
+  "prob": 0.463,
+  "edge": 0.05,
+  "score": 4.58,
+  "grade": "C",
+  "hit_l5": "1/5",
+  "hit_l10": "2/10",
+  "hit_season": "1/8",
+  "vs_opp": "1/5",
+  "minutes": 29.3,
+  "status": "ACTIVE",
+  "season_avg": 1.0,
+  "l10_avg": 0.9,
+  "reasons": [
+   "Back-to-back",
+   "Under hit 2/10 of last 10 at 0.5",
+   "Last game: 0 (under the line)",
+   "Last 5 vs SA: 0, 1, 4, 1, 1"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 0.0,
+  "open_line": null,
+  "open_price": null,
+  "books": null,
+  "dist": {
+   "k": "count",
+   "var": 0.69
+  }
+ },
+ {
+  "game_id": "401909944",
+  "game": "SA @ POR",
+  "player": "Stephon Castle",
+  "player_id": "4845367",
+  "team": "SA",
+  "opp": "POR",
+  "stat": "RA",
+  "side": "UNDER",
+  "line": 11.5,
+  "line_source": "DraftKings",
+  "price": -126,
+  "projection": 10.2,
+  "prob": 0.604,
+  "edge": 0.047,
+  "score": 4.53,
+  "grade": "C",
+  "hit_l5": "3/5",
+  "hit_l10": "6/10",
+  "hit_season": "5/9",
+  "vs_opp": "3/5",
+  "minutes": 28.2,
+  "status": "ACTIVE",
+  "season_avg": 11.6,
+  "l10_avg": 10.6,
+  "reasons": [
+   "Implied team total 117.0 (high vs slate avg 112.6)",
+   "Back-to-back",
+   "Under hit 6/10 of last 10 at 11.5",
+   "Last game: 10 (under the line)",
+   "Last 5 vs POR: 8, 9, 7, 12, 14"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 10.0,
+  "open_line": 11.5,
+  "open_price": -119,
+  "books": {
+   "DraftKings": [
+    11.5,
+    -126
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 3.193
+  }
+ },
+ {
+  "game_id": "401909944",
+  "game": "SA @ POR",
+  "player": "Donovan Clingan",
+  "player_id": "5105565",
+  "team": "POR",
+  "opp": "SA",
+  "stat": "PTS",
+  "side": "OVER",
+  "line": 10.5,
+  "line_source": "DraftKings",
+  "price": -121,
+  "projection": 12.8,
+  "prob": 0.588,
+  "edge": 0.041,
+  "score": 3.56,
+  "grade": "C",
+  "hit_l5": "4/5",
+  "hit_l10": "5/10",
+  "hit_season": "5/8",
+  "vs_opp": "0/5",
+  "minutes": 27.7,
+  "status": "ACTIVE",
+  "season_avg": 12.1,
+  "l10_avg": 11.6,
+  "reasons": [
+   "Krejci, Morant, Williams out: +1.7 points (with/without split)",
+   "Back-to-back",
+   "Over hit 5/10 of last 10 at 10.5",
+   "Last game: 17 (over the line)",
+   "Last 5 vs SA: 10, 5, 7, 9, 4"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 17.0,
+  "open_line": 10.5,
+  "open_price": -125,
+  "books": {
+   "DraftKings": [
+    10.5,
+    -121
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 6.769
+  }
+ },
+ {
+  "game_id": "401909944",
+  "game": "SA @ POR",
+  "player": "Damian Lillard",
+  "player_id": "6606",
+  "team": "POR",
+  "opp": "SA",
+  "stat": "PRA",
+  "side": "UNDER",
+  "line": 28.5,
+  "line_source": "DraftKings",
+  "price": -124,
+  "projection": 25.6,
+  "prob": 0.618,
+  "edge": 0.065,
+  "score": 3.44,
+  "grade": "B",
+  "hit_l5": "2/5",
+  "hit_l10": "3/8",
+  "hit_season": "3/8",
+  "vs_opp": "0/0",
+  "minutes": 31.8,
+  "status": "ACTIVE",
+  "season_avg": 28.1,
+  "l10_avg": 28.1,
+  "reasons": [
+   "Back-to-back",
+   "Under hit 3/8 of last 8 at 28.5",
+   "Last game: 26 (under the line)"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 26.0,
+  "open_line": 28.5,
+  "open_price": -108,
+  "books": {
+   "DraftKings": [
+    28.5,
+    -124
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 6.059
+  }
+ },
+ {
   "game_id": "401909939",
   "game": "BKN @ ATL",
   "player": "Jalen Johnson",
@@ -42,7 +512,8 @@
     37.5,
     -121
    ]
-  }
+  },
+  "locked": true
  },
  {
   "game_id": "401909939",
@@ -87,7 +558,8 @@
     8.5,
     -102
    ]
-  }
+  },
+  "locked": true
  },
  {
   "game_id": "401909943",
@@ -130,50 +602,8 @@
     1.5,
     105
    ]
-  }
- },
- {
-  "game_id": "401909944",
-  "game": "SA @ POR",
-  "player": "Keldon Johnson",
-  "player_id": "4395723",
-  "team": "SA",
-  "opp": "POR",
-  "stat": "REB",
-  "side": "OVER",
-  "line": 4.5,
-  "line_source": "DraftKings",
-  "price": 115,
-  "projection": 5.3,
-  "prob": 0.556,
-  "edge": 0.09,
-  "score": 8.68,
-  "grade": "A",
-  "hit_l5": "5/5",
-  "hit_l10": "8/10",
-  "hit_season": "7/9",
-  "vs_opp": "3/5",
-  "minutes": 21.9,
-  "status": "ACTIVE",
-  "season_avg": 5.2,
-  "l10_avg": 5.5,
-  "reasons": [
-   "Back-to-back",
-   "Over hit 8/10 of last 10 at 4.5",
-   "Last game: 6 (over the line)",
-   "Last 5 vs POR: 5, 1, 5, 4, 7"
-  ],
-  "actual": null,
-  "result": null,
-  "last_game": 6.0,
-  "open_line": 4.5,
-  "open_price": -109,
-  "books": {
-   "DraftKings": [
-    4.5,
-    115
-   ]
-  }
+  },
+  "locked": true
  },
  {
   "game_id": "401909939",
@@ -216,7 +646,8 @@
     2.5,
     -104
    ]
-  }
+  },
+  "locked": true
  },
  {
   "game_id": "401909939",
@@ -254,7 +685,8 @@
   "last_game": 8.0,
   "open_line": null,
   "open_price": null,
-  "books": null
+  "books": null,
+  "locked": true
  },
  {
   "game_id": "401909943",
@@ -297,7 +729,8 @@
     8.5,
     -101
    ]
-  }
+  },
+  "locked": true
  },
  {
   "game_id": "401909940",
@@ -340,51 +773,8 @@
     9.5,
     -101
    ]
-  }
- },
- {
-  "game_id": "401909944",
-  "game": "SA @ POR",
-  "player": "Dylan Harper",
-  "player_id": "5037871",
-  "team": "SA",
-  "opp": "POR",
-  "stat": "RA",
-  "side": "UNDER",
-  "line": 9.5,
-  "line_source": "DraftKings",
-  "price": 107,
-  "projection": 8.3,
-  "prob": 0.563,
-  "edge": 0.08,
-  "score": 7.94,
-  "grade": "B",
-  "hit_l5": "2/5",
-  "hit_l10": "5/10",
-  "hit_season": "4/9",
-  "vs_opp": "4/5",
-  "minutes": 28.1,
-  "status": "ACTIVE",
-  "season_avg": 8.5,
-  "l10_avg": 9.6,
-  "reasons": [
-   "Implied team total 117.5 (high vs slate avg 112.6)",
-   "Back-to-back",
-   "Under hit 5/10 of last 10 at 9.5",
-   "Last game: 5 (under the line)",
-   "Last 5 vs POR: 4, 3, 13, 2, 6"
-  ],
-  "actual": null,
-  "result": null,
-  "last_game": 5.0,
-  "open_line": 10.5,
-  "open_price": -123,
-  "books": {
-   "DraftKings": [
-    9.5,
-    107
-   ]
-  }
+  },
+  "locked": true
  },
  {
   "game_id": "401909940",
@@ -426,7 +816,8 @@
     6.5,
     -125
    ]
-  }
+  },
+  "locked": true
  },
  {
   "game_id": "401909939",
@@ -463,7 +854,8 @@
   "last_game": 4.0,
   "open_line": null,
   "open_price": null,
-  "books": null
+  "books": null,
+  "locked": true
  },
  {
   "game_id": "401909943",
@@ -508,50 +900,8 @@
     15.5,
     -114
    ]
-  }
- },
- {
-  "game_id": "401909944",
-  "game": "SA @ POR",
-  "player": "Deni Avdija",
-  "player_id": "4683021",
-  "team": "POR",
-  "opp": "SA",
-  "stat": "PTS",
-  "side": "UNDER",
-  "line": 22.5,
-  "line_source": "DraftKings",
-  "price": -111,
-  "projection": 20.2,
-  "prob": 0.6,
-  "edge": 0.074,
-  "score": 7.34,
-  "grade": "B",
-  "hit_l5": "2/5",
-  "hit_l10": "4/10",
-  "hit_season": "3/8",
-  "vs_opp": "3/5",
-  "minutes": 34.4,
-  "status": "ACTIVE",
-  "season_avg": 23.5,
-  "l10_avg": 23.4,
-  "reasons": [
-   "Back-to-back",
-   "Under hit 4/10 of last 10 at 22.5",
-   "Last game: 22 (under the line)",
-   "Last 5 vs SA: 22, 26, 19, 14, 30"
-  ],
-  "actual": null,
-  "result": null,
-  "last_game": 22.0,
-  "open_line": 22.5,
-  "open_price": -105,
-  "books": {
-   "DraftKings": [
-    22.5,
-    -111
-   ]
-  }
+  },
+  "locked": true
  },
  {
   "game_id": "401909941",
@@ -594,7 +944,8 @@
     21.5,
     -122
    ]
-  }
+  },
+  "locked": true
  },
  {
   "game_id": "401909943",
@@ -637,7 +988,8 @@
     3.5,
     121
    ]
-  }
+  },
+  "locked": true
  },
  {
   "game_id": "401909939",
@@ -681,7 +1033,8 @@
     5.5,
     120
    ]
-  }
+  },
+  "locked": true
  },
  {
   "game_id": "401909943",
@@ -720,7 +1073,8 @@
   "last_game": 6.0,
   "open_line": null,
   "open_price": null,
-  "books": null
+  "books": null,
+  "locked": true
  },
  {
   "game_id": "401909943",
@@ -758,139 +1112,8 @@
   "last_game": 1.0,
   "open_line": null,
   "open_price": null,
-  "books": null
- },
- {
-  "game_id": "401909944",
-  "game": "SA @ POR",
-  "player": "Scoot Henderson",
-  "player_id": "4683678",
-  "team": "POR",
-  "opp": "SA",
-  "stat": "AST",
-  "side": "UNDER",
-  "line": 2.5,
-  "line_source": "DraftKings",
-  "price": -108,
-  "projection": 2.0,
-  "prob": 0.581,
-  "edge": 0.062,
-  "score": 5.74,
-  "grade": "B",
-  "hit_l5": "5/5",
-  "hit_l10": "9/10",
-  "hit_season": "7/8",
-  "vs_opp": "4/5",
-  "minutes": 25.3,
-  "status": "ACTIVE",
-  "season_avg": 2.4,
-  "l10_avg": 1.2,
-  "reasons": [
-   "Back-to-back",
-   "Under hit 9/10 of last 10 at 2.5",
-   "Last game: 0 (under the line)",
-   "Last 5 vs SA: 0, 2, 1, 0, 3"
-  ],
-  "actual": null,
-  "result": null,
-  "last_game": 0.0,
-  "open_line": 3.5,
-  "open_price": -157,
-  "books": {
-   "DraftKings": [
-    2.5,
-    -108
-   ]
-  }
- },
- {
-  "game_id": "401909944",
-  "game": "SA @ POR",
-  "player": "Stephon Castle",
-  "player_id": "4845367",
-  "team": "SA",
-  "opp": "POR",
-  "stat": "RA",
-  "side": "UNDER",
-  "line": 11.5,
-  "line_source": "DraftKings",
-  "price": -120,
-  "projection": 10.2,
-  "prob": 0.598,
-  "edge": 0.053,
-  "score": 5.13,
-  "grade": "B",
-  "hit_l5": "3/5",
-  "hit_l10": "6/10",
-  "hit_season": "5/9",
-  "vs_opp": "3/5",
-  "minutes": 28.2,
-  "status": "ACTIVE",
-  "season_avg": 11.6,
-  "l10_avg": 10.6,
-  "reasons": [
-   "Implied team total 117.5 (high vs slate avg 112.6)",
-   "Back-to-back",
-   "Under hit 6/10 of last 10 at 11.5",
-   "Last game: 10 (under the line)",
-   "Last 5 vs POR: 8, 9, 7, 12, 14"
-  ],
-  "actual": null,
-  "result": null,
-  "last_game": 10.0,
-  "open_line": 11.5,
-  "open_price": -119,
-  "books": {
-   "DraftKings": [
-    11.5,
-    -120
-   ]
-  }
- },
- {
-  "game_id": "401909944",
-  "game": "SA @ POR",
-  "player": "Sidy Cissoko",
-  "player_id": "5081727",
-  "team": "POR",
-  "opp": "SA",
-  "stat": "REB",
-  "side": "OVER",
-  "line": 2.5,
-  "line_source": "DraftKings",
-  "price": -127,
-  "projection": 3.8,
-  "prob": 0.647,
-  "edge": 0.088,
-  "score": 5.11,
-  "grade": "B",
-  "hit_l5": "4/5",
-  "hit_l10": "7/10",
-  "hit_season": "6/8",
-  "vs_opp": "1/5",
-  "minutes": 21.4,
-  "status": "ACTIVE",
-  "season_avg": 2.9,
-  "l10_avg": 3.5,
-  "reasons": [
-   "Goes against his last game: grade lowered one level (live record 42% on these)",
-   "Krejci, Morant, Williams out: +0.7 rebounds (with/without split)",
-   "Back-to-back",
-   "Over hit 7/10 of last 10 at 2.5",
-   "Last game: 2 (under the line)",
-   "Last 5 vs SA: 4, 0, 0, 1, 0"
-  ],
-  "actual": null,
-  "result": null,
-  "last_game": 2.0,
-  "open_line": 2.5,
-  "open_price": -127,
-  "books": {
-   "DraftKings": [
-    2.5,
-    -127
-   ]
-  }
+  "books": null,
+  "locked": true
  },
  {
   "game_id": "401909940",
@@ -932,7 +1155,8 @@
     36.5,
     -113
    ]
-  }
+  },
+  "locked": true
  },
  {
   "game_id": "401909940",
@@ -974,7 +1198,8 @@
     1.5,
     -106
    ]
-  }
+  },
+  "locked": true
  },
  {
   "game_id": "401909940",
@@ -1016,7 +1241,8 @@
     6.5,
     -105
    ]
-  }
+  },
+  "locked": true
  },
  {
   "game_id": "401909940",
@@ -1058,7 +1284,8 @@
     2.5,
     -189
    ]
-  }
+  },
+  "locked": true
  },
  {
   "game_id": "401909941",
@@ -1103,7 +1330,8 @@
     31.5,
     -109
    ]
-  }
+  },
+  "locked": true
  },
  {
   "game_id": "401909941",
@@ -1145,7 +1373,8 @@
   "last_game": 13.0,
   "open_line": null,
   "open_price": null,
-  "books": null
+  "books": null,
+  "locked": true
  },
  {
   "game_id": "401909941",
@@ -1185,7 +1414,8 @@
   "last_game": 25.0,
   "open_line": null,
   "open_price": null,
-  "books": null
+  "books": null,
+  "locked": true
  },
  {
   "game_id": "401909941",
@@ -1224,7 +1454,8 @@
   "last_game": 0.0,
   "open_line": null,
   "open_price": null,
-  "books": null
+  "books": null,
+  "locked": true
  },
  {
   "game_id": "401909941",
@@ -1263,7 +1494,8 @@
   "last_game": 9.0,
   "open_line": null,
   "open_price": null,
-  "books": null
+  "books": null,
+  "locked": true
  },
  {
   "game_id": "401909942",
@@ -1300,7 +1532,8 @@
   "last_game": 4.0,
   "open_line": null,
   "open_price": null,
-  "books": null
+  "books": null,
+  "locked": true
  },
  {
   "game_id": "401909942",
@@ -1342,7 +1575,8 @@
     8.5,
     -119
    ]
-  }
+  },
+  "locked": true
  },
  {
   "game_id": "401909942",
@@ -1385,7 +1619,8 @@
     5.5,
     -139
    ]
-  }
+  },
+  "locked": true
  },
  {
   "game_id": "401909938",
