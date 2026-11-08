@@ -21,7 +21,8 @@
    "notes": [
     "MIN goalie Jesper Wallstedt (0.908): opponent goals -8% (starter uncertain)"
    ],
-   "score": 3.18
+   "score": 3.18,
+   "locked": true
   },
   {
    "game_id": "401892670",
@@ -43,7 +44,8 @@
    "notes": [
     "MIN goalie Jesper Wallstedt (0.908): opponent goals -8% (starter uncertain)"
    ],
-   "score": 2.34
+   "score": 2.34,
+   "locked": true
   }
  ]
 }
