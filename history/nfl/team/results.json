@@ -203,6 +203,28 @@
    "score": 2.67,
    "date": "2026-W09",
    "result": "VOID"
+  },
+  {
+   "game_id": "401873042",
+   "game": "DET @ MIA",
+   "market": "Moneyline",
+   "pick": "MIA ML",
+   "side": "home",
+   "line": null,
+   "price": 245,
+   "prob": 0.306,
+   "model_prob": 0.358,
+   "edge": 0.016,
+   "grade": "C",
+   "proj": "MIA 22.1 \u2013 DET 27.0",
+   "mu_h": 22.11,
+   "mu_a": 27.03,
+   "home": "MIA",
+   "away": "DET",
+   "notes": [],
+   "score": 1.6,
+   "date": "2026-W09",
+   "result": "VOID"
   }
  ]
 }
