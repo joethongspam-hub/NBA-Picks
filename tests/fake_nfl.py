@@ -34,7 +34,8 @@ class NflLeague:
         self.events, self.weeks = {}, {}
         eid = 401600000
         for season, n_weeks, start in ((2025, 17, datetime(2025, 9, 7, 17, tzinfo=timezone.utc)),
-                                       (2026, CURRENT_WEEK, datetime(2026, 9, 13, 17, tzinfo=timezone.utc))):
+                                       (2026, CURRENT_WEEK, (datetime.now(timezone.utc) + timedelta(days=3 - 7 * (CURRENT_WEEK - 1))).replace(
+                                           hour=17, minute=0, second=0, microsecond=0))):
             for wk in range(1, n_weeks + 1):
                 ids = list(TEAMS)
                 rng.shuffle(ids)

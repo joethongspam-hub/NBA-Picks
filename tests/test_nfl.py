@@ -8,7 +8,7 @@ from tests.fake_nfl import FakeNflHttp, NflLeague
 def test_nfl_live_and_backtest():
     lg = NflLeague()
     t = Path(tempfile.mkdtemp())
-    pl = run(out_dir=str(t / "nfl"), hist_dir=str(t / "h"), http=FakeNflHttp(lg))
+    pl = run(out_dir=str(t / "nfl"), hist_dir=str(t / "h"), http=FakeNflHttp(lg), allow_est=True)
     assert len(pl["games"]) == 16 and pl["top"]
     allp = pl["all"]
     assert not any(p["player_id"] == "105" for p in allp)                  # OUT player dropped

@@ -6,6 +6,7 @@
 """
 from __future__ import annotations
 
+import nba_props.model as _NM
 from nba_props import parlays as PL
 
 import argparse
@@ -80,7 +81,9 @@ def grade_history(hist: Path, players_by_id: dict, today: str) -> dict:
 
 def run(date: str | None = None, out_dir: str = "public/nhl", cache_dir: str = ".cache",
         hist_dir: str = "history/nhl", backtest: bool = False, http: Http | None = None,
-        odds_key: str | None = None, markets: str = DEFAULT_NHL_MARKETS):
+        odds_key: str | None = None, markets: str = DEFAULT_NHL_MARKETS,
+        allow_est: bool | None = None):
+    _NM.ALLOW_EST = backtest if allow_est is None else allow_est
     now = datetime.now(ET)
     day = datetime.fromisoformat(date).replace(tzinfo=ET) if date else now
     day_s = day.strftime("%Y-%m-%d")

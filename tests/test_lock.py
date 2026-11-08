@@ -12,7 +12,7 @@ def test_lock():
     lg = League()
     t = Path(tempfile.mkdtemp())
     kw = dict(out_dir=str(t / "s"), hist_dir=str(t / "h"))
-    M.run("2026-10-30", http=FakeHttp(lg), **kw)
+    M.run("2026-10-30", http=FakeHttp(lg), **kw, allow_est=True)
     before = json.loads((t / "h/picks/2026-10-30.json").read_text())
     g0 = before[0]["game_id"]
     pre = {(p["player_id"], p["stat"], p["side"], p["line"]) for p in before if p["game_id"] == g0}
@@ -27,7 +27,7 @@ def test_lock():
         return d
     lg.scoreboard_json = live
     lg.injuries_json = lambda: {"injuries": []}
-    pl = M.run("2026-10-30", http=FakeHttp(lg), **kw)
+    pl = M.run("2026-10-30", http=FakeHttp(lg), **kw, allow_est=True)
     after = json.loads((t / "h/picks/2026-10-30.json").read_text())
     post = {(p["player_id"], p["stat"], p["side"], p["line"]) for p in after if p["game_id"] == g0}
     assert pre == post, "started game's picks must not change"

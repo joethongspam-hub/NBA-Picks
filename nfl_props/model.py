@@ -21,6 +21,7 @@ from collections import defaultdict
 from dataclasses import dataclass, field
 
 from nba_props.espn import Game, Injury
+import nba_props.model as NM
 from nba_props.model import (DEMOTE, LAST_GAME_NOTE, VIG_PROB, Pick, _nb_cdf, _phi, _short, _to_american,
                              against_last_game, est_line, market_disagrees, shop)
 from nba_props.odds import PropLine, american_to_prob, norm_name
@@ -507,6 +508,8 @@ def evaluate(proj: Projection, lines: dict[tuple[str, str], PropLine], season: i
         if real:
             line, src = real.line, real.label
         else:
+            if not NM.ALLOW_EST:
+                continue
             if view < MIN_VIEW.get(s, 1):
                 continue
             line = 0.5 if s == "ANY_TD" else (est_line(view) if s in POISSON else math.floor(view) + 0.5)

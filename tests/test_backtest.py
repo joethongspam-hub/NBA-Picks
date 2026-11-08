@@ -10,7 +10,7 @@ def test_backtest():
     lg = League()
     day = sorted({e["date"] for e in lg.events.values() if e["date"].year == 2026 and e["date"].month == 10})[-2]
     pl = run(day.strftime("%Y-%m-%d"), out_dir=str(tmp / "site"), hist_dir=str(tmp / "h"),
-             http=FakeHttp(lg), backtest=True, backtest_dir=str(tmp / "bt"))
+             http=FakeHttp(lg), backtest=True, backtest_dir=str(tmp / "bt"), allow_est=True)
     graded = [p for p in pl["all"] if p["result"] in ("WIN", "LOSS", "PUSH")]
     assert graded and all(p["actual"] is not None for p in graded)
     assert pl["record"]["accuracy"]["PTS"]["n"] > 50

@@ -105,6 +105,12 @@ The free 500 credits cover the NFL only; NBA and NHL every day need the $30 / 20
 
 **Track record counts real-line picks only.** Estimated-line picks are still graded, but shown separately and not counted.
 
+## Nov 8 changes
+
+* **No estimated lines in live picks:** every pick, parlay leg and track-record entry is on a real sportsbook line.
+  Props without a real line aren't shown. (Backtests still estimate lines, since no real lines were saved for past dates.)
+* **NBA threes unders are not offered** (break-even on real lines).
+
 ## Model report
 
 The Track record tab includes a **model report**, rebuilt every night from graded live picks:

@@ -8,7 +8,7 @@ from tests.fake_espn import FakeHttp, League
 def test_pipeline(tmp=None):
     tmp = Path(tmp or tempfile.mkdtemp())
     lg = League()
-    payload = run("2026-10-30", out_dir=str(tmp / "site"), hist_dir=str(tmp / "hist"), http=FakeHttp(lg))
+    payload = run("2026-10-30", out_dir=str(tmp / "site"), hist_dir=str(tmp / "hist"), http=FakeHttp(lg), allow_est=True)
     assert len(payload["games"]) == 5
     assert payload["top"], "expected some picks"
     allp = payload["all"]

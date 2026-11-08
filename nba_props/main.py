@@ -6,6 +6,7 @@
 """
 from __future__ import annotations
 
+from . import model as _NM
 from . import parlays as PL
 
 import argparse
@@ -255,10 +256,12 @@ def summarize(results: dict) -> dict:
 def run(date: str | None = None, out_dir: str = "site", cache_dir: str = ".cache",
         hist_dir: str = "history", slate_only: bool = False, stats: list[str] | None = None,
         odds_key: str | None = None, odds_markets: str = DEFAULT_MARKETS, http: Http | None = None,
-        backtest: bool = False, backtest_dir: str = "backtests"):
+        backtest: bool = False, backtest_dir: str = "backtests",
+        allow_est: bool | None = None):
     """backtest=True: project a past date using only games played before it, then
     grade every prop against the real box scores. Who sat that night is taken from
     the box scores (stand-in for the pre-game injury report)."""
+    _NM.ALLOW_EST = backtest if allow_est is None else allow_est
     stats = stats or DEFAULT_PROP_STATS
     now_et = datetime.now(ET)
     day = datetime.fromisoformat(date).replace(tzinfo=ET) if date else now_et

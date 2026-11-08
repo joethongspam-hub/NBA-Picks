@@ -5,6 +5,7 @@
 """
 from __future__ import annotations
 
+import nba_props.model as _NM
 from nba_props import parlays as PL
 
 import argparse
@@ -135,7 +136,9 @@ def results_only(out_dir: str = "public/nfl", cache_dir: str = ".cache", hist_di
 
 def run(week: int | None = None, out_dir: str = "public/nfl", cache_dir: str = ".cache",
         hist_dir: str = "history/nfl", backtest: bool = False, http: Http | None = None,
-        odds_key: str | None = None, markets: str = DEFAULT_NFL_MARKETS, season: int | None = None):
+        odds_key: str | None = None, markets: str = DEFAULT_NFL_MARKETS, season: int | None = None,
+        allow_est: bool | None = None):
+    _NM.ALLOW_EST = backtest if allow_est is None else allow_est
     now = datetime.now(ET)
     season = season or season_for(now)
     http = http or Http(cache_dir)

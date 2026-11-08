@@ -20,7 +20,7 @@ def test_results():
             e["status"]["type"]["description"] = "Scheduled"
         return sb
     lg.past_scoreboard = pregame
-    M.run(day, out_dir=str(t / "s"), hist_dir=str(t / "h"), http=FakeHttp(lg))
+    M.run(day, out_dir=str(t / "s"), hist_dir=str(t / "h"), http=FakeHttp(lg), allow_est=True)
     lg.past_scoreboard = orig
     pf = t / "h" / "picks" / f"{day}.json"                 # pretend the picks were on real lines
     pf.write_text(json.dumps([dict(p, line_source="DraftKings") for p in json.loads(pf.read_text())]))

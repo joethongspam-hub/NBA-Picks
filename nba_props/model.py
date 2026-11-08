@@ -72,6 +72,10 @@ def against_last_game(logs, stat_get, side: str, line: float) -> bool:
 
 
 DEMOTE = {"A": "B", "B": "C", "C": "-", "-": "-"}
+# Live runs only make picks on real sportsbook lines; backtests (no saved lines) set this True.
+ALLOW_EST = False
+# Side/stat combinations not offered, from the live real-line record: (stat, side) -> note
+BLOCKED = {("3PM", "UNDER"): "Threes unders not offered (break-even on real lines)"}
 LAST_GAME_NOTE = "Goes against his last game: grade lowered one level (live record 42% on these)"
 
 
@@ -543,6 +547,8 @@ def evaluate(proj: Projection, stats: list[str], lines: dict[tuple[str, str], Pr
         if real:
             line, src = real.line, real.label
         else:
+            if not ALLOW_EST:
+                continue
             if book_view < 0.7:
                 continue
             line, src = est_line(book_view), "est."
@@ -577,6 +583,9 @@ def evaluate(proj: Projection, stats: list[str], lines: dict[tuple[str, str], Pr
         score = edge * 100 * reliability
         grade = ("A" if edge >= .08 and reliability >= .5 else "B" if edge >= .05 else
                  "C" if edge >= .03 else "-")
+        blocked = BLOCKED.get((s, side))
+        if blocked:
+            grade, score = "-", 0.0
         vs_last = against_last_game(p.logs, lambda g: g.get(s), side, line)
         if vs_last:
             grade, score = DEMOTE[grade], score * 0.7
@@ -588,6 +597,8 @@ def evaluate(proj: Projection, stats: list[str], lines: dict[tuple[str, str], Pr
         reasons = list(proj.stat_reasons.get(s, [])) + list(proj.reasons)
         if vs_last:
             reasons.insert(0, LAST_GAME_NOTE)
+        if blocked:
+            reasons.insert(0, blocked)
         if side == "UNDER" and proj.depleted:
             reasons.insert(0, f"{proj.team_abbr} missing {len(proj.depleted)} rotation players "
                               f"({', '.join(_short(n) for n in proj.depleted[:4])}): unders skipped")

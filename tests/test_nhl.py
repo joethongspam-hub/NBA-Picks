@@ -21,7 +21,7 @@ def test_nhl():
         return sb
     lg.scoreboard_json = pregame
     ds = f"{day[:4]}-{day[4:6]}-{day[6:]}"
-    pl = M.run(ds, out_dir=str(t / "nhl"), hist_dir=str(t / "h"), http=FakeNhlHttp(lg))
+    pl = M.run(ds, out_dir=str(t / "nhl"), hist_dir=str(t / "h"), http=FakeNhlHttp(lg), allow_est=True)
     lg.scoreboard_json = orig
     assert len(pl["games"]) == 16 and pl["top"], "expected picks"
     stats = {p["stat"] for p in pl["all"]}
