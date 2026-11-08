@@ -2,6 +2,56 @@
  "made": "2026-11-03T18:26:47.260615-05:00",
  "picks": [
   {
+   "game_id": "401873039",
+   "game": "CLE @ NO",
+   "player": "Noah Fant",
+   "player_id": "4036131",
+   "team": "NO",
+   "opp": "CLE",
+   "stat": "REC_YDS",
+   "side": "OVER",
+   "line": 2.5,
+   "line_source": "2 books",
+   "price": -112,
+   "projection": 17.0,
+   "prob": 0.762,
+   "edge": 0.234,
+   "score": 23.36,
+   "grade": "A",
+   "hit_l5": "3/5",
+   "hit_l10": "6/10",
+   "hit_season": "4/6",
+   "vs_opp": "2/2",
+   "minutes": 2.5,
+   "status": "ACTIVE",
+   "season_avg": 16.1,
+   "l10_avg": 12.8,
+   "reasons": [
+    "Over hit 3/5 last 5, 6/10 last 10 at 2.5",
+    "Last game: 11 (over the line)",
+    "Last 2 vs CLE: 5, 26"
+   ],
+   "actual": null,
+   "result": null,
+   "last_game": 11.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     2.5,
+     -112
+    ],
+    "FanDuel": [
+     2.5,
+     -113
+    ]
+   },
+   "dist": {
+    "k": "gamma",
+    "cv": 0.802
+   }
+  },
+  {
    "game_id": "401873044",
    "game": "NYG @ PHI",
    "player": "Devin Singletary",
@@ -15,8 +65,8 @@
    "price": 128,
    "projection": 65.2,
    "prob": 0.641,
-   "edge": 0.203,
-   "score": 20.26,
+   "edge": 0.202,
+   "score": 20.25,
    "grade": "A",
    "hit_l5": "2/5",
    "hit_l10": "6/10",
@@ -27,8 +77,8 @@
    "season_avg": 34.2,
    "l10_avg": 33.8,
    "reasons": [
-    "Weather: wind 9 mph: passing trimmed 2%",
-    "Implied team total 20.8 (low vs avg 22.7)",
+    "Weather: wind 10 mph: passing trimmed 1%",
+    "Implied team total 20.8 (low vs avg 22.8)",
     "Skattebo, Tracy out: +7.6 carries",
     "Over hit 2/5 last 5, 6/10 last 10 at 34.5",
     "Last game: 55 (over the line)",
@@ -39,7 +89,11 @@
    "last_game": 55.0,
    "open_line": null,
    "open_price": null,
-   "books": null
+   "books": null,
+   "dist": {
+    "k": "gamma",
+    "cv": 0.569
+   }
   },
   {
    "game_id": "401873042",
@@ -51,12 +105,12 @@
    "stat": "REC",
    "side": "UNDER",
    "line": 1.5,
-   "line_source": "5 books",
-   "price": -106,
+   "line_source": "6 books",
+   "price": -108,
    "projection": 0.8,
-   "prob": 0.691,
-   "edge": 0.176,
-   "score": 17.65,
+   "prob": 0.692,
+   "edge": 0.173,
+   "score": 17.27,
    "grade": "A",
    "hit_l5": "3/5",
    "hit_l10": "8/10",
@@ -79,7 +133,7 @@
    "books": {
     "DraftKings": [
      1.5,
-     -116
+     -111
     ],
     "FanDuel": [
      1.5,
@@ -87,50 +141,21 @@
     ],
     "BetOnline.ag": [
      1.5,
-     -106
+     -109
+    ],
+    "BetMGM": [
+     1.5,
+     -120
     ],
     "Bovada": [
      1.5,
-     -120
+     -110
     ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 0.799
    }
-  },
-  {
-   "game_id": "401873051",
-   "game": "BUF @ MIN",
-   "player": "Justin Jefferson",
-   "player_id": "4262921",
-   "team": "MIN",
-   "opp": "BUF",
-   "stat": "REC_YDS",
-   "side": "UNDER",
-   "line": 78.5,
-   "line_source": "5 books",
-   "price": -115,
-   "projection": 53.6,
-   "prob": 0.684,
-   "edge": 0.149,
-   "score": 14.89,
-   "grade": "A",
-   "hit_l5": "4/5",
-   "hit_l10": "6/10",
-   "hit_season": "4/6",
-   "vs_opp": "0/0",
-   "minutes": 7.5,
-   "status": "ACTIVE",
-   "season_avg": 58.2,
-   "l10_avg": 47.0,
-   "reasons": [
-    "Implied team total 20.2 (low vs avg 22.7)",
-    "Under hit 4/5 last 5, 6/10 last 10 at 78.5",
-    "Last game: 33 (under the line)"
-   ],
-   "actual": null,
-   "result": null,
-   "last_game": 33.0,
-   "open_line": null,
-   "open_price": null,
-   "books": null
   },
   {
    "game_id": "401873050",
@@ -141,13 +166,13 @@
    "opp": "TB",
    "stat": "REC_YDS",
    "side": "UNDER",
-   "line": 64.5,
+   "line": 65.5,
    "line_source": "6 books",
    "price": -113,
-   "projection": 44.8,
-   "prob": 0.679,
-   "edge": 0.149,
-   "score": 14.88,
+   "projection": 44.1,
+   "prob": 0.689,
+   "edge": 0.159,
+   "score": 15.86,
    "grade": "A",
    "hit_l5": "3/5",
    "hit_l10": "8/10",
@@ -158,10 +183,10 @@
    "season_avg": 59.7,
    "l10_avg": 82.0,
    "reasons": [
-    "Weather: wind 8 mph (gusts 26): passing trimmed 8%",
-    "Implied team total 26.8 (high vs avg 22.7)",
+    "Weather: wind 9 mph (gusts 28): passing trimmed 9%",
+    "Implied team total 26.8 (high vs avg 22.8)",
     "Favorite by 6: expect more rushing",
-    "Under hit 3/5 last 5, 8/10 last 10 at 64.5",
+    "Under hit 3/5 last 5, 8/10 last 10 at 65.5",
     "Last game: 56 (under the line)"
    ],
    "actual": null,
@@ -171,12 +196,12 @@
    "open_price": null,
    "books": {
     "DraftKings": [
-     64.5,
-     -114
+     65.5,
+     -113
     ],
     "FanDuel": [
      65.5,
-     -114
+     -113
     ],
     "BetOnline.ag": [
      65.5,
@@ -191,9 +216,13 @@
      -115
     ],
     "Bovada": [
-     64.5,
+     65.5,
      -115
     ]
+   },
+   "dist": {
+    "k": "gamma",
+    "cv": 0.616
    }
   },
   {
@@ -223,7 +252,7 @@
    "l10_avg": 16.5,
    "reasons": [
     "Goes against his last game: grade lowered one level (live record 42% on these)",
-    "Murray not listed by sportsbooks: Carson Wentz expected to start",
+    "Murray out: Carson Wentz expected to start",
     "Over hit 2/5 last 5, 4/8 last 10 at 21.5",
     "Last game: 0 (under the line)"
    ],
@@ -232,70 +261,64 @@
    "last_game": 0.0,
    "open_line": null,
    "open_price": null,
-   "books": null
+   "books": null,
+   "dist": {
+    "k": "normal",
+    "sd": 7.66
+   }
   },
   {
-   "game_id": "401873044",
-   "game": "NYG @ PHI",
-   "player": "J.J. McCarthy",
-   "player_id": "4433970",
-   "team": "NYG",
-   "opp": "PHI",
-   "stat": "PASS_YDS",
-   "side": "UNDER",
-   "line": 210.5,
-   "line_source": "6 books",
-   "price": -111,
-   "projection": 148.6,
-   "prob": 0.721,
-   "edge": 0.195,
-   "score": 13.65,
-   "grade": "B",
-   "hit_l5": "3/5",
+   "game_id": "401873045",
+   "game": "NYJ @ KC",
+   "player": "Braelon Allen",
+   "player_id": "4685247",
+   "team": "NYJ",
+   "opp": "KC",
+   "stat": "REC",
+   "side": "OVER",
+   "line": 1.5,
+   "line_source": "3 books",
+   "price": 134,
+   "projection": 2.5,
+   "prob": 0.562,
+   "edge": 0.134,
+   "score": 13.42,
+   "grade": "A",
+   "hit_l5": "4/5",
    "hit_l10": "6/10",
-   "hit_season": "1/3",
+   "hit_season": "5/8",
    "vs_opp": "0/0",
-   "minutes": 20.4,
+   "minutes": 15.0,
    "status": "ACTIVE",
-   "season_avg": 164.0,
-   "l10_avg": 169.2,
+   "season_avg": 1.6,
+   "l10_avg": 2.8,
    "reasons": [
-    "Goes against his last game: grade lowered one level (live record 42% on these)",
-    "Weather: wind 9 mph: passing trimmed 2%",
-    "Implied team total 20.8 (low vs avg 22.7)",
-    "Under hit 3/5 last 5, 6/10 last 10 at 210.5",
-    "Last game: 252 (over the line)"
+    "Underdog by 9.5: expect more passing",
+    "Over hit 4/5 last 5, 6/10 last 10 at 1.5",
+    "Last game: 2 (over the line)"
    ],
    "actual": null,
    "result": null,
-   "last_game": 252.0,
+   "last_game": 2.0,
    "open_line": null,
    "open_price": null,
    "books": {
     "DraftKings": [
-     210.5,
-     -111
+     1.5,
+     128
     ],
     "FanDuel": [
-     214.5,
-     -114
+     1.5,
+     134
     ],
     "BetOnline.ag": [
-     210.5,
-     -111
-    ],
-    "BetRivers": [
-     208.5,
-     -117
-    ],
-    "BetMGM": [
-     206.5,
-     -115
-    ],
-    "Bovada": [
-     210.5,
-     -115
+     1.5,
+     118
     ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 3.539
    }
   },
   {
@@ -312,22 +335,22 @@
    "price": 113,
    "projection": 131.2,
    "prob": 0.6,
-   "edge": 0.131,
-   "score": 13.07,
+   "edge": 0.13,
+   "score": 13.05,
    "grade": "A",
    "hit_l5": "3/5",
    "hit_l10": "4/10",
    "hit_season": "3/7",
    "vs_opp": "0/0",
-   "minutes": 23.4,
+   "minutes": 23.3,
    "status": "ACTIVE",
    "season_avg": 102.5,
    "l10_avg": 92.5,
    "reasons": [
-    "LV allows rushing yards to RBs (+12%)",
-    "Implied team total 30.8 (high vs avg 22.7)",
-    "Favorite by 10: expect more rushing",
-    "Evans, Kirk, Samuel out: +1.4 targets",
+    "LV allows rushing yards to RBs (+13%)",
+    "Implied team total 30.5 (high vs avg 22.8)",
+    "Favorite by 9.5: expect more rushing",
+    "Evans, Samuel, Kirk out: +1.4 targets",
     "Over hit 3/5 last 5, 4/10 last 10 at 98.5",
     "Last game: 100 (over the line)"
    ],
@@ -336,7 +359,161 @@
    "last_game": 100.0,
    "open_line": null,
    "open_price": null,
-   "books": null
+   "books": null,
+   "dist": {
+    "k": "gamma",
+    "cv": 0.407
+   }
+  },
+  {
+   "game_id": "401873044",
+   "game": "NYG @ PHI",
+   "player": "J.J. McCarthy",
+   "player_id": "4433970",
+   "team": "NYG",
+   "opp": "PHI",
+   "stat": "PASS_YDS",
+   "side": "UNDER",
+   "line": 207.5,
+   "line_source": "6 books",
+   "price": -111,
+   "projection": 150.2,
+   "prob": 0.712,
+   "edge": 0.186,
+   "score": 13.0,
+   "grade": "B",
+   "hit_l5": "3/5",
+   "hit_l10": "6/10",
+   "hit_season": "1/3",
+   "vs_opp": "0/0",
+   "minutes": 20.4,
+   "status": "ACTIVE",
+   "season_avg": 164.0,
+   "l10_avg": 169.2,
+   "reasons": [
+    "Goes against his last game: grade lowered one level (live record 42% on these)",
+    "Weather: wind 10 mph: passing trimmed 1%",
+    "Implied team total 20.8 (low vs avg 22.8)",
+    "Under hit 3/5 last 5, 6/10 last 10 at 207.5",
+    "Last game: 252 (over the line)"
+   ],
+   "actual": null,
+   "result": null,
+   "last_game": 252.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     207.5,
+     -113
+    ],
+    "FanDuel": [
+     212.5,
+     -113
+    ],
+    "BetOnline.ag": [
+     207.5,
+     -111
+    ],
+    "BetRivers": [
+     208.5,
+     -117
+    ],
+    "BetMGM": [
+     205.5,
+     -115
+    ],
+    "Bovada": [
+     207.5,
+     -115
+    ]
+   },
+   "dist": {
+    "k": "gamma",
+    "cv": 0.367
+   }
+  },
+  {
+   "game_id": "401873051",
+   "game": "BUF @ MIN",
+   "player": "Justin Jefferson",
+   "player_id": "4262921",
+   "team": "MIN",
+   "opp": "BUF",
+   "stat": "REC_YDS",
+   "side": "UNDER",
+   "line": 78.5,
+   "line_source": "5 books",
+   "price": -115,
+   "projection": 57.2,
+   "prob": 0.664,
+   "edge": 0.129,
+   "score": 12.87,
+   "grade": "A",
+   "hit_l5": "4/5",
+   "hit_l10": "6/10",
+   "hit_season": "4/6",
+   "vs_opp": "0/0",
+   "minutes": 8.0,
+   "status": "ACTIVE",
+   "season_avg": 58.2,
+   "l10_avg": 47.0,
+   "reasons": [
+    "Implied team total 20.2 (low vs avg 22.8)",
+    "Under hit 4/5 last 5, 6/10 last 10 at 78.5",
+    "Last game: 33 (under the line)"
+   ],
+   "actual": null,
+   "result": null,
+   "last_game": 33.0,
+   "open_line": null,
+   "open_price": null,
+   "books": null,
+   "dist": {
+    "k": "gamma",
+    "cv": 0.623
+   }
+  },
+  {
+   "game_id": "401873051",
+   "game": "BUF @ MIN",
+   "player": "Aaron Jones Sr.",
+   "player_id": "3042519",
+   "team": "MIN",
+   "opp": "BUF",
+   "stat": "REC_YDS",
+   "side": "OVER",
+   "line": 7.5,
+   "line_source": "1 books",
+   "price": -114,
+   "projection": 17.4,
+   "prob": 0.66,
+   "edge": 0.127,
+   "score": 12.69,
+   "grade": "A",
+   "hit_l5": "3/5",
+   "hit_l10": "6/10",
+   "hit_season": "3/7",
+   "vs_opp": "0/0",
+   "minutes": 16.5,
+   "status": "ACTIVE",
+   "season_avg": 14.2,
+   "l10_avg": 14.0,
+   "reasons": [
+    "Implied team total 20.2 (low vs avg 22.8)",
+    "Over hit 3/5 last 5, 6/10 last 10 at 7.5",
+    "Last game: 18 (over the line)"
+   ],
+   "actual": null,
+   "result": null,
+   "last_game": 18.0,
+   "open_line": null,
+   "open_price": null,
+   "books": null,
+   "dist": {
+    "k": "gamma",
+    "cv": 0.746
+   }
   },
   {
    "game_id": "401873047",
@@ -350,10 +527,10 @@
    "line": 32.5,
    "line_source": "est.",
    "price": 119,
-   "projection": 50.5,
+   "projection": 50.4,
    "prob": 0.596,
    "edge": 0.14,
-   "score": 12.26,
+   "score": 12.21,
    "grade": "A",
    "hit_l5": "2/5",
    "hit_l10": "3/7",
@@ -364,9 +541,9 @@
    "season_avg": 33.9,
    "l10_avg": 31.2,
    "reasons": [
-    "LV allows rushing yards to RBs (+12%)",
-    "Implied team total 30.8 (high vs avg 22.7)",
-    "Favorite by 10: expect more rushing",
+    "LV allows rushing yards to RBs (+13%)",
+    "Implied team total 30.5 (high vs avg 22.8)",
+    "Favorite by 9.5: expect more rushing",
     "Over hit 2/5 last 5, 3/7 last 10 at 32.5",
     "Last game: 59 (over the line)"
    ],
@@ -375,7 +552,11 @@
    "last_game": 59.0,
    "open_line": null,
    "open_price": null,
-   "books": null
+   "books": null,
+   "dist": {
+    "k": "gamma",
+    "cv": 0.559
+   }
   },
   {
    "game_id": "401873042",
@@ -412,166 +593,10 @@
    "last_game": 32.0,
    "open_line": null,
    "open_price": null,
-   "books": null
-  },
-  {
-   "game_id": "401873039",
-   "game": "CLE @ NO",
-   "player": "Quinshon Judkins",
-   "player_id": "4685702",
-   "team": "CLE",
-   "opp": "NO",
-   "stat": "RUSH_YDS",
-   "side": "UNDER",
-   "line": 67.5,
-   "line_source": "6 books",
-   "price": -113,
-   "projection": 53.0,
-   "prob": 0.645,
-   "edge": 0.115,
-   "score": 11.46,
-   "grade": "A",
-   "hit_l5": "3/5",
-   "hit_l10": "8/10",
-   "hit_season": "5/7",
-   "vs_opp": "0/0",
-   "minutes": 17.2,
-   "status": "ACTIVE",
-   "season_avg": 52.6,
-   "l10_avg": 54.5,
-   "reasons": [
-    "Implied team total 19.5 (low vs avg 22.7)",
-    "Backup QB starting: receiving efficiency trimmed",
-    "Under hit 3/5 last 5, 8/10 last 10 at 67.5",
-    "Last game: 25 (under the line)"
-   ],
-   "actual": null,
-   "result": null,
-   "last_game": 25.0,
-   "open_line": null,
-   "open_price": null,
-   "books": {
-    "DraftKings": [
-     67.5,
-     -113
-    ],
-    "FanDuel": [
-     68.5,
-     -114
-    ],
-    "BetOnline.ag": [
-     68.5,
-     -114
-    ],
-    "BetRivers": [
-     69.5,
-     -125
-    ],
-    "BetMGM": [
-     65.5,
-     -115
-    ],
-    "Bovada": [
-     67.5,
-     -115
-    ]
-   }
-  },
-  {
-   "game_id": "401873051",
-   "game": "BUF @ MIN",
-   "player": "Aaron Jones Sr.",
-   "player_id": "3042519",
-   "team": "MIN",
-   "opp": "BUF",
-   "stat": "REC_YDS",
-   "side": "OVER",
-   "line": 7.5,
-   "line_source": "1 books",
-   "price": -114,
-   "projection": 16.3,
-   "prob": 0.647,
-   "edge": 0.114,
-   "score": 11.4,
-   "grade": "A",
-   "hit_l5": "3/5",
-   "hit_l10": "6/10",
-   "hit_season": "3/7",
-   "vs_opp": "0/0",
-   "minutes": 16.2,
-   "status": "ACTIVE",
-   "season_avg": 14.2,
-   "l10_avg": 14.0,
-   "reasons": [
-    "Implied team total 20.2 (low vs avg 22.7)",
-    "Over hit 3/5 last 5, 6/10 last 10 at 7.5",
-    "Last game: 18 (over the line)"
-   ],
-   "actual": null,
-   "result": null,
-   "last_game": 18.0,
-   "open_line": null,
-   "open_price": null,
-   "books": null
-  },
-  {
-   "game_id": "401873050",
-   "game": "TB @ CHI",
-   "player": "Colston Loveland",
-   "player_id": "4723086",
-   "team": "CHI",
-   "opp": "TB",
-   "stat": "REC",
-   "side": "UNDER",
-   "line": 5.5,
-   "line_source": "6 books",
-   "price": -120,
-   "projection": 3.8,
-   "prob": 0.706,
-   "edge": 0.161,
-   "score": 11.26,
-   "grade": "B",
-   "hit_l5": "1/5",
-   "hit_l10": "5/10",
-   "hit_season": "4/8",
-   "vs_opp": "0/0",
-   "minutes": 5.8,
-   "status": "ACTIVE",
-   "season_avg": 4.0,
-   "l10_avg": 5.5,
-   "reasons": [
-    "Goes against his last game: grade lowered one level (live record 42% on these)",
-    "Weather: wind 8 mph (gusts 26): passing trimmed 8%",
-    "Favorite by 6: expect more rushing",
-    "Under hit 1/5 last 5, 5/10 last 10 at 5.5",
-    "Last game: 7 (over the line)"
-   ],
-   "actual": null,
-   "result": null,
-   "last_game": 7.0,
-   "open_line": null,
-   "open_price": null,
-   "books": {
-    "DraftKings": [
-     5.5,
-     -120
-    ],
-    "FanDuel": [
-     5.5,
-     -130
-    ],
-    "BetOnline.ag": [
-     5.5,
-     -141
-    ],
-    "BetMGM": [
-     5.5,
-     -160
-    ],
-    "Bovada": [
-     5.5,
-     -120
-    ]
+   "books": null,
+   "dist": {
+    "k": "normal",
+    "sd": 6.589
    }
   },
   {
@@ -583,27 +608,27 @@
    "opp": "CHI",
    "stat": "PASS_YDS",
    "side": "UNDER",
-   "line": 211.5,
+   "line": 210.5,
    "line_source": "6 books",
-   "price": -112,
-   "projection": 176.2,
-   "prob": 0.638,
-   "edge": 0.11,
-   "score": 10.98,
+   "price": -111,
+   "projection": 173.4,
+   "prob": 0.643,
+   "edge": 0.117,
+   "score": 11.7,
    "grade": "A",
    "hit_l5": "3/5",
    "hit_l10": "6/10",
    "hit_season": "3/5",
    "vs_opp": "0/0",
-   "minutes": 28.9,
+   "minutes": 28.7,
    "status": "ACTIVE",
    "season_avg": 172.0,
    "l10_avg": 115.8,
    "reasons": [
-    "Weather: wind 8 mph (gusts 26): passing trimmed 8%",
-    "Implied team total 20.8 (low vs avg 22.7)",
+    "Weather: wind 9 mph (gusts 28): passing trimmed 9%",
+    "Implied team total 20.8 (low vs avg 22.8)",
     "Underdog by 6: expect more passing",
-    "Under hit 3/5 last 5, 6/10 last 10 at 211.5",
+    "Under hit 3/5 last 5, 6/10 last 10 at 210.5",
     "Last game: 0 (under the line)"
    ],
    "actual": null,
@@ -613,12 +638,12 @@
    "open_price": null,
    "books": {
     "DraftKings": [
-     211.5,
-     -112
+     210.5,
+     -111
     ],
     "FanDuel": [
      211.5,
-     -114
+     -113
     ],
     "BetOnline.ag": [
      211.5,
@@ -633,9 +658,80 @@
      -115
     ],
     "Bovada": [
-     211.5,
+     210.5,
      -115
     ]
+   },
+   "dist": {
+    "k": "gamma",
+    "cv": 0.388
+   }
+  },
+  {
+   "game_id": "401873039",
+   "game": "CLE @ NO",
+   "player": "Quinshon Judkins",
+   "player_id": "4685702",
+   "team": "CLE",
+   "opp": "NO",
+   "stat": "RUSH_YDS",
+   "side": "UNDER",
+   "line": 68.5,
+   "line_source": "6 books",
+   "price": -113,
+   "projection": 53.5,
+   "prob": 0.647,
+   "edge": 0.117,
+   "score": 11.65,
+   "grade": "A",
+   "hit_l5": "3/5",
+   "hit_l10": "8/10",
+   "hit_season": "5/7",
+   "vs_opp": "0/0",
+   "minutes": 17.3,
+   "status": "ACTIVE",
+   "season_avg": 52.6,
+   "l10_avg": 54.5,
+   "reasons": [
+    "Implied team total 19.8 (low vs avg 22.8)",
+    "Backup QB starting: receiving efficiency trimmed",
+    "Under hit 3/5 last 5, 8/10 last 10 at 68.5",
+    "Last game: 25 (under the line)"
+   ],
+   "actual": null,
+   "result": null,
+   "last_game": 25.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     68.5,
+     -113
+    ],
+    "FanDuel": [
+     68.5,
+     -113
+    ],
+    "BetOnline.ag": [
+     68.5,
+     -114
+    ],
+    "BetRivers": [
+     71.5,
+     -118
+    ],
+    "BetMGM": [
+     65.5,
+     -115
+    ],
+    "Bovada": [
+     68.5,
+     -115
+    ]
+   },
+   "dist": {
+    "k": "gamma",
+    "cv": 0.54
    }
   },
   {
@@ -674,36 +770,182 @@
    "last_game": 32.0,
    "open_line": null,
    "open_price": null,
-   "books": null
+   "books": null,
+   "dist": {
+    "k": "normal",
+    "sd": 5.824
+   }
   },
   {
-   "game_id": "401873049",
-   "game": "GB @ NE",
-   "player": "Rhamondre Stevenson",
-   "player_id": "4569173",
-   "team": "NE",
-   "opp": "GB",
+   "game_id": "401873039",
+   "game": "CLE @ NO",
+   "player": "Shedeur Sanders",
+   "player_id": "4432762",
+   "team": "CLE",
+   "opp": "NO",
+   "stat": "INT",
+   "side": "OVER",
+   "line": 0.5,
+   "line_source": "est.",
+   "price": 174,
+   "projection": 1.04,
+   "prob": 0.518,
+   "edge": 0.153,
+   "score": 10.7,
+   "grade": "B",
+   "hit_l5": "1/5",
+   "hit_l10": "5/10",
+   "hit_season": "0/3",
+   "vs_opp": "0/0",
+   "minutes": 34.1,
+   "status": "ACTIVE",
+   "season_avg": 0.7,
+   "l10_avg": 0.0,
+   "reasons": [
+    "Goes against his last game: grade lowered one level (live record 42% on these)",
+    "Watson not listed by sportsbooks: Shedeur Sanders expected to start",
+    "Over hit 1/5 last 5, 5/10 last 10 at 0.5",
+    "Last game: 0 (under the line)"
+   ],
+   "actual": null,
+   "result": null,
+   "last_game": 0.0,
+   "open_line": null,
+   "open_price": null,
+   "books": null,
+   "dist": {
+    "k": "count",
+    "var": 1.088
+   }
+  },
+  {
+   "game_id": "401873039",
+   "game": "CLE @ NO",
+   "player": "Jerry Jeudy",
+   "player_id": "4241463",
+   "team": "CLE",
+   "opp": "NO",
    "stat": "REC",
-   "side": "UNDER",
-   "line": 3.5,
-   "line_source": "6 books",
-   "price": -106,
-   "projection": 2.7,
-   "prob": 0.623,
-   "edge": 0.108,
-   "score": 10.81,
-   "grade": "A",
+   "side": "OVER",
+   "line": 1.5,
+   "line_source": "4 books",
+   "price": 113,
+   "projection": 2.5,
+   "prob": 0.606,
+   "edge": 0.137,
+   "score": 9.58,
+   "grade": "B",
    "hit_l5": "4/5",
    "hit_l10": "7/10",
-   "hit_season": "6/8",
+   "hit_season": "5/8",
    "vs_opp": "0/0",
-   "minutes": 17.2,
+   "minutes": 4.4,
    "status": "ACTIVE",
-   "season_avg": 2.7,
+   "season_avg": 2.3,
    "l10_avg": 2.8,
    "reasons": [
-    "Brown, Henderson out: +0.4 targets, +2.4 carries",
-    "Under hit 4/5 last 5, 7/10 last 10 at 3.5",
+    "Goes against his last game: grade lowered one level (live record 42% on these)",
+    "Backup QB starting: receiving efficiency trimmed",
+    "Over hit 4/5 last 5, 7/10 last 10 at 1.5",
+    "Last game: 0 (under the line)"
+   ],
+   "actual": null,
+   "result": null,
+   "last_game": 0.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     1.5,
+     113
+    ],
+    "FanDuel": [
+     1.5,
+     106
+    ],
+    "BetOnline.ag": [
+     1.5,
+     109
+    ],
+    "Bovada": [
+     1.5,
+     110
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 2.667
+   }
+  },
+  {
+   "game_id": "401873039",
+   "game": "CLE @ NO",
+   "player": "Dylan Sampson",
+   "player_id": "5081397",
+   "team": "CLE",
+   "opp": "NO",
+   "stat": "RUSH_ATT",
+   "side": "UNDER",
+   "line": 5.5,
+   "line_source": "est.",
+   "price": -160,
+   "projection": 4.0,
+   "prob": 0.689,
+   "edge": 0.073,
+   "score": 7.32,
+   "grade": "B",
+   "hit_l5": "2/5",
+   "hit_l10": "6/10",
+   "hit_season": "1/2",
+   "vs_opp": "0/0",
+   "minutes": 7.5,
+   "status": "ACTIVE",
+   "season_avg": 4.1,
+   "l10_avg": 7.0,
+   "reasons": [
+    "Backup QB starting: receiving efficiency trimmed",
+    "Under hit 2/5 last 5, 6/10 last 10 at 5.5",
+    "Last game: 1 (under the line)"
+   ],
+   "actual": null,
+   "result": null,
+   "last_game": 1.0,
+   "open_line": null,
+   "open_price": null,
+   "books": null,
+   "dist": {
+    "k": "count",
+    "var": 5.901
+   }
+  },
+  {
+   "game_id": "401873039",
+   "game": "CLE @ NO",
+   "player": "KC Concepcion",
+   "player_id": "4870653",
+   "team": "CLE",
+   "opp": "NO",
+   "stat": "REC",
+   "side": "UNDER",
+   "line": 4.5,
+   "line_source": "6 books",
+   "price": -114,
+   "projection": 3.8,
+   "prob": 0.605,
+   "edge": 0.072,
+   "score": 7.22,
+   "grade": "B",
+   "hit_l5": "3/5",
+   "hit_l10": "5/8",
+   "hit_season": "5/8",
+   "vs_opp": "0/0",
+   "minutes": 7.0,
+   "status": "ACTIVE",
+   "season_avg": 4.1,
+   "l10_avg": 4.0,
+   "reasons": [
+    "Backup QB starting: receiving efficiency trimmed",
+    "Under hit 3/5 last 5, 5/8 last 10 at 4.5",
     "Last game: 3 (under the line)"
    ],
    "actual": null,
@@ -713,25 +955,93 @@
    "open_price": null,
    "books": {
     "DraftKings": [
-     3.5,
-     -106
+     4.5,
+     -122
     ],
     "FanDuel": [
-     3.5,
+     4.5,
      -114
     ],
     "BetOnline.ag": [
-     3.5,
-     -116
-    ],
-    "BetMGM": [
-     3.5,
+     4.5,
      -125
     ],
+    "BetMGM": [
+     4.5,
+     -135
+    ],
     "Bovada": [
-     3.5,
-     -110
+     4.5,
+     -125
     ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 4.005
+   }
+  },
+  {
+   "game_id": "401873044",
+   "game": "NYG @ PHI",
+   "player": "Theo Johnson",
+   "player_id": "4429148",
+   "team": "NYG",
+   "opp": "PHI",
+   "stat": "REC",
+   "side": "OVER",
+   "line": 0.5,
+   "line_source": "5 books",
+   "price": -204,
+   "projection": 1.9,
+   "prob": 0.763,
+   "edge": 0.092,
+   "score": 9.23,
+   "grade": "A",
+   "hit_l5": "3/5",
+   "hit_l10": "7/10",
+   "hit_season": "3/5",
+   "vs_opp": "2/2",
+   "minutes": 3.3,
+   "status": "ACTIVE",
+   "season_avg": 1.8,
+   "l10_avg": 0.8,
+   "reasons": [
+    "Weather: wind 10 mph: passing trimmed 1%",
+    "PHI limits receptions to TEs (-8%)",
+    "Over hit 3/5 last 5, 7/10 last 10 at 0.5",
+    "Last game: 2 (over the line)",
+    "Last 2 vs PHI: 3, 2"
+   ],
+   "actual": null,
+   "result": null,
+   "last_game": 2.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     0.5,
+     -213
+    ],
+    "FanDuel": [
+     0.5,
+     -220
+    ],
+    "BetOnline.ag": [
+     0.5,
+     -204
+    ],
+    "BetRivers": [
+     0.5,
+     -210
+    ],
+    "Bovada": [
+     0.5,
+     -220
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 2.01
    }
   },
   {
@@ -746,10 +1056,10 @@
    "line": 21.5,
    "line_source": "est.",
    "price": 139,
-   "projection": 32.2,
-   "prob": 0.515,
-   "edge": 0.096,
-   "score": 9.63,
+   "projection": 31.5,
+   "prob": 0.509,
+   "edge": 0.09,
+   "score": 9.01,
    "grade": "A",
    "hit_l5": "2/5",
    "hit_l10": "2/8",
@@ -760,9 +1070,9 @@
    "season_avg": 17.8,
    "l10_avg": 26.5,
    "reasons": [
-    "Weather: wind 9 mph: passing trimmed 2%",
-    "NYG allows rushing yards to RBs (+12%)",
-    "Implied team total 17.8 (low vs avg 22.7)",
+    "Weather: wind 10 mph: passing trimmed 1%",
+    "NYG allows rushing yards to RBs (+10%)",
+    "Implied team total 17.8 (low vs avg 22.8)",
     "Backup QB starting: receiving efficiency trimmed",
     "Over hit 2/5 last 5, 2/8 last 10 at 21.5",
     "Last game: 47 (over the line)"
@@ -772,7 +1082,11 @@
    "last_game": 47.0,
    "open_line": null,
    "open_price": null,
-   "books": null
+   "books": null,
+   "dist": {
+    "k": "gamma",
+    "cv": 0.756
+   }
   },
   {
    "game_id": "401873044",
@@ -787,21 +1101,21 @@
    "line_source": "est.",
    "price": -142,
    "projection": 0.3,
-   "prob": 0.673,
-   "edge": 0.086,
-   "score": 8.6,
+   "prob": 0.672,
+   "edge": 0.085,
+   "score": 8.53,
    "grade": "A",
    "hit_l5": "3/5",
    "hit_l10": "7/10",
    "hit_season": "4/7",
    "vs_opp": "0/0",
-   "minutes": 6.6,
+   "minutes": 6.7,
    "status": "ACTIVE",
    "season_avg": 0.5,
    "l10_avg": 0.8,
    "reasons": [
     "PHI limits anytime TD to TEs (-12%)",
-    "Implied team total 20.8 (low vs avg 22.7)",
+    "Implied team total 20.8 (low vs avg 22.8)",
     "Under hit 3/5 last 5, 7/10 last 10 at 0.5",
     "Last game: 0 (under the line)"
    ],
@@ -810,62 +1124,10 @@
    "last_game": 0.0,
    "open_line": null,
    "open_price": null,
-   "books": null
-  },
-  {
-   "game_id": "401873044",
-   "game": "NYG @ PHI",
-   "player": "Theo Johnson",
-   "player_id": "4429148",
-   "team": "NYG",
-   "opp": "PHI",
-   "stat": "REC",
-   "side": "OVER",
-   "line": 0.5,
-   "line_source": "4 books",
-   "price": -215,
-   "projection": 1.9,
-   "prob": 0.763,
-   "edge": 0.08,
-   "score": 8.01,
-   "grade": "A",
-   "hit_l5": "3/5",
-   "hit_l10": "7/10",
-   "hit_season": "3/5",
-   "vs_opp": "2/2",
-   "minutes": 3.3,
-   "status": "ACTIVE",
-   "season_avg": 1.8,
-   "l10_avg": 0.8,
-   "reasons": [
-    "Weather: wind 9 mph: passing trimmed 2%",
-    "PHI limits receptions to TEs (-8%)",
-    "Over hit 3/5 last 5, 7/10 last 10 at 0.5",
-    "Last game: 2 (over the line)",
-    "Last 2 vs PHI: 3, 2"
-   ],
-   "actual": null,
-   "result": null,
-   "last_game": 2.0,
-   "open_line": null,
-   "open_price": null,
-   "books": {
-    "DraftKings": [
-     1.5,
-     175
-    ],
-    "FanDuel": [
-     0.5,
-     -220
-    ],
-    "BetRivers": [
-     0.5,
-     -215
-    ],
-    "Bovada": [
-     1.5,
-     170
-    ]
+   "books": null,
+   "dist": {
+    "k": "count",
+    "var": 0.317
    }
   },
   {
@@ -879,11 +1141,11 @@
    "side": "OVER",
    "line": 1.5,
    "line_source": "6 books",
-   "price": 165,
+   "price": 170,
    "projection": 1.9,
-   "prob": 0.487,
-   "edge": 0.11,
-   "score": 7.67,
+   "prob": 0.485,
+   "edge": 0.115,
+   "score": 8.05,
    "grade": "B",
    "hit_l5": "2/5",
    "hit_l10": "7/10",
@@ -895,7 +1157,7 @@
    "l10_avg": 0.8,
    "reasons": [
     "Goes against his last game: grade lowered one level (live record 42% on these)",
-    "Weather: wind 9 mph: passing trimmed 2%",
+    "Weather: wind 10 mph: passing trimmed 1%",
     "Over hit 2/5 last 5, 7/10 last 10 at 1.5",
     "Last game: 1 (under the line)"
    ],
@@ -907,11 +1169,11 @@
    "books": {
     "DraftKings": [
      1.5,
-     136
+     142
     ],
     "FanDuel": [
      1.5,
-     154
+     144
     ],
     "BetOnline.ag": [
      1.5,
@@ -919,16 +1181,20 @@
     ],
     "BetRivers": [
      1.5,
-     165
+     170
     ],
     "BetMGM": [
      1.5,
-     120
+     140
     ],
     "Bovada": [
      1.5,
-     135
+     140
     ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 2.001
    }
   },
   {
@@ -967,7 +1233,11 @@
    "last_game": 3.0,
    "open_line": null,
    "open_price": null,
-   "books": null
+   "books": null,
+   "dist": {
+    "k": "count",
+    "var": 2.314
+   }
   },
   {
    "game_id": "401873042",
@@ -983,8 +1253,8 @@
    "price": 120,
    "projection": 0.47,
    "prob": 0.552,
-   "edge": 0.097,
-   "score": 6.82,
+   "edge": 0.098,
+   "score": 6.84,
    "grade": "B",
    "hit_l5": "2/5",
    "hit_l10": "7/10",
@@ -997,7 +1267,7 @@
    "reasons": [
     "Goes against his last game: grade lowered one level (live record 42% on these)",
     "MIA limits anytime TD to WRs (-7%)",
-    "Implied team total 28.0 (high vs avg 22.7)",
+    "Implied team total 28.0 (high vs avg 22.8)",
     "Favorite by 6.5: expect more rushing",
     "Under hit 2/5 last 5, 7/10 last 10 at 0.5",
     "Last game: 1 (over the line)"
@@ -1007,7 +1277,11 @@
    "last_game": 1.0,
    "open_line": null,
    "open_price": null,
-   "books": null
+   "books": null,
+   "dist": {
+    "k": "count",
+    "var": 0.491
+   }
   },
   {
    "game_id": "401873042",
@@ -1020,11 +1294,11 @@
    "side": "UNDER",
    "line": 3.5,
    "line_source": "6 books",
-   "price": 110,
+   "price": 112,
    "projection": 3.3,
-   "prob": 0.532,
-   "edge": 0.056,
-   "score": 3.9,
+   "prob": 0.529,
+   "edge": 0.057,
+   "score": 4.0,
    "grade": "C",
    "hit_l5": "1/5",
    "hit_l10": "5/10",
@@ -1049,11 +1323,11 @@
    "books": {
     "DraftKings": [
      3.5,
-     103
+     110
     ],
     "FanDuel": [
      3.5,
-     -102
+     112
     ],
     "BetOnline.ag": [
      3.5,
@@ -1065,85 +1339,330 @@
     ],
     "Bovada": [
      3.5,
-     105
+     110
     ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 3.466
    }
   },
   {
    "game_id": "401873042",
    "game": "DET @ MIA",
-   "player": "Jahmyr Gibbs",
-   "player_id": "4429795",
-   "team": "DET",
-   "opp": "MIA",
-   "stat": "ANY_TD",
-   "side": "OVER",
-   "line": 0.5,
-   "line_source": "est.",
-   "price": -241,
-   "projection": 1.52,
-   "prob": 0.737,
-   "edge": 0.03,
-   "score": 3.01,
+   "player": "Malik Washington",
+   "player_id": "4569603",
+   "team": "MIA",
+   "opp": "DET",
+   "stat": "REC_YDS",
+   "side": "UNDER",
+   "line": 41.5,
+   "line_source": "6 books",
+   "price": -103,
+   "projection": 42.1,
+   "prob": 0.541,
+   "edge": 0.034,
+   "score": 3.39,
    "grade": "C",
-   "hit_l5": "4/5",
-   "hit_l10": "8/10",
-   "hit_season": "6/7",
+   "hit_l5": "2/5",
+   "hit_l10": "5/10",
+   "hit_season": "2/7",
    "vs_opp": "0/0",
-   "minutes": 25.2,
+   "minutes": 6.3,
    "status": "ACTIVE",
-   "season_avg": 1.3,
-   "l10_avg": 1.0,
+   "season_avg": 36.7,
+   "l10_avg": 44.2,
    "reasons": [
-    "MIA allows anytime TD to RBs (+17%)",
-    "Implied team total 28.0 (high vs avg 22.7)",
-    "Favorite by 6.5: expect more rushing",
-    "Over hit 4/5 last 5, 8/10 last 10 at 0.5",
-    "Last game: 1 (over the line)"
+    "DET allows receiving yards to WRs (+11%)",
+    "Underdog by 6.5: expect more passing",
+    "Under hit 2/5 last 5, 5/10 last 10 at 41.5",
+    "Last game: 40 (under the line)"
    ],
    "actual": null,
    "result": null,
-   "last_game": 1.0,
+   "last_game": 40.0,
    "open_line": null,
    "open_price": null,
-   "books": null
+   "books": {
+    "DraftKings": [
+     43.5,
+     -115
+    ],
+    "FanDuel": [
+     41.5,
+     -113
+    ],
+    "BetOnline.ag": [
+     41.5,
+     -103
+    ],
+    "BetRivers": [
+     41.5,
+     -114
+    ],
+    "BetMGM": [
+     43.5,
+     -115
+    ],
+    "Bovada": [
+     43.5,
+     -120
+    ]
+   },
+   "dist": {
+    "k": "gamma",
+    "cv": 0.642
+   }
   },
   {
-   "game_id": "401873051",
-   "game": "BUF @ MIN",
-   "player": "T.J. Hockenson",
-   "player_id": "4036133",
-   "team": "MIN",
-   "opp": "BUF",
+   "game_id": "401873050",
+   "game": "TB @ CHI",
+   "player": "Colston Loveland",
+   "player_id": "4723086",
+   "team": "CHI",
+   "opp": "TB",
    "stat": "REC",
    "side": "UNDER",
-   "line": 4.5,
-   "line_source": "est.",
-   "price": -130,
-   "projection": 3.5,
-   "prob": 0.646,
-   "edge": 0.08,
-   "score": 8.0,
-   "grade": "A",
-   "hit_l5": "4/5",
-   "hit_l10": "9/10",
-   "hit_season": "6/7",
+   "line": 5.5,
+   "line_source": "6 books",
+   "price": -124,
+   "projection": 3.7,
+   "prob": 0.706,
+   "edge": 0.153,
+   "score": 10.68,
+   "grade": "B",
+   "hit_l5": "1/5",
+   "hit_l10": "5/10",
+   "hit_season": "4/8",
    "vs_opp": "0/0",
-   "minutes": 5.0,
+   "minutes": 5.8,
    "status": "ACTIVE",
-   "season_avg": 4.1,
+   "season_avg": 4.0,
    "l10_avg": 5.5,
    "reasons": [
-    "BUF limits receptions to TEs (-10%)",
-    "Under hit 4/5 last 5, 9/10 last 10 at 4.5",
-    "Last game: 4 (under the line)"
+    "Goes against his last game: grade lowered one level (live record 42% on these)",
+    "Weather: wind 9 mph (gusts 28): passing trimmed 9%",
+    "Favorite by 6: expect more rushing",
+    "Under hit 1/5 last 5, 5/10 last 10 at 5.5",
+    "Last game: 7 (over the line)"
    ],
    "actual": null,
    "result": null,
-   "last_game": 4.0,
+   "last_game": 7.0,
    "open_line": null,
    "open_price": null,
-   "books": null
+   "books": {
+    "DraftKings": [
+     5.5,
+     -124
+    ],
+    "FanDuel": [
+     5.5,
+     -130
+    ],
+    "BetOnline.ag": [
+     5.5,
+     -133
+    ],
+    "BetMGM": [
+     5.5,
+     -150
+    ],
+    "Bovada": [
+     5.5,
+     -125
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 3.937
+   }
+  },
+  {
+   "game_id": "401873050",
+   "game": "TB @ CHI",
+   "player": "Caleb Williams",
+   "player_id": "4431611",
+   "team": "CHI",
+   "opp": "TB",
+   "stat": "PASS_YDS",
+   "side": "UNDER",
+   "line": 247.5,
+   "line_source": "6 books",
+   "price": -112,
+   "projection": 218.4,
+   "prob": 0.628,
+   "edge": 0.1,
+   "score": 10.0,
+   "grade": "A",
+   "hit_l5": "2/5",
+   "hit_l10": "3/10",
+   "hit_season": "2/5",
+   "vs_opp": "0/0",
+   "minutes": 31.8,
+   "status": "ACTIVE",
+   "season_avg": 247.4,
+   "l10_avg": 249.5,
+   "reasons": [
+    "Weather: wind 9 mph (gusts 28): passing trimmed 9%",
+    "Implied team total 26.8 (high vs avg 22.8)",
+    "Favorite by 6: expect more rushing",
+    "Under hit 2/5 last 5, 3/10 last 10 at 247.5",
+    "Last game: 247 (under the line)"
+   ],
+   "actual": null,
+   "result": null,
+   "last_game": 247.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     247.5,
+     -112
+    ],
+    "FanDuel": [
+     243.5,
+     -113
+    ],
+    "BetOnline.ag": [
+     244.5,
+     -114
+    ],
+    "BetRivers": [
+     248.5,
+     -117
+    ],
+    "BetMGM": [
+     250.5,
+     -125
+    ],
+    "Bovada": [
+     247.5,
+     -115
+    ]
+   },
+   "dist": {
+    "k": "gamma",
+    "cv": 0.268
+   }
+  },
+  {
+   "game_id": "401873050",
+   "game": "TB @ CHI",
+   "player": "D'Andre Swift",
+   "player_id": "4259545",
+   "team": "CHI",
+   "opp": "TB",
+   "stat": "REC",
+   "side": "UNDER",
+   "line": 2.5,
+   "line_source": "6 books",
+   "price": 124,
+   "projection": 2.2,
+   "prob": 0.542,
+   "edge": 0.096,
+   "score": 9.57,
+   "grade": "A",
+   "hit_l5": "2/5",
+   "hit_l10": "6/10",
+   "hit_season": "4/8",
+   "vs_opp": "0/0",
+   "minutes": 21.2,
+   "status": "ACTIVE",
+   "season_avg": 2.7,
+   "l10_avg": 3.5,
+   "reasons": [
+    "Weather: wind 9 mph (gusts 28): passing trimmed 9%",
+    "Favorite by 6: expect more rushing",
+    "Under hit 2/5 last 5, 6/10 last 10 at 2.5",
+    "Last game: 2 (under the line)"
+   ],
+   "actual": null,
+   "result": null,
+   "last_game": 2.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     2.5,
+     124
+    ],
+    "FanDuel": [
+     2.5,
+     112
+    ],
+    "BetOnline.ag": [
+     2.5,
+     112
+    ],
+    "BetMGM": [
+     2.5,
+     105
+    ],
+    "Bovada": [
+     2.5,
+     120
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 2.35
+   }
+  },
+  {
+   "game_id": "401873050",
+   "game": "TB @ CHI",
+   "player": "Chris Godwin Jr.",
+   "player_id": "3116165",
+   "team": "TB",
+   "opp": "CHI",
+   "stat": "REC",
+   "side": "UNDER",
+   "line": 3.5,
+   "line_source": "4 books",
+   "price": -102,
+   "projection": 2.9,
+   "prob": 0.594,
+   "edge": 0.089,
+   "score": 8.94,
+   "grade": "A",
+   "hit_l5": "2/5",
+   "hit_l10": "5/10",
+   "hit_season": "4/8",
+   "vs_opp": "0/0",
+   "minutes": 4.9,
+   "status": "ACTIVE",
+   "season_avg": 3.5,
+   "l10_avg": 2.8,
+   "reasons": [
+    "Weather: wind 9 mph (gusts 28): passing trimmed 9%",
+    "Underdog by 6: expect more passing",
+    "Under hit 2/5 last 5, 5/10 last 10 at 3.5",
+    "Last game: 0 (under the line)"
+   ],
+   "actual": null,
+   "result": null,
+   "last_game": 0.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     3.5,
+     -102
+    ],
+    "FanDuel": [
+     3.5,
+     -104
+    ],
+    "BetOnline.ag": [
+     3.5,
+     -104
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 3.031
+   }
   },
   {
    "game_id": "401873051",
@@ -1158,21 +1677,20 @@
    "line_source": "est.",
    "price": -161,
    "projection": 0.21,
-   "prob": 0.728,
-   "edge": 0.111,
-   "score": 6.67,
+   "prob": 0.725,
+   "edge": 0.108,
+   "score": 10.84,
    "grade": "A",
    "hit_l5": "2/5",
    "hit_l10": "6/10",
    "hit_season": "4/7",
    "vs_opp": "0/0",
-   "minutes": 3.8,
-   "status": "QUESTIONABLE",
+   "minutes": 4.0,
+   "status": "ACTIVE",
    "season_avg": 0.4,
    "l10_avg": 0.8,
    "reasons": [
     "MIN limits anytime TD to WRs (-20%)",
-    "Listed Questionable: Shoulder  - Coleman (shoulder) was a limited practice participant Friday.",
     "Under hit 2/5 last 5, 6/10 last 10 at 0.5",
     "Last game: 0 (under the line)"
    ],
@@ -1181,174 +1699,228 @@
    "last_game": 0.0,
    "open_line": null,
    "open_price": null,
-   "books": null
+   "books": null,
+   "dist": {
+    "k": "count",
+    "var": 0.223
+   }
   },
   {
    "game_id": "401873051",
    "game": "BUF @ MIN",
-   "player": "Khalil Shakir",
-   "player_id": "4373678",
+   "player": "DJ Moore",
+   "player_id": "3915416",
    "team": "BUF",
    "opp": "MIN",
-   "stat": "REC",
+   "stat": "REC_YDS",
    "side": "UNDER",
-   "line": 4.5,
-   "line_source": "est.",
-   "price": -135,
-   "projection": 3.5,
-   "prob": 0.659,
-   "edge": 0.084,
-   "score": 5.89,
-   "grade": "B",
-   "hit_l5": "3/5",
-   "hit_l10": "5/10",
-   "hit_season": "5/7",
-   "vs_opp": "0/0",
-   "minutes": 5.6,
-   "status": "ACTIVE",
-   "season_avg": 4.3,
-   "l10_avg": 4.8,
-   "reasons": [
-    "Goes against his last game: grade lowered one level (live record 42% on these)",
-    "MIN limits receptions to WRs (-13%)",
-    "Under hit 3/5 last 5, 5/10 last 10 at 4.5",
-    "Last game: 5 (over the line)"
-   ],
-   "actual": null,
-   "result": null,
-   "last_game": 5.0,
-   "open_line": null,
-   "open_price": null,
-   "books": null
-  },
-  {
-   "game_id": "401873050",
-   "game": "TB @ CHI",
-   "player": "D'Andre Swift",
-   "player_id": "4259545",
-   "team": "CHI",
-   "opp": "TB",
-   "stat": "REC",
-   "side": "UNDER",
-   "line": 2.5,
-   "line_source": "6 books",
-   "price": 118,
-   "projection": 2.3,
-   "prob": 0.542,
-   "edge": 0.083,
-   "score": 8.29,
-   "grade": "A",
-   "hit_l5": "2/5",
-   "hit_l10": "6/10",
-   "hit_season": "4/8",
-   "vs_opp": "0/0",
-   "minutes": 21.1,
-   "status": "ACTIVE",
-   "season_avg": 2.7,
-   "l10_avg": 3.5,
-   "reasons": [
-    "Weather: wind 8 mph (gusts 26): passing trimmed 8%",
-    "Favorite by 6: expect more rushing",
-    "Under hit 2/5 last 5, 6/10 last 10 at 2.5",
-    "Last game: 2 (under the line)"
-   ],
-   "actual": null,
-   "result": null,
-   "last_game": 2.0,
-   "open_line": null,
-   "open_price": null,
-   "books": {
-    "DraftKings": [
-     2.5,
-     118
-    ],
-    "FanDuel": [
-     2.5,
-     112
-    ],
-    "BetOnline.ag": [
-     2.5,
-     115
-    ],
-    "BetMGM": [
-     2.5,
-     105
-    ],
-    "Bovada": [
-     2.5,
-     115
-    ]
-   }
-  },
-  {
-   "game_id": "401873050",
-   "game": "TB @ CHI",
-   "player": "Caleb Williams",
-   "player_id": "4431611",
-   "team": "CHI",
-   "opp": "TB",
-   "stat": "PASS_CMP",
-   "side": "UNDER",
-   "line": 21.5,
-   "line_source": "est.",
-   "price": 104,
-   "projection": 19.5,
-   "prob": 0.605,
-   "edge": 0.114,
-   "score": 7.97,
+   "line": 47.5,
+   "line_source": "5 books",
+   "price": -111,
+   "projection": 37.7,
+   "prob": 0.628,
+   "edge": 0.102,
+   "score": 7.11,
    "grade": "B",
    "hit_l5": "2/5",
    "hit_l10": "4/10",
    "hit_season": "2/5",
-   "vs_opp": "0/0",
-   "minutes": 31.9,
+   "vs_opp": "1/2",
+   "minutes": 5.9,
    "status": "ACTIVE",
-   "season_avg": 21.3,
-   "l10_avg": 22.8,
+   "season_avg": 47.6,
+   "l10_avg": 40.0,
    "reasons": [
     "Goes against his last game: grade lowered one level (live record 42% on these)",
-    "Weather: wind 8 mph (gusts 26): passing trimmed 8%",
-    "Favorite by 6: expect more rushing",
-    "Under hit 2/5 last 5, 4/10 last 10 at 21.5",
-    "Last game: 24 (over the line)"
+    "MIN limits receiving yards to WRs (-12%)",
+    "Under hit 2/5 last 5, 4/10 last 10 at 47.5",
+    "Last game: 82 (over the line)",
+    "Last 2 vs MIN: 18, 68"
    ],
    "actual": null,
    "result": null,
-   "last_game": 24.0,
+   "last_game": 82.0,
    "open_line": null,
    "open_price": null,
-   "books": null
+   "books": null,
+   "dist": {
+    "k": "gamma",
+    "cv": 0.764
+   }
   },
   {
-   "game_id": "401873050",
-   "game": "TB @ CHI",
-   "player": "Bucky Irving",
-   "player_id": "4596448",
-   "team": "TB",
-   "opp": "CHI",
-   "stat": "REC_YDS",
+   "game_id": "401873051",
+   "game": "BUF @ MIN",
+   "player": "T.J. Hockenson",
+   "player_id": "4036133",
+   "team": "MIN",
+   "opp": "BUF",
+   "stat": "REC",
    "side": "UNDER",
-   "line": 14.5,
-   "line_source": "6 books",
-   "price": -112,
-   "projection": 13.6,
-   "prob": 0.594,
-   "edge": 0.066,
-   "score": 6.61,
+   "line": 4.5,
+   "line_source": "est.",
+   "price": -130,
+   "projection": 3.7,
+   "prob": 0.622,
+   "edge": 0.056,
+   "score": 5.61,
    "grade": "B",
-   "hit_l5": "5/5",
+   "hit_l5": "4/5",
    "hit_l10": "9/10",
-   "hit_season": "7/8",
+   "hit_season": "6/7",
    "vs_opp": "0/0",
-   "minutes": 20.4,
+   "minutes": 5.4,
    "status": "ACTIVE",
-   "season_avg": 15.7,
-   "l10_avg": 4.2,
+   "season_avg": 4.1,
+   "l10_avg": 5.5,
    "reasons": [
-    "Weather: wind 8 mph (gusts 26): passing trimmed 8%",
-    "Implied team total 20.8 (low vs avg 22.7)",
-    "Underdog by 6: expect more passing",
-    "Under hit 5/5 last 5, 9/10 last 10 at 14.5",
+    "BUF limits receptions to TEs (-10%)",
+    "Under hit 4/5 last 5, 9/10 last 10 at 4.5",
+    "Last game: 4 (under the line)"
+   ],
+   "actual": null,
+   "result": null,
+   "last_game": 4.0,
+   "open_line": null,
+   "open_price": null,
+   "books": null,
+   "dist": {
+    "k": "count",
+    "var": 5.343
+   }
+  },
+  {
+   "game_id": "401873045",
+   "game": "NYJ @ KC",
+   "player": "Geno Smith",
+   "player_id": "15864",
+   "team": "NYJ",
+   "opp": "KC",
+   "stat": "PASS_ATT",
+   "side": "OVER",
+   "line": 30.5,
+   "line_source": "est.",
+   "price": -101,
+   "projection": 34.4,
+   "prob": 0.604,
+   "edge": 0.101,
+   "score": 10.14,
+   "grade": "A",
+   "hit_l5": "1/5",
+   "hit_l10": "3/10",
+   "hit_season": "3/8",
+   "vs_opp": "0/1",
+   "minutes": 34.4,
+   "status": "ACTIVE",
+   "season_avg": 29.9,
+   "l10_avg": 30.5,
+   "reasons": [
+    "Underdog by 9.5: expect more passing",
+    "Over hit 1/5 last 5, 3/10 last 10 at 30.5",
+    "Last game: 32 (over the line)",
+    "Last 1 vs KC: 16"
+   ],
+   "actual": null,
+   "result": null,
+   "last_game": 32.0,
+   "open_line": null,
+   "open_price": null,
+   "books": null,
+   "dist": {
+    "k": "normal",
+    "sd": 7.911
+   }
+  },
+  {
+   "game_id": "401873045",
+   "game": "NYJ @ KC",
+   "player": "Rashee Rice",
+   "player_id": "4428331",
+   "team": "KC",
+   "opp": "NYJ",
+   "stat": "REC",
+   "side": "UNDER",
+   "line": 5.5,
+   "line_source": "6 books",
+   "price": -146,
+   "projection": 3.8,
+   "prob": 0.711,
+   "edge": 0.118,
+   "score": 8.26,
+   "grade": "B",
+   "hit_l5": "3/5",
+   "hit_l10": "4/10",
+   "hit_season": "3/5",
+   "vs_opp": "0/0",
+   "minutes": 6.0,
+   "status": "ACTIVE",
+   "season_avg": 5.2,
+   "l10_avg": 4.5,
+   "reasons": [
+    "Goes against his last game: grade lowered one level (live record 42% on these)",
+    "Favorite by 9.5: expect more rushing",
+    "Under hit 3/5 last 5, 4/10 last 10 at 5.5",
+    "Last game: 7 (over the line)"
+   ],
+   "actual": null,
+   "result": null,
+   "last_game": 7.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     5.5,
+     -146
+    ],
+    "FanDuel": [
+     4.5,
+     118
+    ],
+    "BetOnline.ag": [
+     5.5,
+     -154
+    ],
+    "BetMGM": [
+     5.5,
+     -150
+    ],
+    "Bovada": [
+     5.5,
+     -150
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 4.001
+   }
+  },
+  {
+   "game_id": "401873045",
+   "game": "NYJ @ KC",
+   "player": "Omar Cooper Jr.",
+   "player_id": "4723820",
+   "team": "NYJ",
+   "opp": "KC",
+   "stat": "REC",
+   "side": "UNDER",
+   "line": 4.5,
+   "line_source": "6 books",
+   "price": -125,
+   "projection": 2.8,
+   "prob": 0.713,
+   "edge": 0.157,
+   "score": 7.87,
+   "grade": "A",
+   "hit_l5": "2/4",
+   "hit_l10": "2/4",
+   "hit_season": "2/4",
+   "vs_opp": "0/0",
+   "minutes": 4.0,
+   "status": "ACTIVE",
+   "season_avg": 3.0,
+   "l10_avg": 3.0,
+   "reasons": [
+    "Underdog by 9.5: expect more passing",
     "Last game: 0 (under the line)"
    ],
    "actual": null,
@@ -1358,29 +1930,137 @@
    "open_price": null,
    "books": {
     "DraftKings": [
-     14.5,
-     -116
+     4.5,
+     -125
     ],
     "FanDuel": [
-     13.5,
-     -114
+     4.5,
+     -140
     ],
     "BetOnline.ag": [
-     14.5,
-     -112
-    ],
-    "BetRivers": [
-     14.5,
-     -118
+     4.5,
+     -139
     ],
     "BetMGM": [
-     13.5,
-     -110
+     4.5,
+     -150
     ],
     "Bovada": [
-     14.5,
-     -120
+     4.5,
+     -125
     ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 3.538
+   }
+  },
+  {
+   "game_id": "401873045",
+   "game": "NYJ @ KC",
+   "player": "Patrick Mahomes",
+   "player_id": "3139477",
+   "team": "KC",
+   "opp": "NYJ",
+   "stat": "PASS_TD",
+   "side": "OVER",
+   "line": 1.5,
+   "line_source": "est.",
+   "price": 117,
+   "projection": 2.04,
+   "prob": 0.534,
+   "edge": 0.073,
+   "score": 7.28,
+   "grade": "B",
+   "hit_l5": "3/5",
+   "hit_l10": "6/10",
+   "hit_season": "5/7",
+   "vs_opp": "0/0",
+   "minutes": 32.5,
+   "status": "ACTIVE",
+   "season_avg": 1.7,
+   "l10_avg": 1.2,
+   "reasons": [
+    "NYJ allows passing TDs to QBs (+7%)",
+    "Implied team total 29.0 (high vs avg 22.8)",
+    "Favorite by 9.5: expect more rushing",
+    "Over hit 3/5 last 5, 6/10 last 10 at 1.5",
+    "Last game: 3 (over the line)"
+   ],
+   "actual": null,
+   "result": null,
+   "last_game": 3.0,
+   "open_line": null,
+   "open_price": null,
+   "books": null,
+   "dist": {
+    "k": "count",
+    "var": 2.143
+   }
+  },
+  {
+   "game_id": "401873045",
+   "game": "NYJ @ KC",
+   "player": "Mason Taylor",
+   "player_id": "4808766",
+   "team": "NYJ",
+   "opp": "KC",
+   "stat": "REC",
+   "side": "OVER",
+   "line": 3.5,
+   "line_source": "5 books",
+   "price": 122,
+   "projection": 4.3,
+   "prob": 0.531,
+   "edge": 0.081,
+   "score": 5.65,
+   "grade": "B",
+   "hit_l5": "2/5",
+   "hit_l10": "4/10",
+   "hit_season": "2/6",
+   "vs_opp": "0/0",
+   "minutes": 5.5,
+   "status": "ACTIVE",
+   "season_avg": 3.1,
+   "l10_avg": 3.8,
+   "reasons": [
+    "Goes against his last game: grade lowered one level (live record 42% on these)",
+    "KC allows receptions to TEs (+11%)",
+    "Underdog by 9.5: expect more passing",
+    "Wilson out: +0.7 targets",
+    "Over hit 2/5 last 5, 4/10 last 10 at 3.5",
+    "Last game: 3 (under the line)"
+   ],
+   "actual": null,
+   "result": null,
+   "last_game": 3.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     3.5,
+     112
+    ],
+    "FanDuel": [
+     3.5,
+     122
+    ],
+    "BetOnline.ag": [
+     3.5,
+     118
+    ],
+    "BetRivers": [
+     3.5,
+     115
+    ],
+    "Bovada": [
+     3.5,
+     110
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 5.464
    }
   },
   {
@@ -1396,22 +2076,22 @@
    "line_source": "est.",
    "price": -152,
    "projection": 0.31,
-   "prob": 0.674,
-   "edge": 0.071,
-   "score": 7.07,
+   "prob": 0.673,
+   "edge": 0.07,
+   "score": 6.98,
    "grade": "B",
    "hit_l5": "3/5",
    "hit_l10": "7/10",
    "hit_season": "5/8",
    "vs_opp": "0/0",
-   "minutes": 6.6,
+   "minutes": 6.5,
    "status": "ACTIVE",
    "season_avg": 0.4,
    "l10_avg": 0.8,
    "reasons": [
     "SF limits anytime TD to WRs (-8%)",
-    "Implied team total 20.8 (low vs avg 22.7)",
-    "Underdog by 10: expect more passing",
+    "Implied team total 21.0 (low vs avg 22.8)",
+    "Underdog by 9.5: expect more passing",
     "Under hit 3/5 last 5, 7/10 last 10 at 0.5",
     "Last game: 0 (under the line)"
    ],
@@ -1420,7 +2100,11 @@
    "last_game": 0.0,
    "open_line": null,
    "open_price": null,
-   "books": null
+   "books": null,
+   "dist": {
+    "k": "count",
+    "var": 0.33
+   }
   },
   {
    "game_id": "401873047",
@@ -1434,22 +2118,22 @@
    "line": 33.5,
    "line_source": "est.",
    "price": -108,
-   "projection": 37.9,
-   "prob": 0.615,
-   "edge": 0.095,
-   "score": 6.67,
+   "projection": 37.7,
+   "prob": 0.612,
+   "edge": 0.092,
+   "score": 6.41,
    "grade": "B",
    "hit_l5": "3/5",
    "hit_l10": "3/10",
    "hit_season": "3/8",
    "vs_opp": "0/0",
-   "minutes": 37.9,
+   "minutes": 37.7,
    "status": "ACTIVE",
    "season_avg": 32.5,
    "l10_avg": 34.8,
    "reasons": [
     "Goes against his last game: grade lowered one level (live record 42% on these)",
-    "Underdog by 10: expect more passing",
+    "Underdog by 9.5: expect more passing",
     "Over hit 3/5 last 5, 3/10 last 10 at 33.5",
     "Last game: 26 (under the line)"
    ],
@@ -1458,7 +2142,11 @@
    "last_game": 26.0,
    "open_line": null,
    "open_price": null,
-   "books": null
+   "books": null,
+   "dist": {
+    "k": "normal",
+    "sd": 8.538
+   }
   },
   {
    "game_id": "401873047",
@@ -1472,22 +2160,22 @@
    "line": 31.5,
    "line_source": "est.",
    "price": -126,
-   "projection": 29.0,
-   "prob": 0.641,
-   "edge": 0.083,
-   "score": 5.83,
-   "grade": "B",
+   "projection": 29.1,
+   "prob": 0.633,
+   "edge": 0.075,
+   "score": 5.27,
+   "grade": "C",
    "hit_l5": "4/5",
    "hit_l10": "8/10",
    "hit_season": "5/7",
    "vs_opp": "0/0",
-   "minutes": 29.0,
+   "minutes": 29.1,
    "status": "ACTIVE",
    "season_avg": 30.5,
    "l10_avg": 32.0,
    "reasons": [
     "Goes against his last game: grade lowered one level (live record 42% on these)",
-    "Favorite by 10: expect more rushing",
+    "Favorite by 9.5: expect more rushing",
     "Under hit 4/5 last 5, 8/10 last 10 at 31.5",
     "Last game: 40 (over the line)"
    ],
@@ -1496,7 +2184,11 @@
    "last_game": 40.0,
    "open_line": null,
    "open_price": null,
-   "books": null
+   "books": null,
+   "dist": {
+    "k": "normal",
+    "sd": 4.539
+   }
   },
   {
    "game_id": "401873047",
@@ -1509,11 +2201,11 @@
    "side": "UNDER",
    "line": 70.5,
    "line_source": "6 books",
-   "price": -112,
-   "projection": 60.8,
-   "prob": 0.605,
-   "edge": 0.076,
-   "score": 5.34,
+   "price": -115,
+   "projection": 60.9,
+   "prob": 0.604,
+   "edge": 0.069,
+   "score": 4.84,
    "grade": "C",
    "hit_l5": "3/5",
    "hit_l10": "6/10",
@@ -1525,9 +2217,9 @@
    "l10_avg": 62.8,
    "reasons": [
     "Goes against his last game: grade lowered one level (live record 42% on these)",
-    "Implied team total 30.8 (high vs avg 22.7)",
-    "Favorite by 10: expect more rushing",
-    "Evans, Kirk, Samuel out: +1.4 targets",
+    "Implied team total 30.5 (high vs avg 22.8)",
+    "Favorite by 9.5: expect more rushing",
+    "Evans, Samuel, Kirk out: +1.4 targets",
     "Under hit 3/5 last 5, 6/10 last 10 at 70.5",
     "Last game: 88 (over the line)"
    ],
@@ -1538,254 +2230,33 @@
    "open_price": null,
    "books": {
     "DraftKings": [
-     70.5,
-     -112
+     71.5,
+     -114
     ],
     "FanDuel": [
      68.5,
-     -114
+     -113
     ],
     "BetOnline.ag": [
-     70.5,
-     -114
+     71.5,
+     -111
     ],
     "BetRivers": [
      69.5,
-     -115
+     -117
     ],
     "BetMGM": [
      70.5,
      -115
     ],
     "Bovada": [
-     70.5,
+     71.5,
      -115
     ]
-   }
-  },
-  {
-   "game_id": "401873039",
-   "game": "CLE @ NO",
-   "player": "Shedeur Sanders",
-   "player_id": "4432762",
-   "team": "CLE",
-   "opp": "NO",
-   "stat": "INT",
-   "side": "OVER",
-   "line": 0.5,
-   "line_source": "est.",
-   "price": 174,
-   "projection": 1.04,
-   "prob": 0.519,
-   "edge": 0.154,
-   "score": 10.77,
-   "grade": "B",
-   "hit_l5": "1/5",
-   "hit_l10": "5/10",
-   "hit_season": "0/3",
-   "vs_opp": "0/0",
-   "minutes": 34.3,
-   "status": "ACTIVE",
-   "season_avg": 0.7,
-   "l10_avg": 0.0,
-   "reasons": [
-    "Goes against his last game: grade lowered one level (live record 42% on these)",
-    "Watson not listed by sportsbooks: Shedeur Sanders expected to start",
-    "Over hit 1/5 last 5, 5/10 last 10 at 0.5",
-    "Last game: 0 (under the line)"
-   ],
-   "actual": null,
-   "result": null,
-   "last_game": 0.0,
-   "open_line": null,
-   "open_price": null,
-   "books": null
-  },
-  {
-   "game_id": "401873039",
-   "game": "CLE @ NO",
-   "player": "Jerry Jeudy",
-   "player_id": "4241463",
-   "team": "CLE",
-   "opp": "NO",
-   "stat": "REC",
-   "side": "OVER",
-   "line": 1.5,
-   "line_source": "4 books",
-   "price": 120,
-   "projection": 2.6,
-   "prob": 0.604,
-   "edge": 0.149,
-   "score": 10.45,
-   "grade": "B",
-   "hit_l5": "4/5",
-   "hit_l10": "7/10",
-   "hit_season": "5/8",
-   "vs_opp": "0/0",
-   "minutes": 4.5,
-   "status": "ACTIVE",
-   "season_avg": 2.3,
-   "l10_avg": 2.8,
-   "reasons": [
-    "Goes against his last game: grade lowered one level (live record 42% on these)",
-    "Backup QB starting: receiving efficiency trimmed",
-    "Over hit 4/5 last 5, 7/10 last 10 at 1.5",
-    "Last game: 0 (under the line)"
-   ],
-   "actual": null,
-   "result": null,
-   "last_game": 0.0,
-   "open_line": null,
-   "open_price": null,
-   "books": {
-    "DraftKings": [
-     1.5,
-     119
-    ],
-    "FanDuel": [
-     1.5,
-     114
-    ],
-    "BetOnline.ag": [
-     1.5,
-     110
-    ],
-    "Bovada": [
-     1.5,
-     120
-    ]
-   }
-  },
-  {
-   "game_id": "401873039",
-   "game": "CLE @ NO",
-   "player": "Noah Fant",
-   "player_id": "4036131",
-   "team": "NO",
-   "opp": "CLE",
-   "stat": "ANY_TD",
-   "side": "UNDER",
-   "line": 0.5,
-   "line_source": "est.",
-   "price": -215,
-   "projection": 0.16,
-   "prob": 0.774,
-   "edge": 0.092,
-   "score": 9.2,
-   "grade": "A",
-   "hit_l5": "4/5",
-   "hit_l10": "8/10",
-   "hit_season": "4/6",
-   "vs_opp": "1/2",
-   "minutes": 2.5,
-   "status": "ACTIVE",
-   "season_avg": 0.4,
-   "l10_avg": 0.5,
-   "reasons": [
-    "Under hit 4/5 last 5, 8/10 last 10 at 0.5",
-    "Last game: 0 (under the line)",
-    "Last 2 vs CLE: 0, 1"
-   ],
-   "actual": null,
-   "result": null,
-   "last_game": 0.0,
-   "open_line": null,
-   "open_price": null,
-   "books": null
-  },
-  {
-   "game_id": "401873039",
-   "game": "CLE @ NO",
-   "player": "Dylan Sampson",
-   "player_id": "5081397",
-   "team": "CLE",
-   "opp": "NO",
-   "stat": "RUSH_ATT",
-   "side": "UNDER",
-   "line": 5.5,
-   "line_source": "est.",
-   "price": -160,
-   "projection": 4.0,
-   "prob": 0.691,
-   "edge": 0.075,
-   "score": 7.55,
-   "grade": "B",
-   "hit_l5": "2/5",
-   "hit_l10": "6/10",
-   "hit_season": "1/2",
-   "vs_opp": "0/0",
-   "minutes": 7.5,
-   "status": "ACTIVE",
-   "season_avg": 4.1,
-   "l10_avg": 7.0,
-   "reasons": [
-    "Backup QB starting: receiving efficiency trimmed",
-    "Under hit 2/5 last 5, 6/10 last 10 at 5.5",
-    "Last game: 1 (under the line)"
-   ],
-   "actual": null,
-   "result": null,
-   "last_game": 1.0,
-   "open_line": null,
-   "open_price": null,
-   "books": null
-  },
-  {
-   "game_id": "401873039",
-   "game": "CLE @ NO",
-   "player": "KC Concepcion",
-   "player_id": "4870653",
-   "team": "CLE",
-   "opp": "NO",
-   "stat": "REC",
-   "side": "UNDER",
-   "line": 4.5,
-   "line_source": "6 books",
-   "price": -114,
-   "projection": 3.8,
-   "prob": 0.605,
-   "edge": 0.073,
-   "score": 7.25,
-   "grade": "B",
-   "hit_l5": "3/5",
-   "hit_l10": "5/8",
-   "hit_season": "5/8",
-   "vs_opp": "0/0",
-   "minutes": 7.0,
-   "status": "ACTIVE",
-   "season_avg": 4.1,
-   "l10_avg": 4.0,
-   "reasons": [
-    "Backup QB starting: receiving efficiency trimmed",
-    "Under hit 3/5 last 5, 5/8 last 10 at 4.5",
-    "Last game: 3 (under the line)"
-   ],
-   "actual": null,
-   "result": null,
-   "last_game": 3.0,
-   "open_line": null,
-   "open_price": null,
-   "books": {
-    "DraftKings": [
-     4.5,
-     -119
-    ],
-    "FanDuel": [
-     4.5,
-     -114
-    ],
-    "BetOnline.ag": [
-     4.5,
-     -127
-    ],
-    "BetMGM": [
-     4.5,
-     -140
-    ],
-    "Bovada": [
-     4.5,
-     -120
-    ]
+   },
+   "dist": {
+    "k": "gamma",
+    "cv": 0.596
    }
   },
   {
@@ -1798,12 +2269,12 @@
    "stat": "REC",
    "side": "OVER",
    "line": 1.5,
-   "line_source": "4 books",
+   "line_source": "5 books",
    "price": -144,
    "projection": 2.8,
-   "prob": 0.683,
-   "edge": 0.093,
-   "score": 9.26,
+   "prob": 0.685,
+   "edge": 0.095,
+   "score": 9.47,
    "grade": "A",
    "hit_l5": "3/5",
    "hit_l10": "8/10",
@@ -1828,7 +2299,7 @@
    "books": {
     "DraftKings": [
      1.5,
-     -160
+     -163
     ],
     "FanDuel": [
      1.5,
@@ -1836,12 +2307,20 @@
     ],
     "BetOnline.ag": [
      1.5,
-     -156
+     -161
+    ],
+    "BetMGM": [
+     1.5,
+     -175
     ],
     "Bovada": [
      1.5,
      -165
     ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 2.917
    }
   },
   {
@@ -1858,8 +2337,8 @@
    "price": -108,
    "projection": 10.4,
    "prob": 0.633,
-   "edge": 0.113,
-   "score": 7.94,
+   "edge": 0.114,
+   "score": 7.97,
    "grade": "B",
    "hit_l5": "2/5",
    "hit_l10": "5/10",
@@ -1889,15 +2368,15 @@
     ],
     "FanDuel": [
      13.5,
-     -114
+     -113
     ],
     "BetOnline.ag": [
      13.5,
-     -112
+     -114
     ],
     "BetRivers": [
      13.5,
-     -112
+     -117
     ],
     "BetMGM": [
      13.5,
@@ -1907,6 +2386,10 @@
      13.5,
      -110
     ]
+   },
+   "dist": {
+    "k": "gamma",
+    "cv": 0.883
    }
   },
   {
@@ -1920,11 +2403,11 @@
    "side": "OVER",
    "line": 1.5,
    "line_source": "5 books",
-   "price": 110,
+   "price": 112,
    "projection": 2.1,
-   "prob": 0.548,
-   "edge": 0.072,
-   "score": 7.21,
+   "prob": 0.547,
+   "edge": 0.075,
+   "score": 7.5,
    "grade": "B",
    "hit_l5": "3/5",
    "hit_l10": "5/10",
@@ -1948,7 +2431,7 @@
    "books": {
     "DraftKings": [
      1.5,
-     109
+     112
     ],
     "FanDuel": [
      1.5,
@@ -1956,7 +2439,7 @@
     ],
     "BetOnline.ag": [
      1.5,
-     103
+     104
     ],
     "BetMGM": [
      1.5,
@@ -1966,6 +2449,10 @@
      1.5,
      110
     ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 2.208
    }
   },
   {
@@ -1979,11 +2466,11 @@
    "side": "UNDER",
    "line": 52.5,
    "line_source": "6 books",
-   "price": -111,
+   "price": -113,
    "projection": 43.9,
-   "prob": 0.613,
-   "edge": 0.087,
-   "score": 6.09,
+   "prob": 0.615,
+   "edge": 0.084,
+   "score": 5.9,
    "grade": "B",
    "hit_l5": "3/5",
    "hit_l10": "7/10",
@@ -1995,7 +2482,7 @@
    "l10_avg": 42.2,
    "reasons": [
     "Goes against his last game: grade lowered one level (live record 42% on these)",
-    "Implied team total 17.2 (low vs avg 22.7)",
+    "Implied team total 17.2 (low vs avg 22.8)",
     "Underdog by 6: expect more passing",
     "Under hit 3/5 last 5, 7/10 last 10 at 52.5",
     "Last game: 86 (over the line)",
@@ -2009,336 +2496,165 @@
    "books": {
     "DraftKings": [
      52.5,
-     -111
+     -113
     ],
     "FanDuel": [
      52.5,
-     -114
+     -113
     ],
     "BetOnline.ag": [
      52.5,
-     -114
+     -115
     ],
     "BetRivers": [
      47.5,
      -121
     ],
     "BetMGM": [
-     50.5,
+     51.5,
      -115
     ],
     "Bovada": [
      52.5,
      -115
     ]
+   },
+   "dist": {
+    "k": "gamma",
+    "cv": 0.676
    }
   },
   {
    "game_id": "401873046",
    "game": "HOU @ LAC",
-   "player": "Kayshon Boutte",
-   "player_id": "4429022",
+   "player": "C.J. Stroud",
+   "player_id": "4432577",
    "team": "HOU",
    "opp": "LAC",
-   "stat": "REC",
-   "side": "OVER",
-   "line": 1.5,
+   "stat": "PASS_YDS",
+   "side": "UNDER",
+   "line": 251.5,
    "line_source": "6 books",
-   "price": 110,
-   "projection": 2.1,
-   "prob": 0.56,
-   "edge": 0.084,
-   "score": 5.89,
+   "price": -112,
+   "projection": 232.4,
+   "prob": 0.586,
+   "edge": 0.058,
+   "score": 5.76,
    "grade": "B",
-   "hit_l5": "4/5",
-   "hit_l10": "6/10",
-   "hit_season": "5/7",
-   "vs_opp": "1/1",
-   "minutes": 3.3,
-   "status": "ACTIVE",
-   "season_avg": 2.2,
-   "l10_avg": 2.2,
-   "reasons": [
-    "Goes against his last game: grade lowered one level (live record 42% on these)",
-    "Favorite by 6: expect more rushing",
-    "Over hit 4/5 last 5, 6/10 last 10 at 1.5",
-    "Last game: 1 (under the line)",
-    "Last 1 vs LAC: 4"
-   ],
-   "actual": null,
-   "result": null,
-   "last_game": 1.0,
-   "open_line": null,
-   "open_price": null,
-   "books": {
-    "DraftKings": [
-     1.5,
-     109
-    ],
-    "FanDuel": [
-     1.5,
-     -102
-    ],
-    "BetOnline.ag": [
-     1.5,
-     100
-    ],
-    "BetRivers": [
-     1.5,
-     -127
-    ],
-    "BetMGM": [
-     1.5,
-     -111
-    ],
-    "Bovada": [
-     1.5,
-     110
-    ]
-   }
-  },
-  {
-   "game_id": "401873049",
-   "game": "GB @ NE",
-   "player": "MarShawn Lloyd",
-   "player_id": "4429023",
-   "team": "GB",
-   "opp": "NE",
-   "stat": "RUSH_YDS",
-   "side": "OVER",
-   "line": 7.5,
-   "line_source": "2 books",
-   "price": -110,
-   "projection": 20.9,
-   "prob": 0.752,
-   "edge": 0.228,
-   "score": 9.58,
-   "grade": "B",
-   "hit_l5": "4/5",
-   "hit_l10": "7/8",
-   "hit_season": "7/8",
-   "vs_opp": "0/0",
-   "minutes": 8.6,
-   "status": "QUESTIONABLE",
-   "season_avg": 18.6,
-   "l10_avg": 17.0,
-   "reasons": [
-    "Goes against his last game: grade lowered one level (live record 42% on these)",
-    "NE limits rushing yards to RBs (-7%)",
-    "Implied team total 20.8 (low vs avg 22.7)",
-    "Listed Questionable: Knee Not Specified - Lloyd (knee) is listed as questionable for Sunday's game against the Patriots.",
-    "Over hit 4/5 last 5, 7/8 last 10 at 7.5",
-    "Last game: 7 (under the line)"
-   ],
-   "actual": null,
-   "result": null,
-   "last_game": 7.0,
-   "open_line": null,
-   "open_price": null,
-   "books": {
-    "DraftKings": [
-     7.5,
-     -110
-    ],
-    "Bovada": [
-     7.5,
-     -110
-    ]
-   }
-  },
-  {
-   "game_id": "401873049",
-   "game": "GB @ NE",
-   "player": "DeMario Douglas",
-   "player_id": "4427095",
-   "team": "NE",
-   "opp": "GB",
-   "stat": "REC",
-   "side": "UNDER",
-   "line": 3.5,
-   "line_source": "5 books",
-   "price": -102,
-   "projection": 3.0,
-   "prob": 0.589,
-   "edge": 0.084,
-   "score": 8.43,
-   "grade": "A",
-   "hit_l5": "3/5",
-   "hit_l10": "6/10",
-   "hit_season": "5/8",
-   "vs_opp": "0/0",
-   "minutes": 4.3,
-   "status": "ACTIVE",
-   "season_avg": 2.8,
-   "l10_avg": 4.2,
-   "reasons": [
-    "GB allows receptions to WRs (+7%)",
-    "Under hit 3/5 last 5, 6/10 last 10 at 3.5",
-    "Last game: 3 (under the line)"
-   ],
-   "actual": null,
-   "result": null,
-   "last_game": 3.0,
-   "open_line": null,
-   "open_price": null,
-   "books": {
-    "DraftKings": [
-     3.5,
-     -102
-    ],
-    "BetOnline.ag": [
-     3.5,
-     -110
-    ],
-    "BetMGM": [
-     3.5,
-     -115
-    ],
-    "Bovada": [
-     3.5,
-     -105
-    ]
-   }
-  },
-  {
-   "game_id": "401873049",
-   "game": "GB @ NE",
-   "player": "Josh Jacobs",
-   "player_id": "4047365",
-   "team": "GB",
-   "opp": "NE",
-   "stat": "ANY_TD",
-   "side": "UNDER",
-   "line": 0.5,
-   "line_source": "est.",
-   "price": 138,
-   "projection": 0.55,
-   "prob": 0.508,
-   "edge": 0.088,
-   "score": 6.18,
-   "grade": "B",
-   "hit_l5": "3/5",
+   "hit_l5": "2/5",
    "hit_l10": "5/10",
-   "hit_season": "0/2",
-   "vs_opp": "0/0",
-   "minutes": 18.7,
+   "hit_season": "2/7",
+   "vs_opp": "1/1",
+   "minutes": 32.7,
    "status": "ACTIVE",
-   "season_avg": 1.1,
-   "l10_avg": 0.8,
+   "season_avg": 249.3,
+   "l10_avg": 268.2,
    "reasons": [
-    "Goes against his last game: grade lowered one level (live record 42% on these)",
-    "NE limits anytime TD to RBs (-15%)",
-    "Implied team total 20.8 (low vs avg 22.7)",
-    "Under hit 3/5 last 5, 5/10 last 10 at 0.5",
-    "Last game: 2 (over the line)"
+    "Favorite by 6: expect more rushing",
+    "Under hit 2/5 last 5, 5/10 last 10 at 251.5",
+    "Last game: 153 (under the line)",
+    "Last 1 vs LAC: 244"
    ],
    "actual": null,
    "result": null,
-   "last_game": 2.0,
-   "open_line": null,
-   "open_price": null,
-   "books": null
-  },
-  {
-   "game_id": "401873049",
-   "game": "GB @ NE",
-   "player": "Tucker Kraft",
-   "player_id": "4572680",
-   "team": "GB",
-   "opp": "NE",
-   "stat": "ANY_TD",
-   "side": "UNDER",
-   "line": 0.5,
-   "line_source": "est.",
-   "price": -176,
-   "projection": 0.26,
-   "prob": 0.709,
-   "edge": 0.072,
-   "score": 5.01,
-   "grade": "C",
-   "hit_l5": "2/5",
-   "hit_l10": "6/10",
-   "hit_season": "5/8",
-   "vs_opp": "0/0",
-   "minutes": 6.2,
-   "status": "ACTIVE",
-   "season_avg": 0.5,
-   "l10_avg": 0.5,
-   "reasons": [
-    "Goes against his last game: grade lowered one level (live record 42% on these)",
-    "NE limits anytime TD to TEs (-20%)",
-    "Implied team total 20.8 (low vs avg 22.7)",
-    "Under hit 2/5 last 5, 6/10 last 10 at 0.5",
-    "Last game: 1 (over the line)"
-   ],
-   "actual": null,
-   "result": null,
-   "last_game": 1.0,
-   "open_line": null,
-   "open_price": null,
-   "books": null
-  },
-  {
-   "game_id": "401873049",
-   "game": "GB @ NE",
-   "player": "Matthew Golden",
-   "player_id": "4701936",
-   "team": "GB",
-   "opp": "NE",
-   "stat": "REC_YDS",
-   "side": "UNDER",
-   "line": 67.5,
-   "line_source": "6 books",
-   "price": -114,
-   "projection": 59.9,
-   "prob": 0.598,
-   "edge": 0.065,
-   "score": 4.55,
-   "grade": "C",
-   "hit_l5": "2/5",
-   "hit_l10": "4/10",
-   "hit_season": "3/8",
-   "vs_opp": "0/0",
-   "minutes": 8.1,
-   "status": "ACTIVE",
-   "season_avg": 61.5,
-   "l10_avg": 86.2,
-   "reasons": [
-    "Goes against his last game: grade lowered one level (live record 42% on these)",
-    "Implied team total 20.8 (low vs avg 22.7)",
-    "Under hit 2/5 last 5, 4/10 last 10 at 67.5",
-    "Last game: 79 (over the line)"
-   ],
-   "actual": null,
-   "result": null,
-   "last_game": 79.0,
+   "last_game": 153.0,
    "open_line": null,
    "open_price": null,
    "books": {
     "DraftKings": [
-     68.5,
-     -111
+     251.5,
+     -112
     ],
     "FanDuel": [
-     67.5,
+     251.5,
+     -113
+    ],
+    "BetOnline.ag": [
+     251.5,
      -114
     ],
-    "BetOnline.ag": [
-     67.5,
-     -115
-    ],
     "BetRivers": [
-     66.5,
-     -117
+     246.5,
+     -132
     ],
     "BetMGM": [
-     68.5,
+     245.5,
      -115
     ],
     "Bovada": [
-     68.5,
+     251.5,
      -115
     ]
+   },
+   "dist": {
+    "k": "gamma",
+    "cv": 0.3
+   }
+  },
+  {
+   "game_id": "401873048",
+   "game": "ARI @ SEA",
+   "player": "Jaxon Smith-Njigba",
+   "player_id": "4430878",
+   "team": "SEA",
+   "opp": "ARI",
+   "stat": "REC",
+   "side": "UNDER",
+   "line": 6.5,
+   "line_source": "6 books",
+   "price": 118,
+   "projection": 5.7,
+   "prob": 0.568,
+   "edge": 0.109,
+   "score": 10.93,
+   "grade": "A",
+   "hit_l5": "3/5",
+   "hit_l10": "4/10",
+   "hit_season": "3/8",
+   "vs_opp": "2/3",
+   "minutes": 10.2,
+   "status": "ACTIVE",
+   "season_avg": 7.6,
+   "l10_avg": 8.0,
+   "reasons": [
+    "Weather: wind 8 mph: passing trimmed 1%",
+    "ARI limits receptions to WRs (-10%)",
+    "Favorite by 8.5: expect more rushing",
+    "Backup QB starting: receiving efficiency trimmed",
+    "Under hit 3/5 last 5, 4/10 last 10 at 6.5",
+    "Last game: 6 (under the line)",
+    "Last 3 vs ARI: 9, 5, 4"
+   ],
+   "actual": null,
+   "result": null,
+   "last_game": 6.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     7.5,
+     -146
+    ],
+    "FanDuel": [
+     6.5,
+     118
+    ],
+    "BetOnline.ag": [
+     6.5,
+     116
+    ],
+    "BetMGM": [
+     6.5,
+     115
+    ],
+    "Bovada": [
+     7.5,
+     -150
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 6.086
    }
   },
   {
@@ -2356,7 +2672,7 @@
    "projection": 1.2,
    "prob": 0.567,
    "edge": 0.154,
-   "score": 10.76,
+   "score": 10.75,
    "grade": "B",
    "hit_l5": "4/5",
    "hit_l10": "7/10",
@@ -2368,6 +2684,7 @@
    "l10_avg": 1.0,
    "reasons": [
     "Goes against his last game: grade lowered one level (live record 42% on these)",
+    "Weather: wind 8 mph: passing trimmed 1%",
     "ARI limits receptions to WRs (-10%)",
     "Favorite by 8.5: expect more rushing",
     "Backup QB starting: receiving efficiency trimmed",
@@ -2383,7 +2700,7 @@
    "books": {
     "DraftKings": [
      1.5,
-     130
+     137
     ],
     "FanDuel": [
      1.5,
@@ -2391,12 +2708,16 @@
     ],
     "BetOnline.ag": [
      1.5,
-     134
+     135
     ],
     "Bovada": [
      1.5,
-     130
+     135
     ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 1.208
    }
   },
   {
@@ -2410,21 +2731,22 @@
    "side": "OVER",
    "line": 6.5,
    "line_source": "6 books",
-   "price": -143,
+   "price": -140,
    "projection": 9.2,
-   "prob": 0.695,
+   "prob": 0.689,
    "edge": 0.106,
-   "score": 10.63,
+   "score": 10.59,
    "grade": "A",
    "hit_l5": "5/5",
    "hit_l10": "10/10",
    "hit_season": "8/8",
    "vs_opp": "3/3",
-   "minutes": 12.2,
+   "minutes": 12.1,
    "status": "ACTIVE",
    "season_avg": 8.0,
    "l10_avg": 8.2,
    "reasons": [
+    "Weather: wind 8 mph: passing trimmed 1%",
     "Underdog by 8.5: expect more passing",
     "Knight, Bourne, Love out: +1.3 targets",
     "Over hit 5/5 last 5, 10/10 last 10 at 6.5",
@@ -2439,19 +2761,19 @@
    "books": {
     "DraftKings": [
      6.5,
-     -145
+     -140
     ],
     "FanDuel": [
      7.5,
      112
     ],
     "BetOnline.ag": [
-     6.5,
-     -143
+     7.5,
+     117
     ],
     "BetRivers": [
      7.5,
-     114
+     107
     ],
     "BetMGM": [
      6.5,
@@ -2459,69 +2781,12 @@
     ],
     "Bovada": [
      6.5,
-     -150
-    ]
-   }
-  },
-  {
-   "game_id": "401873048",
-   "game": "ARI @ SEA",
-   "player": "Jaxon Smith-Njigba",
-   "player_id": "4430878",
-   "team": "SEA",
-   "opp": "ARI",
-   "stat": "REC",
-   "side": "UNDER",
-   "line": 6.5,
-   "line_source": "6 books",
-   "price": 118,
-   "projection": 5.7,
-   "prob": 0.565,
-   "edge": 0.106,
-   "score": 10.6,
-   "grade": "A",
-   "hit_l5": "3/5",
-   "hit_l10": "4/10",
-   "hit_season": "3/8",
-   "vs_opp": "2/3",
-   "minutes": 10.2,
-   "status": "ACTIVE",
-   "season_avg": 7.6,
-   "l10_avg": 8.0,
-   "reasons": [
-    "ARI limits receptions to WRs (-10%)",
-    "Favorite by 8.5: expect more rushing",
-    "Backup QB starting: receiving efficiency trimmed",
-    "Under hit 3/5 last 5, 4/10 last 10 at 6.5",
-    "Last game: 6 (under the line)",
-    "Last 3 vs ARI: 9, 5, 4"
-   ],
-   "actual": null,
-   "result": null,
-   "last_game": 6.0,
-   "open_line": null,
-   "open_price": null,
-   "books": {
-    "DraftKings": [
-     7.5,
-     -140
-    ],
-    "FanDuel": [
-     6.5,
-     118
-    ],
-    "BetOnline.ag": [
-     6.5,
-     116
-    ],
-    "BetMGM": [
-     6.5,
-     115
-    ],
-    "Bovada": [
-     7.5,
      -145
     ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 11.247
    }
   },
   {
@@ -2536,21 +2801,22 @@
    "line": 0.5,
    "line_source": "est.",
    "price": -108,
-   "projection": 1.52,
-   "prob": 0.662,
-   "edge": 0.144,
-   "score": 10.06,
+   "projection": 1.51,
+   "prob": 0.661,
+   "edge": 0.142,
+   "score": 9.95,
    "grade": "B",
    "hit_l5": "2/5",
    "hit_l10": "2/10",
    "hit_season": "2/4",
    "vs_opp": "1/2",
-   "minutes": 28.7,
+   "minutes": 28.6,
    "status": "ACTIVE",
    "season_avg": 0.5,
    "l10_avg": 1.0,
    "reasons": [
     "Goes against his last game: grade lowered one level (live record 42% on these)",
+    "Weather: wind 8 mph: passing trimmed 1%",
     "ARI allows passing TDs to QBs (+9%)",
     "Favorite by 8.5: expect more rushing",
     "Darnold out: Drew Lock expected to start",
@@ -2563,7 +2829,11 @@
    "last_game": 0.0,
    "open_line": null,
    "open_price": null,
-   "books": null
+   "books": null,
+   "dist": {
+    "k": "count",
+    "var": 1.588
+   }
   },
   {
    "game_id": "401873048",
@@ -2576,11 +2846,11 @@
    "side": "UNDER",
    "line": 2.5,
    "line_source": "5 books",
-   "price": 112,
-   "projection": 2.2,
-   "prob": 0.56,
-   "edge": 0.088,
-   "score": 8.79,
+   "price": 115,
+   "projection": 2.1,
+   "prob": 0.563,
+   "edge": 0.098,
+   "score": 9.8,
    "grade": "A",
    "hit_l5": "4/5",
    "hit_l10": "6/10",
@@ -2591,6 +2861,7 @@
    "season_avg": 2.7,
    "l10_avg": 2.5,
    "reasons": [
+    "Weather: wind 8 mph: passing trimmed 1%",
     "ARI limits receptions to WRs (-10%)",
     "Favorite by 8.5: expect more rushing",
     "Backup QB starting: receiving efficiency trimmed",
@@ -2606,7 +2877,7 @@
    "books": {
     "DraftKings": [
      2.5,
-     112
+     115
     ],
     "FanDuel": [
      2.5,
@@ -2614,12 +2885,16 @@
     ],
     "BetOnline.ag": [
      2.5,
-     108
+     100
     ],
     "Bovada": [
      2.5,
-     110
+     115
     ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 2.256
    }
   },
   {
@@ -2629,58 +2904,398 @@
    "player_id": "4373626",
    "team": "ARI",
    "opp": "SEA",
-   "stat": "REC",
+   "stat": "REC_YDS",
    "side": "UNDER",
-   "line": 2.5,
+   "line": 15.5,
    "line_source": "6 books",
-   "price": 116,
-   "projection": 2.1,
-   "prob": 0.576,
-   "edge": 0.113,
-   "score": 7.94,
+   "price": 100,
+   "projection": 12.4,
+   "prob": 0.62,
+   "edge": 0.12,
+   "score": 8.4,
    "grade": "B",
    "hit_l5": "3/5",
-   "hit_l10": "7/10",
-   "hit_season": "5/8",
-   "vs_opp": "2/2",
+   "hit_l10": "8/10",
+   "hit_season": "6/8",
+   "vs_opp": "1/2",
    "minutes": 13.8,
    "status": "ACTIVE",
-   "season_avg": 2.0,
-   "l10_avg": 2.8,
+   "season_avg": 12.5,
+   "l10_avg": 23.2,
    "reasons": [
     "Goes against his last game: grade lowered one level (live record 42% on these)",
+    "Weather: wind 8 mph: passing trimmed 1%",
+    "Implied team total 15.5 (low vs avg 22.8)",
     "Underdog by 8.5: expect more passing",
     "Knight, Bourne, Love out: +3.6 carries",
-    "Under hit 3/5 last 5, 7/10 last 10 at 2.5",
-    "Last game: 5 (over the line)",
-    "Last 2 vs SEA: 2, 2"
+    "Under hit 3/5 last 5, 8/10 last 10 at 15.5",
+    "Last game: 44 (over the line)",
+    "Last 2 vs SEA: 9, 33"
    ],
    "actual": null,
    "result": null,
-   "last_game": 5.0,
+   "last_game": 44.0,
    "open_line": null,
    "open_price": null,
    "books": {
     "DraftKings": [
-     2.5,
-     107
+     15.5,
+     -108
     ],
     "FanDuel": [
-     2.5,
-     116
+     16.5,
+     -113
     ],
     "BetOnline.ag": [
-     2.5,
-     111
+     16.5,
+     -114
+    ],
+    "BetRivers": [
+     16.5,
+     -120
     ],
     "BetMGM": [
-     2.5,
-     110
+     15.5,
+     100
     ],
     "Bovada": [
-     2.5,
+     15.5,
+     -110
+    ]
+   },
+   "dist": {
+    "k": "gamma",
+    "cv": 0.931
+   }
+  },
+  {
+   "game_id": "401873049",
+   "game": "GB @ NE",
+   "player": "Rhamondre Stevenson",
+   "player_id": "4569173",
+   "team": "NE",
+   "opp": "GB",
+   "stat": "REC",
+   "side": "UNDER",
+   "line": 3.5,
+   "line_source": "6 books",
+   "price": -106,
+   "projection": 2.7,
+   "prob": 0.622,
+   "edge": 0.107,
+   "score": 10.75,
+   "grade": "A",
+   "hit_l5": "4/5",
+   "hit_l10": "7/10",
+   "hit_season": "6/8",
+   "vs_opp": "0/0",
+   "minutes": 17.3,
+   "status": "ACTIVE",
+   "season_avg": 2.7,
+   "l10_avg": 2.8,
+   "reasons": [
+    "Brown, Henderson out: +0.4 targets, +2.4 carries",
+    "Under hit 4/5 last 5, 7/10 last 10 at 3.5",
+    "Last game: 3 (under the line)"
+   ],
+   "actual": null,
+   "result": null,
+   "last_game": 3.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     3.5,
+     -106
+    ],
+    "FanDuel": [
+     3.5,
+     -114
+    ],
+    "BetOnline.ag": [
+     3.5,
+     -116
+    ],
+    "BetMGM": [
+     3.5,
+     -120
+    ],
+    "Bovada": [
+     3.5,
+     -110
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 2.865
+   }
+  },
+  {
+   "game_id": "401873049",
+   "game": "GB @ NE",
+   "player": "DeMario Douglas",
+   "player_id": "4427095",
+   "team": "NE",
+   "opp": "GB",
+   "stat": "REC",
+   "side": "UNDER",
+   "line": 3.5,
+   "line_source": "6 books",
+   "price": 105,
+   "projection": 2.9,
+   "prob": 0.587,
+   "edge": 0.1,
+   "score": 9.96,
+   "grade": "A",
+   "hit_l5": "3/5",
+   "hit_l10": "6/10",
+   "hit_season": "5/8",
+   "vs_opp": "0/0",
+   "minutes": 4.2,
+   "status": "ACTIVE",
+   "season_avg": 2.8,
+   "l10_avg": 4.2,
+   "reasons": [
+    "GB allows receptions to WRs (+7%)",
+    "Under hit 3/5 last 5, 6/10 last 10 at 3.5",
+    "Last game: 3 (under the line)"
+   ],
+   "actual": null,
+   "result": null,
+   "last_game": 3.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     3.5,
+     103
+    ],
+    "FanDuel": [
+     3.5,
+     -104
+    ],
+    "BetOnline.ag": [
+     3.5,
+     -114
+    ],
+    "BetMGM": [
+     3.5,
+     100
+    ],
+    "Bovada": [
+     3.5,
      105
     ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 3.536
+   }
+  },
+  {
+   "game_id": "401873049",
+   "game": "GB @ NE",
+   "player": "MarShawn Lloyd",
+   "player_id": "4429023",
+   "team": "GB",
+   "opp": "NE",
+   "stat": "RUSH_YDS",
+   "side": "OVER",
+   "line": 7.5,
+   "line_source": "2 books",
+   "price": -112,
+   "projection": 20.7,
+   "prob": 0.753,
+   "edge": 0.224,
+   "score": 9.42,
+   "grade": "B",
+   "hit_l5": "4/5",
+   "hit_l10": "7/8",
+   "hit_season": "7/8",
+   "vs_opp": "0/0",
+   "minutes": 8.6,
+   "status": "QUESTIONABLE",
+   "season_avg": 18.6,
+   "l10_avg": 17.0,
+   "reasons": [
+    "Goes against his last game: grade lowered one level (live record 42% on these)",
+    "NE limits rushing yards to RBs (-7%)",
+    "Implied team total 20.5 (low vs avg 22.8)",
+    "Listed Questionable: Knee Not Specified - Lloyd (knee) is listed as questionable for Sunday's game against the Patriots.",
+    "Over hit 4/5 last 5, 7/8 last 10 at 7.5",
+    "Last game: 7 (under the line)"
+   ],
+   "actual": null,
+   "result": null,
+   "last_game": 7.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     7.5,
+     -112
+    ],
+    "Bovada": [
+     7.5,
+     -115
+    ]
+   },
+   "dist": {
+    "k": "gamma",
+    "cv": 0.542
+   }
+  },
+  {
+   "game_id": "401873049",
+   "game": "GB @ NE",
+   "player": "Josh Jacobs",
+   "player_id": "4047365",
+   "team": "GB",
+   "opp": "NE",
+   "stat": "ANY_TD",
+   "side": "UNDER",
+   "line": 0.5,
+   "line_source": "est.",
+   "price": 138,
+   "projection": 0.55,
+   "prob": 0.511,
+   "edge": 0.091,
+   "score": 6.37,
+   "grade": "B",
+   "hit_l5": "3/5",
+   "hit_l10": "5/10",
+   "hit_season": "0/2",
+   "vs_opp": "0/0",
+   "minutes": 18.6,
+   "status": "ACTIVE",
+   "season_avg": 1.1,
+   "l10_avg": 0.8,
+   "reasons": [
+    "Goes against his last game: grade lowered one level (live record 42% on these)",
+    "NE limits anytime TD to RBs (-14%)",
+    "Implied team total 20.5 (low vs avg 22.8)",
+    "Under hit 3/5 last 5, 5/10 last 10 at 0.5",
+    "Last game: 2 (over the line)"
+   ],
+   "actual": null,
+   "result": null,
+   "last_game": 2.0,
+   "open_line": null,
+   "open_price": null,
+   "books": null,
+   "dist": {
+    "k": "count",
+    "var": 0.573
+   }
+  },
+  {
+   "game_id": "401873049",
+   "game": "GB @ NE",
+   "player": "Tucker Kraft",
+   "player_id": "4572680",
+   "team": "GB",
+   "opp": "NE",
+   "stat": "ANY_TD",
+   "side": "UNDER",
+   "line": 0.5,
+   "line_source": "est.",
+   "price": -176,
+   "projection": 0.26,
+   "prob": 0.71,
+   "edge": 0.073,
+   "score": 5.09,
+   "grade": "C",
+   "hit_l5": "2/5",
+   "hit_l10": "6/10",
+   "hit_season": "5/8",
+   "vs_opp": "0/0",
+   "minutes": 6.2,
+   "status": "ACTIVE",
+   "season_avg": 0.5,
+   "l10_avg": 0.5,
+   "reasons": [
+    "Goes against his last game: grade lowered one level (live record 42% on these)",
+    "NE limits anytime TD to TEs (-20%)",
+    "Implied team total 20.5 (low vs avg 22.8)",
+    "Under hit 2/5 last 5, 6/10 last 10 at 0.5",
+    "Last game: 1 (over the line)"
+   ],
+   "actual": null,
+   "result": null,
+   "last_game": 1.0,
+   "open_line": null,
+   "open_price": null,
+   "books": null,
+   "dist": {
+    "k": "count",
+    "var": 0.275
+   }
+  },
+  {
+   "game_id": "401873049",
+   "game": "GB @ NE",
+   "player": "Matthew Golden",
+   "player_id": "4701936",
+   "team": "GB",
+   "opp": "NE",
+   "stat": "REC_YDS",
+   "side": "UNDER",
+   "line": 67.5,
+   "line_source": "6 books",
+   "price": -113,
+   "projection": 59.9,
+   "prob": 0.597,
+   "edge": 0.066,
+   "score": 4.63,
+   "grade": "C",
+   "hit_l5": "2/5",
+   "hit_l10": "4/10",
+   "hit_season": "3/8",
+   "vs_opp": "0/0",
+   "minutes": 8.1,
+   "status": "ACTIVE",
+   "season_avg": 61.5,
+   "l10_avg": 86.2,
+   "reasons": [
+    "Goes against his last game: grade lowered one level (live record 42% on these)",
+    "Implied team total 20.5 (low vs avg 22.8)",
+    "Under hit 2/5 last 5, 4/10 last 10 at 67.5",
+    "Last game: 79 (over the line)"
+   ],
+   "actual": null,
+   "result": null,
+   "last_game": 79.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     68.5,
+     -110
+    ],
+    "FanDuel": [
+     67.5,
+     -113
+    ],
+    "BetOnline.ag": [
+     67.5,
+     -114
+    ],
+    "BetRivers": [
+     65.5,
+     -117
+    ],
+    "BetMGM": [
+     68.5,
+     -115
+    ],
+    "Bovada": [
+     68.5,
+     -115
+    ]
+   },
+   "dist": {
+    "k": "gamma",
+    "cv": 0.776
    }
   },
   {
@@ -2693,12 +3308,12 @@
    "stat": "REC",
    "side": "OVER",
    "line": 1.5,
-   "line_source": "5 books",
-   "price": 138,
+   "line_source": "6 books",
+   "price": 143,
    "projection": 2.0,
    "prob": 0.517,
-   "edge": 0.097,
-   "score": 9.72,
+   "edge": 0.106,
+   "score": 10.55,
    "grade": "A",
    "hit_l5": "4/5",
    "hit_l10": "9/10",
@@ -2720,7 +3335,7 @@
    "books": {
     "DraftKings": [
      1.5,
-     138
+     143
     ],
     "FanDuel": [
      1.5,
@@ -2734,67 +3349,18 @@
      1.5,
      133
     ],
-    "Bovada": [
+    "BetMGM": [
      1.5,
-     135
-    ]
-   }
-  },
-  {
-   "game_id": "401873041",
-   "game": "DEN @ CAR",
-   "player": "Troy Franklin",
-   "player_id": "4431280",
-   "team": "DEN",
-   "opp": "CAR",
-   "stat": "REC",
-   "side": "OVER",
-   "line": 0.5,
-   "line_source": "5 books",
-   "price": -200,
-   "projection": 1.9,
-   "prob": 0.754,
-   "edge": 0.087,
-   "score": 8.71,
-   "grade": "A",
-   "hit_l5": "3/5",
-   "hit_l10": "5/10",
-   "hit_season": "5/8",
-   "vs_opp": "0/0",
-   "minutes": 3.2,
-   "status": "ACTIVE",
-   "season_avg": 1.7,
-   "l10_avg": 1.0,
-   "reasons": [
-    "Over hit 3/5 last 5, 5/10 last 10 at 0.5",
-    "Last game: 1 (over the line)"
-   ],
-   "actual": null,
-   "result": null,
-   "last_game": 1.0,
-   "open_line": null,
-   "open_price": null,
-   "books": {
-    "DraftKings": [
-     1.5,
-     182
-    ],
-    "FanDuel": [
-     0.5,
-     -205
-    ],
-    "BetOnline.ag": [
-     0.5,
-     -200
-    ],
-    "BetRivers": [
-     0.5,
-     -215
+     140
     ],
     "Bovada": [
      1.5,
-     180
+     140
     ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 2.15
    }
   },
   {
@@ -2808,17 +3374,17 @@
    "side": "UNDER",
    "line": 4.5,
    "line_source": "6 books",
-   "price": -129,
-   "projection": 3.5,
-   "prob": 0.649,
-   "edge": 0.086,
-   "score": 8.59,
+   "price": -125,
+   "projection": 3.6,
+   "prob": 0.643,
+   "edge": 0.088,
+   "score": 8.79,
    "grade": "A",
    "hit_l5": "4/5",
    "hit_l10": "7/10",
    "hit_season": "6/8",
    "vs_opp": "0/1",
-   "minutes": 6.1,
+   "minutes": 6.2,
    "status": "ACTIVE",
    "season_avg": 3.8,
    "l10_avg": 3.2,
@@ -2835,7 +3401,7 @@
    "books": {
     "DraftKings": [
      4.5,
-     -129
+     -125
     ],
     "FanDuel": [
      4.5,
@@ -2843,16 +3409,81 @@
     ],
     "BetOnline.ag": [
      4.5,
-     -133
+     -135
     ],
     "BetMGM": [
      4.5,
-     -155
+     -150
     ],
     "Bovada": [
      4.5,
-     -130
+     -125
     ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 3.73
+   }
+  },
+  {
+   "game_id": "401873041",
+   "game": "DEN @ CAR",
+   "player": "Troy Franklin",
+   "player_id": "4431280",
+   "team": "DEN",
+   "opp": "CAR",
+   "stat": "REC",
+   "side": "OVER",
+   "line": 0.5,
+   "line_source": "5 books",
+   "price": -204,
+   "projection": 1.9,
+   "prob": 0.756,
+   "edge": 0.085,
+   "score": 8.5,
+   "grade": "A",
+   "hit_l5": "3/5",
+   "hit_l10": "5/10",
+   "hit_season": "5/8",
+   "vs_opp": "0/0",
+   "minutes": 3.3,
+   "status": "ACTIVE",
+   "season_avg": 1.7,
+   "l10_avg": 1.0,
+   "reasons": [
+    "Over hit 3/5 last 5, 5/10 last 10 at 0.5",
+    "Last game: 1 (over the line)"
+   ],
+   "actual": null,
+   "result": null,
+   "last_game": 1.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     1.5,
+     178
+    ],
+    "FanDuel": [
+     0.5,
+     -205
+    ],
+    "BetOnline.ag": [
+     0.5,
+     -204
+    ],
+    "BetRivers": [
+     0.5,
+     -215
+    ],
+    "Bovada": [
+     1.5,
+     175
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 1.971
    }
   },
   {
@@ -2866,17 +3497,17 @@
    "side": "UNDER",
    "line": 4.5,
    "line_source": "6 books",
-   "price": -102,
-   "projection": 4.0,
-   "prob": 0.577,
-   "edge": 0.073,
-   "score": 7.25,
-   "grade": "B",
+   "price": 102,
+   "projection": 3.9,
+   "prob": 0.578,
+   "edge": 0.083,
+   "score": 8.25,
+   "grade": "A",
    "hit_l5": "3/5",
    "hit_l10": "5/10",
    "hit_season": "3/6",
    "vs_opp": "0/0",
-   "minutes": 6.2,
+   "minutes": 6.1,
    "status": "ACTIVE",
    "season_avg": 4.1,
    "l10_avg": 2.8,
@@ -2892,7 +3523,7 @@
    "books": {
     "DraftKings": [
      4.5,
-     -102
+     102
     ],
     "FanDuel": [
      4.5,
@@ -2900,7 +3531,7 @@
     ],
     "BetOnline.ag": [
      4.5,
-     -111
+     -110
     ],
     "BetMGM": [
      4.5,
@@ -2908,8 +3539,12 @@
     ],
     "Bovada": [
      4.5,
-     -105
+     100
     ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 4.63
    }
   },
   {
@@ -2921,26 +3556,26 @@
    "opp": "DEN",
    "stat": "RUSH_YDS",
    "side": "UNDER",
-   "line": 68.5,
+   "line": 69.5,
    "line_source": "6 books",
-   "price": -115,
-   "projection": 54.1,
-   "prob": 0.635,
-   "edge": 0.1,
-   "score": 7.01,
+   "price": -113,
+   "projection": 54.6,
+   "prob": 0.636,
+   "edge": 0.105,
+   "score": 7.35,
    "grade": "B",
    "hit_l5": "1/5",
    "hit_l10": "6/10",
    "hit_season": "3/7",
    "vs_opp": "0/0",
-   "minutes": 16.4,
+   "minutes": 16.5,
    "status": "ACTIVE",
    "season_avg": 61.8,
    "l10_avg": 89.0,
    "reasons": [
     "Goes against his last game: grade lowered one level (live record 42% on these)",
-    "Implied team total 20.8 (low vs avg 22.7)",
-    "Under hit 1/5 last 5, 6/10 last 10 at 68.5",
+    "Implied team total 21.0 (low vs avg 22.8)",
+    "Under hit 1/5 last 5, 6/10 last 10 at 69.5",
     "Last game: 81 (over the line)"
    ],
    "actual": null,
@@ -2950,29 +3585,33 @@
    "open_price": null,
    "books": {
     "DraftKings": [
-     67.5,
-     -112
+     70.5,
+     -111
     ],
     "FanDuel": [
      69.5,
-     -114
+     -113
     ],
     "BetOnline.ag": [
      68.5,
      -115
     ],
     "BetRivers": [
-     69.5,
-     -113
+     70.5,
+     -114
     ],
     "BetMGM": [
      68.5,
      -115
     ],
     "Bovada": [
-     67.5,
+     70.5,
      -115
     ]
+   },
+   "dist": {
+    "k": "gamma",
+    "cv": 0.648
    }
   },
   {
@@ -2987,16 +3626,16 @@
    "line": 18.5,
    "line_source": "est.",
    "price": -125,
-   "projection": 20.8,
-   "prob": 0.624,
-   "edge": 0.068,
-   "score": 6.82,
+   "projection": 20.9,
+   "prob": 0.628,
+   "edge": 0.072,
+   "score": 7.23,
    "grade": "B",
    "hit_l5": "2/5",
    "hit_l10": "4/10",
    "hit_season": "3/8",
    "vs_opp": "0/0",
-   "minutes": 33.7,
+   "minutes": 33.9,
    "status": "ACTIVE",
    "season_avg": 20.1,
    "l10_avg": 17.0,
@@ -3009,7 +3648,331 @@
    "last_game": 20.0,
    "open_line": null,
    "open_price": null,
-   "books": null
+   "books": null,
+   "dist": {
+    "k": "normal",
+    "sd": 4.867
+   }
+  },
+  {
+   "game_id": "401873040",
+   "game": "DAL @ IND",
+   "player": "Ryan Flournoy",
+   "player_id": "5083754",
+   "team": "DAL",
+   "opp": "IND",
+   "stat": "REC",
+   "side": "UNDER",
+   "line": 3.5,
+   "line_source": "6 books",
+   "price": 106,
+   "projection": 2.9,
+   "prob": 0.589,
+   "edge": 0.104,
+   "score": 10.36,
+   "grade": "A",
+   "hit_l5": "2/5",
+   "hit_l10": "5/10",
+   "hit_season": "4/8",
+   "vs_opp": "0/0",
+   "minutes": 4.5,
+   "status": "ACTIVE",
+   "season_avg": 3.3,
+   "l10_avg": 4.2,
+   "reasons": [
+    "Under hit 2/5 last 5, 5/10 last 10 at 3.5",
+    "Last game: 3 (under the line)"
+   ],
+   "actual": null,
+   "result": null,
+   "last_game": 3.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     3.5,
+     106
+    ],
+    "FanDuel": [
+     4.5,
+     -166
+    ],
+    "BetOnline.ag": [
+     3.5,
+     105
+    ],
+    "BetMGM": [
+     3.5,
+     100
+    ],
+    "Bovada": [
+     3.5,
+     105
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 3.01
+   }
+  },
+  {
+   "game_id": "401873040",
+   "game": "DAL @ IND",
+   "player": "Daniel Jones",
+   "player_id": "3917792",
+   "team": "IND",
+   "opp": "DAL",
+   "stat": "PASS_TD",
+   "side": "OVER",
+   "line": 0.5,
+   "line_source": "est.",
+   "price": -117,
+   "projection": 1.27,
+   "prob": 0.632,
+   "edge": 0.093,
+   "score": 9.26,
+   "grade": "A",
+   "hit_l5": "2/5",
+   "hit_l10": "6/10",
+   "hit_season": "5/8",
+   "vs_opp": "0/0",
+   "minutes": 35.6,
+   "status": "ACTIVE",
+   "season_avg": 0.9,
+   "l10_avg": 0.5,
+   "reasons": [
+    "Over hit 2/5 last 5, 6/10 last 10 at 0.5",
+    "Last game: 1 (over the line)"
+   ],
+   "actual": null,
+   "result": null,
+   "last_game": 1.0,
+   "open_line": null,
+   "open_price": null,
+   "books": null,
+   "dist": {
+    "k": "count",
+    "var": 1.33
+   }
+  },
+  {
+   "game_id": "401873040",
+   "game": "DAL @ IND",
+   "player": "CeeDee Lamb",
+   "player_id": "4241389",
+   "team": "DAL",
+   "opp": "IND",
+   "stat": "REC_YDS",
+   "side": "UNDER",
+   "line": 86.5,
+   "line_source": "6 books",
+   "price": -112,
+   "projection": 81.2,
+   "prob": 0.579,
+   "edge": 0.051,
+   "score": 5.11,
+   "grade": "B",
+   "hit_l5": "4/5",
+   "hit_l10": "7/10",
+   "hit_season": "5/8",
+   "vs_opp": "0/0",
+   "minutes": 9.7,
+   "status": "ACTIVE",
+   "season_avg": 84.7,
+   "l10_avg": 52.8,
+   "reasons": [
+    "Implied team total 28.5 (high vs avg 22.8)",
+    "Under hit 4/5 last 5, 7/10 last 10 at 86.5",
+    "Last game: 58 (under the line)"
+   ],
+   "actual": null,
+   "result": null,
+   "last_game": 58.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     86.5,
+     -112
+    ],
+    "FanDuel": [
+     83.5,
+     -113
+    ],
+    "BetOnline.ag": [
+     86.5,
+     -119
+    ],
+    "BetRivers": [
+     82.5,
+     -121
+    ],
+    "BetMGM": [
+     86.5,
+     -135
+    ],
+    "Bovada": [
+     86.5,
+     -115
+    ]
+   },
+   "dist": {
+    "k": "gamma",
+    "cv": 0.637
+   }
+  },
+  {
+   "game_id": "401873040",
+   "game": "DAL @ IND",
+   "player": "Jake Ferguson",
+   "player_id": "4242355",
+   "team": "DAL",
+   "opp": "IND",
+   "stat": "REC_YDS",
+   "side": "OVER",
+   "line": 16.5,
+   "line_source": "est.",
+   "price": 146,
+   "projection": 26.0,
+   "prob": 0.518,
+   "edge": 0.112,
+   "score": 4.71,
+   "grade": "B",
+   "hit_l5": "1/5",
+   "hit_l10": "3/10",
+   "hit_season": "3/8",
+   "vs_opp": "0/0",
+   "minutes": 3.9,
+   "status": "QUESTIONABLE",
+   "season_avg": 21.3,
+   "l10_avg": 8.0,
+   "reasons": [
+    "Goes against his last game: grade lowered one level (live record 42% on these)",
+    "Implied team total 28.5 (high vs avg 22.8)",
+    "Listed Questionable: Ankle Sprain - Ferguson (ankle) is listed as questionable for Sunday's game against the Colts, Tommy Yarrish of the Cowboys' official site reports.",
+    "Over hit 1/5 last 5, 3/10 last 10 at 16.5",
+    "Last game: 0 (under the line)"
+   ],
+   "actual": null,
+   "result": null,
+   "last_game": 0.0,
+   "open_line": null,
+   "open_price": null,
+   "books": null,
+   "dist": {
+    "k": "gamma",
+    "cv": 0.777
+   }
+  },
+  {
+   "game_id": "401873040",
+   "game": "DAL @ IND",
+   "player": "Keenan Allen",
+   "player_id": "15818",
+   "team": "IND",
+   "opp": "DAL",
+   "stat": "REC_YDS",
+   "side": "OVER",
+   "line": 41.5,
+   "line_source": "6 books",
+   "price": -113,
+   "projection": 57.8,
+   "prob": 0.575,
+   "edge": 0.045,
+   "score": 4.49,
+   "grade": "C",
+   "hit_l5": "4/5",
+   "hit_l10": "4/10",
+   "hit_season": "4/7",
+   "vs_opp": "1/1",
+   "minutes": 7.4,
+   "status": "ACTIVE",
+   "season_avg": 45.7,
+   "l10_avg": 56.2,
+   "reasons": [
+    "DAL allows receiving yards to WRs (+11%)",
+    "Over hit 4/5 last 5, 4/10 last 10 at 41.5",
+    "Last game: 67 (over the line)",
+    "Last 1 vs DAL: 44"
+   ],
+   "actual": null,
+   "result": null,
+   "last_game": 67.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     42.5,
+     -110
+    ],
+    "FanDuel": [
+     41.5,
+     -113
+    ],
+    "BetOnline.ag": [
+     41.5,
+     -116
+    ],
+    "BetRivers": [
+     44.5,
+     -118
+    ],
+    "BetMGM": [
+     39.5,
+     -120
+    ],
+    "Bovada": [
+     42.5,
+     -115
+    ]
+   },
+   "dist": {
+    "k": "gamma",
+    "cv": 0.6
+   }
+  },
+  {
+   "game_id": "401873040",
+   "game": "DAL @ IND",
+   "player": "Javonte Williams",
+   "player_id": "4361579",
+   "team": "DAL",
+   "opp": "IND",
+   "stat": "RUSH_REC_YDS",
+   "side": "OVER",
+   "line": 80.5,
+   "line_source": "est.",
+   "price": 113,
+   "projection": 94.3,
+   "prob": 0.529,
+   "edge": 0.06,
+   "score": 4.19,
+   "grade": "C",
+   "hit_l5": "2/5",
+   "hit_l10": "3/10",
+   "hit_season": "3/8",
+   "vs_opp": "0/0",
+   "minutes": 19.9,
+   "status": "ACTIVE",
+   "season_avg": 80.5,
+   "l10_avg": 81.0,
+   "reasons": [
+    "Goes against his last game: grade lowered one level (live record 42% on these)",
+    "Implied team total 28.5 (high vs avg 22.8)",
+    "IND allows receiving yards to RBs (+10%)",
+    "Over hit 2/5 last 5, 3/10 last 10 at 80.5",
+    "Last game: 57 (under the line)"
+   ],
+   "actual": null,
+   "result": null,
+   "last_game": 57.0,
+   "open_line": null,
+   "open_price": null,
+   "books": null,
+   "dist": {
+    "k": "gamma",
+    "cv": 0.428
+   }
   },
   {
    "game_id": "401873038",
@@ -3024,9 +3987,9 @@
    "line_source": "est.",
    "price": 100,
    "projection": 0.3,
-   "prob": 0.636,
+   "prob": 0.637,
    "edge": 0.137,
-   "score": 9.57,
+   "score": 9.58,
    "grade": "B",
    "hit_l5": "0/5",
    "hit_l10": "3/10",
@@ -3039,7 +4002,7 @@
    "reasons": [
     "Goes against his last game: grade lowered one level (live record 42% on these)",
     "ATL limits anytime TD to TEs (-8%)",
-    "Implied team total 27.8 (high vs avg 22.7)",
+    "Implied team total 27.8 (high vs avg 22.8)",
     "Under hit 0/5 last 5, 3/10 last 10 at 0.5",
     "Last game: 1 (over the line)"
    ],
@@ -3048,7 +4011,11 @@
    "last_game": 1.0,
    "open_line": null,
    "open_price": null,
-   "books": null
+   "books": null,
+   "dist": {
+    "k": "count",
+    "var": 0.318
+   }
   },
   {
    "game_id": "401873038",
@@ -3062,10 +4029,10 @@
    "line": 0.5,
    "line_source": "est.",
    "price": 406,
-   "projection": 0.58,
-   "prob": 0.328,
-   "edge": 0.131,
-   "score": 9.15,
+   "projection": 0.59,
+   "prob": 0.331,
+   "edge": 0.133,
+   "score": 9.32,
    "grade": "B",
    "hit_l5": "0/5",
    "hit_l10": "4/10",
@@ -3077,8 +4044,8 @@
    "l10_avg": 0.0,
    "reasons": [
     "Goes against his last game: grade lowered one level (live record 42% on these)",
-    "ATL allows anytime TD to RBs (+11%)",
-    "Implied team total 27.8 (high vs avg 22.7)",
+    "ATL allows anytime TD to RBs (+13%)",
+    "Implied team total 27.8 (high vs avg 22.8)",
     "Over hit 0/5 last 5, 4/10 last 10 at 0.5",
     "Last game: 0 (under the line)"
    ],
@@ -3087,7 +4054,11 @@
    "last_game": 0.0,
    "open_line": null,
    "open_price": null,
-   "books": null
+   "books": null,
+   "dist": {
+    "k": "count",
+    "var": 0.615
+   }
   },
   {
    "game_id": "401873038",
@@ -3102,9 +4073,9 @@
    "line_source": "est.",
    "price": -122,
    "projection": 0.39,
-   "prob": 0.621,
+   "prob": 0.622,
    "edge": 0.072,
-   "score": 7.19,
+   "score": 7.21,
    "grade": "B",
    "hit_l5": "2/5",
    "hit_l10": "7/10",
@@ -3115,7 +4086,7 @@
    "season_avg": 0.4,
    "l10_avg": 1.0,
    "reasons": [
-    "Implied team total 24.8 (high vs avg 22.7)",
+    "Implied team total 24.8 (high vs avg 22.8)",
     "Under hit 2/5 last 5, 7/10 last 10 at 0.5",
     "Last game: 0 (under the line)"
    ],
@@ -3124,7 +4095,11 @@
    "last_game": 0.0,
    "open_line": null,
    "open_price": null,
-   "books": null
+   "books": null,
+   "dist": {
+    "k": "count",
+    "var": 0.406
+   }
   },
   {
    "game_id": "401873038",
@@ -3140,8 +4115,8 @@
    "price": 200,
    "projection": 0.65,
    "prob": 0.407,
-   "edge": 0.074,
-   "score": 5.15,
+   "edge": 0.073,
+   "score": 5.13,
    "grade": "C",
    "hit_l5": "1/5",
    "hit_l10": "4/10",
@@ -3153,7 +4128,7 @@
    "l10_avg": 0.0,
    "reasons": [
     "Goes against his last game: grade lowered one level (live record 42% on these)",
-    "Implied team total 24.8 (high vs avg 22.7)",
+    "Implied team total 24.8 (high vs avg 22.8)",
     "Over hit 1/5 last 5, 4/10 last 10 at 0.5",
     "Last game: 0 (under the line)"
    ],
@@ -3162,7 +4137,11 @@
    "last_game": 0.0,
    "open_line": null,
    "open_price": null,
-   "books": null
+   "books": null,
+   "dist": {
+    "k": "count",
+    "var": 0.686
+   }
   },
   {
    "game_id": "401873038",
@@ -3199,7 +4178,11 @@
    "last_game": 8.0,
    "open_line": null,
    "open_price": null,
-   "books": null
+   "books": null,
+   "dist": {
+    "k": "normal",
+    "sd": 4.807
+   }
   },
   {
    "game_id": "401873038",
@@ -3214,9 +4197,9 @@
    "line_source": "6 books",
    "price": 110,
    "projection": 5.5,
-   "prob": 0.511,
-   "edge": 0.035,
-   "score": 3.49,
+   "prob": 0.51,
+   "edge": 0.034,
+   "score": 3.36,
    "grade": "C",
    "hit_l5": "3/5",
    "hit_l10": "7/10",
@@ -3238,7 +4221,7 @@
    "books": {
     "DraftKings": [
      5.5,
-     -101
+     102
     ],
     "FanDuel": [
      5.5,
@@ -3256,591 +4239,10 @@
      5.5,
      100
     ]
-   }
-  },
-  {
-   "game_id": "401873040",
-   "game": "DAL @ IND",
-   "player": "Daniel Jones",
-   "player_id": "3917792",
-   "team": "IND",
-   "opp": "DAL",
-   "stat": "PASS_TD",
-   "side": "OVER",
-   "line": 0.5,
-   "line_source": "est.",
-   "price": -117,
-   "projection": 1.28,
-   "prob": 0.635,
-   "edge": 0.096,
-   "score": 9.55,
-   "grade": "A",
-   "hit_l5": "2/5",
-   "hit_l10": "6/10",
-   "hit_season": "5/8",
-   "vs_opp": "0/0",
-   "minutes": 35.3,
-   "status": "ACTIVE",
-   "season_avg": 0.9,
-   "l10_avg": 0.5,
-   "reasons": [
-    "Over hit 2/5 last 5, 6/10 last 10 at 0.5",
-    "Last game: 1 (over the line)"
-   ],
-   "actual": null,
-   "result": null,
-   "last_game": 1.0,
-   "open_line": null,
-   "open_price": null,
-   "books": null
-  },
-  {
-   "game_id": "401873040",
-   "game": "DAL @ IND",
-   "player": "Ryan Flournoy",
-   "player_id": "5083754",
-   "team": "DAL",
-   "opp": "IND",
-   "stat": "REC",
-   "side": "UNDER",
-   "line": 3.5,
-   "line_source": "5 books",
-   "price": -135,
-   "projection": 2.9,
-   "prob": 0.623,
-   "edge": 0.049,
-   "score": 4.85,
-   "grade": "C",
-   "hit_l5": "2/5",
-   "hit_l10": "5/10",
-   "hit_season": "4/8",
-   "vs_opp": "0/0",
-   "minutes": 4.6,
-   "status": "ACTIVE",
-   "season_avg": 3.3,
-   "l10_avg": 4.2,
-   "reasons": [
-    "Under hit 2/5 last 5, 5/10 last 10 at 3.5",
-    "Last game: 3 (under the line)"
-   ],
-   "actual": null,
-   "result": null,
-   "last_game": 3.0,
-   "open_line": null,
-   "open_price": null,
-   "books": {
-    "DraftKings": [
-     3.5,
-     -147
-    ],
-    "BetOnline.ag": [
-     3.5,
-     -149
-    ],
-    "BetMGM": [
-     3.5,
-     -135
-    ],
-    "Bovada": [
-     3.5,
-     -150
-    ]
-   }
-  },
-  {
-   "game_id": "401873040",
-   "game": "DAL @ IND",
-   "player": "Jake Ferguson",
-   "player_id": "4242355",
-   "team": "DAL",
-   "opp": "IND",
-   "stat": "REC_YDS",
-   "side": "OVER",
-   "line": 16.5,
-   "line_source": "est.",
-   "price": 146,
-   "projection": 26.2,
-   "prob": 0.519,
-   "edge": 0.113,
-   "score": 4.77,
-   "grade": "B",
-   "hit_l5": "1/5",
-   "hit_l10": "3/10",
-   "hit_season": "3/8",
-   "vs_opp": "0/0",
-   "minutes": 4.0,
-   "status": "QUESTIONABLE",
-   "season_avg": 21.3,
-   "l10_avg": 8.0,
-   "reasons": [
-    "Goes against his last game: grade lowered one level (live record 42% on these)",
-    "Implied team total 28.0 (high vs avg 22.7)",
-    "Listed Questionable: Ankle Sprain - Ferguson (ankle) is listed as questionable for Sunday's game against the Colts, Tommy Yarrish of the Cowboys' official site reports.",
-    "Over hit 1/5 last 5, 3/10 last 10 at 16.5",
-    "Last game: 0 (under the line)"
-   ],
-   "actual": null,
-   "result": null,
-   "last_game": 0.0,
-   "open_line": null,
-   "open_price": null,
-   "books": null
-  },
-  {
-   "game_id": "401873040",
-   "game": "DAL @ IND",
-   "player": "Keenan Allen",
-   "player_id": "15818",
-   "team": "IND",
-   "opp": "DAL",
-   "stat": "REC_YDS",
-   "side": "OVER",
-   "line": 41.5,
-   "line_source": "6 books",
-   "price": -114,
-   "projection": 57.7,
-   "prob": 0.574,
-   "edge": 0.041,
-   "score": 4.09,
-   "grade": "C",
-   "hit_l5": "4/5",
-   "hit_l10": "4/10",
-   "hit_season": "4/7",
-   "vs_opp": "1/1",
-   "minutes": 7.3,
-   "status": "ACTIVE",
-   "season_avg": 45.7,
-   "l10_avg": 56.2,
-   "reasons": [
-    "DAL allows receiving yards to WRs (+11%)",
-    "Over hit 4/5 last 5, 4/10 last 10 at 41.5",
-    "Last game: 67 (over the line)",
-    "Last 1 vs DAL: 44"
-   ],
-   "actual": null,
-   "result": null,
-   "last_game": 67.0,
-   "open_line": null,
-   "open_price": null,
-   "books": {
-    "DraftKings": [
-     40.5,
-     -112
-    ],
-    "FanDuel": [
-     41.5,
-     -114
-    ],
-    "BetOnline.ag": [
-     41.5,
-     -114
-    ],
-    "BetRivers": [
-     47.5,
-     -121
-    ],
-    "BetMGM": [
-     44.5,
-     -111
-    ],
-    "Bovada": [
-     40.5,
-     -115
-    ]
-   }
-  },
-  {
-   "game_id": "401873040",
-   "game": "DAL @ IND",
-   "player": "Javonte Williams",
-   "player_id": "4361579",
-   "team": "DAL",
-   "opp": "IND",
-   "stat": "RUSH_REC_YDS",
-   "side": "OVER",
-   "line": 80.5,
-   "line_source": "est.",
-   "price": 113,
-   "projection": 93.1,
-   "prob": 0.523,
-   "edge": 0.053,
-   "score": 3.73,
-   "grade": "C",
-   "hit_l5": "2/5",
-   "hit_l10": "3/10",
-   "hit_season": "3/8",
-   "vs_opp": "0/0",
-   "minutes": 19.7,
-   "status": "ACTIVE",
-   "season_avg": 80.5,
-   "l10_avg": 81.0,
-   "reasons": [
-    "Goes against his last game: grade lowered one level (live record 42% on these)",
-    "Implied team total 28.0 (high vs avg 22.7)",
-    "IND allows receiving yards to RBs (+10%)",
-    "Over hit 2/5 last 5, 3/10 last 10 at 80.5",
-    "Last game: 57 (under the line)"
-   ],
-   "actual": null,
-   "result": null,
-   "last_game": 57.0,
-   "open_line": null,
-   "open_price": null,
-   "books": null
-  },
-  {
-   "game_id": "401873040",
-   "game": "DAL @ IND",
-   "player": "Dak Prescott",
-   "player_id": "2577417",
-   "team": "DAL",
-   "opp": "IND",
-   "stat": "PASS_TD",
-   "side": "OVER",
-   "line": 1.5,
-   "line_source": "est.",
-   "price": -104,
-   "projection": 2.1,
-   "prob": 0.563,
-   "edge": 0.052,
-   "score": 3.66,
-   "grade": "C",
-   "hit_l5": "1/5",
-   "hit_l10": "4/10",
-   "hit_season": "3/8",
-   "vs_opp": "0/0",
-   "minutes": 36.8,
-   "status": "ACTIVE",
-   "season_avg": 1.8,
-   "l10_avg": 1.5,
-   "reasons": [
-    "Goes against his last game: grade lowered one level (live record 42% on these)",
-    "Implied team total 28.0 (high vs avg 22.7)",
-    "Over hit 1/5 last 5, 4/10 last 10 at 1.5",
-    "Last game: 1 (under the line)"
-   ],
-   "actual": null,
-   "result": null,
-   "last_game": 1.0,
-   "open_line": null,
-   "open_price": null,
-   "books": null
-  },
-  {
-   "game_id": "401873045",
-   "game": "NYJ @ KC",
-   "player": "Geno Smith",
-   "player_id": "15864",
-   "team": "NYJ",
-   "opp": "KC",
-   "stat": "PASS_ATT",
-   "side": "OVER",
-   "line": 30.5,
-   "line_source": "est.",
-   "price": -101,
-   "projection": 34.0,
-   "prob": 0.596,
-   "edge": 0.094,
-   "score": 9.38,
-   "grade": "A",
-   "hit_l5": "1/5",
-   "hit_l10": "3/10",
-   "hit_season": "3/8",
-   "vs_opp": "0/1",
-   "minutes": 34.0,
-   "status": "ACTIVE",
-   "season_avg": 29.9,
-   "l10_avg": 30.5,
-   "reasons": [
-    "Underdog by 8.5: expect more passing",
-    "Over hit 1/5 last 5, 3/10 last 10 at 30.5",
-    "Last game: 32 (over the line)",
-    "Last 1 vs KC: 16"
-   ],
-   "actual": null,
-   "result": null,
-   "last_game": 32.0,
-   "open_line": null,
-   "open_price": null,
-   "books": null
-  },
-  {
-   "game_id": "401873045",
-   "game": "NYJ @ KC",
-   "player": "Omar Cooper Jr.",
-   "player_id": "4723820",
-   "team": "NYJ",
-   "opp": "KC",
-   "stat": "REC",
-   "side": "UNDER",
-   "line": 4.5,
-   "line_source": "6 books",
-   "price": -125,
-   "projection": 2.8,
-   "prob": 0.713,
-   "edge": 0.158,
-   "score": 7.89,
-   "grade": "A",
-   "hit_l5": "2/4",
-   "hit_l10": "2/4",
-   "hit_season": "2/4",
-   "vs_opp": "0/0",
-   "minutes": 4.0,
-   "status": "ACTIVE",
-   "season_avg": 3.0,
-   "l10_avg": 3.0,
-   "reasons": [
-    "Underdog by 8.5: expect more passing",
-    "Last game: 0 (under the line)"
-   ],
-   "actual": null,
-   "result": null,
-   "last_game": 0.0,
-   "open_line": null,
-   "open_price": null,
-   "books": {
-    "DraftKings": [
-     4.5,
-     -135
-    ],
-    "FanDuel": [
-     4.5,
-     -140
-    ],
-    "BetOnline.ag": [
-     4.5,
-     -137
-    ],
-    "BetMGM": [
-     4.5,
-     -125
-    ],
-    "Bovada": [
-     4.5,
-     -135
-    ]
-   }
-  },
-  {
-   "game_id": "401873045",
-   "game": "NYJ @ KC",
-   "player": "Rashee Rice",
-   "player_id": "4428331",
-   "team": "KC",
-   "opp": "NYJ",
-   "stat": "REC",
-   "side": "UNDER",
-   "line": 5.5,
-   "line_source": "6 books",
-   "price": -150,
-   "projection": 3.9,
-   "prob": 0.712,
-   "edge": 0.112,
-   "score": 7.84,
-   "grade": "B",
-   "hit_l5": "3/5",
-   "hit_l10": "4/10",
-   "hit_season": "3/5",
-   "vs_opp": "0/0",
-   "minutes": 6.1,
-   "status": "ACTIVE",
-   "season_avg": 5.2,
-   "l10_avg": 4.5,
-   "reasons": [
-    "Goes against his last game: grade lowered one level (live record 42% on these)",
-    "Favorite by 8.5: expect more rushing",
-    "Under hit 3/5 last 5, 4/10 last 10 at 5.5",
-    "Last game: 7 (over the line)"
-   ],
-   "actual": null,
-   "result": null,
-   "last_game": 7.0,
-   "open_line": null,
-   "open_price": null,
-   "books": {
-    "DraftKings": [
-     5.5,
-     -154
-    ],
-    "FanDuel": [
-     5.5,
-     -154
-    ],
-    "BetOnline.ag": [
-     5.5,
-     -154
-    ],
-    "BetMGM": [
-     5.5,
-     -150
-    ],
-    "Bovada": [
-     5.5,
-     -160
-    ]
-   }
-  },
-  {
-   "game_id": "401873045",
-   "game": "NYJ @ KC",
-   "player": "Patrick Mahomes",
-   "player_id": "3139477",
-   "team": "KC",
-   "opp": "NYJ",
-   "stat": "PASS_TD",
-   "side": "OVER",
-   "line": 1.5,
-   "line_source": "est.",
-   "price": 117,
-   "projection": 2.0,
-   "prob": 0.527,
-   "edge": 0.066,
-   "score": 6.56,
-   "grade": "B",
-   "hit_l5": "3/5",
-   "hit_l10": "6/10",
-   "hit_season": "5/7",
-   "vs_opp": "0/0",
-   "minutes": 32.8,
-   "status": "ACTIVE",
-   "season_avg": 1.7,
-   "l10_avg": 1.2,
-   "reasons": [
-    "NYJ allows passing TDs to QBs (+7%)",
-    "Implied team total 28.0 (high vs avg 22.7)",
-    "Favorite by 8.5: expect more rushing",
-    "Over hit 3/5 last 5, 6/10 last 10 at 1.5",
-    "Last game: 3 (over the line)"
-   ],
-   "actual": null,
-   "result": null,
-   "last_game": 3.0,
-   "open_line": null,
-   "open_price": null,
-   "books": null
-  },
-  {
-   "game_id": "401873045",
-   "game": "NYJ @ KC",
-   "player": "Mason Taylor",
-   "player_id": "4808766",
-   "team": "NYJ",
-   "opp": "KC",
-   "stat": "REC",
-   "side": "OVER",
-   "line": 3.5,
-   "line_source": "5 books",
-   "price": 122,
-   "projection": 4.3,
-   "prob": 0.528,
-   "edge": 0.077,
-   "score": 5.41,
-   "grade": "C",
-   "hit_l5": "2/5",
-   "hit_l10": "4/10",
-   "hit_season": "2/6",
-   "vs_opp": "0/0",
-   "minutes": 5.5,
-   "status": "ACTIVE",
-   "season_avg": 3.1,
-   "l10_avg": 3.8,
-   "reasons": [
-    "Goes against his last game: grade lowered one level (live record 42% on these)",
-    "KC allows receptions to TEs (+11%)",
-    "Underdog by 8.5: expect more passing",
-    "Wilson out: +0.7 targets",
-    "Over hit 2/5 last 5, 4/10 last 10 at 3.5",
-    "Last game: 3 (under the line)"
-   ],
-   "actual": null,
-   "result": null,
-   "last_game": 3.0,
-   "open_line": null,
-   "open_price": null,
-   "books": {
-    "DraftKings": [
-     3.5,
-     113
-    ],
-    "FanDuel": [
-     3.5,
-     122
-    ],
-    "BetOnline.ag": [
-     3.5,
-     115
-    ],
-    "BetRivers": [
-     3.5,
-     114
-    ],
-    "Bovada": [
-     3.5,
-     115
-    ]
-   }
-  },
-  {
-   "game_id": "401873045",
-   "game": "NYJ @ KC",
-   "player": "Kenneth Walker III",
-   "player_id": "4567048",
-   "team": "KC",
-   "opp": "NYJ",
-   "stat": "REC_YDS",
-   "side": "UNDER",
-   "line": 17.5,
-   "line_source": "6 books",
-   "price": -111,
-   "projection": 16.9,
-   "prob": 0.571,
-   "edge": 0.045,
-   "score": 4.48,
-   "grade": "C",
-   "hit_l5": "4/5",
-   "hit_l10": "4/10",
-   "hit_season": "4/7",
-   "vs_opp": "0/0",
-   "minutes": 21.5,
-   "status": "ACTIVE",
-   "season_avg": 18.9,
-   "l10_avg": 12.2,
-   "reasons": [
-    "Implied team total 28.0 (high vs avg 22.7)",
-    "Favorite by 8.5: expect more rushing",
-    "Under hit 4/5 last 5, 4/10 last 10 at 17.5",
-    "Last game: 15 (under the line)"
-   ],
-   "actual": null,
-   "result": null,
-   "last_game": 15.0,
-   "open_line": null,
-   "open_price": null,
-   "books": {
-    "DraftKings": [
-     17.5,
-     -111
-    ],
-    "FanDuel": [
-     17.5,
-     -114
-    ],
-    "BetOnline.ag": [
-     17.5,
-     -111
-    ],
-    "BetRivers": [
-     19.5,
-     -120
-    ],
-    "BetMGM": [
-     18.5,
-     -118
-    ],
-    "Bovada": [
-     17.5,
-     -115
-    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 7.668
    }
   },
   {
@@ -3858,7 +4260,7 @@
    "projection": 30.8,
    "prob": 0.624,
    "edge": 0.072,
-   "score": 7.17,
+   "score": 7.24,
    "grade": "B",
    "hit_l5": "3/5",
    "hit_l10": "3/10",
@@ -3877,7 +4279,11 @@
    "last_game": 29.0,
    "open_line": null,
    "open_price": null,
-   "books": null
+   "books": null,
+   "dist": {
+    "k": "normal",
+    "sd": 6.715
+   }
   },
   {
    "game_id": "401873043",
@@ -3892,9 +4298,9 @@
    "line_source": "est.",
    "price": -161,
    "projection": 0.27,
-   "prob": 0.699,
+   "prob": 0.7,
    "edge": 0.083,
-   "score": 5.83,
+   "score": 5.84,
    "grade": "B",
    "hit_l5": "2/5",
    "hit_l10": "7/10",
@@ -3916,7 +4322,11 @@
    "last_game": 1.0,
    "open_line": null,
    "open_price": null,
-   "books": null
+   "books": null,
+   "dist": {
+    "k": "count",
+    "var": 0.28
+   }
   },
   {
    "game_id": "401873043",
@@ -3931,9 +4341,9 @@
    "line_source": "6 books",
    "price": -103,
    "projection": 5.5,
-   "prob": 0.566,
-   "edge": 0.059,
-   "score": 4.12,
+   "prob": 0.567,
+   "edge": 0.06,
+   "score": 4.17,
    "grade": "C",
    "hit_l5": "3/5",
    "hit_l10": "4/10",
@@ -3945,7 +4355,7 @@
    "l10_avg": 4.5,
    "reasons": [
     "Goes against his last game: grade lowered one level (live record 42% on these)",
-    "Brown, Burks, McLaurin out: +1.4 targets",
+    "Burks, Brown, McLaurin out: +1.4 targets",
     "Over hit 3/5 last 5, 4/10 last 10 at 4.5",
     "Last game: 3 (under the line)"
    ],
@@ -3957,7 +4367,7 @@
    "books": {
     "DraftKings": [
      4.5,
-     -109
+     -105
     ],
     "FanDuel": [
      4.5,
@@ -3977,8 +4387,12 @@
     ],
     "Bovada": [
      4.5,
-     -110
+     -105
     ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 6.962
    }
   },
   {
@@ -3990,13 +4404,13 @@
    "opp": "WSH",
    "stat": "PASS_YDS",
    "side": "OVER",
-   "line": 245.5,
-   "line_source": "5 books",
-   "price": -114,
-   "projection": 283.6,
-   "prob": 0.59,
-   "edge": 0.057,
-   "score": 4.0,
+   "line": 247.5,
+   "line_source": "6 books",
+   "price": -111,
+   "projection": 284.3,
+   "prob": 0.585,
+   "edge": 0.059,
+   "score": 4.12,
    "grade": "C",
    "hit_l5": "2/5",
    "hit_l10": "6/10",
@@ -4008,8 +4422,8 @@
    "l10_avg": 239.2,
    "reasons": [
     "Goes against his last game: grade lowered one level (live record 42% on these)",
-    "Implied team total 26.0 (high vs avg 22.7)",
-    "Over hit 2/5 last 5, 6/10 last 10 at 245.5",
+    "Implied team total 26.0 (high vs avg 22.8)",
+    "Over hit 2/5 last 5, 6/10 last 10 at 247.5",
     "Last game: 157 (under the line)"
    ],
    "actual": null,
@@ -4019,25 +4433,33 @@
    "open_price": null,
    "books": {
     "DraftKings": [
-     244.5,
-     -112
+     247.5,
+     -111
     ],
     "FanDuel": [
      246.5,
-     -114
+     -113
     ],
     "BetOnline.ag": [
      245.5,
      -114
     ],
     "BetRivers": [
-     248.5,
-     -117
+     249.5,
+     -114
+    ],
+    "BetMGM": [
+     256.5,
+     125
     ],
     "Bovada": [
-     244.5,
+     247.5,
      -115
     ]
+   },
+   "dist": {
+    "k": "gamma",
+    "cv": 0.292
    }
   },
   {
@@ -4055,7 +4477,7 @@
    "projection": 0.43,
    "prob": 0.606,
    "edge": 0.057,
-   "score": 3.98,
+   "score": 4.0,
    "grade": "C",
    "hit_l5": "1/5",
    "hit_l10": "6/10",
@@ -4067,7 +4489,7 @@
    "l10_avg": 1.0,
    "reasons": [
     "Goes against his last game: grade lowered one level (live record 42% on these)",
-    "Implied team total 26.0 (high vs avg 22.7)",
+    "Implied team total 26.0 (high vs avg 22.8)",
     "Under hit 1/5 last 5, 6/10 last 10 at 0.5",
     "Last game: 1 (over the line)"
    ],
@@ -4076,7 +4498,11 @@
    "last_game": 1.0,
    "open_line": null,
    "open_price": null,
-   "books": null
+   "books": null,
+   "dist": {
+    "k": "count",
+    "var": 0.447
+   }
   },
   {
    "game_id": "401873043",
@@ -4090,10 +4516,10 @@
    "line": 21.5,
    "line_source": "est.",
    "price": 125,
-   "projection": 27.3,
-   "prob": 0.495,
-   "edge": 0.051,
-   "score": 3.07,
+   "projection": 27.4,
+   "prob": 0.496,
+   "edge": 0.052,
+   "score": 3.12,
    "grade": "B",
    "hit_l5": "2/5",
    "hit_l10": "6/10",
@@ -4105,7 +4531,7 @@
    "l10_avg": 20.5,
    "reasons": [
     "WSH allows receiving yards to TEs (+13%)",
-    "Implied team total 26.0 (high vs avg 22.7)",
+    "Implied team total 26.0 (high vs avg 22.8)",
     "Listed Questionable: Ribs Not Specified - Parkinson (ribs) is listed as questionable for Sunday's game against the Commanders, Adam Caplan of SiriusXM NFL Radio reports.",
     "Over hit 2/5 last 5, 6/10 last 10 at 21.5",
     "Last game: 48 (over the line)"
@@ -4115,7 +4541,11 @@
    "last_game": 48.0,
    "open_line": null,
    "open_price": null,
-   "books": null
+   "books": null,
+   "dist": {
+    "k": "gamma",
+    "cv": 0.671
+   }
   },
   {
    "game_id": "401873037",

@@ -8,10 +8,10 @@
    "pick": "IND ML",
    "side": "home",
    "line": null,
-   "price": 185,
-   "prob": 0.389,
+   "price": 190,
+   "prob": 0.386,
    "model_prob": 0.488,
-   "edge": 0.038,
+   "edge": 0.041,
    "grade": "B",
    "proj": "IND 27.2 \u2013 DAL 27.6",
    "mu_h": 27.18,
@@ -19,19 +19,19 @@
    "home": "IND",
    "away": "DAL",
    "notes": [],
-   "score": 3.85
+   "score": 4.11
   },
   {
    "game_id": "401873040",
    "game": "DAL @ IND",
    "market": "Spread",
-   "pick": "IND +4.5",
+   "pick": "IND +5.5",
    "side": "home",
-   "line": 4.5,
-   "price": -105,
-   "prob": 0.535,
-   "model_prob": 0.619,
-   "edge": 0.022,
+   "line": 5.5,
+   "price": -115,
+   "prob": 0.558,
+   "model_prob": 0.647,
+   "edge": 0.024,
    "grade": "C",
    "proj": "IND 27.2 \u2013 DAL 27.6",
    "mu_h": 27.18,
@@ -39,7 +39,7 @@
    "home": "IND",
    "away": "DAL",
    "notes": [],
-   "score": 2.24
+   "score": 2.36
   },
   {
    "game_id": "401873045",
@@ -48,10 +48,10 @@
    "pick": "NYJ ML",
    "side": "away",
    "line": null,
-   "price": 360,
-   "prob": 0.238,
+   "price": 400,
+   "prob": 0.227,
    "model_prob": 0.294,
-   "edge": 0.021,
+   "edge": 0.027,
    "grade": "C",
    "proj": "KC 25.5 \u2013 NYJ 18.2",
    "mu_h": 25.54,
@@ -59,19 +59,19 @@
    "home": "KC",
    "away": "NYJ",
    "notes": [],
-   "score": 2.1
+   "score": 2.75
   },
   {
    "game_id": "401873045",
    "game": "NYJ @ KC",
    "market": "Total",
-   "pick": "Under 47.5",
+   "pick": "Under 48.5",
    "side": "under",
-   "line": 47.5,
-   "price": -105,
-   "prob": 0.531,
-   "model_prob": 0.609,
-   "edge": 0.019,
+   "line": 48.5,
+   "price": -118,
+   "prob": 0.559,
+   "model_prob": 0.638,
+   "edge": 0.018,
    "grade": "C",
    "proj": "KC 25.5 \u2013 NYJ 18.2",
    "mu_h": 25.54,
@@ -79,27 +79,7 @@
    "home": "KC",
    "away": "NYJ",
    "notes": [],
-   "score": 1.91
-  },
-  {
-   "game_id": "401873042",
-   "game": "DET @ MIA",
-   "market": "Moneyline",
-   "pick": "MIA ML",
-   "side": "home",
-   "line": null,
-   "price": 245,
-   "prob": 0.306,
-   "model_prob": 0.358,
-   "edge": 0.016,
-   "grade": "C",
-   "proj": "MIA 22.1 \u2013 DET 27.0",
-   "mu_h": 22.11,
-   "mu_a": 27.03,
-   "home": "MIA",
-   "away": "DET",
-   "notes": [],
-   "score": 1.6
+   "score": 1.81
   },
   {
    "game_id": "401873039",
@@ -108,10 +88,10 @@
    "pick": "Under 42.5",
    "side": "under",
    "line": 42.5,
-   "price": -110,
-   "prob": 0.542,
+   "price": -112,
+   "prob": 0.545,
    "model_prob": 0.621,
-   "edge": 0.019,
+   "edge": 0.017,
    "grade": "C",
    "proj": "NO 21.5 \u2013 CLE 16.8",
    "mu_h": 21.54,
@@ -121,7 +101,7 @@
    "notes": [
     "CLE: backup QB Shedeur Sanders starting (-3 pts)"
    ],
-   "score": 1.86
+   "score": 1.69
   },
   {
    "game_id": "401873047",
@@ -130,10 +110,10 @@
    "pick": "LV ML",
    "side": "away",
    "line": null,
-   "price": 370,
-   "prob": 0.228,
+   "price": 380,
+   "prob": 0.225,
    "model_prob": 0.272,
-   "edge": 0.015,
+   "edge": 0.017,
    "grade": "C",
    "proj": "SF 30.0 \u2013 LV 21.8",
    "mu_h": 30.02,
@@ -141,7 +121,7 @@
    "home": "SF",
    "away": "LV",
    "notes": [],
-   "score": 1.51
+   "score": 1.68
   },
   {
    "game_id": "401873048",
@@ -150,10 +130,10 @@
    "pick": "ARI ML",
    "side": "away",
    "line": null,
-   "price": 360,
-   "prob": 0.251,
+   "price": 350,
+   "prob": 0.254,
    "model_prob": 0.328,
-   "edge": 0.033,
+   "edge": 0.031,
    "grade": "B",
    "proj": "SEA 25.5 \u2013 ARI 19.5",
    "mu_h": 25.48,
@@ -163,7 +143,7 @@
    "notes": [
     "SEA: backup QB Drew Lock starting (-3 pts)"
    ],
-   "score": 3.31
+   "score": 3.13
   },
   {
    "game_id": "401873048",

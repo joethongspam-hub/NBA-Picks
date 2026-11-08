@@ -2,67 +2,34 @@
  {
   "legs": [
    {
-    "game_id": "401873049",
-    "game": "GB @ NE",
-    "player": "MarShawn Lloyd",
-    "player_id": "4429023",
-    "team": "GB",
-    "opp": "NE",
-    "stat": "RUSH_YDS",
+    "game_id": "401873039",
+    "game": "CLE @ NO",
+    "player": "Noah Fant",
+    "player_id": "4036131",
+    "team": "NO",
+    "opp": "CLE",
+    "stat": "REC_YDS",
     "side": "OVER",
-    "line": 7.5,
-    "price": -110,
-    "prob": 0.752,
-    "edge": 0.228,
-    "grade": "B",
+    "line": 2.5,
+    "price": -112,
+    "prob": 0.762,
+    "edge": 0.234,
+    "grade": "A",
     "line_source": "2 books",
     "books": {
      "DraftKings": [
-      7.5,
-      -110
-     ],
-     "Bovada": [
-      7.5,
-      -110
-     ]
-    }
-   },
-   {
-    "game_id": "401873041",
-    "game": "DEN @ CAR",
-    "player": "Troy Franklin",
-    "player_id": "4431280",
-    "team": "DEN",
-    "opp": "CAR",
-    "stat": "REC",
-    "side": "OVER",
-    "line": 0.5,
-    "price": -200,
-    "prob": 0.754,
-    "edge": 0.087,
-    "grade": "A",
-    "line_source": "5 books",
-    "books": {
-     "DraftKings": [
-      1.5,
-      182
+      2.5,
+      -112
      ],
      "FanDuel": [
-      0.5,
-      -205
-     ],
-     "BetOnline.ag": [
-      0.5,
-      -200
-     ],
-     "BetRivers": [
-      0.5,
-      -215
-     ],
-     "Bovada": [
-      1.5,
-      180
+      2.5,
+      -113
      ]
+    },
+    "projection": 17.0,
+    "dist": {
+     "k": "gamma",
+     "cv": 0.802
     }
    },
    {
@@ -75,19 +42,66 @@
     "stat": "REC",
     "side": "OVER",
     "line": 0.5,
-    "price": -215,
+    "price": -204,
     "prob": 0.763,
-    "edge": 0.08,
+    "edge": 0.092,
     "grade": "A",
-    "line_source": "4 books",
+    "line_source": "5 books",
     "books": {
      "DraftKings": [
-      1.5,
-      175
+      0.5,
+      -213
      ],
      "FanDuel": [
       0.5,
       -220
+     ],
+     "BetOnline.ag": [
+      0.5,
+      -204
+     ],
+     "BetRivers": [
+      0.5,
+      -210
+     ],
+     "Bovada": [
+      0.5,
+      -220
+     ]
+    },
+    "projection": 1.9,
+    "dist": {
+     "k": "count",
+     "var": 2.01
+    }
+   },
+   {
+    "game_id": "401873041",
+    "game": "DEN @ CAR",
+    "player": "Troy Franklin",
+    "player_id": "4431280",
+    "team": "DEN",
+    "opp": "CAR",
+    "stat": "REC",
+    "side": "OVER",
+    "line": 0.5,
+    "price": -204,
+    "prob": 0.756,
+    "edge": 0.085,
+    "grade": "A",
+    "line_source": "5 books",
+    "books": {
+     "DraftKings": [
+      1.5,
+      178
+     ],
+     "FanDuel": [
+      0.5,
+      -205
+     ],
+     "BetOnline.ag": [
+      0.5,
+      -204
      ],
      "BetRivers": [
       0.5,
@@ -95,21 +109,57 @@
      ],
      "Bovada": [
       1.5,
-      170
+      175
      ]
+    },
+    "projection": 1.9,
+    "dist": {
+     "k": "count",
+     "var": 1.971
     }
    }
   ],
-  "hit": 0.4326,
+  "hit": 0.4395,
   "payout": 4.2,
   "odds": 320,
-  "ev": 0.815,
+  "ev": 0.848,
   "type": "safe",
   "label": "Safest",
-  "made": "2026-11-07T11:28:15.809821-05:00"
+  "made": "2026-11-07T21:58:34.075426-05:00"
  },
  {
   "legs": [
+   {
+    "game_id": "401873049",
+    "game": "GB @ NE",
+    "player": "MarShawn Lloyd",
+    "player_id": "4429023",
+    "team": "GB",
+    "opp": "NE",
+    "stat": "RUSH_YDS",
+    "side": "OVER",
+    "line": 7.5,
+    "price": -112,
+    "prob": 0.753,
+    "edge": 0.224,
+    "grade": "B",
+    "line_source": "2 books",
+    "books": {
+     "DraftKings": [
+      7.5,
+      -112
+     ],
+     "Bovada": [
+      7.5,
+      -115
+     ]
+    },
+    "projection": 20.7,
+    "dist": {
+     "k": "gamma",
+     "cv": 0.542
+    }
+   },
    {
     "game_id": "401873044",
     "game": "NYG @ PHI",
@@ -119,23 +169,23 @@
     "opp": "PHI",
     "stat": "PASS_YDS",
     "side": "UNDER",
-    "line": 210.5,
+    "line": 207.5,
     "price": -111,
-    "prob": 0.721,
-    "edge": 0.195,
+    "prob": 0.712,
+    "edge": 0.186,
     "grade": "B",
     "line_source": "6 books",
     "books": {
      "DraftKings": [
-      210.5,
-      -111
+      207.5,
+      -113
      ],
      "FanDuel": [
-      214.5,
-      -114
+      212.5,
+      -113
      ],
      "BetOnline.ag": [
-      210.5,
+      207.5,
       -111
      ],
      "BetRivers": [
@@ -143,13 +193,18 @@
       -117
      ],
      "BetMGM": [
-      206.5,
+      205.5,
       -115
      ],
      "Bovada": [
-      210.5,
+      207.5,
       -115
      ]
+    },
+    "projection": 150.2,
+    "dist": {
+     "k": "gamma",
+     "cv": 0.367
     }
    },
    {
@@ -162,15 +217,15 @@
     "stat": "REC",
     "side": "UNDER",
     "line": 1.5,
-    "price": -106,
-    "prob": 0.691,
-    "edge": 0.176,
+    "price": -108,
+    "prob": 0.692,
+    "edge": 0.173,
     "grade": "A",
-    "line_source": "5 books",
+    "line_source": "6 books",
     "books": {
      "DraftKings": [
       1.5,
-      -116
+      -111
      ],
      "FanDuel": [
       1.5,
@@ -178,118 +233,34 @@
      ],
      "BetOnline.ag": [
       1.5,
-      -106
+      -109
+     ],
+     "BetMGM": [
+      1.5,
+      -120
      ],
      "Bovada": [
       1.5,
-      -120
+      -110
      ]
-    }
-   },
-   {
-    "game_id": "401873050",
-    "game": "TB @ CHI",
-    "player": "Colston Loveland",
-    "player_id": "4723086",
-    "team": "CHI",
-    "opp": "TB",
-    "stat": "REC",
-    "side": "UNDER",
-    "line": 5.5,
-    "price": -120,
-    "prob": 0.706,
-    "edge": 0.161,
-    "grade": "B",
-    "line_source": "6 books",
-    "books": {
-     "DraftKings": [
-      5.5,
-      -120
-     ],
-     "FanDuel": [
-      5.5,
-      -130
-     ],
-     "BetOnline.ag": [
-      5.5,
-      -141
-     ],
-     "BetMGM": [
-      5.5,
-      -160
-     ],
-     "Bovada": [
-      5.5,
-      -120
-     ]
+    },
+    "projection": 0.8,
+    "dist": {
+     "k": "count",
+     "var": 0.799
     }
    }
   ],
-  "hit": 0.3517,
-  "payout": 6.77,
-  "odds": 577,
-  "ev": 1.382,
+  "hit": 0.371,
+  "payout": 6.93,
+  "odds": 593,
+  "ev": 1.571,
   "type": "value",
   "label": "Best value",
-  "made": "2026-11-07T11:28:15.809821-05:00"
+  "made": "2026-11-07T21:58:34.075426-05:00"
  },
  {
   "legs": [
-   {
-    "game_id": "401873045",
-    "game": "NYJ @ KC",
-    "player": "Omar Cooper Jr.",
-    "player_id": "4723820",
-    "team": "NYJ",
-    "opp": "KC",
-    "stat": "REC",
-    "side": "UNDER",
-    "line": 4.5,
-    "price": -125,
-    "prob": 0.713,
-    "edge": 0.158,
-    "grade": "A",
-    "line_source": "6 books",
-    "books": {
-     "DraftKings": [
-      4.5,
-      -135
-     ],
-     "FanDuel": [
-      4.5,
-      -140
-     ],
-     "BetOnline.ag": [
-      4.5,
-      -137
-     ],
-     "BetMGM": [
-      4.5,
-      -125
-     ],
-     "Bovada": [
-      4.5,
-      -135
-     ]
-    }
-   },
-   {
-    "game_id": "401873051",
-    "game": "BUF @ MIN",
-    "player": "Justin Jefferson",
-    "player_id": "4262921",
-    "team": "MIN",
-    "opp": "BUF",
-    "stat": "REC_YDS",
-    "side": "UNDER",
-    "line": 78.5,
-    "price": -115,
-    "prob": 0.684,
-    "edge": 0.149,
-    "grade": "A",
-    "line_source": "5 books",
-    "books": null
-   },
    {
     "game_id": "401873050",
     "game": "TB @ CHI",
@@ -299,20 +270,20 @@
     "opp": "TB",
     "stat": "REC_YDS",
     "side": "UNDER",
-    "line": 64.5,
+    "line": 65.5,
     "price": -113,
-    "prob": 0.679,
-    "edge": 0.149,
+    "prob": 0.689,
+    "edge": 0.159,
     "grade": "A",
     "line_source": "6 books",
     "books": {
      "DraftKings": [
-      64.5,
-      -114
+      65.5,
+      -113
      ],
      "FanDuel": [
       65.5,
-      -114
+      -113
      ],
      "BetOnline.ag": [
       65.5,
@@ -327,9 +298,79 @@
       -115
      ],
      "Bovada": [
-      64.5,
+      65.5,
       -115
      ]
+    },
+    "projection": 44.1,
+    "dist": {
+     "k": "gamma",
+     "cv": 0.616
+    }
+   },
+   {
+    "game_id": "401873045",
+    "game": "NYJ @ KC",
+    "player": "Omar Cooper Jr.",
+    "player_id": "4723820",
+    "team": "NYJ",
+    "opp": "KC",
+    "stat": "REC",
+    "side": "UNDER",
+    "line": 4.5,
+    "price": -125,
+    "prob": 0.713,
+    "edge": 0.157,
+    "grade": "A",
+    "line_source": "6 books",
+    "books": {
+     "DraftKings": [
+      4.5,
+      -125
+     ],
+     "FanDuel": [
+      4.5,
+      -140
+     ],
+     "BetOnline.ag": [
+      4.5,
+      -139
+     ],
+     "BetMGM": [
+      4.5,
+      -150
+     ],
+     "Bovada": [
+      4.5,
+      -125
+     ]
+    },
+    "projection": 2.8,
+    "dist": {
+     "k": "count",
+     "var": 3.538
+    }
+   },
+   {
+    "game_id": "401873051",
+    "game": "BUF @ MIN",
+    "player": "Justin Jefferson",
+    "player_id": "4262921",
+    "team": "MIN",
+    "opp": "BUF",
+    "stat": "REC_YDS",
+    "side": "UNDER",
+    "line": 78.5,
+    "price": -115,
+    "prob": 0.664,
+    "edge": 0.129,
+    "grade": "A",
+    "line_source": "5 books",
+    "books": null,
+    "projection": 57.2,
+    "dist": {
+     "k": "gamma",
+     "cv": 0.623
     }
    },
    {
@@ -341,37 +382,42 @@
     "opp": "NO",
     "stat": "RUSH_YDS",
     "side": "UNDER",
-    "line": 67.5,
+    "line": 68.5,
     "price": -113,
-    "prob": 0.645,
-    "edge": 0.115,
+    "prob": 0.647,
+    "edge": 0.117,
     "grade": "A",
     "line_source": "6 books",
     "books": {
      "DraftKings": [
-      67.5,
+      68.5,
       -113
      ],
      "FanDuel": [
       68.5,
-      -114
+      -113
      ],
      "BetOnline.ag": [
       68.5,
       -114
      ],
      "BetRivers": [
-      69.5,
-      -125
+      71.5,
+      -118
      ],
      "BetMGM": [
       65.5,
       -115
      ],
      "Bovada": [
-      67.5,
+      68.5,
       -115
      ]
+    },
+    "projection": 53.5,
+    "dist": {
+     "k": "gamma",
+     "cv": 0.54
     }
    },
    {
@@ -386,7 +432,7 @@
     "line": 13.5,
     "price": -108,
     "prob": 0.633,
-    "edge": 0.113,
+    "edge": 0.114,
     "grade": "B",
     "line_source": "6 books",
     "books": {
@@ -396,15 +442,15 @@
      ],
      "FanDuel": [
       13.5,
-      -114
+      -113
      ],
      "BetOnline.ag": [
       13.5,
-      -112
+      -114
      ],
      "BetRivers": [
       13.5,
-      -112
+      -117
      ],
      "BetMGM": [
       13.5,
@@ -414,15 +460,20 @@
       13.5,
       -110
      ]
+    },
+    "projection": 10.4,
+    "dist": {
+     "k": "gamma",
+     "cv": 0.883
     }
    }
   ],
-  "hit": 0.1352,
+  "hit": 0.1336,
   "payout": 23.03,
   "odds": 2203,
-  "ev": 2.113,
+  "ev": 2.076,
   "type": "longshot",
   "label": "Long shot",
-  "made": "2026-11-07T11:28:15.809821-05:00"
+  "made": "2026-11-07T21:58:34.075426-05:00"
  }
 ]
