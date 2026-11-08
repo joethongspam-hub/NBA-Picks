@@ -8,10 +8,10 @@
    "pick": "Over 6.5",
    "side": "over",
    "line": 6.5,
-   "price": 105,
-   "prob": 0.511,
+   "price": 102,
+   "prob": 0.515,
    "model_prob": 0.591,
-   "edge": 0.023,
+   "edge": 0.02,
    "grade": "C",
    "proj": "TOR 3.42 \u2013 NJ 3.86",
    "mu_h": 3.42,
@@ -22,7 +22,7 @@
     "TOR goalie Sergei Bobrovsky (0.888): opponent goals +12% (starter uncertain)",
     "NJ goalie Connor Hellebuyck (0.895): opponent goals +5%"
    ],
-   "score": 2.31
+   "score": 2.0
   }
  ]
 }

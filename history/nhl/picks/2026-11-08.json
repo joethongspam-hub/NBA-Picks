@@ -2,6 +2,100 @@
  {
   "game_id": "401892676",
   "game": "NJ @ TOR",
+  "player": "Timo Meier",
+  "player_id": "3899978",
+  "team": "NJ",
+  "opp": "TOR",
+  "stat": "SOG",
+  "side": "OVER",
+  "line": 2.5,
+  "line_source": "DraftKings",
+  "price": -145,
+  "projection": 4.4,
+  "prob": 0.689,
+  "edge": 0.097,
+  "score": 9.71,
+  "grade": "A",
+  "hit_l5": "2/5",
+  "hit_l10": "6/10",
+  "hit_season": "10/17",
+  "vs_opp": "2/3",
+  "minutes": 16.9,
+  "status": "ACTIVE",
+  "season_avg": 3.7,
+  "l10_avg": 3.8,
+  "reasons": [
+   "TOR allows shots to forwards (+11%)",
+   "Over hit 6/10 of last 10 at 2.5",
+   "Last game: 8 (over the line)",
+   "Last 3 vs TOR: 7, 3, 1"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 8.0,
+  "open_line": 3.5,
+  "open_price": 125,
+  "books": {
+   "DraftKings": [
+    2.5,
+    -145
+   ]
+  },
+  "dist": {
+   "k": "count",
+   "var": 5.467
+  }
+ },
+ {
+  "game_id": "401892676",
+  "game": "NJ @ TOR",
+  "player": "Arseny Gritsyuk",
+  "player_id": "4915855",
+  "team": "NJ",
+  "opp": "TOR",
+  "stat": "SOG",
+  "side": "OVER",
+  "line": 2.5,
+  "line_source": "DraftKings",
+  "price": 130,
+  "projection": 3.2,
+  "prob": 0.523,
+  "edge": 0.088,
+  "score": 8.85,
+  "grade": "A",
+  "hit_l5": "2/5",
+  "hit_l10": "4/10",
+  "hit_season": "4/17",
+  "vs_opp": "0/3",
+  "minutes": 16.2,
+  "status": "ACTIVE",
+  "season_avg": 2.47,
+  "l10_avg": 3.1,
+  "reasons": [
+   "TOR allows shots to forwards (+11%)",
+   "Over hit 4/10 of last 10 at 2.5",
+   "Last game: 6 (over the line)",
+   "Last 3 vs TOR: 1, 0, 2"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 6.0,
+  "open_line": 2.5,
+  "open_price": 125,
+  "books": {
+   "DraftKings": [
+    2.5,
+    130
+   ]
+  },
+  "dist": {
+   "k": "count",
+   "var": 4.059
+  }
+ },
+ {
+  "game_id": "401892676",
+  "game": "NJ @ TOR",
   "player": "Dougie Hamilton",
   "player_id": "2562605",
   "team": "NJ",
@@ -10,12 +104,12 @@
   "side": "OVER",
   "line": 2.5,
   "line_source": "DraftKings",
-  "price": 140,
+  "price": 130,
   "projection": 3.2,
-  "prob": 0.507,
-  "edge": 0.09,
-  "score": 8.99,
-  "grade": "A",
+  "prob": 0.515,
+  "edge": 0.08,
+  "score": 7.98,
+  "grade": "B",
   "hit_l5": "2/5",
   "hit_l10": "4/10",
   "hit_season": "8/17",
@@ -38,58 +132,12 @@
   "books": {
    "DraftKings": [
     2.5,
-    140
+    130
    ]
   },
   "dist": {
    "k": "count",
-   "var": 3.955
-  }
- },
- {
-  "game_id": "401892677",
-  "game": "TB @ WPG",
-  "player": "Neal Pionk",
-  "player_id": "3988847",
-  "team": "WPG",
-  "opp": "TB",
-  "stat": "AST",
-  "side": "UNDER",
-  "line": 0.5,
-  "line_source": "DraftKings",
-  "price": -150,
-  "projection": 0.27,
-  "prob": 0.681,
-  "edge": 0.081,
-  "score": 8.06,
-  "grade": "A",
-  "hit_l5": "4/5",
-  "hit_l10": "8/10",
-  "hit_season": "12/17",
-  "vs_opp": "1/1",
-  "minutes": 23.5,
-  "status": "ACTIVE",
-  "season_avg": 0.32,
-  "l10_avg": 0.2,
-  "reasons": [
-   "Under hit 8/10 of last 10 at 0.5",
-   "Last game: 0 (under the line)",
-   "Last 1 vs TB: 0"
-  ],
-  "actual": null,
-  "result": null,
-  "last_game": 0.0,
-  "open_line": 0.5,
-  "open_price": -200,
-  "books": {
-   "DraftKings": [
-    0.5,
-    -150
-   ]
-  },
-  "dist": {
-   "k": "count",
-   "var": 0.283
+   "var": 3.966
   }
  },
  {
@@ -140,191 +188,49 @@
   }
  },
  {
-  "game_id": "401892676",
-  "game": "NJ @ TOR",
-  "player": "Timo Meier",
-  "player_id": "3899978",
-  "team": "NJ",
-  "opp": "TOR",
-  "stat": "SOG",
-  "side": "OVER",
-  "line": 2.5,
-  "line_source": "DraftKings",
-  "price": -165,
-  "projection": 4.4,
-  "prob": 0.698,
-  "edge": 0.075,
-  "score": 7.49,
-  "grade": "B",
-  "hit_l5": "2/5",
-  "hit_l10": "6/10",
-  "hit_season": "10/17",
-  "vs_opp": "2/3",
-  "minutes": 16.9,
-  "status": "ACTIVE",
-  "season_avg": 3.7,
-  "l10_avg": 3.8,
-  "reasons": [
-   "TOR allows shots to forwards (+11%)",
-   "Over hit 6/10 of last 10 at 2.5",
-   "Last game: 8 (over the line)",
-   "Last 3 vs TOR: 7, 3, 1"
-  ],
-  "actual": null,
-  "result": null,
-  "last_game": 8.0,
-  "open_line": 3.5,
-  "open_price": 125,
-  "books": {
-   "DraftKings": [
-    2.5,
-    -165
-   ]
-  },
-  "dist": {
-   "k": "count",
-   "var": 5.451
-  }
- },
- {
-  "game_id": "401892675",
-  "game": "VGK @ BUF",
-  "player": "Zach Benson",
-  "player_id": "5149186",
-  "team": "BUF",
-  "opp": "VGK",
-  "stat": "AST",
-  "side": "OVER",
-  "line": 0.5,
-  "line_source": "DraftKings",
-  "price": 120,
-  "projection": 0.92,
-  "prob": 0.527,
-  "edge": 0.073,
-  "score": 7.28,
-  "grade": "B",
-  "hit_l5": "4/5",
-  "hit_l10": "8/10",
-  "hit_season": "10/16",
-  "vs_opp": "0/2",
-  "minutes": 19.6,
-  "status": "ACTIVE",
-  "season_avg": 0.67,
-  "l10_avg": 1.1,
-  "reasons": [
-   "Opposing goalie Adin Hill (0.891 sv%): goals easier (+9%)",
-   "Over hit 8/10 of last 10 at 0.5",
-   "Last game: 1 (over the line)",
-   "Last 2 vs VGK: 0, 0"
-  ],
-  "actual": null,
-  "result": null,
-  "last_game": 1.0,
-  "open_line": 0.5,
-  "open_price": 115,
-  "books": {
-   "DraftKings": [
-    0.5,
-    120
-   ]
-  },
-  "dist": {
-   "k": "count",
-   "var": 0.947
-  }
- },
- {
-  "game_id": "401892676",
-  "game": "NJ @ TOR",
-  "player": "Arseny Gritsyuk",
-  "player_id": "4915855",
-  "team": "NJ",
-  "opp": "TOR",
-  "stat": "SOG",
-  "side": "OVER",
-  "line": 2.5,
-  "line_source": "DraftKings",
-  "price": 115,
-  "projection": 3.2,
-  "prob": 0.533,
-  "edge": 0.068,
-  "score": 6.81,
-  "grade": "B",
-  "hit_l5": "2/5",
-  "hit_l10": "4/10",
-  "hit_season": "4/17",
-  "vs_opp": "0/3",
-  "minutes": 16.2,
-  "status": "ACTIVE",
-  "season_avg": 2.47,
-  "l10_avg": 3.1,
-  "reasons": [
-   "TOR allows shots to forwards (+11%)",
-   "Over hit 4/10 of last 10 at 2.5",
-   "Last game: 6 (over the line)",
-   "Last 3 vs TOR: 1, 0, 2"
-  ],
-  "actual": null,
-  "result": null,
-  "last_game": 6.0,
-  "open_line": 2.5,
-  "open_price": 125,
-  "books": {
-   "DraftKings": [
-    2.5,
-    115
-   ]
-  },
-  "dist": {
-   "k": "count",
-   "var": 4.047
-  }
- },
- {
-  "game_id": "401892676",
-  "game": "NJ @ TOR",
-  "player": "Nick Paul",
-  "player_id": "3042111",
-  "team": "TOR",
-  "opp": "NJ",
+  "game_id": "401892679",
+  "game": "PIT @ ANA",
+  "player": "Alex Killorn",
+  "player_id": "4968",
+  "team": "ANA",
+  "opp": "PIT",
   "stat": "SOG",
   "side": "UNDER",
   "line": 1.5,
   "line_source": "DraftKings",
-  "price": -155,
-  "projection": 1.0,
-  "prob": 0.672,
-  "edge": 0.065,
-  "score": 6.46,
+  "price": 100,
+  "projection": 1.3,
+  "prob": 0.57,
+  "edge": 0.07,
+  "score": 7.0,
   "grade": "B",
-  "hit_l5": "4/5",
-  "hit_l10": "8/10",
-  "hit_season": "13/18",
-  "vs_opp": "0/1",
-  "minutes": 15.8,
+  "hit_l5": "5/5",
+  "hit_l10": "9/10",
+  "hit_season": "11/17",
+  "vs_opp": "1/2",
+  "minutes": 16.8,
   "status": "ACTIVE",
-  "season_avg": 1.08,
-  "l10_avg": 0.9,
+  "season_avg": 1.5,
+  "l10_avg": 0.8,
   "reasons": [
-   "NJ limits shots to forwards (-5%)",
-   "Under hit 8/10 of last 10 at 1.5",
+   "Under hit 9/10 of last 10 at 1.5",
    "Last game: 1 (under the line)",
-   "Last 1 vs NJ: 2"
+   "Last 2 vs PIT: 2, 1"
   ],
   "actual": null,
   "result": null,
   "last_game": 1.0,
   "open_line": 1.5,
-  "open_price": -145,
+  "open_price": 105,
   "books": {
    "DraftKings": [
     1.5,
-    -155
+    100
    ]
   },
   "dist": {
    "k": "count",
-   "var": 1.228
+   "var": 1.623
   }
  },
  {
@@ -371,6 +277,100 @@
   "dist": {
    "k": "count",
    "var": 0.205
+  }
+ },
+ {
+  "game_id": "401892679",
+  "game": "PIT @ ANA",
+  "player": "Jackson LaCombe",
+  "player_id": "4565262",
+  "team": "ANA",
+  "opp": "PIT",
+  "stat": "SOG",
+  "side": "UNDER",
+  "line": 1.5,
+  "line_source": "DraftKings",
+  "price": -125,
+  "projection": 1.0,
+  "prob": 0.646,
+  "edge": 0.09,
+  "score": 6.33,
+  "grade": "B",
+  "hit_l5": "3/5",
+  "hit_l10": "8/10",
+  "hit_season": "14/17",
+  "vs_opp": "1/2",
+  "minutes": 27.6,
+  "status": "ACTIVE",
+  "season_avg": 1.15,
+  "l10_avg": 0.7,
+  "reasons": [
+   "Goes against his last game: grade lowered one level (live record 42% on these)",
+   "PIT limits shots to defensemen (-6%)",
+   "Under hit 8/10 of last 10 at 1.5",
+   "Last game: 2 (over the line)",
+   "Last 2 vs PIT: 4, 1"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 2.0,
+  "open_line": 1.5,
+  "open_price": -110,
+  "books": {
+   "DraftKings": [
+    1.5,
+    -125
+   ]
+  },
+  "dist": {
+   "k": "count",
+   "var": 1.278
+  }
+ },
+ {
+  "game_id": "401892677",
+  "game": "TB @ WPG",
+  "player": "Neal Pionk",
+  "player_id": "3988847",
+  "team": "WPG",
+  "opp": "TB",
+  "stat": "AST",
+  "side": "UNDER",
+  "line": 0.5,
+  "line_source": "DraftKings",
+  "price": -170,
+  "projection": 0.27,
+  "prob": 0.692,
+  "edge": 0.062,
+  "score": 6.25,
+  "grade": "B",
+  "hit_l5": "4/5",
+  "hit_l10": "8/10",
+  "hit_season": "12/17",
+  "vs_opp": "1/1",
+  "minutes": 23.5,
+  "status": "ACTIVE",
+  "season_avg": 0.32,
+  "l10_avg": 0.2,
+  "reasons": [
+   "Under hit 8/10 of last 10 at 0.5",
+   "Last game: 0 (under the line)",
+   "Last 1 vs TB: 0"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 0.0,
+  "open_line": 0.5,
+  "open_price": -200,
+  "books": {
+   "DraftKings": [
+    0.5,
+    -170
+   ]
+  },
+  "dist": {
+   "k": "count",
+   "var": 0.283
   }
  },
  {
@@ -421,50 +421,144 @@
   }
  },
  {
-  "game_id": "401892677",
-  "game": "TB @ WPG",
-  "player": "Nikita Kucherov",
-  "player_id": "2563060",
-  "team": "TB",
-  "opp": "WPG",
-  "stat": "PTS",
+  "game_id": "401892676",
+  "game": "NJ @ TOR",
+  "player": "Nico Hischier",
+  "player_id": "4233555",
+  "team": "NJ",
+  "opp": "TOR",
+  "stat": "SOG",
   "side": "OVER",
-  "line": 1.5,
+  "line": 2.5,
   "line_source": "DraftKings",
-  "price": 130,
-  "projection": 1.85,
-  "prob": 0.492,
-  "edge": 0.057,
-  "score": 5.69,
+  "price": 135,
+  "projection": 3.0,
+  "prob": 0.487,
+  "edge": 0.061,
+  "score": 6.11,
   "grade": "B",
-  "hit_l5": "3/5",
+  "hit_l5": "2/5",
   "hit_l10": "5/10",
-  "hit_season": "8/16",
-  "vs_opp": "1/3",
-  "minutes": 21.2,
+  "hit_season": "8/17",
+  "vs_opp": "2/3",
+  "minutes": 18.6,
   "status": "ACTIVE",
-  "season_avg": 1.48,
-  "l10_avg": 1.4,
+  "season_avg": 2.47,
+  "l10_avg": 2.7,
   "reasons": [
-   "Implied team goals 3.50 (high vs avg 3.08)",
-   "Over hit 5/10 of last 10 at 1.5",
-   "Last game: 2 (over the line)",
-   "Last 3 vs WPG: 1, 0, 2"
+   "TOR allows shots to forwards (+11%)",
+   "Over hit 5/10 of last 10 at 2.5",
+   "Last game: 6 (over the line)",
+   "Last 3 vs TOR: 5, 4, 2"
   ],
   "actual": null,
   "result": null,
-  "last_game": 2.0,
+  "last_game": 6.0,
   "open_line": 1.5,
-  "open_price": 130,
+  "open_price": -180,
   "books": {
    "DraftKings": [
-    1.5,
-    130
+    2.5,
+    135
    ]
   },
   "dist": {
    "k": "count",
-   "var": 1.908
+   "var": 3.712
+  }
+ },
+ {
+  "game_id": "401892676",
+  "game": "NJ @ TOR",
+  "player": "Luke Evangelista",
+  "player_id": "4697446",
+  "team": "NJ",
+  "opp": "TOR",
+  "stat": "SOG",
+  "side": "OVER",
+  "line": 1.5,
+  "line_source": "DraftKings",
+  "price": -180,
+  "projection": 3.0,
+  "prob": 0.702,
+  "edge": 0.059,
+  "score": 5.88,
+  "grade": "B",
+  "hit_l5": "4/5",
+  "hit_l10": "7/10",
+  "hit_season": "11/14",
+  "vs_opp": "2/2",
+  "minutes": 16.9,
+  "status": "ACTIVE",
+  "season_avg": 2.53,
+  "l10_avg": 2.7,
+  "reasons": [
+   "TOR allows shots to forwards (+11%)",
+   "Over hit 7/10 of last 10 at 1.5",
+   "Last game: 5 (over the line)",
+   "Last 2 vs TOR: 4, 2"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 5.0,
+  "open_line": 1.5,
+  "open_price": -190,
+  "books": {
+   "DraftKings": [
+    1.5,
+    -180
+   ]
+  },
+  "dist": {
+   "k": "count",
+   "var": 3.794
+  }
+ },
+ {
+  "game_id": "401892678",
+  "game": "PHI @ CGY",
+  "player": "Matvei Michkov",
+  "player_id": "5149170",
+  "team": "PHI",
+  "opp": "CGY",
+  "stat": "PTS",
+  "side": "UNDER",
+  "line": 0.5,
+  "line_source": "DraftKings",
+  "price": 100,
+  "projection": 0.49,
+  "prob": 0.558,
+  "edge": 0.058,
+  "score": 5.74,
+  "grade": "B",
+  "hit_l5": "2/5",
+  "hit_l10": "2/10",
+  "hit_season": "8/18",
+  "vs_opp": "2/2",
+  "minutes": 16.4,
+  "status": "ACTIVE",
+  "season_avg": 0.67,
+  "l10_avg": 1.1,
+  "reasons": [
+   "Implied team goals 2.81 (low vs avg 3.08)",
+   "Under hit 2/10 of last 10 at 0.5",
+   "Last game: 0 (under the line)",
+   "Last 2 vs CGY: 0, 0"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 0.0,
+  "open_line": 0.5,
+  "open_price": -115,
+  "books": {
+   "DraftKings": [
+    0.5,
+    100
+   ]
+  },
+  "dist": {
+   "k": "count",
+   "var": 0.5
   }
  },
  {
@@ -514,284 +608,50 @@
   }
  },
  {
-  "game_id": "401892674",
-  "game": "FLA @ BOS",
-  "player": "Gustav Forsling",
-  "player_id": "3151784",
-  "team": "FLA",
-  "opp": "BOS",
+  "game_id": "401892677",
+  "game": "TB @ WPG",
+  "player": "Nikita Kucherov",
+  "player_id": "2563060",
+  "team": "TB",
+  "opp": "WPG",
   "stat": "PTS",
-  "side": "UNDER",
-  "line": 0.5,
-  "line_source": "DraftKings",
-  "price": -290,
-  "projection": 0.15,
-  "prob": 0.798,
-  "edge": 0.055,
-  "score": 5.49,
-  "grade": "B",
-  "hit_l5": "5/5",
-  "hit_l10": "9/10",
-  "hit_season": "14/16",
-  "vs_opp": "2/3",
-  "minutes": 20.9,
-  "status": "ACTIVE",
-  "season_avg": 0.21,
-  "l10_avg": 0.1,
-  "reasons": [
-   "Implied team goals 2.54 (low vs avg 3.08)",
-   "Under hit 9/10 of last 10 at 0.5",
-   "Last game: 0 (under the line)",
-   "Last 3 vs BOS: 0, 0, 1"
-  ],
-  "actual": null,
-  "result": null,
-  "last_game": 0.0,
-  "open_line": 0.5,
-  "open_price": -330,
-  "books": {
-   "DraftKings": [
-    0.5,
-    -290
-   ]
-  },
-  "dist": {
-   "k": "count",
-   "var": 0.151
-  }
- },
- {
-  "game_id": "401892676",
-  "game": "NJ @ TOR",
-  "player": "Luke Evangelista",
-  "player_id": "4697446",
-  "team": "NJ",
-  "opp": "TOR",
-  "stat": "SOG",
   "side": "OVER",
   "line": 1.5,
-  "line_source": "DraftKings",
-  "price": -185,
-  "projection": 3.0,
-  "prob": 0.704,
-  "edge": 0.055,
-  "score": 5.47,
-  "grade": "B",
-  "hit_l5": "4/5",
-  "hit_l10": "7/10",
-  "hit_season": "11/14",
-  "vs_opp": "2/2",
-  "minutes": 16.9,
-  "status": "ACTIVE",
-  "season_avg": 2.53,
-  "l10_avg": 2.7,
-  "reasons": [
-   "TOR allows shots to forwards (+11%)",
-   "Over hit 7/10 of last 10 at 1.5",
-   "Last game: 5 (over the line)",
-   "Last 2 vs TOR: 4, 2"
-  ],
-  "actual": null,
-  "result": null,
-  "last_game": 5.0,
-  "open_line": 1.5,
-  "open_price": -190,
-  "books": {
-   "DraftKings": [
-    1.5,
-    -185
-   ]
-  },
-  "dist": {
-   "k": "count",
-   "var": 3.783
-  }
- },
- {
-  "game_id": "401892679",
-  "game": "PIT @ ANA",
-  "player": "Alex Killorn",
-  "player_id": "4968",
-  "team": "ANA",
-  "opp": "PIT",
-  "stat": "SOG",
-  "side": "UNDER",
-  "line": 1.5,
-  "line_source": "DraftKings",
-  "price": -110,
-  "projection": 1.3,
-  "prob": 0.577,
-  "edge": 0.054,
-  "score": 5.36,
-  "grade": "B",
-  "hit_l5": "5/5",
-  "hit_l10": "9/10",
-  "hit_season": "11/17",
-  "vs_opp": "1/2",
-  "minutes": 16.8,
-  "status": "ACTIVE",
-  "season_avg": 1.5,
-  "l10_avg": 0.8,
-  "reasons": [
-   "Under hit 9/10 of last 10 at 1.5",
-   "Last game: 1 (under the line)",
-   "Last 2 vs PIT: 2, 1"
-  ],
-  "actual": null,
-  "result": null,
-  "last_game": 1.0,
-  "open_line": 1.5,
-  "open_price": 105,
-  "books": {
-   "DraftKings": [
-    1.5,
-    -110
-   ]
-  },
-  "dist": {
-   "k": "count",
-   "var": 1.627
-  }
- },
- {
-  "game_id": "401892679",
-  "game": "PIT @ ANA",
-  "player": "Jackson LaCombe",
-  "player_id": "4565262",
-  "team": "ANA",
-  "opp": "PIT",
-  "stat": "AST",
-  "side": "OVER",
-  "line": 0.5,
-  "line_source": "DraftKings",
-  "price": -140,
-  "projection": 1.2,
-  "prob": 0.635,
-  "edge": 0.051,
-  "score": 5.13,
-  "grade": "B",
-  "hit_l5": "5/5",
-  "hit_l10": "9/10",
-  "hit_season": "14/17",
-  "vs_opp": "0/2",
-  "minutes": 27.6,
-  "status": "ACTIVE",
-  "season_avg": 0.89,
-  "l10_avg": 1.3,
-  "reasons": [
-   "Opposing goalie Arturs Silovs (0.893 sv%): goals easier (+7%)",
-   "Over hit 9/10 of last 10 at 0.5",
-   "Last game: 1 (over the line)",
-   "Last 2 vs PIT: 0, 0"
-  ],
-  "actual": null,
-  "result": null,
-  "last_game": 1.0,
-  "open_line": 0.5,
-  "open_price": -135,
-  "books": {
-   "DraftKings": [
-    0.5,
-    -140
-   ]
-  },
-  "dist": {
-   "k": "count",
-   "var": 1.24
-  }
- },
- {
-  "game_id": "401892676",
-  "game": "NJ @ TOR",
-  "player": "Nico Hischier",
-  "player_id": "4233555",
-  "team": "NJ",
-  "opp": "TOR",
-  "stat": "SOG",
-  "side": "OVER",
-  "line": 2.5,
   "line_source": "DraftKings",
   "price": 125,
-  "projection": 3.0,
-  "prob": 0.492,
-  "edge": 0.047,
-  "score": 4.73,
-  "grade": "C",
-  "hit_l5": "2/5",
+  "projection": 1.85,
+  "prob": 0.495,
+  "edge": 0.05,
+  "score": 5.03,
+  "grade": "B",
+  "hit_l5": "3/5",
   "hit_l10": "5/10",
-  "hit_season": "8/17",
-  "vs_opp": "2/3",
-  "minutes": 18.6,
+  "hit_season": "8/16",
+  "vs_opp": "1/3",
+  "minutes": 21.2,
   "status": "ACTIVE",
-  "season_avg": 2.47,
-  "l10_avg": 2.7,
+  "season_avg": 1.48,
+  "l10_avg": 1.4,
   "reasons": [
-   "TOR allows shots to forwards (+11%)",
-   "Over hit 5/10 of last 10 at 2.5",
-   "Last game: 6 (over the line)",
-   "Last 3 vs TOR: 5, 4, 2"
+   "Implied team goals 3.50 (high vs avg 3.08)",
+   "Over hit 5/10 of last 10 at 1.5",
+   "Last game: 2 (over the line)",
+   "Last 3 vs WPG: 1, 0, 2"
   ],
   "actual": null,
   "result": null,
-  "last_game": 6.0,
+  "last_game": 2.0,
   "open_line": 1.5,
-  "open_price": -180,
+  "open_price": 130,
   "books": {
    "DraftKings": [
-    2.5,
+    1.5,
     125
    ]
   },
   "dist": {
    "k": "count",
-   "var": 3.701
-  }
- },
- {
-  "game_id": "401892677",
-  "game": "TB @ WPG",
-  "player": "Brandon Hagel",
-  "player_id": "4065019",
-  "team": "TB",
-  "opp": "WPG",
-  "stat": "SOG",
-  "side": "OVER",
-  "line": 2.5,
-  "line_source": "DraftKings",
-  "price": -110,
-  "projection": 3.6,
-  "prob": 0.594,
-  "edge": 0.07,
-  "score": 4.92,
-  "grade": "C",
-  "hit_l5": "3/5",
-  "hit_l10": "7/10",
-  "hit_season": "12/16",
-  "vs_opp": "1/3",
-  "minutes": 20.1,
-  "status": "ACTIVE",
-  "season_avg": 3.54,
-  "l10_avg": 3.5,
-  "reasons": [
-   "Goes against his last game: grade lowered one level (live record 42% on these)",
-   "Over hit 7/10 of last 10 at 2.5",
-   "Last game: 0 (under the line)",
-   "Last 3 vs WPG: 5, 1, 1"
-  ],
-  "actual": null,
-  "result": null,
-  "last_game": 0.0,
-  "open_line": 2.5,
-  "open_price": -120,
-  "books": {
-   "DraftKings": [
-    2.5,
-    -110
-   ]
-  },
-  "dist": {
-   "k": "count",
-   "var": 4.508
+   "var": 1.907
   }
  },
  {
@@ -843,6 +703,286 @@
   }
  },
  {
+  "game_id": "401892676",
+  "game": "NJ @ TOR",
+  "player": "Nick Paul",
+  "player_id": "3042111",
+  "team": "TOR",
+  "opp": "NJ",
+  "stat": "SOG",
+  "side": "UNDER",
+  "line": 1.5,
+  "line_source": "DraftKings",
+  "price": -180,
+  "projection": 1.0,
+  "prob": 0.687,
+  "edge": 0.044,
+  "score": 4.44,
+  "grade": "C",
+  "hit_l5": "4/5",
+  "hit_l10": "8/10",
+  "hit_season": "13/18",
+  "vs_opp": "0/1",
+  "minutes": 15.8,
+  "status": "ACTIVE",
+  "season_avg": 1.08,
+  "l10_avg": 0.9,
+  "reasons": [
+   "NJ limits shots to forwards (-5%)",
+   "Under hit 8/10 of last 10 at 1.5",
+   "Last game: 1 (under the line)",
+   "Last 1 vs NJ: 2"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 1.0,
+  "open_line": 1.5,
+  "open_price": -145,
+  "books": {
+   "DraftKings": [
+    1.5,
+    -180
+   ]
+  },
+  "dist": {
+   "k": "count",
+   "var": 1.224
+  }
+ },
+ {
+  "game_id": "401892679",
+  "game": "PIT @ ANA",
+  "player": "Egor Chinakhov",
+  "player_id": "4697404",
+  "team": "PIT",
+  "opp": "ANA",
+  "stat": "SOG",
+  "side": "UNDER",
+  "line": 1.5,
+  "line_source": "DraftKings",
+  "price": 130,
+  "projection": 1.7,
+  "prob": 0.472,
+  "edge": 0.037,
+  "score": 3.73,
+  "grade": "C",
+  "hit_l5": "3/5",
+  "hit_l10": "5/10",
+  "hit_season": "6/13",
+  "vs_opp": "1/2",
+  "minutes": 14.3,
+  "status": "ACTIVE",
+  "season_avg": 1.74,
+  "l10_avg": 1.6,
+  "reasons": [
+   "Under hit 5/10 of last 10 at 1.5",
+   "Last game: 1 (under the line)",
+   "Last 2 vs ANA: 0, 2"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 1.0,
+  "open_line": 1.5,
+  "open_price": 135,
+  "books": {
+   "DraftKings": [
+    1.5,
+    130
+   ]
+  },
+  "dist": {
+   "k": "count",
+   "var": 2.131
+  }
+ },
+ {
+  "game_id": "401892679",
+  "game": "PIT @ ANA",
+  "player": "Erik Karlsson",
+  "player_id": "5164",
+  "team": "PIT",
+  "opp": "ANA",
+  "stat": "SOG",
+  "side": "UNDER",
+  "line": 1.5,
+  "line_source": "DraftKings",
+  "price": 135,
+  "projection": 1.8,
+  "prob": 0.458,
+  "edge": 0.033,
+  "score": 3.3,
+  "grade": "C",
+  "hit_l5": "3/5",
+  "hit_l10": "5/10",
+  "hit_season": "9/17",
+  "vs_opp": "1/2",
+  "minutes": 23.3,
+  "status": "ACTIVE",
+  "season_avg": 1.86,
+  "l10_avg": 1.6,
+  "reasons": [
+   "Under hit 5/10 of last 10 at 1.5",
+   "Last game: 0 (under the line)",
+   "Last 2 vs ANA: 5, 1"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 0.0,
+  "open_line": 1.5,
+  "open_price": 125,
+  "books": {
+   "DraftKings": [
+    1.5,
+    135
+   ]
+  },
+  "dist": {
+   "k": "count",
+   "var": 2.208
+  }
+ },
+ {
+  "game_id": "401892679",
+  "game": "PIT @ ANA",
+  "player": "Arturs Silovs",
+  "player_id": "4576894",
+  "team": "PIT",
+  "opp": "ANA",
+  "stat": "SAVES",
+  "side": "UNDER",
+  "line": 24.5,
+  "line_source": "DraftKings",
+  "price": -115,
+  "projection": 23.0,
+  "prob": 0.575,
+  "edge": 0.04,
+  "score": 2.4,
+  "grade": "C",
+  "hit_l5": "3/5",
+  "hit_l10": "7/10",
+  "hit_season": "8/11",
+  "vs_opp": "0/1",
+  "minutes": 60.1,
+  "status": "ACTIVE",
+  "season_avg": 23.29,
+  "l10_avg": 23.6,
+  "reasons": [
+   "Projected starter (60% of recent starts)",
+   "Expected shots against 25.8 (ANA shots for 24.9, team allows 26.7)",
+   "Under hit 7/10 of last 10 at 24.5",
+   "Last game: 18 (under the line)",
+   "Last 1 vs ANA: 26"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 18.0,
+  "open_line": 24.5,
+  "open_price": -115,
+  "books": {
+   "DraftKings": [
+    24.5,
+    -115
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 4.607
+  }
+ },
+ {
+  "game_id": "401892678",
+  "game": "PHI @ CGY",
+  "player": "Zayne Parekh",
+  "player_id": "5216878",
+  "team": "CGY",
+  "opp": "PHI",
+  "stat": "SOG",
+  "side": "UNDER",
+  "line": 1.5,
+  "line_source": "DraftKings",
+  "price": -115,
+  "projection": 1.4,
+  "prob": 0.568,
+  "edge": 0.033,
+  "score": 3.3,
+  "grade": "C",
+  "hit_l5": "4/5",
+  "hit_l10": "6/10",
+  "hit_season": "10/17",
+  "vs_opp": "1/1",
+  "minutes": 18.2,
+  "status": "ACTIVE",
+  "season_avg": 1.49,
+  "l10_avg": 1.4,
+  "reasons": [
+   "Under hit 6/10 of last 10 at 1.5",
+   "Last game: 1 (under the line)",
+   "Last 1 vs PHI: 0"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 1.0,
+  "open_line": 1.5,
+  "open_price": -125,
+  "books": {
+   "DraftKings": [
+    1.5,
+    -115
+   ]
+  },
+  "dist": {
+   "k": "count",
+   "var": 1.728
+  }
+ },
+ {
+  "game_id": "401892677",
+  "game": "TB @ WPG",
+  "player": "Brandon Hagel",
+  "player_id": "4065019",
+  "team": "TB",
+  "opp": "WPG",
+  "stat": "SOG",
+  "side": "OVER",
+  "line": 2.5,
+  "line_source": "DraftKings",
+  "price": -115,
+  "projection": 3.6,
+  "prob": 0.597,
+  "edge": 0.062,
+  "score": 4.37,
+  "grade": "C",
+  "hit_l5": "3/5",
+  "hit_l10": "7/10",
+  "hit_season": "12/16",
+  "vs_opp": "1/3",
+  "minutes": 20.1,
+  "status": "ACTIVE",
+  "season_avg": 3.54,
+  "l10_avg": 3.5,
+  "reasons": [
+   "Goes against his last game: grade lowered one level (live record 42% on these)",
+   "Over hit 7/10 of last 10 at 2.5",
+   "Last game: 0 (under the line)",
+   "Last 3 vs WPG: 5, 1, 1"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 0.0,
+  "open_line": 2.5,
+  "open_price": -120,
+  "books": {
+   "DraftKings": [
+    2.5,
+    -115
+   ]
+  },
+  "dist": {
+   "k": "count",
+   "var": 4.5
+  }
+ },
+ {
   "game_id": "401892677",
   "game": "TB @ WPG",
   "player": "Brayden Point",
@@ -855,9 +995,9 @@
   "line_source": "DraftKings",
   "price": 110,
   "projection": 0.86,
-  "prob": 0.521,
-  "edge": 0.045,
-  "score": 4.48,
+  "prob": 0.52,
+  "edge": 0.043,
+  "score": 4.35,
   "grade": "C",
   "hit_l5": "3/5",
   "hit_l10": "6/10",
@@ -900,11 +1040,11 @@
   "side": "OVER",
   "line": 2.5,
   "line_source": "DraftKings",
-  "price": 100,
+  "price": 105,
   "projection": 3.1,
-  "prob": 0.536,
-  "edge": 0.036,
-  "score": 3.59,
+  "prob": 0.53,
+  "edge": 0.042,
+  "score": 4.19,
   "grade": "C",
   "hit_l5": "3/5",
   "hit_l10": "4/10",
@@ -927,146 +1067,109 @@
   "books": {
    "DraftKings": [
     2.5,
-    100
+    105
    ]
   },
   "dist": {
    "k": "count",
-   "var": 3.924
+   "var": 3.917
   }
  },
  {
-  "game_id": "401892679",
-  "game": "PIT @ ANA",
-  "player": "Mikael Granlund",
-  "player_id": "5831",
-  "team": "ANA",
-  "opp": "PIT",
-  "stat": "SOG",
-  "side": "UNDER",
-  "line": 1.5,
-  "line_source": "DraftKings",
-  "price": 135,
-  "projection": 1.7,
-  "prob": 0.465,
-  "edge": 0.039,
-  "score": 3.94,
-  "grade": "C",
-  "hit_l5": "3/5",
-  "hit_l10": "6/10",
-  "hit_season": "7/16",
-  "vs_opp": "0/2",
-  "minutes": 20.8,
-  "status": "ACTIVE",
-  "season_avg": 1.75,
-  "l10_avg": 1.4,
-  "reasons": [
-   "Under hit 6/10 of last 10 at 1.5",
-   "Last game: 1 (under the line)",
-   "Last 2 vs PIT: 2, 2"
-  ],
-  "actual": null,
-  "result": null,
-  "last_game": 1.0,
-  "open_line": 2.5,
-  "open_price": -175,
-  "books": {
-   "DraftKings": [
-    1.5,
-    135
-   ]
-  },
-  "dist": {
-   "k": "count",
-   "var": 2.16
-  }
- },
- {
-  "game_id": "401892679",
-  "game": "PIT @ ANA",
-  "player": "Egor Chinakhov",
-  "player_id": "4697404",
-  "team": "PIT",
-  "opp": "ANA",
-  "stat": "SOG",
-  "side": "UNDER",
-  "line": 1.5,
-  "line_source": "DraftKings",
-  "price": 130,
-  "projection": 1.7,
-  "prob": 0.472,
-  "edge": 0.037,
-  "score": 3.71,
-  "grade": "C",
-  "hit_l5": "3/5",
-  "hit_l10": "5/10",
-  "hit_season": "6/13",
-  "vs_opp": "1/2",
-  "minutes": 14.3,
-  "status": "ACTIVE",
-  "season_avg": 1.74,
-  "l10_avg": 1.6,
-  "reasons": [
-   "Under hit 5/10 of last 10 at 1.5",
-   "Last game: 1 (under the line)",
-   "Last 2 vs ANA: 0, 2"
-  ],
-  "actual": null,
-  "result": null,
-  "last_game": 1.0,
-  "open_line": 1.5,
-  "open_price": 135,
-  "books": {
-   "DraftKings": [
-    1.5,
-    130
-   ]
-  },
-  "dist": {
-   "k": "count",
-   "var": 2.132
-  }
- },
- {
-  "game_id": "401892679",
-  "game": "PIT @ ANA",
-  "player": "Laurent Brossoit",
-  "player_id": "3026526",
-  "team": "ANA",
-  "opp": "PIT",
-  "stat": "SAVES",
+  "game_id": "401892675",
+  "game": "VGK @ BUF",
+  "player": "Zach Benson",
+  "player_id": "5149186",
+  "team": "BUF",
+  "opp": "VGK",
+  "stat": "AST",
   "side": "OVER",
-  "line": 19.5,
-  "line_source": "est.",
-  "price": -105,
-  "projection": 23.8,
-  "prob": 0.686,
-  "edge": 0.174,
-  "score": 3.49,
+  "line": 0.5,
+  "line_source": "DraftKings",
+  "price": 120,
+  "projection": 0.92,
+  "prob": 0.527,
+  "edge": 0.073,
+  "score": 7.28,
   "grade": "B",
-  "hit_l5": "2/4",
-  "hit_l10": "2/4",
-  "hit_season": "2/3",
-  "vs_opp": "0/0",
-  "minutes": 59.5,
+  "hit_l5": "4/5",
+  "hit_l10": "8/10",
+  "hit_season": "10/16",
+  "vs_opp": "0/2",
+  "minutes": 19.6,
   "status": "ACTIVE",
-  "season_avg": 18.62,
-  "l10_avg": 20.0,
+  "season_avg": 0.67,
+  "l10_avg": 1.1,
   "reasons": [
-   "Projected starter (60% of recent starts)",
-   "Expected shots against 26.6 (PIT shots for 26.6, team allows 26.6)",
-   "Last game: 23 (over the line)"
+   "Opposing goalie Adin Hill (0.891 sv%): goals easier (+9%)",
+   "Over hit 8/10 of last 10 at 0.5",
+   "Last game: 1 (over the line)",
+   "Last 2 vs VGK: 0, 0"
   ],
   "actual": null,
   "result": null,
-  "last_game": 23.0,
-  "open_line": null,
-  "open_price": null,
-  "books": null,
+  "last_game": 1.0,
+  "open_line": 0.5,
+  "open_price": 115,
+  "books": {
+   "DraftKings": [
+    0.5,
+    120
+   ]
+  },
   "dist": {
-   "k": "normal",
-   "sd": 4.765
-  }
+   "k": "count",
+   "var": 0.947
+  },
+  "locked": true
+ },
+ {
+  "game_id": "401892674",
+  "game": "FLA @ BOS",
+  "player": "Gustav Forsling",
+  "player_id": "3151784",
+  "team": "FLA",
+  "opp": "BOS",
+  "stat": "PTS",
+  "side": "UNDER",
+  "line": 0.5,
+  "line_source": "DraftKings",
+  "price": -290,
+  "projection": 0.15,
+  "prob": 0.798,
+  "edge": 0.055,
+  "score": 5.49,
+  "grade": "B",
+  "hit_l5": "5/5",
+  "hit_l10": "9/10",
+  "hit_season": "14/16",
+  "vs_opp": "2/3",
+  "minutes": 20.9,
+  "status": "ACTIVE",
+  "season_avg": 0.21,
+  "l10_avg": 0.1,
+  "reasons": [
+   "Implied team goals 2.54 (low vs avg 3.08)",
+   "Under hit 9/10 of last 10 at 0.5",
+   "Last game: 0 (under the line)",
+   "Last 3 vs BOS: 0, 0, 1"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 0.0,
+  "open_line": 0.5,
+  "open_price": -330,
+  "books": {
+   "DraftKings": [
+    0.5,
+    -290
+   ]
+  },
+  "dist": {
+   "k": "count",
+   "var": 0.151
+  },
+  "locked": true
  },
  {
   "game_id": "401892675",
@@ -1113,7 +1216,8 @@
   "dist": {
    "k": "count",
    "var": 1.184
-  }
+  },
+  "locked": true
  },
  {
   "game_id": "401892675",
@@ -1161,7 +1265,8 @@
   "dist": {
    "k": "count",
    "var": 0.311
-  }
+  },
+  "locked": true
  },
  {
   "game_id": "401892675",
@@ -1208,7 +1313,8 @@
   "dist": {
    "k": "count",
    "var": 0.722
-  }
+  },
+  "locked": true
  },
  {
   "game_id": "401892675",
@@ -1254,7 +1360,8 @@
   "dist": {
    "k": "count",
    "var": 2.48
-  }
+  },
+  "locked": true
  },
  {
   "game_id": "401892675",
@@ -1299,142 +1406,8 @@
   "dist": {
    "k": "count",
    "var": 2.314
-  }
- },
- {
-  "game_id": "401892678",
-  "game": "PHI @ CGY",
-  "player": "Matvei Michkov",
-  "player_id": "5149170",
-  "team": "PHI",
-  "opp": "CGY",
-  "stat": "PTS",
-  "side": "UNDER",
-  "line": 0.5,
-  "line_source": "DraftKings",
-  "price": -110,
-  "projection": 0.49,
-  "prob": 0.568,
-  "edge": 0.044,
-  "score": 4.36,
-  "grade": "C",
-  "hit_l5": "2/5",
-  "hit_l10": "2/10",
-  "hit_season": "8/18",
-  "vs_opp": "2/2",
-  "minutes": 16.4,
-  "status": "ACTIVE",
-  "season_avg": 0.67,
-  "l10_avg": 1.1,
-  "reasons": [
-   "Implied team goals 2.81 (low vs avg 3.08)",
-   "Under hit 2/10 of last 10 at 0.5",
-   "Last game: 0 (under the line)",
-   "Last 2 vs CGY: 0, 0"
-  ],
-  "actual": null,
-  "result": null,
-  "last_game": 0.0,
-  "open_line": 0.5,
-  "open_price": -115,
-  "books": {
-   "DraftKings": [
-    0.5,
-    -110
-   ]
   },
-  "dist": {
-   "k": "count",
-   "var": 0.5
-  }
- },
- {
-  "game_id": "401892678",
-  "game": "PHI @ CGY",
-  "player": "Matt Coronato",
-  "player_id": "4874730",
-  "team": "CGY",
-  "opp": "PHI",
-  "stat": "SOG",
-  "side": "UNDER",
-  "line": 2.5,
-  "line_source": "DraftKings",
-  "price": -130,
-  "projection": 2.0,
-  "prob": 0.616,
-  "edge": 0.051,
-  "score": 3.57,
-  "grade": "C",
-  "hit_l5": "4/5",
-  "hit_l10": "6/10",
-  "hit_season": "10/17",
-  "vs_opp": "2/2",
-  "minutes": 17.2,
-  "status": "ACTIVE",
-  "season_avg": 2.25,
-  "l10_avg": 2.0,
-  "reasons": [
-   "Goes against his last game: grade lowered one level (live record 42% on these)",
-   "Under hit 6/10 of last 10 at 2.5",
-   "Last game: 3 (over the line)",
-   "Last 2 vs PHI: 0, 0"
-  ],
-  "actual": null,
-  "result": null,
-  "last_game": 3.0,
-  "open_line": 2.5,
-  "open_price": -120,
-  "books": {
-   "DraftKings": [
-    2.5,
-    -130
-   ]
-  },
-  "dist": {
-   "k": "count",
-   "var": 2.502
-  }
- },
- {
-  "game_id": "401892678",
-  "game": "PHI @ CGY",
-  "player": "Cole Knuble",
-  "player_id": "5188341",
-  "team": "PHI",
-  "opp": "CGY",
-  "stat": "PTS",
-  "side": "UNDER",
-  "line": 0.5,
-  "line_source": "est.",
-  "price": -251,
-  "projection": 0.22,
-  "prob": 0.759,
-  "edge": 0.044,
-  "score": 2.91,
-  "grade": "C",
-  "hit_l5": "4/5",
-  "hit_l10": "6/8",
-  "hit_season": "6/8",
-  "vs_opp": "0/0",
-  "minutes": 12.2,
-  "status": "ACTIVE",
-  "season_avg": 0.38,
-  "l10_avg": 0.38,
-  "reasons": [
-   "Implied team goals 2.81 (low vs avg 3.08)",
-   "Under hit 6/8 of last 8 at 0.5",
-   "Last game: 0 (under the line)"
-  ],
-  "actual": null,
-  "result": null,
-  "last_game": 0.0,
-  "open_line": null,
-  "open_price": null,
-  "books": null,
-  "dist": {
-   "k": "count",
-   "var": 0.227
-  }
+  "locked": true
  },
  {
   "game_id": "401892674",
@@ -1476,7 +1449,8 @@
   "dist": {
    "k": "count",
    "var": 0.168
-  }
+  },
+  "locked": true
  },
  {
   "game_id": "401892674",
@@ -1523,6 +1497,7 @@
   "dist": {
    "k": "count",
    "var": 0.132
-  }
+  },
+  "locked": true
  }
 ]
