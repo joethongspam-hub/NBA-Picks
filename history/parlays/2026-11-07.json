@@ -74,54 +74,11 @@
   "ev": 0.64,
   "type": "safe",
   "label": "Safest",
-  "made": "2026-11-07T16:53:07.474472-05:00"
+  "made": "2026-11-07T16:53:07.474472-05:00",
+  "locked": true
  },
  {
   "legs": [
-   {
-    "game_id": "401909939",
-    "game": "BKN @ ATL",
-    "player": "CJ McCollum",
-    "player_id": "2490149",
-    "team": "ATL",
-    "opp": "BKN",
-    "stat": "REB",
-    "side": "OVER",
-    "line": 2.5,
-    "price": -105,
-    "prob": 0.618,
-    "edge": 0.106,
-    "grade": "A",
-    "line_source": "DraftKings",
-    "books": {
-     "DraftKings": [
-      2.5,
-      -105
-     ]
-    }
-   },
-   {
-    "game_id": "401909940",
-    "game": "NY @ CLE",
-    "player": "Mikal Bridges",
-    "player_id": "3147657",
-    "team": "NY",
-    "opp": "CLE",
-    "stat": "PA",
-    "side": "UNDER",
-    "line": 13.5,
-    "price": -122,
-    "prob": 0.652,
-    "edge": 0.103,
-    "grade": "A",
-    "line_source": "DraftKings",
-    "books": {
-     "DraftKings": [
-      13.5,
-      -122
-     ]
-    }
-   },
    {
     "game_id": "401909943",
     "game": "HOU @ PHX",
@@ -132,29 +89,18 @@
     "stat": "PTS",
     "side": "OVER",
     "line": 8.5,
-    "price": -107,
-    "prob": 0.611,
-    "edge": 0.094,
+    "price": -101,
+    "prob": 0.605,
+    "edge": 0.102,
     "grade": "A",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
       8.5,
-      -107
+      -101
      ]
     }
-   }
-  ],
-  "hit": 0.2462,
-  "payout": 6.87,
-  "odds": 587,
-  "ev": 0.692,
-  "type": "value",
-  "label": "Best value",
-  "made": "2026-11-07T16:53:07.474472-05:00"
- },
- {
-  "legs": [
+   },
    {
     "game_id": "401909939",
     "game": "BKN @ ATL",
@@ -162,18 +108,73 @@
     "player_id": "4397020",
     "team": "ATL",
     "opp": "BKN",
-    "stat": "PRA",
+    "stat": "PTS",
     "side": "OVER",
-    "line": 13.5,
-    "price": -103,
-    "prob": 0.601,
-    "edge": 0.094,
+    "line": 8.5,
+    "price": -102,
+    "prob": 0.604,
+    "edge": 0.099,
     "grade": "A",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
-      13.5,
-      -103
+      8.5,
+      -102
+     ]
+    }
+   },
+   {
+    "game_id": "401909940",
+    "game": "NY @ CLE",
+    "player": "Mikal Bridges",
+    "player_id": "3147657",
+    "team": "NY",
+    "opp": "CLE",
+    "stat": "PTS",
+    "side": "UNDER",
+    "line": 9.5,
+    "price": -101,
+    "prob": 0.602,
+    "edge": 0.099,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      9.5,
+      -101
+     ]
+    }
+   }
+  ],
+  "hit": 0.22,
+  "payout": 7.84,
+  "odds": 684,
+  "ev": 0.725,
+  "type": "value",
+  "label": "Best value",
+  "made": "2026-11-07T19:15:15.155185-05:00"
+ },
+ {
+  "legs": [
+   {
+    "game_id": "401909944",
+    "game": "SA @ POR",
+    "player": "Sidy Cissoko",
+    "player_id": "5081727",
+    "team": "POR",
+    "opp": "SA",
+    "stat": "REB",
+    "side": "OVER",
+    "line": 2.5,
+    "price": -127,
+    "prob": 0.647,
+    "edge": 0.088,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      2.5,
+      -127
      ]
     }
    },
@@ -202,44 +203,22 @@
    {
     "game_id": "401909940",
     "game": "NY @ CLE",
-    "player": "Karl-Anthony Towns",
-    "player_id": "3136195",
+    "player": "Jalen Brunson",
+    "player_id": "3934672",
     "team": "NY",
     "opp": "CLE",
-    "stat": "RA",
+    "stat": "AST",
     "side": "UNDER",
-    "line": 17.5,
-    "price": -130,
-    "prob": 0.648,
-    "edge": 0.083,
-    "grade": "A",
-    "line_source": "DraftKings",
-    "books": {
-     "DraftKings": [
-      17.5,
-      -130
-     ]
-    }
-   },
-   {
-    "game_id": "401909944",
-    "game": "SA @ POR",
-    "player": "Scoot Henderson",
-    "player_id": "4683678",
-    "team": "POR",
-    "opp": "SA",
-    "stat": "PA",
-    "side": "UNDER",
-    "line": 15.5,
-    "price": -129,
-    "prob": 0.623,
-    "edge": 0.06,
+    "line": 6.5,
+    "price": -125,
+    "prob": 0.633,
+    "edge": 0.078,
     "grade": "B",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
-      15.5,
-      -129
+      6.5,
+      -125
      ]
     }
    },
@@ -253,25 +232,25 @@
     "stat": "REB",
     "side": "UNDER",
     "line": 5.5,
-    "price": -129,
-    "prob": 0.617,
-    "edge": 0.054,
-    "grade": "B",
+    "price": -139,
+    "prob": 0.624,
+    "edge": 0.043,
+    "grade": "C",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
       5.5,
-      -129
+      -139
      ]
     }
    }
   ],
-  "hit": 0.0925,
-  "payout": 20.63,
-  "odds": 1963,
-  "ev": 0.908,
+  "hit": 0.1579,
+  "payout": 10.38,
+  "odds": 938,
+  "ev": 0.64,
   "type": "longshot",
   "label": "Long shot",
-  "made": "2026-11-07T16:53:07.474472-05:00"
+  "made": "2026-11-07T19:15:15.155185-05:00"
  }
 ]
