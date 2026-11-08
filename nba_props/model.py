@@ -518,6 +518,7 @@ class Pick:
     open_line: float | None = None       # DraftKings opening line (for market-movement tracking)
     open_price: int | None = None
     books: dict | None = None            # line shopping: {"FanDuel": [line, price], ...} for the pick's side
+    dist: dict | None = None             # projected distribution, so the page can price any line
 
     def to_dict(self):
         return self.__dict__.copy()
@@ -610,7 +611,9 @@ def evaluate(proj: Projection, stats: list[str], lines: dict[tuple[str, str], Pr
             last_game=p.logs[0].get(s) if p.logs else None,
             open_line=getattr(real, "open_line", None) if real else None,
             open_price=(getattr(real, "open_over", None) if side == "OVER" else getattr(real, "open_under", None)) if real else None,
-            books=shop(real, side)))
+            books=shop(real, side),
+            dist=({"k": "count", "var": round(max(proj.sd[s] ** 2, mu * 1.02), 3)} if s in COUNT_STATS
+                  else {"k": "normal", "sd": round(max(proj.sd[s], 0.5), 3)})))
     return picks
 
 

@@ -564,5 +564,8 @@ def evaluate(proj: Projection, lines: dict[tuple[str, str], PropLine], season: i
             reasons=reasons, last_game=p.logs[0].get(s) if p.logs else None,
             open_line=getattr(real, "open_line", None) if real else None,
             open_price=(getattr(real, "open_over", None) if side == "OVER" else getattr(real, "open_under", None)) if real else None,
-            books=shop(real, side)))
+            books=shop(real, side),
+            dist=({"k": "gamma", "cv": round(max(cv, 0.15), 3)} if s in YARDS
+                  else {"k": "normal", "sd": round(max(cv * mu, 1.0), 3)} if s in NORMAL
+                  else {"k": "count", "var": round(mu * 1.05 if s in POISSON else max(mu * 1.05, (cv * mu) ** 2), 3)})))
     return picks

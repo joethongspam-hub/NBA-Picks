@@ -104,7 +104,11 @@ input[type=search]{width:100%;background:var(--panel);border:1px solid var(--lin
     <div class="chips" id="statChips"></div>
     <div class="card" id="bestList"></div>
   </section>
-  <section class="view" id="v-parlay"><div id="parlayBox"></div></section>
+  <section class="view" id="v-parlay">
+    <div class="sect" style="margin-top:4px">Parlay checker</div>
+    <div class="card" style="padding:12px 14px" id="slipBox"></div>
+    <div id="parlayBox"></div>
+  </section>
   <section class="view" id="v-games"><div id="gameList"></div></section>
   <section class="view" id="v-team"><div id="teamBox"></div></section>
   <section class="view" id="v-all">
@@ -208,6 +212,7 @@ function pickHTML(p, showGame) {
       ${shopHTML(p)}
       <div class="small">Line source: ${esc(p.line_source)}${p.price!=null && !Object.keys(p.books || {}).length ? ` · price ${fmtPrice(p.price)}` : ""} · season hit ${p.hit_season} · vs ${esc(p.opp)} ${p.vs_opp}</div>
       <ul class="why">${p.reasons.map(r=>`<li>${esc(r)}</li>`).join("")}</ul>
+      ${p.dist && !D.backtest ? `<button class="chip" style="margin-top:8px" onclick="event.stopPropagation();slipAdd('${pkey(p)}')">+ Add to parlay</button>` : ""}
     </div>
   </div>`;
 }
@@ -338,6 +343,115 @@ document.querySelector("nav").addEventListener("click", e => {
   document.querySelectorAll("nav button").forEach(b => b.classList.toggle("on", b.dataset.v === v));
   document.querySelectorAll(".view").forEach(s => s.classList.toggle("on", s.id === "v-" + v));
 });
+// ---- parlay checker (slip shared across the NBA / NFL / NHL pages on this device)
+const SPORT = document.title.split(" ")[0];
+const pkey = p => `${p.player_id}|${p.stat}|${p.side}|${p.line}`;
+const PICKS = {};
+[...D.all, ...D.top, ...Object.values(D.by_game).flat()].forEach(p => { if (p.dist) PICKS[pkey(p)] = p; });
+let SLIP = [];
+try { SLIP = JSON.parse(localStorage.getItem("parlaySlip") || "[]"); } catch (e) { SLIP = []; }
+const saveSlip = () => { try { localStorage.setItem("parlaySlip", JSON.stringify(SLIP)); } catch (e) {} };
+function lgam(x) { const g = [76.18009172947146, -86.50532032941677, 24.01409824083091, -1.231739572450155, 0.1208650973866179e-2, -0.5395239384953e-5];
+  let y = x, t = x + 5.5; t -= (x + 0.5) * Math.log(t); let s = 1.000000000190015; for (const c of g) s += c / ++y; return -t + Math.log(2.5066282746310005 * s / x); }
+function nbCdf(k, mu, v) { if (k < 0) return 0; if (mu <= 0) return 1; let t = 0;
+  if (v <= mu * 1.0001) { for (let i = 0; i <= k; i++) t += Math.exp(-mu + i * Math.log(mu) - lgam(i + 1)); return Math.min(1, t); }
+  const r = mu * mu / (v - mu), p = r / (r + mu);
+  for (let i = 0; i <= k; i++) t += Math.exp(lgam(i + r) - lgam(r) - lgam(i + 1) + r * Math.log(p) + i * Math.log(1 - p)); return Math.min(1, t); }
+function gammaP(a, x) { if (x <= 0) return 0; const gl = lgam(a);
+  if (x < a + 1) { let ap = a, s = 1 / a, d = s; for (let i = 0; i < 300; i++) { ap++; d *= x / ap; s += d; if (Math.abs(d) < Math.abs(s) * 1e-10) break; } return s * Math.exp(-x + a * Math.log(x) - gl); }
+  let b = x + 1 - a, c = 1e300, d = 1 / b, h = d;
+  for (let i = 1; i < 300; i++) { const an = -i * (i - a); b += 2; d = an * d + b; if (Math.abs(d) < 1e-300) d = 1e-300; c = b + an / c; if (Math.abs(c) < 1e-300) c = 1e-300; d = 1 / d; const de = d * c; h *= de; if (Math.abs(de - 1) < 1e-10) break; }
+  return 1 - Math.exp(-x + a * Math.log(x) - gl) * h; }
+function modelOU(dist, mu, L) {           // [P(over), P(under)] under the projected distribution
+  mu = Math.max(mu, 0.01); const int = Math.abs(L - Math.round(L)) < 1e-9;
+  if (dist.k === "normal") { const sd = dist.sd; return int ? [1 - phi((L + .5 - mu) / sd), phi((L - .5 - mu) / sd)] : [1 - phi((L - mu) / sd), phi((L - mu) / sd)]; }
+  if (dist.k === "gamma") { const k = 1 / Math.pow(dist.cv, 2), th = mu / k;
+    return int ? [1 - gammaP(k, (L + .5) / th), gammaP(k, Math.max(L - .5, 0) / th)] : [1 - gammaP(k, L / th), gammaP(k, L / th)]; }
+  const v = dist.var; if (int) return [1 - nbCdf(Math.round(L), mu, v), nbCdf(Math.round(L) - 1, mu, v)];
+  const u = nbCdf(Math.floor(L), mu, v); return [1 - u, u];
+}
+function legProb(l) {
+  // The app's blended probability at its own line, shifted by how much the projection says the line change matters.
+  const [mo0] = modelOU(l.dist, l.mu, l.appLine), [mo1, mu1] = modelOU(l.dist, l.mu, l.line);
+  const blendOver0 = l.appSide === "OVER" ? l.appProb : 1 - l.appProb;
+  const over = Math.min(.99, Math.max(.01, blendOver0 + (mo1 - mo0)));
+  const push = Math.max(0, 1 - mo1 - mu1);
+  return l.side === "OVER" ? over : Math.max(.01, 1 - over - push);
+}
+function slipAdd(k, side) {
+  const p = PICKS[k]; if (!p) return;
+  if (SLIP.some(l => l.player_id === p.player_id && l.stat === p.stat)) { flash("Already in your parlay"); return; }
+  SLIP.push({sport: SPORT, player: p.player, player_id: p.player_id, team: p.team, stat: p.stat, game: p.game, game_id: p.game_id,
+    side: side || p.side, line: p.line, price: p.price ?? -110, appLine: p.line, appSide: p.side, appProb: p.prob, mu: p.projection,
+    dist: p.dist, grade: p.grade, src: p.line_source, date: D.date});
+  saveSlip(); renderSlip(); flash(`Added ${p.player} to parlay (${SLIP.length})`);
+}
+function flash(msg) { let el = document.getElementById("toast"); if (!el) { el = document.createElement("div"); el.id = "toast";
+  el.style.cssText = "position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:99px;font-weight:600;z-index:9;transition:opacity .3s";
+  document.body.appendChild(el); } el.textContent = msg; el.style.opacity = 1; clearTimeout(el._t); el._t = setTimeout(() => el.style.opacity = 0, 1600); }
+function renderSlip() {
+  const btn = $("#parlayBtn"); btn.style.display = ""; btn.textContent = SLIP.length ? `Parlays (${SLIP.length})` : "Parlays";
+  const box = $("#slipBox"); if (!box) return;
+  const legs = SLIP.map(l => ({...l, p: legProb(l)}));
+  let hit = 1, pay = 1; legs.forEach(l => { hit *= l.p; pay *= dec(l.price); });
+  const ev = hit * pay - 1, warn = [];
+  const games = {}; legs.forEach(l => (games[l.game_id] = (games[l.game_id] || 0) + 1));
+  if (Object.values(games).some(n => n > 1)) warn.push("Two or more legs share a game: they're correlated, so the real hit chance can differ from the estimate (and many books only allow these as a same-game parlay).");
+  if (new Set(legs.map(l => l.player_id)).size < legs.length) warn.push("Same player twice: these legs move together. Treat the hit chance as rough.");
+  legs.forEach(l => { if (l.p - impl(l.price) < 0) warn.push(`${l.player} ${l.side === "OVER" ? "O" : "U"} ${l.line} ${l.stat} has no edge at ${fmtPrice(l.price)}: it lowers the ticket's value.`); });
+  const estP = [...new Set(legs.filter(l => l.src === "est.").map(l => l.player))];
+  if (estP.length) warn.push(`Estimated app line for ${estP.join(", ")}: enter your book's line and price.`);
+  legs.forEach(l => { if (l.date && l.date !== D.date && l.sport === SPORT) warn.push(`${l.player} was added on ${l.date}: the projection may be outdated.`); });
+  const grade = !legs.length ? "" : ev >= .25 ? "A" : ev >= .10 ? "B" : ev >= 0 ? "C" : "-";
+  const fair = hit > 0 && hit < 1 ? american(1 / hit) : null;
+  box.innerHTML = !legs.length ? `<div class="small">Tap <b>+ Add to parlay</b> on any prop (open a pick to see it), or search below. Legs can come from the NBA, NFL and NHL pages.</div>
+      <input type="search" id="slipSearch" placeholder="Search a player to add…" style="margin:10px 0 0">${'<div id="slipResults"></div>'}`
+    : `${legs.map((l, i) => `<div style="padding:8px 0;border-top:${i ? "1px solid var(--line)" : "0"}">
+        <div class="row"><div class="who"><div class="name">${esc(l.player)} <span class="small">${l.sport !== SPORT ? esc(l.sport) + " · " : ""}${esc(l.stat)} · ${esc(l.game)}</span></div>
+          <div class="meta">model ${pct(l.p)} · edge ${((l.p - impl(l.price)) * 100).toFixed(1)}% · proj ${l.mu}</div></div>
+          <button class="chip" onclick="slipDel(${i})" aria-label="remove">✕</button></div>
+        <div class="row" style="gap:6px;margin-top:6px">
+          <button class="chip ${l.side === "OVER" ? "on" : ""}" onclick="slipSet(${i},'side','OVER')">Over</button>
+          <button class="chip ${l.side === "UNDER" ? "on" : ""}" onclick="slipSet(${i},'side','UNDER')">Under</button>
+          <input type="number" step="0.5" inputmode="decimal" value="${l.line}" onchange="slipSet(${i},'line',this.value)" style="width:76px;background:var(--panel2);border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:6px;font-size:15px" aria-label="line">
+          <input type="number" inputmode="numeric" value="${l.price}" onchange="slipSet(${i},'price',this.value)" style="width:76px;background:var(--panel2);border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:6px;font-size:15px" aria-label="price">
+        </div></div>`).join("")}
+      <div class="stats" style="margin-top:10px">
+        <div><span>Parlay odds</span><strong>${fmtPrice(american(pay))}</strong></div>
+        <div><span>Hit chance</span><strong>${(hit * 100).toFixed(1)}%</strong></div>
+        <div><span>Fair odds</span><strong>${fair == null ? "–" : fmtPrice(fair)}</strong></div>
+        <div><span>Value</span><strong class="${ev >= 0 ? "WIN" : "LOSS"}">${(ev * 100).toFixed(0)}%</strong></div>
+      </div>
+      <div class="row" style="margin:6px 0"><div class="grade g${grade}">${grade}</div>
+        <div class="small" style="margin-left:8px">${ev >= 0 ? `Model says this ticket is worth more than the payout${ev >= .25 ? " by a lot" : ""}.` : "Model says the payout is too low for the risk."}
+        Value runs optimistic (it multiplies each leg's edge), so treat it as a ranking, not a promise.</div></div>
+      ${warn.length ? `<ul class="why">${warn.map(w => `<li>${esc(w)}</li>`).join("")}</ul>` : ""}
+      <input type="search" id="slipSearch" placeholder="Add another leg: search a player…" style="margin:10px 0 0"><div id="slipResults"></div>
+      <button class="chip" style="margin-top:8px" onclick="SLIP=[];saveSlip();renderSlip()">Clear parlay</button>`;
+  const q = $("#slipSearch"); q && q.addEventListener("input", () => slipSearch(q.value));
+}
+function slipSearch(q) {
+  const t = q.trim().toLowerCase().split(/\s+/).filter(Boolean), out = $("#slipResults"); if (!t.length) { out.innerHTML = ""; return; }
+  const rows = Object.entries(PICKS).filter(([k, p]) => t.every(x => `${p.player} ${p.team} ${p.stat}`.toLowerCase().includes(x)))
+    .sort((a, b) => b[1].score - a[1].score).slice(0, 8);
+  out.innerHTML = rows.map(([k, p]) => `<div class="row" style="padding:6px 0;border-top:1px solid var(--line)">
+      <div class="who"><div class="name">${esc(p.player)} <span class="small">${esc(p.stat)} ${p.line}</span></div>
+        <div class="meta">proj ${p.projection} · model likes ${p.side === "OVER" ? "Over" : "Under"} ${pct(p.prob)} · ${esc(p.line_source)}</div></div>
+      <button class="chip" onclick="slipAdd('${k}','OVER')">+O</button><button class="chip" onclick="slipAdd('${k}','UNDER')">+U</button></div>`).join("")
+    || `<div class="small" style="padding:6px 0">No props found on this page${SPORT !== "NBA" ? "" : ""}.</div>`;
+}
+function slipDel(i) { SLIP.splice(i, 1); saveSlip(); renderSlip(); }
+function slipSet(i, k, v) { const l = SLIP[i];
+  if (k === "side") { if (l.side !== v) { l.side = v; l.price = -110; flash("Side flipped: enter your book's price for it"); } } else if (!isNaN(parseFloat(v))) l[k] = k === "price" ? parseInt(v) : parseFloat(v);
+  saveSlip(); renderSlip(); }
+function slipLoad(type) { const t = ((D.parlays || {}).tickets || []).find(x => x.type === type); if (!t) return;
+  SLIP = t.legs.filter(l => l.dist).map(l => ({sport: SPORT, player: l.player, player_id: l.player_id, team: l.team, stat: l.stat, game: l.game,
+    game_id: l.game_id, side: l.side, line: l.line, price: l.price, appLine: l.line, appSide: l.side, appProb: l.prob, mu: l.projection,
+    dist: l.dist, grade: l.grade, src: l.line_source, date: D.date}));
+  saveSlip(); renderSlip(); $("#slipBox").scrollIntoView({behavior: "smooth"}); }
+function dec(p) { p = Number(p) || -110; return 1 + (p > 0 ? p / 100 : 100 / -p); }
+function american(d) { return d >= 2 ? Math.round((d - 1) * 100) : Math.round(-100 / (d - 1)); }
+
 // ---- parlays
 function renderParlays() {
   const P = D.parlays || {}, T = P.tickets || [], R = P.record || {};
@@ -359,7 +473,8 @@ function renderParlays() {
         <div class="meta">model hit chance ${pct(t.hit)} · value ${(t.ev * 100).toFixed(0)}%${t.locked ? " · locked" : ""}</div></div>
         <div class="bet"><div class="side OVER" style="font-size:17px">${fmtPrice(t.odds)}</div><div class="small">pays ${t.payout.toFixed(2)}×</div>
         ${t.result ? `<div class="res ${t.result}">${t.result}</div>` : ""}</div></div>
-      ${t.legs.map(legRow).join("")}</div>`;
+      ${t.legs.map(legRow).join("")}
+      ${!t.result && !t.locked && t.legs.every(l => l.dist) ? `<button class="chip" style="margin-top:8px" onclick="slipLoad('${t.type}')">Check / edit in parlay checker</button>` : ""}</div>`;
   const tbl = Object.values(byType).filter(x => x.w + x.l);
   $("#parlayBox").innerHTML = `<div class="note" style="margin-top:0">Built from today's graded picks on real lines, one leg per game,
       only minus-money legs with a positive edge and a 60%+ model probability. <b>No player appears on more than one ticket</b>, so one bad prop can only sink one ticket. <b>Value</b> = model hit chance × payout − 1. Hit chance assumes the games are independent.
@@ -370,6 +485,7 @@ function renderParlays() {
     ${recent.filter(t => t.result).length ? `<div class="sect">Recent tickets</div>${recent.filter(t => t.result).slice(0, 6).map(t => card({...t, label: t.date + " · " + t.label})).join("")}` : ""}`;
 }
 renderParlays();
+if (!D.backtest) renderSlip();
 
 // ---- team bets
 function renderTeam() {

@@ -34,7 +34,7 @@ def american(d: float) -> int:
 
 def _leg(p: dict) -> dict:
     keep = ("game_id", "game", "player", "player_id", "team", "opp", "stat", "side", "line", "price",
-            "prob", "edge", "grade", "line_source", "books")
+            "prob", "edge", "grade", "line_source", "books", "projection", "dist")
     return {k: p.get(k) for k in keep}
 
 

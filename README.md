@@ -88,6 +88,14 @@ Hit chance = product of leg probabilities; value = hit chance × payout − 1. T
 are graded by the results runs (a pushed leg drops out), and have their own track record. The pregame notification
 includes the best-value ticket.
 
+## Parlay checker
+
+On the Parlays tab: add legs with **+ Add to parlay** on any prop (or search a player), from any of the three
+sports' pages. Set over/under and enter your book's line and price for each leg. It shows the combined odds, the model's
+hit chance, fair odds, value % (hit chance × payout − 1) and a grade (A ≥ 25% value, B ≥ 10%, C ≥ 0%), with
+warnings for legs with no edge, legs sharing a game or player, and estimated lines. A line different from the app's is
+priced by shifting the app's probability along the player's projected distribution. The slip is saved on your device.
+
 ## Line shopping
 
 When Odds API lines are pulled, every real-line pick shows each book's line and price for that side

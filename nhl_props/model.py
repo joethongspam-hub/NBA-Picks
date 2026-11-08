@@ -429,5 +429,7 @@ def evaluate(proj: Projection, lines: dict, season: int) -> list[Pick]:
             reasons=reasons, last_game=p.logs[0].get(s) if p.logs else None,
             open_line=getattr(real, "open_line", None) if real else None,
             open_price=(getattr(real, "open_over", None) if side == "OVER" else getattr(real, "open_under", None)) if real else None,
-            books=shop(real, side)))
+            books=shop(real, side),
+            dist=({"k": "normal", "sd": round(max(4.0, 0.2 * mu), 3)} if s == "SAVES"
+                  else {"k": "count", "var": round(mu * (1.03 if s in POISSON else 1.25), 3)})))
     return out
