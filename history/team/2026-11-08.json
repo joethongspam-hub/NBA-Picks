@@ -1,0 +1,206 @@
+{
+ "made": "2026-11-08T12:16:55.847826-05:00",
+ "picks": [
+  {
+   "game_id": "401909946",
+   "game": "LAL @ DET",
+   "market": "Moneyline",
+   "pick": "LAL ML",
+   "side": "away",
+   "line": null,
+   "price": 160,
+   "prob": 0.498,
+   "model_prob": 0.736,
+   "edge": 0.113,
+   "grade": "A",
+   "proj": "DET 109.0 \u2013 LAL 116.9",
+   "mu_h": 109.04,
+   "mu_a": 116.94,
+   "home": "DET",
+   "away": "LAL",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
+   ],
+   "score": 11.32
+  },
+  {
+   "game_id": "401909946",
+   "game": "LAL @ DET",
+   "market": "Spread",
+   "pick": "LAL +4.5",
+   "side": "away",
+   "line": -4.5,
+   "price": -105,
+   "prob": 0.612,
+   "model_prob": 0.839,
+   "edge": 0.1,
+   "grade": "A",
+   "proj": "DET 109.0 \u2013 LAL 116.9",
+   "mu_h": 109.04,
+   "mu_a": 116.94,
+   "home": "DET",
+   "away": "LAL",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
+   ],
+   "score": 9.95
+  },
+  {
+   "game_id": "401909948",
+   "game": "BKN @ DAL",
+   "market": "Spread",
+   "pick": "DAL -7.5",
+   "side": "home",
+   "line": -7.5,
+   "price": -117,
+   "prob": 0.569,
+   "model_prob": 0.67,
+   "edge": 0.03,
+   "grade": "C",
+   "proj": "DAL 116.8 \u2013 BKN 103.8",
+   "mu_h": 116.78,
+   "mu_a": 103.77,
+   "home": "DAL",
+   "away": "BKN",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "BKN injuries (Jr.): -2.6 pts"
+   ],
+   "score": 2.96
+  },
+  {
+   "game_id": "401909949",
+   "game": "BOS @ MIL",
+   "market": "Moneyline",
+   "pick": "MIL ML",
+   "side": "home",
+   "line": null,
+   "price": 530,
+   "prob": 0.257,
+   "model_prob": 0.451,
+   "edge": 0.098,
+   "grade": "A",
+   "proj": "MIL 109.3 \u2013 BOS 110.8",
+   "mu_h": 109.29,
+   "mu_a": 110.85,
+   "home": "MIL",
+   "away": "BOS",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
+   ],
+   "score": 9.81
+  },
+  {
+   "game_id": "401909949",
+   "game": "BOS @ MIL",
+   "market": "Spread",
+   "pick": "MIL +13.5",
+   "side": "home",
+   "line": 13.5,
+   "price": -117,
+   "prob": 0.625,
+   "model_prob": 0.83,
+   "edge": 0.086,
+   "grade": "A",
+   "proj": "MIL 109.3 \u2013 BOS 110.8",
+   "mu_h": 109.29,
+   "mu_a": 110.85,
+   "home": "MIL",
+   "away": "BOS",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
+   ],
+   "score": 8.56
+  },
+  {
+   "game_id": "401909950",
+   "game": "NO @ LAC",
+   "market": "Moneyline",
+   "pick": "NO ML",
+   "side": "away",
+   "line": null,
+   "price": -121,
+   "prob": 0.669,
+   "model_prob": 0.935,
+   "edge": 0.122,
+   "grade": "A",
+   "proj": "LAC 102.3 \u2013 NO 121.2",
+   "mu_h": 102.32,
+   "mu_a": 121.2,
+   "home": "LAC",
+   "away": "NO",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "LAC injuries (Jackson): -2.0 pts"
+   ],
+   "score": 12.17
+  },
+  {
+   "game_id": "401909950",
+   "game": "NO @ LAC",
+   "market": "Spread",
+   "pick": "NO -1.5",
+   "side": "away",
+   "line": 1.5,
+   "price": -110,
+   "prob": 0.646,
+   "model_prob": 0.918,
+   "edge": 0.122,
+   "grade": "A",
+   "proj": "LAC 102.3 \u2013 NO 121.2",
+   "mu_h": 102.32,
+   "mu_a": 121.2,
+   "home": "LAC",
+   "away": "NO",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "LAC injuries (Jackson): -2.0 pts"
+   ],
+   "score": 12.24
+  },
+  {
+   "game_id": "401909951",
+   "game": "MIA @ SAC",
+   "market": "Moneyline",
+   "pick": "SAC ML",
+   "side": "home",
+   "line": null,
+   "price": 346,
+   "prob": 0.279,
+   "model_prob": 0.397,
+   "edge": 0.055,
+   "grade": "A",
+   "proj": "SAC 115.7 \u2013 MIA 119.0",
+   "mu_h": 115.71,
+   "mu_a": 118.96,
+   "home": "SAC",
+   "away": "MIA",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
+   ],
+   "score": 5.48
+  },
+  {
+   "game_id": "401909951",
+   "game": "MIA @ SAC",
+   "market": "Spread",
+   "pick": "SAC +10.5",
+   "side": "home",
+   "line": 10.5,
+   "price": -112,
+   "prob": 0.579,
+   "model_prob": 0.719,
+   "edge": 0.051,
+   "grade": "A",
+   "proj": "SAC 115.7 \u2013 MIA 119.0",
+   "mu_h": 115.71,
+   "mu_a": 118.96,
+   "home": "SAC",
+   "away": "MIA",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
+   ],
+   "score": 5.11
+  }
+ ]
+}
