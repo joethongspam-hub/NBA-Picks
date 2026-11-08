@@ -75,7 +75,16 @@ DEMOTE = {"A": "B", "B": "C", "C": "-", "-": "-"}
 # Live runs only make picks on real sportsbook lines; backtests (no saved lines) set this True.
 ALLOW_EST = False
 # Side/stat combinations not offered, from the live real-line record: (stat, side) -> note
-BLOCKED = {("3PM", "UNDER"): "Threes unders not offered (break-even on real lines)"}
+BLOCKED = {
+    ("3PM", "UNDER"): "Threes not offered (losing on real lines)",
+    ("3PM", "OVER"): "Threes not offered (losing on real lines)",
+    ("REB", "UNDER"): "Rebound unders not offered (6-10 on real lines; the model underrates rebounding)",
+    ("RA", "UNDER"): "Reb+ast unders not offered (9-13 on real lines)",
+}
+NHL_BLOCKED = {
+    ("SOG", "OVER"): "NHL shots on goal not offered (21-25 on real lines)",
+    ("SOG", "UNDER"): "NHL shots on goal not offered (21-25 on real lines)",
+}
 LAST_GAME_NOTE = "Goes against his last game: grade lowered one level (live record 42% on these)"
 
 

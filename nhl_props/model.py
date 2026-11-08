@@ -406,12 +406,16 @@ def evaluate(proj: Projection, lines: dict, season: int) -> list[Pick]:
             grade, score = DEMOTE[grade], score * 0.7
             reasons.insert(0, LAST_GAME_NOTE)
         try:
-            long_shot = int(price) >= 150
+            long_shot = int(price) >= 100
         except (TypeError, ValueError):
             long_shot = False
         if long_shot and grade != "-":
             grade, score = "-", 0.0
-            reasons.insert(0, "Priced +150 or longer: not graded (NHL long shots went 9-22 live)")
+            reasons.insert(0, "Plus-money: not graded (NHL plus-money picks went 27-45 on real lines)")
+        blocked = NM.NHL_BLOCKED.get((s, side))
+        if blocked:
+            grade, score = "-", 0.0
+            reasons.insert(0, blocked)
         if market_disagrees(real, line, mu):
             grade, score = "-", 0.0
             reasons.insert(0, f"Market strongly disagrees ({real.books} books at {line:g} vs projection {mu:.1f}): skipped")

@@ -109,7 +109,9 @@ The free 500 credits cover the NFL only; NBA and NHL every day need the $30 / 20
 
 * **No estimated lines in live picks:** every pick, parlay leg and track-record entry is on a real sportsbook line.
   Props without a real line aren't shown. (Backtests still estimate lines, since no real lines were saved for past dates.)
-* **NBA threes unders are not offered** (break-even on real lines).
+* **Not offered (graded "–", kept out of picks and parlays), from the real-line record:** NBA threes (both sides),
+  NBA rebound unders (6–10) and rebounds + assists unders (9–13); NHL shots on goal (21–25).
+* **NHL plus-money picks aren't graded** (+100 or longer; 27–45 on real lines).
 
 ## Model report
 
