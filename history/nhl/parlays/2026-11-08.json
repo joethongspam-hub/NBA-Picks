@@ -56,97 +56,43 @@
     }
    },
    {
-    "game_id": "401892676",
-    "game": "NJ @ TOR",
-    "player": "Luke Evangelista",
-    "player_id": "4697446",
-    "team": "NJ",
-    "opp": "TOR",
-    "stat": "SOG",
-    "side": "OVER",
-    "line": 1.5,
-    "price": -180,
-    "prob": 0.702,
-    "edge": 0.059,
-    "grade": "B",
-    "line_source": "DraftKings",
-    "books": {
-     "DraftKings": [
-      1.5,
-      -180
-     ]
-    },
-    "projection": 3.0,
-    "dist": {
-     "k": "count",
-     "var": 3.794
-    }
-   }
-  ],
-  "hit": 0.3639,
-  "payout": 3.62,
-  "odds": 262,
-  "ev": 0.317,
-  "type": "safe",
-  "label": "Safest",
-  "made": "2026-11-08T16:26:22.480131-05:00"
- },
- {
-  "legs": [
-   {
-    "game_id": "401892676",
-    "game": "NJ @ TOR",
-    "player": "Timo Meier",
-    "player_id": "3899978",
-    "team": "NJ",
-    "opp": "TOR",
-    "stat": "SOG",
-    "side": "OVER",
-    "line": 2.5,
-    "price": -145,
-    "prob": 0.689,
-    "edge": 0.097,
-    "grade": "A",
-    "line_source": "DraftKings",
-    "books": {
-     "DraftKings": [
-      2.5,
-      -145
-     ]
-    },
-    "projection": 4.4,
-    "dist": {
-     "k": "count",
-     "var": 5.467
-    }
-   },
-   {
     "game_id": "401892679",
     "game": "PIT @ ANA",
     "player": "Jackson LaCombe",
     "player_id": "4565262",
     "team": "ANA",
     "opp": "PIT",
-    "stat": "SOG",
-    "side": "UNDER",
-    "line": 1.5,
-    "price": -125,
-    "prob": 0.646,
-    "edge": 0.09,
+    "stat": "AST",
+    "side": "OVER",
+    "line": 0.5,
+    "price": -140,
+    "prob": 0.635,
+    "edge": 0.051,
     "grade": "B",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
-      1.5,
-      -125
+      0.5,
+      -140
      ]
     },
-    "projection": 1.0,
+    "projection": 1.2,
     "dist": {
      "k": "count",
-     "var": 1.278
+     "var": 1.24
     }
-   },
+   }
+  ],
+  "hit": 0.3291,
+  "payout": 3.99,
+  "odds": 299,
+  "ev": 0.313,
+  "type": "safe",
+  "label": "Safest",
+  "made": "2026-11-08T16:32:37.885456-05:00"
+ },
+ {
+  "legs": [
    {
     "game_id": "401892677",
     "game": "TB @ WPG",
@@ -173,15 +119,69 @@
      "k": "normal",
      "sd": 5.298
     }
+   },
+   {
+    "game_id": "401892679",
+    "game": "PIT @ ANA",
+    "player": "Leo Carlsson",
+    "player_id": "5149153",
+    "team": "ANA",
+    "opp": "PIT",
+    "stat": "AST",
+    "side": "OVER",
+    "line": 0.5,
+    "price": -125,
+    "prob": 0.634,
+    "edge": 0.078,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      0.5,
+      -125
+     ]
+    },
+    "projection": 1.27,
+    "dist": {
+     "k": "count",
+     "var": 1.305
+    }
+   },
+   {
+    "game_id": "401892678",
+    "game": "PHI @ CGY",
+    "player": "Yegor Sharangovich",
+    "player_id": "4587843",
+    "team": "CGY",
+    "opp": "PHI",
+    "stat": "PTS",
+    "side": "UNDER",
+    "line": 0.5,
+    "price": -200,
+    "prob": 0.731,
+    "edge": 0.065,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      0.5,
+      -200
+     ]
+    },
+    "projection": 0.22,
+    "dist": {
+     "k": "count",
+     "var": 0.226
+    }
    }
   ],
-  "hit": 0.2804,
-  "payout": 5.58,
-  "odds": 458,
-  "ev": 0.564,
+  "hit": 0.292,
+  "payout": 4.95,
+  "odds": 395,
+  "ev": 0.445,
   "type": "value",
   "label": "Best value",
-  "made": "2026-11-08T16:26:22.480131-05:00"
+  "made": "2026-11-08T16:32:37.885456-05:00"
  },
  {
   "legs": [
