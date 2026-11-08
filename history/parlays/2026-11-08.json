@@ -89,7 +89,7 @@
   "ev": 0.709,
   "type": "safe",
   "label": "Safest",
-  "made": "2026-11-08T16:31:08.992882-05:00"
+  "made": "2026-11-08T16:54:54.389823-05:00"
  },
  {
   "legs": [
@@ -148,40 +148,40 @@
     }
    },
    {
-    "game_id": "401909947",
-    "game": "UTAH @ MIN",
-    "player": "LaMelo Ball",
-    "player_id": "4432816",
-    "team": "MIN",
-    "opp": "UTAH",
-    "stat": "PRA",
+    "game_id": "401909948",
+    "game": "BKN @ DAL",
+    "player": "Nolan Traore",
+    "player_id": "5279130",
+    "team": "BKN",
+    "opp": "DAL",
+    "stat": "AST",
     "side": "UNDER",
-    "line": 33.5,
-    "price": -111,
-    "prob": 0.602,
-    "edge": 0.076,
-    "grade": "B",
+    "line": 4.5,
+    "price": -128,
+    "prob": 0.645,
+    "edge": 0.083,
+    "grade": "A",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
-      33.5,
-      -111
+      4.5,
+      -128
      ]
     },
-    "projection": 29.7,
+    "projection": 3.1,
     "dist": {
      "k": "normal",
-     "sd": 8.394
+     "sd": 2.353
     }
    }
   ],
-  "hit": 0.2669,
-  "payout": 6.81,
-  "odds": 581,
-  "ev": 0.818,
+  "hit": 0.286,
+  "payout": 6.38,
+  "odds": 538,
+  "ev": 0.825,
   "type": "value",
   "label": "Best value",
-  "made": "2026-11-08T16:31:08.992882-05:00"
+  "made": "2026-11-08T16:54:54.389823-05:00"
  },
  {
   "legs": [

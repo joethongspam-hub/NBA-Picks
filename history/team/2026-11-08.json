@@ -73,13 +73,13 @@
    "game_id": "401909949",
    "game": "BOS @ MIL",
    "market": "Spread",
-   "pick": "MIL +12.5",
+   "pick": "MIL +13.5",
    "side": "home",
-   "line": 12.5,
-   "price": -104,
-   "prob": 0.601,
-   "model_prob": 0.812,
-   "edge": 0.091,
+   "line": 13.5,
+   "price": -116,
+   "prob": 0.625,
+   "model_prob": 0.832,
+   "edge": 0.088,
    "grade": "A",
    "proj": "MIL 109.2 \u2013 BOS 110.7",
    "mu_h": 109.24,
@@ -89,7 +89,7 @@
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
    ],
-   "score": 9.08
+   "score": 8.78
   },
   {
    "game_id": "401909950",
