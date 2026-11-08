@@ -8,10 +8,10 @@
    "pick": "IND ML",
    "side": "home",
    "line": null,
-   "price": 190,
-   "prob": 0.386,
+   "price": 180,
+   "prob": 0.393,
    "model_prob": 0.488,
-   "edge": 0.041,
+   "edge": 0.036,
    "grade": "B",
    "proj": "IND 27.2 \u2013 DAL 27.6",
    "mu_h": 27.18,
@@ -19,27 +19,7 @@
    "home": "IND",
    "away": "DAL",
    "notes": [],
-   "score": 4.11
-  },
-  {
-   "game_id": "401873040",
-   "game": "DAL @ IND",
-   "market": "Spread",
-   "pick": "IND +4.5",
-   "side": "home",
-   "line": 4.5,
-   "price": -105,
-   "prob": 0.535,
-   "model_prob": 0.619,
-   "edge": 0.022,
-   "grade": "C",
-   "proj": "IND 27.2 \u2013 DAL 27.6",
-   "mu_h": 27.18,
-   "mu_a": 27.59,
-   "home": "IND",
-   "away": "DAL",
-   "notes": [],
-   "score": 2.24
+   "score": 3.62
   },
   {
    "game_id": "401873045",
@@ -85,13 +65,13 @@
    "game_id": "401873039",
    "game": "CLE @ NO",
    "market": "Total",
-   "pick": "Under 42.5",
+   "pick": "Under 43.5",
    "side": "under",
-   "line": 42.5,
-   "price": -105,
-   "prob": 0.535,
-   "model_prob": 0.621,
-   "edge": 0.023,
+   "line": 43.5,
+   "price": -110,
+   "prob": 0.552,
+   "model_prob": 0.649,
+   "edge": 0.028,
    "grade": "C",
    "proj": "NO 21.5 \u2013 CLE 16.8",
    "mu_h": 21.54,
@@ -101,7 +81,7 @@
    "notes": [
     "CLE: backup QB Shedeur Sanders starting (-3 pts)"
    ],
-   "score": 2.32
+   "score": 2.83
   },
   {
    "game_id": "401873048",

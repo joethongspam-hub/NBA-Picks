@@ -12,8 +12,8 @@
     "side": "OVER",
     "line": 0.5,
     "price": -178,
-    "prob": 0.744,
-    "edge": 0.103,
+    "prob": 0.742,
+    "edge": 0.101,
     "grade": "A",
     "line_source": "4 books",
     "books": {
@@ -37,7 +37,7 @@
     "projection": 1.8,
     "dist": {
      "k": "count",
-     "var": 1.881
+     "var": 1.861
     }
    },
    {
@@ -80,7 +80,7 @@
     "projection": 1.9,
     "dist": {
      "k": "count",
-     "var": 1.996
+     "var": 2.001
     }
    },
    {
@@ -94,8 +94,8 @@
     "side": "OVER",
     "line": 0.5,
     "price": -196,
-    "prob": 0.754,
-    "edge": 0.092,
+    "prob": 0.757,
+    "edge": 0.095,
     "grade": "A",
     "line_source": "5 books",
     "books": {
@@ -123,17 +123,17 @@
     "projection": 1.9,
     "dist": {
      "k": "count",
-     "var": 1.971
+     "var": 2.003
     }
    }
   ],
-  "hit": 0.4263,
+  "hit": 0.4269,
   "payout": 3.56,
   "odds": 256,
-  "ev": 0.519,
+  "ev": 0.521,
   "type": "safe",
   "label": "Safest",
-  "made": "2026-11-08T11:12:26.043247-05:00"
+  "made": "2026-11-08T12:49:28.478536-05:00"
  },
  {
   "legs": [
@@ -149,7 +149,7 @@
     "line": 211.5,
     "price": -112,
     "prob": 0.724,
-    "edge": 0.195,
+    "edge": 0.196,
     "grade": "B",
     "line_source": "6 books",
     "books": {
@@ -178,7 +178,7 @@
       -115
      ]
     },
-    "projection": 148.6,
+    "projection": 148.5,
     "dist": {
      "k": "gamma",
      "cv": 0.367
@@ -272,7 +272,7 @@
       -115
      ]
     },
-    "projection": 48.0,
+    "projection": 47.9,
     "dist": {
      "k": "gamma",
      "cv": 0.616
@@ -285,53 +285,10 @@
   "ev": 1.321,
   "type": "value",
   "label": "Best value",
-  "made": "2026-11-08T11:12:26.043247-05:00"
+  "made": "2026-11-08T12:49:28.478536-05:00"
  },
  {
   "legs": [
-   {
-    "game_id": "401873045",
-    "game": "NYJ @ KC",
-    "player": "Omar Cooper Jr.",
-    "player_id": "4723820",
-    "team": "NYJ",
-    "opp": "KC",
-    "stat": "REC",
-    "side": "UNDER",
-    "line": 4.5,
-    "price": -140,
-    "prob": 0.72,
-    "edge": 0.137,
-    "grade": "A",
-    "line_source": "6 books",
-    "books": {
-     "DraftKings": [
-      4.5,
-      -140
-     ],
-     "FanDuel": [
-      4.5,
-      -140
-     ],
-     "BetOnline.ag": [
-      4.5,
-      -141
-     ],
-     "BetMGM": [
-      4.5,
-      -155
-     ],
-     "Bovada": [
-      4.5,
-      -145
-     ]
-    },
-    "projection": 2.8,
-    "dist": {
-     "k": "count",
-     "var": 3.538
-    }
-   },
    {
     "game_id": "401873050",
     "game": "TB @ CHI",
@@ -373,6 +330,92 @@
     "dist": {
      "k": "count",
      "var": 4.191
+    }
+   },
+   {
+    "game_id": "401873045",
+    "game": "NYJ @ KC",
+    "player": "Omar Cooper Jr.",
+    "player_id": "4723820",
+    "team": "NYJ",
+    "opp": "KC",
+    "stat": "REC",
+    "side": "UNDER",
+    "line": 4.5,
+    "price": -140,
+    "prob": 0.715,
+    "edge": 0.131,
+    "grade": "A",
+    "line_source": "6 books",
+    "books": {
+     "DraftKings": [
+      4.5,
+      -140
+     ],
+     "FanDuel": [
+      4.5,
+      -140
+     ],
+     "BetOnline.ag": [
+      4.5,
+      -141
+     ],
+     "BetMGM": [
+      4.5,
+      -155
+     ],
+     "Bovada": [
+      4.5,
+      -145
+     ]
+    },
+    "projection": 2.8,
+    "dist": {
+     "k": "count",
+     "var": 3.673
+    }
+   },
+   {
+    "game_id": "401873051",
+    "game": "BUF @ MIN",
+    "player": "Aaron Jones Sr.",
+    "player_id": "3042519",
+    "team": "MIN",
+    "opp": "BUF",
+    "stat": "REC",
+    "side": "OVER",
+    "line": 1.5,
+    "price": -134,
+    "prob": 0.7,
+    "edge": 0.128,
+    "grade": "A",
+    "line_source": "5 books",
+    "books": {
+     "DraftKings": [
+      1.5,
+      -134
+     ],
+     "FanDuel": [
+      1.5,
+      -140
+     ],
+     "BetOnline.ag": [
+      1.5,
+      -135
+     ],
+     "BetRivers": [
+      1.5,
+      -150
+     ],
+     "Bovada": [
+      1.5,
+      -135
+     ]
+    },
+    "projection": 3.1,
+    "dist": {
+     "k": "count",
+     "var": 3.244
     }
    },
    {
@@ -429,8 +472,8 @@
     "side": "UNDER",
     "line": 69.5,
     "price": -112,
-    "prob": 0.635,
-    "edge": 0.107,
+    "prob": 0.639,
+    "edge": 0.111,
     "grade": "B",
     "line_source": "6 books",
     "books": {
@@ -459,66 +502,19 @@
       -115
      ]
     },
-    "projection": 54.7,
+    "projection": 54.1,
     "dist": {
      "k": "gamma",
      "cv": 0.648
     }
-   },
-   {
-    "game_id": "401873039",
-    "game": "CLE @ NO",
-    "player": "Quinshon Judkins",
-    "player_id": "4685702",
-    "team": "CLE",
-    "opp": "NO",
-    "stat": "RUSH_YDS",
-    "side": "UNDER",
-    "line": 64.5,
-    "price": -110,
-    "prob": 0.625,
-    "edge": 0.101,
-    "grade": "A",
-    "line_source": "6 books",
-    "books": {
-     "DraftKings": [
-      64.5,
-      -110
-     ],
-     "FanDuel": [
-      64.5,
-      -113
-     ],
-     "BetOnline.ag": [
-      66.5,
-      -114
-     ],
-     "BetRivers": [
-      67.5,
-      -121
-     ],
-     "BetMGM": [
-      67.5,
-      -115
-     ],
-     "Bovada": [
-      64.5,
-      -115
-     ]
-    },
-    "projection": 53.0,
-    "dist": {
-     "k": "gamma",
-     "cv": 0.54
-    }
    }
   ],
-  "hit": 0.1364,
-  "payout": 19.74,
-  "odds": 1874,
-  "ev": 1.693,
+  "hit": 0.1527,
+  "payout": 18.06,
+  "odds": 1706,
+  "ev": 1.757,
   "type": "longshot",
   "label": "Long shot",
-  "made": "2026-11-08T11:12:26.043247-05:00"
+  "made": "2026-11-08T12:49:28.478536-05:00"
  }
 ]
