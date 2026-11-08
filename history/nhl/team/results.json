@@ -282,6 +282,58 @@
    "date": "2026-11-05",
    "final": "EDM 4 \u2013 ANA 5",
    "result": "WIN"
+  },
+  {
+   "game_id": "401892670",
+   "game": "TB @ MIN",
+   "market": "Moneyline",
+   "pick": "MIN ML",
+   "side": "home",
+   "line": null,
+   "price": 114,
+   "prob": 0.499,
+   "model_prob": 0.593,
+   "edge": 0.032,
+   "grade": "B",
+   "proj": "MIN 3.33 \u2013 TB 2.76",
+   "mu_h": 3.33,
+   "mu_a": 2.76,
+   "home": "MIN",
+   "away": "TB",
+   "notes": [
+    "MIN goalie Jesper Wallstedt (0.908): opponent goals -8% (starter uncertain)"
+   ],
+   "score": 3.18,
+   "locked": true,
+   "date": "2026-11-07",
+   "final": "MIN 3 \u2013 TB 4",
+   "result": "LOSS"
+  },
+  {
+   "game_id": "401892670",
+   "game": "TB @ MIN",
+   "market": "Puck line",
+   "pick": "MIN +1.5",
+   "side": "home",
+   "line": 1.5,
+   "price": -218,
+   "prob": 0.709,
+   "model_prob": 0.805,
+   "edge": 0.023,
+   "grade": "C",
+   "proj": "MIN 3.33 \u2013 TB 2.76",
+   "mu_h": 3.33,
+   "mu_a": 2.76,
+   "home": "MIN",
+   "away": "TB",
+   "notes": [
+    "MIN goalie Jesper Wallstedt (0.908): opponent goals -8% (starter uncertain)"
+   ],
+   "score": 2.34,
+   "locked": true,
+   "date": "2026-11-07",
+   "final": "MIN 3 \u2013 TB 4",
+   "result": "WIN"
   }
  ]
 }
