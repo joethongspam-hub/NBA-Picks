@@ -31,71 +31,6 @@
    {
     "game_id": "401909946",
     "game": "LAL @ DET",
-    "player": "Matisse Thybulle",
-    "player_id": "3907498",
-    "team": "LAL",
-    "opp": "DET",
-    "stat": "RA",
-    "side": "UNDER",
-    "line": 4.5,
-    "price": -162,
-    "prob": 0.727,
-    "edge": 0.109,
-    "grade": "A",
-    "line_source": "DraftKings",
-    "books": {
-     "DraftKings": [
-      4.5,
-      -162
-     ]
-    },
-    "projection": 2.7,
-    "dist": {
-     "k": "normal",
-     "sd": 1.913
-    }
-   },
-   {
-    "game_id": "401909951",
-    "game": "MIA @ SAC",
-    "player": "Klay Thompson",
-    "player_id": "6475",
-    "team": "MIA",
-    "opp": "SAC",
-    "stat": "REB",
-    "side": "UNDER",
-    "line": 2.5,
-    "price": -167,
-    "prob": 0.666,
-    "edge": 0.041,
-    "grade": "C",
-    "line_source": "DraftKings",
-    "books": {
-     "DraftKings": [
-      2.5,
-      -167
-     ]
-    },
-    "projection": 1.7,
-    "dist": {
-     "k": "normal",
-     "sd": 1.316
-    }
-   }
-  ],
-  "hit": 0.3409,
-  "payout": 4.83,
-  "odds": 383,
-  "ev": 0.648,
-  "type": "safe",
-  "label": "Safest",
-  "made": "2026-11-08T16:25:04.931640-05:00"
- },
- {
-  "legs": [
-   {
-    "game_id": "401909946",
-    "game": "LAL @ DET",
     "player": "Quentin Grimes",
     "player_id": "4397014",
     "team": "LAL",
@@ -104,7 +39,7 @@
     "side": "UNDER",
     "line": 18.5,
     "price": -127,
-    "prob": 0.694,
+    "prob": 0.695,
     "edge": 0.135,
     "grade": "A",
     "line_source": "DraftKings",
@@ -117,7 +52,72 @@
     "projection": 12.9,
     "dist": {
      "k": "normal",
-     "sd": 6.452
+     "sd": 6.448
+    }
+   },
+   {
+    "game_id": "401909948",
+    "game": "BKN @ DAL",
+    "player": "Michael Porter Jr.",
+    "player_id": "4278104",
+    "team": "BKN",
+    "opp": "DAL",
+    "stat": "AST",
+    "side": "UNDER",
+    "line": 2.5,
+    "price": -190,
+    "prob": 0.685,
+    "edge": 0.03,
+    "grade": "C",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      2.5,
+      -190
+     ]
+    },
+    "projection": 1.7,
+    "dist": {
+     "k": "normal",
+     "sd": 1.301
+    }
+   }
+  ],
+  "hit": 0.3352,
+  "payout": 5.1,
+  "odds": 410,
+  "ev": 0.709,
+  "type": "safe",
+  "label": "Safest",
+  "made": "2026-11-08T16:31:08.992882-05:00"
+ },
+ {
+  "legs": [
+   {
+    "game_id": "401909946",
+    "game": "LAL @ DET",
+    "player": "Austin Reaves",
+    "player_id": "4066457",
+    "team": "LAL",
+    "opp": "DET",
+    "stat": "PRA",
+    "side": "UNDER",
+    "line": 36.5,
+    "price": -113,
+    "prob": 0.68,
+    "edge": 0.149,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      36.5,
+      -113
+     ]
+    },
+    "projection": 30.6,
+    "dist": {
+     "k": "normal",
+     "sd": 6.952
     }
    },
    {
@@ -144,7 +144,7 @@
     "projection": 26.5,
     "dist": {
      "k": "normal",
-     "sd": 7.14
+     "sd": 7.141
     }
    },
    {
@@ -158,7 +158,7 @@
     "side": "UNDER",
     "line": 33.5,
     "price": -111,
-    "prob": 0.603,
+    "prob": 0.602,
     "edge": 0.076,
     "grade": "B",
     "line_source": "DraftKings",
@@ -171,17 +171,17 @@
     "projection": 29.7,
     "dist": {
      "k": "normal",
-     "sd": 8.393
+     "sd": 8.394
     }
    }
   ],
-  "hit": 0.2729,
-  "payout": 6.46,
-  "odds": 546,
-  "ev": 0.762,
+  "hit": 0.2669,
+  "payout": 6.81,
+  "odds": 581,
+  "ev": 0.818,
   "type": "value",
   "label": "Best value",
-  "made": "2026-11-08T16:25:04.931640-05:00"
+  "made": "2026-11-08T16:31:08.992882-05:00"
  },
  {
   "legs": [

@@ -6,15 +6,15 @@
   "player_id": "4066457",
   "team": "LAL",
   "opp": "DET",
-  "stat": "RA",
+  "stat": "PRA",
   "side": "UNDER",
-  "line": 10.5,
+  "line": 36.5,
   "line_source": "DraftKings",
-  "price": 100,
-  "projection": 8.3,
-  "prob": 0.654,
-  "edge": 0.154,
-  "score": 15.43,
+  "price": -113,
+  "projection": 30.6,
+  "prob": 0.68,
+  "edge": 0.149,
+  "score": 14.9,
   "grade": "A",
   "hit_l5": "5/5",
   "hit_l10": "8/10",
@@ -22,31 +22,32 @@
   "vs_opp": "1/1",
   "minutes": 39.2,
   "status": "ACTIVE",
-  "season_avg": 9.0,
-  "l10_avg": 7.9,
+  "season_avg": 32.2,
+  "l10_avg": 31.4,
   "reasons": [
+   "Implied team total 104.5 (low vs slate avg 113.2)",
+   "Doncic out: +1.6 points (with/without split)",
    "DET limits rebounds to Gs (-6% vs expected)",
    "DET limits assists to Gs (-9% vs expected)",
-   "Implied team total 105.0 (low vs slate avg 113.2)",
    "Doncic out: +1.0 assists (with/without split)",
-   "Under hit 8/10 of last 10 at 10.5",
-   "Last game: 5 (under the line)",
-   "Last 1 vs DET: 7"
+   "Under hit 8/10 of last 10 at 36.5",
+   "Last game: 30 (under the line)",
+   "Last 1 vs DET: 31"
   ],
   "actual": null,
   "result": null,
-  "last_game": 5.0,
-  "open_line": 9.5,
-  "open_price": -118,
+  "last_game": 30.0,
+  "open_line": 32.5,
+  "open_price": -113,
   "books": {
    "DraftKings": [
-    10.5,
-    100
+    36.5,
+    -113
    ]
   },
   "dist": {
    "k": "normal",
-   "sd": 2.879
+   "sd": 6.952
   }
  },
  {
@@ -62,9 +63,9 @@
   "line_source": "DraftKings",
   "price": -127,
   "projection": 12.9,
-  "prob": 0.694,
+  "prob": 0.695,
   "edge": 0.135,
-  "score": 12.22,
+  "score": 12.27,
   "grade": "A",
   "hit_l5": "5/5",
   "hit_l10": "8/10",
@@ -75,7 +76,7 @@
   "season_avg": 15.9,
   "l10_avg": 12.7,
   "reasons": [
-   "Implied team total 105.0 (low vs slate avg 113.2)",
+   "Implied team total 104.5 (low vs slate avg 113.2)",
    "DET limits rebounds to Gs (-6% vs expected)",
    "DET limits assists to Gs (-9% vs expected)",
    "Under hit 8/10 of last 10 at 18.5",
@@ -95,55 +96,7 @@
   },
   "dist": {
    "k": "normal",
-   "sd": 6.452
-  }
- },
- {
-  "game_id": "401909946",
-  "game": "LAL @ DET",
-  "player": "Matisse Thybulle",
-  "player_id": "3907498",
-  "team": "LAL",
-  "opp": "DET",
-  "stat": "RA",
-  "side": "UNDER",
-  "line": 4.5,
-  "line_source": "DraftKings",
-  "price": -162,
-  "projection": 2.7,
-  "prob": 0.727,
-  "edge": 0.109,
-  "score": 10.89,
-  "grade": "A",
-  "hit_l5": "4/5",
-  "hit_l10": "9/10",
-  "hit_season": "9/10",
-  "vs_opp": "0/0",
-  "minutes": 23.8,
-  "status": "ACTIVE",
-  "season_avg": 2.8,
-  "l10_avg": 2.9,
-  "reasons": [
-   "DET limits rebounds to Gs (-6% vs expected)",
-   "DET limits assists to Gs (-9% vs expected)",
-   "Implied team total 105.0 (low vs slate avg 113.2)",
-   "Under hit 9/10 of last 10 at 4.5",
-   "Last game: 2 (under the line)"
-  ],
-  "actual": null,
-  "result": null,
-  "last_game": 2.0,
-  "open_line": 3.5,
-  "open_price": -103,
-  "books": {
-   "DraftKings": [
-    4.5,
-    -162
-   ]
-  },
-  "dist": {
-   "k": "normal",
-   "sd": 1.913
+   "sd": 6.448
   }
  },
  {
@@ -161,7 +114,7 @@
   "projection": 26.5,
   "prob": 0.652,
   "edge": 0.126,
-  "score": 8.77,
+  "score": 8.76,
   "grade": "B",
   "hit_l5": "4/5",
   "hit_l10": "6/10",
@@ -191,7 +144,7 @@
   },
   "dist": {
    "k": "normal",
-   "sd": 7.14
+   "sd": 7.141
   }
  },
  {
@@ -209,7 +162,7 @@
   "projection": 16.5,
   "prob": 0.642,
   "edge": 0.09,
-  "score": 8.41,
+  "score": 8.43,
   "grade": "A",
   "hit_l5": "4/5",
   "hit_l10": "8/10",
@@ -237,7 +190,7 @@
   },
   "dist": {
    "k": "normal",
-   "sd": 6.791
+   "sd": 6.792
   }
  },
  {
@@ -253,9 +206,9 @@
   "line_source": "DraftKings",
   "price": -102,
   "projection": 12.8,
-  "prob": 0.594,
-  "edge": 0.09,
-  "score": 8.2,
+  "prob": 0.596,
+  "edge": 0.091,
+  "score": 8.31,
   "grade": "A",
   "hit_l5": "2/5",
   "hit_l10": "6/10",
@@ -283,7 +236,7 @@
   },
   "dist": {
    "k": "normal",
-   "sd": 3.694
+   "sd": 3.691
   }
  },
  {
@@ -299,9 +252,9 @@
   "line_source": "DraftKings",
   "price": 125,
   "projection": 4.0,
-  "prob": 0.528,
+  "prob": 0.529,
   "edge": 0.084,
-  "score": 7.97,
+  "score": 7.98,
   "grade": "A",
   "hit_l5": "4/5",
   "hit_l10": "6/10",
@@ -379,6 +332,54 @@
   }
  },
  {
+  "game_id": "401909946",
+  "game": "LAL @ DET",
+  "player": "Matisse Thybulle",
+  "player_id": "3907498",
+  "team": "LAL",
+  "opp": "DET",
+  "stat": "PRA",
+  "side": "UNDER",
+  "line": 11.5,
+  "line_source": "DraftKings",
+  "price": -117,
+  "projection": 9.0,
+  "prob": 0.613,
+  "edge": 0.074,
+  "score": 7.38,
+  "grade": "B",
+  "hit_l5": "4/5",
+  "hit_l10": "6/10",
+  "hit_season": "6/10",
+  "vs_opp": "0/0",
+  "minutes": 23.8,
+  "status": "ACTIVE",
+  "season_avg": 9.2,
+  "l10_avg": 10.3,
+  "reasons": [
+   "Implied team total 104.5 (low vs slate avg 113.2)",
+   "DET limits rebounds to Gs (-6% vs expected)",
+   "DET limits assists to Gs (-9% vs expected)",
+   "Under hit 6/10 of last 10 at 11.5",
+   "Last game: 4 (under the line)"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 4.0,
+  "open_line": 9.5,
+  "open_price": -101,
+  "books": {
+   "DraftKings": [
+    11.5,
+    -117
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 5.253
+  }
+ },
+ {
   "game_id": "401909947",
   "game": "UTAH @ MIN",
   "player": "Darryn Peterson",
@@ -393,7 +394,7 @@
   "projection": 19.7,
   "prob": 0.704,
   "edge": 0.169,
-  "score": 7.1,
+  "score": 7.09,
   "grade": "B",
   "hit_l5": "3/5",
   "hit_l10": "6/9",
@@ -438,9 +439,9 @@
   "line_source": "DraftKings",
   "price": -111,
   "projection": 29.7,
-  "prob": 0.603,
+  "prob": 0.602,
   "edge": 0.076,
-  "score": 7.04,
+  "score": 7.02,
   "grade": "B",
   "hit_l5": "3/5",
   "hit_l10": "8/10",
@@ -470,7 +471,7 @@
   },
   "dist": {
    "k": "normal",
-   "sd": 8.393
+   "sd": 8.394
   }
  },
  {
@@ -488,7 +489,7 @@
   "projection": 18.2,
   "prob": 0.58,
   "edge": 0.075,
-  "score": 6.96,
+  "score": 6.94,
   "grade": "B",
   "hit_l5": "3/5",
   "hit_l10": "5/10",
@@ -536,7 +537,7 @@
   "projection": 13.4,
   "prob": 0.609,
   "edge": 0.094,
-  "score": 6.42,
+  "score": 6.41,
   "grade": "B",
   "hit_l5": "3/5",
   "hit_l10": "5/10",
@@ -565,7 +566,7 @@
   },
   "dist": {
    "k": "normal",
-   "sd": 6.304
+   "sd": 6.305
   }
  },
  {
@@ -583,7 +584,7 @@
   "projection": 13.8,
   "prob": 0.576,
   "edge": 0.068,
-  "score": 6.37,
+  "score": 6.36,
   "grade": "B",
   "hit_l5": "4/5",
   "hit_l10": "7/10",
@@ -612,7 +613,7 @@
   },
   "dist": {
    "k": "normal",
-   "sd": 7.489
+   "sd": 7.49
   }
  },
  {
@@ -630,7 +631,7 @@
   "projection": 3.1,
   "prob": 0.647,
   "edge": 0.078,
-  "score": 6.26,
+  "score": 6.25,
   "grade": "B",
   "hit_l5": "4/5",
   "hit_l10": "8/10",
@@ -676,9 +677,9 @@
   "line_source": "DraftKings",
   "price": -108,
   "projection": 34.7,
-  "prob": 0.607,
-  "edge": 0.088,
-  "score": 6.02,
+  "prob": 0.608,
+  "edge": 0.089,
+  "score": 6.1,
   "grade": "B",
   "hit_l5": "2/5",
   "hit_l10": "6/10",
@@ -708,7 +709,7 @@
   },
   "dist": {
    "k": "normal",
-   "sd": 9.773
+   "sd": 9.766
   }
  },
  {
@@ -718,43 +719,44 @@
   "player_id": "4278580",
   "team": "LAL",
   "opp": "DET",
-  "stat": "REB",
+  "stat": "PR",
   "side": "UNDER",
-  "line": 5.5,
+  "line": 15.5,
   "line_source": "DraftKings",
-  "price": -139,
-  "projection": 4.3,
-  "prob": 0.639,
-  "edge": 0.057,
-  "score": 5.55,
+  "price": -113,
+  "projection": 13.1,
+  "prob": 0.585,
+  "edge": 0.055,
+  "score": 5.33,
   "grade": "B",
-  "hit_l5": "3/5",
+  "hit_l5": "4/5",
   "hit_l10": "7/10",
   "hit_season": "7/10",
-  "vs_opp": "1/3",
+  "vs_opp": "2/3",
   "minutes": 24.1,
   "status": "ACTIVE",
-  "season_avg": 4.7,
-  "l10_avg": 4.4,
+  "season_avg": 14.4,
+  "l10_avg": 13.2,
   "reasons": [
-   "Under hit 7/10 of last 10 at 5.5",
-   "Last game: 3 (under the line)",
-   "Last 3 vs DET: 6, 5, 6"
+   "Implied team total 104.5 (low vs slate avg 113.2)",
+   "Under hit 7/10 of last 10 at 15.5",
+   "Last game: 10 (under the line)",
+   "Last 3 vs DET: 22, 13, 13"
   ],
   "actual": null,
   "result": null,
-  "last_game": 3.0,
-  "open_line": 5.5,
-  "open_price": -134,
+  "last_game": 10.0,
+  "open_line": 15.5,
+  "open_price": -109,
   "books": {
    "DraftKings": [
-    5.5,
-    -139
+    15.5,
+    -113
    ]
   },
   "dist": {
    "k": "normal",
-   "sd": 2.282
+   "sd": 6.378
   }
  },
  {
@@ -806,47 +808,47 @@
  {
   "game_id": "401909950",
   "game": "NO @ LAC",
-  "player": "Kris Dunn",
-  "player_id": "2991139",
+  "player": "Max Strus",
+  "player_id": "4065778",
   "team": "LAC",
   "opp": "NO",
-  "stat": "RA",
-  "side": "UNDER",
-  "line": 8.5,
+  "stat": "AST",
+  "side": "OVER",
+  "line": 2.5,
   "line_source": "DraftKings",
-  "price": 105,
-  "projection": 7.8,
-  "prob": 0.537,
-  "edge": 0.05,
-  "score": 4.92,
+  "price": 118,
+  "projection": 2.7,
+  "prob": 0.503,
+  "edge": 0.044,
+  "score": 4.28,
   "grade": "C",
   "hit_l5": "4/5",
-  "hit_l10": "5/10",
-  "hit_season": "4/8",
-  "vs_opp": "3/4",
-  "minutes": 30.2,
+  "hit_l10": "4/10",
+  "hit_season": "2/2",
+  "vs_opp": "0/1",
+  "minutes": 25.8,
   "status": "ACTIVE",
-  "season_avg": 7.7,
-  "l10_avg": 8.6,
+  "season_avg": 2.6,
+  "l10_avg": 2.8,
   "reasons": [
-   "Under hit 5/10 of last 10 at 8.5",
-   "Last game: 8 (under the line)",
-   "Last 4 vs NO: 10, 4, 7, 0"
+   "Over hit 4/10 of last 10 at 2.5",
+   "Last game: 5 (over the line)",
+   "Last 1 vs NO: 2"
   ],
   "actual": null,
   "result": null,
-  "last_game": 8.0,
-  "open_line": 9.5,
-  "open_price": -137,
+  "last_game": 5.0,
+  "open_line": 2.5,
+  "open_price": 118,
   "books": {
    "DraftKings": [
-    8.5,
-    105
+    2.5,
+    118
    ]
   },
   "dist": {
    "k": "normal",
-   "sd": 2.857
+   "sd": 1.697
   }
  },
  {
@@ -898,52 +900,6 @@
  {
   "game_id": "401909948",
   "game": "BKN @ DAL",
-  "player": "Caleb Martin",
-  "player_id": "3138160",
-  "team": "DAL",
-  "opp": "BKN",
-  "stat": "RA",
-  "side": "UNDER",
-  "line": 4.5,
-  "line_source": "DraftKings",
-  "price": -109,
-  "projection": 3.4,
-  "prob": 0.57,
-  "edge": 0.048,
-  "score": 4.02,
-  "grade": "C",
-  "hit_l5": "3/5",
-  "hit_l10": "7/10",
-  "hit_season": "3/5",
-  "vs_opp": "1/2",
-  "minutes": 16.3,
-  "status": "ACTIVE",
-  "season_avg": 3.4,
-  "l10_avg": 2.9,
-  "reasons": [
-   "Under hit 7/10 of last 10 at 4.5",
-   "Last game: 0 (under the line)",
-   "Last 2 vs BKN: 7, 2"
-  ],
-  "actual": null,
-  "result": null,
-  "last_game": 0.0,
-  "open_line": 5.5,
-  "open_price": -129,
-  "books": {
-   "DraftKings": [
-    4.5,
-    -109
-   ]
-  },
-  "dist": {
-   "k": "normal",
-   "sd": 3.552
-  }
- },
- {
-  "game_id": "401909948",
-  "game": "BKN @ DAL",
   "player": "Danny Wolf",
   "player_id": "5107173",
   "team": "BKN",
@@ -987,7 +943,55 @@
   },
   "dist": {
    "k": "normal",
-   "sd": 6.018
+   "sd": 6.019
+  }
+ },
+ {
+  "game_id": "401909948",
+  "game": "BKN @ DAL",
+  "player": "Michael Porter Jr.",
+  "player_id": "4278104",
+  "team": "BKN",
+  "opp": "DAL",
+  "stat": "AST",
+  "side": "UNDER",
+  "line": 2.5,
+  "line_source": "DraftKings",
+  "price": -190,
+  "projection": 1.7,
+  "prob": 0.685,
+  "edge": 0.03,
+  "score": 2.77,
+  "grade": "C",
+  "hit_l5": "4/5",
+  "hit_l10": "9/10",
+  "hit_season": "8/9",
+  "vs_opp": "0/3",
+  "minutes": 33.1,
+  "status": "ACTIVE",
+  "season_avg": 2.2,
+  "l10_avg": 1.2,
+  "reasons": [
+   "Implied team total 107.5 (low vs slate avg 113.2)",
+   "Back-to-back",
+   "Under hit 9/10 of last 10 at 2.5",
+   "Last game: 1 (under the line)",
+   "Last 3 vs DAL: 3, 3, 3"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 1.0,
+  "open_line": 1.5,
+  "open_price": 144,
+  "books": {
+   "DraftKings": [
+    2.5,
+    -190
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 1.301
   }
  },
  {
@@ -997,43 +1001,44 @@
   "player_id": "4397077",
   "team": "UTAH",
   "opp": "MIN",
-  "stat": "REB",
+  "stat": "PR",
   "side": "UNDER",
-  "line": 6.5,
+  "line": 15.5,
   "line_source": "DraftKings",
-  "price": -118,
-  "projection": 5.3,
-  "prob": 0.61,
-  "edge": 0.068,
-  "score": 5.63,
+  "price": -112,
+  "projection": 12.6,
+  "prob": 0.588,
+  "edge": 0.06,
+  "score": 4.92,
   "grade": "B",
-  "hit_l5": "2/5",
-  "hit_l10": "7/10",
-  "hit_season": "5/8",
+  "hit_l5": "5/5",
+  "hit_l10": "8/10",
+  "hit_season": "7/8",
   "vs_opp": "1/1",
   "minutes": 22.4,
   "status": "ACTIVE",
-  "season_avg": 5.0,
-  "l10_avg": 5.8,
+  "season_avg": 12.4,
+  "l10_avg": 13.6,
   "reasons": [
-   "Under hit 7/10 of last 10 at 6.5",
-   "Last game: 6 (under the line)",
-   "Last 1 vs MIN: 2"
+   "Implied team total 104.5 (low vs slate avg 113.2)",
+   "Under hit 8/10 of last 10 at 15.5",
+   "Last game: 14 (under the line)",
+   "Last 1 vs MIN: 4"
   ],
   "actual": null,
   "result": null,
-  "last_game": 6.0,
-  "open_line": 6.5,
-  "open_price": -119,
+  "last_game": 14.0,
+  "open_line": 15.5,
+  "open_price": -121,
   "books": {
    "DraftKings": [
-    6.5,
-    -118
+    15.5,
+    -112
    ]
   },
   "dist": {
    "k": "normal",
-   "sd": 2.612
+   "sd": 7.552
   }
  },
  {
@@ -1096,9 +1101,9 @@
   "line_source": "DraftKings",
   "price": -122,
   "projection": 18.4,
-  "prob": 0.583,
+  "prob": 0.582,
   "edge": 0.033,
-  "score": 3.15,
+  "score": 3.13,
   "grade": "C",
   "hit_l5": "4/5",
   "hit_l10": "6/10",
@@ -1145,7 +1150,7 @@
   "projection": 10.5,
   "prob": 0.605,
   "edge": 0.047,
-  "score": 3.83,
+  "score": 3.84,
   "grade": "C",
   "hit_l5": "2/5",
   "hit_l10": "6/10",
@@ -1173,7 +1178,7 @@
   },
   "dist": {
    "k": "normal",
-   "sd": 7.431
+   "sd": 7.432
   }
  },
  {
@@ -1183,43 +1188,45 @@
   "player_id": "6475",
   "team": "MIA",
   "opp": "SAC",
-  "stat": "REB",
-  "side": "UNDER",
-  "line": 2.5,
+  "stat": "PTS",
+  "side": "OVER",
+  "line": 12.5,
   "line_source": "DraftKings",
-  "price": -167,
-  "projection": 1.7,
-  "prob": 0.666,
-  "edge": 0.041,
-  "score": 3.28,
+  "price": -102,
+  "projection": 14.7,
+  "prob": 0.563,
+  "edge": 0.058,
+  "score": 3.26,
   "grade": "C",
-  "hit_l5": "4/5",
-  "hit_l10": "8/10",
-  "hit_season": "7/9",
-  "vs_opp": "2/3",
+  "hit_l5": "3/5",
+  "hit_l10": "4/10",
+  "hit_season": "4/9",
+  "vs_opp": "1/3",
   "minutes": 23.2,
   "status": "ACTIVE",
-  "season_avg": 1.8,
-  "l10_avg": 1.4,
+  "season_avg": 12.7,
+  "l10_avg": 13.6,
   "reasons": [
-   "Under hit 8/10 of last 10 at 2.5",
-   "Last game: 0 (under the line)",
-   "Last 3 vs SAC: 2, 2, 5"
+   "Goes against his last game: grade lowered one level (live record 42% on these)",
+   "Implied team total 124.0 (high vs slate avg 113.2)",
+   "Over hit 4/10 of last 10 at 12.5",
+   "Last game: 11 (under the line)",
+   "Last 3 vs SAC: 8, 6, 14"
   ],
   "actual": null,
   "result": null,
-  "last_game": 0.0,
-  "open_line": 2.5,
-  "open_price": -197,
+  "last_game": 11.0,
+  "open_line": 11.5,
+  "open_price": -117,
   "books": {
    "DraftKings": [
-    2.5,
-    -167
+    12.5,
+    -102
    ]
   },
   "dist": {
    "k": "normal",
-   "sd": 1.316
+   "sd": 7.081
   }
  },
  {
@@ -1331,7 +1338,7 @@
   "projection": 4.3,
   "prob": 0.606,
   "edge": 0.041,
-  "score": 3.68,
+  "score": 3.69,
   "grade": "C",
   "hit_l5": "2/5",
   "hit_l10": "6/10",
@@ -1379,7 +1386,7 @@
   "projection": 8.2,
   "prob": 0.56,
   "edge": 0.032,
-  "score": 3.03,
+  "score": 3.02,
   "grade": "C",
   "hit_l5": "2/5",
   "hit_l10": "4/10",
@@ -1408,7 +1415,7 @@
   },
   "dist": {
    "k": "normal",
-   "sd": 5.028
+   "sd": 5.029
   }
  },
  {
