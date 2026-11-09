@@ -4,28 +4,28 @@
    {
     "game_id": "401892682",
     "game": "NYI @ SJ",
-    "player": "Collin Graf",
-    "player_id": "5136607",
+    "player": "Ivar Stenberg",
+    "player_id": "5361709",
     "team": "SJ",
     "opp": "NYI",
-    "stat": "PTS",
+    "stat": "AST",
     "side": "UNDER",
     "line": 0.5,
-    "price": -200,
-    "prob": 0.711,
-    "edge": 0.044,
+    "price": -215,
+    "prob": 0.723,
+    "edge": 0.041,
     "grade": "C",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
       0.5,
-      -200
+      -215
      ]
     },
-    "projection": 0.26,
+    "projection": 0.25,
     "dist": {
      "k": "count",
-     "var": 0.272
+     "var": 0.257
     }
    },
    {
@@ -56,12 +56,12 @@
     }
    }
   ],
-  "hit": 0.5745,
-  "payout": 1.93,
-  "odds": -108,
-  "ev": 0.108,
+  "hit": 0.5842,
+  "payout": 1.88,
+  "odds": -113,
+  "ev": 0.1,
   "type": "double",
   "label": "Double up",
-  "made": "2026-11-09T12:46:32.073271-05:00"
+  "made": "2026-11-09T17:03:56.196903-05:00"
  }
 ]

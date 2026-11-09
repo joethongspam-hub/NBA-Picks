@@ -10,12 +10,12 @@
   "side": "UNDER",
   "line": 0.5,
   "line_source": "DraftKings",
-  "price": -310,
+  "price": -280,
   "projection": 0.14,
-  "prob": 0.806,
-  "edge": 0.05,
-  "score": 5.0,
-  "grade": "C",
+  "prob": 0.8,
+  "edge": 0.063,
+  "score": 6.3,
+  "grade": "B",
   "hit_l5": "5/5",
   "hit_l10": "10/10",
   "hit_season": "15/18",
@@ -39,59 +39,12 @@
   "books": {
    "DraftKings": [
     0.5,
-    -310
+    -280
    ]
   },
   "dist": {
    "k": "count",
    "var": 0.143
-  }
- },
- {
-  "game_id": "401892680",
-  "game": "NYR @ EDM",
-  "player": "Connor McDavid",
-  "player_id": "3895074",
-  "team": "EDM",
-  "opp": "NYR",
-  "stat": "PTS",
-  "side": "OVER",
-  "line": 1.5,
-  "line_source": "DraftKings",
-  "price": -135,
-  "projection": 2.37,
-  "prob": 0.622,
-  "edge": 0.048,
-  "score": 4.76,
-  "grade": "C",
-  "hit_l5": "3/5",
-  "hit_l10": "7/10",
-  "hit_season": "13/18",
-  "vs_opp": "1/3",
-  "minutes": 23.8,
-  "status": "ACTIVE",
-  "season_avg": 2.26,
-  "l10_avg": 2.4,
-  "reasons": [
-   "Implied team goals 3.55 (high vs avg 3.25)",
-   "Over hit 7/10 of last 10 at 1.5",
-   "Last game: 3 (over the line)",
-   "Last 3 vs NYR: 2, 0, 1"
-  ],
-  "actual": null,
-  "result": null,
-  "last_game": 3.0,
-  "open_line": 1.5,
-  "open_price": -130,
-  "books": {
-   "DraftKings": [
-    1.5,
-    -135
-   ]
-  },
-  "dist": {
-   "k": "count",
-   "var": 2.44
   }
  },
  {
@@ -107,9 +60,9 @@
   "line_source": "DraftKings",
   "price": -110,
   "projection": 0.48,
-  "prob": 0.569,
-  "edge": 0.045,
-  "score": 4.44,
+  "prob": 0.568,
+  "edge": 0.044,
+  "score": 4.36,
   "grade": "C",
   "hit_l5": "4/5",
   "hit_l10": "7/10",
@@ -137,53 +90,146 @@
   },
   "dist": {
    "k": "count",
-   "var": 0.493
+   "var": 0.495
   }
  },
  {
   "game_id": "401892682",
   "game": "NYI @ SJ",
-  "player": "Collin Graf",
-  "player_id": "5136607",
+  "player": "Ivar Stenberg",
+  "player_id": "5361709",
   "team": "SJ",
   "opp": "NYI",
-  "stat": "PTS",
+  "stat": "AST",
   "side": "UNDER",
   "line": 0.5,
   "line_source": "DraftKings",
-  "price": -200,
-  "projection": 0.26,
-  "prob": 0.711,
-  "edge": 0.044,
-  "score": 4.39,
+  "price": -215,
+  "projection": 0.25,
+  "prob": 0.723,
+  "edge": 0.041,
+  "score": 3.95,
   "grade": "C",
   "hit_l5": "5/5",
-  "hit_l10": "9/10",
-  "hit_season": "17/19",
-  "vs_opp": "1/2",
-  "minutes": 15.6,
+  "hit_l10": "8/10",
+  "hit_season": "13/19",
+  "vs_opp": "0/0",
+  "minutes": 15.7,
   "status": "ACTIVE",
-  "season_avg": 0.3,
+  "season_avg": 0.32,
   "l10_avg": 0.2,
   "reasons": [
-   "Under hit 9/10 of last 10 at 0.5",
-   "Last game: 0 (under the line)",
-   "Last 2 vs NYI: 0, 2"
+   "Under hit 8/10 of last 10 at 0.5",
+   "Last game: 0 (under the line)"
   ],
   "actual": null,
   "result": null,
   "last_game": 0.0,
   "open_line": 0.5,
-  "open_price": -200,
+  "open_price": -230,
   "books": {
    "DraftKings": [
     0.5,
-    -200
+    -215
    ]
   },
   "dist": {
    "k": "count",
-   "var": 0.272
+   "var": 0.257
+  }
+ },
+ {
+  "game_id": "401892680",
+  "game": "NYR @ EDM",
+  "player": "Connor McDavid",
+  "player_id": "3895074",
+  "team": "EDM",
+  "opp": "NYR",
+  "stat": "PTS",
+  "side": "OVER",
+  "line": 1.5,
+  "line_source": "DraftKings",
+  "price": -145,
+  "projection": 2.39,
+  "prob": 0.63,
+  "edge": 0.038,
+  "score": 3.78,
+  "grade": "C",
+  "hit_l5": "3/5",
+  "hit_l10": "7/10",
+  "hit_season": "13/18",
+  "vs_opp": "1/3",
+  "minutes": 23.8,
+  "status": "ACTIVE",
+  "season_avg": 2.26,
+  "l10_avg": 2.4,
+  "reasons": [
+   "Implied team goals 3.55 (high vs avg 3.25)",
+   "Over hit 7/10 of last 10 at 1.5",
+   "Last game: 3 (over the line)",
+   "Last 3 vs NYR: 2, 0, 1"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 3.0,
+  "open_line": 1.5,
+  "open_price": -130,
+  "books": {
+   "DraftKings": [
+    1.5,
+    -145
+   ]
+  },
+  "dist": {
+   "k": "count",
+   "var": 2.458
+  }
+ },
+ {
+  "game_id": "401892680",
+  "game": "NYR @ EDM",
+  "player": "Vasily Podkolzin",
+  "player_id": "4565231",
+  "team": "EDM",
+  "opp": "NYR",
+  "stat": "AST",
+  "side": "UNDER",
+  "line": 0.5,
+  "line_source": "DraftKings",
+  "price": -265,
+  "projection": 0.2,
+  "prob": 0.763,
+  "edge": 0.037,
+  "score": 2.99,
+  "grade": "C",
+  "hit_l5": "5/5",
+  "hit_l10": "9/10",
+  "hit_season": "14/18",
+  "vs_opp": "3/3",
+  "minutes": 15.5,
+  "status": "ACTIVE",
+  "season_avg": 0.26,
+  "l10_avg": 0.1,
+  "reasons": [
+   "Implied team goals 3.55 (high vs avg 3.25)",
+   "Under hit 9/10 of last 10 at 0.5",
+   "Last game: 0 (under the line)",
+   "Last 3 vs NYR: 0, 0, 0"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 0.0,
+  "open_line": 0.5,
+  "open_price": -350,
+  "books": {
+   "DraftKings": [
+    0.5,
+    -265
+   ]
+  },
+  "dist": {
+   "k": "count",
+   "var": 0.209
   }
  },
  {
@@ -231,53 +277,6 @@
   "dist": {
    "k": "count",
    "var": 0.156
-  }
- },
- {
-  "game_id": "401892680",
-  "game": "NYR @ EDM",
-  "player": "Vasily Podkolzin",
-  "player_id": "4565231",
-  "team": "EDM",
-  "opp": "NYR",
-  "stat": "AST",
-  "side": "UNDER",
-  "line": 0.5,
-  "line_source": "DraftKings",
-  "price": -280,
-  "projection": 0.2,
-  "prob": 0.769,
-  "edge": 0.032,
-  "score": 2.6,
-  "grade": "C",
-  "hit_l5": "5/5",
-  "hit_l10": "9/10",
-  "hit_season": "14/18",
-  "vs_opp": "3/3",
-  "minutes": 15.5,
-  "status": "ACTIVE",
-  "season_avg": 0.26,
-  "l10_avg": 0.1,
-  "reasons": [
-   "Implied team goals 3.55 (high vs avg 3.25)",
-   "Under hit 9/10 of last 10 at 0.5",
-   "Last game: 0 (under the line)",
-   "Last 3 vs NYR: 0, 0, 0"
-  ],
-  "actual": null,
-  "result": null,
-  "last_game": 0.0,
-  "open_line": 0.5,
-  "open_price": -350,
-  "books": {
-   "DraftKings": [
-    0.5,
-    -280
-   ]
-  },
-  "dist": {
-   "k": "count",
-   "var": 0.208
   }
  }
 ]
