@@ -334,6 +334,33 @@
    "date": "2026-11-07",
    "final": "MIN 3 \u2013 TB 4",
    "result": "WIN"
+  },
+  {
+   "game_id": "401892676",
+   "game": "NJ @ TOR",
+   "market": "Total",
+   "pick": "Over 6.5",
+   "side": "over",
+   "line": 6.5,
+   "price": 102,
+   "prob": 0.515,
+   "model_prob": 0.591,
+   "edge": 0.02,
+   "grade": "C",
+   "proj": "TOR 3.42 \u2013 NJ 3.86",
+   "mu_h": 3.42,
+   "mu_a": 3.86,
+   "home": "TOR",
+   "away": "NJ",
+   "notes": [
+    "TOR goalie Sergei Bobrovsky (0.888): opponent goals +12% (starter uncertain)",
+    "NJ goalie Connor Hellebuyck (0.895): opponent goals +5%"
+   ],
+   "score": 2.0,
+   "locked": true,
+   "date": "2026-11-08",
+   "final": "TOR 0 \u2013 NJ 4",
+   "result": "LOSS"
   }
  ]
 }
