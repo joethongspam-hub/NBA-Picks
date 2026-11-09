@@ -22,7 +22,8 @@
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "BKN injuries (Jr.): -2.6 pts"
    ],
-   "score": 1.53
+   "score": 1.53,
+   "locked": true
   },
   {
    "game_id": "401909948",
@@ -45,7 +46,8 @@
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "BKN injuries (Jr.): -2.6 pts"
    ],
-   "score": 3.85
+   "score": 3.85,
+   "locked": true
   },
   {
    "game_id": "401909949",
@@ -68,7 +70,8 @@
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "MIL injuries (Jr.): -0.7 pts"
    ],
-   "score": 8.54
+   "score": 8.54,
+   "locked": true
   },
   {
    "game_id": "401909949",
@@ -91,7 +94,8 @@
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "MIL injuries (Jr.): -0.7 pts"
    ],
-   "score": 8.38
+   "score": 8.38,
+   "locked": true
   },
   {
    "game_id": "401909950",
@@ -114,7 +118,8 @@
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "LAC injuries (Jackson): -2.0 pts"
    ],
-   "score": 12.17
+   "score": 12.17,
+   "locked": true
   },
   {
    "game_id": "401909950",
@@ -137,7 +142,8 @@
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "LAC injuries (Jackson): -2.0 pts"
    ],
-   "score": 12.24
+   "score": 12.24,
+   "locked": true
   },
   {
    "game_id": "401909951",
@@ -159,7 +165,8 @@
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
    ],
-   "score": 5.81
+   "score": 5.81,
+   "locked": true
   },
   {
    "game_id": "401909951",
@@ -181,7 +188,8 @@
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
    ],
-   "score": 5.38
+   "score": 5.38,
+   "locked": true
   }
  ]
 }
