@@ -38,7 +38,7 @@ def _leg(p: dict) -> dict:
     return {k: p.get(k) for k in keep}
 
 
-def candidates(picks: list[dict], started: set[str]) -> list[dict]:
+def candidates(picks: list[dict], started: set[str], min_prob: float = 0.60) -> list[dict]:
     out, seen = [], set()
     for p in sorted(picks, key=lambda p: -p.get("edge", 0)):
         if p.get("locked") or p["game_id"] in started or p.get("line_source") in ("est.", None):
@@ -51,7 +51,7 @@ def candidates(picks: list[dict], started: set[str]) -> list[dict]:
             continue
         # Minus-money legs with a 60%+ model probability only: in the Oct 31 - Nov 6 replay,
         # plus-money legs hit 40% (model overrates long shots) vs 63% for minus-money legs.
-        if not -250 <= pr < 0 or p.get("prob", 0) < 0.60:
+        if not -250 <= pr < 0 or p.get("prob", 0) < min_prob:
             continue
         k = (p["player_id"], p["stat"], p["side"])
         if k not in seen:
@@ -76,8 +76,8 @@ def _ticket(legs) -> dict:
             "odds": american(pay), "ev": round(hit * pay - 1, 3)}
 
 
-def build(picks: list[dict], started: set[str], separate: bool = True) -> dict:
-    pool = candidates(picks, started)
+def build(picks: list[dict], started: set[str], separate: bool = True, min_prob: float = 0.60) -> dict:
+    pool = candidates(picks, started, min_prob)
     best: dict[str, dict] = {}
     used: set = set()
     for key, label, sizes, ok, score in TICKETS:
@@ -105,7 +105,8 @@ def build(picks: list[dict], started: set[str], separate: bool = True) -> dict:
     return best
 
 
-def every_game(picks: list[dict], started: set[str], slate: list[str] | None = None) -> dict | None:
+def every_game(picks: list[dict], started: set[str], slate: list[str] | None = None,
+               min_prob: float = 0.60) -> dict | None:
     """One leg from every game that hasn't started: the most likely qualifying leg in each game.
     Falls back to the game's best positive-edge minus-money leg on a real line; games with
     nothing usable are left out (and listed)."""
@@ -122,7 +123,7 @@ def every_game(picks: list[dict], started: set[str], slate: list[str] | None = N
         if not -250 <= pr < 0:
             continue
         g = p["game_id"]
-        if p.get("prob", 0) >= 0.60 and (g not in strict or p["prob"] > strict[g]["prob"]):
+        if p.get("prob", 0) >= min_prob and (g not in strict or p["prob"] > strict[g]["prob"]):
             strict[g] = p
         if g not in loose or p["prob"] > loose[g]["prob"]:
             loose[g] = p
@@ -137,15 +138,15 @@ def every_game(picks: list[dict], started: set[str], slate: list[str] | None = N
 
 
 def update(hist_dir, key: str, picks: list[dict], started: set[str], now: datetime,
-           all_games: bool = False, slate: list[str] | None = None) -> list[dict]:
+           all_games: bool = False, slate: list[str] | None = None, min_prob: float = 0.60) -> list[dict]:
     """Keep a ticket once any of its games has started (locked); otherwise rebuild it."""
     d = Path(hist_dir) / "parlays"
     d.mkdir(parents=True, exist_ok=True)
     f = d / f"{key}.json"
     prior = {t["type"]: t for t in (json.loads(f.read_text()) if f.exists() else [])}
-    fresh = build(picks, started)
+    fresh = build(picks, started, min_prob=min_prob)
     if all_games:
-        ag = every_game(picks, started, slate)
+        ag = every_game(picks, started, slate, min_prob)
         if ag:
             fresh["allgames"] = ag
     out = []

@@ -18,7 +18,7 @@ def test_pipeline(tmp=None):
     assert any(p["player_id"] == "1004" and p["status"] == "QUESTIONABLE" for p in allp)
     # teammate should be credited with the star's usage
     r = [p for p in allp if p["player_id"] == "1002" and p["stat"] == "PTS"][0]
-    assert any("out:" in x for x in r["reasons"]), r["reasons"]
+    assert not any("out:" in x for x in r["reasons"]), "injury boost is turned off for the NBA"
     # DEN (8) should show as soft vs centers for ATL's C
     c = [p for p in allp if p["player_id"] == "1005" and p["stat"] == "REB"][0]
     assert any("DEN allows" in x for x in c["reasons"]), c["reasons"]

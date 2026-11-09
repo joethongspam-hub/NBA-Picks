@@ -114,6 +114,12 @@ The free 500 credits cover the NFL only; NBA and NHL every day need the $30 / 20
   NBA rebound unders (6–10) and rebounds + assists unders (9–13); NHL shots on goal (21–25).
 * **NHL plus-money picks aren't graded** (+100 or longer; 27–45 on real lines).
 
+## Nov 8 NBA changes (from the real-line record)
+
+* Injured-teammate boost turned **off** (12–15 on real lines after two cuts).
+* Assists, and players projected for 30–34 minutes, drop one grade (17–17 and 21–25).
+* NBA parlay legs need a **65%+** model probability (65%+ legs hit 65% vs 57% for 60–65%).
+
 ## Model report
 
 The Track record tab includes a **model report**, rebuilt every night from graded live picks:

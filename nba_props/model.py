@@ -37,7 +37,7 @@ ABSORB = {"PTS": 0.55, "REB": 0.65, "AST": 0.55, "3PM": 0.45, "STL": 0.4, "BLK":
 KNOBS = {
     "dvp_prior": 120.0,     # player-games of shrinkage toward neutral defense
     "dvp_power": 1.0,      # 0 disables opponent adjustment
-    "absorb_scale": 0.18,   # scales ABSORB (injured teammates' volume); halved after live record 19-20
+    "absorb_scale": 0.0,    # injured teammates' volume redistribution: OFF (live real-line record 12-15 after two cuts)
     "b2b": 0.96,           # minutes factor for heavy-minute players on a back-to-back
     "min_scale": 0.95,     # global minutes calibration
     "env_scale": 0.5,      # scales Vegas-total elasticities
@@ -595,6 +595,13 @@ def evaluate(proj: Projection, stats: list[str], lines: dict[tuple[str, str], Pr
         blocked = BLOCKED.get((s, side))
         if blocked:
             grade, score = "-", 0.0
+        soft = []                                   # one-grade demotions from the live real-line record
+        if s == "AST":
+            soft.append("Assists: grade lowered one level (17-17 on real lines)")
+        if 30 <= proj.minutes < 34:
+            soft.append("Projected 30-34 minutes: grade lowered one level (21-25 on real lines)")
+        for _ in soft:
+            grade, score = DEMOTE[grade], score * 0.8
         vs_last = against_last_game(p.logs, lambda g: g.get(s), side, line)
         if vs_last:
             grade, score = DEMOTE[grade], score * 0.7
@@ -608,6 +615,8 @@ def evaluate(proj: Projection, stats: list[str], lines: dict[tuple[str, str], Pr
             reasons.insert(0, LAST_GAME_NOTE)
         if blocked:
             reasons.insert(0, blocked)
+        for n in soft:
+            reasons.insert(0, n)
         if side == "UNDER" and proj.depleted:
             reasons.insert(0, f"{proj.team_abbr} missing {len(proj.depleted)} rotation players "
                               f"({', '.join(_short(n) for n in proj.depleted[:4])}): unders skipped")
