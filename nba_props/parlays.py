@@ -105,15 +105,51 @@ def build(picks: list[dict], started: set[str], separate: bool = True) -> dict:
     return best
 
 
-def update(hist_dir, key: str, picks: list[dict], started: set[str], now: datetime) -> list[dict]:
+def every_game(picks: list[dict], started: set[str], slate: list[str] | None = None) -> dict | None:
+    """One leg from every game that hasn't started: the most likely qualifying leg in each game.
+    Falls back to the game's best positive-edge minus-money leg on a real line; games with
+    nothing usable are left out (and listed)."""
+    strict, loose = {}, {}
+    for p in picks:
+        if p.get("locked") or p["game_id"] in started or p.get("line_source") in ("est.", None):
+            continue
+        if p.get("grade") not in ("A", "B", "C") or p.get("edge", 0) < 0.03:
+            continue
+        try:
+            pr = int(p["price"])
+        except (TypeError, ValueError):
+            continue
+        if not -250 <= pr < 0:
+            continue
+        g = p["game_id"]
+        if p.get("prob", 0) >= 0.60 and (g not in strict or p["prob"] > strict[g]["prob"]):
+            strict[g] = p
+        if g not in loose or p["prob"] > loose[g]["prob"]:
+            loose[g] = p
+    legs = [strict.get(g) or loose[g] for g in sorted(loose, key=lambda g: -(strict.get(g) or loose[g])["prob"])]
+    if len(legs) < 2:
+        return None
+    t = _ticket(legs)
+    open_games = [g for g in (slate or []) if g not in started]
+    missing = [g for g in open_games if g not in loose]
+    return {**t, "type": "allgames", "label": "One per game", "missing": missing,
+            "games_total": len(open_games) or len(legs)}
+
+
+def update(hist_dir, key: str, picks: list[dict], started: set[str], now: datetime,
+           all_games: bool = False, slate: list[str] | None = None) -> list[dict]:
     """Keep a ticket once any of its games has started (locked); otherwise rebuild it."""
     d = Path(hist_dir) / "parlays"
     d.mkdir(parents=True, exist_ok=True)
     f = d / f"{key}.json"
     prior = {t["type"]: t for t in (json.loads(f.read_text()) if f.exists() else [])}
     fresh = build(picks, started)
+    if all_games:
+        ag = every_game(picks, started, slate)
+        if ag:
+            fresh["allgames"] = ag
     out = []
-    for k, label, *_ in TICKETS:
+    for k, label, *_ in TICKETS + ([("allgames", "One per game")] if all_games else []):
         p = prior.get(k)
         if p and any(l["game_id"] in started for l in p["legs"]):
             out.append({**p, "locked": True})
@@ -152,7 +188,8 @@ def grade(hist_dir, graded: list[dict]) -> dict:
                          "profit": round(pay - 1, 2) if r in ("WIN", "LOSS") else 0.0})
     done = [x for x in rows if x["result"] in ("WIN", "LOSS")]
     by = {}
-    for k, label, *_ in TICKETS:
+    types = TICKETS + ([("allgames", "One per game")] if any(x["type"] == "allgames" for x in rows) else [])
+    for k, label, *_ in types:
         g = [x for x in done if x["type"] == k]
         by[k] = {"label": label, "w": sum(x["result"] == "WIN" for x in g), "l": sum(x["result"] == "LOSS" for x in g),
                  "units": round(sum(x["profit"] for x in g), 2)}

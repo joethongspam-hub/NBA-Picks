@@ -86,7 +86,8 @@ Legs must be on real lines with a positive edge (graded A–C), priced −250 to
 (plus-money legs hit only 40% in the Nov 7 replay), one per game, and no player on more than one ticket (tickets are built in order, each from the players left over).
 Hit chance = product of leg probabilities; value = hit chance × payout − 1. Tickets lock once a game starts,
 are graded by the results runs (a pushed leg drops out), and have their own track record. The pregame notification
-includes the best-value ticket.
+includes the best-value ticket. The NBA page adds a fourth ticket, **One per game**: the most likely qualifying leg
+from every game not yet started (it may reuse legs from the other tickets).
 
 ## Parlay checker
 

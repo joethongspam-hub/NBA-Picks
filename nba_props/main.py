@@ -527,7 +527,8 @@ def run(date: str | None = None, out_dir: str = "site", cache_dir: str = ".cache
     parlays = {}
     if not backtest:
         try:
-            parlays = {"tickets": PL.update(hist, day_s, list(shown.values()), started, now_et),
+            parlays = {"tickets": PL.update(hist, day_s, list(shown.values()), started, now_et,
+                                            all_games=True, slate=[g.id for g in games]),
                        "record": PL.grade(hist, json.loads((hist / "results.json").read_text())["graded"]
                                           if (hist / "results.json").exists() else [])}
         except Exception as e:
