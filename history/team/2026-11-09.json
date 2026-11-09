@@ -164,13 +164,13 @@
    "game_id": "401909955",
    "game": "MEM @ TOR",
    "market": "Spread",
-   "pick": "MEM +2.5",
+   "pick": "MEM +3.5",
    "side": "away",
-   "line": -2.5,
-   "price": -102,
-   "prob": 0.608,
-   "model_prob": 0.841,
-   "edge": 0.103,
+   "line": -3.5,
+   "price": -118,
+   "prob": 0.636,
+   "model_prob": 0.86,
+   "edge": 0.095,
    "grade": "A",
    "proj": "TOR 110.2 \u2013 MEM 120.2",
    "mu_h": 110.19,
@@ -181,7 +181,7 @@
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "MEM injuries (Jr., Stewart): -2.5 pts"
    ],
-   "score": 10.32
+   "score": 9.52
   },
   {
    "game_id": "401909956",

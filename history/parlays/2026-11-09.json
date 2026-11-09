@@ -2,43 +2,70 @@
  {
   "legs": [
    {
-    "game_id": "401909952",
-    "game": "LAL @ ATL",
-    "player": "Ziaire Williams",
-    "player_id": "4433137",
-    "team": "LAL",
-    "opp": "ATL",
+    "game_id": "401909954",
+    "game": "WSH @ DET",
+    "player": "Ausar Thompson",
+    "player_id": "4684742",
+    "team": "DET",
+    "opp": "WSH",
     "stat": "PTS",
-    "side": "OVER",
-    "line": 7.5,
-    "price": -113,
-    "prob": 0.607,
-    "edge": 0.076,
+    "side": "UNDER",
+    "line": 10.5,
+    "price": -105,
+    "prob": 0.581,
+    "edge": 0.069,
     "grade": "B",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
-      7.5,
-      -113
+      10.5,
+      -105
      ]
     },
-    "projection": 10.0,
+    "projection": 9.3,
     "dist": {
      "k": "normal",
-     "sd": 5.487
+     "sd": 3.132
     }
    }
   ],
-  "hit": 0.607,
-  "payout": 1.88,
-  "odds": -113,
-  "ev": 0.144,
+  "hit": 0.581,
+  "payout": 1.95,
+  "odds": -105,
+  "ev": 0.134,
   "type": "double",
   "label": "Double up",
-  "made": "2026-11-09T10:38:52.458005-05:00"
+  "made": "2026-11-09T11:11:42.422472-05:00"
  },
  {
   "legs": [
+   {
+    "game_id": "401909957",
+    "game": "DEN @ HOU",
+    "player": "Nikola Jokic",
+    "player_id": "3112335",
+    "team": "DEN",
+    "opp": "HOU",
+    "stat": "PR",
+    "side": "UNDER",
+    "line": 36.5,
+    "price": -118,
+    "prob": 0.667,
+    "edge": 0.126,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      36.5,
+      -118
+     ]
+    },
+    "projection": 30.6,
+    "dist": {
+     "k": "normal",
+     "sd": 7.879
+    }
+   },
    {
     "game_id": "401909954",
     "game": "WSH @ DET",
@@ -63,88 +90,34 @@
     "projection": 29.5,
     "dist": {
      "k": "normal",
-     "sd": 9.26
+     "sd": 9.257
     }
    },
    {
-    "game_id": "401909957",
-    "game": "DEN @ HOU",
-    "player": "Jabari Smith Jr.",
-    "player_id": "4432639",
-    "team": "HOU",
-    "opp": "DEN",
-    "stat": "AST",
+    "game_id": "401909958",
+    "game": "SA @ PHX",
+    "player": "Devin Vassell",
+    "player_id": "4395630",
+    "team": "SA",
+    "opp": "PHX",
+    "stat": "PA",
     "side": "OVER",
-    "line": 1.5,
-    "price": -126,
-    "prob": 0.619,
-    "edge": 0.062,
-    "grade": "C",
-    "line_source": "DraftKings",
-    "books": {
-     "DraftKings": [
-      1.5,
-      -126
-     ]
-    },
-    "projection": 2.2,
-    "dist": {
-     "k": "normal",
-     "sd": 1.493
-    }
-   },
-   {
-    "game_id": "401909956",
-    "game": "IND @ DAL",
-    "player": "Cooper Flagg",
-    "player_id": "5041939",
-    "team": "DAL",
-    "opp": "IND",
-    "stat": "PR",
-    "side": "UNDER",
-    "line": 33.5,
-    "price": -117,
-    "prob": 0.608,
-    "edge": 0.069,
-    "grade": "C",
-    "line_source": "DraftKings",
-    "books": {
-     "DraftKings": [
-      33.5,
-      -117
-     ]
-    },
-    "projection": 29.2,
-    "dist": {
-     "k": "normal",
-     "sd": 9.449
-    }
-   },
-   {
-    "game_id": "401909952",
-    "game": "LAL @ ATL",
-    "player": "Ziaire Williams",
-    "player_id": "4433137",
-    "team": "LAL",
-    "opp": "ATL",
-    "stat": "PTS",
-    "side": "OVER",
-    "line": 7.5,
-    "price": -113,
-    "prob": 0.607,
-    "edge": 0.076,
+    "line": 12.5,
+    "price": -127,
+    "prob": 0.617,
+    "edge": 0.058,
     "grade": "B",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
-      7.5,
-      -113
+      12.5,
+      -127
      ]
     },
-    "projection": 10.0,
+    "projection": 14.5,
     "dist": {
      "k": "normal",
-     "sd": 5.487
+     "sd": 4.215
     }
    },
    {
@@ -157,21 +130,21 @@
     "stat": "PR",
     "side": "UNDER",
     "line": 16.5,
-    "price": -115,
-    "prob": 0.602,
-    "edge": 0.067,
+    "price": -121,
+    "prob": 0.607,
+    "edge": 0.059,
     "grade": "B",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
       16.5,
-      -115
+      -121
      ]
     },
     "projection": 13.7,
     "dist": {
      "k": "normal",
-     "sd": 6.292
+     "sd": 6.29
     }
    },
    {
@@ -186,7 +159,7 @@
     "line": 11.5,
     "price": -109,
     "prob": 0.578,
-    "edge": 0.056,
+    "edge": 0.057,
     "grade": "B",
     "line_source": "DraftKings",
     "books": {
@@ -198,21 +171,22 @@
     "projection": 10.0,
     "dist": {
      "k": "normal",
-     "sd": 4.376
+     "sd": 4.375
     }
    }
   ],
-  "hit": 0.0513,
-  "payout": 41.69,
-  "odds": 4069,
-  "ev": 1.141,
+  "hit": 0.0933,
+  "payout": 21.45,
+  "odds": 2045,
+  "ev": 1.001,
   "type": "allgames",
   "label": "One per game",
   "missing": [
+   "401909952",
    "401909953",
-   "401909958"
+   "401909956"
   ],
   "games_total": 8,
-  "made": "2026-11-09T10:38:52.458005-05:00"
+  "made": "2026-11-09T11:11:42.422472-05:00"
  }
 ]
