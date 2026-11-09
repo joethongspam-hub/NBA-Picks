@@ -94,51 +94,6 @@
   }
  },
  {
-  "game_id": "401892682",
-  "game": "NYI @ SJ",
-  "player": "Ivar Stenberg",
-  "player_id": "5361709",
-  "team": "SJ",
-  "opp": "NYI",
-  "stat": "AST",
-  "side": "UNDER",
-  "line": 0.5,
-  "line_source": "DraftKings",
-  "price": -215,
-  "projection": 0.25,
-  "prob": 0.723,
-  "edge": 0.041,
-  "score": 3.95,
-  "grade": "C",
-  "hit_l5": "5/5",
-  "hit_l10": "8/10",
-  "hit_season": "13/19",
-  "vs_opp": "0/0",
-  "minutes": 15.7,
-  "status": "ACTIVE",
-  "season_avg": 0.32,
-  "l10_avg": 0.2,
-  "reasons": [
-   "Under hit 8/10 of last 10 at 0.5",
-   "Last game: 0 (under the line)"
-  ],
-  "actual": null,
-  "result": null,
-  "last_game": 0.0,
-  "open_line": 0.5,
-  "open_price": -230,
-  "books": {
-   "DraftKings": [
-    0.5,
-    -215
-   ]
-  },
-  "dist": {
-   "k": "count",
-   "var": 0.257
-  }
- },
- {
   "game_id": "401892680",
   "game": "NYR @ EDM",
   "player": "Connor McDavid",

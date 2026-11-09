@@ -2,66 +2,39 @@
  {
   "legs": [
    {
-    "game_id": "401892682",
-    "game": "NYI @ SJ",
-    "player": "Ivar Stenberg",
-    "player_id": "5361709",
-    "team": "SJ",
-    "opp": "NYI",
-    "stat": "AST",
-    "side": "UNDER",
-    "line": 0.5,
-    "price": -215,
-    "prob": 0.723,
-    "edge": 0.041,
-    "grade": "C",
-    "line_source": "DraftKings",
-    "books": {
-     "DraftKings": [
-      0.5,
-      -215
-     ]
-    },
-    "projection": 0.25,
-    "dist": {
-     "k": "count",
-     "var": 0.257
-    }
-   },
-   {
     "game_id": "401892681",
     "game": "PHI @ VAN",
-    "player": "Owen Tippett",
-    "player_id": "4392072",
-    "team": "PHI",
-    "opp": "VAN",
-    "stat": "AST",
+    "player": "Jake DeBrusk",
+    "player_id": "3900240",
+    "team": "VAN",
+    "opp": "PHI",
+    "stat": "PTS",
     "side": "UNDER",
     "line": 0.5,
-    "price": -350,
-    "prob": 0.808,
-    "edge": 0.031,
+    "price": -110,
+    "prob": 0.568,
+    "edge": 0.044,
     "grade": "C",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
       0.5,
-      -350
+      -110
      ]
     },
-    "projection": 0.15,
+    "projection": 0.48,
     "dist": {
      "k": "count",
-     "var": 0.156
+     "var": 0.495
     }
    }
   ],
-  "hit": 0.5842,
-  "payout": 1.88,
-  "odds": -113,
-  "ev": 0.1,
+  "hit": 0.568,
+  "payout": 1.91,
+  "odds": -110,
+  "ev": 0.084,
   "type": "double",
   "label": "Double up",
-  "made": "2026-11-09T17:03:56.196903-05:00"
+  "made": "2026-11-09T17:27:33.463063-05:00"
  }
 ]
