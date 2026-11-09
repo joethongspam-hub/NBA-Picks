@@ -164,13 +164,13 @@
    "game_id": "401909955",
    "game": "MEM @ TOR",
    "market": "Spread",
-   "pick": "MEM +3.5",
+   "pick": "MEM +2.5",
    "side": "away",
-   "line": -3.5,
-   "price": -118,
-   "prob": 0.636,
-   "model_prob": 0.86,
-   "edge": 0.095,
+   "line": -2.5,
+   "price": -103,
+   "prob": 0.61,
+   "model_prob": 0.841,
+   "edge": 0.102,
    "grade": "A",
    "proj": "TOR 110.2 \u2013 MEM 120.2",
    "mu_h": 110.19,
@@ -181,7 +181,7 @@
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "MEM injuries (Jr., Stewart): -2.5 pts"
    ],
-   "score": 9.52
+   "score": 10.22
   },
   {
    "game_id": "401909956",
@@ -190,10 +190,10 @@
    "pick": "IND ML",
    "side": "away",
    "line": null,
-   "price": 136,
-   "prob": 0.503,
+   "price": 131,
+   "prob": 0.508,
    "model_prob": 0.68,
-   "edge": 0.079,
+   "edge": 0.075,
    "grade": "A",
    "proj": "DAL 121.2 \u2013 IND 127.1",
    "mu_h": 121.22,
@@ -203,7 +203,7 @@
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
    ],
-   "score": 7.88
+   "score": 7.49
   },
   {
    "game_id": "401909956",
@@ -212,10 +212,10 @@
    "pick": "IND +3.5",
    "side": "away",
    "line": -3.5,
-   "price": -110,
-   "prob": 0.595,
+   "price": -112,
+   "prob": 0.598,
    "model_prob": 0.772,
-   "edge": 0.071,
+   "edge": 0.07,
    "grade": "A",
    "proj": "DAL 121.2 \u2013 IND 127.1",
    "mu_h": 121.22,
@@ -225,7 +225,7 @@
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
    ],
-   "score": 7.15
+   "score": 6.98
   },
   {
    "game_id": "401909957",
@@ -324,10 +324,10 @@
    "pick": "NO ML",
    "side": "away",
    "line": null,
-   "price": 312,
-   "prob": 0.384,
+   "price": 303,
+   "prob": 0.387,
    "model_prob": 0.664,
-   "edge": 0.141,
+   "edge": 0.139,
    "grade": "A",
    "proj": "GS 119.7 \u2013 NO 124.9",
    "mu_h": 119.65,
@@ -338,19 +338,19 @@
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "GS injuries (Richard): -1.4 pts"
    ],
-   "score": 14.12
+   "score": 13.92
   },
   {
    "game_id": "401909959",
    "game": "NO @ GS",
    "market": "Spread",
-   "pick": "NO +9.5",
+   "pick": "NO +8.5",
    "side": "away",
-   "line": -9.5,
-   "price": -115,
-   "prob": 0.64,
-   "model_prob": 0.882,
-   "edge": 0.105,
+   "line": -8.5,
+   "price": -102,
+   "prob": 0.616,
+   "model_prob": 0.865,
+   "edge": 0.111,
    "grade": "A",
    "proj": "GS 119.7 \u2013 NO 124.9",
    "mu_h": 119.65,
@@ -361,7 +361,7 @@
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "GS injuries (Richard): -1.4 pts"
    ],
-   "score": 10.49
+   "score": 11.15
   }
  ]
 }

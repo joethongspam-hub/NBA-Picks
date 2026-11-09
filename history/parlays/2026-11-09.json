@@ -2,40 +2,40 @@
  {
   "legs": [
    {
-    "game_id": "401909954",
-    "game": "WSH @ DET",
-    "player": "Ausar Thompson",
-    "player_id": "4684742",
-    "team": "DET",
-    "opp": "WSH",
-    "stat": "PTS",
+    "game_id": "401909959",
+    "game": "NO @ GS",
+    "player": "Draymond Green",
+    "player_id": "6589",
+    "team": "GS",
+    "opp": "NO",
+    "stat": "PR",
     "side": "UNDER",
-    "line": 10.5,
-    "price": -105,
-    "prob": 0.581,
-    "edge": 0.069,
+    "line": 11.5,
+    "price": -112,
+    "prob": 0.582,
+    "edge": 0.053,
     "grade": "B",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
-      10.5,
-      -105
+      11.5,
+      -112
      ]
     },
-    "projection": 9.3,
+    "projection": 9.9,
     "dist": {
      "k": "normal",
-     "sd": 3.132
+     "sd": 4.373
     }
    }
   ],
-  "hit": 0.581,
-  "payout": 1.95,
-  "odds": -105,
-  "ev": 0.134,
+  "hit": 0.582,
+  "payout": 1.89,
+  "odds": -112,
+  "ev": 0.102,
   "type": "double",
   "label": "Double up",
-  "made": "2026-11-09T11:11:42.422472-05:00"
+  "made": "2026-11-09T12:38:57.476513-05:00"
  },
  {
   "legs": [
@@ -49,21 +49,21 @@
     "stat": "PR",
     "side": "UNDER",
     "line": 36.5,
-    "price": -118,
-    "prob": 0.667,
-    "edge": 0.126,
+    "price": -116,
+    "prob": 0.665,
+    "edge": 0.128,
     "grade": "B",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
       36.5,
-      -118
+      -116
      ]
     },
     "projection": 30.6,
     "dist": {
      "k": "normal",
-     "sd": 7.879
+     "sd": 7.88
     }
    },
    {
@@ -90,7 +90,7 @@
     "projection": 29.5,
     "dist": {
      "k": "normal",
-     "sd": 9.257
+     "sd": 9.258
     }
    },
    {
@@ -103,15 +103,15 @@
     "stat": "PA",
     "side": "OVER",
     "line": 12.5,
-    "price": -127,
-    "prob": 0.617,
-    "edge": 0.058,
+    "price": -124,
+    "prob": 0.615,
+    "edge": 0.061,
     "grade": "B",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
       12.5,
-      -127
+      -124
      ]
     },
     "projection": 14.5,
@@ -157,36 +157,62 @@
     "stat": "PR",
     "side": "UNDER",
     "line": 11.5,
-    "price": -109,
-    "prob": 0.578,
-    "edge": 0.057,
+    "price": -112,
+    "prob": 0.582,
+    "edge": 0.053,
     "grade": "B",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
       11.5,
-      -109
+      -112
+     ]
+    },
+    "projection": 9.9,
+    "dist": {
+     "k": "normal",
+     "sd": 4.373
+    }
+   },
+   {
+    "game_id": "401909952",
+    "game": "LAL @ ATL",
+    "player": "Ziaire Williams",
+    "player_id": "4433137",
+    "team": "LAL",
+    "opp": "ATL",
+    "stat": "PTS",
+    "side": "OVER",
+    "line": 8.5,
+    "price": -101,
+    "prob": 0.555,
+    "edge": 0.053,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      8.5,
+      -101
      ]
     },
     "projection": 10.0,
     "dist": {
      "k": "normal",
-     "sd": 4.375
+     "sd": 5.486
     }
    }
   ],
-  "hit": 0.0933,
-  "payout": 21.45,
-  "odds": 2045,
-  "ev": 1.001,
+  "hit": 0.0518,
+  "payout": 42.92,
+  "odds": 4192,
+  "ev": 1.223,
   "type": "allgames",
   "label": "One per game",
   "missing": [
-   "401909952",
    "401909953",
    "401909956"
   ],
   "games_total": 8,
-  "made": "2026-11-09T11:11:42.422472-05:00"
+  "made": "2026-11-09T12:38:57.476513-05:00"
  }
 ]

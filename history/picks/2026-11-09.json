@@ -14,7 +14,7 @@
   "projection": 29.5,
   "prob": 0.646,
   "edge": 0.107,
-  "score": 8.5,
+  "score": 8.48,
   "grade": "B",
   "hit_l5": "2/5",
   "hit_l10": "7/10",
@@ -45,7 +45,7 @@
   },
   "dist": {
    "k": "normal",
-   "sd": 9.257
+   "sd": 9.258
   }
  },
  {
@@ -59,12 +59,12 @@
   "side": "OVER",
   "line": 2.5,
   "line_source": "DraftKings",
-  "price": 141,
+  "price": 135,
   "projection": 2.8,
-  "prob": 0.499,
-  "edge": 0.084,
-  "score": 8.02,
-  "grade": "A",
+  "prob": 0.503,
+  "edge": 0.078,
+  "score": 7.42,
+  "grade": "B",
   "hit_l5": "4/5",
   "hit_l10": "5/10",
   "hit_season": "5/11",
@@ -87,7 +87,7 @@
   "books": {
    "DraftKings": [
     2.5,
-    141
+    135
    ]
   },
   "dist": {
@@ -110,7 +110,7 @@
   "projection": 9.3,
   "prob": 0.581,
   "edge": 0.069,
-  "score": 6.65,
+  "score": 6.64,
   "grade": "B",
   "hit_l5": "2/5",
   "hit_l10": "5/10",
@@ -153,11 +153,11 @@
   "side": "UNDER",
   "line": 36.5,
   "line_source": "DraftKings",
-  "price": -118,
+  "price": -116,
   "projection": 30.6,
-  "prob": 0.667,
-  "edge": 0.126,
-  "score": 6.03,
+  "prob": 0.665,
+  "edge": 0.128,
+  "score": 6.14,
   "grade": "B",
   "hit_l5": "4/5",
   "hit_l10": "6/10",
@@ -169,7 +169,7 @@
   "l10_avg": 34.0,
   "reasons": [
    "Projected 30-34 minutes: grade lowered one level (21-25 on real lines)",
-   "Implied team total 105.0 (low vs slate avg 112.8)",
+   "Implied team total 105.0 (low vs slate avg 112.7)",
    "Listed Day-To-Day: Elbow Sprain - Jokic (elbow) is listed as questionable for Monday's game in Houston.",
    "Under hit 6/10 of last 10 at 36.5",
    "Last game: 32 (under the line)",
@@ -183,12 +183,12 @@
   "books": {
    "DraftKings": [
     36.5,
-    -118
+    -116
    ]
   },
   "dist": {
    "k": "normal",
-   "sd": 7.879
+   "sd": 7.88
   }
  },
  {
@@ -206,7 +206,7 @@
   "projection": 13.7,
   "prob": 0.607,
   "edge": 0.059,
-  "score": 5.74,
+  "score": 5.73,
   "grade": "B",
   "hit_l5": "5/5",
   "hit_l10": "8/10",
@@ -248,11 +248,11 @@
   "side": "UNDER",
   "line": 11.5,
   "line_source": "DraftKings",
-  "price": -109,
-  "projection": 10.0,
-  "prob": 0.578,
-  "edge": 0.057,
-  "score": 5.2,
+  "price": -112,
+  "projection": 9.9,
+  "prob": 0.582,
+  "edge": 0.053,
+  "score": 4.89,
   "grade": "B",
   "hit_l5": "4/5",
   "hit_l10": "8/10",
@@ -263,7 +263,7 @@
   "season_avg": 11.2,
   "l10_avg": 8.4,
   "reasons": [
-   "Implied team total 121.0 (high vs slate avg 112.8)",
+   "Implied team total 120.5 (high vs slate avg 112.7)",
    "Under hit 8/10 of last 10 at 11.5",
    "Last game: 8 (under the line)",
    "Last 3 vs NO: 18, 11, 18"
@@ -276,12 +276,60 @@
   "books": {
    "DraftKings": [
     11.5,
-    -109
+    -112
    ]
   },
   "dist": {
    "k": "normal",
-   "sd": 4.375
+   "sd": 4.373
+  }
+ },
+ {
+  "game_id": "401909952",
+  "game": "LAL @ ATL",
+  "player": "Ziaire Williams",
+  "player_id": "4433137",
+  "team": "LAL",
+  "opp": "ATL",
+  "stat": "PTS",
+  "side": "OVER",
+  "line": 8.5,
+  "line_source": "DraftKings",
+  "price": -101,
+  "projection": 10.0,
+  "prob": 0.555,
+  "edge": 0.053,
+  "score": 4.86,
+  "grade": "B",
+  "hit_l5": "4/5",
+  "hit_l10": "8/10",
+  "hit_season": "7/8",
+  "vs_opp": "0/1",
+  "minutes": 21.1,
+  "status": "ACTIVE",
+  "season_avg": 10.6,
+  "l10_avg": 10.7,
+  "reasons": [
+   "Implied team total 118.0 (high vs slate avg 112.7)",
+   "Back-to-back",
+   "Over hit 8/10 of last 10 at 8.5",
+   "Last game: 17 (over the line)",
+   "Last 1 vs ATL: 8"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 17.0,
+  "open_line": 7.5,
+  "open_price": -118,
+  "books": {
+   "DraftKings": [
+    8.5,
+    -101
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 5.486
   }
  },
  {
@@ -295,11 +343,11 @@
   "side": "OVER",
   "line": 12.5,
   "line_source": "DraftKings",
-  "price": -127,
+  "price": -124,
   "projection": 14.5,
-  "prob": 0.617,
-  "edge": 0.058,
-  "score": 3.26,
+  "prob": 0.615,
+  "edge": 0.061,
+  "score": 3.47,
   "grade": "B",
   "hit_l5": "2/5",
   "hit_l10": "5/10",
@@ -310,7 +358,7 @@
   "season_avg": 15.6,
   "l10_avg": 15.0,
   "reasons": [
-   "Implied team total 118.0 (high vs slate avg 112.8)",
+   "Implied team total 118.0 (high vs slate avg 112.7)",
    "Listed Day-To-Day: Groin  - Vassell is questionable for Monday's game against the Suns due to left adductor tightness.",
    "Over hit 5/10 of last 10 at 12.5",
    "Last game: 18 (over the line)",
@@ -324,7 +372,7 @@
   "books": {
    "DraftKings": [
     12.5,
-    -127
+    -124
    ]
   },
   "dist": {
