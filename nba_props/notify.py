@@ -57,6 +57,11 @@ def build_message(sport: str, before: dict | None, after: dict, force: bool = Fa
         dropped = len(old_keys - new_keys)
         lines.append(f"{added} new, {dropped} dropped since last run")
     lines.append(f"{len(new)} picks ({a_count} grade A) · {after.get('line_mode', 'estimated')} lines")
+    du = next((t for t in ((after.get("parlays") or {}).get("tickets") or []) if t["type"] == "double" and not t.get("locked")), None)
+    if du:
+        lines.append(f"Double up {du['odds']:+d}: " + " + ".join(
+            f"{l['player'].split()[-1]} {'O' if l['side'] == 'OVER' else 'U'}{l['line']:g} {STAT_NAMES.get(l['stat'], l['stat'])}"
+            for l in du["legs"]))
     pv = next((t for t in ((after.get("parlays") or {}).get("tickets") or []) if t["type"] == "value" and not t.get("locked")), None)
     if pv:
         lines.append(f"Parlay {pv['odds']:+d}: " + ", ".join(

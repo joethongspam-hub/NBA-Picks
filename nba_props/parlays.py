@@ -137,6 +137,37 @@ def every_game(picks: list[dict], started: set[str], slate: list[str] | None = N
             "games_total": len(open_games) or len(legs)}
 
 
+def double_up(picks: list[dict], started: set[str]) -> dict | None:
+    """A ticket paying close to even money with the highest model hit chance: one leg priced
+    -115..-101, or two legs from different games whose combined odds land between -115 and +120.
+    Legs: graded picks (they already pass every rule) on real lines, priced -400..-101."""
+    pool, seen = [], set()
+    for p in picks:
+        if p.get("locked") or p["game_id"] in started or p.get("line_source") in ("est.", None):
+            continue
+        if p.get("grade") not in ("A", "B", "C"):
+            continue
+        try:
+            pr = int(p["price"])
+        except (TypeError, ValueError):
+            continue
+        k = (p["player_id"], p["stat"], p["side"])
+        if -400 <= pr <= -101 and k not in seen:
+            seen.add(k)
+            pool.append(p)
+    lo, hi = dec(-115), dec(120)
+    best = None
+    options = [(p,) for p in pool] + [c for c in itertools.combinations(pool, 2)
+                                      if c[0]["game_id"] != c[1]["game_id"] and c[0]["player_id"] != c[1]["player_id"]]
+    for legs in options:
+        t = _ticket(legs)
+        if not lo <= t["payout"] <= hi or t["ev"] <= 0:
+            continue
+        if best is None or (t["hit"], -abs(t["payout"] - 2)) > (best["hit"], -abs(best["payout"] - 2)):
+            best = t
+    return {**best, "type": "double", "label": "Double up"} if best else None
+
+
 def update(hist_dir, key: str, picks: list[dict], started: set[str], now: datetime,
            all_games: bool = False, slate: list[str] | None = None, min_prob: float = 0.60) -> list[dict]:
     """Keep a ticket once any of its games has started (locked); otherwise rebuild it."""
@@ -149,8 +180,11 @@ def update(hist_dir, key: str, picks: list[dict], started: set[str], now: dateti
         ag = every_game(picks, started, slate, min_prob)
         if ag:
             fresh["allgames"] = ag
+    du = double_up(picks, started)
+    if du:
+        fresh["double"] = du
     out = []
-    for k, label, *_ in TICKETS + ([("allgames", "One per game")] if all_games else []):
+    for k, label, *_ in [("double", "Double up")] + TICKETS + ([("allgames", "One per game")] if all_games else []):
         p = prior.get(k)
         if p and any(l["game_id"] in started for l in p["legs"]):
             out.append({**p, "locked": True})
@@ -189,7 +223,8 @@ def grade(hist_dir, graded: list[dict]) -> dict:
                          "profit": round(pay - 1, 2) if r in ("WIN", "LOSS") else 0.0})
     done = [x for x in rows if x["result"] in ("WIN", "LOSS")]
     by = {}
-    types = TICKETS + ([("allgames", "One per game")] if any(x["type"] == "allgames" for x in rows) else [])
+    types = ([("double", "Double up")] if any(x["type"] == "double" for x in rows) else []) + TICKETS + \
+        ([("allgames", "One per game")] if any(x["type"] == "allgames" for x in rows) else [])
     for k, label, *_ in types:
         g = [x for x in done if x["type"] == k]
         by[k] = {"label": label, "w": sum(x["result"] == "WIN" for x in g), "l": sum(x["result"] == "LOSS" for x in g),
