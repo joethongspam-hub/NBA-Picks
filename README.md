@@ -120,6 +120,12 @@ The free 500 credits cover the NFL only; NBA and NHL every day need the $30 / 20
 * Assists, and players projected for 30–34 minutes, drop one grade (17–17 and 21–25).
 * NBA parlay legs need a **65%+** model probability (65%+ legs hit 65% vs 57% for 60–65%).
 
+## Confidence bar (Nov 9)
+
+A pick is only graded (and only shown as a top pick or parlay leg) if its price is **minus-money** and the player
+cleared the line on that side in **7+ of his last 10** games. Picks passing it (after the other rules) were 87–38
+(70%) on real lines with the same ROI, while cutting about 40% of the picks.
+
 ## Model report
 
 The Track record tab includes a **model report**, rebuilt every night from graded live picks:

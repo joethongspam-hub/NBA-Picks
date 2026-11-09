@@ -23,7 +23,7 @@ from dataclasses import dataclass, field
 from nba_props.espn import Game, Injury
 import nba_props.model as NM
 from nba_props.model import (DEMOTE, LAST_GAME_NOTE, VIG_PROB, Pick, _nb_cdf, _phi, _short, _to_american,
-                             against_last_game, est_line, market_disagrees, shop)
+                             against_last_game, est_line, market_disagrees, shop, confident, CONF_NOTE)
 from nba_props.odds import PropLine, american_to_prob, norm_name
 
 from .espn_nfl import STAT_FUNCS, NflLine, NflPlayer
@@ -545,6 +545,9 @@ def evaluate(proj: Projection, lines: dict[tuple[str, str], PropLine], season: i
         if against_last_game(p.logs, lambda g: g.get(s), side, line):
             grade, score = "-", 0.0
             reasons.insert(0, LAST_GAME_NOTE)
+        if not confident(price, h10):
+            grade, score = "-", 0.0
+            reasons.insert(0, CONF_NOTE)
         if market_disagrees(real, line, mu):
             grade, score = "-", 0.0
             reasons.insert(0, f"Market strongly disagrees ({real.books} books at {line:g} vs projection {mu:.1f}): "

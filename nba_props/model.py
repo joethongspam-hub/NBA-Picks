@@ -88,6 +88,21 @@ NHL_BLOCKED = {
 LAST_GAME_NOTE = "Goes against his last game: not graded (real-line record 32-57 on these)"
 
 
+CONF_NOTE = "Below the confidence bar (needs a minus-money price and 7+ hits in his last 10 at this line)"
+
+
+def confident(price, h10: tuple[int, int]) -> bool:
+    """Confidence bar (Nov 9): minus-money price and the player cleared this line (on our side)
+    in 70%+ of his last 10 games. Real-line record of picks passing it: 87-38 (70%)."""
+    try:
+        if int(price) >= 0:
+            return False
+    except (TypeError, ValueError):
+        return False
+    hits, n = h10
+    return n >= 5 and hits / n >= 0.7
+
+
 def market_disagrees(real, line: float, mu: float) -> bool:
     """A real multi-book line far from our projection usually means news the model
     can't see (injury, role change, snap limit): trust the market, skip the pick."""
@@ -605,6 +620,9 @@ def evaluate(proj: Projection, stats: list[str], lines: dict[tuple[str, str], Pr
         vs_last = against_last_game(p.logs, lambda g: g.get(s), side, line)
         if vs_last:
             grade, score = "-", 0.0
+        conf = confident(price, h10)
+        if not conf:
+            grade, score = "-", 0.0
         flag = market_disagrees(real, line, mu)
         if flag:
             grade, score = "-", 0.0
@@ -617,6 +635,8 @@ def evaluate(proj: Projection, stats: list[str], lines: dict[tuple[str, str], Pr
             reasons.insert(0, blocked)
         for n in soft:
             reasons.insert(0, n)
+        if not conf:
+            reasons.insert(0, CONF_NOTE)
         if side == "UNDER" and proj.depleted:
             reasons.insert(0, f"{proj.team_abbr} missing {len(proj.depleted)} rotation players "
                               f"({', '.join(_short(n) for n in proj.depleted[:4])}): unders skipped")
