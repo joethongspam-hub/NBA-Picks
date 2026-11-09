@@ -122,7 +122,14 @@ The free 500 credits cover the NFL only; NBA and NHL every day need the $30 / 20
 * Assists, and players projected for 30–34 minutes, drop one grade (17–17 and 21–25).
 * NBA parlay legs need a **65%+** model probability (65%+ legs hit 65% vs 57% for 60–65%).
 
-## Confidence bar (Nov 9)
+## NBA: grades A and B only (Nov 9, replaces the confidence bar for the NBA)
+
+NBA picks are shown only at grade A or B; grade C is not graded. A combined backtest of the live real-line picks
+(Nov 2–8) showed the confidence bar halved volume without raising the win rate (45–28, 61.6%, +10.5u), while
+grades A/B after the other rules went 79–45 (63.7%, +27.7u) and grade C went 16–14. The October backtest agreed
+that grade C was the weak spot (17–18). NFL and NHL still use the confidence bar below.
+
+## Confidence bar (Nov 9, NFL and NHL)
 
 A pick is only graded (and only shown as a top pick or parlay leg) if its price is **minus-money** and the player
 cleared the line on that side in **7+ of his last 10** games. Picks passing it (after the other rules) were 87–38
