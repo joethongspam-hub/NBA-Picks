@@ -10,12 +10,12 @@
   "side": "UNDER",
   "line": 0.5,
   "line_source": "DraftKings",
-  "price": -295,
+  "price": -310,
   "projection": 0.14,
-  "prob": 0.803,
-  "edge": 0.056,
-  "score": 5.61,
-  "grade": "B",
+  "prob": 0.806,
+  "edge": 0.05,
+  "score": 5.0,
+  "grade": "C",
   "hit_l5": "5/5",
   "hit_l10": "10/10",
   "hit_season": "15/18",
@@ -26,7 +26,7 @@
   "l10_avg": 0.0,
   "reasons": [
    "Opposing goalie Tristan Jarry (0.894 sv%): goals easier (+6%)",
-   "Implied team goals 2.99 (low vs avg 3.25)",
+   "Implied team goals 2.95 (low vs avg 3.25)",
    "Under hit 10/10 of last 10 at 0.5",
    "Last game: 0 (under the line)",
    "Last 1 vs EDM: 0"
@@ -39,12 +39,12 @@
   "books": {
    "DraftKings": [
     0.5,
-    -295
+    -310
    ]
   },
   "dist": {
    "k": "count",
-   "var": 0.145
+   "var": 0.143
   }
  },
  {
@@ -58,11 +58,11 @@
   "side": "OVER",
   "line": 1.5,
   "line_source": "DraftKings",
-  "price": -130,
-  "projection": 2.35,
-  "prob": 0.615,
-  "edge": 0.05,
-  "score": 4.97,
+  "price": -135,
+  "projection": 2.37,
+  "prob": 0.622,
+  "edge": 0.048,
+  "score": 4.76,
   "grade": "C",
   "hit_l5": "3/5",
   "hit_l10": "7/10",
@@ -73,7 +73,7 @@
   "season_avg": 2.26,
   "l10_avg": 2.4,
   "reasons": [
-   "Implied team goals 3.51 (high vs avg 3.25)",
+   "Implied team goals 3.55 (high vs avg 3.25)",
    "Over hit 7/10 of last 10 at 1.5",
    "Last game: 3 (over the line)",
    "Last 3 vs NYR: 2, 0, 1"
@@ -86,12 +86,12 @@
   "books": {
    "DraftKings": [
     1.5,
-    -130
+    -135
    ]
   },
   "dist": {
    "k": "count",
-   "var": 2.417
+   "var": 2.44
   }
  },
  {
@@ -141,6 +141,52 @@
   }
  },
  {
+  "game_id": "401892682",
+  "game": "NYI @ SJ",
+  "player": "Collin Graf",
+  "player_id": "5136607",
+  "team": "SJ",
+  "opp": "NYI",
+  "stat": "PTS",
+  "side": "UNDER",
+  "line": 0.5,
+  "line_source": "DraftKings",
+  "price": -200,
+  "projection": 0.26,
+  "prob": 0.711,
+  "edge": 0.044,
+  "score": 4.39,
+  "grade": "C",
+  "hit_l5": "5/5",
+  "hit_l10": "9/10",
+  "hit_season": "17/19",
+  "vs_opp": "1/2",
+  "minutes": 15.6,
+  "status": "ACTIVE",
+  "season_avg": 0.3,
+  "l10_avg": 0.2,
+  "reasons": [
+   "Under hit 9/10 of last 10 at 0.5",
+   "Last game: 0 (under the line)",
+   "Last 2 vs NYI: 0, 2"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 0.0,
+  "open_line": 0.5,
+  "open_price": -200,
+  "books": {
+   "DraftKings": [
+    0.5,
+    -200
+   ]
+  },
+  "dist": {
+   "k": "count",
+   "var": 0.272
+  }
+ },
+ {
   "game_id": "401892681",
   "game": "PHI @ VAN",
   "player": "Owen Tippett",
@@ -151,11 +197,11 @@
   "side": "UNDER",
   "line": 0.5,
   "line_source": "DraftKings",
-  "price": -340,
+  "price": -350,
   "projection": 0.15,
   "prob": 0.808,
-  "edge": 0.035,
-  "score": 3.39,
+  "edge": 0.031,
+  "score": 2.96,
   "grade": "C",
   "hit_l5": "5/5",
   "hit_l10": "9/10",
@@ -179,7 +225,7 @@
   "books": {
    "DraftKings": [
     0.5,
-    -340
+    -350
    ]
   },
   "dist": {
@@ -200,9 +246,9 @@
   "line_source": "DraftKings",
   "price": -280,
   "projection": 0.2,
-  "prob": 0.77,
-  "edge": 0.033,
-  "score": 2.68,
+  "prob": 0.769,
+  "edge": 0.032,
+  "score": 2.6,
   "grade": "C",
   "hit_l5": "5/5",
   "hit_l10": "9/10",
@@ -213,7 +259,7 @@
   "season_avg": 0.26,
   "l10_avg": 0.1,
   "reasons": [
-   "Implied team goals 3.51 (high vs avg 3.25)",
+   "Implied team goals 3.55 (high vs avg 3.25)",
    "Under hit 9/10 of last 10 at 0.5",
    "Last game: 0 (under the line)",
    "Last 3 vs NYR: 0, 0, 0"
@@ -231,7 +277,7 @@
   },
   "dist": {
    "k": "count",
-   "var": 0.206
+   "var": 0.208
   }
  }
 ]

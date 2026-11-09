@@ -2,39 +2,66 @@
  {
   "legs": [
    {
-    "game_id": "401892681",
-    "game": "PHI @ VAN",
-    "player": "Jake DeBrusk",
-    "player_id": "3900240",
-    "team": "VAN",
-    "opp": "PHI",
+    "game_id": "401892682",
+    "game": "NYI @ SJ",
+    "player": "Collin Graf",
+    "player_id": "5136607",
+    "team": "SJ",
+    "opp": "NYI",
     "stat": "PTS",
     "side": "UNDER",
     "line": 0.5,
-    "price": -110,
-    "prob": 0.569,
-    "edge": 0.045,
+    "price": -200,
+    "prob": 0.711,
+    "edge": 0.044,
     "grade": "C",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
       0.5,
-      -110
+      -200
      ]
     },
-    "projection": 0.48,
+    "projection": 0.26,
     "dist": {
      "k": "count",
-     "var": 0.493
+     "var": 0.272
+    }
+   },
+   {
+    "game_id": "401892681",
+    "game": "PHI @ VAN",
+    "player": "Owen Tippett",
+    "player_id": "4392072",
+    "team": "PHI",
+    "opp": "VAN",
+    "stat": "AST",
+    "side": "UNDER",
+    "line": 0.5,
+    "price": -350,
+    "prob": 0.808,
+    "edge": 0.031,
+    "grade": "C",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      0.5,
+      -350
+     ]
+    },
+    "projection": 0.15,
+    "dist": {
+     "k": "count",
+     "var": 0.156
     }
    }
   ],
-  "hit": 0.569,
-  "payout": 1.91,
-  "odds": -110,
-  "ev": 0.086,
+  "hit": 0.5745,
+  "payout": 1.93,
+  "odds": -108,
+  "ev": 0.108,
   "type": "double",
   "label": "Double up",
-  "made": "2026-11-09T10:41:51.942155-05:00"
+  "made": "2026-11-09T12:46:32.073271-05:00"
  }
 ]
