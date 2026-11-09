@@ -3043,6 +3043,4731 @@
    "actual_min": 9.0,
    "week": "2026-W09",
    "date": "2026-W09"
+  },
+  {
+   "game_id": "401873050",
+   "game": "TB @ CHI",
+   "player": "Luther Burden III",
+   "player_id": "4685278",
+   "team": "CHI",
+   "opp": "TB",
+   "stat": "REC_YDS",
+   "side": "UNDER",
+   "line": 65.5,
+   "line_source": "6 books",
+   "price": -110,
+   "projection": 49.3,
+   "prob": 0.651,
+   "edge": 0.127,
+   "score": 12.72,
+   "grade": "A",
+   "hit_l5": "3/5",
+   "hit_l10": "8/10",
+   "hit_season": "6/8",
+   "vs_opp": "0/0",
+   "minutes": 6.3,
+   "status": "ACTIVE",
+   "season_avg": 59.7,
+   "l10_avg": 82.0,
+   "reasons": [
+    "Weather: wind 8 mph: passing trimmed 1%",
+    "Implied team total 26.8 (high vs avg 22.8)",
+    "Favorite by 6: expect more rushing",
+    "Under hit 3/5 last 5, 8/10 last 10 at 65.5",
+    "Last game: 56 (under the line)"
+   ],
+   "actual": 97.0,
+   "result": "LOSS",
+   "last_game": 56.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     65.5,
+     -110
+    ],
+    "FanDuel": [
+     65.5,
+     -113
+    ],
+    "BetOnline.ag": [
+     65.5,
+     -114
+    ],
+    "BetRivers": [
+     64.5,
+     -113
+    ],
+    "BetMGM": [
+     61.5,
+     -115
+    ],
+    "Bovada": [
+     65.5,
+     -115
+    ]
+   },
+   "dist": {
+    "k": "gamma",
+    "cv": 0.616
+   },
+   "actual_min": 9.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873050",
+   "game": "TB @ CHI",
+   "player": "Colston Loveland",
+   "player_id": "4723086",
+   "team": "CHI",
+   "opp": "TB",
+   "stat": "REC",
+   "side": "UNDER",
+   "line": 5.5,
+   "line_source": "6 books",
+   "price": -123,
+   "projection": 4.0,
+   "prob": 0.681,
+   "edge": 0.129,
+   "score": 9.03,
+   "grade": "B",
+   "hit_l5": "1/5",
+   "hit_l10": "5/10",
+   "hit_season": "4/8",
+   "vs_opp": "0/0",
+   "minutes": 5.9,
+   "status": "ACTIVE",
+   "season_avg": 4.0,
+   "l10_avg": 5.5,
+   "reasons": [
+    "Goes against his last game: grade lowered one level (live record 42% on these)",
+    "Weather: wind 8 mph: passing trimmed 1%",
+    "Favorite by 6: expect more rushing",
+    "Under hit 1/5 last 5, 5/10 last 10 at 5.5",
+    "Last game: 7 (over the line)"
+   ],
+   "actual": 4.0,
+   "result": "WIN",
+   "last_game": 7.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     5.5,
+     -123
+    ],
+    "FanDuel": [
+     5.5,
+     -130
+    ],
+    "BetOnline.ag": [
+     5.5,
+     -132
+    ],
+    "BetMGM": [
+     5.5,
+     -150
+    ],
+    "Bovada": [
+     5.5,
+     -125
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 4.342
+   },
+   "actual_min": 6.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873050",
+   "game": "TB @ CHI",
+   "player": "D'Andre Swift",
+   "player_id": "4259545",
+   "team": "CHI",
+   "opp": "TB",
+   "stat": "REC",
+   "side": "UNDER",
+   "line": 2.5,
+   "line_source": "6 books",
+   "price": 120,
+   "projection": 2.4,
+   "prob": 0.521,
+   "edge": 0.067,
+   "score": 6.67,
+   "grade": "B",
+   "hit_l5": "2/5",
+   "hit_l10": "6/10",
+   "hit_season": "4/8",
+   "vs_opp": "0/0",
+   "minutes": 20.6,
+   "status": "ACTIVE",
+   "season_avg": 2.7,
+   "l10_avg": 3.5,
+   "reasons": [
+    "Weather: wind 8 mph: passing trimmed 1%",
+    "Favorite by 6: expect more rushing",
+    "Under hit 2/5 last 5, 6/10 last 10 at 2.5",
+    "Last game: 2 (under the line)"
+   ],
+   "actual": 0.0,
+   "result": "WIN",
+   "last_game": 2.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     2.5,
+     119
+    ],
+    "FanDuel": [
+     2.5,
+     112
+    ],
+    "BetOnline.ag": [
+     2.5,
+     119
+    ],
+    "BetMGM": [
+     2.5,
+     105
+    ],
+    "Bovada": [
+     2.5,
+     120
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 2.518
+   },
+   "actual_min": 13.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873050",
+   "game": "TB @ CHI",
+   "player": "Chris Godwin Jr.",
+   "player_id": "3116165",
+   "team": "TB",
+   "opp": "CHI",
+   "stat": "REC",
+   "side": "UNDER",
+   "line": 3.5,
+   "line_source": "6 books",
+   "price": -104,
+   "projection": 3.1,
+   "prob": 0.57,
+   "edge": 0.06,
+   "score": 6.02,
+   "grade": "B",
+   "hit_l5": "2/5",
+   "hit_l10": "5/10",
+   "hit_season": "4/8",
+   "vs_opp": "0/0",
+   "minutes": 5.0,
+   "status": "ACTIVE",
+   "season_avg": 3.5,
+   "l10_avg": 2.8,
+   "reasons": [
+    "Weather: wind 8 mph: passing trimmed 1%",
+    "Underdog by 6: expect more passing",
+    "Under hit 2/5 last 5, 5/10 last 10 at 3.5",
+    "Last game: 0 (under the line)"
+   ],
+   "actual": 2.0,
+   "result": "WIN",
+   "last_game": 0.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     3.5,
+     -106
+    ],
+    "FanDuel": [
+     3.5,
+     -104
+    ],
+    "BetOnline.ag": [
+     3.5,
+     -104
+    ],
+    "BetMGM": [
+     3.5,
+     -110
+    ],
+    "Bovada": [
+     3.5,
+     -105
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 3.249
+   },
+   "actual_min": 4.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873050",
+   "game": "TB @ CHI",
+   "player": "Baker Mayfield",
+   "player_id": "3052587",
+   "team": "TB",
+   "opp": "CHI",
+   "stat": "PASS_YDS",
+   "side": "UNDER",
+   "line": 210.5,
+   "line_source": "6 books",
+   "price": -111,
+   "projection": 193.8,
+   "prob": 0.58,
+   "edge": 0.054,
+   "score": 5.41,
+   "grade": "B",
+   "hit_l5": "3/5",
+   "hit_l10": "6/10",
+   "hit_season": "3/5",
+   "vs_opp": "0/0",
+   "minutes": 29.5,
+   "status": "ACTIVE",
+   "season_avg": 172.0,
+   "l10_avg": 115.8,
+   "reasons": [
+    "Weather: wind 8 mph: passing trimmed 1%",
+    "Implied team total 20.8 (low vs avg 22.8)",
+    "Underdog by 6: expect more passing",
+    "Under hit 3/5 last 5, 6/10 last 10 at 210.5",
+    "Last game: 0 (under the line)"
+   ],
+   "actual": 243.0,
+   "result": "LOSS",
+   "last_game": 0.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     210.5,
+     -111
+    ],
+    "FanDuel": [
+     209.5,
+     -113
+    ],
+    "BetOnline.ag": [
+     211.5,
+     -120
+    ],
+    "BetRivers": [
+     211.5,
+     -114
+    ],
+    "BetMGM": [
+     209.5,
+     -115
+    ],
+    "Bovada": [
+     210.5,
+     -115
+    ]
+   },
+   "dist": {
+    "k": "gamma",
+    "cv": 0.388
+   },
+   "actual_min": 32.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873050",
+   "game": "TB @ CHI",
+   "player": "Bucky Irving",
+   "player_id": "4596448",
+   "team": "TB",
+   "opp": "CHI",
+   "stat": "REC_YDS",
+   "side": "UNDER",
+   "line": 14.5,
+   "line_source": "6 books",
+   "price": -108,
+   "projection": 14.9,
+   "prob": 0.567,
+   "edge": 0.048,
+   "score": 4.8,
+   "grade": "C",
+   "hit_l5": "5/5",
+   "hit_l10": "9/10",
+   "hit_season": "7/8",
+   "vs_opp": "0/0",
+   "minutes": 19.9,
+   "status": "ACTIVE",
+   "season_avg": 15.7,
+   "l10_avg": 4.2,
+   "reasons": [
+    "Weather: wind 8 mph: passing trimmed 1%",
+    "Implied team total 20.8 (low vs avg 22.8)",
+    "Underdog by 6: expect more passing",
+    "Under hit 5/5 last 5, 9/10 last 10 at 14.5",
+    "Last game: 0 (under the line)"
+   ],
+   "actual": 28.0,
+   "result": "LOSS",
+   "last_game": 0.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     14.5,
+     -108
+    ],
+    "FanDuel": [
+     13.5,
+     -113
+    ],
+    "BetOnline.ag": [
+     14.5,
+     -110
+    ],
+    "BetRivers": [
+     15.5,
+     -114
+    ],
+    "BetMGM": [
+     13.5,
+     -110
+    ],
+    "Bovada": [
+     14.5,
+     -110
+    ]
+   },
+   "dist": {
+    "k": "gamma",
+    "cv": 0.974
+   },
+   "actual_min": 25.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873050",
+   "game": "TB @ CHI",
+   "player": "Kenny Gainwell",
+   "player_id": "4371733",
+   "team": "TB",
+   "opp": "CHI",
+   "stat": "REC",
+   "side": "OVER",
+   "line": 1.5,
+   "line_source": "6 books",
+   "price": -157,
+   "projection": 2.7,
+   "prob": 0.676,
+   "edge": 0.065,
+   "score": 4.56,
+   "grade": "C",
+   "hit_l5": "2/5",
+   "hit_l10": "6/10",
+   "hit_season": "4/8",
+   "vs_opp": "1/1",
+   "minutes": 10.2,
+   "status": "ACTIVE",
+   "season_avg": 2.4,
+   "l10_avg": 1.0,
+   "reasons": [
+    "Goes against his last game: grade lowered one level (live record 42% on these)",
+    "Weather: wind 8 mph: passing trimmed 1%",
+    "Underdog by 6: expect more passing",
+    "Over hit 2/5 last 5, 6/10 last 10 at 1.5",
+    "Last game: 0 (under the line)",
+    "Last 1 vs CHI: 6"
+   ],
+   "actual": 3.0,
+   "result": "WIN",
+   "last_game": 0.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     1.5,
+     -169
+    ],
+    "FanDuel": [
+     1.5,
+     -172
+    ],
+    "BetOnline.ag": [
+     1.5,
+     -167
+    ],
+    "BetRivers": [
+     1.5,
+     -157
+    ],
+    "BetMGM": [
+     1.5,
+     -160
+    ],
+    "Bovada": [
+     1.5,
+     -170
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 2.79
+   },
+   "actual_min": 8.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873050",
+   "game": "TB @ CHI",
+   "player": "Cade Otton",
+   "player_id": "4243331",
+   "team": "TB",
+   "opp": "CHI",
+   "stat": "REC_YDS",
+   "side": "UNDER",
+   "line": 29.5,
+   "line_source": "5 books",
+   "price": -109,
+   "projection": 28.9,
+   "prob": 0.564,
+   "edge": 0.042,
+   "score": 4.23,
+   "grade": "C",
+   "hit_l5": "4/5",
+   "hit_l10": "5/10",
+   "hit_season": "5/8",
+   "vs_opp": "0/0",
+   "minutes": 4.1,
+   "status": "ACTIVE",
+   "season_avg": 27.4,
+   "l10_avg": 7.2,
+   "reasons": [
+    "Weather: wind 8 mph: passing trimmed 1%",
+    "CHI allows receiving yards to TEs (+7%)",
+    "Implied team total 20.8 (low vs avg 22.8)",
+    "Underdog by 6: expect more passing",
+    "Under hit 4/5 last 5, 5/10 last 10 at 29.5",
+    "Last game: 0 (under the line)"
+   ],
+   "actual": 25.0,
+   "result": "WIN",
+   "last_game": 0.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     29.5,
+     -109
+    ],
+    "FanDuel": [
+     28.5,
+     -113
+    ],
+    "BetOnline.ag": [
+     27.5,
+     -114
+    ],
+    "BetMGM": [
+     29.5,
+     -115
+    ],
+    "Bovada": [
+     29.5,
+     -110
+    ]
+   },
+   "dist": {
+    "k": "gamma",
+    "cv": 0.762
+   },
+   "actual_min": 8.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873050",
+   "game": "TB @ CHI",
+   "player": "Emeka Egbuka",
+   "player_id": "4567750",
+   "team": "TB",
+   "opp": "CHI",
+   "stat": "REC",
+   "side": "OVER",
+   "line": 3.5,
+   "line_source": "6 books",
+   "price": -114,
+   "projection": 4.4,
+   "prob": 0.594,
+   "edge": 0.061,
+   "score": 3.66,
+   "grade": "B",
+   "hit_l5": "3/5",
+   "hit_l10": "5/10",
+   "hit_season": "4/6",
+   "vs_opp": "0/0",
+   "minutes": 8.4,
+   "status": "QUESTIONABLE",
+   "season_avg": 4.3,
+   "l10_avg": 5.0,
+   "reasons": [
+    "Weather: wind 8 mph: passing trimmed 1%",
+    "Listed Questionable: Foot Not Specified - Egbuka (foot), who is listed as questionable for Sunday's game at Chicago, is slated to return to action, Tom Pelissero of Netflix reports.",
+    "Underdog by 6: expect more passing",
+    "Over hit 3/5 last 5, 5/10 last 10 at 3.5",
+    "Last game: 7 (over the line)"
+   ],
+   "actual": 3.0,
+   "result": "LOSS",
+   "last_game": 7.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     3.5,
+     -137
+    ],
+    "FanDuel": [
+     3.5,
+     -114
+    ],
+    "BetOnline.ag": [
+     3.5,
+     -135
+    ],
+    "BetRivers": [
+     3.5,
+     -150
+    ],
+    "BetMGM": [
+     3.5,
+     -145
+    ],
+    "Bovada": [
+     3.5,
+     -135
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 4.653
+   },
+   "actual_min": 6.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873050",
+   "game": "TB @ CHI",
+   "player": "Ted Hurst III",
+   "player_id": "5220680",
+   "team": "TB",
+   "opp": "CHI",
+   "stat": "REC_YDS",
+   "side": "UNDER",
+   "line": 22.5,
+   "line_source": "6 books",
+   "price": -114,
+   "projection": 22.3,
+   "prob": 0.564,
+   "edge": 0.031,
+   "score": 3.15,
+   "grade": "C",
+   "hit_l5": "3/5",
+   "hit_l10": "3/8",
+   "hit_season": "3/8",
+   "vs_opp": "0/0",
+   "minutes": 3.0,
+   "status": "ACTIVE",
+   "season_avg": 21.0,
+   "l10_avg": 10.0,
+   "reasons": [
+    "Weather: wind 8 mph: passing trimmed 1%",
+    "Implied team total 20.8 (low vs avg 22.8)",
+    "Underdog by 6: expect more passing",
+    "Under hit 3/5 last 5, 3/8 last 10 at 22.5",
+    "Last game: 0 (under the line)"
+   ],
+   "actual": 0.0,
+   "result": "WIN",
+   "last_game": 0.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     22.5,
+     -114
+    ],
+    "FanDuel": [
+     23.5,
+     -113
+    ],
+    "BetOnline.ag": [
+     22.5,
+     -114
+    ],
+    "BetRivers": [
+     20.5,
+     -115
+    ],
+    "BetMGM": [
+     22.5,
+     -120
+    ],
+    "Bovada": [
+     22.5,
+     -115
+    ]
+   },
+   "dist": {
+    "k": "gamma",
+    "cv": 0.756
+   },
+   "actual_min": 1.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873044",
+   "game": "NYG @ PHI",
+   "player": "Devin Singletary",
+   "player_id": "4040761",
+   "team": "NYG",
+   "opp": "PHI",
+   "stat": "RUSH_REC_YDS",
+   "side": "OVER",
+   "line": 34.5,
+   "line_source": "est.",
+   "price": 128,
+   "projection": 65.2,
+   "prob": 0.641,
+   "edge": 0.202,
+   "score": 20.25,
+   "grade": "A",
+   "hit_l5": "2/5",
+   "hit_l10": "6/10",
+   "hit_season": "2/4",
+   "vs_opp": "0/2",
+   "minutes": 15.1,
+   "status": "ACTIVE",
+   "season_avg": 34.2,
+   "l10_avg": 33.8,
+   "reasons": [
+    "Weather: wind 10 mph: passing trimmed 2%",
+    "Implied team total 20.8 (low vs avg 22.8)",
+    "Fidone, Skattebo, Tracy out: +7.6 carries",
+    "Over hit 2/5 last 5, 6/10 last 10 at 34.5",
+    "Last game: 55 (over the line)",
+    "Last 2 vs PHI: 28, 10"
+   ],
+   "actual": 39.0,
+   "result": "WIN",
+   "last_game": 55.0,
+   "open_line": null,
+   "open_price": null,
+   "books": null,
+   "dist": {
+    "k": "gamma",
+    "cv": 0.569
+   },
+   "locked": true,
+   "actual_min": 24.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873042",
+   "game": "DET @ MIA",
+   "player": "Ollie Gordon II",
+   "player_id": "4711533",
+   "team": "MIA",
+   "opp": "DET",
+   "stat": "REC",
+   "side": "UNDER",
+   "line": 1.5,
+   "line_source": "6 books",
+   "price": 100,
+   "projection": 0.8,
+   "prob": 0.683,
+   "edge": 0.183,
+   "score": 18.33,
+   "grade": "A",
+   "hit_l5": "3/5",
+   "hit_l10": "8/10",
+   "hit_season": "5/7",
+   "vs_opp": "0/0",
+   "minutes": 11.5,
+   "status": "ACTIVE",
+   "season_avg": 0.7,
+   "l10_avg": 0.8,
+   "reasons": [
+    "Underdog by 6.5: expect more passing",
+    "Tolbert, Wright out: +1.7 carries",
+    "Under hit 3/5 last 5, 8/10 last 10 at 1.5",
+    "Last game: 0 (under the line)"
+   ],
+   "actual": 1.0,
+   "result": "WIN",
+   "last_game": 0.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     1.5,
+     -101
+    ],
+    "FanDuel": [
+     1.5,
+     -108
+    ],
+    "BetOnline.ag": [
+     1.5,
+     -104
+    ],
+    "BetMGM": [
+     1.5,
+     -111
+    ],
+    "Bovada": [
+     1.5,
+     100
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 0.824
+   },
+   "locked": true,
+   "actual_min": 17.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873044",
+   "game": "NYG @ PHI",
+   "player": "J.J. McCarthy",
+   "player_id": "4433970",
+   "team": "NYG",
+   "opp": "PHI",
+   "stat": "PASS_YDS",
+   "side": "UNDER",
+   "line": 211.5,
+   "line_source": "6 books",
+   "price": -112,
+   "projection": 148.5,
+   "prob": 0.724,
+   "edge": 0.196,
+   "score": 13.7,
+   "grade": "B",
+   "hit_l5": "3/5",
+   "hit_l10": "6/10",
+   "hit_season": "1/3",
+   "vs_opp": "0/0",
+   "minutes": 20.4,
+   "status": "ACTIVE",
+   "season_avg": 164.0,
+   "l10_avg": 169.2,
+   "reasons": [
+    "Goes against his last game: grade lowered one level (live record 42% on these)",
+    "Weather: wind 10 mph: passing trimmed 2%",
+    "Implied team total 20.8 (low vs avg 22.8)",
+    "Under hit 3/5 last 5, 6/10 last 10 at 211.5",
+    "Last game: 252 (over the line)"
+   ],
+   "actual": 127.0,
+   "result": "WIN",
+   "last_game": 252.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     211.5,
+     -112
+    ],
+    "FanDuel": [
+     212.5,
+     -113
+    ],
+    "BetOnline.ag": [
+     212.5,
+     -114
+    ],
+    "BetRivers": [
+     200.5,
+     -114
+    ],
+    "BetMGM": [
+     205.5,
+     -115
+    ],
+    "Bovada": [
+     211.5,
+     -115
+    ]
+   },
+   "dist": {
+    "k": "gamma",
+    "cv": 0.367
+   },
+   "locked": true,
+   "actual_min": 19.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873047",
+   "game": "LV @ SF",
+   "player": "Christian McCaffrey",
+   "player_id": "3117251",
+   "team": "SF",
+   "opp": "LV",
+   "stat": "RUSH_REC_YDS",
+   "side": "OVER",
+   "line": 98.5,
+   "line_source": "est.",
+   "price": 113,
+   "projection": 131.1,
+   "prob": 0.6,
+   "edge": 0.13,
+   "score": 13.03,
+   "grade": "A",
+   "hit_l5": "3/5",
+   "hit_l10": "4/10",
+   "hit_season": "3/7",
+   "vs_opp": "0/0",
+   "minutes": 23.3,
+   "status": "ACTIVE",
+   "season_avg": 102.5,
+   "l10_avg": 92.5,
+   "reasons": [
+    "LV allows rushing yards to RBs (+13%)",
+    "Implied team total 30.5 (high vs avg 22.8)",
+    "Favorite by 9.5: expect more rushing",
+    "Evans, Samuel, Kirk out: +1.4 targets",
+    "Over hit 3/5 last 5, 4/10 last 10 at 98.5",
+    "Last game: 100 (over the line)"
+   ],
+   "actual": 87.0,
+   "result": "LOSS",
+   "last_game": 100.0,
+   "open_line": null,
+   "open_price": null,
+   "books": null,
+   "dist": {
+    "k": "gamma",
+    "cv": 0.407
+   },
+   "locked": true,
+   "actual_min": 21.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873045",
+   "game": "NYJ @ KC",
+   "player": "Braelon Allen",
+   "player_id": "4685247",
+   "team": "NYJ",
+   "opp": "KC",
+   "stat": "REC",
+   "side": "OVER",
+   "line": 1.5,
+   "line_source": "4 books",
+   "price": 128,
+   "projection": 2.6,
+   "prob": 0.568,
+   "edge": 0.13,
+   "score": 12.97,
+   "grade": "A",
+   "hit_l5": "4/5",
+   "hit_l10": "6/10",
+   "hit_season": "5/8",
+   "vs_opp": "0/0",
+   "minutes": 15.1,
+   "status": "ACTIVE",
+   "season_avg": 1.6,
+   "l10_avg": 2.8,
+   "reasons": [
+    "Underdog by 9.5: expect more passing",
+    "Over hit 4/5 last 5, 6/10 last 10 at 1.5",
+    "Last game: 2 (over the line)"
+   ],
+   "actual": 2.0,
+   "result": "WIN",
+   "last_game": 2.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     1.5,
+     119
+    ],
+    "FanDuel": [
+     1.5,
+     128
+    ],
+    "BetOnline.ag": [
+     1.5,
+     117
+    ],
+    "Bovada": [
+     1.5,
+     120
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 3.674
+   },
+   "locked": true,
+   "actual_min": 10.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873048",
+   "game": "ARI @ SEA",
+   "player": "Jaxon Smith-Njigba",
+   "player_id": "4430878",
+   "team": "SEA",
+   "opp": "ARI",
+   "stat": "REC",
+   "side": "UNDER",
+   "line": 7.5,
+   "line_source": "6 books",
+   "price": -132,
+   "projection": 5.6,
+   "prob": 0.694,
+   "edge": 0.126,
+   "score": 12.55,
+   "grade": "A",
+   "hit_l5": "3/5",
+   "hit_l10": "4/10",
+   "hit_season": "3/8",
+   "vs_opp": "2/3",
+   "minutes": 10.1,
+   "status": "ACTIVE",
+   "season_avg": 7.6,
+   "l10_avg": 8.0,
+   "reasons": [
+    "Weather: wind 9 mph: passing trimmed 2%",
+    "ARI limits receptions to WRs (-10%)",
+    "Favorite by 8.5: expect more rushing",
+    "Backup QB starting: receiving efficiency trimmed",
+    "Under hit 3/5 last 5, 4/10 last 10 at 7.5",
+    "Last game: 6 (under the line)",
+    "Last 3 vs ARI: 9, 5, 4"
+   ],
+   "actual": 7.0,
+   "result": "WIN",
+   "last_game": 6.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     7.5,
+     -132
+    ],
+    "FanDuel": [
+     6.5,
+     118
+    ],
+    "BetOnline.ag": [
+     7.5,
+     -141
+    ],
+    "BetMGM": [
+     7.5,
+     -155
+    ],
+    "Bovada": [
+     7.5,
+     -135
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 5.982
+   },
+   "locked": true,
+   "actual_min": 10.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873047",
+   "game": "LV @ SF",
+   "player": "Kaelon Black",
+   "player_id": "4696044",
+   "team": "SF",
+   "opp": "LV",
+   "stat": "RUSH_REC_YDS",
+   "side": "OVER",
+   "line": 32.5,
+   "line_source": "est.",
+   "price": 119,
+   "projection": 50.4,
+   "prob": 0.596,
+   "edge": 0.139,
+   "score": 12.2,
+   "grade": "A",
+   "hit_l5": "2/5",
+   "hit_l10": "3/7",
+   "hit_season": "3/7",
+   "vs_opp": "0/0",
+   "minutes": 9.8,
+   "status": "ACTIVE",
+   "season_avg": 33.9,
+   "l10_avg": 31.2,
+   "reasons": [
+    "LV allows rushing yards to RBs (+13%)",
+    "Implied team total 30.5 (high vs avg 22.8)",
+    "Favorite by 9.5: expect more rushing",
+    "Over hit 2/5 last 5, 3/7 last 10 at 32.5",
+    "Last game: 59 (over the line)"
+   ],
+   "actual": 70.0,
+   "result": "WIN",
+   "last_game": 59.0,
+   "open_line": null,
+   "open_price": null,
+   "books": null,
+   "dist": {
+    "k": "gamma",
+    "cv": 0.559
+   },
+   "locked": true,
+   "actual_min": 11.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873042",
+   "game": "DET @ MIA",
+   "player": "Malik Willis",
+   "player_id": "4242512",
+   "team": "MIA",
+   "opp": "DET",
+   "stat": "PASS_ATT",
+   "side": "OVER",
+   "line": 21.5,
+   "line_source": "est.",
+   "price": -113,
+   "projection": 25.8,
+   "prob": 0.65,
+   "edge": 0.119,
+   "score": 11.92,
+   "grade": "A",
+   "hit_l5": "3/5",
+   "hit_l10": "5/10",
+   "hit_season": "5/7",
+   "vs_opp": "0/0",
+   "minutes": 25.8,
+   "status": "ACTIVE",
+   "season_avg": 19.8,
+   "l10_avg": 24.2,
+   "reasons": [
+    "Underdog by 6.5: expect more passing",
+    "Over hit 3/5 last 5, 5/10 last 10 at 21.5",
+    "Last game: 32 (over the line)"
+   ],
+   "actual": 25.0,
+   "result": "WIN",
+   "last_game": 32.0,
+   "open_line": null,
+   "open_price": null,
+   "books": null,
+   "dist": {
+    "k": "normal",
+    "sd": 6.589
+   },
+   "locked": true,
+   "actual_min": 25.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873048",
+   "game": "ARI @ SEA",
+   "player": "Jadarian Price",
+   "player_id": "4685512",
+   "team": "SEA",
+   "opp": "ARI",
+   "stat": "RUSH_YDS",
+   "side": "UNDER",
+   "line": 54.5,
+   "line_source": "6 books",
+   "price": -111,
+   "projection": 34.2,
+   "prob": 0.706,
+   "edge": 0.18,
+   "score": 11.27,
+   "grade": "A",
+   "hit_l5": "5/5",
+   "hit_l10": "5/5",
+   "hit_season": "5/5",
+   "vs_opp": "1/1",
+   "minutes": 10.1,
+   "status": "ACTIVE",
+   "season_avg": 29.6,
+   "l10_avg": 24.0,
+   "reasons": [
+    "Weather: wind 9 mph: passing trimmed 2%",
+    "Favorite by 8.5: expect more rushing",
+    "Backup QB starting: receiving efficiency trimmed",
+    "Under hit 5/5 last 5, 5/5 last 10 at 54.5",
+    "Last game: 29 (under the line)",
+    "Last 1 vs ARI: 52"
+   ],
+   "actual": 24.0,
+   "result": "WIN",
+   "last_game": 29.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     54.5,
+     -111
+    ],
+    "FanDuel": [
+     55.5,
+     -113
+    ],
+    "BetOnline.ag": [
+     55.5,
+     -111
+    ],
+    "BetRivers": [
+     53.5,
+     -117
+    ],
+    "BetMGM": [
+     55.5,
+     -111
+    ],
+    "Bovada": [
+     54.5,
+     -115
+    ]
+   },
+   "dist": {
+    "k": "gamma",
+    "cv": 0.621
+   },
+   "locked": true,
+   "actual_min": 13.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873048",
+   "game": "ARI @ SEA",
+   "player": "Trey McBride",
+   "player_id": "4361307",
+   "team": "ARI",
+   "opp": "SEA",
+   "stat": "REC",
+   "side": "OVER",
+   "line": 6.5,
+   "line_source": "6 books",
+   "price": -135,
+   "projection": 9.1,
+   "prob": 0.686,
+   "edge": 0.111,
+   "score": 11.13,
+   "grade": "A",
+   "hit_l5": "5/5",
+   "hit_l10": "10/10",
+   "hit_season": "8/8",
+   "vs_opp": "3/3",
+   "minutes": 12.1,
+   "status": "ACTIVE",
+   "season_avg": 8.0,
+   "l10_avg": 8.2,
+   "reasons": [
+    "Weather: wind 9 mph: passing trimmed 2%",
+    "Underdog by 8.5: expect more passing",
+    "Knight, Bourne, Love out: +1.3 targets",
+    "Over hit 5/5 last 5, 10/10 last 10 at 6.5",
+    "Last game: 7 (over the line)",
+    "Last 3 vs SEA: 8, 9, 7"
+   ],
+   "actual": 7.0,
+   "result": "WIN",
+   "last_game": 7.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     6.5,
+     -140
+    ],
+    "FanDuel": [
+     7.5,
+     112
+    ],
+    "BetOnline.ag": [
+     6.5,
+     -147
+    ],
+    "BetRivers": [
+     7.5,
+     107
+    ],
+    "BetMGM": [
+     6.5,
+     -135
+    ],
+    "Bovada": [
+     6.5,
+     -145
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 11.058
+   },
+   "locked": true,
+   "actual_min": 8.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873048",
+   "game": "ARI @ SEA",
+   "player": "Tory Horton",
+   "player_id": "4597703",
+   "team": "SEA",
+   "opp": "ARI",
+   "stat": "REC",
+   "side": "UNDER",
+   "line": 1.5,
+   "line_source": "6 books",
+   "price": 142,
+   "projection": 1.1,
+   "prob": 0.571,
+   "edge": 0.158,
+   "score": 11.04,
+   "grade": "B",
+   "hit_l5": "4/5",
+   "hit_l10": "7/10",
+   "hit_season": "5/7",
+   "vs_opp": "2/2",
+   "minutes": 2.3,
+   "status": "ACTIVE",
+   "season_avg": 1.3,
+   "l10_avg": 1.0,
+   "reasons": [
+    "Goes against his last game: grade lowered one level (live record 42% on these)",
+    "Weather: wind 9 mph: passing trimmed 2%",
+    "ARI limits receptions to WRs (-10%)",
+    "Favorite by 8.5: expect more rushing",
+    "Backup QB starting: receiving efficiency trimmed",
+    "Under hit 4/5 last 5, 7/10 last 10 at 1.5",
+    "Last game: 3 (over the line)",
+    "Last 2 vs ARI: 0, 1"
+   ],
+   "actual": 2.0,
+   "result": "LOSS",
+   "last_game": 3.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     1.5,
+     136
+    ],
+    "FanDuel": [
+     1.5,
+     142
+    ],
+    "BetOnline.ag": [
+     1.5,
+     133
+    ],
+    "BetMGM": [
+     1.5,
+     125
+    ],
+    "Bovada": [
+     1.5,
+     135
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 1.197
+   },
+   "locked": true,
+   "actual_min": 3.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873041",
+   "game": "DEN @ CAR",
+   "player": "Marvin Mims Jr.",
+   "player_id": "4686472",
+   "team": "DEN",
+   "opp": "CAR",
+   "stat": "REC",
+   "side": "OVER",
+   "line": 1.5,
+   "line_source": "6 books",
+   "price": 140,
+   "projection": 2.1,
+   "prob": 0.525,
+   "edge": 0.109,
+   "score": 10.87,
+   "grade": "A",
+   "hit_l5": "4/5",
+   "hit_l10": "9/10",
+   "hit_season": "4/5",
+   "vs_opp": "0/0",
+   "minutes": 4.0,
+   "status": "ACTIVE",
+   "season_avg": 2.3,
+   "l10_avg": 2.0,
+   "reasons": [
+    "Over hit 4/5 last 5, 9/10 last 10 at 1.5",
+    "Last game: 2 (over the line)"
+   ],
+   "actual": 1.0,
+   "result": "LOSS",
+   "last_game": 2.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     1.5,
+     130
+    ],
+    "FanDuel": [
+     1.5,
+     134
+    ],
+    "BetOnline.ag": [
+     1.5,
+     135
+    ],
+    "BetRivers": [
+     1.5,
+     130
+    ],
+    "BetMGM": [
+     1.5,
+     140
+    ],
+    "Bovada": [
+     1.5,
+     130
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 2.185
+   },
+   "locked": true,
+   "actual_min": 3.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873044",
+   "game": "NYG @ PHI",
+   "player": "Theo Johnson",
+   "player_id": "4429148",
+   "team": "NYG",
+   "opp": "PHI",
+   "stat": "REC",
+   "side": "OVER",
+   "line": 0.5,
+   "line_source": "5 books",
+   "price": -196,
+   "projection": 1.9,
+   "prob": 0.76,
+   "edge": 0.098,
+   "score": 9.82,
+   "grade": "A",
+   "hit_l5": "3/5",
+   "hit_l10": "7/10",
+   "hit_season": "3/5",
+   "vs_opp": "2/2",
+   "minutes": 3.3,
+   "status": "ACTIVE",
+   "season_avg": 1.8,
+   "l10_avg": 0.8,
+   "reasons": [
+    "Weather: wind 10 mph: passing trimmed 2%",
+    "PHI limits receptions to TEs (-8%)",
+    "Over hit 3/5 last 5, 7/10 last 10 at 0.5",
+    "Last game: 2 (over the line)",
+    "Last 2 vs PHI: 3, 2"
+   ],
+   "actual": 0.0,
+   "result": "LOSS",
+   "last_game": 2.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     0.5,
+     -206
+    ],
+    "FanDuel": [
+     0.5,
+     -220
+    ],
+    "BetOnline.ag": [
+     0.5,
+     -196
+    ],
+    "BetRivers": [
+     0.5,
+     -200
+    ],
+    "Bovada": [
+     0.5,
+     -215
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 2.001
+   },
+   "locked": true,
+   "actual_min": 0.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873044",
+   "game": "NYG @ PHI",
+   "player": "Isaiah Likely",
+   "player_id": "4361050",
+   "team": "NYG",
+   "opp": "PHI",
+   "stat": "ANY_TD",
+   "side": "UNDER",
+   "line": 0.5,
+   "line_source": "est.",
+   "price": -142,
+   "projection": 0.3,
+   "prob": 0.673,
+   "edge": 0.086,
+   "score": 8.61,
+   "grade": "A",
+   "hit_l5": "3/5",
+   "hit_l10": "7/10",
+   "hit_season": "4/7",
+   "vs_opp": "0/0",
+   "minutes": 6.7,
+   "status": "ACTIVE",
+   "season_avg": 0.5,
+   "l10_avg": 0.8,
+   "reasons": [
+    "PHI limits anytime TD to TEs (-12%)",
+    "Implied team total 20.8 (low vs avg 22.8)",
+    "Under hit 3/5 last 5, 7/10 last 10 at 0.5",
+    "Last game: 0 (under the line)"
+   ],
+   "actual": 1.0,
+   "result": "LOSS",
+   "last_game": 0.0,
+   "open_line": null,
+   "open_price": null,
+   "books": null,
+   "dist": {
+    "k": "count",
+    "var": 0.315
+   },
+   "locked": true,
+   "actual_min": 6.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873044",
+   "game": "NYG @ PHI",
+   "player": "Hollywood Brown",
+   "player_id": "4241372",
+   "team": "PHI",
+   "opp": "NYG",
+   "stat": "REC",
+   "side": "OVER",
+   "line": 1.5,
+   "line_source": "2 books",
+   "price": 103,
+   "projection": 2.2,
+   "prob": 0.565,
+   "edge": 0.073,
+   "score": 7.28,
+   "grade": "B",
+   "hit_l5": "3/5",
+   "hit_l10": "6/10",
+   "hit_season": "2/3",
+   "vs_opp": "1/1",
+   "minutes": 4.2,
+   "status": "ACTIVE",
+   "season_avg": 2.3,
+   "l10_avg": 1.8,
+   "reasons": [
+    "Weather: wind 10 mph: passing trimmed 2%",
+    "NYG limits receptions to WRs (-6%)",
+    "Backup QB starting: receiving efficiency trimmed",
+    "Over hit 3/5 last 5, 6/10 last 10 at 1.5",
+    "Last game: 2 (over the line)",
+    "Last 1 vs NYG: 4"
+   ],
+   "actual": 1.0,
+   "result": "LOSS",
+   "last_game": 2.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "BetOnline.ag": [
+     1.5,
+     103
+    ],
+    "BetMGM": [
+     1.5,
+     100
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 2.289
+   },
+   "locked": true,
+   "actual_min": 1.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873042",
+   "game": "DET @ MIA",
+   "player": "Kevin Coleman Jr.",
+   "player_id": "4685307",
+   "team": "MIA",
+   "opp": "DET",
+   "stat": "REC",
+   "side": "OVER",
+   "line": 1.5,
+   "line_source": "est.",
+   "price": 136,
+   "projection": 2.1,
+   "prob": 0.517,
+   "edge": 0.093,
+   "score": 8.16,
+   "grade": "A",
+   "hit_l5": "2/5",
+   "hit_l10": "2/7",
+   "hit_season": "2/7",
+   "vs_opp": "0/0",
+   "minutes": 3.4,
+   "status": "ACTIVE",
+   "season_avg": 1.1,
+   "l10_avg": 1.8,
+   "reasons": [
+    "DET allows receptions to WRs (+11%)",
+    "Underdog by 6.5: expect more passing",
+    "Over hit 2/5 last 5, 2/7 last 10 at 1.5",
+    "Last game: 3 (over the line)"
+   ],
+   "actual": 0.0,
+   "result": "LOSS",
+   "last_game": 3.0,
+   "open_line": null,
+   "open_price": null,
+   "books": null,
+   "dist": {
+    "k": "count",
+    "var": 2.459
+   },
+   "locked": true,
+   "actual_min": 1.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873042",
+   "game": "DET @ MIA",
+   "player": "Jameson Williams",
+   "player_id": "4426388",
+   "team": "DET",
+   "opp": "MIA",
+   "stat": "ANY_TD",
+   "side": "UNDER",
+   "line": 0.5,
+   "line_source": "est.",
+   "price": 120,
+   "projection": 0.47,
+   "prob": 0.553,
+   "edge": 0.098,
+   "score": 6.85,
+   "grade": "B",
+   "hit_l5": "2/5",
+   "hit_l10": "7/10",
+   "hit_season": "4/7",
+   "vs_opp": "0/0",
+   "minutes": 5.8,
+   "status": "ACTIVE",
+   "season_avg": 0.6,
+   "l10_avg": 1.2,
+   "reasons": [
+    "Goes against his last game: grade lowered one level (live record 42% on these)",
+    "MIA limits anytime TD to WRs (-7%)",
+    "Implied team total 28.0 (high vs avg 22.8)",
+    "Favorite by 6.5: expect more rushing",
+    "Under hit 2/5 last 5, 7/10 last 10 at 0.5",
+    "Last game: 1 (over the line)"
+   ],
+   "actual": 0.0,
+   "result": "WIN",
+   "last_game": 1.0,
+   "open_line": null,
+   "open_price": null,
+   "books": null,
+   "dist": {
+    "k": "count",
+    "var": 0.491
+   },
+   "locked": true,
+   "actual_min": 3.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873042",
+   "game": "DET @ MIA",
+   "player": "Greg Dulcich",
+   "player_id": "4367209",
+   "team": "MIA",
+   "opp": "DET",
+   "stat": "REC",
+   "side": "UNDER",
+   "line": 3.5,
+   "line_source": "6 books",
+   "price": 116,
+   "projection": 3.4,
+   "prob": 0.514,
+   "edge": 0.051,
+   "score": 3.58,
+   "grade": "C",
+   "hit_l5": "1/5",
+   "hit_l10": "5/10",
+   "hit_season": "3/7",
+   "vs_opp": "0/0",
+   "minutes": 4.1,
+   "status": "ACTIVE",
+   "season_avg": 2.9,
+   "l10_avg": 3.2,
+   "reasons": [
+    "Goes against his last game: grade lowered one level (live record 42% on these)",
+    "DET allows receptions to TEs (+14%)",
+    "Underdog by 6.5: expect more passing",
+    "Under hit 1/5 last 5, 5/10 last 10 at 3.5",
+    "Last game: 4 (over the line)"
+   ],
+   "actual": 2.0,
+   "result": "WIN",
+   "last_game": 4.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     3.5,
+     116
+    ],
+    "FanDuel": [
+     3.5,
+     112
+    ],
+    "BetOnline.ag": [
+     3.5,
+     114
+    ],
+    "BetMGM": [
+     3.5,
+     105
+    ],
+    "Bovada": [
+     3.5,
+     115
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 3.573
+   },
+   "locked": true,
+   "actual_min": 4.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873042",
+   "game": "DET @ MIA",
+   "player": "Amon-Ra St. Brown",
+   "player_id": "4374302",
+   "team": "DET",
+   "opp": "MIA",
+   "stat": "REC_YDS",
+   "side": "UNDER",
+   "line": 76.5,
+   "line_source": "6 books",
+   "price": -109,
+   "projection": 75.4,
+   "prob": 0.554,
+   "edge": 0.033,
+   "score": 3.27,
+   "grade": "C",
+   "hit_l5": "4/5",
+   "hit_l10": "7/10",
+   "hit_season": "5/7",
+   "vs_opp": "0/0",
+   "minutes": 9.8,
+   "status": "ACTIVE",
+   "season_avg": 81.9,
+   "l10_avg": 85.8,
+   "reasons": [
+    "Implied team total 28.0 (high vs avg 22.8)",
+    "Favorite by 6.5: expect more rushing",
+    "Under hit 4/5 last 5, 7/10 last 10 at 76.5",
+    "Last game: 46 (under the line)"
+   ],
+   "actual": 86.0,
+   "result": "LOSS",
+   "last_game": 46.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     78.5,
+     -113
+    ],
+    "FanDuel": [
+     76.5,
+     -113
+    ],
+    "BetOnline.ag": [
+     76.5,
+     -109
+    ],
+    "BetRivers": [
+     73.5,
+     -115
+    ],
+    "BetMGM": [
+     75.5,
+     -115
+    ],
+    "Bovada": [
+     78.5,
+     -115
+    ]
+   },
+   "dist": {
+    "k": "gamma",
+    "cv": 0.634
+   },
+   "locked": true,
+   "actual_min": 10.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873047",
+   "game": "LV @ SF",
+   "player": "Tre Tucker",
+   "player_id": "4428718",
+   "team": "LV",
+   "opp": "SF",
+   "stat": "ANY_TD",
+   "side": "UNDER",
+   "line": 0.5,
+   "line_source": "est.",
+   "price": -152,
+   "projection": 0.31,
+   "prob": 0.674,
+   "edge": 0.07,
+   "score": 7.0,
+   "grade": "B",
+   "hit_l5": "3/5",
+   "hit_l10": "7/10",
+   "hit_season": "5/8",
+   "vs_opp": "0/0",
+   "minutes": 6.5,
+   "status": "ACTIVE",
+   "season_avg": 0.4,
+   "l10_avg": 0.8,
+   "reasons": [
+    "SF limits anytime TD to WRs (-8%)",
+    "Implied team total 21.0 (low vs avg 22.8)",
+    "Underdog by 9.5: expect more passing",
+    "Under hit 3/5 last 5, 7/10 last 10 at 0.5",
+    "Last game: 0 (under the line)"
+   ],
+   "actual": 0.0,
+   "result": "WIN",
+   "last_game": 0.0,
+   "open_line": null,
+   "open_price": null,
+   "books": null,
+   "dist": {
+    "k": "count",
+    "var": 0.33
+   },
+   "locked": true,
+   "actual_min": 8.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873047",
+   "game": "LV @ SF",
+   "player": "Kirk Cousins",
+   "player_id": "14880",
+   "team": "LV",
+   "opp": "SF",
+   "stat": "PASS_ATT",
+   "side": "OVER",
+   "line": 33.5,
+   "line_source": "est.",
+   "price": -108,
+   "projection": 37.7,
+   "prob": 0.612,
+   "edge": 0.092,
+   "score": 6.41,
+   "grade": "B",
+   "hit_l5": "3/5",
+   "hit_l10": "3/10",
+   "hit_season": "3/8",
+   "vs_opp": "0/0",
+   "minutes": 37.7,
+   "status": "ACTIVE",
+   "season_avg": 32.5,
+   "l10_avg": 34.8,
+   "reasons": [
+    "Goes against his last game: grade lowered one level (live record 42% on these)",
+    "Underdog by 9.5: expect more passing",
+    "Over hit 3/5 last 5, 3/10 last 10 at 33.5",
+    "Last game: 26 (under the line)"
+   ],
+   "actual": 32.0,
+   "result": "LOSS",
+   "last_game": 26.0,
+   "open_line": null,
+   "open_price": null,
+   "books": null,
+   "dist": {
+    "k": "normal",
+    "sd": 8.538
+   },
+   "locked": true,
+   "actual_min": 32.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873047",
+   "game": "LV @ SF",
+   "player": "Brock Purdy",
+   "player_id": "4361741",
+   "team": "SF",
+   "opp": "LV",
+   "stat": "PASS_ATT",
+   "side": "UNDER",
+   "line": 31.5,
+   "line_source": "est.",
+   "price": -126,
+   "projection": 29.1,
+   "prob": 0.633,
+   "edge": 0.075,
+   "score": 5.27,
+   "grade": "C",
+   "hit_l5": "4/5",
+   "hit_l10": "8/10",
+   "hit_season": "5/7",
+   "vs_opp": "0/0",
+   "minutes": 29.1,
+   "status": "ACTIVE",
+   "season_avg": 30.5,
+   "l10_avg": 32.0,
+   "reasons": [
+    "Goes against his last game: grade lowered one level (live record 42% on these)",
+    "Favorite by 9.5: expect more rushing",
+    "Under hit 4/5 last 5, 8/10 last 10 at 31.5",
+    "Last game: 40 (over the line)"
+   ],
+   "actual": 25.0,
+   "result": "WIN",
+   "last_game": 40.0,
+   "open_line": null,
+   "open_price": null,
+   "books": null,
+   "dist": {
+    "k": "normal",
+    "sd": 4.539
+   },
+   "locked": true,
+   "actual_min": 25.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873047",
+   "game": "LV @ SF",
+   "player": "George Kittle",
+   "player_id": "3040151",
+   "team": "SF",
+   "opp": "LV",
+   "stat": "REC_YDS",
+   "side": "UNDER",
+   "line": 69.5,
+   "line_source": "6 books",
+   "price": -113,
+   "projection": 60.9,
+   "prob": 0.599,
+   "edge": 0.068,
+   "score": 4.78,
+   "grade": "C",
+   "hit_l5": "2/5",
+   "hit_l10": "5/10",
+   "hit_season": "3/7",
+   "vs_opp": "0/0",
+   "minutes": 7.1,
+   "status": "ACTIVE",
+   "season_avg": 57.8,
+   "l10_avg": 62.8,
+   "reasons": [
+    "Goes against his last game: grade lowered one level (live record 42% on these)",
+    "Implied team total 30.5 (high vs avg 22.8)",
+    "Favorite by 9.5: expect more rushing",
+    "Evans, Samuel, Kirk out: +1.4 targets",
+    "Under hit 2/5 last 5, 5/10 last 10 at 69.5",
+    "Last game: 88 (over the line)"
+   ],
+   "actual": 58.0,
+   "result": "WIN",
+   "last_game": 88.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     70.5,
+     -112
+    ],
+    "FanDuel": [
+     69.5,
+     -113
+    ],
+    "BetOnline.ag": [
+     68.5,
+     -104
+    ],
+    "BetRivers": [
+     69.5,
+     -115
+    ],
+    "BetMGM": [
+     68.5,
+     -115
+    ],
+    "Bovada": [
+     70.5,
+     -115
+    ]
+   },
+   "dist": {
+    "k": "gamma",
+    "cv": 0.596
+   },
+   "locked": true,
+   "actual_min": 7.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873045",
+   "game": "NYJ @ KC",
+   "player": "Geno Smith",
+   "player_id": "15864",
+   "team": "NYJ",
+   "opp": "KC",
+   "stat": "PASS_ATT",
+   "side": "OVER",
+   "line": 30.5,
+   "line_source": "est.",
+   "price": -101,
+   "projection": 34.4,
+   "prob": 0.604,
+   "edge": 0.101,
+   "score": 10.14,
+   "grade": "A",
+   "hit_l5": "1/5",
+   "hit_l10": "3/10",
+   "hit_season": "3/8",
+   "vs_opp": "0/1",
+   "minutes": 34.4,
+   "status": "ACTIVE",
+   "season_avg": 29.9,
+   "l10_avg": 30.5,
+   "reasons": [
+    "Underdog by 9.5: expect more passing",
+    "Over hit 1/5 last 5, 3/10 last 10 at 30.5",
+    "Last game: 32 (over the line)",
+    "Last 1 vs KC: 16"
+   ],
+   "actual": 32.0,
+   "result": "WIN",
+   "last_game": 32.0,
+   "open_line": null,
+   "open_price": null,
+   "books": null,
+   "dist": {
+    "k": "normal",
+    "sd": 7.911
+   },
+   "locked": true,
+   "actual_min": 32.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873045",
+   "game": "NYJ @ KC",
+   "player": "Rashee Rice",
+   "player_id": "4428331",
+   "team": "KC",
+   "opp": "NYJ",
+   "stat": "REC",
+   "side": "UNDER",
+   "line": 4.5,
+   "line_source": "6 books",
+   "price": 120,
+   "projection": 3.8,
+   "prob": 0.57,
+   "edge": 0.115,
+   "score": 8.07,
+   "grade": "B",
+   "hit_l5": "3/5",
+   "hit_l10": "4/10",
+   "hit_season": "3/5",
+   "vs_opp": "0/0",
+   "minutes": 6.0,
+   "status": "ACTIVE",
+   "season_avg": 5.2,
+   "l10_avg": 4.5,
+   "reasons": [
+    "Goes against his last game: grade lowered one level (live record 42% on these)",
+    "Favorite by 9.5: expect more rushing",
+    "Under hit 3/5 last 5, 4/10 last 10 at 4.5",
+    "Last game: 7 (over the line)"
+   ],
+   "actual": 5.0,
+   "result": "LOSS",
+   "last_game": 7.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     5.5,
+     -147
+    ],
+    "FanDuel": [
+     4.5,
+     118
+    ],
+    "BetOnline.ag": [
+     4.5,
+     120
+    ],
+    "BetMGM": [
+     5.5,
+     -150
+    ],
+    "Bovada": [
+     5.5,
+     -150
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 4.001
+   },
+   "locked": true,
+   "actual_min": 7.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873045",
+   "game": "NYJ @ KC",
+   "player": "Patrick Mahomes",
+   "player_id": "3139477",
+   "team": "KC",
+   "opp": "NYJ",
+   "stat": "PASS_TD",
+   "side": "OVER",
+   "line": 1.5,
+   "line_source": "est.",
+   "price": 117,
+   "projection": 2.0,
+   "prob": 0.528,
+   "edge": 0.067,
+   "score": 6.68,
+   "grade": "B",
+   "hit_l5": "3/5",
+   "hit_l10": "6/10",
+   "hit_season": "5/7",
+   "vs_opp": "0/0",
+   "minutes": 32.5,
+   "status": "ACTIVE",
+   "season_avg": 1.7,
+   "l10_avg": 1.2,
+   "reasons": [
+    "NYJ allows passing TDs to QBs (+7%)",
+    "Implied team total 28.5 (high vs avg 22.8)",
+    "Favorite by 9.5: expect more rushing",
+    "Over hit 3/5 last 5, 6/10 last 10 at 1.5",
+    "Last game: 3 (over the line)"
+   ],
+   "actual": 2.0,
+   "result": "WIN",
+   "last_game": 3.0,
+   "open_line": null,
+   "open_price": null,
+   "books": null,
+   "dist": {
+    "k": "count",
+    "var": 2.103
+   },
+   "locked": true,
+   "actual_min": 31.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873045",
+   "game": "NYJ @ KC",
+   "player": "Kenneth Walker III",
+   "player_id": "4567048",
+   "team": "KC",
+   "opp": "NYJ",
+   "stat": "REC_YDS",
+   "side": "UNDER",
+   "line": 18.5,
+   "line_source": "6 books",
+   "price": -110,
+   "projection": 16.8,
+   "prob": 0.59,
+   "edge": 0.066,
+   "score": 6.62,
+   "grade": "B",
+   "hit_l5": "4/5",
+   "hit_l10": "5/10",
+   "hit_season": "5/7",
+   "vs_opp": "0/0",
+   "minutes": 21.6,
+   "status": "ACTIVE",
+   "season_avg": 18.9,
+   "l10_avg": 12.2,
+   "reasons": [
+    "Implied team total 28.5 (high vs avg 22.8)",
+    "Favorite by 9.5: expect more rushing",
+    "Under hit 4/5 last 5, 5/10 last 10 at 18.5",
+    "Last game: 15 (under the line)"
+   ],
+   "actual": 41.0,
+   "result": "LOSS",
+   "last_game": 15.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     18.5,
+     -115
+    ],
+    "FanDuel": [
+     17.5,
+     -113
+    ],
+    "BetOnline.ag": [
+     18.5,
+     -110
+    ],
+    "BetRivers": [
+     19.5,
+     -121
+    ],
+    "BetMGM": [
+     18.5,
+     -115
+    ],
+    "Bovada": [
+     18.5,
+     -120
+    ]
+   },
+   "dist": {
+    "k": "gamma",
+    "cv": 0.775
+   },
+   "locked": true,
+   "actual_min": 22.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873045",
+   "game": "NYJ @ KC",
+   "player": "Omar Cooper Jr.",
+   "player_id": "4723820",
+   "team": "NYJ",
+   "opp": "KC",
+   "stat": "REC",
+   "side": "UNDER",
+   "line": 4.5,
+   "line_source": "6 books",
+   "price": -140,
+   "projection": 2.8,
+   "prob": 0.715,
+   "edge": 0.131,
+   "score": 6.56,
+   "grade": "A",
+   "hit_l5": "2/4",
+   "hit_l10": "2/4",
+   "hit_season": "2/4",
+   "vs_opp": "0/0",
+   "minutes": 4.1,
+   "status": "ACTIVE",
+   "season_avg": 3.0,
+   "l10_avg": 3.0,
+   "reasons": [
+    "Underdog by 9.5: expect more passing",
+    "Wilson, Patrick out: +0.6 targets",
+    "Last game: 0 (under the line)"
+   ],
+   "actual": 8.0,
+   "result": "LOSS",
+   "last_game": 0.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     4.5,
+     -140
+    ],
+    "FanDuel": [
+     4.5,
+     -140
+    ],
+    "BetOnline.ag": [
+     4.5,
+     -141
+    ],
+    "BetMGM": [
+     4.5,
+     -155
+    ],
+    "Bovada": [
+     4.5,
+     -145
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 3.673
+   },
+   "locked": true,
+   "actual_min": 11.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873048",
+   "game": "ARI @ SEA",
+   "player": "Drew Lock",
+   "player_id": "3924327",
+   "team": "SEA",
+   "opp": "ARI",
+   "stat": "PASS_TD",
+   "side": "OVER",
+   "line": 0.5,
+   "line_source": "est.",
+   "price": -108,
+   "projection": 1.5,
+   "prob": 0.659,
+   "edge": 0.14,
+   "score": 9.8,
+   "grade": "B",
+   "hit_l5": "2/5",
+   "hit_l10": "2/10",
+   "hit_season": "2/4",
+   "vs_opp": "1/2",
+   "minutes": 28.5,
+   "status": "ACTIVE",
+   "season_avg": 0.5,
+   "l10_avg": 1.0,
+   "reasons": [
+    "Goes against his last game: grade lowered one level (live record 42% on these)",
+    "Weather: wind 9 mph: passing trimmed 2%",
+    "ARI allows passing TDs to QBs (+9%)",
+    "Favorite by 8.5: expect more rushing",
+    "Darnold out: Drew Lock expected to start",
+    "Over hit 2/5 last 5, 2/10 last 10 at 0.5",
+    "Last game: 0 (under the line)",
+    "Last 2 vs ARI: 3, 0"
+   ],
+   "actual": 1.0,
+   "result": "WIN",
+   "last_game": 0.0,
+   "open_line": null,
+   "open_price": null,
+   "books": null,
+   "dist": {
+    "k": "count",
+    "var": 1.572
+   },
+   "locked": true,
+   "actual_min": 28.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873048",
+   "game": "ARI @ SEA",
+   "player": "Cooper Kupp",
+   "player_id": "2977187",
+   "team": "SEA",
+   "opp": "ARI",
+   "stat": "REC",
+   "side": "UNDER",
+   "line": 2.5,
+   "line_source": "6 books",
+   "price": 104,
+   "projection": 2.1,
+   "prob": 0.578,
+   "edge": 0.088,
+   "score": 8.82,
+   "grade": "A",
+   "hit_l5": "4/5",
+   "hit_l10": "6/10",
+   "hit_season": "6/8",
+   "vs_opp": "2/3",
+   "minutes": 4.0,
+   "status": "ACTIVE",
+   "season_avg": 2.7,
+   "l10_avg": 2.5,
+   "reasons": [
+    "Weather: wind 9 mph: passing trimmed 2%",
+    "ARI limits receptions to WRs (-10%)",
+    "Favorite by 8.5: expect more rushing",
+    "Backup QB starting: receiving efficiency trimmed",
+    "Under hit 4/5 last 5, 6/10 last 10 at 2.5",
+    "Last game: 1 (under the line)",
+    "Last 3 vs ARI: 2, 2, 4"
+   ],
+   "actual": 3.0,
+   "result": "LOSS",
+   "last_game": 1.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     2.5,
+     -101
+    ],
+    "FanDuel": [
+     2.5,
+     104
+    ],
+    "BetOnline.ag": [
+     2.5,
+     100
+    ],
+    "BetMGM": [
+     2.5,
+     -120
+    ],
+    "Bovada": [
+     2.5,
+     100
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 2.237
+   },
+   "locked": true,
+   "actual_min": 4.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873041",
+   "game": "DEN @ CAR",
+   "player": "Troy Franklin",
+   "player_id": "4431280",
+   "team": "DEN",
+   "opp": "CAR",
+   "stat": "REC",
+   "side": "OVER",
+   "line": 0.5,
+   "line_source": "5 books",
+   "price": -196,
+   "projection": 1.9,
+   "prob": 0.757,
+   "edge": 0.095,
+   "score": 9.47,
+   "grade": "A",
+   "hit_l5": "3/5",
+   "hit_l10": "5/10",
+   "hit_season": "5/8",
+   "vs_opp": "0/0",
+   "minutes": 3.3,
+   "status": "ACTIVE",
+   "season_avg": 1.7,
+   "l10_avg": 1.0,
+   "reasons": [
+    "Over hit 3/5 last 5, 5/10 last 10 at 0.5",
+    "Last game: 1 (over the line)"
+   ],
+   "actual": 3.0,
+   "result": "WIN",
+   "last_game": 1.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     1.5,
+     178
+    ],
+    "FanDuel": [
+     0.5,
+     -205
+    ],
+    "BetOnline.ag": [
+     0.5,
+     -196
+    ],
+    "BetRivers": [
+     0.5,
+     -220
+    ],
+    "Bovada": [
+     1.5,
+     175
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 2.003
+   },
+   "locked": true,
+   "actual_min": 4.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873041",
+   "game": "DEN @ CAR",
+   "player": "Jaylen Waddle",
+   "player_id": "4372016",
+   "team": "DEN",
+   "opp": "CAR",
+   "stat": "REC",
+   "side": "UNDER",
+   "line": 4.5,
+   "line_source": "6 books",
+   "price": -125,
+   "projection": 3.6,
+   "prob": 0.635,
+   "edge": 0.079,
+   "score": 7.95,
+   "grade": "B",
+   "hit_l5": "4/5",
+   "hit_l10": "7/10",
+   "hit_season": "6/8",
+   "vs_opp": "0/1",
+   "minutes": 6.3,
+   "status": "ACTIVE",
+   "season_avg": 3.8,
+   "l10_avg": 3.2,
+   "reasons": [
+    "Under hit 4/5 last 5, 7/10 last 10 at 4.5",
+    "Last game: 3 (under the line)",
+    "Last 1 vs CAR: 6"
+   ],
+   "actual": 1.0,
+   "result": "WIN",
+   "last_game": 3.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     4.5,
+     -125
+    ],
+    "FanDuel": [
+     4.5,
+     -132
+    ],
+    "BetOnline.ag": [
+     4.5,
+     -135
+    ],
+    "BetMGM": [
+     4.5,
+     -145
+    ],
+    "Bovada": [
+     4.5,
+     -125
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 3.791
+   },
+   "locked": true,
+   "actual_min": 1.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873041",
+   "game": "DEN @ CAR",
+   "player": "Chuba Hubbard",
+   "player_id": "4241416",
+   "team": "CAR",
+   "opp": "DEN",
+   "stat": "RUSH_YDS",
+   "side": "UNDER",
+   "line": 69.5,
+   "line_source": "6 books",
+   "price": -112,
+   "projection": 54.1,
+   "prob": 0.639,
+   "edge": 0.111,
+   "score": 7.74,
+   "grade": "B",
+   "hit_l5": "1/5",
+   "hit_l10": "6/10",
+   "hit_season": "3/7",
+   "vs_opp": "0/0",
+   "minutes": 16.4,
+   "status": "ACTIVE",
+   "season_avg": 61.8,
+   "l10_avg": 89.0,
+   "reasons": [
+    "Goes against his last game: grade lowered one level (live record 42% on these)",
+    "Implied team total 20.8 (low vs avg 22.8)",
+    "Under hit 1/5 last 5, 6/10 last 10 at 69.5",
+    "Last game: 81 (over the line)"
+   ],
+   "actual": 79.0,
+   "result": "LOSS",
+   "last_game": 81.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     69.5,
+     -112
+    ],
+    "FanDuel": [
+     69.5,
+     -113
+    ],
+    "BetOnline.ag": [
+     68.5,
+     -114
+    ],
+    "BetRivers": [
+     69.5,
+     -114
+    ],
+    "BetMGM": [
+     69.5,
+     -115
+    ],
+    "Bovada": [
+     69.5,
+     -115
+    ]
+   },
+   "dist": {
+    "k": "gamma",
+    "cv": 0.648
+   },
+   "locked": true,
+   "actual_min": 21.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873041",
+   "game": "DEN @ CAR",
+   "player": "Bo Nix",
+   "player_id": "4426338",
+   "team": "DEN",
+   "opp": "CAR",
+   "stat": "PASS_CMP",
+   "side": "OVER",
+   "line": 18.5,
+   "line_source": "est.",
+   "price": -125,
+   "projection": 20.8,
+   "prob": 0.624,
+   "edge": 0.068,
+   "score": 6.82,
+   "grade": "B",
+   "hit_l5": "2/5",
+   "hit_l10": "4/10",
+   "hit_season": "3/8",
+   "vs_opp": "0/0",
+   "minutes": 33.7,
+   "status": "ACTIVE",
+   "season_avg": 20.1,
+   "l10_avg": 17.0,
+   "reasons": [
+    "Over hit 2/5 last 5, 4/10 last 10 at 18.5",
+    "Last game: 20 (over the line)"
+   ],
+   "actual": 25.0,
+   "result": "WIN",
+   "last_game": 20.0,
+   "open_line": null,
+   "open_price": null,
+   "books": null,
+   "dist": {
+    "k": "normal",
+    "sd": 4.842
+   },
+   "locked": true,
+   "actual_min": 37.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873039",
+   "game": "CLE @ NO",
+   "player": "Quinshon Judkins",
+   "player_id": "4685702",
+   "team": "CLE",
+   "opp": "NO",
+   "stat": "RUSH_YDS",
+   "side": "UNDER",
+   "line": 64.5,
+   "line_source": "6 books",
+   "price": -110,
+   "projection": 52.3,
+   "prob": 0.63,
+   "edge": 0.107,
+   "score": 10.66,
+   "grade": "A",
+   "hit_l5": "3/5",
+   "hit_l10": "8/10",
+   "hit_season": "5/7",
+   "vs_opp": "0/0",
+   "minutes": 17.1,
+   "status": "ACTIVE",
+   "season_avg": 52.6,
+   "l10_avg": 54.5,
+   "reasons": [
+    "Implied team total 19.5 (low vs avg 22.8)",
+    "Backup QB starting: receiving efficiency trimmed",
+    "Under hit 3/5 last 5, 8/10 last 10 at 64.5",
+    "Last game: 25 (under the line)"
+   ],
+   "actual": 43.0,
+   "result": "WIN",
+   "last_game": 25.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     64.5,
+     -110
+    ],
+    "FanDuel": [
+     64.5,
+     -113
+    ],
+    "BetOnline.ag": [
+     66.5,
+     -114
+    ],
+    "BetRivers": [
+     67.5,
+     -121
+    ],
+    "BetMGM": [
+     67.5,
+     -115
+    ],
+    "Bovada": [
+     64.5,
+     -115
+    ]
+   },
+   "dist": {
+    "k": "gamma",
+    "cv": 0.54
+   },
+   "locked": true,
+   "actual_min": 16.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873039",
+   "game": "CLE @ NO",
+   "player": "Jerry Jeudy",
+   "player_id": "4241463",
+   "team": "CLE",
+   "opp": "NO",
+   "stat": "REC",
+   "side": "OVER",
+   "line": 1.5,
+   "line_source": "4 books",
+   "price": 120,
+   "projection": 2.6,
+   "prob": 0.605,
+   "edge": 0.15,
+   "score": 10.52,
+   "grade": "B",
+   "hit_l5": "4/5",
+   "hit_l10": "7/10",
+   "hit_season": "5/8",
+   "vs_opp": "0/0",
+   "minutes": 4.5,
+   "status": "ACTIVE",
+   "season_avg": 2.3,
+   "l10_avg": 2.8,
+   "reasons": [
+    "Goes against his last game: grade lowered one level (live record 42% on these)",
+    "Backup QB starting: receiving efficiency trimmed",
+    "Over hit 4/5 last 5, 7/10 last 10 at 1.5",
+    "Last game: 0 (under the line)"
+   ],
+   "actual": 2.0,
+   "result": "WIN",
+   "last_game": 0.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     1.5,
+     118
+    ],
+    "FanDuel": [
+     1.5,
+     116
+    ],
+    "BetOnline.ag": [
+     1.5,
+     120
+    ],
+    "Bovada": [
+     1.5,
+     115
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 2.706
+   },
+   "locked": true,
+   "actual_min": 4.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873039",
+   "game": "CLE @ NO",
+   "player": "Noah Fant",
+   "player_id": "4036131",
+   "team": "NO",
+   "opp": "CLE",
+   "stat": "REC",
+   "side": "OVER",
+   "line": 0.5,
+   "line_source": "4 books",
+   "price": -178,
+   "projection": 1.8,
+   "prob": 0.742,
+   "edge": 0.101,
+   "score": 10.14,
+   "grade": "A",
+   "hit_l5": "3/5",
+   "hit_l10": "6/10",
+   "hit_season": "4/6",
+   "vs_opp": "2/2",
+   "minutes": 2.4,
+   "status": "ACTIVE",
+   "season_avg": 2.0,
+   "l10_avg": 1.8,
+   "reasons": [
+    "Over hit 3/5 last 5, 6/10 last 10 at 0.5",
+    "Last game: 2 (over the line)",
+    "Last 2 vs CLE: 1, 4"
+   ],
+   "actual": 1.0,
+   "result": "WIN",
+   "last_game": 2.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     0.5,
+     -178
+    ],
+    "FanDuel": [
+     0.5,
+     -205
+    ],
+    "BetOnline.ag": [
+     0.5,
+     -204
+    ],
+    "Bovada": [
+     0.5,
+     -180
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 1.861
+   },
+   "locked": true,
+   "actual_min": 2.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873039",
+   "game": "CLE @ NO",
+   "player": "Dylan Sampson",
+   "player_id": "5081397",
+   "team": "CLE",
+   "opp": "NO",
+   "stat": "RUSH_ATT",
+   "side": "UNDER",
+   "line": 5.5,
+   "line_source": "est.",
+   "price": -160,
+   "projection": 4.0,
+   "prob": 0.696,
+   "edge": 0.08,
+   "score": 8.0,
+   "grade": "A",
+   "hit_l5": "2/5",
+   "hit_l10": "6/10",
+   "hit_season": "1/2",
+   "vs_opp": "0/0",
+   "minutes": 7.4,
+   "status": "ACTIVE",
+   "season_avg": 4.1,
+   "l10_avg": 7.0,
+   "reasons": [
+    "Backup QB starting: receiving efficiency trimmed",
+    "Under hit 2/5 last 5, 6/10 last 10 at 5.5",
+    "Last game: 1 (under the line)"
+   ],
+   "actual": 8.0,
+   "result": "LOSS",
+   "last_game": 1.0,
+   "open_line": null,
+   "open_price": null,
+   "books": null,
+   "dist": {
+    "k": "count",
+    "var": 5.683
+   },
+   "locked": true,
+   "actual_min": 14.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873039",
+   "game": "CLE @ NO",
+   "player": "Denzel Boston",
+   "player_id": "4832800",
+   "team": "CLE",
+   "opp": "NO",
+   "stat": "REC",
+   "side": "OVER",
+   "line": 2.5,
+   "line_source": "6 books",
+   "price": -148,
+   "projection": 3.7,
+   "prob": 0.659,
+   "edge": 0.063,
+   "score": 6.25,
+   "grade": "B",
+   "hit_l5": "4/5",
+   "hit_l10": "5/8",
+   "hit_season": "5/8",
+   "vs_opp": "0/0",
+   "minutes": 7.1,
+   "status": "ACTIVE",
+   "season_avg": 3.2,
+   "l10_avg": 3.2,
+   "reasons": [
+    "Backup QB starting: receiving efficiency trimmed",
+    "Over hit 4/5 last 5, 5/8 last 10 at 2.5",
+    "Last game: 6 (over the line)"
+   ],
+   "actual": 6.0,
+   "result": "WIN",
+   "last_game": 6.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     2.5,
+     -164
+    ],
+    "FanDuel": [
+     2.5,
+     -148
+    ],
+    "BetOnline.ag": [
+     3.5,
+     136
+    ],
+    "BetRivers": [
+     2.5,
+     -175
+    ],
+    "BetMGM": [
+     3.5,
+     130
+    ],
+    "Bovada": [
+     2.5,
+     -170
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 3.92
+   },
+   "locked": true,
+   "actual_min": 7.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873039",
+   "game": "CLE @ NO",
+   "player": "Alvin Kamara",
+   "player_id": "3054850",
+   "team": "NO",
+   "opp": "CLE",
+   "stat": "RUSH_ATT",
+   "side": "OVER",
+   "line": 7.5,
+   "line_source": "est.",
+   "price": 103,
+   "projection": 9.7,
+   "prob": 0.576,
+   "edge": 0.085,
+   "score": 5.92,
+   "grade": "B",
+   "hit_l5": "1/5",
+   "hit_l10": "3/10",
+   "hit_season": "2/6",
+   "vs_opp": "0/0",
+   "minutes": 13.7,
+   "status": "ACTIVE",
+   "season_avg": 8.9,
+   "l10_avg": 5.8,
+   "reasons": [
+    "Goes against his last game: grade lowered one level (live record 42% on these)",
+    "Donaldson out: +1.0 carries",
+    "Over hit 1/5 last 5, 3/10 last 10 at 7.5",
+    "Last game: 6 (under the line)"
+   ],
+   "actual": 6.0,
+   "result": "LOSS",
+   "last_game": 6.0,
+   "open_line": null,
+   "open_price": null,
+   "books": null,
+   "dist": {
+    "k": "count",
+    "var": 21.171
+   },
+   "locked": true,
+   "actual_min": 10.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873040",
+   "game": "DAL @ IND",
+   "player": "Jake Ferguson",
+   "player_id": "4242355",
+   "team": "DAL",
+   "opp": "IND",
+   "stat": "REC_YDS",
+   "side": "OVER",
+   "line": 16.5,
+   "line_source": "est.",
+   "price": 146,
+   "projection": 30.5,
+   "prob": 0.556,
+   "edge": 0.15,
+   "score": 10.52,
+   "grade": "B",
+   "hit_l5": "1/5",
+   "hit_l10": "3/10",
+   "hit_season": "3/8",
+   "vs_opp": "0/0",
+   "minutes": 4.6,
+   "status": "ACTIVE",
+   "season_avg": 21.3,
+   "l10_avg": 8.0,
+   "reasons": [
+    "Goes against his last game: grade lowered one level (live record 42% on these)",
+    "Implied team total 28.0 (high vs avg 22.8)",
+    "Pickens, Schoonmaker, Turpin out: +0.7 targets",
+    "Over hit 1/5 last 5, 3/10 last 10 at 16.5",
+    "Last game: 0 (under the line)"
+   ],
+   "actual": 21.0,
+   "result": "WIN",
+   "last_game": 0.0,
+   "open_line": null,
+   "open_price": null,
+   "books": null,
+   "dist": {
+    "k": "gamma",
+    "cv": 0.777
+   },
+   "locked": true,
+   "actual_min": 2.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873040",
+   "game": "DAL @ IND",
+   "player": "Daniel Jones",
+   "player_id": "3917792",
+   "team": "IND",
+   "opp": "DAL",
+   "stat": "PASS_TD",
+   "side": "OVER",
+   "line": 0.5,
+   "line_source": "est.",
+   "price": -117,
+   "projection": 1.28,
+   "prob": 0.634,
+   "edge": 0.095,
+   "score": 9.49,
+   "grade": "A",
+   "hit_l5": "2/5",
+   "hit_l10": "6/10",
+   "hit_season": "5/8",
+   "vs_opp": "0/0",
+   "minutes": 35.3,
+   "status": "ACTIVE",
+   "season_avg": 0.9,
+   "l10_avg": 0.5,
+   "reasons": [
+    "Over hit 2/5 last 5, 6/10 last 10 at 0.5",
+    "Last game: 1 (over the line)"
+   ],
+   "actual": 1.0,
+   "result": "WIN",
+   "last_game": 1.0,
+   "open_line": null,
+   "open_price": null,
+   "books": null,
+   "dist": {
+    "k": "count",
+    "var": 1.344
+   },
+   "locked": true,
+   "actual_min": 34.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873040",
+   "game": "DAL @ IND",
+   "player": "Keenan Allen",
+   "player_id": "15818",
+   "team": "IND",
+   "opp": "DAL",
+   "stat": "REC_YDS",
+   "side": "OVER",
+   "line": 41.5,
+   "line_source": "6 books",
+   "price": -113,
+   "projection": 60.0,
+   "prob": 0.589,
+   "edge": 0.058,
+   "score": 5.81,
+   "grade": "B",
+   "hit_l5": "4/5",
+   "hit_l10": "4/10",
+   "hit_season": "4/7",
+   "vs_opp": "1/1",
+   "minutes": 7.6,
+   "status": "ACTIVE",
+   "season_avg": 45.7,
+   "l10_avg": 56.2,
+   "reasons": [
+    "DAL allows receiving yards to WRs (+11%)",
+    "Over hit 4/5 last 5, 4/10 last 10 at 41.5",
+    "Last game: 67 (over the line)",
+    "Last 1 vs DAL: 44"
+   ],
+   "actual": 26.0,
+   "result": "LOSS",
+   "last_game": 67.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     41.5,
+     -115
+    ],
+    "FanDuel": [
+     41.5,
+     -113
+    ],
+    "BetOnline.ag": [
+     41.5,
+     -114
+    ],
+    "BetRivers": [
+     44.5,
+     -114
+    ],
+    "BetMGM": [
+     41.5,
+     -115
+    ],
+    "Bovada": [
+     41.5,
+     -120
+    ]
+   },
+   "dist": {
+    "k": "gamma",
+    "cv": 0.6
+   },
+   "locked": true,
+   "actual_min": 8.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873040",
+   "game": "DAL @ IND",
+   "player": "Javonte Williams",
+   "player_id": "4361579",
+   "team": "DAL",
+   "opp": "IND",
+   "stat": "REC",
+   "side": "OVER",
+   "line": 1.5,
+   "line_source": "5 books",
+   "price": -128,
+   "projection": 2.5,
+   "prob": 0.631,
+   "edge": 0.07,
+   "score": 4.89,
+   "grade": "C",
+   "hit_l5": "3/5",
+   "hit_l10": "7/10",
+   "hit_season": "6/8",
+   "vs_opp": "0/0",
+   "minutes": 20.2,
+   "status": "ACTIVE",
+   "season_avg": 2.4,
+   "l10_avg": 1.2,
+   "reasons": [
+    "Goes against his last game: grade lowered one level (live record 42% on these)",
+    "Over hit 3/5 last 5, 7/10 last 10 at 1.5",
+    "Last game: 1 (under the line)"
+   ],
+   "actual": 4.0,
+   "result": "WIN",
+   "last_game": 1.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     1.5,
+     -128
+    ],
+    "FanDuel": [
+     1.5,
+     -138
+    ],
+    "BetOnline.ag": [
+     1.5,
+     -135
+    ],
+    "BetMGM": [
+     1.5,
+     -135
+    ],
+    "Bovada": [
+     1.5,
+     -130
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 2.575
+   },
+   "locked": true,
+   "actual_min": 25.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873040",
+   "game": "DAL @ IND",
+   "player": "Jonathan Taylor",
+   "player_id": "4242335",
+   "team": "IND",
+   "opp": "DAL",
+   "stat": "REC_YDS",
+   "side": "OVER",
+   "line": 18.5,
+   "line_source": "6 books",
+   "price": -111,
+   "projection": 28.3,
+   "prob": 0.573,
+   "edge": 0.047,
+   "score": 4.7,
+   "grade": "C",
+   "hit_l5": "3/5",
+   "hit_l10": "5/10",
+   "hit_season": "5/8",
+   "vs_opp": "0/0",
+   "minutes": 20.7,
+   "status": "ACTIVE",
+   "season_avg": 24.2,
+   "l10_avg": 33.2,
+   "reasons": [
+    "DAL allows receiving yards to RBs (+13%)",
+    "Over hit 3/5 last 5, 5/10 last 10 at 18.5",
+    "Last game: 24 (over the line)"
+   ],
+   "actual": 18.0,
+   "result": "LOSS",
+   "last_game": 24.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     19.5,
+     -113
+    ],
+    "FanDuel": [
+     18.5,
+     -113
+    ],
+    "BetOnline.ag": [
+     18.5,
+     -114
+    ],
+    "BetRivers": [
+     19.5,
+     -112
+    ],
+    "BetMGM": [
+     18.5,
+     -111
+    ],
+    "Bovada": [
+     19.5,
+     -115
+    ]
+   },
+   "dist": {
+    "k": "gamma",
+    "cv": 0.71
+   },
+   "locked": true,
+   "actual_min": 18.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873040",
+   "game": "DAL @ IND",
+   "player": "Ryan Flournoy",
+   "player_id": "5083754",
+   "team": "DAL",
+   "opp": "IND",
+   "stat": "REC",
+   "side": "UNDER",
+   "line": 3.5,
+   "line_source": "6 books",
+   "price": 105,
+   "projection": 3.4,
+   "prob": 0.524,
+   "edge": 0.037,
+   "score": 3.65,
+   "grade": "C",
+   "hit_l5": "2/5",
+   "hit_l10": "5/10",
+   "hit_season": "4/8",
+   "vs_opp": "0/0",
+   "minutes": 5.3,
+   "status": "ACTIVE",
+   "season_avg": 3.3,
+   "l10_avg": 4.2,
+   "reasons": [
+    "Pickens, Schoonmaker, Turpin out: +0.8 targets",
+    "Under hit 2/5 last 5, 5/10 last 10 at 3.5",
+    "Last game: 3 (under the line)"
+   ],
+   "actual": 2.0,
+   "result": "WIN",
+   "last_game": 3.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     4.5,
+     -159
+    ],
+    "FanDuel": [
+     4.5,
+     -166
+    ],
+    "BetOnline.ag": [
+     3.5,
+     105
+    ],
+    "BetMGM": [
+     3.5,
+     105
+    ],
+    "Bovada": [
+     4.5,
+     -165
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 3.808
+   },
+   "locked": true,
+   "actual_min": 3.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873046",
+   "game": "HOU @ LAC",
+   "player": "Justin Herbert",
+   "player_id": "4038941",
+   "team": "LAC",
+   "opp": "HOU",
+   "stat": "PASS_ATT",
+   "side": "OVER",
+   "line": 30.5,
+   "line_source": "est.",
+   "price": -126,
+   "projection": 34.4,
+   "prob": 0.662,
+   "edge": 0.105,
+   "score": 10.47,
+   "grade": "A",
+   "hit_l5": "4/5",
+   "hit_l10": "6/10",
+   "hit_season": "4/7",
+   "vs_opp": "1/1",
+   "minutes": 34.4,
+   "status": "ACTIVE",
+   "season_avg": 30.9,
+   "l10_avg": 31.0,
+   "reasons": [
+    "Over hit 4/5 last 5, 6/10 last 10 at 30.5",
+    "Last game: 32 (over the line)",
+    "Last 1 vs HOU: 32"
+   ],
+   "actual": 23.0,
+   "result": "LOSS",
+   "last_game": 32.0,
+   "open_line": null,
+   "open_price": null,
+   "books": null,
+   "dist": {
+    "k": "normal",
+    "sd": 5.797
+   },
+   "locked": true,
+   "actual_min": 23.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873046",
+   "game": "HOU @ LAC",
+   "player": "Oronde Gadsden",
+   "player_id": "4595342",
+   "team": "LAC",
+   "opp": "HOU",
+   "stat": "REC",
+   "side": "OVER",
+   "line": 1.5,
+   "line_source": "5 books",
+   "price": -144,
+   "projection": 2.8,
+   "prob": 0.683,
+   "edge": 0.093,
+   "score": 9.25,
+   "grade": "A",
+   "hit_l5": "3/5",
+   "hit_l10": "8/10",
+   "hit_season": "5/7",
+   "vs_opp": "1/1",
+   "minutes": 4.4,
+   "status": "ACTIVE",
+   "season_avg": 2.7,
+   "l10_avg": 3.2,
+   "reasons": [
+    "HOU limits receptions to TEs (-7%)",
+    "Over hit 3/5 last 5, 8/10 last 10 at 1.5",
+    "Last game: 5 (over the line)",
+    "Last 1 vs HOU: 3"
+   ],
+   "actual": 2.0,
+   "result": "WIN",
+   "last_game": 5.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     1.5,
+     -163
+    ],
+    "FanDuel": [
+     1.5,
+     -144
+    ],
+    "BetOnline.ag": [
+     1.5,
+     -161
+    ],
+    "BetMGM": [
+     1.5,
+     -160
+    ],
+    "Bovada": [
+     1.5,
+     -165
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 2.903
+   },
+   "locked": true,
+   "actual_min": 3.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873046",
+   "game": "HOU @ LAC",
+   "player": "Woody Marks",
+   "player_id": "4429059",
+   "team": "HOU",
+   "opp": "LAC",
+   "stat": "REC",
+   "side": "UNDER",
+   "line": 2.5,
+   "line_source": "6 books",
+   "price": -160,
+   "projection": 1.7,
+   "prob": 0.697,
+   "edge": 0.081,
+   "score": 8.12,
+   "grade": "A",
+   "hit_l5": "4/5",
+   "hit_l10": "8/10",
+   "hit_season": "5/7",
+   "vs_opp": "1/1",
+   "minutes": 15.6,
+   "status": "ACTIVE",
+   "season_avg": 1.8,
+   "l10_avg": 1.8,
+   "reasons": [
+    "Under hit 4/5 last 5, 8/10 last 10 at 2.5",
+    "Last game: 1 (under the line)",
+    "Last 1 vs LAC: 1"
+   ],
+   "actual": 1.0,
+   "result": "WIN",
+   "last_game": 1.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     2.5,
+     -177
+    ],
+    "FanDuel": [
+     2.5,
+     -160
+    ],
+    "BetOnline.ag": [
+     2.5,
+     -164
+    ],
+    "BetMGM": [
+     2.5,
+     -160
+    ],
+    "Bovada": [
+     2.5,
+     -200
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 1.779
+   },
+   "locked": true,
+   "actual_min": 22.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873046",
+   "game": "HOU @ LAC",
+   "player": "Kayshon Boutte",
+   "player_id": "4429022",
+   "team": "HOU",
+   "opp": "LAC",
+   "stat": "REC",
+   "side": "OVER",
+   "line": 1.5,
+   "line_source": "6 books",
+   "price": 116,
+   "projection": 2.1,
+   "prob": 0.556,
+   "edge": 0.093,
+   "score": 6.49,
+   "grade": "B",
+   "hit_l5": "4/5",
+   "hit_l10": "6/10",
+   "hit_season": "5/7",
+   "vs_opp": "1/1",
+   "minutes": 3.3,
+   "status": "ACTIVE",
+   "season_avg": 2.2,
+   "l10_avg": 2.2,
+   "reasons": [
+    "Goes against his last game: grade lowered one level (live record 42% on these)",
+    "Over hit 4/5 last 5, 6/10 last 10 at 1.5",
+    "Last game: 1 (under the line)",
+    "Last 1 vs LAC: 4"
+   ],
+   "actual": 4.0,
+   "result": "WIN",
+   "last_game": 1.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     1.5,
+     116
+    ],
+    "FanDuel": [
+     1.5,
+     -102
+    ],
+    "BetOnline.ag": [
+     1.5,
+     115
+    ],
+    "BetRivers": [
+     1.5,
+     -115
+    ],
+    "BetMGM": [
+     1.5,
+     110
+    ],
+    "Bovada": [
+     1.5,
+     115
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 2.257
+   },
+   "locked": true,
+   "actual_min": 5.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873046",
+   "game": "HOU @ LAC",
+   "player": "Omarion Hampton",
+   "player_id": "4685382",
+   "team": "LAC",
+   "opp": "HOU",
+   "stat": "REC",
+   "side": "OVER",
+   "line": 1.5,
+   "line_source": "5 books",
+   "price": 105,
+   "projection": 2.1,
+   "prob": 0.551,
+   "edge": 0.063,
+   "score": 6.34,
+   "grade": "B",
+   "hit_l5": "3/5",
+   "hit_l10": "5/10",
+   "hit_season": "4/7",
+   "vs_opp": "1/1",
+   "minutes": 13.6,
+   "status": "ACTIVE",
+   "season_avg": 2.2,
+   "l10_avg": 2.2,
+   "reasons": [
+    "Over hit 3/5 last 5, 5/10 last 10 at 1.5",
+    "Last game: 2 (over the line)",
+    "Last 1 vs HOU: 8"
+   ],
+   "actual": 0.0,
+   "result": "LOSS",
+   "last_game": 2.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     1.5,
+     101
+    ],
+    "FanDuel": [
+     1.5,
+     102
+    ],
+    "BetOnline.ag": [
+     1.5,
+     100
+    ],
+    "BetMGM": [
+     1.5,
+     105
+    ],
+    "Bovada": [
+     1.5,
+     100
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 2.187
+   },
+   "locked": true,
+   "actual_min": 13.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873049",
+   "game": "GB @ NE",
+   "player": "Rhamondre Stevenson",
+   "player_id": "4569173",
+   "team": "NE",
+   "opp": "GB",
+   "stat": "REC",
+   "side": "UNDER",
+   "line": 3.5,
+   "line_source": "6 books",
+   "price": -110,
+   "projection": 2.7,
+   "prob": 0.622,
+   "edge": 0.098,
+   "score": 9.84,
+   "grade": "A",
+   "hit_l5": "4/5",
+   "hit_l10": "7/10",
+   "hit_season": "6/8",
+   "vs_opp": "0/0",
+   "minutes": 17.2,
+   "status": "ACTIVE",
+   "season_avg": 2.7,
+   "l10_avg": 2.8,
+   "reasons": [
+    "Brown, Henderson out: +0.4 targets, +2.4 carries",
+    "Under hit 4/5 last 5, 7/10 last 10 at 3.5",
+    "Last game: 3 (under the line)"
+   ],
+   "actual": 3.0,
+   "result": "WIN",
+   "last_game": 3.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     3.5,
+     -111
+    ],
+    "FanDuel": [
+     3.5,
+     -114
+    ],
+    "BetOnline.ag": [
+     3.5,
+     -116
+    ],
+    "BetMGM": [
+     3.5,
+     -120
+    ],
+    "Bovada": [
+     3.5,
+     -110
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 2.878
+   },
+   "locked": true,
+   "actual_min": 10.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873049",
+   "game": "GB @ NE",
+   "player": "DeMario Douglas",
+   "player_id": "4427095",
+   "team": "NE",
+   "opp": "GB",
+   "stat": "REC",
+   "side": "UNDER",
+   "line": 3.5,
+   "line_source": "6 books",
+   "price": -104,
+   "projection": 3.0,
+   "prob": 0.591,
+   "edge": 0.082,
+   "score": 8.16,
+   "grade": "A",
+   "hit_l5": "3/5",
+   "hit_l10": "6/10",
+   "hit_season": "5/8",
+   "vs_opp": "0/0",
+   "minutes": 4.3,
+   "status": "ACTIVE",
+   "season_avg": 2.8,
+   "l10_avg": 4.2,
+   "reasons": [
+    "GB allows receptions to WRs (+7%)",
+    "Under hit 3/5 last 5, 6/10 last 10 at 3.5",
+    "Last game: 3 (under the line)"
+   ],
+   "actual": 5.0,
+   "result": "LOSS",
+   "last_game": 3.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     3.5,
+     -114
+    ],
+    "FanDuel": [
+     3.5,
+     -104
+    ],
+    "BetOnline.ag": [
+     3.5,
+     -114
+    ],
+    "BetMGM": [
+     3.5,
+     -110
+    ],
+    "Bovada": [
+     3.5,
+     -115
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 3.568
+   },
+   "locked": true,
+   "actual_min": 9.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873049",
+   "game": "GB @ NE",
+   "player": "Josh Jacobs",
+   "player_id": "4047365",
+   "team": "GB",
+   "opp": "NE",
+   "stat": "ANY_TD",
+   "side": "UNDER",
+   "line": 0.5,
+   "line_source": "est.",
+   "price": 138,
+   "projection": 0.55,
+   "prob": 0.508,
+   "edge": 0.088,
+   "score": 6.19,
+   "grade": "B",
+   "hit_l5": "3/5",
+   "hit_l10": "5/10",
+   "hit_season": "0/2",
+   "vs_opp": "0/0",
+   "minutes": 18.7,
+   "status": "ACTIVE",
+   "season_avg": 1.1,
+   "l10_avg": 0.8,
+   "reasons": [
+    "Goes against his last game: grade lowered one level (live record 42% on these)",
+    "NE limits anytime TD to RBs (-14%)",
+    "Implied team total 20.8 (low vs avg 22.8)",
+    "Under hit 3/5 last 5, 5/10 last 10 at 0.5",
+    "Last game: 2 (over the line)"
+   ],
+   "actual": 0.0,
+   "result": "WIN",
+   "last_game": 2.0,
+   "open_line": null,
+   "open_price": null,
+   "books": null,
+   "dist": {
+    "k": "count",
+    "var": 0.581
+   },
+   "locked": true,
+   "actual_min": 4.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873049",
+   "game": "GB @ NE",
+   "player": "Eli Raridon",
+   "player_id": "4831959",
+   "team": "NE",
+   "opp": "GB",
+   "stat": "REC_YDS",
+   "side": "UNDER",
+   "line": 25.5,
+   "line_source": "2 books",
+   "price": -109,
+   "projection": 23.0,
+   "prob": 0.59,
+   "edge": 0.069,
+   "score": 6.01,
+   "grade": "B",
+   "hit_l5": "3/5",
+   "hit_l10": "4/7",
+   "hit_season": "4/7",
+   "vs_opp": "0/0",
+   "minutes": 3.3,
+   "status": "ACTIVE",
+   "season_avg": 24.7,
+   "l10_avg": 32.2,
+   "reasons": [
+    "GB limits receiving yards to TEs (-10%)",
+    "Under hit 3/5 last 5, 4/7 last 10 at 25.5",
+    "Last game: 5 (under the line)"
+   ],
+   "actual": 52.0,
+   "result": "LOSS",
+   "last_game": 5.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     25.5,
+     -109
+    ],
+    "FanDuel": [
+     26.5,
+     -113
+    ]
+   },
+   "dist": {
+    "k": "gamma",
+    "cv": 0.789
+   },
+   "locked": true,
+   "actual_min": 6.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873049",
+   "game": "GB @ NE",
+   "player": "Matthew Golden",
+   "player_id": "4701936",
+   "team": "GB",
+   "opp": "NE",
+   "stat": "REC_YDS",
+   "side": "UNDER",
+   "line": 67.5,
+   "line_source": "6 books",
+   "price": -105,
+   "projection": 59.8,
+   "prob": 0.594,
+   "edge": 0.081,
+   "score": 5.7,
+   "grade": "B",
+   "hit_l5": "2/5",
+   "hit_l10": "4/10",
+   "hit_season": "3/8",
+   "vs_opp": "0/0",
+   "minutes": 8.1,
+   "status": "ACTIVE",
+   "season_avg": 61.5,
+   "l10_avg": 86.2,
+   "reasons": [
+    "Goes against his last game: grade lowered one level (live record 42% on these)",
+    "Implied team total 20.8 (low vs avg 22.8)",
+    "Under hit 2/5 last 5, 4/10 last 10 at 67.5",
+    "Last game: 79 (over the line)"
+   ],
+   "actual": 164.0,
+   "result": "LOSS",
+   "last_game": 79.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     69.5,
+     -113
+    ],
+    "FanDuel": [
+     67.5,
+     -113
+    ],
+    "BetOnline.ag": [
+     67.5,
+     -105
+    ],
+    "BetRivers": [
+     64.5,
+     -115
+    ],
+    "BetMGM": [
+     68.5,
+     -115
+    ],
+    "Bovada": [
+     69.5,
+     -115
+    ]
+   },
+   "dist": {
+    "k": "gamma",
+    "cv": 0.776
+   },
+   "locked": true,
+   "actual_min": 10.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873049",
+   "game": "GB @ NE",
+   "player": "Tucker Kraft",
+   "player_id": "4572680",
+   "team": "GB",
+   "opp": "NE",
+   "stat": "ANY_TD",
+   "side": "UNDER",
+   "line": 0.5,
+   "line_source": "est.",
+   "price": -176,
+   "projection": 0.26,
+   "prob": 0.71,
+   "edge": 0.072,
+   "score": 5.04,
+   "grade": "C",
+   "hit_l5": "2/5",
+   "hit_l10": "6/10",
+   "hit_season": "5/8",
+   "vs_opp": "0/0",
+   "minutes": 6.2,
+   "status": "ACTIVE",
+   "season_avg": 0.5,
+   "l10_avg": 0.5,
+   "reasons": [
+    "Goes against his last game: grade lowered one level (live record 42% on these)",
+    "NE limits anytime TD to TEs (-20%)",
+    "Implied team total 20.8 (low vs avg 22.8)",
+    "Under hit 2/5 last 5, 6/10 last 10 at 0.5",
+    "Last game: 1 (over the line)"
+   ],
+   "actual": 0.0,
+   "result": "WIN",
+   "last_game": 1.0,
+   "open_line": null,
+   "open_price": null,
+   "books": null,
+   "dist": {
+    "k": "count",
+    "var": 0.276
+   },
+   "locked": true,
+   "actual_min": 5.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873043",
+   "game": "LAR @ WSH",
+   "player": "Jayden Daniels",
+   "player_id": "4426348",
+   "team": "WSH",
+   "opp": "LAR",
+   "stat": "PASS_ATT",
+   "side": "OVER",
+   "line": 27.5,
+   "line_source": "est.",
+   "price": -123,
+   "projection": 30.8,
+   "prob": 0.624,
+   "edge": 0.072,
+   "score": 7.24,
+   "grade": "B",
+   "hit_l5": "3/5",
+   "hit_l10": "3/10",
+   "hit_season": "3/5",
+   "vs_opp": "0/0",
+   "minutes": 30.8,
+   "status": "ACTIVE",
+   "season_avg": 28.0,
+   "l10_avg": 27.8,
+   "reasons": [
+    "Over hit 3/5 last 5, 3/10 last 10 at 27.5",
+    "Last game: 29 (over the line)"
+   ],
+   "actual": 35.0,
+   "result": "WIN",
+   "last_game": 29.0,
+   "open_line": null,
+   "open_price": null,
+   "books": null,
+   "dist": {
+    "k": "normal",
+    "sd": 6.715
+   },
+   "locked": true,
+   "actual_min": 35.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873043",
+   "game": "LAR @ WSH",
+   "player": "Rachaad White",
+   "player_id": "4697815",
+   "team": "WSH",
+   "opp": "LAR",
+   "stat": "ANY_TD",
+   "side": "UNDER",
+   "line": 0.5,
+   "line_source": "est.",
+   "price": -161,
+   "projection": 0.27,
+   "prob": 0.697,
+   "edge": 0.081,
+   "score": 5.66,
+   "grade": "B",
+   "hit_l5": "2/5",
+   "hit_l10": "7/10",
+   "hit_season": "3/6",
+   "vs_opp": "1/1",
+   "minutes": 11.0,
+   "status": "ACTIVE",
+   "season_avg": 0.4,
+   "l10_avg": 0.8,
+   "reasons": [
+    "Goes against his last game: grade lowered one level (live record 42% on these)",
+    "LAR limits anytime TD to RBs (-20%)",
+    "Under hit 2/5 last 5, 7/10 last 10 at 0.5",
+    "Last game: 1 (over the line)",
+    "Last 1 vs LAR: 0"
+   ],
+   "actual": 0.0,
+   "result": "WIN",
+   "last_game": 1.0,
+   "open_line": null,
+   "open_price": null,
+   "books": null,
+   "dist": {
+    "k": "count",
+    "var": 0.286
+   },
+   "locked": true,
+   "actual_min": 10.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873043",
+   "game": "LAR @ WSH",
+   "player": "Colby Parkinson",
+   "player_id": "4242557",
+   "team": "LAR",
+   "opp": "WSH",
+   "stat": "REC_YDS",
+   "side": "OVER",
+   "line": 21.5,
+   "line_source": "est.",
+   "price": 125,
+   "projection": 27.5,
+   "prob": 0.498,
+   "edge": 0.054,
+   "score": 5.37,
+   "grade": "B",
+   "hit_l5": "2/5",
+   "hit_l10": "6/10",
+   "hit_season": "2/6",
+   "vs_opp": "0/0",
+   "minutes": 3.3,
+   "status": "ACTIVE",
+   "season_avg": 22.7,
+   "l10_avg": 20.5,
+   "reasons": [
+    "WSH allows receiving yards to TEs (+13%)",
+    "Implied team total 26.5 (high vs avg 22.8)",
+    "Over hit 2/5 last 5, 6/10 last 10 at 21.5",
+    "Last game: 48 (over the line)"
+   ],
+   "actual": 13.0,
+   "result": "LOSS",
+   "last_game": 48.0,
+   "open_line": null,
+   "open_price": null,
+   "books": null,
+   "dist": {
+    "k": "gamma",
+    "cv": 0.671
+   },
+   "locked": true,
+   "actual_min": 4.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873043",
+   "game": "LAR @ WSH",
+   "player": "Matthew Stafford",
+   "player_id": "12483",
+   "team": "LAR",
+   "opp": "WSH",
+   "stat": "PASS_YDS",
+   "side": "OVER",
+   "line": 247.5,
+   "line_source": "6 books",
+   "price": -111,
+   "projection": 285.8,
+   "prob": 0.589,
+   "edge": 0.063,
+   "score": 4.39,
+   "grade": "C",
+   "hit_l5": "2/5",
+   "hit_l10": "6/10",
+   "hit_season": "4/8",
+   "vs_opp": "0/0",
+   "minutes": 36.7,
+   "status": "ACTIVE",
+   "season_avg": 272.9,
+   "l10_avg": 239.2,
+   "reasons": [
+    "Goes against his last game: grade lowered one level (live record 42% on these)",
+    "Implied team total 26.5 (high vs avg 22.8)",
+    "Over hit 2/5 last 5, 6/10 last 10 at 247.5",
+    "Last game: 157 (under the line)"
+   ],
+   "actual": 228.0,
+   "result": "LOSS",
+   "last_game": 157.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     247.5,
+     -111
+    ],
+    "FanDuel": [
+     246.5,
+     -113
+    ],
+    "BetOnline.ag": [
+     244.5,
+     -114
+    ],
+    "BetRivers": [
+     248.5,
+     -117
+    ],
+    "BetMGM": [
+     251.5,
+     110
+    ],
+    "Bovada": [
+     247.5,
+     -115
+    ]
+   },
+   "dist": {
+    "k": "gamma",
+    "cv": 0.292
+   },
+   "locked": true,
+   "actual_min": 43.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873043",
+   "game": "LAR @ WSH",
+   "player": "Stefon Diggs",
+   "player_id": "2976212",
+   "team": "WSH",
+   "opp": "LAR",
+   "stat": "REC",
+   "side": "OVER",
+   "line": 4.5,
+   "line_source": "6 books",
+   "price": -105,
+   "projection": 5.5,
+   "prob": 0.568,
+   "edge": 0.056,
+   "score": 3.9,
+   "grade": "C",
+   "hit_l5": "3/5",
+   "hit_l10": "4/10",
+   "hit_season": "3/6",
+   "vs_opp": "0/0",
+   "minutes": 8.0,
+   "status": "ACTIVE",
+   "season_avg": 4.6,
+   "l10_avg": 4.5,
+   "reasons": [
+    "Goes against his last game: grade lowered one level (live record 42% on these)",
+    "Burks, Brown, McLaurin out: +1.4 targets",
+    "Over hit 3/5 last 5, 4/10 last 10 at 4.5",
+    "Last game: 3 (under the line)"
+   ],
+   "actual": 3.0,
+   "result": "LOSS",
+   "last_game": 3.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     4.5,
+     -105
+    ],
+    "FanDuel": [
+     4.5,
+     -114
+    ],
+    "BetOnline.ag": [
+     4.5,
+     -106
+    ],
+    "BetRivers": [
+     4.5,
+     -112
+    ],
+    "BetMGM": [
+     4.5,
+     -105
+    ],
+    "Bovada": [
+     4.5,
+     -105
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 6.962
+   },
+   "locked": true,
+   "actual_min": 5.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873043",
+   "game": "LAR @ WSH",
+   "player": "Blake Corum",
+   "player_id": "4429096",
+   "team": "LAR",
+   "opp": "WSH",
+   "stat": "ANY_TD",
+   "side": "UNDER",
+   "line": 0.5,
+   "line_source": "est.",
+   "price": -122,
+   "projection": 0.43,
+   "prob": 0.603,
+   "edge": 0.054,
+   "score": 3.8,
+   "grade": "C",
+   "hit_l5": "1/5",
+   "hit_l10": "6/10",
+   "hit_season": "4/8",
+   "vs_opp": "0/0",
+   "minutes": 10.7,
+   "status": "ACTIVE",
+   "season_avg": 0.4,
+   "l10_avg": 1.0,
+   "reasons": [
+    "Goes against his last game: grade lowered one level (live record 42% on these)",
+    "Implied team total 26.5 (high vs avg 22.8)",
+    "Under hit 1/5 last 5, 6/10 last 10 at 0.5",
+    "Last game: 1 (over the line)"
+   ],
+   "actual": 1.0,
+   "result": "LOSS",
+   "last_game": 1.0,
+   "open_line": null,
+   "open_price": null,
+   "books": null,
+   "dist": {
+    "k": "count",
+    "var": 0.455
+   },
+   "locked": true,
+   "actual_min": 13.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873038",
+   "game": "CIN @ ATL",
+   "player": "Mike Gesicki",
+   "player_id": "3116164",
+   "team": "CIN",
+   "opp": "ATL",
+   "stat": "ANY_TD",
+   "side": "UNDER",
+   "line": 0.5,
+   "line_source": "est.",
+   "price": 100,
+   "projection": 0.3,
+   "prob": 0.637,
+   "edge": 0.137,
+   "score": 9.58,
+   "grade": "B",
+   "hit_l5": "0/5",
+   "hit_l10": "3/10",
+   "hit_season": "1/7",
+   "vs_opp": "0/0",
+   "minutes": 3.2,
+   "status": "ACTIVE",
+   "season_avg": 0.6,
+   "l10_avg": 1.0,
+   "reasons": [
+    "Goes against his last game: grade lowered one level (live record 42% on these)",
+    "ATL limits anytime TD to TEs (-8%)",
+    "Implied team total 27.8 (high vs avg 22.8)",
+    "Under hit 0/5 last 5, 3/10 last 10 at 0.5",
+    "Last game: 1 (over the line)"
+   ],
+   "actual": 0.0,
+   "result": "WIN",
+   "last_game": 1.0,
+   "open_line": null,
+   "open_price": null,
+   "books": null,
+   "dist": {
+    "k": "count",
+    "var": 0.318
+   },
+   "locked": true,
+   "actual_min": 2.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873038",
+   "game": "CIN @ ATL",
+   "player": "Chase Brown",
+   "player_id": "4362238",
+   "team": "CIN",
+   "opp": "ATL",
+   "stat": "ANY_TD",
+   "side": "OVER",
+   "line": 0.5,
+   "line_source": "est.",
+   "price": 406,
+   "projection": 0.59,
+   "prob": 0.331,
+   "edge": 0.133,
+   "score": 9.32,
+   "grade": "B",
+   "hit_l5": "0/5",
+   "hit_l10": "4/10",
+   "hit_season": "1/7",
+   "vs_opp": "0/0",
+   "minutes": 18.8,
+   "status": "ACTIVE",
+   "season_avg": 0.3,
+   "l10_avg": 0.0,
+   "reasons": [
+    "Goes against his last game: grade lowered one level (live record 42% on these)",
+    "ATL allows anytime TD to RBs (+13%)",
+    "Implied team total 27.8 (high vs avg 22.8)",
+    "Over hit 0/5 last 5, 4/10 last 10 at 0.5",
+    "Last game: 0 (under the line)"
+   ],
+   "actual": 0.0,
+   "result": "LOSS",
+   "last_game": 0.0,
+   "open_line": null,
+   "open_price": null,
+   "books": null,
+   "dist": {
+    "k": "count",
+    "var": 0.615
+   },
+   "locked": true,
+   "actual_min": 12.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873038",
+   "game": "CIN @ ATL",
+   "player": "Kyle Pitts Sr.",
+   "player_id": "4360248",
+   "team": "ATL",
+   "opp": "CIN",
+   "stat": "ANY_TD",
+   "side": "UNDER",
+   "line": 0.5,
+   "line_source": "est.",
+   "price": -122,
+   "projection": 0.39,
+   "prob": 0.622,
+   "edge": 0.072,
+   "score": 7.21,
+   "grade": "B",
+   "hit_l5": "2/5",
+   "hit_l10": "7/10",
+   "hit_season": "5/8",
+   "vs_opp": "0/0",
+   "minutes": 5.6,
+   "status": "ACTIVE",
+   "season_avg": 0.4,
+   "l10_avg": 1.0,
+   "reasons": [
+    "Implied team total 24.8 (high vs avg 22.8)",
+    "Under hit 2/5 last 5, 7/10 last 10 at 0.5",
+    "Last game: 0 (under the line)"
+   ],
+   "actual": 0.0,
+   "result": "WIN",
+   "last_game": 0.0,
+   "open_line": null,
+   "open_price": null,
+   "books": null,
+   "dist": {
+    "k": "count",
+    "var": 0.406
+   },
+   "locked": true,
+   "actual_min": 5.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873038",
+   "game": "CIN @ ATL",
+   "player": "Bijan Robinson",
+   "player_id": "4430807",
+   "team": "ATL",
+   "opp": "CIN",
+   "stat": "ANY_TD",
+   "side": "OVER",
+   "line": 0.5,
+   "line_source": "est.",
+   "price": 200,
+   "projection": 0.65,
+   "prob": 0.407,
+   "edge": 0.073,
+   "score": 5.13,
+   "grade": "C",
+   "hit_l5": "1/5",
+   "hit_l10": "4/10",
+   "hit_season": "3/8",
+   "vs_opp": "0/0",
+   "minutes": 22.5,
+   "status": "ACTIVE",
+   "season_avg": 0.6,
+   "l10_avg": 0.0,
+   "reasons": [
+    "Goes against his last game: grade lowered one level (live record 42% on these)",
+    "Implied team total 24.8 (high vs avg 22.8)",
+    "Over hit 1/5 last 5, 4/10 last 10 at 0.5",
+    "Last game: 0 (under the line)"
+   ],
+   "actual": 1.0,
+   "result": "WIN",
+   "last_game": 0.0,
+   "open_line": null,
+   "open_price": null,
+   "books": null,
+   "dist": {
+    "k": "count",
+    "var": 0.686
+   },
+   "locked": true,
+   "actual_min": 26.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873038",
+   "game": "CIN @ ATL",
+   "player": "Michael Penix Jr.",
+   "player_id": "4360423",
+   "team": "ATL",
+   "opp": "CIN",
+   "stat": "PASS_CMP",
+   "side": "OVER",
+   "line": 17.5,
+   "line_source": "est.",
+   "price": -121,
+   "projection": 19.5,
+   "prob": 0.608,
+   "edge": 0.06,
+   "score": 4.19,
+   "grade": "C",
+   "hit_l5": "3/5",
+   "hit_l10": "6/10",
+   "hit_season": "4/6",
+   "vs_opp": "0/0",
+   "minutes": 31.6,
+   "status": "ACTIVE",
+   "season_avg": 17.8,
+   "l10_avg": 17.8,
+   "reasons": [
+    "Goes against his last game: grade lowered one level (live record 42% on these)",
+    "Over hit 3/5 last 5, 6/10 last 10 at 17.5",
+    "Last game: 8 (under the line)"
+   ],
+   "actual": 20.0,
+   "result": "WIN",
+   "last_game": 8.0,
+   "open_line": null,
+   "open_price": null,
+   "books": null,
+   "dist": {
+    "k": "normal",
+    "sd": 4.807
+   },
+   "locked": true,
+   "actual_min": 31.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873038",
+   "game": "CIN @ ATL",
+   "player": "Drake London",
+   "player_id": "4426502",
+   "team": "ATL",
+   "opp": "CIN",
+   "stat": "REC",
+   "side": "UNDER",
+   "line": 5.5,
+   "line_source": "6 books",
+   "price": 110,
+   "projection": 5.5,
+   "prob": 0.51,
+   "edge": 0.034,
+   "score": 3.36,
+   "grade": "C",
+   "hit_l5": "3/5",
+   "hit_l10": "7/10",
+   "hit_season": "5/8",
+   "vs_opp": "0/0",
+   "minutes": 8.9,
+   "status": "ACTIVE",
+   "season_avg": 5.1,
+   "l10_avg": 4.8,
+   "reasons": [
+    "Under hit 3/5 last 5, 7/10 last 10 at 5.5",
+    "Last game: 1 (under the line)"
+   ],
+   "actual": 5.0,
+   "result": "WIN",
+   "last_game": 1.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     5.5,
+     102
+    ],
+    "FanDuel": [
+     5.5,
+     -102
+    ],
+    "BetMGM": [
+     5.5,
+     110
+    ],
+    "BetOnline.ag": [
+     5.5,
+     106
+    ],
+    "Bovada": [
+     5.5,
+     100
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 7.668
+   },
+   "locked": true,
+   "actual_min": 5.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
   }
  ]
 }
