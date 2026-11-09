@@ -1,0 +1,380 @@
+[
+ {
+  "game_id": "401909954",
+  "game": "WSH @ DET",
+  "player": "Cade Cunningham",
+  "player_id": "4432166",
+  "team": "DET",
+  "opp": "WSH",
+  "stat": "PA",
+  "side": "UNDER",
+  "line": 35.5,
+  "line_source": "DraftKings",
+  "price": -117,
+  "projection": 29.5,
+  "prob": 0.646,
+  "edge": 0.107,
+  "score": 8.46,
+  "grade": "B",
+  "hit_l5": "2/5",
+  "hit_l10": "7/10",
+  "hit_season": "6/9",
+  "vs_opp": "1/3",
+  "minutes": 31.2,
+  "status": "ACTIVE",
+  "season_avg": 31.9,
+  "l10_avg": 29.3,
+  "reasons": [
+   "Projected 30-34 minutes: grade lowered one level (21-25 on real lines)",
+   "WSH allows assists to Gs (+8% vs expected)",
+   "Back-to-back",
+   "Under hit 7/10 of last 10 at 35.5",
+   "Last game: 22 (under the line)",
+   "Last 3 vs WSH: 6, 38, 57"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 22.0,
+  "open_line": 35.5,
+  "open_price": -118,
+  "books": {
+   "DraftKings": [
+    35.5,
+    -117
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 9.26
+  }
+ },
+ {
+  "game_id": "401909952",
+  "game": "LAL @ ATL",
+  "player": "Ziaire Williams",
+  "player_id": "4433137",
+  "team": "LAL",
+  "opp": "ATL",
+  "stat": "PTS",
+  "side": "OVER",
+  "line": 7.5,
+  "line_source": "DraftKings",
+  "price": -113,
+  "projection": 10.0,
+  "prob": 0.607,
+  "edge": 0.076,
+  "score": 7.02,
+  "grade": "B",
+  "hit_l5": "5/5",
+  "hit_l10": "10/10",
+  "hit_season": "8/8",
+  "vs_opp": "1/1",
+  "minutes": 21.1,
+  "status": "ACTIVE",
+  "season_avg": 10.6,
+  "l10_avg": 10.7,
+  "reasons": [
+   "Implied team total 118.0 (high vs slate avg 112.6)",
+   "Back-to-back",
+   "Over hit 10/10 of last 10 at 7.5",
+   "Last game: 17 (over the line)",
+   "Last 1 vs ATL: 8"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 17.0,
+  "open_line": 7.5,
+  "open_price": -118,
+  "books": {
+   "DraftKings": [
+    7.5,
+    -113
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 5.487
+  }
+ },
+ {
+  "game_id": "401909955",
+  "game": "MEM @ TOR",
+  "player": "Ja'Kobe Walter",
+  "player_id": "4684272",
+  "team": "TOR",
+  "opp": "MEM",
+  "stat": "PR",
+  "side": "UNDER",
+  "line": 16.5,
+  "line_source": "DraftKings",
+  "price": -115,
+  "projection": 13.7,
+  "prob": 0.602,
+  "edge": 0.067,
+  "score": 6.5,
+  "grade": "B",
+  "hit_l5": "5/5",
+  "hit_l10": "8/10",
+  "hit_season": "7/9",
+  "vs_opp": "2/2",
+  "minutes": 27.3,
+  "status": "ACTIVE",
+  "season_avg": 12.6,
+  "l10_avg": 14.9,
+  "reasons": [
+   "Implied team total 115.5 (high vs slate avg 112.6)",
+   "Under hit 8/10 of last 10 at 16.5",
+   "Last game: 13 (under the line)",
+   "Last 2 vs MEM: 15, 2"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 13.0,
+  "open_line": 15.5,
+  "open_price": -105,
+  "books": {
+   "DraftKings": [
+    16.5,
+    -115
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 6.292
+  }
+ },
+ {
+  "game_id": "401909959",
+  "game": "NO @ GS",
+  "player": "Draymond Green",
+  "player_id": "6589",
+  "team": "GS",
+  "opp": "NO",
+  "stat": "PR",
+  "side": "UNDER",
+  "line": 11.5,
+  "line_source": "DraftKings",
+  "price": -109,
+  "projection": 10.0,
+  "prob": 0.578,
+  "edge": 0.056,
+  "score": 5.18,
+  "grade": "B",
+  "hit_l5": "4/5",
+  "hit_l10": "8/10",
+  "hit_season": "7/8",
+  "vs_opp": "1/3",
+  "minutes": 28.5,
+  "status": "ACTIVE",
+  "season_avg": 11.2,
+  "l10_avg": 8.4,
+  "reasons": [
+   "Implied team total 121.0 (high vs slate avg 112.6)",
+   "Under hit 8/10 of last 10 at 11.5",
+   "Last game: 8 (under the line)",
+   "Last 3 vs NO: 18, 11, 18"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 8.0,
+  "open_line": 11.5,
+  "open_price": 100,
+  "books": {
+   "DraftKings": [
+    11.5,
+    -109
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 4.376
+  }
+ },
+ {
+  "game_id": "401909957",
+  "game": "DEN @ HOU",
+  "player": "Jabari Smith Jr.",
+  "player_id": "4432639",
+  "team": "HOU",
+  "opp": "DEN",
+  "stat": "AST",
+  "side": "OVER",
+  "line": 1.5,
+  "line_source": "DraftKings",
+  "price": -126,
+  "projection": 2.2,
+  "prob": 0.619,
+  "edge": 0.062,
+  "score": 4.96,
+  "grade": "C",
+  "hit_l5": "4/5",
+  "hit_l10": "7/10",
+  "hit_season": "7/10",
+  "vs_opp": "4/4",
+  "minutes": 34.4,
+  "status": "ACTIVE",
+  "season_avg": 2.1,
+  "l10_avg": 2.3,
+  "reasons": [
+   "Assists: grade lowered one level (17-17 on real lines)",
+   "DEN allows assists to Fs (+5% vs expected)",
+   "Over hit 7/10 of last 10 at 1.5",
+   "Last game: 2 (over the line)",
+   "Last 4 vs DEN: 2, 2, 4, 4"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 2.0,
+  "open_line": 1.5,
+  "open_price": -116,
+  "books": {
+   "DraftKings": [
+    1.5,
+    -126
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 1.493
+  }
+ },
+ {
+  "game_id": "401909956",
+  "game": "IND @ DAL",
+  "player": "Cooper Flagg",
+  "player_id": "5041939",
+  "team": "DAL",
+  "opp": "IND",
+  "stat": "PR",
+  "side": "UNDER",
+  "line": 33.5,
+  "line_source": "DraftKings",
+  "price": -117,
+  "projection": 29.2,
+  "prob": 0.608,
+  "edge": 0.069,
+  "score": 4.43,
+  "grade": "C",
+  "hit_l5": "4/5",
+  "hit_l10": "7/10",
+  "hit_season": "6/9",
+  "vs_opp": "2/2",
+  "minutes": 31.8,
+  "status": "ACTIVE",
+  "season_avg": 29.1,
+  "l10_avg": 28.9,
+  "reasons": [
+   "Projected 30-34 minutes: grade lowered one level (21-25 on real lines)",
+   "Back-to-back",
+   "Under hit 7/10 of last 10 at 33.5",
+   "Last game: 30 (under the line)",
+   "Last 2 vs IND: 19, 25"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 30.0,
+  "open_line": 33.5,
+  "open_price": -124,
+  "books": {
+   "DraftKings": [
+    33.5,
+    -117
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 9.449
+  }
+ },
+ {
+  "game_id": "401909956",
+  "game": "IND @ DAL",
+  "player": "Obi Toppin",
+  "player_id": "4278355",
+  "team": "IND",
+  "opp": "DAL",
+  "stat": "REB",
+  "side": "OVER",
+  "line": 4.5,
+  "line_source": "DraftKings",
+  "price": -103,
+  "projection": 5.0,
+  "prob": 0.543,
+  "edge": 0.036,
+  "score": 3.61,
+  "grade": "C",
+  "hit_l5": "5/5",
+  "hit_l10": "8/10",
+  "hit_season": "6/7",
+  "vs_opp": "1/1",
+  "minutes": 19.5,
+  "status": "ACTIVE",
+  "season_avg": 4.8,
+  "l10_avg": 5.6,
+  "reasons": [
+   "Over hit 8/10 of last 10 at 4.5",
+   "Last game: 7 (over the line)",
+   "Last 1 vs DAL: 5"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 7.0,
+  "open_line": 4.5,
+  "open_price": -116,
+  "books": {
+   "DraftKings": [
+    4.5,
+    -103
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 2.236
+  }
+ },
+ {
+  "game_id": "401909957",
+  "game": "DEN @ HOU",
+  "player": "Fred VanVleet",
+  "player_id": "2991230",
+  "team": "HOU",
+  "opp": "DEN",
+  "stat": "PA",
+  "side": "OVER",
+  "line": 16.5,
+  "line_source": "DraftKings",
+  "price": -125,
+  "projection": 18.2,
+  "prob": 0.591,
+  "edge": 0.035,
+  "score": 1.89,
+  "grade": "C",
+  "hit_l5": "5/5",
+  "hit_l10": "7/8",
+  "hit_season": "7/8",
+  "vs_opp": "0/0",
+  "minutes": 29.1,
+  "status": "ACTIVE",
+  "season_avg": 19.4,
+  "l10_avg": 19.4,
+  "reasons": [
+   "Over hit 7/8 of last 8 at 16.5",
+   "Last game: 20 (over the line)"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 20.0,
+  "open_line": 17.5,
+  "open_price": -112,
+  "books": {
+   "DraftKings": [
+    16.5,
+    -125
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 4.873
+  }
+ }
+]

@@ -1,0 +1,218 @@
+[
+ {
+  "legs": [
+   {
+    "game_id": "401909952",
+    "game": "LAL @ ATL",
+    "player": "Ziaire Williams",
+    "player_id": "4433137",
+    "team": "LAL",
+    "opp": "ATL",
+    "stat": "PTS",
+    "side": "OVER",
+    "line": 7.5,
+    "price": -113,
+    "prob": 0.607,
+    "edge": 0.076,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      7.5,
+      -113
+     ]
+    },
+    "projection": 10.0,
+    "dist": {
+     "k": "normal",
+     "sd": 5.487
+    }
+   }
+  ],
+  "hit": 0.607,
+  "payout": 1.88,
+  "odds": -113,
+  "ev": 0.144,
+  "type": "double",
+  "label": "Double up",
+  "made": "2026-11-09T10:38:52.458005-05:00"
+ },
+ {
+  "legs": [
+   {
+    "game_id": "401909954",
+    "game": "WSH @ DET",
+    "player": "Cade Cunningham",
+    "player_id": "4432166",
+    "team": "DET",
+    "opp": "WSH",
+    "stat": "PA",
+    "side": "UNDER",
+    "line": 35.5,
+    "price": -117,
+    "prob": 0.646,
+    "edge": 0.107,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      35.5,
+      -117
+     ]
+    },
+    "projection": 29.5,
+    "dist": {
+     "k": "normal",
+     "sd": 9.26
+    }
+   },
+   {
+    "game_id": "401909957",
+    "game": "DEN @ HOU",
+    "player": "Jabari Smith Jr.",
+    "player_id": "4432639",
+    "team": "HOU",
+    "opp": "DEN",
+    "stat": "AST",
+    "side": "OVER",
+    "line": 1.5,
+    "price": -126,
+    "prob": 0.619,
+    "edge": 0.062,
+    "grade": "C",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      1.5,
+      -126
+     ]
+    },
+    "projection": 2.2,
+    "dist": {
+     "k": "normal",
+     "sd": 1.493
+    }
+   },
+   {
+    "game_id": "401909956",
+    "game": "IND @ DAL",
+    "player": "Cooper Flagg",
+    "player_id": "5041939",
+    "team": "DAL",
+    "opp": "IND",
+    "stat": "PR",
+    "side": "UNDER",
+    "line": 33.5,
+    "price": -117,
+    "prob": 0.608,
+    "edge": 0.069,
+    "grade": "C",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      33.5,
+      -117
+     ]
+    },
+    "projection": 29.2,
+    "dist": {
+     "k": "normal",
+     "sd": 9.449
+    }
+   },
+   {
+    "game_id": "401909952",
+    "game": "LAL @ ATL",
+    "player": "Ziaire Williams",
+    "player_id": "4433137",
+    "team": "LAL",
+    "opp": "ATL",
+    "stat": "PTS",
+    "side": "OVER",
+    "line": 7.5,
+    "price": -113,
+    "prob": 0.607,
+    "edge": 0.076,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      7.5,
+      -113
+     ]
+    },
+    "projection": 10.0,
+    "dist": {
+     "k": "normal",
+     "sd": 5.487
+    }
+   },
+   {
+    "game_id": "401909955",
+    "game": "MEM @ TOR",
+    "player": "Ja'Kobe Walter",
+    "player_id": "4684272",
+    "team": "TOR",
+    "opp": "MEM",
+    "stat": "PR",
+    "side": "UNDER",
+    "line": 16.5,
+    "price": -115,
+    "prob": 0.602,
+    "edge": 0.067,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      16.5,
+      -115
+     ]
+    },
+    "projection": 13.7,
+    "dist": {
+     "k": "normal",
+     "sd": 6.292
+    }
+   },
+   {
+    "game_id": "401909959",
+    "game": "NO @ GS",
+    "player": "Draymond Green",
+    "player_id": "6589",
+    "team": "GS",
+    "opp": "NO",
+    "stat": "PR",
+    "side": "UNDER",
+    "line": 11.5,
+    "price": -109,
+    "prob": 0.578,
+    "edge": 0.056,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      11.5,
+      -109
+     ]
+    },
+    "projection": 10.0,
+    "dist": {
+     "k": "normal",
+     "sd": 4.376
+    }
+   }
+  ],
+  "hit": 0.0513,
+  "payout": 41.69,
+  "odds": 4069,
+  "ev": 1.141,
+  "type": "allgames",
+  "label": "One per game",
+  "missing": [
+   "401909953",
+   "401909958"
+  ],
+  "games_total": 8,
+  "made": "2026-11-09T10:38:52.458005-05:00"
+ }
+]
