@@ -1,0 +1,27 @@
+{
+ "made": "2026-11-09T10:41:51.942155-05:00",
+ "picks": [
+  {
+   "game_id": "401892681",
+   "game": "PHI @ VAN",
+   "market": "Puck line",
+   "pick": "PHI -1.5",
+   "side": "away",
+   "line": 1.5,
+   "price": 180,
+   "prob": 0.372,
+   "model_prob": 0.427,
+   "edge": 0.015,
+   "grade": "C",
+   "proj": "VAN 2.83 \u2013 PHI 3.90",
+   "mu_h": 2.83,
+   "mu_a": 3.9,
+   "home": "VAN",
+   "away": "PHI",
+   "notes": [
+    "VAN goalie Leevi Merilainen (0.889): opponent goals +11%"
+   ],
+   "score": 1.51
+  }
+ ]
+}

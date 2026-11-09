@@ -1,0 +1,40 @@
+[
+ {
+  "legs": [
+   {
+    "game_id": "401892681",
+    "game": "PHI @ VAN",
+    "player": "Jake DeBrusk",
+    "player_id": "3900240",
+    "team": "VAN",
+    "opp": "PHI",
+    "stat": "PTS",
+    "side": "UNDER",
+    "line": 0.5,
+    "price": -110,
+    "prob": 0.569,
+    "edge": 0.045,
+    "grade": "C",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      0.5,
+      -110
+     ]
+    },
+    "projection": 0.48,
+    "dist": {
+     "k": "count",
+     "var": 0.493
+    }
+   }
+  ],
+  "hit": 0.569,
+  "payout": 1.91,
+  "odds": -110,
+  "ev": 0.086,
+  "type": "double",
+  "label": "Double up",
+  "made": "2026-11-09T10:41:51.942155-05:00"
+ }
+]
