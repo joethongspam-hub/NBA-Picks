@@ -85,7 +85,7 @@ NHL_BLOCKED = {
     ("SOG", "OVER"): "NHL shots on goal not offered (21-25 on real lines)",
     ("SOG", "UNDER"): "NHL shots on goal not offered (21-25 on real lines)",
 }
-LAST_GAME_NOTE = "Goes against his last game: grade lowered one level (live record 42% on these)"
+LAST_GAME_NOTE = "Goes against his last game: not graded (real-line record 32-57 on these)"
 
 
 def market_disagrees(real, line: float, mu: float) -> bool:
@@ -604,7 +604,7 @@ def evaluate(proj: Projection, stats: list[str], lines: dict[tuple[str, str], Pr
             grade, score = DEMOTE[grade], score * 0.8
         vs_last = against_last_game(p.logs, lambda g: g.get(s), side, line)
         if vs_last:
-            grade, score = DEMOTE[grade], score * 0.7
+            grade, score = "-", 0.0
         flag = market_disagrees(real, line, mu)
         if flag:
             grade, score = "-", 0.0

@@ -74,7 +74,7 @@ and saves each day's picks in `history/` so the **Track record** tab can grade t
 ## Rules added from the live track record (Nov 7)
 
 * **Against the last game:** an under after the player went over that line last game (or an over after he went
-  under) drops one grade. Live record before the rule: 42% on these vs. 62% for picks agreeing with the last game.
+  under) is **not graded** (changed from a one-grade drop on Nov 9; real-line record 32–57). Live record before the rule: 42% on these vs. 62% for picks agreeing with the last game.
 * **NHL long shots:** NHL picks priced +150 or longer aren't graded (live record 9–22).
 * **NBA injury boost:** the share of injured teammates' production handed to others was halved again (live 19–20).
 

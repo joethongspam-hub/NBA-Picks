@@ -543,7 +543,7 @@ def evaluate(proj: Projection, lines: dict[tuple[str, str], PropLine], season: i
         grade = ("A" if edge >= .08 and reliability >= .5 else "B" if edge >= .05 else "C" if edge >= .03 else "-")
         reasons = list(proj.stat_reasons.get(s, [])) + list(proj.reasons)
         if against_last_game(p.logs, lambda g: g.get(s), side, line):
-            grade, score = DEMOTE[grade], score * 0.7
+            grade, score = "-", 0.0
             reasons.insert(0, LAST_GAME_NOTE)
         if market_disagrees(real, line, mu):
             grade, score = "-", 0.0
