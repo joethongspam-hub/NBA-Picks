@@ -22,7 +22,8 @@
     "TOR goalie Sergei Bobrovsky (0.888): opponent goals +12% (starter uncertain)",
     "NJ goalie Connor Hellebuyck (0.895): opponent goals +5%"
    ],
-   "score": 2.0
+   "score": 2.0,
+   "locked": true
   }
  ]
 }
