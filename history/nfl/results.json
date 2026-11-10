@@ -7768,6 +7768,347 @@
    "actual_min": 5.0,
    "week": "2026-W09",
    "date": "2026-W09"
+  },
+  {
+   "game_id": "401873051",
+   "game": "BUF @ MIN",
+   "player": "Aaron Jones Sr.",
+   "player_id": "3042519",
+   "team": "MIN",
+   "opp": "BUF",
+   "stat": "REC",
+   "side": "OVER",
+   "line": 1.5,
+   "line_source": "5 books",
+   "price": -128,
+   "projection": 3.1,
+   "prob": 0.698,
+   "edge": 0.137,
+   "score": 13.71,
+   "grade": "A",
+   "hit_l5": "4/5",
+   "hit_l10": "7/10",
+   "hit_season": "4/7",
+   "vs_opp": "0/0",
+   "minutes": 17.3,
+   "status": "ACTIVE",
+   "season_avg": 2.2,
+   "l10_avg": 2.5,
+   "reasons": [
+    "Claiborne, Jefferson, Jennings out: +1.0 targets",
+    "Over hit 4/5 last 5, 7/10 last 10 at 1.5",
+    "Last game: 2 (over the line)"
+   ],
+   "actual": 1.0,
+   "result": "LOSS",
+   "last_game": 2.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     1.5,
+     -128
+    ],
+    "FanDuel": [
+     1.5,
+     -140
+    ],
+    "BetOnline.ag": [
+     1.5,
+     -130
+    ],
+    "BetRivers": [
+     1.5,
+     -150
+    ],
+    "Bovada": [
+     1.5,
+     -130
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 3.244
+   },
+   "actual_min": 6.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873051",
+   "game": "BUF @ MIN",
+   "player": "DJ Moore",
+   "player_id": "3915416",
+   "team": "BUF",
+   "opp": "MIN",
+   "stat": "REC",
+   "side": "UNDER",
+   "line": 3.5,
+   "line_source": "6 books",
+   "price": 106,
+   "projection": 2.7,
+   "prob": 0.613,
+   "edge": 0.128,
+   "score": 8.94,
+   "grade": "B",
+   "hit_l5": "2/5",
+   "hit_l10": "4/10",
+   "hit_season": "2/5",
+   "vs_opp": "2/2",
+   "minutes": 5.9,
+   "status": "ACTIVE",
+   "season_avg": 3.2,
+   "l10_avg": 2.8,
+   "reasons": [
+    "Goes against his last game: grade lowered one level (live record 42% on these)",
+    "MIN limits receptions to WRs (-13%)",
+    "Under hit 2/5 last 5, 4/10 last 10 at 3.5",
+    "Last game: 4 (over the line)",
+    "Last 2 vs MIN: 1, 3"
+   ],
+   "actual": 3.0,
+   "result": "WIN",
+   "last_game": 4.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     3.5,
+     106
+    ],
+    "FanDuel": [
+     3.5,
+     -102
+    ],
+    "BetOnline.ag": [
+     3.5,
+     -108
+    ],
+    "BetMGM": [
+     3.5,
+     100
+    ],
+    "Bovada": [
+     3.5,
+     105
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 2.857
+   },
+   "actual_min": 6.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873051",
+   "game": "BUF @ MIN",
+   "player": "Jordan Mason",
+   "player_id": "4360569",
+   "team": "MIN",
+   "opp": "BUF",
+   "stat": "RUSH_YDS",
+   "side": "UNDER",
+   "line": 46.5,
+   "line_source": "6 books",
+   "price": -110,
+   "projection": 43.7,
+   "prob": 0.569,
+   "edge": 0.045,
+   "score": 4.49,
+   "grade": "C",
+   "hit_l5": "2/5",
+   "hit_l10": "5/10",
+   "hit_season": "1/3",
+   "vs_opp": "0/0",
+   "minutes": 11.6,
+   "status": "ACTIVE",
+   "season_avg": 48.1,
+   "l10_avg": 60.2,
+   "reasons": [
+    "Implied team total 20.2 (low vs avg 22.8)",
+    "Under hit 2/5 last 5, 5/10 last 10 at 46.5",
+    "Last game: 20 (under the line)"
+   ],
+   "actual": 35.0,
+   "result": "WIN",
+   "last_game": 20.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     46.5,
+     -110
+    ],
+    "FanDuel": [
+     47.5,
+     -114
+    ],
+    "BetOnline.ag": [
+     46.5,
+     -111
+    ],
+    "BetRivers": [
+     47.5,
+     -117
+    ],
+    "BetMGM": [
+     49.5,
+     -115
+    ],
+    "Bovada": [
+     46.5,
+     -115
+    ]
+   },
+   "dist": {
+    "k": "gamma",
+    "cv": 0.568
+   },
+   "actual_min": 9.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873051",
+   "game": "BUF @ MIN",
+   "player": "Carson Wentz",
+   "player_id": "2573079",
+   "team": "MIN",
+   "opp": "BUF",
+   "stat": "PASS_YDS",
+   "side": "UNDER",
+   "line": 209.5,
+   "line_source": "6 books",
+   "price": -111,
+   "projection": 197.8,
+   "prob": 0.565,
+   "edge": 0.039,
+   "score": 3.89,
+   "grade": "C",
+   "hit_l5": "4/5",
+   "hit_l10": "5/8",
+   "hit_season": "3/3",
+   "vs_opp": "0/0",
+   "minutes": 30.0,
+   "status": "ACTIVE",
+   "season_avg": 178.4,
+   "l10_avg": 105.0,
+   "reasons": [
+    "Implied team total 20.2 (low vs avg 22.8)",
+    "Murray out: Carson Wentz expected to start",
+    "Under hit 4/5 last 5, 5/8 last 10 at 209.5",
+    "Last game: 0 (under the line)"
+   ],
+   "actual": 81.0,
+   "result": "WIN",
+   "last_game": 0.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     209.5,
+     -111
+    ],
+    "FanDuel": [
+     209.5,
+     -114
+    ],
+    "BetOnline.ag": [
+     209.5,
+     -112
+    ],
+    "BetRivers": [
+     203.5,
+     -114
+    ],
+    "BetMGM": [
+     213.5,
+     -115
+    ],
+    "Bovada": [
+     209.5,
+     -115
+    ]
+   },
+   "dist": {
+    "k": "gamma",
+    "cv": 0.429
+   },
+   "actual_min": 25.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873051",
+   "game": "BUF @ MIN",
+   "player": "Josh Allen",
+   "player_id": "3918298",
+   "team": "BUF",
+   "opp": "MIN",
+   "stat": "PASS_YDS",
+   "side": "UNDER",
+   "line": 237.5,
+   "line_source": "6 books",
+   "price": -114,
+   "projection": 219.1,
+   "prob": 0.584,
+   "edge": 0.052,
+   "score": 3.61,
+   "grade": "C",
+   "hit_l5": "2/5",
+   "hit_l10": "3/10",
+   "hit_season": "2/7",
+   "vs_opp": "0/0",
+   "minutes": 29.3,
+   "status": "ACTIVE",
+   "season_avg": 243.8,
+   "l10_avg": 251.8,
+   "reasons": [
+    "Goes against his last game: grade lowered one level (live record 42% on these)",
+    "MIN limits passing yards to QBs (-7%)",
+    "Under hit 2/5 last 5, 3/10 last 10 at 237.5",
+    "Last game: 289 (over the line)"
+   ],
+   "actual": 234.0,
+   "result": "WIN",
+   "last_game": 289.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     238.5,
+     -112
+    ],
+    "FanDuel": [
+     237.5,
+     -114
+    ],
+    "BetOnline.ag": [
+     237.5,
+     -114
+    ],
+    "BetRivers": [
+     229.5,
+     -117
+    ],
+    "BetMGM": [
+     230.5,
+     -115
+    ],
+    "Bovada": [
+     238.5,
+     -115
+    ]
+   },
+   "dist": {
+    "k": "gamma",
+    "cv": 0.324
+   },
+   "actual_min": 31.0,
+   "week": "2026-W09",
+   "date": "2026-W09"
   }
  ]
 }
