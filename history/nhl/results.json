@@ -10981,6 +10981,251 @@
    "locked": true,
    "date": "2026-11-08",
    "actual_min": 18.116666666666667
+  },
+  {
+   "game_id": "401892680",
+   "game": "NYR @ EDM",
+   "player": "Gabe Perreault",
+   "player_id": "5149204",
+   "team": "NYR",
+   "opp": "EDM",
+   "stat": "AST",
+   "side": "UNDER",
+   "line": 0.5,
+   "line_source": "DraftKings",
+   "price": -270,
+   "projection": 0.14,
+   "prob": 0.796,
+   "edge": 0.066,
+   "score": 6.64,
+   "grade": "B",
+   "hit_l5": "5/5",
+   "hit_l10": "10/10",
+   "hit_season": "15/18",
+   "vs_opp": "1/1",
+   "minutes": 16.9,
+   "status": "ACTIVE",
+   "season_avg": 0.22,
+   "l10_avg": 0.0,
+   "reasons": [
+    "Opposing goalie Tristan Jarry (0.894 sv%): goals easier (+6%)",
+    "Implied team goals 2.95 (low vs avg 3.25)",
+    "Under hit 10/10 of last 10 at 0.5",
+    "Last game: 0 (under the line)",
+    "Last 1 vs EDM: 0"
+   ],
+   "actual": 0.0,
+   "result": "WIN",
+   "last_game": 0.0,
+   "open_line": 0.5,
+   "open_price": -295,
+   "books": {
+    "DraftKings": [
+     0.5,
+     -270
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 0.143
+   },
+   "date": "2026-11-09",
+   "actual_min": 16.116666666666667
+  },
+  {
+   "game_id": "401892681",
+   "game": "PHI @ VAN",
+   "player": "Jake DeBrusk",
+   "player_id": "3900240",
+   "team": "VAN",
+   "opp": "PHI",
+   "stat": "PTS",
+   "side": "UNDER",
+   "line": 0.5,
+   "line_source": "DraftKings",
+   "price": -110,
+   "projection": 0.48,
+   "prob": 0.568,
+   "edge": 0.044,
+   "score": 4.36,
+   "grade": "C",
+   "hit_l5": "4/5",
+   "hit_l10": "7/10",
+   "hit_season": "10/17",
+   "vs_opp": "2/2",
+   "minutes": 17.0,
+   "status": "ACTIVE",
+   "season_avg": 0.56,
+   "l10_avg": 0.5,
+   "reasons": [
+    "Under hit 7/10 of last 10 at 0.5",
+    "Last game: 0 (under the line)",
+    "Last 2 vs PHI: 0, 0"
+   ],
+   "actual": 0.0,
+   "result": "WIN",
+   "last_game": 0.0,
+   "open_line": 0.5,
+   "open_price": -115,
+   "books": {
+    "DraftKings": [
+     0.5,
+     -110
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 0.495
+   },
+   "date": "2026-11-09",
+   "actual_min": 21.15
+  },
+  {
+   "game_id": "401892680",
+   "game": "NYR @ EDM",
+   "player": "Connor McDavid",
+   "player_id": "3895074",
+   "team": "EDM",
+   "opp": "NYR",
+   "stat": "PTS",
+   "side": "OVER",
+   "line": 1.5,
+   "line_source": "DraftKings",
+   "price": -145,
+   "projection": 2.39,
+   "prob": 0.63,
+   "edge": 0.038,
+   "score": 3.78,
+   "grade": "C",
+   "hit_l5": "3/5",
+   "hit_l10": "7/10",
+   "hit_season": "13/18",
+   "vs_opp": "1/3",
+   "minutes": 23.8,
+   "status": "ACTIVE",
+   "season_avg": 2.26,
+   "l10_avg": 2.4,
+   "reasons": [
+    "Implied team goals 3.55 (high vs avg 3.25)",
+    "Over hit 7/10 of last 10 at 1.5",
+    "Last game: 3 (over the line)",
+    "Last 3 vs NYR: 2, 0, 1"
+   ],
+   "actual": 1.0,
+   "result": "LOSS",
+   "last_game": 3.0,
+   "open_line": 1.5,
+   "open_price": -130,
+   "books": {
+    "DraftKings": [
+     1.5,
+     -145
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 2.458
+   },
+   "date": "2026-11-09",
+   "actual_min": 24.566666666666666
+  },
+  {
+   "game_id": "401892680",
+   "game": "NYR @ EDM",
+   "player": "Vasily Podkolzin",
+   "player_id": "4565231",
+   "team": "EDM",
+   "opp": "NYR",
+   "stat": "AST",
+   "side": "UNDER",
+   "line": 0.5,
+   "line_source": "DraftKings",
+   "price": -265,
+   "projection": 0.2,
+   "prob": 0.763,
+   "edge": 0.037,
+   "score": 2.99,
+   "grade": "C",
+   "hit_l5": "5/5",
+   "hit_l10": "9/10",
+   "hit_season": "14/18",
+   "vs_opp": "3/3",
+   "minutes": 15.5,
+   "status": "ACTIVE",
+   "season_avg": 0.26,
+   "l10_avg": 0.1,
+   "reasons": [
+    "Implied team goals 3.55 (high vs avg 3.25)",
+    "Under hit 9/10 of last 10 at 0.5",
+    "Last game: 0 (under the line)",
+    "Last 3 vs NYR: 0, 0, 0"
+   ],
+   "actual": 1.0,
+   "result": "LOSS",
+   "last_game": 0.0,
+   "open_line": 0.5,
+   "open_price": -350,
+   "books": {
+    "DraftKings": [
+     0.5,
+     -265
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 0.209
+   },
+   "date": "2026-11-09",
+   "actual_min": 15.783333333333333
+  },
+  {
+   "game_id": "401892681",
+   "game": "PHI @ VAN",
+   "player": "Owen Tippett",
+   "player_id": "4392072",
+   "team": "PHI",
+   "opp": "VAN",
+   "stat": "AST",
+   "side": "UNDER",
+   "line": 0.5,
+   "line_source": "DraftKings",
+   "price": -350,
+   "projection": 0.15,
+   "prob": 0.808,
+   "edge": 0.031,
+   "score": 2.96,
+   "grade": "C",
+   "hit_l5": "5/5",
+   "hit_l10": "9/10",
+   "hit_season": "12/13",
+   "vs_opp": "2/2",
+   "minutes": 15.2,
+   "status": "ACTIVE",
+   "season_avg": 0.16,
+   "l10_avg": 0.1,
+   "reasons": [
+    "Opposing goalie Leevi Merilainen (0.889 sv%): goals easier (+11%)",
+    "Under hit 9/10 of last 10 at 0.5",
+    "Last game: 0 (under the line)",
+    "Last 2 vs VAN: 0, 0"
+   ],
+   "actual": 0.0,
+   "result": "WIN",
+   "last_game": 0.0,
+   "open_line": 0.5,
+   "open_price": -340,
+   "books": {
+    "DraftKings": [
+     0.5,
+     -350
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 0.156
+   },
+   "date": "2026-11-09",
+   "actual_min": 10.683333333333334
   }
  ]
 }
