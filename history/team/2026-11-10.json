@@ -1,0 +1,273 @@
+{
+ "made": "2026-11-10T12:30:29.704389-05:00",
+ "picks": [
+  {
+   "game_id": "401909960",
+   "game": "MIL @ NY",
+   "market": "Moneyline",
+   "pick": "MIL ML",
+   "side": "away",
+   "line": null,
+   "price": 670,
+   "prob": 0.165,
+   "model_prob": 0.24,
+   "edge": 0.035,
+   "grade": "B",
+   "proj": "NY 112.0 \u2013 MIL 103.2",
+   "mu_h": 112.03,
+   "mu_a": 103.21,
+   "home": "NY",
+   "away": "MIL",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
+   ],
+   "score": 3.52
+  },
+  {
+   "game_id": "401909960",
+   "game": "MIL @ NY",
+   "market": "Spread",
+   "pick": "MIL +15.5",
+   "side": "away",
+   "line": -15.5,
+   "price": -115,
+   "prob": 0.578,
+   "model_prob": 0.703,
+   "edge": 0.043,
+   "grade": "B",
+   "proj": "NY 112.0 \u2013 MIL 103.2",
+   "mu_h": 112.03,
+   "mu_a": 103.21,
+   "home": "NY",
+   "away": "MIL",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
+   ],
+   "score": 4.34
+  },
+  {
+   "game_id": "401909961",
+   "game": "BOS @ PHI",
+   "market": "Moneyline",
+   "pick": "PHI ML",
+   "side": "home",
+   "line": null,
+   "price": -101,
+   "prob": 0.553,
+   "model_prob": 0.685,
+   "edge": 0.051,
+   "grade": "A",
+   "proj": "PHI 114.8 \u2013 BOS 108.8",
+   "mu_h": 114.8,
+   "mu_a": 108.78,
+   "home": "PHI",
+   "away": "BOS",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
+   ],
+   "score": 5.08
+  },
+  {
+   "game_id": "401909961",
+   "game": "BOS @ PHI",
+   "market": "Spread",
+   "pick": "PHI +1.5",
+   "side": "home",
+   "line": 1.5,
+   "price": -107,
+   "prob": 0.575,
+   "model_prob": 0.726,
+   "edge": 0.058,
+   "grade": "A",
+   "proj": "PHI 114.8 \u2013 BOS 108.8",
+   "mu_h": 114.8,
+   "mu_a": 108.78,
+   "home": "PHI",
+   "away": "BOS",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
+   ],
+   "score": 5.81
+  },
+  {
+   "game_id": "401909962",
+   "game": "LAC @ PHX",
+   "market": "Moneyline",
+   "pick": "PHX ML",
+   "side": "home",
+   "line": null,
+   "price": -167,
+   "prob": 0.641,
+   "model_prob": 0.718,
+   "edge": 0.016,
+   "grade": "C",
+   "proj": "PHX 108.5 \u2013 LAC 101.3",
+   "mu_h": 108.49,
+   "mu_a": 101.29,
+   "home": "PHX",
+   "away": "LAC",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
+   ],
+   "score": 1.59
+  },
+  {
+   "game_id": "401909962",
+   "game": "LAC @ PHX",
+   "market": "Spread",
+   "pick": "PHX -3.5",
+   "side": "home",
+   "line": -3.5,
+   "price": -112,
+   "prob": 0.544,
+   "model_prob": 0.617,
+   "edge": 0.015,
+   "grade": "C",
+   "proj": "PHX 108.5 \u2013 LAC 101.3",
+   "mu_h": 108.49,
+   "mu_a": 101.29,
+   "home": "PHX",
+   "away": "LAC",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
+   ],
+   "score": 1.53
+  },
+  {
+   "game_id": "401909963",
+   "game": "MIA @ UTAH",
+   "market": "Moneyline",
+   "pick": "MIA ML",
+   "side": "away",
+   "line": null,
+   "price": -359,
+   "prob": 0.817,
+   "model_prob": 0.939,
+   "edge": 0.035,
+   "grade": "B",
+   "proj": "UTAH 97.4 \u2013 MIA 116.7",
+   "mu_h": 97.41,
+   "mu_a": 116.71,
+   "home": "UTAH",
+   "away": "MIA",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "UTAH injuries (George): -5.4 pts"
+   ],
+   "score": 3.47
+  },
+  {
+   "game_id": "401909963",
+   "game": "MIA @ UTAH",
+   "market": "Spread",
+   "pick": "MIA -8.5",
+   "side": "away",
+   "line": 8.5,
+   "price": -105,
+   "prob": 0.6,
+   "model_prob": 0.806,
+   "edge": 0.088,
+   "grade": "A",
+   "proj": "UTAH 97.4 \u2013 MIA 116.7",
+   "mu_h": 97.41,
+   "mu_a": 116.71,
+   "home": "UTAH",
+   "away": "MIA",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "UTAH injuries (George): -5.4 pts"
+   ],
+   "score": 8.8
+  },
+  {
+   "game_id": "401909964",
+   "game": "ORL @ SAC",
+   "market": "Moneyline",
+   "pick": "SAC ML",
+   "side": "home",
+   "line": null,
+   "price": 190,
+   "prob": 0.527,
+   "model_prob": 0.89,
+   "edge": 0.182,
+   "grade": "A",
+   "proj": "SAC 121.8 \u2013 ORL 106.5",
+   "mu_h": 121.81,
+   "mu_a": 106.46,
+   "home": "SAC",
+   "away": "ORL",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
+   ],
+   "score": 18.21
+  },
+  {
+   "game_id": "401909964",
+   "game": "ORL @ SAC",
+   "market": "Spread",
+   "pick": "SAC +6.5",
+   "side": "home",
+   "line": 6.5,
+   "price": -116,
+   "prob": 0.669,
+   "model_prob": 0.96,
+   "edge": 0.132,
+   "grade": "A",
+   "proj": "SAC 121.8 \u2013 ORL 106.5",
+   "mu_h": 121.81,
+   "mu_a": 106.46,
+   "home": "SAC",
+   "away": "ORL",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
+   ],
+   "score": 13.23
+  },
+  {
+   "game_id": "401909965",
+   "game": "OKC @ POR",
+   "market": "Moneyline",
+   "pick": "POR ML",
+   "side": "home",
+   "line": null,
+   "price": 110,
+   "prob": 0.491,
+   "model_prob": 0.555,
+   "edge": 0.015,
+   "grade": "C",
+   "proj": "POR 109.7 \u2013 OKC 108.0",
+   "mu_h": 109.68,
+   "mu_a": 107.95,
+   "home": "POR",
+   "away": "OKC",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "POR injuries (Krejci): -0.6 pts"
+   ],
+   "score": 1.53
+  },
+  {
+   "game_id": "401909965",
+   "game": "OKC @ POR",
+   "market": "Spread",
+   "pick": "POR +1.5",
+   "side": "home",
+   "line": 1.5,
+   "price": -106,
+   "prob": 0.53,
+   "model_prob": 0.602,
+   "edge": 0.015,
+   "grade": "C",
+   "proj": "POR 109.7 \u2013 OKC 108.0",
+   "mu_h": 109.68,
+   "mu_a": 107.95,
+   "home": "POR",
+   "away": "OKC",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "POR injuries (Krejci): -0.6 pts"
+   ],
+   "score": 1.55
+  }
+ ]
+}

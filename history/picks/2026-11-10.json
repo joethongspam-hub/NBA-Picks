@@ -1,0 +1,563 @@
+[
+ {
+  "game_id": "401909963",
+  "game": "MIA @ UTAH",
+  "player": "Isaiah Collier",
+  "player_id": "4683766",
+  "team": "UTAH",
+  "opp": "MIA",
+  "stat": "PA",
+  "side": "UNDER",
+  "line": 16.5,
+  "line_source": "DraftKings",
+  "price": -121,
+  "projection": 10.7,
+  "prob": 0.666,
+  "edge": 0.118,
+  "score": 9.02,
+  "grade": "A",
+  "hit_l5": "5/5",
+  "hit_l10": "9/10",
+  "hit_season": "9/10",
+  "vs_opp": "0/2",
+  "minutes": 17.5,
+  "status": "ACTIVE",
+  "season_avg": 14.6,
+  "l10_avg": 10.3,
+  "reasons": [
+   "Under hit 9/10 of last 10 at 16.5",
+   "Last game: 8 (under the line)",
+   "Last 2 vs MIA: 22, 25"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 8.0,
+  "open_line": 16.5,
+  "open_price": -124,
+  "books": {
+   "DraftKings": [
+    16.5,
+    -121
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 7.913
+  }
+ },
+ {
+  "game_id": "401909962",
+  "game": "LAC @ PHX",
+  "player": "Rui Hachimura",
+  "player_id": "4066648",
+  "team": "LAC",
+  "opp": "PHX",
+  "stat": "PTS",
+  "side": "UNDER",
+  "line": 15.5,
+  "line_source": "DraftKings",
+  "price": -106,
+  "projection": 12.9,
+  "prob": 0.593,
+  "edge": 0.078,
+  "score": 7.45,
+  "grade": "B",
+  "hit_l5": "3/5",
+  "hit_l10": "4/10",
+  "hit_season": "4/7",
+  "vs_opp": "3/3",
+  "minutes": 28.3,
+  "status": "ACTIVE",
+  "season_avg": 13.2,
+  "l10_avg": 16.4,
+  "reasons": [
+   "Under hit 4/10 of last 10 at 15.5",
+   "Last game: 14 (under the line)",
+   "Last 3 vs PHX: 13, 3, 0"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 14.0,
+  "open_line": 15.5,
+  "open_price": -120,
+  "books": {
+   "DraftKings": [
+    15.5,
+    -106
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 6.025
+  }
+ },
+ {
+  "game_id": "401909962",
+  "game": "LAC @ PHX",
+  "player": "Miles Bridges",
+  "player_id": "4066383",
+  "team": "PHX",
+  "opp": "LAC",
+  "stat": "PR",
+  "side": "UNDER",
+  "line": 23.5,
+  "line_source": "DraftKings",
+  "price": -117,
+  "projection": 20.5,
+  "prob": 0.609,
+  "edge": 0.07,
+  "score": 7.03,
+  "grade": "B",
+  "hit_l5": "2/5",
+  "hit_l10": "5/10",
+  "hit_season": "4/9",
+  "vs_opp": "2/2",
+  "minutes": 28.8,
+  "status": "ACTIVE",
+  "season_avg": 23.3,
+  "l10_avg": 22.9,
+  "reasons": [
+   "Back-to-back",
+   "Under hit 5/10 of last 10 at 23.5",
+   "Last game: 12 (under the line)",
+   "Last 2 vs LAC: 17, 22"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 12.0,
+  "open_line": 23.5,
+  "open_price": -106,
+  "books": {
+   "DraftKings": [
+    23.5,
+    -117
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 6.49
+  }
+ },
+ {
+  "game_id": "401909961",
+  "game": "BOS @ PHI",
+  "player": "Jayson Tatum",
+  "player_id": "4065648",
+  "team": "BOS",
+  "opp": "PHI",
+  "stat": "PRA",
+  "side": "UNDER",
+  "line": 40.5,
+  "line_source": "DraftKings",
+  "price": -106,
+  "projection": 36.8,
+  "prob": 0.601,
+  "edge": 0.086,
+  "score": 6.79,
+  "grade": "B",
+  "hit_l5": "3/5",
+  "hit_l10": "6/10",
+  "hit_season": "5/9",
+  "vs_opp": "2/5",
+  "minutes": 31.1,
+  "status": "ACTIVE",
+  "season_avg": 39.4,
+  "l10_avg": 39.9,
+  "reasons": [
+   "Projected 30-34 minutes: grade lowered one level (21-25 on real lines)",
+   "Under hit 6/10 of last 10 at 40.5",
+   "Last game: 31 (under the line)",
+   "Last 5 vs PHI: 31, 44, 48, 37, 42"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 31.0,
+  "open_line": 41.5,
+  "open_price": -120,
+  "books": {
+   "DraftKings": [
+    40.5,
+    -106
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 7.984
+  }
+ },
+ {
+  "game_id": "401909960",
+  "game": "MIL @ NY",
+  "player": "Mikal Bridges",
+  "player_id": "3147657",
+  "team": "NY",
+  "opp": "MIL",
+  "stat": "PTS",
+  "side": "UNDER",
+  "line": 10.5,
+  "line_source": "DraftKings",
+  "price": -101,
+  "projection": 8.2,
+  "prob": 0.583,
+  "edge": 0.08,
+  "score": 6.59,
+  "grade": "A",
+  "hit_l5": "4/5",
+  "hit_l10": "7/10",
+  "hit_season": "7/9",
+  "vs_opp": "1/3",
+  "minutes": 24.7,
+  "status": "ACTIVE",
+  "season_avg": 10.7,
+  "l10_avg": 7.3,
+  "reasons": [
+   "Implied team total 118.5 (high vs slate avg 111.6)",
+   "Under hit 7/10 of last 10 at 10.5",
+   "Last game: 9 (under the line)",
+   "Last 3 vs MIL: 10, 14, 24"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 9.0,
+  "open_line": 11.5,
+  "open_price": -130,
+  "books": {
+   "DraftKings": [
+    10.5,
+    -101
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 5.767
+  }
+ },
+ {
+  "game_id": "401909962",
+  "game": "LAC @ PHX",
+  "player": "Darius Garland",
+  "player_id": "4396907",
+  "team": "LAC",
+  "opp": "PHX",
+  "stat": "PR",
+  "side": "UNDER",
+  "line": 24.5,
+  "line_source": "DraftKings",
+  "price": -107,
+  "projection": 21.6,
+  "prob": 0.598,
+  "edge": 0.081,
+  "score": 6.49,
+  "grade": "B",
+  "hit_l5": "3/5",
+  "hit_l10": "5/10",
+  "hit_season": "5/9",
+  "vs_opp": "1/1",
+  "minutes": 31.4,
+  "status": "ACTIVE",
+  "season_avg": 21.9,
+  "l10_avg": 23.0,
+  "reasons": [
+   "Projected 30-34 minutes: grade lowered one level (21-25 on real lines)",
+   "Under hit 5/10 of last 10 at 24.5",
+   "Last game: 24 (under the line)",
+   "Last 1 vs PHX: 20"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 24.0,
+  "open_line": 24.5,
+  "open_price": -112,
+  "books": {
+   "DraftKings": [
+    24.5,
+    -107
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 6.407
+  }
+ },
+ {
+  "game_id": "401909962",
+  "game": "LAC @ PHX",
+  "player": "Keaton Wagler",
+  "player_id": "5254165",
+  "team": "LAC",
+  "opp": "PHX",
+  "stat": "PRA",
+  "side": "OVER",
+  "line": 14.5,
+  "line_source": "DraftKings",
+  "price": -120,
+  "projection": 17.4,
+  "prob": 0.659,
+  "edge": 0.113,
+  "score": 6.35,
+  "grade": "A",
+  "hit_l5": "3/5",
+  "hit_l10": "7/9",
+  "hit_season": "7/9",
+  "vs_opp": "0/0",
+  "minutes": 20.7,
+  "status": "ACTIVE",
+  "season_avg": 19.6,
+  "l10_avg": 19.6,
+  "reasons": [
+   "Over hit 7/9 of last 9 at 14.5",
+   "Last game: 21 (over the line)"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 21.0,
+  "open_line": 14.5,
+  "open_price": -123,
+  "books": {
+   "DraftKings": [
+    14.5,
+    -120
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 4.173
+  }
+ },
+ {
+  "game_id": "401909962",
+  "game": "LAC @ PHX",
+  "player": "Collin Gillespie",
+  "player_id": "4278585",
+  "team": "PHX",
+  "opp": "LAC",
+  "stat": "PR",
+  "side": "UNDER",
+  "line": 12.5,
+  "line_source": "DraftKings",
+  "price": -107,
+  "projection": 10.4,
+  "prob": 0.576,
+  "edge": 0.059,
+  "score": 5.68,
+  "grade": "B",
+  "hit_l5": "5/5",
+  "hit_l10": "7/10",
+  "hit_season": "7/9",
+  "vs_opp": "1/4",
+  "minutes": 23.5,
+  "status": "ACTIVE",
+  "season_avg": 12.9,
+  "l10_avg": 10.2,
+  "reasons": [
+   "Back-to-back",
+   "Under hit 7/10 of last 10 at 12.5",
+   "Last game: 8 (under the line)",
+   "Last 4 vs LAC: 16, 19, 6, 18"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 8.0,
+  "open_line": 12.5,
+  "open_price": -115,
+  "books": {
+   "DraftKings": [
+    12.5,
+    -107
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 5.971
+  }
+ },
+ {
+  "game_id": "401909960",
+  "game": "MIL @ NY",
+  "player": "Myles Turner",
+  "player_id": "3133628",
+  "team": "MIL",
+  "opp": "NY",
+  "stat": "PTS",
+  "side": "UNDER",
+  "line": 9.5,
+  "line_source": "DraftKings",
+  "price": -121,
+  "projection": 7.5,
+  "prob": 0.601,
+  "edge": 0.053,
+  "score": 5.03,
+  "grade": "B",
+  "hit_l5": "2/5",
+  "hit_l10": "5/10",
+  "hit_season": "5/10",
+  "vs_opp": "1/3",
+  "minutes": 26.1,
+  "status": "ACTIVE",
+  "season_avg": 9.5,
+  "l10_avg": 7.1,
+  "reasons": [
+   "NY limits points to Cs (-5% vs expected)",
+   "Implied team total 103.0 (low vs slate avg 111.6)",
+   "Under hit 5/10 of last 10 at 9.5",
+   "Last game: 3 (under the line)",
+   "Last 3 vs NY: 19, 10, 5"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 3.0,
+  "open_line": 9.5,
+  "open_price": -107,
+  "books": {
+   "DraftKings": [
+    9.5,
+    -121
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 4.928
+  }
+ },
+ {
+  "game_id": "401909961",
+  "game": "BOS @ PHI",
+  "player": "Sam Hauser",
+  "player_id": "4065804",
+  "team": "BOS",
+  "opp": "PHI",
+  "stat": "PTS",
+  "side": "OVER",
+  "line": 6.5,
+  "line_source": "DraftKings",
+  "price": 103,
+  "projection": 7.8,
+  "prob": 0.546,
+  "edge": 0.054,
+  "score": 5.0,
+  "grade": "B",
+  "hit_l5": "3/5",
+  "hit_l10": "6/10",
+  "hit_season": "6/10",
+  "vs_opp": "2/5",
+  "minutes": 20.8,
+  "status": "ACTIVE",
+  "season_avg": 8.4,
+  "l10_avg": 7.7,
+  "reasons": [
+   "Over hit 6/10 of last 10 at 6.5",
+   "Last game: 7 (over the line)",
+   "Last 5 vs PHI: 11, 5, 8, 6, 6"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 7.0,
+  "open_line": 6.5,
+  "open_price": -113,
+  "books": {
+   "DraftKings": [
+    6.5,
+    103
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 4.898
+  }
+ },
+ {
+  "game_id": "401909964",
+  "game": "ORL @ SAC",
+  "player": "Jase Richardson",
+  "player_id": "5239561",
+  "team": "ORL",
+  "opp": "SAC",
+  "stat": "PR",
+  "side": "UNDER",
+  "line": 11.5,
+  "line_source": "DraftKings",
+  "price": -109,
+  "projection": 9.7,
+  "prob": 0.595,
+  "edge": 0.073,
+  "score": 4.96,
+  "grade": "B",
+  "hit_l5": "4/5",
+  "hit_l10": "9/10",
+  "hit_season": "8/9",
+  "vs_opp": "2/2",
+  "minutes": 22.1,
+  "status": "ACTIVE",
+  "season_avg": 6.7,
+  "l10_avg": 7.8,
+  "reasons": [
+   "Implied team total 115.0 (high vs slate avg 111.6)",
+   "Under hit 9/10 of last 10 at 11.5",
+   "Last game: 6 (under the line)",
+   "Last 2 vs SAC: 6, 0"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 6.0,
+  "open_line": 11.5,
+  "open_price": -131,
+  "books": {
+   "DraftKings": [
+    11.5,
+    -109
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 4.175
+  }
+ },
+ {
+  "game_id": "401909960",
+  "game": "MIL @ NY",
+  "player": "Tyler Herro",
+  "player_id": "4395725",
+  "team": "MIL",
+  "opp": "NY",
+  "stat": "PRA",
+  "side": "UNDER",
+  "line": 28.5,
+  "line_source": "DraftKings",
+  "price": -116,
+  "projection": 25.6,
+  "prob": 0.594,
+  "edge": 0.057,
+  "score": 3.43,
+  "grade": "B",
+  "hit_l5": "2/5",
+  "hit_l10": "4/10",
+  "hit_season": "4/10",
+  "vs_opp": "0/0",
+  "minutes": 28.4,
+  "status": "QUESTIONABLE",
+  "season_avg": 29.9,
+  "l10_avg": 30.3,
+  "reasons": [
+   "Implied team total 103.0 (low vs slate avg 111.6)",
+   "NY limits assists to Gs (-8% vs expected)",
+   "Listed Day-To-Day: Knee Bruise - Herro (contusion) is listed as questionable for Tuesday's game against the Knicks.",
+   "Under hit 4/10 of last 10 at 28.5",
+   "Last game: 16 (under the line)"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 16.0,
+  "open_line": 28.5,
+  "open_price": -116,
+  "books": {
+   "DraftKings": [
+    28.5,
+    -116
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 7.297
+  }
+ }
+]

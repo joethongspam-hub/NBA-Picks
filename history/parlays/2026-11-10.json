@@ -1,0 +1,190 @@
+[
+ {
+  "legs": [
+   {
+    "game_id": "401909961",
+    "game": "BOS @ PHI",
+    "player": "Jayson Tatum",
+    "player_id": "4065648",
+    "team": "BOS",
+    "opp": "PHI",
+    "stat": "PRA",
+    "side": "UNDER",
+    "line": 40.5,
+    "price": -106,
+    "prob": 0.601,
+    "edge": 0.086,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      40.5,
+      -106
+     ]
+    },
+    "projection": 36.8,
+    "dist": {
+     "k": "normal",
+     "sd": 7.984
+    }
+   }
+  ],
+  "hit": 0.601,
+  "payout": 1.94,
+  "odds": -106,
+  "ev": 0.168,
+  "type": "double",
+  "label": "Double up",
+  "made": "2026-11-10T12:30:29.704389-05:00"
+ },
+ {
+  "legs": [
+   {
+    "game_id": "401909963",
+    "game": "MIA @ UTAH",
+    "player": "Isaiah Collier",
+    "player_id": "4683766",
+    "team": "UTAH",
+    "opp": "MIA",
+    "stat": "PA",
+    "side": "UNDER",
+    "line": 16.5,
+    "price": -121,
+    "prob": 0.666,
+    "edge": 0.118,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      16.5,
+      -121
+     ]
+    },
+    "projection": 10.7,
+    "dist": {
+     "k": "normal",
+     "sd": 7.913
+    }
+   },
+   {
+    "game_id": "401909962",
+    "game": "LAC @ PHX",
+    "player": "Keaton Wagler",
+    "player_id": "5254165",
+    "team": "LAC",
+    "opp": "PHX",
+    "stat": "PRA",
+    "side": "OVER",
+    "line": 14.5,
+    "price": -120,
+    "prob": 0.659,
+    "edge": 0.113,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      14.5,
+      -120
+     ]
+    },
+    "projection": 17.4,
+    "dist": {
+     "k": "normal",
+     "sd": 4.173
+    }
+   },
+   {
+    "game_id": "401909961",
+    "game": "BOS @ PHI",
+    "player": "Jayson Tatum",
+    "player_id": "4065648",
+    "team": "BOS",
+    "opp": "PHI",
+    "stat": "PRA",
+    "side": "UNDER",
+    "line": 40.5,
+    "price": -106,
+    "prob": 0.601,
+    "edge": 0.086,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      40.5,
+      -106
+     ]
+    },
+    "projection": 36.8,
+    "dist": {
+     "k": "normal",
+     "sd": 7.984
+    }
+   },
+   {
+    "game_id": "401909960",
+    "game": "MIL @ NY",
+    "player": "Myles Turner",
+    "player_id": "3133628",
+    "team": "MIL",
+    "opp": "NY",
+    "stat": "PTS",
+    "side": "UNDER",
+    "line": 9.5,
+    "price": -121,
+    "prob": 0.601,
+    "edge": 0.053,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      9.5,
+      -121
+     ]
+    },
+    "projection": 7.5,
+    "dist": {
+     "k": "normal",
+     "sd": 4.928
+    }
+   },
+   {
+    "game_id": "401909964",
+    "game": "ORL @ SAC",
+    "player": "Jase Richardson",
+    "player_id": "5239561",
+    "team": "ORL",
+    "opp": "SAC",
+    "stat": "PR",
+    "side": "UNDER",
+    "line": 11.5,
+    "price": -109,
+    "prob": 0.595,
+    "edge": 0.073,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      11.5,
+      -109
+     ]
+    },
+    "projection": 9.7,
+    "dist": {
+     "k": "normal",
+     "sd": 4.175
+    }
+   }
+  ],
+  "hit": 0.0943,
+  "payout": 22.79,
+  "odds": 2179,
+  "ev": 1.15,
+  "type": "allgames",
+  "label": "One per game",
+  "missing": [
+   "401909965"
+  ],
+  "games_total": 6,
+  "made": "2026-11-10T12:30:29.704389-05:00"
+ }
+]
