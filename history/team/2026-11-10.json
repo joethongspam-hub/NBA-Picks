@@ -10,18 +10,18 @@
    "line": null,
    "price": 670,
    "prob": 0.165,
-   "model_prob": 0.24,
+   "model_prob": 0.239,
    "edge": 0.035,
    "grade": "B",
-   "proj": "NY 112.0 \u2013 MIL 103.2",
+   "proj": "NY 112.0 \u2013 MIL 103.1",
    "mu_h": 112.03,
-   "mu_a": 103.21,
+   "mu_a": 103.15,
    "home": "NY",
    "away": "MIL",
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
    ],
-   "score": 3.52
+   "score": 3.46
   },
   {
    "game_id": "401909960",
@@ -32,18 +32,18 @@
    "line": -15.5,
    "price": -115,
    "prob": 0.578,
-   "model_prob": 0.703,
+   "model_prob": 0.702,
    "edge": 0.043,
    "grade": "B",
-   "proj": "NY 112.0 \u2013 MIL 103.2",
+   "proj": "NY 112.0 \u2013 MIL 103.1",
    "mu_h": 112.03,
-   "mu_a": 103.21,
+   "mu_a": 103.15,
    "home": "NY",
    "away": "MIL",
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
    ],
-   "score": 4.34
+   "score": 4.27
   },
   {
    "game_id": "401909961",
@@ -92,28 +92,6 @@
   {
    "game_id": "401909962",
    "game": "LAC @ PHX",
-   "market": "Moneyline",
-   "pick": "PHX ML",
-   "side": "home",
-   "line": null,
-   "price": -167,
-   "prob": 0.641,
-   "model_prob": 0.718,
-   "edge": 0.016,
-   "grade": "C",
-   "proj": "PHX 108.5 \u2013 LAC 101.3",
-   "mu_h": 108.49,
-   "mu_a": 101.29,
-   "home": "PHX",
-   "away": "LAC",
-   "notes": [
-    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
-   ],
-   "score": 1.59
-  },
-  {
-   "game_id": "401909962",
-   "game": "LAC @ PHX",
    "market": "Spread",
    "pick": "PHX -3.5",
    "side": "home",
@@ -140,44 +118,44 @@
    "pick": "MIA ML",
    "side": "away",
    "line": null,
-   "price": -359,
-   "prob": 0.817,
-   "model_prob": 0.939,
-   "edge": 0.035,
+   "price": -406,
+   "prob": 0.847,
+   "model_prob": 0.989,
+   "edge": 0.045,
    "grade": "B",
-   "proj": "UTAH 97.4 \u2013 MIA 116.7",
-   "mu_h": 97.41,
+   "proj": "UTAH 88.0 \u2013 MIA 116.7",
+   "mu_h": 88.04,
    "mu_a": 116.71,
    "home": "UTAH",
    "away": "MIA",
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
-    "UTAH injuries (George): -5.4 pts"
+    "UTAH injuries (George, Markkanen): -9.4 pts"
    ],
-   "score": 3.47
+   "score": 4.48
   },
   {
    "game_id": "401909963",
    "game": "MIA @ UTAH",
    "market": "Spread",
-   "pick": "MIA -8.5",
+   "pick": "MIA -9.5",
    "side": "away",
-   "line": 8.5,
+   "line": 9.5,
    "price": -105,
-   "prob": 0.6,
-   "model_prob": 0.806,
-   "edge": 0.088,
+   "prob": 0.646,
+   "model_prob": 0.937,
+   "edge": 0.134,
    "grade": "A",
-   "proj": "UTAH 97.4 \u2013 MIA 116.7",
-   "mu_h": 97.41,
+   "proj": "UTAH 88.0 \u2013 MIA 116.7",
+   "mu_h": 88.04,
    "mu_a": 116.71,
    "home": "UTAH",
    "away": "MIA",
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
-    "UTAH injuries (George): -5.4 pts"
+    "UTAH injuries (George, Markkanen): -9.4 pts"
    ],
-   "score": 8.8
+   "score": 13.39
   },
   {
    "game_id": "401909964",
@@ -187,87 +165,41 @@
    "side": "home",
    "line": null,
    "price": 190,
-   "prob": 0.527,
-   "model_prob": 0.89,
-   "edge": 0.182,
+   "prob": 0.455,
+   "model_prob": 0.685,
+   "edge": 0.11,
    "grade": "A",
-   "proj": "SAC 121.8 \u2013 ORL 106.5",
-   "mu_h": 121.81,
+   "proj": "SAC 112.5 \u2013 ORL 106.5",
+   "mu_h": 112.49,
    "mu_a": 106.46,
    "home": "SAC",
    "away": "ORL",
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
    ],
-   "score": 18.21
+   "score": 11.03
   },
   {
    "game_id": "401909964",
    "game": "ORL @ SAC",
    "market": "Spread",
-   "pick": "SAC +6.5",
+   "pick": "SAC +5.5",
    "side": "home",
-   "line": 6.5,
-   "price": -116,
-   "prob": 0.669,
-   "model_prob": 0.96,
-   "edge": 0.132,
+   "line": 5.5,
+   "price": -108,
+   "prob": 0.61,
+   "model_prob": 0.822,
+   "edge": 0.091,
    "grade": "A",
-   "proj": "SAC 121.8 \u2013 ORL 106.5",
-   "mu_h": 121.81,
+   "proj": "SAC 112.5 \u2013 ORL 106.5",
+   "mu_h": 112.49,
    "mu_a": 106.46,
    "home": "SAC",
    "away": "ORL",
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
    ],
-   "score": 13.23
-  },
-  {
-   "game_id": "401909965",
-   "game": "OKC @ POR",
-   "market": "Moneyline",
-   "pick": "POR ML",
-   "side": "home",
-   "line": null,
-   "price": 110,
-   "prob": 0.491,
-   "model_prob": 0.555,
-   "edge": 0.015,
-   "grade": "C",
-   "proj": "POR 109.7 \u2013 OKC 108.0",
-   "mu_h": 109.68,
-   "mu_a": 107.95,
-   "home": "POR",
-   "away": "OKC",
-   "notes": [
-    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
-    "POR injuries (Krejci): -0.6 pts"
-   ],
-   "score": 1.53
-  },
-  {
-   "game_id": "401909965",
-   "game": "OKC @ POR",
-   "market": "Spread",
-   "pick": "POR +1.5",
-   "side": "home",
-   "line": 1.5,
-   "price": -106,
-   "prob": 0.53,
-   "model_prob": 0.602,
-   "edge": 0.015,
-   "grade": "C",
-   "proj": "POR 109.7 \u2013 OKC 108.0",
-   "mu_h": 109.68,
-   "mu_a": 107.95,
-   "home": "POR",
-   "away": "OKC",
-   "notes": [
-    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
-    "POR injuries (Krejci): -0.6 pts"
-   ],
-   "score": 1.55
+   "score": 9.06
   }
  ]
 }
