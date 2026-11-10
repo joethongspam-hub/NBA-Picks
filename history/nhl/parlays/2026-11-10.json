@@ -11,15 +11,15 @@
     "stat": "AST",
     "side": "UNDER",
     "line": 0.5,
-    "price": -260,
-    "prob": 0.78,
-    "edge": 0.057,
+    "price": -250,
+    "prob": 0.776,
+    "edge": 0.061,
     "grade": "B",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
       0.5,
-      -260
+      -250
      ]
     },
     "projection": 0.17,
@@ -56,12 +56,196 @@
     }
    }
   ],
-  "hit": 0.6209,
-  "payout": 1.88,
-  "odds": -114,
-  "ev": 0.167,
+  "hit": 0.6177,
+  "payout": 1.9,
+  "odds": -111,
+  "ev": 0.174,
   "type": "double",
   "label": "Double up",
-  "made": "2026-11-10T12:35:59.223078-05:00"
+  "made": "2026-11-10T16:59:16.312917-05:00"
+ },
+ {
+  "legs": [
+   {
+    "game_id": "401892687",
+    "game": "DET @ STL",
+    "player": "Emmitt Finnie",
+    "player_id": "5188599",
+    "team": "DET",
+    "opp": "STL",
+    "stat": "AST",
+    "side": "UNDER",
+    "line": 0.5,
+    "price": -250,
+    "prob": 0.776,
+    "edge": 0.061,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      0.5,
+      -250
+     ]
+    },
+    "projection": 0.17,
+    "dist": {
+     "k": "count",
+     "var": 0.172
+    }
+   },
+   {
+    "game_id": "401892686",
+    "game": "FLA @ CBJ",
+    "player": "Adam Fantilli",
+    "player_id": "5136617",
+    "team": "CBJ",
+    "opp": "FLA",
+    "stat": "AST",
+    "side": "UNDER",
+    "line": 0.5,
+    "price": -240,
+    "prob": 0.763,
+    "edge": 0.057,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      0.5,
+      -240
+     ]
+    },
+    "projection": 0.19,
+    "dist": {
+     "k": "count",
+     "var": 0.193
+    }
+   },
+   {
+    "game_id": "401892689",
+    "game": "NSH @ LA",
+    "player": "Quinton Byfield",
+    "player_id": "4697383",
+    "team": "LA",
+    "opp": "NSH",
+    "stat": "AST",
+    "side": "UNDER",
+    "line": 0.5,
+    "price": -230,
+    "prob": 0.746,
+    "edge": 0.049,
+    "grade": "C",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      0.5,
+      -230
+     ]
+    },
+    "projection": 0.21,
+    "dist": {
+     "k": "count",
+     "var": 0.219
+    }
+   }
+  ],
+  "hit": 0.4417,
+  "payout": 2.85,
+  "odds": 185,
+  "ev": 0.257,
+  "type": "safe",
+  "label": "Safest",
+  "made": "2026-11-10T16:59:16.312917-05:00"
+ },
+ {
+  "legs": [
+   {
+    "game_id": "401892687",
+    "game": "DET @ STL",
+    "player": "Cam Fowler",
+    "player_id": "5495",
+    "team": "STL",
+    "opp": "DET",
+    "stat": "PTS",
+    "side": "UNDER",
+    "line": 0.5,
+    "price": -220,
+    "prob": 0.748,
+    "edge": 0.06,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      0.5,
+      -220
+     ]
+    },
+    "projection": 0.2,
+    "dist": {
+     "k": "count",
+     "var": 0.209
+    }
+   },
+   {
+    "game_id": "401892689",
+    "game": "NSH @ LA",
+    "player": "Shane Wright",
+    "player_id": "5080144",
+    "team": "NSH",
+    "opp": "LA",
+    "stat": "PTS",
+    "side": "UNDER",
+    "line": 0.5,
+    "price": -215,
+    "prob": 0.732,
+    "edge": 0.049,
+    "grade": "C",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      0.5,
+      -215
+     ]
+    },
+    "projection": 0.23,
+    "dist": {
+     "k": "count",
+     "var": 0.242
+    }
+   },
+   {
+    "game_id": "401892686",
+    "game": "FLA @ CBJ",
+    "player": "Matthew Tkachuk",
+    "player_id": "4024854",
+    "team": "FLA",
+    "opp": "CBJ",
+    "stat": "AST",
+    "side": "OVER",
+    "line": 0.5,
+    "price": -130,
+    "prob": 0.6,
+    "edge": 0.035,
+    "grade": "C",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      0.5,
+      -130
+     ]
+    },
+    "projection": 1.07,
+    "dist": {
+     "k": "count",
+     "var": 1.098
+    }
+   }
+  ],
+  "hit": 0.3285,
+  "payout": 3.77,
+  "odds": 277,
+  "ev": 0.239,
+  "type": "value",
+  "label": "Best value",
+  "made": "2026-11-10T16:59:16.312917-05:00"
  }
 ]
