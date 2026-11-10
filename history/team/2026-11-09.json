@@ -22,7 +22,8 @@
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "LAL injuries (Grimes): -2.2 pts"
    ],
-   "score": 6.78
+   "score": 6.78,
+   "locked": true
   },
   {
    "game_id": "401909952",
@@ -45,7 +46,8 @@
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "LAL injuries (Grimes): -2.2 pts"
    ],
-   "score": 6.98
+   "score": 6.98,
+   "locked": true
   },
   {
    "game_id": "401909953",
@@ -69,7 +71,8 @@
     "CHA injuries (Knueppel, Miller, Schroder): -7.6 pts",
     "CLE injuries (Merrill): -1.7 pts"
    ],
-   "score": 5.01
+   "score": 5.01,
+   "locked": true
   },
   {
    "game_id": "401909953",
@@ -93,7 +96,8 @@
     "CHA injuries (Knueppel, Miller, Schroder): -7.6 pts",
     "CLE injuries (Merrill): -1.7 pts"
    ],
-   "score": 10.75
+   "score": 10.75,
+   "locked": true
   },
   {
    "game_id": "401909954",
@@ -115,7 +119,8 @@
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
    ],
-   "score": 9.46
+   "score": 9.46,
+   "locked": true
   },
   {
    "game_id": "401909954",
@@ -137,7 +142,8 @@
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
    ],
-   "score": 7.31
+   "score": 7.31,
+   "locked": true
   },
   {
    "game_id": "401909955",
@@ -146,44 +152,46 @@
    "pick": "MEM ML",
    "side": "away",
    "line": null,
-   "price": 114,
-   "prob": 0.568,
-   "model_prob": 0.79,
-   "edge": 0.101,
+   "price": -119,
+   "prob": 0.686,
+   "model_prob": 0.991,
+   "edge": 0.143,
    "grade": "A",
-   "proj": "TOR 110.1 \u2013 MEM 120.2",
-   "mu_h": 110.11,
+   "proj": "TOR 90.9 \u2013 MEM 120.2",
+   "mu_h": 90.86,
    "mu_a": 120.19,
    "home": "TOR",
    "away": "MEM",
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "TOR injuries (Barnes, Murray-Boyles, Quickley): -10.6 pts",
     "MEM injuries (Jr., Stewart): -2.5 pts"
    ],
-   "score": 10.08
+   "score": 14.26
   },
   {
    "game_id": "401909955",
    "game": "MEM @ TOR",
    "market": "Spread",
-   "pick": "MEM +2.5",
+   "pick": "MEM -1.5",
    "side": "away",
-   "line": -2.5,
-   "price": -114,
-   "prob": 0.626,
-   "model_prob": 0.843,
-   "edge": 0.093,
+   "line": 1.5,
+   "price": -111,
+   "prob": 0.672,
+   "model_prob": 0.987,
+   "edge": 0.146,
    "grade": "A",
-   "proj": "TOR 110.1 \u2013 MEM 120.2",
-   "mu_h": 110.11,
+   "proj": "TOR 90.9 \u2013 MEM 120.2",
+   "mu_h": 90.86,
    "mu_a": 120.19,
    "home": "TOR",
    "away": "MEM",
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "TOR injuries (Barnes, Murray-Boyles, Quickley): -10.6 pts",
     "MEM injuries (Jr., Stewart): -2.5 pts"
    ],
-   "score": 9.3
+   "score": 14.58
   },
   {
    "game_id": "401909956",
@@ -192,20 +200,21 @@
    "pick": "IND ML",
    "side": "away",
    "line": null,
-   "price": 143,
-   "prob": 0.497,
-   "model_prob": 0.686,
-   "edge": 0.085,
+   "price": 160,
+   "prob": 0.512,
+   "model_prob": 0.778,
+   "edge": 0.128,
    "grade": "A",
-   "proj": "DAL 121.0 \u2013 IND 127.1",
-   "mu_h": 121.0,
+   "proj": "DAL 117.5 \u2013 IND 127.1",
+   "mu_h": 117.49,
    "mu_a": 127.05,
    "home": "DAL",
    "away": "IND",
    "notes": [
-    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "DAL injuries (Jr.): -2.0 pts"
    ],
-   "score": 8.55
+   "score": 12.78
   },
   {
    "game_id": "401909956",
@@ -214,20 +223,21 @@
    "pick": "IND +4.5",
    "side": "away",
    "line": -4.5,
-   "price": -115,
-   "prob": 0.612,
-   "model_prob": 0.801,
-   "edge": 0.077,
+   "price": -105,
+   "prob": 0.622,
+   "model_prob": 0.87,
+   "edge": 0.109,
    "grade": "A",
-   "proj": "DAL 121.0 \u2013 IND 127.1",
-   "mu_h": 121.0,
+   "proj": "DAL 117.5 \u2013 IND 127.1",
+   "mu_h": 117.49,
    "mu_a": 127.05,
    "home": "DAL",
    "away": "IND",
    "notes": [
-    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "DAL injuries (Jr.): -2.0 pts"
    ],
-   "score": 7.74
+   "score": 10.95
   },
   {
    "game_id": "401909958",
