@@ -10,11 +10,11 @@
   "side": "UNDER",
   "line": 0.5,
   "line_source": "DraftKings",
-  "price": -280,
+  "price": -270,
   "projection": 0.14,
-  "prob": 0.8,
-  "edge": 0.063,
-  "score": 6.3,
+  "prob": 0.796,
+  "edge": 0.066,
+  "score": 6.64,
   "grade": "B",
   "hit_l5": "5/5",
   "hit_l10": "10/10",
@@ -39,7 +39,7 @@
   "books": {
    "DraftKings": [
     0.5,
-    -280
+    -270
    ]
   },
   "dist": {
