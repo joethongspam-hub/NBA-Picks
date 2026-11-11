@@ -2,16 +2,39 @@
  "made": "2026-11-11T03:10:23.244740-05:00",
  "picks": [
   {
+   "game_id": "401909968",
+   "game": "BOS @ TOR",
+   "market": "Spread",
+   "pick": "BOS -5.5",
+   "side": "away",
+   "line": 5.5,
+   "price": -118,
+   "prob": 0.564,
+   "model_prob": 0.65,
+   "edge": 0.022,
+   "grade": "C",
+   "proj": "TOR 96.8 \u2013 BOS 107.1",
+   "mu_h": 96.82,
+   "mu_a": 107.13,
+   "home": "TOR",
+   "away": "BOS",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "TOR injuries (Barnes): -3.3 pts"
+   ],
+   "score": 2.25
+  },
+  {
    "game_id": "401909969",
    "game": "SA @ CHI",
    "market": "Spread",
    "pick": "CHI +15.5",
    "side": "home",
    "line": 15.5,
-   "price": -111,
-   "prob": 0.581,
+   "price": -116,
+   "prob": 0.588,
    "model_prob": 0.729,
-   "edge": 0.055,
+   "edge": 0.051,
    "grade": "A",
    "proj": "CHI 109.8 \u2013 SA 117.7",
    "mu_h": 109.77,
@@ -21,7 +44,29 @@
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
    ],
-   "score": 5.53
+   "score": 5.07
+  },
+  {
+   "game_id": "401909971",
+   "game": "LAL @ MIL",
+   "market": "Spread",
+   "pick": "LAL -14.5",
+   "side": "away",
+   "line": 14.5,
+   "price": -106,
+   "prob": 0.56,
+   "model_prob": 0.688,
+   "edge": 0.046,
+   "grade": "B",
+   "proj": "MIL 107.7 \u2013 LAL 128.3",
+   "mu_h": 107.66,
+   "mu_a": 128.29,
+   "home": "MIL",
+   "away": "LAL",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
+   ],
+   "score": 4.56
   },
   {
    "game_id": "401909974",
@@ -30,21 +75,21 @@
    "pick": "GS +6.5",
    "side": "away",
    "line": -6.5,
-   "price": -113,
-   "prob": 0.557,
-   "model_prob": 0.651,
+   "price": -106,
+   "prob": 0.542,
+   "model_prob": 0.637,
    "edge": 0.027,
    "grade": "C",
-   "proj": "HOU 113.1 \u2013 GS 111.4",
+   "proj": "HOU 113.1 \u2013 GS 110.9",
    "mu_h": 113.05,
-   "mu_a": 111.41,
+   "mu_a": 110.93,
    "home": "HOU",
    "away": "GS",
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
-    "GS injuries (II, Richard, Williams): -4.4 pts"
+    "GS injuries (II, Williams): -3.3 pts"
    ],
-   "score": 2.66
+   "score": 2.71
   },
   {
    "game_id": "401909975",
@@ -53,10 +98,10 @@
    "pick": "POR ML",
    "side": "home",
    "line": null,
-   "price": -102,
-   "prob": 0.539,
+   "price": -105,
+   "prob": 0.543,
    "model_prob": 0.64,
-   "edge": 0.034,
+   "edge": 0.031,
    "grade": "B",
    "proj": "POR 110.4 \u2013 OKC 105.9",
    "mu_h": 110.38,
@@ -66,7 +111,7 @@
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
    ],
-   "score": 3.39
+   "score": 3.1
   },
   {
    "game_id": "401909975",
@@ -75,10 +120,10 @@
    "pick": "POR +1.5",
    "side": "home",
    "line": 1.5,
-   "price": -112,
-   "prob": 0.567,
+   "price": -117,
+   "prob": 0.574,
    "model_prob": 0.684,
-   "edge": 0.039,
+   "edge": 0.035,
    "grade": "B",
    "proj": "POR 110.4 \u2013 OKC 105.9",
    "mu_h": 110.38,
@@ -88,7 +133,7 @@
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
    ],
-   "score": 3.88
+   "score": 3.49
   }
  ]
 }

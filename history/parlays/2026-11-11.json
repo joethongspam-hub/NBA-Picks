@@ -1,0 +1,206 @@
+[
+ {
+  "legs": [
+   {
+    "game_id": "401909967",
+    "game": "CLE @ NY",
+    "player": "Meleek Thomas",
+    "player_id": "5041951",
+    "team": "CLE",
+    "opp": "NY",
+    "stat": "PTS",
+    "side": "OVER",
+    "line": 9.5,
+    "price": -101,
+    "prob": 0.653,
+    "edge": 0.151,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      9.5,
+      -101
+     ]
+    },
+    "projection": 12.1,
+    "dist": {
+     "k": "normal",
+     "sd": 3.479
+    }
+   }
+  ],
+  "hit": 0.653,
+  "payout": 1.99,
+  "odds": -101,
+  "ev": 0.3,
+  "type": "double",
+  "label": "Double up",
+  "made": "2026-11-11T12:40:21.912533-05:00"
+ },
+ {
+  "legs": [
+   {
+    "game_id": "401909969",
+    "game": "SA @ CHI",
+    "player": "Devin Vassell",
+    "player_id": "4395630",
+    "team": "SA",
+    "opp": "CHI",
+    "stat": "PA",
+    "side": "OVER",
+    "line": 13.5,
+    "price": -112,
+    "prob": 0.61,
+    "edge": 0.082,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      13.5,
+      -112
+     ]
+    },
+    "projection": 15.6,
+    "dist": {
+     "k": "normal",
+     "sd": 4.384
+    }
+   }
+  ],
+  "hit": 0.61,
+  "payout": 1.89,
+  "odds": -112,
+  "ev": 0.155,
+  "type": "double2",
+  "label": "Double up #2",
+  "made": "2026-11-11T12:40:21.912533-05:00"
+ },
+ {
+  "legs": [
+   {
+    "game_id": "401909967",
+    "game": "CLE @ NY",
+    "player": "Meleek Thomas",
+    "player_id": "5041951",
+    "team": "CLE",
+    "opp": "NY",
+    "stat": "PTS",
+    "side": "OVER",
+    "line": 9.5,
+    "price": -101,
+    "prob": 0.653,
+    "edge": 0.151,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      9.5,
+      -101
+     ]
+    },
+    "projection": 12.1,
+    "dist": {
+     "k": "normal",
+     "sd": 3.479
+    }
+   },
+   {
+    "game_id": "401909969",
+    "game": "SA @ CHI",
+    "player": "Devin Vassell",
+    "player_id": "4395630",
+    "team": "SA",
+    "opp": "CHI",
+    "stat": "PA",
+    "side": "OVER",
+    "line": 13.5,
+    "price": -112,
+    "prob": 0.61,
+    "edge": 0.082,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      13.5,
+      -112
+     ]
+    },
+    "projection": 15.6,
+    "dist": {
+     "k": "normal",
+     "sd": 4.384
+    }
+   },
+   {
+    "game_id": "401909971",
+    "game": "LAL @ MIL",
+    "player": "Austin Reaves",
+    "player_id": "4066457",
+    "team": "LAL",
+    "opp": "MIL",
+    "stat": "PTS",
+    "side": "OVER",
+    "line": 22.5,
+    "price": -107,
+    "prob": 0.589,
+    "edge": 0.072,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      22.5,
+      -107
+     ]
+    },
+    "projection": 25.4,
+    "dist": {
+     "k": "normal",
+     "sd": 7.132
+    }
+   },
+   {
+    "game_id": "401909966",
+    "game": "WSH @ IND",
+    "player": "Deandre Ayton",
+    "player_id": "4278129",
+    "team": "WSH",
+    "opp": "IND",
+    "stat": "REB",
+    "side": "OVER",
+    "line": 4.5,
+    "price": -111,
+    "prob": 0.585,
+    "edge": 0.059,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      4.5,
+      -111
+     ]
+    },
+    "projection": 5.9,
+    "dist": {
+     "k": "normal",
+     "sd": 3.683
+    }
+   }
+  ],
+  "hit": 0.1373,
+  "payout": 13.85,
+  "odds": 1285,
+  "ev": 0.901,
+  "type": "allgames",
+  "label": "One per game",
+  "missing": [
+   "401909968",
+   "401909970",
+   "401909972",
+   "401909973",
+   "401909974",
+   "401909975"
+  ],
+  "games_total": 10,
+  "made": "2026-11-11T12:40:21.912533-05:00"
+ }
+]
