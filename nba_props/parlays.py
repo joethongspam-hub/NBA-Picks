@@ -137,7 +137,8 @@ def every_game(picks: list[dict], started: set[str], slate: list[str] | None = N
             "games_total": len(open_games) or len(legs)}
 
 
-def double_up(picks: list[dict], started: set[str]) -> dict | None:
+def double_up(picks: list[dict], started: set[str], exclude: set | None = None,
+              kind: str = "double", label: str = "Double up") -> dict | None:
     """A ticket paying close to even money with the highest model hit chance: one leg priced
     -115..-101, or two legs from different games whose combined odds land between -115 and +120.
     Legs: graded picks (they already pass every rule) on real lines, priced -400..-101."""
@@ -152,6 +153,8 @@ def double_up(picks: list[dict], started: set[str]) -> dict | None:
         except (TypeError, ValueError):
             continue
         k = (p["player_id"], p["stat"], p["side"])
+        if exclude and p["player_id"] in exclude:
+            continue
         if -400 <= pr <= -101 and k not in seen:
             seen.add(k)
             pool.append(p)
@@ -165,12 +168,17 @@ def double_up(picks: list[dict], started: set[str]) -> dict | None:
             continue
         if best is None or (t["hit"], -abs(t["payout"] - 2)) > (best["hit"], -abs(best["payout"] - 2)):
             best = t
-    return {**best, "type": "double", "label": "Double up"} if best else None
+    return {**best, "type": kind, "label": label} if best else None
+
+
+DOUBLES = [("double", "Double up"), ("double2", "Double up #2")]
 
 
 def update(hist_dir, key: str, picks: list[dict], started: set[str], now: datetime,
-           all_games: bool = False, slate: list[str] | None = None, min_prob: float = 0.60) -> list[dict]:
-    """Keep a ticket once any of its games has started (locked); otherwise rebuild it."""
+           all_games: bool = False, slate: list[str] | None = None, min_prob: float = 0.60,
+           doubles: int = 1) -> list[dict]:
+    """Keep a ticket once any of its games has started (locked); otherwise rebuild it.
+    doubles=2 adds a second Double up made only from players not on the first one."""
     d = Path(hist_dir) / "parlays"
     d.mkdir(parents=True, exist_ok=True)
     f = d / f"{key}.json"
@@ -180,11 +188,19 @@ def update(hist_dir, key: str, picks: list[dict], started: set[str], now: dateti
         ag = every_game(picks, started, slate, min_prob)
         if ag:
             fresh["allgames"] = ag
-    du = double_up(picks, started)
-    if du:
-        fresh["double"] = du
+    taken: set = set()
+    for k, label in DOUBLES[:doubles]:
+        p = prior.get(k)
+        if p and any(l["game_id"] in started for l in p["legs"]):
+            du = p                                    # locked: keep it, and keep its players off the next one
+        else:
+            du = double_up(picks, started, exclude=taken, kind=k, label=label)
+            if du:
+                fresh[k] = du
+        if du:
+            taken |= {l["player_id"] for l in du["legs"]}
     out = []
-    for k, label, *_ in [("double", "Double up")] + TICKETS + ([("allgames", "One per game")] if all_games else []):
+    for k, label, *_ in DOUBLES[:doubles] + TICKETS + ([("allgames", "One per game")] if all_games else []):
         p = prior.get(k)
         if p and any(l["game_id"] in started for l in p["legs"]):
             out.append({**p, "locked": True})
@@ -223,7 +239,7 @@ def grade(hist_dir, graded: list[dict]) -> dict:
                          "profit": round(pay - 1, 2) if r in ("WIN", "LOSS") else 0.0})
     done = [x for x in rows if x["result"] in ("WIN", "LOSS")]
     by = {}
-    types = ([("double", "Double up")] if any(x["type"] == "double" for x in rows) else []) + TICKETS + \
+    types = [d for d in DOUBLES if any(x["type"] == d[0] for x in rows)] + TICKETS + \
         ([("allgames", "One per game")] if any(x["type"] == "allgames" for x in rows) else [])
     for k, label, *_ in types:
         g = [x for x in done if x["type"] == k]

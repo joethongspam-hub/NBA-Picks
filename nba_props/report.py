@@ -470,7 +470,7 @@ function renderParlays() {
   };
   const card = t => `<div class="card" style="padding:12px 14px">
       <div class="row"><div class="who"><div class="name" style="font-size:16px">${esc(t.label)} · ${t.legs.length} legs</div>
-        ${t.type === "double" ? `<div class="small" style="color:var(--gold)">Aims for even money: win doubles your stake</div>` : ""}
+        ${t.type.startsWith("double") ? `<div class="small" style="color:var(--gold)">Aims for even money: win doubles your stake</div>` : ""}
         <div class="meta">model hit chance ${t.hit < 0.1 ? (t.hit * 100).toFixed(1) + "%" : pct(t.hit)} · value ${(t.ev * 100).toFixed(0)}%${t.locked ? " · locked" : ""}${t.type === "allgames" ? ` · ${t.legs.length} of ${t.games_total} games${(t.missing || []).length ? " (no usable pick in " + t.missing.length + ")" : ""}` : ""}</div></div>
         <div class="bet"><div class="side OVER" style="font-size:17px">${fmtPrice(t.odds)}</div><div class="small">pays ${t.payout.toFixed(2)}×</div>
         ${t.result ? `<div class="res ${t.result}">${t.result}</div>` : ""}</div></div>

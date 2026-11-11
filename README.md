@@ -122,6 +122,12 @@ The free 500 credits cover the NFL only; NBA and NHL every day need the $30 / 20
 * Assists, and players projected for 30–34 minutes, drop one grade (17–17 and 21–25).
 * NBA parlay legs need a **65%+** model probability (65%+ legs hit 65% vs 57% for 60–65%).
 
+## NBA: two Double up tickets (Nov 11)
+
+The NBA Parlays tab now has **Double up #2** next to Double up: the same even-money search, built only from
+players not on the first ticket, so one bad leg can't sink both. If the first ticket locks at tip-off, its
+players stay off #2. Each has its own record line. (`doubles=2` in `PL.update`; NFL and NHL keep one.)
+
 ## NBA: over props only (Nov 11)
 
 NBA unders are not graded, so top picks and parlays are overs only (`NO_UNDERS` in `nba_props/model.py`). On
