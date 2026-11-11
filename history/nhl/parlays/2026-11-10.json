@@ -2,6 +2,33 @@
  {
   "legs": [
    {
+    "game_id": "401892686",
+    "game": "FLA @ CBJ",
+    "player": "Sam Bennett",
+    "player_id": "3114732",
+    "team": "FLA",
+    "opp": "CBJ",
+    "stat": "AST",
+    "side": "UNDER",
+    "line": 0.5,
+    "price": -265,
+    "prob": 0.792,
+    "edge": 0.066,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      0.5,
+      -265
+     ]
+    },
+    "projection": 0.15,
+    "dist": {
+     "k": "count",
+     "var": 0.15
+    }
+   },
+   {
     "game_id": "401892687",
     "game": "DET @ STL",
     "player": "Emmitt Finnie",
@@ -27,42 +54,15 @@
      "k": "count",
      "var": 0.172
     }
-   },
-   {
-    "game_id": "401892686",
-    "game": "FLA @ CBJ",
-    "player": "Sam Bennett",
-    "player_id": "3114732",
-    "team": "FLA",
-    "opp": "CBJ",
-    "stat": "AST",
-    "side": "UNDER",
-    "line": 0.5,
-    "price": -280,
-    "prob": 0.796,
-    "edge": 0.059,
-    "grade": "B",
-    "line_source": "DraftKings",
-    "books": {
-     "DraftKings": [
-      0.5,
-      -280
-     ]
-    },
-    "projection": 0.14,
-    "dist": {
-     "k": "count",
-     "var": 0.149
-    }
    }
   ],
-  "hit": 0.6177,
-  "payout": 1.9,
-  "odds": -111,
-  "ev": 0.174,
+  "hit": 0.6146,
+  "payout": 1.93,
+  "odds": -108,
+  "ev": 0.185,
   "type": "double",
   "label": "Double up",
-  "made": "2026-11-10T16:59:16.312917-05:00"
+  "made": "2026-11-10T19:17:23.375915-05:00"
  },
  {
   "legs": [
@@ -103,21 +103,21 @@
     "stat": "AST",
     "side": "UNDER",
     "line": 0.5,
-    "price": -240,
-    "prob": 0.763,
-    "edge": 0.057,
+    "price": -250,
+    "prob": 0.767,
+    "edge": 0.052,
     "grade": "B",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
       0.5,
-      -240
+      -250
      ]
     },
-    "projection": 0.19,
+    "projection": 0.18,
     "dist": {
      "k": "count",
-     "var": 0.193
+     "var": 0.191
     }
    },
    {
@@ -148,13 +148,13 @@
     }
    }
   ],
-  "hit": 0.4417,
-  "payout": 2.85,
-  "odds": 185,
-  "ev": 0.257,
+  "hit": 0.444,
+  "payout": 2.81,
+  "odds": 181,
+  "ev": 0.249,
   "type": "safe",
   "label": "Safest",
-  "made": "2026-11-10T16:59:16.312917-05:00"
+  "made": "2026-11-10T19:17:23.375915-05:00"
  },
  {
   "legs": [
@@ -222,30 +222,30 @@
     "stat": "AST",
     "side": "OVER",
     "line": 0.5,
-    "price": -130,
-    "prob": 0.6,
-    "edge": 0.035,
+    "price": -125,
+    "prob": 0.601,
+    "edge": 0.045,
     "grade": "C",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
       0.5,
-      -130
+      -125
      ]
     },
-    "projection": 1.07,
+    "projection": 1.08,
     "dist": {
      "k": "count",
-     "var": 1.098
+     "var": 1.111
     }
    }
   ],
-  "hit": 0.3285,
-  "payout": 3.77,
-  "odds": 277,
-  "ev": 0.239,
+  "hit": 0.3291,
+  "payout": 3.84,
+  "odds": 284,
+  "ev": 0.262,
   "type": "value",
   "label": "Best value",
-  "made": "2026-11-10T16:59:16.312917-05:00"
+  "made": "2026-11-10T19:17:23.375915-05:00"
  }
 ]

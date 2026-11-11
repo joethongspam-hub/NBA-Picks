@@ -2,6 +2,28 @@
  "made": "2026-11-10T12:35:59.223078-05:00",
  "picks": [
   {
+   "game_id": "401892686",
+   "game": "FLA @ CBJ",
+   "market": "Moneyline",
+   "pick": "CBJ ML",
+   "side": "home",
+   "line": null,
+   "price": 105,
+   "prob": 0.504,
+   "model_prob": 0.571,
+   "edge": 0.016,
+   "grade": "C",
+   "proj": "CBJ 3.35 \u2013 FLA 2.92",
+   "mu_h": 3.35,
+   "mu_a": 2.92,
+   "home": "CBJ",
+   "away": "FLA",
+   "notes": [
+    "FLA goalie Jacob Markstrom (0.894): opponent goals +6%"
+   ],
+   "score": 1.59
+  },
+  {
    "game_id": "401892689",
    "game": "NSH @ LA",
    "market": "Moneyline",
