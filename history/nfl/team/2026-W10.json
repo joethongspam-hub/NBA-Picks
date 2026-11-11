@@ -1,0 +1,111 @@
+{
+ "made": "2026-11-11T13:00:12.400662-05:00",
+ "picks": [
+  {
+   "game_id": "401873052",
+   "game": "WSH @ NYG",
+   "market": "Total",
+   "pick": "Over 41.5",
+   "side": "over",
+   "line": 41.5,
+   "price": -105,
+   "prob": 0.536,
+   "model_prob": 0.622,
+   "edge": 0.023,
+   "grade": "C",
+   "proj": "NYG 24.6 \u2013 WSH 21.1",
+   "mu_h": 24.57,
+   "mu_a": 21.12,
+   "home": "NYG",
+   "away": "WSH",
+   "notes": [],
+   "score": 2.34
+  },
+  {
+   "game_id": "401873060",
+   "game": "MIN @ GB",
+   "market": "Total",
+   "pick": "Under 42.5",
+   "side": "under",
+   "line": 42.5,
+   "price": -115,
+   "prob": 0.588,
+   "model_prob": 0.73,
+   "edge": 0.053,
+   "grade": "A",
+   "proj": "GB 20.4 \u2013 MIN 13.8",
+   "mu_h": 20.4,
+   "mu_a": 13.81,
+   "home": "GB",
+   "away": "MIN",
+   "notes": [
+    "MIN: backup QB Kirk Cousins starting (-3 pts)"
+   ],
+   "score": 5.27
+  },
+  {
+   "game_id": "401873062",
+   "game": "SEA @ LV",
+   "market": "Moneyline",
+   "pick": "LV ML",
+   "side": "home",
+   "line": null,
+   "price": 240,
+   "prob": 0.316,
+   "model_prob": 0.38,
+   "edge": 0.022,
+   "grade": "C",
+   "proj": "LV 19.8 \u2013 SEA 23.9",
+   "mu_h": 19.82,
+   "mu_a": 23.95,
+   "home": "LV",
+   "away": "SEA",
+   "notes": [
+    "SEA: backup QB Drew Lock starting (-3 pts)"
+   ],
+   "score": 2.22
+  },
+  {
+   "game_id": "401873061",
+   "game": "LAR @ ARI",
+   "market": "Total",
+   "pick": "Over 39.5",
+   "side": "over",
+   "line": 39.5,
+   "price": -108,
+   "prob": 0.538,
+   "model_prob": 0.617,
+   "edge": 0.019,
+   "grade": "C",
+   "proj": "ARI 17.0 \u2013 LAR 26.5",
+   "mu_h": 16.98,
+   "mu_a": 26.54,
+   "home": "ARI",
+   "away": "LAR",
+   "notes": [
+    "ARI: backup QB Josh Johnson starting (-3 pts)"
+   ],
+   "score": 1.9
+  },
+  {
+   "game_id": "401873065",
+   "game": "LAC @ BAL",
+   "market": "Total",
+   "pick": "Over 38.5",
+   "side": "over",
+   "line": 38.5,
+   "price": -110,
+   "prob": 0.554,
+   "model_prob": 0.655,
+   "edge": 0.03,
+   "grade": "B",
+   "proj": "BAL 23.3 \u2013 LAC 20.6",
+   "mu_h": 23.28,
+   "mu_a": 20.61,
+   "home": "BAL",
+   "away": "LAC",
+   "notes": [],
+   "score": 3.05
+  }
+ ]
+}
