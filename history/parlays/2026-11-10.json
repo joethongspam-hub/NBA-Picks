@@ -2,6 +2,71 @@
  {
   "legs": [
    {
+    "game_id": "401909960",
+    "game": "MIL @ NY",
+    "player": "Kasparas Jakucionis",
+    "player_id": "5214640",
+    "team": "MIL",
+    "opp": "NY",
+    "stat": "PRA",
+    "side": "UNDER",
+    "line": 12.5,
+    "price": -115,
+    "prob": 0.607,
+    "edge": 0.073,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      12.5,
+      -115
+     ]
+    },
+    "projection": 9.4,
+    "dist": {
+     "k": "normal",
+     "sd": 6.637
+    }
+   }
+  ],
+  "hit": 0.607,
+  "payout": 1.87,
+  "odds": -115,
+  "ev": 0.135,
+  "type": "double",
+  "label": "Double up",
+  "made": "2026-11-10T19:15:55.507158-05:00"
+ },
+ {
+  "legs": [
+   {
+    "game_id": "401909960",
+    "game": "MIL @ NY",
+    "player": "Ryan Rollins",
+    "player_id": "4591725",
+    "team": "MIL",
+    "opp": "NY",
+    "stat": "PA",
+    "side": "UNDER",
+    "line": 19.5,
+    "price": -120,
+    "prob": 0.686,
+    "edge": 0.141,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      19.5,
+      -120
+     ]
+    },
+    "projection": 13.9,
+    "dist": {
+     "k": "normal",
+     "sd": 6.538
+    }
+   },
+   {
     "game_id": "401909961",
     "game": "BOS @ PHI",
     "player": "Jayson Tatum",
@@ -10,60 +75,22 @@
     "opp": "PHI",
     "stat": "PR",
     "side": "UNDER",
-    "line": 33.5,
-    "price": -109,
-    "prob": 0.606,
-    "edge": 0.085,
+    "line": 34.5,
+    "price": -125,
+    "prob": 0.651,
+    "edge": 0.095,
     "grade": "B",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
-      33.5,
-      -109
+      34.5,
+      -125
      ]
     },
-    "projection": 30.3,
+    "projection": 30.4,
     "dist": {
      "k": "normal",
-     "sd": 6.517
-    }
-   }
-  ],
-  "hit": 0.606,
-  "payout": 1.92,
-  "odds": -109,
-  "ev": 0.162,
-  "type": "double",
-  "label": "Double up",
-  "made": "2026-11-10T16:57:49.091165-05:00"
- },
- {
-  "legs": [
-   {
-    "game_id": "401909960",
-    "game": "MIL @ NY",
-    "player": "Mikal Bridges",
-    "player_id": "3147657",
-    "team": "NY",
-    "opp": "MIL",
-    "stat": "PA",
-    "side": "UNDER",
-    "line": 14.5,
-    "price": -130,
-    "prob": 0.648,
-    "edge": 0.082,
-    "grade": "A",
-    "line_source": "DraftKings",
-    "books": {
-     "DraftKings": [
-      14.5,
-      -130
-     ]
-    },
-    "projection": 10.7,
-    "dist": {
-     "k": "normal",
-     "sd": 6.367
+     "sd": 6.518
     }
    },
    {
@@ -73,51 +100,24 @@
     "player_id": "4066648",
     "team": "LAC",
     "opp": "PHX",
-    "stat": "PR",
+    "stat": "PTS",
     "side": "UNDER",
-    "line": 21.5,
-    "price": -126,
-    "prob": 0.632,
-    "edge": 0.075,
-    "grade": "B",
+    "line": 16.5,
+    "price": -118,
+    "prob": 0.638,
+    "edge": 0.096,
+    "grade": "A",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
-      21.5,
-      -126
+      16.5,
+      -118
      ]
     },
-    "projection": 17.4,
+    "projection": 12.9,
     "dist": {
      "k": "normal",
-     "sd": 7.661
-    }
-   },
-   {
-    "game_id": "401909961",
-    "game": "BOS @ PHI",
-    "player": "Jayson Tatum",
-    "player_id": "4065648",
-    "team": "BOS",
-    "opp": "PHI",
-    "stat": "PR",
-    "side": "UNDER",
-    "line": 33.5,
-    "price": -109,
-    "prob": 0.606,
-    "edge": 0.085,
-    "grade": "B",
-    "line_source": "DraftKings",
-    "books": {
-     "DraftKings": [
-      33.5,
-      -109
-     ]
-    },
-    "projection": 30.3,
-    "dist": {
-     "k": "normal",
-     "sd": 6.517
+     "sd": 6.024
     }
    },
    {
@@ -144,21 +144,47 @@
     "projection": 12.4,
     "dist": {
      "k": "normal",
-     "sd": 5.064
+     "sd": 5.065
+    }
+   },
+   {
+    "game_id": "401909965",
+    "game": "OKC @ POR",
+    "player": "Bennett Stirtz",
+    "player_id": "5241364",
+    "team": "OKC",
+    "opp": "POR",
+    "stat": "PTS",
+    "side": "OVER",
+    "line": 6.5,
+    "price": -106,
+    "prob": 0.572,
+    "edge": 0.058,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      6.5,
+      -106
+     ]
+    },
+    "projection": 8.3,
+    "dist": {
+     "k": "normal",
+     "sd": 5.347
     }
    }
   ],
-  "hit": 0.1464,
-  "payout": 11.83,
-  "odds": 1083,
-  "ev": 0.731,
+  "hit": 0.0962,
+  "payout": 23.03,
+  "odds": 2203,
+  "ev": 1.214,
   "type": "allgames",
   "label": "One per game",
   "missing": [
-   "401909963",
-   "401909965"
+   "401909963"
   ],
   "games_total": 6,
-  "made": "2026-11-10T16:57:49.091165-05:00"
+  "made": "2026-11-10T19:15:55.507158-05:00"
  }
 ]

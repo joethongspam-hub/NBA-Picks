@@ -2,70 +2,26 @@
  "made": "2026-11-10T12:30:29.704389-05:00",
  "picks": [
   {
-   "game_id": "401909960",
-   "game": "MIL @ NY",
-   "market": "Moneyline",
-   "pick": "MIL ML",
-   "side": "away",
-   "line": null,
-   "price": 670,
-   "prob": 0.165,
-   "model_prob": 0.239,
-   "edge": 0.035,
-   "grade": "B",
-   "proj": "NY 112.0 \u2013 MIL 103.1",
-   "mu_h": 112.03,
-   "mu_a": 103.15,
-   "home": "NY",
-   "away": "MIL",
-   "notes": [
-    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
-   ],
-   "score": 3.46
-  },
-  {
-   "game_id": "401909960",
-   "game": "MIL @ NY",
-   "market": "Spread",
-   "pick": "MIL +15.5",
-   "side": "away",
-   "line": -15.5,
-   "price": -115,
-   "prob": 0.578,
-   "model_prob": 0.702,
-   "edge": 0.043,
-   "grade": "B",
-   "proj": "NY 112.0 \u2013 MIL 103.1",
-   "mu_h": 112.03,
-   "mu_a": 103.15,
-   "home": "NY",
-   "away": "MIL",
-   "notes": [
-    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
-   ],
-   "score": 4.27
-  },
-  {
    "game_id": "401909961",
    "game": "BOS @ PHI",
    "market": "Moneyline",
    "pick": "PHI ML",
    "side": "home",
    "line": null,
-   "price": -101,
-   "prob": 0.553,
+   "price": 105,
+   "prob": 0.544,
    "model_prob": 0.685,
-   "edge": 0.051,
+   "edge": 0.056,
    "grade": "A",
    "proj": "PHI 114.8 \u2013 BOS 108.8",
    "mu_h": 114.8,
-   "mu_a": 108.78,
+   "mu_a": 108.77,
    "home": "PHI",
    "away": "BOS",
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
    ],
-   "score": 5.08
+   "score": 5.64
   },
   {
    "game_id": "401909961",
@@ -74,20 +30,20 @@
    "pick": "PHI +1.5",
    "side": "home",
    "line": 1.5,
-   "price": -107,
-   "prob": 0.575,
+   "price": -106,
+   "prob": 0.574,
    "model_prob": 0.726,
-   "edge": 0.058,
+   "edge": 0.059,
    "grade": "A",
    "proj": "PHI 114.8 \u2013 BOS 108.8",
    "mu_h": 114.8,
-   "mu_a": 108.78,
+   "mu_a": 108.77,
    "home": "PHI",
    "away": "BOS",
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
    ],
-   "score": 5.81
+   "score": 5.9
   },
   {
    "game_id": "401909962",
@@ -164,20 +120,20 @@
    "pick": "SAC ML",
    "side": "home",
    "line": null,
-   "price": 190,
-   "prob": 0.455,
-   "model_prob": 0.685,
-   "edge": 0.11,
+   "price": 180,
+   "prob": 0.463,
+   "model_prob": 0.686,
+   "edge": 0.106,
    "grade": "A",
    "proj": "SAC 112.5 \u2013 ORL 106.5",
-   "mu_h": 112.49,
+   "mu_h": 112.5,
    "mu_a": 106.46,
    "home": "SAC",
    "away": "ORL",
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
    ],
-   "score": 11.03
+   "score": 10.57
   },
   {
    "game_id": "401909964",
@@ -192,14 +148,14 @@
    "edge": 0.091,
    "grade": "A",
    "proj": "SAC 112.5 \u2013 ORL 106.5",
-   "mu_h": 112.49,
+   "mu_h": 112.5,
    "mu_a": 106.46,
    "home": "SAC",
    "away": "ORL",
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
    ],
-   "score": 9.06
+   "score": 9.07
   }
  ]
 }
