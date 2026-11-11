@@ -29,6 +29,7 @@ from .model_report import model_report
 from .report import render
 
 ET = ZoneInfo("America/New_York")
+TEAM_MAX_GAP = 8.0   # NBA team bets: skip games where the model margin is this far from the Vegas spread
 
 
 def game_started(g, now) -> bool:
@@ -469,6 +470,19 @@ def run(date: str | None = None, out_dir: str = "site", cache_dir: str = ".cache
                 if pk["market"] == "Total":
                     pk["grade"], pk["score"] = "-", 0.0
                     pk["notes"] = pk["notes"] + ["Totals: no signal in the backtest, so shown for reference only"]
+            # Nov 11 (live record Nov 4-10): when the projected margin is 8+ points off the Vegas spread the
+            # model is usually wrong (14-37, -25.6u vs 21-11 within 8), and underdog moneylines went 5-22.
+            gap = abs((mu_h - mu_a) + odds.spread_home) if odds and odds.spread_home is not None else None
+            for pk in tp:
+                if pk["grade"] == "-":
+                    continue
+                if gap is not None and gap >= TEAM_MAX_GAP:
+                    pk["grade"], pk["score"] = "-", 0.0
+                    pk["notes"] = pk["notes"] + [f"Model margin is {gap:.1f} pts off the Vegas spread: likely a model miss, "
+                                                 f"not graded (8+ pt gaps went 14-37)"]
+                elif pk["market"] == "Moneyline" and int(pk["price"]) > 0:
+                    pk["grade"], pk["score"] = "-", 0.0
+                    pk["notes"] = pk["notes"] + ["Underdog moneyline: not graded (went 5-22); see the spread instead"]
             if backtest and g.id in by_event:
                 r = by_event[g.id]
                 for pk in tp:

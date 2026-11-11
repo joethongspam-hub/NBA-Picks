@@ -120,6 +120,15 @@ The free 500 credits cover the NFL only; the NBA every day needs the $30 / 20,00
 * Assists, and players projected for 30–34 minutes, drop one grade (17–17 and 21–25).
 * NBA parlay legs need a **65%+** model probability (65%+ legs hit 65% vs 57% for 60–65%).
 
+## NBA team bets: two guards (Nov 11)
+
+Live NBA team bets (Nov 4–10) were 36–48, with grade A 17–43: the biggest "edges" were model misses (e.g. a projected
+Utah 88 vs a 9.5-point spread). Now not graded:
+* **Games where the model's margin is 8+ points from the Vegas spread** (14–37, −25.6u; within 8: 21–11, +8.5u).
+  `TEAM_MAX_GAP` in `nba_props/main.py`.
+* **Underdog moneylines** (5–22); the spread on the same team is still eligible.
+With both, the same week would have gone 18–3 (in-sample, so expect less).
+
 ## NHL removed (Nov 11)
 
 The NHL page, workflow, code and history were removed at the user's request.
