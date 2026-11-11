@@ -1,0 +1,99 @@
+[
+ {
+  "game_id": "401909969",
+  "game": "SA @ CHI",
+  "player": "Stephon Castle",
+  "player_id": "4845367",
+  "team": "SA",
+  "opp": "CHI",
+  "stat": "RA",
+  "side": "OVER",
+  "line": 10.5,
+  "line_source": "DraftKings",
+  "price": -119,
+  "projection": 11.9,
+  "prob": 0.597,
+  "edge": 0.054,
+  "score": 5.13,
+  "grade": "B",
+  "hit_l5": "3/5",
+  "hit_l10": "6/10",
+  "hit_season": "6/11",
+  "vs_opp": "2/2",
+  "minutes": 27.7,
+  "status": "ACTIVE",
+  "season_avg": 11.8,
+  "l10_avg": 11.6,
+  "reasons": [
+   "CHI allows assists to Gs (+7% vs expected)",
+   "Implied team total 128.0 (high vs slate avg 113.0)",
+   "Over hit 6/10 of last 10 at 10.5",
+   "Last game: 15 (over the line)",
+   "Last 2 vs CHI: 18, 16"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 15.0,
+  "open_line": 10.5,
+  "open_price": -125,
+  "books": {
+   "DraftKings": [
+    10.5,
+    -119
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 3.447
+  }
+ },
+ {
+  "game_id": "401909969",
+  "game": "SA @ CHI",
+  "player": "Devin Vassell",
+  "player_id": "4395630",
+  "team": "SA",
+  "opp": "CHI",
+  "stat": "PA",
+  "side": "OVER",
+  "line": 13.5,
+  "line_source": "DraftKings",
+  "price": -117,
+  "projection": 15.7,
+  "prob": 0.616,
+  "edge": 0.076,
+  "score": 4.32,
+  "grade": "B",
+  "hit_l5": "2/5",
+  "hit_l10": "5/10",
+  "hit_season": "5/10",
+  "vs_opp": "0/2",
+  "minutes": 27.4,
+  "status": "QUESTIONABLE",
+  "season_avg": 15.6,
+  "l10_avg": 15.0,
+  "reasons": [
+   "Implied team total 128.0 (high vs slate avg 113.0)",
+   "CHI allows assists to Gs (+7% vs expected)",
+   "Listed Day-To-Day: Groin  - Vassell (groin) is listed as questionable for Wednesday's game versus the Bulls, NBA reporter Matthew Tynan reports.",
+   "Over hit 5/10 of last 10 at 13.5",
+   "Last game: 18 (over the line)",
+   "Last 2 vs CHI: 9, 4"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 18.0,
+  "open_line": 13.5,
+  "open_price": -115,
+  "books": {
+   "DraftKings": [
+    13.5,
+    -117
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 4.389
+  }
+ }
+]

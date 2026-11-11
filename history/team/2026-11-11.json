@@ -1,0 +1,94 @@
+{
+ "made": "2026-11-11T03:10:23.244740-05:00",
+ "picks": [
+  {
+   "game_id": "401909969",
+   "game": "SA @ CHI",
+   "market": "Spread",
+   "pick": "CHI +15.5",
+   "side": "home",
+   "line": 15.5,
+   "price": -111,
+   "prob": 0.581,
+   "model_prob": 0.729,
+   "edge": 0.055,
+   "grade": "A",
+   "proj": "CHI 109.8 \u2013 SA 117.7",
+   "mu_h": 109.77,
+   "mu_a": 117.67,
+   "home": "CHI",
+   "away": "SA",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
+   ],
+   "score": 5.53
+  },
+  {
+   "game_id": "401909974",
+   "game": "GS @ HOU",
+   "market": "Spread",
+   "pick": "GS +6.5",
+   "side": "away",
+   "line": -6.5,
+   "price": -113,
+   "prob": 0.557,
+   "model_prob": 0.651,
+   "edge": 0.027,
+   "grade": "C",
+   "proj": "HOU 113.1 \u2013 GS 111.4",
+   "mu_h": 113.05,
+   "mu_a": 111.41,
+   "home": "HOU",
+   "away": "GS",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "GS injuries (II, Richard, Williams): -4.4 pts"
+   ],
+   "score": 2.66
+  },
+  {
+   "game_id": "401909975",
+   "game": "OKC @ POR",
+   "market": "Moneyline",
+   "pick": "POR ML",
+   "side": "home",
+   "line": null,
+   "price": -102,
+   "prob": 0.539,
+   "model_prob": 0.64,
+   "edge": 0.034,
+   "grade": "B",
+   "proj": "POR 110.4 \u2013 OKC 105.9",
+   "mu_h": 110.38,
+   "mu_a": 105.91,
+   "home": "POR",
+   "away": "OKC",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
+   ],
+   "score": 3.39
+  },
+  {
+   "game_id": "401909975",
+   "game": "OKC @ POR",
+   "market": "Spread",
+   "pick": "POR +1.5",
+   "side": "home",
+   "line": 1.5,
+   "price": -112,
+   "prob": 0.567,
+   "model_prob": 0.684,
+   "edge": 0.039,
+   "grade": "B",
+   "proj": "POR 110.4 \u2013 OKC 105.9",
+   "mu_h": 110.38,
+   "mu_a": 105.91,
+   "home": "POR",
+   "away": "OKC",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
+   ],
+   "score": 3.88
+  }
+ ]
+}
