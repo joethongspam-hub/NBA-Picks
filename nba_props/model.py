@@ -88,6 +88,10 @@ NHL_BLOCKED = {
 LAST_GAME_NOTE = "Goes against his last game: not graded (real-line record 32-57 on these)"
 
 
+# Nov 11: user preference: NBA shows over props only. Real-line A/B record Nov 2-9: overs 37-22
+# (62.7%) +13.8u, unders 45-25 (64.3%) +14.5u, so this halves volume without hurting win rate.
+NO_UNDERS = True
+UNDER_NOTE = "Unders not offered (NBA shows over props only)"
 C_NOTE = "Grade C: not shown (NBA shows grades A and B only; grade C went 16-14 on real lines)"
 CONF_NOTE = "Below the confidence bar (needs a minus-money price and 7+ hits in his last 10 at this line)"
 
@@ -626,6 +630,9 @@ def evaluate(proj: Projection, stats: list[str], lines: dict[tuple[str, str], Pr
         low_c = grade == "C"
         if low_c:
             grade, score = "-", 0.0
+        no_under = NO_UNDERS and side == "UNDER"
+        if no_under:
+            grade, score = "-", 0.0
         flag = market_disagrees(real, line, mu)
         if flag:
             grade, score = "-", 0.0
@@ -640,6 +647,8 @@ def evaluate(proj: Projection, stats: list[str], lines: dict[tuple[str, str], Pr
             reasons.insert(0, n)
         if low_c:
             reasons.insert(0, C_NOTE)
+        if no_under:
+            reasons.insert(0, UNDER_NOTE)
         if side == "UNDER" and proj.depleted:
             reasons.insert(0, f"{proj.team_abbr} missing {len(proj.depleted)} rotation players "
                               f"({', '.join(_short(n) for n in proj.depleted[:4])}): unders skipped")

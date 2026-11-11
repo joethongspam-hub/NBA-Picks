@@ -1,3 +1,4 @@
+import pytest
 import json, shutil, sys, tempfile
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
@@ -29,3 +30,12 @@ def test_pipeline(tmp=None):
 if __name__ == "__main__":
     tmp, payload = test_pipeline("/tmp/npt")
     print("OK", tmp)
+
+
+@pytest.mark.no_unders
+def test_overs_only(tmp=None):
+    tmp = Path(tmp or tempfile.mkdtemp())
+    payload = run("2026-10-30", out_dir=str(tmp / "site"), hist_dir=str(tmp / "hist"), http=FakeHttp(League()), allow_est=True)
+    graded = [p for p in payload["all"] if p["grade"] != "-"]
+    assert all(p["side"] == "OVER" for p in graded + payload["top"])
+    assert any(p["side"] == "UNDER" and "Unders not offered" in p["reasons"][0] for p in payload["all"])

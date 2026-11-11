@@ -122,6 +122,13 @@ The free 500 credits cover the NFL only; NBA and NHL every day need the $30 / 20
 * Assists, and players projected for 30–34 minutes, drop one grade (17–17 and 21–25).
 * NBA parlay legs need a **65%+** model probability (65%+ legs hit 65% vs 57% for 60–65%).
 
+## NBA: over props only (Nov 11)
+
+NBA unders are not graded, so top picks and parlays are overs only (`NO_UNDERS` in `nba_props/model.py`). On
+real lines Nov 2–9 (grades A/B, after the other rules) overs went 37–22 (62.7%, +13.8u) and unders 45–25
+(64.3%, +14.5u), so this roughly halves the slate without lowering the win rate. Unders still appear,
+ungraded, under All props.
+
 ## NBA: grades A and B only (Nov 9, replaces the confidence bar for the NBA)
 
 NBA picks are shown only at grade A or B; grade C is not graded. A combined backtest of the live real-line picks
