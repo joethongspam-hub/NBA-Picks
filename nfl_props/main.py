@@ -126,7 +126,7 @@ def results_only(out_dir: str = "public/nfl", cache_dir: str = ".cache", hist_di
             log(f"[results] team grading failed: {e!r}")
         annotate_results(payload, graded, key="week")
         pj.write_text(json.dumps(payload))
-        (out / "index.html").write_text(render(payload, "NFL Player Props", NOTE, [("NBA", "../"), ("NHL", "../nhl/")]))
+        (out / "index.html").write_text(render(payload, "NFL Player Props", NOTE, [("NBA", "../")]))
     msg = results_message("NFL", new, record)
     if notify_out and msg:
         Path(notify_out).write_text(json.dumps({**msg, "url": ""}))
@@ -395,11 +395,11 @@ def run(week: int | None = None, out_dir: str = "public/nfl", cache_dir: str = "
     if backtest:
         bdir = out / "backtests"
         bdir.mkdir(parents=True, exist_ok=True)
-        (bdir / f"{key}.html").write_text(render(payload, "NFL Player Props", NOTE, [("NBA", "../../"), ("NHL", "../../nhl/")]))
+        (bdir / f"{key}.html").write_text(render(payload, "NFL Player Props", NOTE, [("NBA", "../../")]))
         (bdir / f"{key}.json").write_text(json.dumps(payload))
         return payload
     (out / "picks.json").write_text(json.dumps(payload))
-    (out / "index.html").write_text(render(payload, "NFL Player Props", NOTE, [("NBA", "../"), ("NHL", "../nhl/")]))
+    (out / "index.html").write_text(render(payload, "NFL Player Props", NOTE, [("NBA", "../")]))
     return payload
 
 

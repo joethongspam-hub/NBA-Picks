@@ -1,4 +1,4 @@
-"""Daily parlay builder + grading (shared by NBA, NFL, NHL).
+"""Daily parlay builder + grading (shared by NBA and NFL).
 
 Legs: the day's shown picks on real sportsbook lines with a positive edge (graded A-C),
 at most one leg per game (so legs are close to independent), priced -250 to -101, model probability >= 60%.

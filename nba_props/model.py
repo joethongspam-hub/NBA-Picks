@@ -81,10 +81,6 @@ BLOCKED = {
     ("REB", "UNDER"): "Rebound unders not offered (6-10 on real lines; the model underrates rebounding)",
     ("RA", "UNDER"): "Reb+ast unders not offered (9-13 on real lines)",
 }
-NHL_BLOCKED = {
-    ("SOG", "OVER"): "NHL shots on goal not offered (21-25 on real lines)",
-    ("SOG", "UNDER"): "NHL shots on goal not offered (21-25 on real lines)",
-}
 LAST_GAME_NOTE = "Goes against his last game: not graded (real-line record 32-57 on these)"
 
 

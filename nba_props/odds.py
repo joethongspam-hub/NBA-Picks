@@ -27,9 +27,6 @@ MARKET_TO_STAT = {
 # Two markets x ~8 games/night x 30 nights ~= 480 credits: fits the 500/month free tier
 # with one pull a day. Add markets if you upgrade.
 DEFAULT_MARKETS = "player_points,player_rebounds,player_assists,player_threes"
-NHL_MARKET_TO_STAT = {"player_shots_on_goal": "SOG", "player_points": "PTS", "player_assists": "AST",
-                      "player_total_saves": "SAVES", "player_goals": "GOALS"}
-DEFAULT_NHL_MARKETS = "player_shots_on_goal,player_points,player_assists,player_total_saves"
 USAGE: dict = {}
 
 

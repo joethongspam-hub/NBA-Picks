@@ -1,4 +1,4 @@
-# NBA + NFL + NHL Player Props & Team Bets
+# NBA + NFL Player Props & Team Bets
 
 Every day this app pulls the NBA schedule, injury report, Vegas lines and every player's game logs,
 projects each rotation player's stat line, and ranks the props with the biggest edge. The output is a
@@ -75,7 +75,6 @@ and saves each day's picks in `history/` so the **Track record** tab can grade t
 
 * **Against the last game:** an under after the player went over that line last game (or an over after he went
   under) is **not graded** (changed from a one-grade drop on Nov 9; real-line record 32–57). Live record before the rule: 42% on these vs. 62% for picks agreeing with the last game.
-* **NHL long shots:** NHL picks priced +150 or longer aren't graded (live record 9–22).
 * **NBA injury boost:** the share of injured teammates' production handed to others was halved again (live 19–20).
 
 ## Parlays
@@ -103,8 +102,8 @@ priced by shifting the app's probability along the player's projected distributi
 
 When Odds API lines are pulled, every real-line pick shows each book's line and price for that side
 ("Shop: FanDuel O 16.5 -110 ✓ · DraftKings O 17.5 -120 · ..."), with the best one marked. Repo variables:
-`NBA_ODDS` / `NHL_ODDS` = `on` (one pull on the afternoon run) or `all` (every pregame run); NFL uses `NFL_ODDS`.
-The free 500 credits cover the NFL only; NBA and NHL every day need the $30 / 20,000-credit plan.
+`NBA_ODDS` = `on` (one pull on the afternoon run) or `all` (every pregame run); NFL uses `NFL_ODDS`.
+The free 500 credits cover the NFL only; the NBA every day needs the $30 / 20,000-credit plan.
 
 **Track record counts real-line picks only.** Estimated-line picks are still graded, but shown separately and not counted.
 
@@ -113,8 +112,7 @@ The free 500 credits cover the NFL only; NBA and NHL every day need the $30 / 20
 * **No estimated lines in live picks:** every pick, parlay leg and track-record entry is on a real sportsbook line.
   Props without a real line aren't shown. (Backtests still estimate lines, since no real lines were saved for past dates.)
 * **Not offered (graded "–", kept out of picks and parlays), from the real-line record:** NBA threes (both sides),
-  NBA rebound unders (6–10) and rebounds + assists unders (9–13); NHL shots on goal (21–25).
-* **NHL plus-money picks aren't graded** (+100 or longer; 27–45 on real lines).
+  NBA rebound unders (6–10) and rebounds + assists unders (9–13).
 
 ## Nov 8 NBA changes (from the real-line record)
 
@@ -122,11 +120,15 @@ The free 500 credits cover the NFL only; NBA and NHL every day need the $30 / 20
 * Assists, and players projected for 30–34 minutes, drop one grade (17–17 and 21–25).
 * NBA parlay legs need a **65%+** model probability (65%+ legs hit 65% vs 57% for 60–65%).
 
+## NHL removed (Nov 11)
+
+The NHL page, workflow, code and history were removed at the user's request.
+
 ## NBA: two Double up tickets (Nov 11)
 
 The NBA Parlays tab now has **Double up #2** next to Double up: the same even-money search, built only from
 players not on the first ticket, so one bad leg can't sink both. If the first ticket locks at tip-off, its
-players stay off #2. Each has its own record line. (`doubles=2` in `PL.update`; NFL and NHL keep one.)
+players stay off #2. Each has its own record line. (`doubles=2` in `PL.update`; the NFL keeps one.)
 
 ## NBA: over props only (Nov 11)
 
@@ -140,9 +142,9 @@ ungraded, under All props.
 NBA picks are shown only at grade A or B; grade C is not graded. A combined backtest of the live real-line picks
 (Nov 2–8) showed the confidence bar halved volume without raising the win rate (45–28, 61.6%, +10.5u), while
 grades A/B after the other rules went 79–45 (63.7%, +27.7u) and grade C went 16–14. The October backtest agreed
-that grade C was the weak spot (17–18). NFL and NHL still use the confidence bar below.
+that grade C was the weak spot (17–18). The NFL still uses the confidence bar below.
 
-## Confidence bar (Nov 9, NFL and NHL)
+## Confidence bar (Nov 9, NFL)
 
 A pick is only graded (and only shown as a top pick or parlay leg) if its price is **minus-money** and the player
 cleared the line on that side in **7+ of his last 10** games. Picks passing it (after the other rules) were 87–38
@@ -217,27 +219,13 @@ Multi-book NFL lines from the Odds API use the same `ODDS_API_KEY` and are opt-i
 `NFL_ODDS_MARKETS` (default `player_pass_yds,player_reception_yds`). The NBA's Odds API pull is likewise opt-in
 (`NBA_ODDS` = `on`), since the NBA gets free DraftKings lines from ESPN.
 
-## NHL
+## Team bets (NBA and NFL)
 
-`python -m nhl_props.main` (today) · `--backtest-range 2026-10-15 2026-11-02` · `--results-only`. Page at `/nhl/`.
-
-* **Skaters:** ice time × per-60 shot and assist rates. Goals = shots × shooting %, pulled hard toward position
-  averages (forwards about 10.5%, defense about 4.5%). Adjusted for the opponent's shot suppression vs. forwards and
-  defense, the opposing goalie's save %, Vegas-implied team goals (solved from the moneyline and total) and injured
-  teammates. Props: shots on goal, points, assists, anytime goal.
-* **Goalies:** saves = projected shots against (opponent's shots for, own team's shots allowed) × save %, pulled
-  toward .900. Only offered when one goalie has clearly been starting (and not on a likely back-to-back rest day).
-* DraftKings lines via ESPN; same locking, grading, results run, notifications and model report as the NBA.
-
-## Team bets (all sports)
-
-Each page has a **Team** tab with the moneyline, spread (puck line for the NHL) and total for every game:
+Each page has a **Team** tab with the moneyline, spread and total for every game:
 * **Team ratings:** offense and defense ratings fit to this season's scores (recency-weighted, adjusted for
   opponent, with home advantage), blended with last season early on.
-* **Injury adjustments:** NBA scoring lost from rotation players out; NFL backup QB about −3 points;
-  NHL starting goalie's save %.
-* **From scores to probabilities:** normal distributions for NBA/NFL margins and totals; Poisson goals for the NHL
-  (moneyline including overtime, puck line ±1.5, total).
+* **Injury adjustments:** NBA scoring lost from rotation players out; NFL backup QB about −3 points.
+* **From scores to probabilities:** normal distributions for margins and totals.
 * **Probabilities are blended heavily toward the no-vig DraftKings price,** because these are the sharpest markets.
   Grades: A ≥ 5% edge, B ≥ 3%, C ≥ 1.5%.
 
@@ -250,7 +238,6 @@ python tests/test_pipeline.py   # full run against a simulated league in ESPN's 
 python tests/test_grading.py
 python tests/test_backtest.py
 python tests/test_nfl.py
-python tests/test_nhl.py
 ```
 
 ## Data sources

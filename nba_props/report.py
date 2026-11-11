@@ -343,7 +343,7 @@ document.querySelector("nav").addEventListener("click", e => {
   document.querySelectorAll("nav button").forEach(b => b.classList.toggle("on", b.dataset.v === v));
   document.querySelectorAll(".view").forEach(s => s.classList.toggle("on", s.id === "v-" + v));
 });
-// ---- parlay checker (slip shared across the NBA / NFL / NHL pages on this device)
+// ---- parlay checker (slip shared across the NBA / NFL pages on this device)
 const SPORT = document.title.split(" ")[0];
 const pkey = p => `${p.player_id}|${p.stat}|${p.side}|${p.line}`;
 const PICKS = {};
@@ -404,7 +404,7 @@ function renderSlip() {
   legs.forEach(l => { if (l.date && l.date !== D.date && l.sport === SPORT) warn.push(`${l.player} was added on ${l.date}: the projection may be outdated.`); });
   const grade = !legs.length ? "" : ev >= .25 ? "A" : ev >= .10 ? "B" : ev >= 0 ? "C" : "-";
   const fair = hit > 0 && hit < 1 ? american(1 / hit) : null;
-  box.innerHTML = !legs.length ? `<div class="small">Tap <b>+ Add to parlay</b> on any prop (open a pick to see it), or search below. Legs can come from the NBA, NFL and NHL pages.</div>
+  box.innerHTML = !legs.length ? `<div class="small">Tap <b>+ Add to parlay</b> on any prop (open a pick to see it), or search below. Legs can come from the NBA and NFL pages.</div>
       <input type="search" id="slipSearch" placeholder="Search a player to add…" style="margin:10px 0 0">${'<div id="slipResults"></div>'}`
     : `${legs.map((l, i) => `<div style="padding:8px 0;border-top:${i ? "1px solid var(--line)" : "0"}">
         <div class="row"><div class="who"><div class="name">${esc(l.player)} <span class="small">${l.sport !== SPORT ? esc(l.sport) + " · " : ""}${esc(l.stat)} · ${esc(l.game)}</span></div>
@@ -521,7 +521,7 @@ function renderTeam() {
   $("#teamBox").innerHTML = `<div class="card" style="padding:12px 14px;border-color:var(--gold)"><b style="color:var(--gold)">Experimental${T.banner ? "" : ": no proven edge"}.</b>
     <span class="small">${T.banner ? esc(T.banner) : `In the October backtests, team bets graded A–C lost money in every sport (65–109 combined, about −32 units).
     Sides and totals are the sharpest markets in betting. Use these as a second opinion, not as bets. The live record below shows whether that changes.`}</span></div>
-    <div class="note">Moneyline, spread/puck line and total for every game. Grades: A ≥ 5% edge, B ≥ 3%, C ≥ 1.5%.</div>
+    <div class="note">Moneyline, spread and total for every game. Grades: A ≥ 5% edge, B ≥ 3%, C ≥ 1.5%.</div>
     ${cards || '<div class="empty">No team lines yet.</div>'}
     ${(r.w + r.l) ? `<div class="sect">Team bets track record · ${r.w}-${r.l}</div>${tbl(rec.by_grade)}${tbl(rec.by_market)}` : ""}`;
 }

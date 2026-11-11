@@ -241,7 +241,7 @@ def results_only(out_dir: str = "public", cache_dir: str = ".cache", hist_dir: s
             log(f"[results] team grading failed: {e!r}")
         annotate_results(payload, results["graded"])
         pj.write_text(json.dumps(payload))
-        (out / "index.html").write_text(render(payload, switch=[("NFL", "nfl/"), ("NHL", "nhl/")]))
+        (out / "index.html").write_text(render(payload, switch=[("NFL", "nfl/")]))
     msg = results_message("NBA", new, record)
     if notify_out and msg:
         Path(notify_out).write_text(json.dumps({**msg, "url": ""}))
@@ -555,12 +555,12 @@ def run(date: str | None = None, out_dir: str = "site", cache_dir: str = ".cache
     if backtest:
         bdir = Path(backtest_dir)
         bdir.mkdir(parents=True, exist_ok=True)
-        (bdir / f"{day_s}.html").write_text(render(payload, switch=[("NFL", "../nfl/"), ("NHL", "../nhl/")]))
+        (bdir / f"{day_s}.html").write_text(render(payload, switch=[("NFL", "../nfl/")]))
         (bdir / f"{day_s}.json").write_text(json.dumps(payload))
         log(f"Backtest -> {bdir / (day_s + '.html')}")
         return payload
     (out / "picks.json").write_text(json.dumps(payload))
-    (out / "index.html").write_text(render(payload, switch=[("NFL", "nfl/"), ("NHL", "nhl/")]))
+    (out / "index.html").write_text(render(payload, switch=[("NFL", "nfl/")]))
     with open(out / "picks.csv", "w", newline="") as f:
         cols = ["game", "player", "team", "opp", "stat", "side", "line", "line_source", "price", "projection",
                 "prob", "edge", "grade", "score", "hit_l5", "hit_l10", "hit_season", "vs_opp", "minutes", "status"]
