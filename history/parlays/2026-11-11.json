@@ -11,31 +11,31 @@
     "stat": "PTS",
     "side": "OVER",
     "line": 9.5,
-    "price": -101,
-    "prob": 0.653,
-    "edge": 0.151,
+    "price": -108,
+    "prob": 0.659,
+    "edge": 0.14,
     "grade": "A",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
       9.5,
-      -101
+      -108
      ]
     },
     "projection": 12.1,
     "dist": {
      "k": "normal",
-     "sd": 3.479
+     "sd": 3.477
     }
    }
   ],
-  "hit": 0.653,
-  "payout": 1.99,
-  "odds": -101,
-  "ev": 0.3,
+  "hit": 0.659,
+  "payout": 1.93,
+  "odds": -108,
+  "ev": 0.269,
   "type": "double",
   "label": "Double up",
-  "made": "2026-11-11T12:40:21.912533-05:00"
+  "made": "2026-11-11T17:19:23.413662-05:00"
  },
  {
   "legs": [
@@ -49,31 +49,31 @@
     "stat": "PA",
     "side": "OVER",
     "line": 13.5,
-    "price": -112,
-    "prob": 0.61,
-    "edge": 0.082,
+    "price": -110,
+    "prob": 0.608,
+    "edge": 0.084,
     "grade": "A",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
       13.5,
-      -112
+      -110
      ]
     },
     "projection": 15.6,
     "dist": {
      "k": "normal",
-     "sd": 4.384
+     "sd": 4.383
     }
    }
   ],
-  "hit": 0.61,
-  "payout": 1.89,
-  "odds": -112,
-  "ev": 0.155,
+  "hit": 0.608,
+  "payout": 1.91,
+  "odds": -110,
+  "ev": 0.161,
   "type": "double2",
   "label": "Double up #2",
-  "made": "2026-11-11T12:40:21.912533-05:00"
+  "made": "2026-11-11T17:19:23.413662-05:00"
  },
  {
   "legs": [
@@ -87,21 +87,48 @@
     "stat": "PTS",
     "side": "OVER",
     "line": 9.5,
-    "price": -101,
-    "prob": 0.653,
-    "edge": 0.151,
+    "price": -108,
+    "prob": 0.659,
+    "edge": 0.14,
     "grade": "A",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
       9.5,
-      -101
+      -108
      ]
     },
     "projection": 12.1,
     "dist": {
      "k": "normal",
-     "sd": 3.479
+     "sd": 3.477
+    }
+   },
+   {
+    "game_id": "401909974",
+    "game": "GS @ HOU",
+    "player": "Jabari Smith Jr.",
+    "player_id": "4432639",
+    "team": "HOU",
+    "opp": "GS",
+    "stat": "AST",
+    "side": "OVER",
+    "line": 1.5,
+    "price": -121,
+    "prob": 0.629,
+    "edge": 0.082,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      1.5,
+      -121
+     ]
+    },
+    "projection": 2.3,
+    "dist": {
+     "k": "normal",
+     "sd": 1.528
     }
    },
    {
@@ -114,21 +141,21 @@
     "stat": "PA",
     "side": "OVER",
     "line": 13.5,
-    "price": -112,
-    "prob": 0.61,
-    "edge": 0.082,
+    "price": -110,
+    "prob": 0.608,
+    "edge": 0.084,
     "grade": "A",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
       13.5,
-      -112
+      -110
      ]
     },
     "projection": 15.6,
     "dist": {
      "k": "normal",
-     "sd": 4.384
+     "sd": 4.383
     }
    },
    {
@@ -141,21 +168,21 @@
     "stat": "PTS",
     "side": "OVER",
     "line": 22.5,
-    "price": -107,
-    "prob": 0.589,
-    "edge": 0.072,
+    "price": -115,
+    "prob": 0.599,
+    "edge": 0.064,
     "grade": "B",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
       22.5,
-      -107
+      -115
      ]
     },
-    "projection": 25.4,
+    "projection": 25.5,
     "dist": {
      "k": "normal",
-     "sd": 7.132
+     "sd": 7.142
     }
    },
    {
@@ -182,14 +209,14 @@
     "projection": 5.9,
     "dist": {
      "k": "normal",
-     "sd": 3.683
+     "sd": 3.681
     }
    }
   ],
-  "hit": 0.1373,
-  "payout": 13.85,
-  "odds": 1285,
-  "ev": 0.901,
+  "hit": 0.0883,
+  "payout": 23.87,
+  "odds": 2287,
+  "ev": 1.108,
   "type": "allgames",
   "label": "One per game",
   "missing": [
@@ -197,10 +224,9 @@
    "401909970",
    "401909972",
    "401909973",
-   "401909974",
    "401909975"
   ],
   "games_total": 10,
-  "made": "2026-11-11T12:40:21.912533-05:00"
+  "made": "2026-11-11T17:19:23.413662-05:00"
  }
 ]

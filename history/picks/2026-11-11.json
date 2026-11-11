@@ -10,11 +10,11 @@
   "side": "OVER",
   "line": 9.5,
   "line_source": "DraftKings",
-  "price": -101,
+  "price": -108,
   "projection": 12.1,
-  "prob": 0.653,
-  "edge": 0.151,
-  "score": 7.82,
+  "prob": 0.659,
+  "edge": 0.14,
+  "score": 7.25,
   "grade": "A",
   "hit_l5": "3/5",
   "hit_l10": "6/8",
@@ -25,7 +25,7 @@
   "season_avg": 13.0,
   "l10_avg": 13.0,
   "reasons": [
-   "Implied team total 109.0 (low vs slate avg 112.7)",
+   "Implied team total 108.5 (low vs slate avg 112.5)",
    "Over hit 6/8 of last 8 at 9.5",
    "Last game: 18 (over the line)",
    "Last 1 vs NY: 9"
@@ -38,12 +38,60 @@
   "books": {
    "DraftKings": [
     9.5,
-    -101
+    -108
    ]
   },
   "dist": {
    "k": "normal",
-   "sd": 3.479
+   "sd": 3.477
+  }
+ },
+ {
+  "game_id": "401909974",
+  "game": "GS @ HOU",
+  "player": "Jabari Smith Jr.",
+  "player_id": "4432639",
+  "team": "HOU",
+  "opp": "GS",
+  "stat": "AST",
+  "side": "OVER",
+  "line": 1.5,
+  "line_source": "DraftKings",
+  "price": -121,
+  "projection": 2.3,
+  "prob": 0.629,
+  "edge": 0.082,
+  "score": 6.54,
+  "grade": "B",
+  "hit_l5": "4/5",
+  "hit_l10": "8/10",
+  "hit_season": "8/11",
+  "vs_opp": "2/3",
+  "minutes": 34.4,
+  "status": "ACTIVE",
+  "season_avg": 2.1,
+  "l10_avg": 2.5,
+  "reasons": [
+   "Assists: grade lowered one level (17-17 on real lines)",
+   "GS allows assists to Fs (+6% vs expected)",
+   "Over hit 8/10 of last 10 at 1.5",
+   "Last game: 3 (over the line)",
+   "Last 3 vs GS: 1, 2, 2"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 3.0,
+  "open_line": 1.5,
+  "open_price": -119,
+  "books": {
+   "DraftKings": [
+    1.5,
+    -121
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 1.528
   }
  },
  {
@@ -57,22 +105,22 @@
   "side": "OVER",
   "line": 22.5,
   "line_source": "DraftKings",
-  "price": -107,
-  "projection": 25.4,
-  "prob": 0.589,
-  "edge": 0.072,
-  "score": 7.24,
+  "price": -115,
+  "projection": 25.5,
+  "prob": 0.599,
+  "edge": 0.064,
+  "score": 6.36,
   "grade": "B",
   "hit_l5": "3/5",
   "hit_l10": "6/10",
   "hit_season": "7/11",
   "vs_opp": "1/1",
-  "minutes": 34.5,
+  "minutes": 37.3,
   "status": "ACTIVE",
   "season_avg": 24.2,
   "l10_avg": 25.5,
   "reasons": [
-   "Implied team total 121.5 (high vs slate avg 112.7)",
+   "Implied team total 122.0 (high vs slate avg 112.5)",
    "Over hit 6/10 of last 10 at 22.5",
    "Last game: 43 (over the line)",
    "Last 1 vs MIL: 25"
@@ -85,12 +133,12 @@
   "books": {
    "DraftKings": [
     22.5,
-    -107
+    -115
    ]
   },
   "dist": {
    "k": "normal",
-   "sd": 7.132
+   "sd": 7.142
   }
  },
  {
@@ -104,11 +152,11 @@
   "side": "OVER",
   "line": 13.5,
   "line_source": "DraftKings",
-  "price": -112,
+  "price": -110,
   "projection": 15.6,
-  "prob": 0.61,
-  "edge": 0.082,
-  "score": 4.63,
+  "prob": 0.608,
+  "edge": 0.084,
+  "score": 4.76,
   "grade": "A",
   "hit_l5": "2/5",
   "hit_l10": "5/10",
@@ -119,7 +167,7 @@
   "season_avg": 15.6,
   "l10_avg": 15.0,
   "reasons": [
-   "Implied team total 127.0 (high vs slate avg 112.7)",
+   "Implied team total 126.5 (high vs slate avg 112.5)",
    "CHI allows assists to Gs (+7% vs expected)",
    "Listed Day-To-Day: Groin  - Vassell (groin) is listed as questionable for Wednesday's game versus the Bulls, NBA reporter Matthew Tynan reports.",
    "Over hit 5/10 of last 10 at 13.5",
@@ -134,12 +182,12 @@
   "books": {
    "DraftKings": [
     13.5,
-    -112
+    -110
    ]
   },
   "dist": {
    "k": "normal",
-   "sd": 4.384
+   "sd": 4.383
   }
  },
  {
@@ -157,7 +205,7 @@
   "projection": 5.9,
   "prob": 0.585,
   "edge": 0.059,
-  "score": 4.61,
+  "score": 4.59,
   "grade": "B",
   "hit_l5": "3/5",
   "hit_l10": "5/10",
@@ -184,7 +232,7 @@
   },
   "dist": {
    "k": "normal",
-   "sd": 3.683
+   "sd": 3.681
   }
  }
 ]

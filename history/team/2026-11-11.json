@@ -5,24 +5,25 @@
    "game_id": "401909968",
    "game": "BOS @ TOR",
    "market": "Spread",
-   "pick": "BOS -5.5",
-   "side": "away",
+   "pick": "TOR +5.5",
+   "side": "home",
    "line": 5.5,
-   "price": -118,
-   "prob": 0.564,
-   "model_prob": 0.65,
-   "edge": 0.022,
+   "price": -108,
+   "prob": 0.544,
+   "model_prob": 0.635,
+   "edge": 0.025,
    "grade": "C",
-   "proj": "TOR 96.8 \u2013 BOS 107.1",
+   "proj": "TOR 96.8 \u2013 BOS 98.0",
    "mu_h": 96.82,
-   "mu_a": 107.13,
+   "mu_a": 98.01,
    "home": "TOR",
    "away": "BOS",
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
-    "TOR injuries (Barnes): -3.3 pts"
+    "TOR injuries (Barnes): -3.3 pts",
+    "BOS injuries (George): -4.1 pts"
    ],
-   "score": 2.25
+   "score": 2.52
   },
   {
    "game_id": "401909969",
@@ -31,20 +32,20 @@
    "pick": "CHI +15.5",
    "side": "home",
    "line": 15.5,
-   "price": -116,
-   "prob": 0.588,
-   "model_prob": 0.729,
-   "edge": 0.051,
+   "price": -111,
+   "prob": 0.579,
+   "model_prob": 0.723,
+   "edge": 0.053,
    "grade": "A",
-   "proj": "CHI 109.8 \u2013 SA 117.7",
-   "mu_h": 109.77,
+   "proj": "CHI 109.5 \u2013 SA 117.7",
+   "mu_h": 109.55,
    "mu_a": 117.67,
    "home": "CHI",
    "away": "SA",
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
    ],
-   "score": 5.07
+   "score": 5.32
   },
   {
    "game_id": "401909971",
@@ -53,20 +54,68 @@
    "pick": "LAL -14.5",
    "side": "away",
    "line": 14.5,
-   "price": -106,
-   "prob": 0.56,
-   "model_prob": 0.688,
-   "edge": 0.046,
-   "grade": "B",
-   "proj": "MIL 107.7 \u2013 LAL 128.3",
-   "mu_h": 107.66,
-   "mu_a": 128.29,
+   "price": -114,
+   "prob": 0.556,
+   "model_prob": 0.644,
+   "edge": 0.023,
+   "grade": "C",
+   "proj": "MIL 108.4 \u2013 LAL 127.5",
+   "mu_h": 108.42,
+   "mu_a": 127.54,
    "home": "MIL",
    "away": "LAL",
    "notes": [
-    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "MIL injuries (Turner): -2.1 pts",
+    "LAL injuries (Grimes): -1.8 pts"
    ],
-   "score": 4.56
+   "score": 2.34
+  },
+  {
+   "game_id": "401909973",
+   "game": "ORL @ UTAH",
+   "market": "Moneyline",
+   "pick": "ORL ML",
+   "side": "away",
+   "line": null,
+   "price": -179,
+   "prob": 0.678,
+   "model_prob": 0.793,
+   "edge": 0.036,
+   "grade": "B",
+   "proj": "UTAH 96.4 \u2013 ORL 106.6",
+   "mu_h": 96.39,
+   "mu_a": 106.61,
+   "home": "UTAH",
+   "away": "ORL",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "UTAH injuries (Markkanen): -3.0 pts"
+   ],
+   "score": 3.65
+  },
+  {
+   "game_id": "401909973",
+   "game": "ORL @ UTAH",
+   "market": "Spread",
+   "pick": "ORL -4.5",
+   "side": "away",
+   "line": 4.5,
+   "price": -106,
+   "prob": 0.556,
+   "model_prob": 0.677,
+   "edge": 0.042,
+   "grade": "B",
+   "proj": "UTAH 96.4 \u2013 ORL 106.6",
+   "mu_h": 96.39,
+   "mu_a": 106.61,
+   "home": "UTAH",
+   "away": "ORL",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "UTAH injuries (Markkanen): -3.0 pts"
+   ],
+   "score": 4.16
   },
   {
    "game_id": "401909974",
@@ -90,50 +139,6 @@
     "GS injuries (II, Williams): -3.3 pts"
    ],
    "score": 2.71
-  },
-  {
-   "game_id": "401909975",
-   "game": "OKC @ POR",
-   "market": "Moneyline",
-   "pick": "POR ML",
-   "side": "home",
-   "line": null,
-   "price": -105,
-   "prob": 0.543,
-   "model_prob": 0.64,
-   "edge": 0.031,
-   "grade": "B",
-   "proj": "POR 110.4 \u2013 OKC 105.9",
-   "mu_h": 110.38,
-   "mu_a": 105.91,
-   "home": "POR",
-   "away": "OKC",
-   "notes": [
-    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
-   ],
-   "score": 3.1
-  },
-  {
-   "game_id": "401909975",
-   "game": "OKC @ POR",
-   "market": "Spread",
-   "pick": "POR +1.5",
-   "side": "home",
-   "line": 1.5,
-   "price": -117,
-   "prob": 0.574,
-   "model_prob": 0.684,
-   "edge": 0.035,
-   "grade": "B",
-   "proj": "POR 110.4 \u2013 OKC 105.9",
-   "mu_h": 110.38,
-   "mu_a": 105.91,
-   "home": "POR",
-   "away": "OKC",
-   "notes": [
-    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
-   ],
-   "score": 3.49
   }
  ]
 }
