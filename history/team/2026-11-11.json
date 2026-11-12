@@ -23,29 +23,8 @@
     "TOR injuries (Barnes): -3.3 pts",
     "BOS injuries (George): -4.1 pts"
    ],
-   "score": 2.52
-  },
-  {
-   "game_id": "401909969",
-   "game": "SA @ CHI",
-   "market": "Spread",
-   "pick": "CHI +15.5",
-   "side": "home",
-   "line": 15.5,
-   "price": -111,
-   "prob": 0.579,
-   "model_prob": 0.723,
-   "edge": 0.053,
-   "grade": "A",
-   "proj": "CHI 109.5 \u2013 SA 117.7",
-   "mu_h": 109.55,
-   "mu_a": 117.67,
-   "home": "CHI",
-   "away": "SA",
-   "notes": [
-    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
-   ],
-   "score": 5.32
+   "score": 2.52,
+   "locked": true
   },
   {
    "game_id": "401909971",

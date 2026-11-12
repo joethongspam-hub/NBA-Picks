@@ -35,45 +35,46 @@
   "ev": 0.269,
   "type": "double",
   "label": "Double up",
-  "made": "2026-11-11T17:19:23.413662-05:00"
+  "made": "2026-11-11T17:19:23.413662-05:00",
+  "locked": true
  },
  {
   "legs": [
    {
-    "game_id": "401909969",
-    "game": "SA @ CHI",
-    "player": "Devin Vassell",
-    "player_id": "4395630",
-    "team": "SA",
-    "opp": "CHI",
-    "stat": "PA",
+    "game_id": "401909971",
+    "game": "LAL @ MIL",
+    "player": "Luka Doncic",
+    "player_id": "3945274",
+    "team": "LAL",
+    "opp": "MIL",
+    "stat": "PRA",
     "side": "OVER",
-    "line": 13.5,
-    "price": -110,
-    "prob": 0.608,
+    "line": 49.5,
+    "price": -115,
+    "prob": 0.619,
     "edge": 0.084,
     "grade": "A",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
-      13.5,
-      -110
+      49.5,
+      -115
      ]
     },
-    "projection": 15.6,
+    "projection": 55.1,
     "dist": {
      "k": "normal",
-     "sd": 4.383
+     "sd": 10.847
     }
    }
   ],
-  "hit": 0.608,
-  "payout": 1.91,
-  "odds": -110,
-  "ev": 0.161,
+  "hit": 0.619,
+  "payout": 1.87,
+  "odds": -115,
+  "ev": 0.157,
   "type": "double2",
   "label": "Double up #2",
-  "made": "2026-11-11T17:19:23.413662-05:00"
+  "made": "2026-11-11T19:33:28.589316-05:00"
  },
  {
   "legs": [
@@ -227,6 +228,7 @@
    "401909975"
   ],
   "games_total": 10,
-  "made": "2026-11-11T17:19:23.413662-05:00"
+  "made": "2026-11-11T17:19:23.413662-05:00",
+  "locked": true
  }
 ]
