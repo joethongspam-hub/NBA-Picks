@@ -6,43 +6,43 @@
   "player_id": "4593125",
   "team": "DAL",
   "opp": "MIN",
-  "stat": "PR",
+  "stat": "REB",
   "side": "OVER",
-  "line": 11.5,
+  "line": 3.5,
   "line_source": "DraftKings",
-  "price": -101,
-  "projection": 16.1,
-  "prob": 0.619,
-  "edge": 0.117,
-  "score": 10.05,
+  "price": -131,
+  "projection": 5.2,
+  "prob": 0.675,
+  "edge": 0.108,
+  "score": 9.3,
   "grade": "A",
-  "hit_l5": "5/5",
-  "hit_l10": "9/10",
-  "hit_season": "3/3",
+  "hit_l5": "4/5",
+  "hit_l10": "8/10",
+  "hit_season": "2/3",
   "vs_opp": "1/1",
   "minutes": 21.1,
   "status": "ACTIVE",
-  "season_avg": 19.4,
-  "l10_avg": 17.9,
+  "season_avg": 6.3,
+  "l10_avg": 5.6,
   "reasons": [
-   "Over hit 9/10 of last 10 at 11.5",
-   "Last game: 14 (over the line)",
-   "Last 1 vs MIN: 19"
+   "Over hit 8/10 of last 10 at 3.5",
+   "Last game: 4 (over the line)",
+   "Last 1 vs MIN: 11"
   ],
   "actual": null,
   "result": null,
-  "last_game": 14.0,
-  "open_line": 11.5,
-  "open_price": -104,
+  "last_game": 4.0,
+  "open_line": 3.5,
+  "open_price": -121,
   "books": {
    "DraftKings": [
-    11.5,
-    -101
+    3.5,
+    -131
    ]
   },
   "dist": {
    "k": "normal",
-   "sd": 7.861
+   "sd": 2.28
   }
  },
  {
@@ -56,11 +56,11 @@
   "side": "OVER",
   "line": 4.5,
   "line_source": "DraftKings",
-  "price": -102,
+  "price": -106,
   "projection": 5.6,
-  "prob": 0.583,
-  "edge": 0.078,
-  "score": 6.31,
+  "prob": 0.587,
+  "edge": 0.072,
+  "score": 5.79,
   "grade": "B",
   "hit_l5": "3/5",
   "hit_l10": "5/10",
@@ -83,12 +83,105 @@
   "books": {
    "DraftKings": [
     4.5,
-    -102
+    -106
    ]
   },
   "dist": {
    "k": "normal",
    "sd": 2.614
+  }
+ },
+ {
+  "game_id": "401909977",
+  "game": "DET @ WSH",
+  "player": "Duncan Robinson",
+  "player_id": "3157465",
+  "team": "DET",
+  "opp": "WSH",
+  "stat": "PTS",
+  "side": "OVER",
+  "line": 14.5,
+  "line_source": "DraftKings",
+  "price": -123,
+  "projection": 16.7,
+  "prob": 0.602,
+  "edge": 0.05,
+  "score": 5.02,
+  "grade": "B",
+  "hit_l5": "4/5",
+  "hit_l10": "7/10",
+  "hit_season": "7/10",
+  "vs_opp": "2/5",
+  "minutes": 29.1,
+  "status": "ACTIVE",
+  "season_avg": 15.4,
+  "l10_avg": 18.6,
+  "reasons": [
+   "Implied team total 116.0 (high vs slate avg 110.6)",
+   "Over hit 7/10 of last 10 at 14.5",
+   "Last game: 22 (over the line)",
+   "Last 5 vs WSH: 22, 14, 8, 21, 13"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 22.0,
+  "open_line": 15.5,
+  "open_price": -113,
+  "books": {
+   "DraftKings": [
+    14.5,
+    -123
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 5.517
+  }
+ },
+ {
+  "game_id": "401909978",
+  "game": "DAL @ MIN",
+  "player": "Trey Lyles",
+  "player_id": "3136196",
+  "team": "MIN",
+  "opp": "DAL",
+  "stat": "PTS",
+  "side": "OVER",
+  "line": 5.5,
+  "line_source": "DraftKings",
+  "price": -122,
+  "projection": 7.1,
+  "prob": 0.617,
+  "edge": 0.067,
+  "score": 4.38,
+  "grade": "B",
+  "hit_l5": "3/5",
+  "hit_l10": "6/10",
+  "hit_season": "6/11",
+  "vs_opp": "0/0",
+  "minutes": 19.2,
+  "status": "ACTIVE",
+  "season_avg": 6.4,
+  "l10_avg": 6.9,
+  "reasons": [
+   "Implied team total 115.5 (high vs slate avg 110.6)",
+   "Over hit 6/10 of last 10 at 5.5",
+   "Last game: 9 (over the line)"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 9.0,
+  "open_line": 5.5,
+  "open_price": -122,
+  "books": {
+   "DraftKings": [
+    5.5,
+    -122
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 3.414
   }
  }
 ]

@@ -2,44 +2,6 @@
  {
   "legs": [
    {
-    "game_id": "401909978",
-    "game": "DAL @ MIN",
-    "player": "Santi Aldama",
-    "player_id": "4593125",
-    "team": "DAL",
-    "opp": "MIN",
-    "stat": "PR",
-    "side": "OVER",
-    "line": 11.5,
-    "price": -101,
-    "prob": 0.619,
-    "edge": 0.117,
-    "grade": "A",
-    "line_source": "DraftKings",
-    "books": {
-     "DraftKings": [
-      11.5,
-      -101
-     ]
-    },
-    "projection": 16.1,
-    "dist": {
-     "k": "normal",
-     "sd": 7.861
-    }
-   }
-  ],
-  "hit": 0.619,
-  "payout": 1.99,
-  "odds": -101,
-  "ev": 0.232,
-  "type": "double",
-  "label": "Double up",
-  "made": "2026-11-12T12:35:52.598881-05:00"
- },
- {
-  "legs": [
-   {
     "game_id": "401909979",
     "game": "CHA @ PHX",
     "player": "Ryan Kalkbrenner",
@@ -49,15 +11,15 @@
     "stat": "REB",
     "side": "OVER",
     "line": 4.5,
-    "price": -102,
-    "prob": 0.583,
-    "edge": 0.078,
+    "price": -106,
+    "prob": 0.587,
+    "edge": 0.072,
     "grade": "B",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
       4.5,
-      -102
+      -106
      ]
     },
     "projection": 5.6,
@@ -67,13 +29,13 @@
     }
    }
   ],
-  "hit": 0.583,
-  "payout": 1.98,
-  "odds": -102,
-  "ev": 0.155,
-  "type": "double2",
-  "label": "Double up #2",
-  "made": "2026-11-12T12:35:52.598881-05:00"
+  "hit": 0.587,
+  "payout": 1.94,
+  "odds": -106,
+  "ev": 0.141,
+  "type": "double",
+  "label": "Double up",
+  "made": "2026-11-12T16:57:46.615284-05:00"
  },
  {
   "legs": [
@@ -84,24 +46,51 @@
     "player_id": "4593125",
     "team": "DAL",
     "opp": "MIN",
-    "stat": "PR",
+    "stat": "REB",
     "side": "OVER",
-    "line": 11.5,
-    "price": -101,
-    "prob": 0.619,
-    "edge": 0.117,
+    "line": 3.5,
+    "price": -131,
+    "prob": 0.675,
+    "edge": 0.108,
     "grade": "A",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
-      11.5,
-      -101
+      3.5,
+      -131
      ]
     },
-    "projection": 16.1,
+    "projection": 5.2,
     "dist": {
      "k": "normal",
-     "sd": 7.861
+     "sd": 2.28
+    }
+   },
+   {
+    "game_id": "401909977",
+    "game": "DET @ WSH",
+    "player": "Duncan Robinson",
+    "player_id": "3157465",
+    "team": "DET",
+    "opp": "WSH",
+    "stat": "PTS",
+    "side": "OVER",
+    "line": 14.5,
+    "price": -123,
+    "prob": 0.602,
+    "edge": 0.05,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      14.5,
+      -123
+     ]
+    },
+    "projection": 16.7,
+    "dist": {
+     "k": "normal",
+     "sd": 5.517
     }
    },
    {
@@ -114,15 +103,15 @@
     "stat": "REB",
     "side": "OVER",
     "line": 4.5,
-    "price": -102,
-    "prob": 0.583,
-    "edge": 0.078,
+    "price": -106,
+    "prob": 0.587,
+    "edge": 0.072,
     "grade": "B",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
       4.5,
-      -102
+      -106
      ]
     },
     "projection": 5.6,
@@ -132,17 +121,16 @@
     }
    }
   ],
-  "hit": 0.3609,
-  "payout": 3.94,
-  "odds": 294,
-  "ev": 0.422,
+  "hit": 0.2385,
+  "payout": 6.21,
+  "odds": 521,
+  "ev": 0.482,
   "type": "allgames",
   "label": "One per game",
   "missing": [
-   "401909976",
-   "401909977"
+   "401909976"
   ],
   "games_total": 4,
-  "made": "2026-11-12T12:35:52.598881-05:00"
+  "made": "2026-11-12T16:57:46.615284-05:00"
  }
 ]
