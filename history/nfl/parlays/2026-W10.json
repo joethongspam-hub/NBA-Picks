@@ -1,0 +1,60 @@
+[
+ {
+  "legs": [
+   {
+    "game_id": "401873052",
+    "game": "WSH @ NYG",
+    "player": "J.J. McCarthy",
+    "player_id": "4433970",
+    "team": "NYG",
+    "opp": "WSH",
+    "stat": "PASS_YDS",
+    "side": "UNDER",
+    "line": 201.5,
+    "price": -113,
+    "prob": 0.734,
+    "edge": 0.203,
+    "grade": "A",
+    "line_source": "6 books",
+    "books": {
+     "DraftKings": [
+      201.5,
+      -113
+     ],
+     "FanDuel": [
+      201.5,
+      -113
+     ],
+     "BetOnline.ag": [
+      201.5,
+      -114
+     ],
+     "BetRivers": [
+      199.5,
+      -114
+     ],
+     "BetMGM": [
+      201.5,
+      -115
+     ],
+     "Bovada": [
+      201.5,
+      -115
+     ]
+    },
+    "projection": 138.4,
+    "dist": {
+     "k": "gamma",
+     "cv": 0.365
+    }
+   }
+  ],
+  "hit": 0.734,
+  "payout": 1.88,
+  "odds": -113,
+  "ev": 0.384,
+  "type": "double",
+  "label": "Double up",
+  "made": "2026-11-12T16:53:30.829151-05:00"
+ }
+]
