@@ -1,0 +1,148 @@
+[
+ {
+  "legs": [
+   {
+    "game_id": "401909978",
+    "game": "DAL @ MIN",
+    "player": "Santi Aldama",
+    "player_id": "4593125",
+    "team": "DAL",
+    "opp": "MIN",
+    "stat": "PR",
+    "side": "OVER",
+    "line": 11.5,
+    "price": -101,
+    "prob": 0.619,
+    "edge": 0.117,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      11.5,
+      -101
+     ]
+    },
+    "projection": 16.1,
+    "dist": {
+     "k": "normal",
+     "sd": 7.861
+    }
+   }
+  ],
+  "hit": 0.619,
+  "payout": 1.99,
+  "odds": -101,
+  "ev": 0.232,
+  "type": "double",
+  "label": "Double up",
+  "made": "2026-11-12T12:35:52.598881-05:00"
+ },
+ {
+  "legs": [
+   {
+    "game_id": "401909979",
+    "game": "CHA @ PHX",
+    "player": "Ryan Kalkbrenner",
+    "player_id": "4576060",
+    "team": "CHA",
+    "opp": "PHX",
+    "stat": "REB",
+    "side": "OVER",
+    "line": 4.5,
+    "price": -102,
+    "prob": 0.583,
+    "edge": 0.078,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      4.5,
+      -102
+     ]
+    },
+    "projection": 5.6,
+    "dist": {
+     "k": "normal",
+     "sd": 2.614
+    }
+   }
+  ],
+  "hit": 0.583,
+  "payout": 1.98,
+  "odds": -102,
+  "ev": 0.155,
+  "type": "double2",
+  "label": "Double up #2",
+  "made": "2026-11-12T12:35:52.598881-05:00"
+ },
+ {
+  "legs": [
+   {
+    "game_id": "401909978",
+    "game": "DAL @ MIN",
+    "player": "Santi Aldama",
+    "player_id": "4593125",
+    "team": "DAL",
+    "opp": "MIN",
+    "stat": "PR",
+    "side": "OVER",
+    "line": 11.5,
+    "price": -101,
+    "prob": 0.619,
+    "edge": 0.117,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      11.5,
+      -101
+     ]
+    },
+    "projection": 16.1,
+    "dist": {
+     "k": "normal",
+     "sd": 7.861
+    }
+   },
+   {
+    "game_id": "401909979",
+    "game": "CHA @ PHX",
+    "player": "Ryan Kalkbrenner",
+    "player_id": "4576060",
+    "team": "CHA",
+    "opp": "PHX",
+    "stat": "REB",
+    "side": "OVER",
+    "line": 4.5,
+    "price": -102,
+    "prob": 0.583,
+    "edge": 0.078,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      4.5,
+      -102
+     ]
+    },
+    "projection": 5.6,
+    "dist": {
+     "k": "normal",
+     "sd": 2.614
+    }
+   }
+  ],
+  "hit": 0.3609,
+  "payout": 3.94,
+  "odds": 294,
+  "ev": 0.422,
+  "type": "allgames",
+  "label": "One per game",
+  "missing": [
+   "401909976",
+   "401909977"
+  ],
+  "games_total": 4,
+  "made": "2026-11-12T12:35:52.598881-05:00"
+ }
+]

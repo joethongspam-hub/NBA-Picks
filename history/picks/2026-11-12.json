@@ -1,0 +1,94 @@
+[
+ {
+  "game_id": "401909978",
+  "game": "DAL @ MIN",
+  "player": "Santi Aldama",
+  "player_id": "4593125",
+  "team": "DAL",
+  "opp": "MIN",
+  "stat": "PR",
+  "side": "OVER",
+  "line": 11.5,
+  "line_source": "DraftKings",
+  "price": -101,
+  "projection": 16.1,
+  "prob": 0.619,
+  "edge": 0.117,
+  "score": 10.05,
+  "grade": "A",
+  "hit_l5": "5/5",
+  "hit_l10": "9/10",
+  "hit_season": "3/3",
+  "vs_opp": "1/1",
+  "minutes": 21.1,
+  "status": "ACTIVE",
+  "season_avg": 19.4,
+  "l10_avg": 17.9,
+  "reasons": [
+   "Over hit 9/10 of last 10 at 11.5",
+   "Last game: 14 (over the line)",
+   "Last 1 vs MIN: 19"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 14.0,
+  "open_line": 11.5,
+  "open_price": -104,
+  "books": {
+   "DraftKings": [
+    11.5,
+    -101
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 7.861
+  }
+ },
+ {
+  "game_id": "401909979",
+  "game": "CHA @ PHX",
+  "player": "Ryan Kalkbrenner",
+  "player_id": "4576060",
+  "team": "CHA",
+  "opp": "PHX",
+  "stat": "REB",
+  "side": "OVER",
+  "line": 4.5,
+  "line_source": "DraftKings",
+  "price": -102,
+  "projection": 5.6,
+  "prob": 0.583,
+  "edge": 0.078,
+  "score": 6.31,
+  "grade": "B",
+  "hit_l5": "3/5",
+  "hit_l10": "5/10",
+  "hit_season": "6/11",
+  "vs_opp": "2/2",
+  "minutes": 24.2,
+  "status": "ACTIVE",
+  "season_avg": 5.4,
+  "l10_avg": 5.4,
+  "reasons": [
+   "Over hit 5/10 of last 10 at 4.5",
+   "Last game: 15 (over the line)",
+   "Last 2 vs PHX: 7, 7"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 15.0,
+  "open_line": 4.5,
+  "open_price": -113,
+  "books": {
+   "DraftKings": [
+    4.5,
+    -102
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 2.614
+  }
+ }
+]
