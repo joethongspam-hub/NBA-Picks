@@ -23,7 +23,8 @@
     "PHI injuries (Bona, James): -4.4 pts",
     "TOR injuries (Barnes): -2.2 pts"
    ],
-   "score": 2.57
+   "score": 2.57,
+   "locked": true
   },
   {
    "game_id": "401909976",
@@ -47,7 +48,8 @@
     "PHI injuries (Bona, James): -4.4 pts",
     "TOR injuries (Barnes): -2.2 pts"
    ],
-   "score": 4.5
+   "score": 4.5,
+   "locked": true
   }
  ]
 }
