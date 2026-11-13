@@ -2,39 +2,76 @@
  {
   "legs": [
    {
+    "game_id": "401909298",
+    "game": "CLE @ MIA",
+    "player": "Meleek Thomas",
+    "player_id": "5041951",
+    "team": "CLE",
+    "opp": "MIA",
+    "stat": "PTS",
+    "side": "OVER",
+    "line": 11.5,
+    "price": -123,
+    "prob": 0.618,
+    "edge": 0.066,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      11.5,
+      -123
+     ]
+    },
+    "projection": 13.2,
+    "dist": {
+     "k": "normal",
+     "sd": 3.637
+    }
+   },
+   {
     "game_id": "401909300",
     "game": "MEM @ NO",
     "player": "Cam Spencer",
     "player_id": "4433083",
     "team": "MEM",
     "opp": "NO",
-    "stat": "PRA",
+    "stat": "PA",
     "side": "OVER",
-    "line": 15.5,
-    "price": -108,
-    "prob": 0.583,
-    "edge": 0.064,
+    "line": 12.5,
+    "price": -121,
+    "prob": 0.607,
+    "edge": 0.059,
     "grade": "B",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
-      15.5,
-      -108
+      12.5,
+      -121
      ]
     },
-    "projection": 17.9,
+    "projection": 15.0,
     "dist": {
      "k": "normal",
-     "sd": 6.243
+     "sd": 5.651
     }
    }
   ],
-  "hit": 0.583,
-  "payout": 1.93,
-  "odds": -108,
-  "ev": 0.123,
-  "type": "double",
-  "label": "Double up",
-  "made": "2026-11-13T12:35:46.973046-05:00"
+  "hit": 0.3751,
+  "payout": 3.31,
+  "odds": 231,
+  "ev": 0.242,
+  "type": "allgames",
+  "label": "One per game",
+  "missing": [
+   "401909296",
+   "401909297",
+   "401909299",
+   "401909301",
+   "401909302",
+   "401909303",
+   "401909304"
+  ],
+  "games_total": 9,
+  "made": "2026-11-13T17:02:17.424893-05:00"
  }
 ]

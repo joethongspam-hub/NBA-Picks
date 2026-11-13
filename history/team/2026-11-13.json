@@ -30,10 +30,10 @@
    "pick": "HOU -15.5",
    "side": "home",
    "line": -15.5,
-   "price": -114,
-   "prob": 0.585,
+   "price": -108,
+   "prob": 0.577,
    "model_prob": 0.728,
-   "edge": 0.053,
+   "edge": 0.058,
    "grade": "A",
    "proj": "HOU 117.8 \u2013 UTAH 94.7",
    "mu_h": 117.77,
@@ -45,7 +45,31 @@
     "HOU injuries (Smart): -1.9 pts",
     "UTAH injuries (Markkanen): -2.0 pts"
    ],
-   "score": 5.28
+   "score": 5.78
+  },
+  {
+   "game_id": "401909303",
+   "game": "POR @ SAC",
+   "market": "Spread",
+   "pick": "SAC +10.5",
+   "side": "home",
+   "line": 10.5,
+   "price": -115,
+   "prob": 0.568,
+   "model_prob": 0.674,
+   "edge": 0.033,
+   "grade": "B",
+   "proj": "SAC 109.4 \u2013 POR 114.2",
+   "mu_h": 109.36,
+   "mu_a": 114.22,
+   "home": "SAC",
+   "away": "POR",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "SAC injuries (Achiuwa): -2.4 pts",
+    "POR injuries (Krejci, Youngblood): -1.2 pts"
+   ],
+   "score": 3.31
   }
  ]
 }

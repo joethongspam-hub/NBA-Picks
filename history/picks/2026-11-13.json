@@ -6,15 +6,15 @@
   "player_id": "4433083",
   "team": "MEM",
   "opp": "NO",
-  "stat": "PRA",
+  "stat": "PA",
   "side": "OVER",
-  "line": 15.5,
+  "line": 12.5,
   "line_source": "DraftKings",
-  "price": -108,
-  "projection": 17.9,
-  "prob": 0.583,
-  "edge": 0.064,
-  "score": 6.18,
+  "price": -121,
+  "projection": 15.0,
+  "prob": 0.607,
+  "edge": 0.059,
+  "score": 5.72,
   "grade": "B",
   "hit_l5": "3/5",
   "hit_l10": "7/10",
@@ -22,28 +22,74 @@
   "vs_opp": "4/5",
   "minutes": 21.6,
   "status": "ACTIVE",
-  "season_avg": 18.2,
-  "l10_avg": 18.3,
+  "season_avg": 15.3,
+  "l10_avg": 15.0,
   "reasons": [
-   "Implied team total 120.0 (high vs slate avg 113.9)",
-   "Over hit 7/10 of last 10 at 15.5",
-   "Last game: 21 (over the line)",
-   "Last 5 vs NO: 21, 20, 37, 20, 9"
+   "Implied team total 119.5 (high vs slate avg 113.9)",
+   "Over hit 7/10 of last 10 at 12.5",
+   "Last game: 18 (over the line)",
+   "Last 5 vs NO: 20, 19, 32, 18, 9"
   ],
   "actual": null,
   "result": null,
-  "last_game": 21.0,
-  "open_line": 15.5,
-  "open_price": -119,
+  "last_game": 18.0,
+  "open_line": 13.5,
+  "open_price": -101,
   "books": {
    "DraftKings": [
-    15.5,
-    -108
+    12.5,
+    -121
    ]
   },
   "dist": {
    "k": "normal",
-   "sd": 6.243
+   "sd": 5.651
+  }
+ },
+ {
+  "game_id": "401909298",
+  "game": "CLE @ MIA",
+  "player": "Meleek Thomas",
+  "player_id": "5041951",
+  "team": "CLE",
+  "opp": "MIA",
+  "stat": "PTS",
+  "side": "OVER",
+  "line": 11.5,
+  "line_source": "DraftKings",
+  "price": -123,
+  "projection": 13.2,
+  "prob": 0.618,
+  "edge": 0.066,
+  "score": 3.89,
+  "grade": "B",
+  "hit_l5": "3/5",
+  "hit_l10": "6/9",
+  "hit_season": "6/9",
+  "vs_opp": "0/0",
+  "minutes": 26.4,
+  "status": "ACTIVE",
+  "season_avg": 13.1,
+  "l10_avg": 13.1,
+  "reasons": [
+   "Implied team total 117.0 (high vs slate avg 113.9)",
+   "Over hit 6/9 of last 9 at 11.5",
+   "Last game: 14 (over the line)"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 14.0,
+  "open_line": 11.5,
+  "open_price": -126,
+  "books": {
+   "DraftKings": [
+    11.5,
+    -123
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 3.637
   }
  }
 ]
