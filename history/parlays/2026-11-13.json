@@ -1,0 +1,40 @@
+[
+ {
+  "legs": [
+   {
+    "game_id": "401909300",
+    "game": "MEM @ NO",
+    "player": "Cam Spencer",
+    "player_id": "4433083",
+    "team": "MEM",
+    "opp": "NO",
+    "stat": "PRA",
+    "side": "OVER",
+    "line": 15.5,
+    "price": -108,
+    "prob": 0.583,
+    "edge": 0.064,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      15.5,
+      -108
+     ]
+    },
+    "projection": 17.9,
+    "dist": {
+     "k": "normal",
+     "sd": 6.243
+    }
+   }
+  ],
+  "hit": 0.583,
+  "payout": 1.93,
+  "odds": -108,
+  "ev": 0.123,
+  "type": "double",
+  "label": "Double up",
+  "made": "2026-11-13T12:35:46.973046-05:00"
+ }
+]
