@@ -1,0 +1,29 @@
+{
+ "made": "2026-11-13T09:50:40.758333-05:00",
+ "picks": [
+  {
+   "game_id": "401909301",
+   "game": "UTAH @ HOU",
+   "market": "Spread",
+   "pick": "HOU -15.5",
+   "side": "home",
+   "line": -15.5,
+   "price": -114,
+   "prob": 0.585,
+   "model_prob": 0.728,
+   "edge": 0.053,
+   "grade": "A",
+   "proj": "HOU 117.8 \u2013 UTAH 94.7",
+   "mu_h": 117.77,
+   "mu_a": 94.68,
+   "home": "HOU",
+   "away": "UTAH",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "HOU injuries (Smart): -1.9 pts",
+    "UTAH injuries (Markkanen): -2.0 pts"
+   ],
+   "score": 5.28
+  }
+ ]
+}

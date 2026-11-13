@@ -1,0 +1,49 @@
+[
+ {
+  "game_id": "401909300",
+  "game": "MEM @ NO",
+  "player": "Cam Spencer",
+  "player_id": "4433083",
+  "team": "MEM",
+  "opp": "NO",
+  "stat": "PR",
+  "side": "OVER",
+  "line": 10.5,
+  "line_source": "DraftKings",
+  "price": -118,
+  "projection": 12.8,
+  "prob": 0.606,
+  "edge": 0.064,
+  "score": 6.24,
+  "grade": "B",
+  "hit_l5": "3/5",
+  "hit_l10": "8/10",
+  "hit_season": "8/11",
+  "vs_opp": "4/5",
+  "minutes": 21.6,
+  "status": "ACTIVE",
+  "season_avg": 13.1,
+  "l10_avg": 13.2,
+  "reasons": [
+   "Implied team total 119.5 (high vs slate avg 113.9)",
+   "Over hit 8/10 of last 10 at 10.5",
+   "Last game: 18 (over the line)",
+   "Last 5 vs NO: 14, 17, 26, 13, 7"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 18.0,
+  "open_line": 10.5,
+  "open_price": -123,
+  "books": {
+   "DraftKings": [
+    10.5,
+    -118
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 5.155
+  }
+ }
+]
