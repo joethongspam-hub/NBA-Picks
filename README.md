@@ -120,6 +120,14 @@ The free 500 credits cover the NFL only; the NBA every day needs the $30 / 20,00
 * Assists, and players projected for 30–34 minutes, drop one grade (17–17 and 21–25).
 * NBA parlay legs need a **65%+** model probability (65%+ legs hit 65% vs 57% for 60–65%).
 
+## Streaks tab (Nov 13)
+
+NBA page, **Streaks**: for every player on the slate (not ruled out), the highest level of each stat he has reached
+in every one of his last 10 games ("10 for 10") or last 5 ("5 for 5") this season, with how many games in a row,
+his last five results and L10 average. Box scores only, not picks; today's sportsbook line is shown for reference,
+with ✓ when the streak level is above it. Floors keep out trivial streaks (10+ pts, 5+ reb, 4+ ast, 2+ threes,
+20+ PRA, 15+ PR/PA, 8+ RA, 2+ stl/blk). Code: `nba_props/streaks.py`.
+
 ## NBA team bets: two guards (Nov 11)
 
 Live NBA team bets (Nov 4–10) were 36–48, with grade A 17–43: the biggest "edges" were model misses (e.g. a projected

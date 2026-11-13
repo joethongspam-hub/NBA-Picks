@@ -93,6 +93,7 @@ input[type=search]{width:100%;background:var(--panel);border:1px solid var(--lin
   <button data-v="best" class="on">Best bets</button>
   <button data-v="parlay" id="parlayBtn" style="display:none">Parlays</button>
   <button data-v="games">Games</button>
+  <button data-v="hot" id="hotBtn" style="display:none">Streaks</button>
   <button data-v="team" id="teamBtn" style="display:none">Team</button>
   <button data-v="all">All props</button>
   <button data-v="record">Track record</button>
@@ -110,6 +111,7 @@ input[type=search]{width:100%;background:var(--panel);border:1px solid var(--lin
     <div id="parlayBox"></div>
   </section>
   <section class="view" id="v-games"><div id="gameList"></div></section>
+  <section class="view" id="v-hot"><div id="hotBox"></div></section>
   <section class="view" id="v-team"><div id="teamBox"></div></section>
   <section class="view" id="v-all">
     <input type="search" id="q" placeholder="Search player, team or stat (e.g. 'PTS', 'LAL')">
@@ -487,6 +489,36 @@ function renderParlays() {
 }
 renderParlays();
 if (!D.backtest) renderSlip();
+
+// ---- hot streaks (box scores only; today's line shown for reference)
+let HOT_N = localStorage.getItem("hotN") || "10";
+let HOT_STAT = "ALL";
+function renderHot() {
+  const R = D.streaks || [];
+  if (!R.length) return;
+  $("#hotBtn").style.display = "";
+  const stats = ["ALL", ...new Set(R.flatMap(r => r.streaks.map(s => s.stat)))];
+  const key = HOT_N === "10" ? "t10" : "t5";
+  const rows = R.map(r => ({...r, ss: r.streaks.filter(s => s[key] != null && (HOT_STAT === "ALL" || s.stat === HOT_STAT))}))
+    .filter(r => r.ss.length)
+    .sort((a, b) => b.ss.length - a.ss.length || Math.max(...b.ss.map(s => s["run" + HOT_N])) - Math.max(...a.ss.map(s => s["run" + HOT_N])));
+  const chip = (lab, on, fn) => `<button class="chip ${on ? "on" : ""}" onclick="${fn}">${lab}</button>`;
+  const line = s => {
+    const t = s[key];
+    const ln = s.line != null ? ` <span class="small">· today's line ${s.line}${t > s.line ? " ✓" : ""}</span>` : "";
+    return `<div class="row" style="padding:4px 0"><div class="who"><div class="name" style="font-size:14px">${t}+ ${esc(s.label)}${ln}</div>
+      <div class="meta">${s["run" + HOT_N]} games straight · last 5: ${s.last5.join(", ")} · L10 avg ${s.avg10}</div></div></div>`;
+  };
+  $("#hotBox").innerHTML = `<div class="note">Stat levels a player has reached in every one of his last ${HOT_N} games this season.
+      Box scores only; these aren't picks. A ✓ means the streak level is above today's sportsbook line.</div>
+    <div class="chips">${chip("10 for 10", HOT_N === "10", "HOT_N='10';localStorage.setItem('hotN','10');renderHot()")}
+      ${chip("5 for 5", HOT_N === "5", "HOT_N='5';localStorage.setItem('hotN','5');renderHot()")}</div>
+    <div class="chips">${stats.map(st => chip(st === "ALL" ? "All stats" : st, HOT_STAT === st, `HOT_STAT='${st}';renderHot()`)).join("")}</div>
+    ${rows.length ? rows.map(r => `<div class="card"><div class="pick" style="cursor:default">
+      <div class="name">${esc(r.player)} <span class="small">${esc(r.game)} · vs ${esc(r.opp)}${r.status ? " · " + esc(r.status) : ""}</span></div>
+      ${r.ss.map(line).join("")}</div></div>`).join("") : `<div class="empty">No ${HOT_N}-for-${HOT_N} streaks${HOT_STAT === "ALL" ? "" : " for " + HOT_STAT} today.</div>`}`;
+}
+renderHot();
 
 // ---- team bets
 function renderTeam() {

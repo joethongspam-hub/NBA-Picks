@@ -39,3 +39,11 @@ def test_overs_only(tmp=None):
     graded = [p for p in payload["all"] if p["grade"] != "-"]
     assert all(p["side"] == "OVER" for p in graded + payload["top"])
     assert any(p["side"] == "UNDER" and "Unders not offered" in p["reasons"][0] for p in payload["all"])
+
+
+def test_streak_levels():
+    from types import SimpleNamespace as N
+    from nba_props.streaks import player_streaks
+    mk = lambda v: N(season=2027, min=30, get=lambda st, v=v: v if st == "PTS" else 0)
+    s = player_streaks([mk(v) for v in [25, 22, 30, 19, 24, 18, 27, 21, 20, 23, 8]], 2027)[0]
+    assert (s["t5"], s["t10"], s["run5"], s["run10"]) == (19, 18, 5, 10)

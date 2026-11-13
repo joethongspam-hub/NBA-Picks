@@ -8,6 +8,7 @@ from __future__ import annotations
 
 from . import model as _NM
 from . import parlays as PL
+from . import streaks as ST
 
 import argparse
 import csv
@@ -548,8 +549,18 @@ def run(date: str | None = None, out_dir: str = "site", cache_dir: str = ".cache
                                           if (hist / "results.json").exists() else [])}
         except Exception as e:
             log(f"   parlays failed: {e!r}")
+    hot = []
+    try:
+        slate_teams = {}
+        for g in games:
+            slate_teams[g.home.id] = (g.id, g.label, g.away.abbr)
+            slate_teams[g.away.id] = (g.id, g.label, g.home.abbr)
+        hot = ST.build(players, slate_teams, injuries, season, lines or {})
+    except Exception as e:
+        log(f"   hot streaks failed: {e!r}")
     payload = {
         "parlays": parlays,
+        "streaks": hot,
         "date": day_s, "generated": now_et.strftime("%b %d, %I:%M %p ET").replace(" 0", " "), "season": season,
         "line_mode": "sportsbook" if lines else "estimated",
         "odds_usage": dict(USAGE),
