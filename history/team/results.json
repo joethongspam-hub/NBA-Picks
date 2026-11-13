@@ -2356,6 +2356,62 @@
    "date": "2026-11-11",
    "final": "HOU 115 \u2013 GS 108",
    "result": "LOSS"
+  },
+  {
+   "game_id": "401909976",
+   "game": "TOR @ PHI",
+   "market": "Moneyline",
+   "pick": "PHI ML",
+   "side": "home",
+   "line": null,
+   "price": -270,
+   "prob": 0.755,
+   "model_prob": 0.857,
+   "edge": 0.026,
+   "grade": "C",
+   "proj": "PHI 111.1 \u2013 TOR 97.8",
+   "mu_h": 111.12,
+   "mu_a": 97.78,
+   "home": "PHI",
+   "away": "TOR",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "PHI injuries (Bona, James): -4.4 pts",
+    "TOR injuries (Barnes): -2.2 pts"
+   ],
+   "score": 2.57,
+   "locked": true,
+   "date": "2026-11-12",
+   "final": "PHI 123 \u2013 TOR 112",
+   "result": "WIN"
+  },
+  {
+   "game_id": "401909976",
+   "game": "TOR @ PHI",
+   "market": "Spread",
+   "pick": "PHI -7.5",
+   "side": "home",
+   "line": -7.5,
+   "price": -103,
+   "prob": 0.552,
+   "model_prob": 0.68,
+   "edge": 0.045,
+   "grade": "B",
+   "proj": "PHI 111.1 \u2013 TOR 97.8",
+   "mu_h": 111.12,
+   "mu_a": 97.78,
+   "home": "PHI",
+   "away": "TOR",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "PHI injuries (Bona, James): -4.4 pts",
+    "TOR injuries (Barnes): -2.2 pts"
+   ],
+   "score": 4.5,
+   "locked": true,
+   "date": "2026-11-12",
+   "final": "PHI 123 \u2013 TOR 112",
+   "result": "WIN"
   }
  ]
 }
