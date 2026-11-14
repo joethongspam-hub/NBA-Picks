@@ -9,86 +9,66 @@
    "side": "home",
    "line": 12.5,
    "price": -111,
-   "prob": 0.545,
-   "model_prob": 0.622,
-   "edge": 0.019,
+   "prob": 0.541,
+   "model_prob": 0.614,
+   "edge": 0.015,
    "grade": "C",
-   "proj": "NO 109.5 \u2013 DEN 118.1",
-   "mu_h": 109.54,
+   "proj": "NO 109.3 \u2013 DEN 118.1",
+   "mu_h": 109.26,
    "mu_a": 118.14,
    "home": "NO",
    "away": "DEN",
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
-    "NO injuries (III, Murray, Watford): -5.3 pts"
+    "NO injuries (McGowens, III, Murray): -6.1 pts"
    ],
-   "score": 1.89
+   "score": 1.52
   },
   {
    "game_id": "401909981",
    "game": "DAL @ CLE",
    "market": "Spread",
-   "pick": "CLE +1.5",
+   "pick": "CLE +4.5",
    "side": "home",
-   "line": 1.5,
+   "line": 4.5,
    "price": -106,
-   "prob": 0.572,
-   "model_prob": 0.723,
-   "edge": 0.058,
-   "grade": "A",
-   "proj": "CLE 118.8 \u2013 DAL 112.9",
-   "mu_h": 118.83,
+   "prob": 0.537,
+   "model_prob": 0.622,
+   "edge": 0.022,
+   "grade": "C",
+   "proj": "CLE 112.3 \u2013 DAL 112.9",
+   "mu_h": 112.33,
    "mu_a": 112.93,
    "home": "CLE",
    "away": "DAL",
    "notes": [
-    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "CLE injuries (Merrill, Mobley): -3.8 pts"
    ],
-   "score": 5.79
-  },
-  {
-   "game_id": "401909983",
-   "game": "BKN @ MEM",
-   "market": "Moneyline",
-   "pick": "MEM ML",
-   "side": "home",
-   "line": null,
-   "price": -155,
-   "prob": 0.644,
-   "model_prob": 0.754,
-   "edge": 0.036,
-   "grade": "B",
-   "proj": "MEM 122.0 \u2013 BKN 113.4",
-   "mu_h": 122.03,
-   "mu_a": 113.43,
-   "home": "MEM",
-   "away": "BKN",
-   "notes": [
-    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
-   ],
-   "score": 3.58
+   "score": 2.2
   },
   {
    "game_id": "401909983",
    "game": "BKN @ MEM",
    "market": "Spread",
-   "pick": "MEM -3.5",
-   "side": "home",
-   "line": -3.5,
-   "price": -104,
-   "prob": 0.547,
-   "model_prob": 0.658,
-   "edge": 0.037,
+   "pick": "BKN +1.5",
+   "side": "away",
+   "line": -1.5,
+   "price": -108,
+   "prob": 0.564,
+   "model_prob": 0.69,
+   "edge": 0.045,
    "grade": "B",
-   "proj": "MEM 122.0 \u2013 BKN 113.4",
-   "mu_h": 122.03,
+   "proj": "MEM 108.7 \u2013 BKN 113.4",
+   "mu_h": 108.71,
    "mu_a": 113.43,
    "home": "MEM",
    "away": "BKN",
    "notes": [
-    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "MEM injuries (Jerome, Post): -6.6 pts"
    ],
-   "score": 3.72
+   "score": 4.46
   },
   {
    "game_id": "401909984",
@@ -97,21 +77,21 @@
    "pick": "CHI +15.5",
    "side": "away",
    "line": -15.5,
-   "price": -112,
-   "prob": 0.56,
-   "model_prob": 0.663,
+   "price": -108,
+   "prob": 0.551,
+   "model_prob": 0.652,
    "edge": 0.031,
    "grade": "B",
-   "proj": "MIN 114.3 \u2013 CHI 104.0",
+   "proj": "MIN 114.3 \u2013 CHI 103.7",
    "mu_h": 114.27,
-   "mu_a": 104.02,
+   "mu_a": 103.67,
    "home": "MIN",
    "away": "CHI",
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "CHI injuries (Wilson): -3.5 pts"
    ],
-   "score": 3.15
+   "score": 3.13
   }
  ]
 }
