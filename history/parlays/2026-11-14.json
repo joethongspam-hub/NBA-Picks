@@ -1,0 +1,40 @@
+[
+ {
+  "legs": [
+   {
+    "game_id": "401909981",
+    "game": "DAL @ CLE",
+    "player": "Meleek Thomas",
+    "player_id": "5041951",
+    "team": "CLE",
+    "opp": "DAL",
+    "stat": "PTS",
+    "side": "OVER",
+    "line": 11.5,
+    "price": -101,
+    "prob": 0.557,
+    "edge": 0.055,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      11.5,
+      -101
+     ]
+    },
+    "projection": 12.5,
+    "dist": {
+     "k": "normal",
+     "sd": 3.538
+    }
+   }
+  ],
+  "hit": 0.557,
+  "payout": 1.99,
+  "odds": -101,
+  "ev": 0.108,
+  "type": "double",
+  "label": "Double up",
+  "made": "2026-11-14T12:19:50.224132-05:00"
+ }
+]
