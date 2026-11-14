@@ -21,7 +21,32 @@
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
    ],
-   "score": 1.89
+   "score": 1.89,
+   "locked": true
+  },
+  {
+   "game_id": "401909298",
+   "game": "CLE @ MIA",
+   "market": "Spread",
+   "pick": "CLE +2.5",
+   "side": "away",
+   "line": -2.5,
+   "price": -112,
+   "prob": 0.559,
+   "model_prob": 0.661,
+   "edge": 0.031,
+   "grade": "B",
+   "proj": "MIA 110.1 \u2013 CLE 112.8",
+   "mu_h": 110.12,
+   "mu_a": 112.8,
+   "home": "MIA",
+   "away": "CLE",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "MIA injuries (Larsson, Thompson): -6.7 pts",
+    "CLE injuries (Merrill, Mobley): -5.1 pts"
+   ],
+   "score": 3.07
   },
   {
    "game_id": "401909301",
@@ -55,9 +80,9 @@
    "side": "home",
    "line": 10.5,
    "price": -115,
-   "prob": 0.568,
+   "prob": 0.567,
    "model_prob": 0.674,
-   "edge": 0.033,
+   "edge": 0.032,
    "grade": "B",
    "proj": "SAC 109.4 \u2013 POR 114.2",
    "mu_h": 109.36,
@@ -69,7 +94,7 @@
     "SAC injuries (Achiuwa): -2.4 pts",
     "POR injuries (Krejci, Youngblood): -1.2 pts"
    ],
-   "score": 3.31
+   "score": 3.23
   }
  ]
 }

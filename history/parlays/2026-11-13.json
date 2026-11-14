@@ -2,6 +2,82 @@
  {
   "legs": [
    {
+    "game_id": "401909299",
+    "game": "ATL @ CHI",
+    "player": "Nic Claxton",
+    "player_id": "4278067",
+    "team": "CHI",
+    "opp": "ATL",
+    "stat": "PRA",
+    "side": "OVER",
+    "line": 16.5,
+    "price": -110,
+    "prob": 0.59,
+    "edge": 0.066,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      16.5,
+      -110
+     ]
+    },
+    "projection": 19.1,
+    "dist": {
+     "k": "normal",
+     "sd": 6.526
+    }
+   }
+  ],
+  "hit": 0.59,
+  "payout": 1.91,
+  "odds": -110,
+  "ev": 0.126,
+  "type": "double",
+  "label": "Double up",
+  "made": "2026-11-13T19:17:36.217846-05:00"
+ },
+ {
+  "legs": [
+   {
+    "game_id": "401909300",
+    "game": "MEM @ NO",
+    "player": "Cam Spencer",
+    "player_id": "4433083",
+    "team": "MEM",
+    "opp": "NO",
+    "stat": "PRA",
+    "side": "OVER",
+    "line": 15.5,
+    "price": -106,
+    "prob": 0.58,
+    "edge": 0.066,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      15.5,
+      -106
+     ]
+    },
+    "projection": 17.8,
+    "dist": {
+     "k": "normal",
+     "sd": 6.238
+    }
+   }
+  ],
+  "hit": 0.58,
+  "payout": 1.94,
+  "odds": -106,
+  "ev": 0.127,
+  "type": "double2",
+  "label": "Double up #2",
+  "made": "2026-11-13T19:17:36.217846-05:00"
+ },
+ {
+  "legs": [
+   {
     "game_id": "401909298",
     "game": "CLE @ MIA",
     "player": "Meleek Thomas",
@@ -11,21 +87,48 @@
     "stat": "PTS",
     "side": "OVER",
     "line": 11.5,
-    "price": -123,
-    "prob": 0.618,
-    "edge": 0.066,
+    "price": -124,
+    "prob": 0.617,
+    "edge": 0.063,
     "grade": "B",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
       11.5,
-      -123
+      -124
      ]
     },
     "projection": 13.2,
     "dist": {
      "k": "normal",
-     "sd": 3.637
+     "sd": 3.633
+    }
+   },
+   {
+    "game_id": "401909299",
+    "game": "ATL @ CHI",
+    "player": "Nic Claxton",
+    "player_id": "4278067",
+    "team": "CHI",
+    "opp": "ATL",
+    "stat": "PRA",
+    "side": "OVER",
+    "line": 16.5,
+    "price": -110,
+    "prob": 0.59,
+    "edge": 0.066,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      16.5,
+      -110
+     ]
+    },
+    "projection": 19.1,
+    "dist": {
+     "k": "normal",
+     "sd": 6.526
     }
    },
    {
@@ -35,43 +138,40 @@
     "player_id": "4433083",
     "team": "MEM",
     "opp": "NO",
-    "stat": "PA",
+    "stat": "PRA",
     "side": "OVER",
-    "line": 12.5,
-    "price": -121,
-    "prob": 0.607,
-    "edge": 0.059,
+    "line": 15.5,
+    "price": -106,
+    "prob": 0.58,
+    "edge": 0.066,
     "grade": "B",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
-      12.5,
-      -121
+      15.5,
+      -106
      ]
     },
-    "projection": 15.0,
+    "projection": 17.8,
     "dist": {
      "k": "normal",
-     "sd": 5.651
+     "sd": 6.238
     }
    }
   ],
-  "hit": 0.3751,
-  "payout": 3.31,
-  "odds": 231,
-  "ev": 0.242,
+  "hit": 0.2111,
+  "payout": 6.7,
+  "odds": 570,
+  "ev": 0.415,
   "type": "allgames",
   "label": "One per game",
   "missing": [
-   "401909296",
-   "401909297",
-   "401909299",
    "401909301",
    "401909302",
    "401909303",
    "401909304"
   ],
-  "games_total": 9,
-  "made": "2026-11-13T17:02:17.424893-05:00"
+  "games_total": 7,
+  "made": "2026-11-13T19:17:36.217846-05:00"
  }
 ]
