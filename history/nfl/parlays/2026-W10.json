@@ -180,7 +180,7 @@
   "ev": 0.931,
   "type": "safe",
   "label": "Safest",
-  "made": "2026-11-15T11:15:44.458926-05:00"
+  "made": "2026-11-15T12:50:59.370986-05:00"
  },
  {
   "legs": [
@@ -279,60 +279,60 @@
     }
    },
    {
-    "game_id": "401873060",
-    "game": "MIN @ GB",
-    "player": "Justin Jefferson",
-    "player_id": "4262921",
-    "team": "MIN",
-    "opp": "GB",
-    "stat": "REC_YDS",
-    "side": "UNDER",
-    "line": 82.5,
-    "price": -110,
-    "prob": 0.618,
-    "edge": 0.094,
+    "game_id": "401873056",
+    "game": "HOU @ CLE",
+    "player": "Jerry Jeudy",
+    "player_id": "4241463",
+    "team": "CLE",
+    "opp": "HOU",
+    "stat": "REC",
+    "side": "OVER",
+    "line": 1.5,
+    "price": -130,
+    "prob": 0.649,
+    "edge": 0.084,
     "grade": "A",
     "line_source": "6 books",
     "books": {
      "DraftKings": [
-      82.5,
-      -110
+      1.5,
+      -144
      ],
      "FanDuel": [
-      80.5,
-      -113
+      1.5,
+      -140
      ],
      "BetOnline.ag": [
-      83.5,
-      -114
+      1.5,
+      -145
      ],
      "BetRivers": [
-      82.5,
-      -114
+      1.5,
+      -157
      ],
      "BetMGM": [
-      84.5,
-      -115
+      1.5,
+      -130
      ],
      "Bovada": [
-      82.5,
-      -115
+      1.5,
+      -145
      ]
     },
-    "projection": 68.1,
+    "projection": 2.6,
     "dist": {
-     "k": "gamma",
-     "cv": 0.622
+     "k": "count",
+     "var": 2.692
     }
    }
   ],
-  "hit": 0.2646,
-  "payout": 6.53,
-  "odds": 553,
-  "ev": 0.729,
+  "hit": 0.2779,
+  "payout": 6.05,
+  "odds": 505,
+  "ev": 0.682,
   "type": "value",
   "label": "Best value",
-  "made": "2026-11-15T11:15:44.458926-05:00"
+  "made": "2026-11-15T12:50:59.370986-05:00"
  },
  {
   "legs": [
@@ -381,53 +381,6 @@
     "dist": {
      "k": "count",
      "var": 9.646
-    }
-   },
-   {
-    "game_id": "401873056",
-    "game": "HOU @ CLE",
-    "player": "Jerry Jeudy",
-    "player_id": "4241463",
-    "team": "CLE",
-    "opp": "HOU",
-    "stat": "REC",
-    "side": "OVER",
-    "line": 1.5,
-    "price": -130,
-    "prob": 0.652,
-    "edge": 0.087,
-    "grade": "A",
-    "line_source": "6 books",
-    "books": {
-     "DraftKings": [
-      1.5,
-      -144
-     ],
-     "FanDuel": [
-      1.5,
-      -140
-     ],
-     "BetOnline.ag": [
-      1.5,
-      -145
-     ],
-     "BetRivers": [
-      1.5,
-      -157
-     ],
-     "BetMGM": [
-      1.5,
-      -130
-     ],
-     "Bovada": [
-      1.5,
-      -145
-     ]
-    },
-    "projection": 2.6,
-    "dist": {
-     "k": "count",
-     "var": 2.719
     }
    },
    {
@@ -521,6 +474,49 @@
     }
    },
    {
+    "game_id": "401873056",
+    "game": "HOU @ CLE",
+    "player": "Xavier Hutchinson",
+    "player_id": "4686422",
+    "team": "HOU",
+    "opp": "CLE",
+    "stat": "REC",
+    "side": "UNDER",
+    "line": 3.5,
+    "price": -162,
+    "prob": 0.675,
+    "edge": 0.056,
+    "grade": "B",
+    "line_source": "6 books",
+    "books": {
+     "DraftKings": [
+      3.5,
+      -162
+     ],
+     "FanDuel": [
+      2.5,
+      142
+     ],
+     "BetOnline.ag": [
+      3.5,
+      -164
+     ],
+     "BetMGM": [
+      3.5,
+      -175
+     ],
+     "Bovada": [
+      3.5,
+      -165
+     ]
+    },
+    "projection": 2.6,
+    "dist": {
+     "k": "count",
+     "var": 2.736
+    }
+   },
+   {
     "game_id": "401873063",
     "game": "SF @ DAL",
     "player": "George Kittle",
@@ -564,12 +560,12 @@
     }
    }
   ],
-  "hit": 0.1095,
-  "payout": 16.17,
-  "odds": 1517,
-  "ev": 0.771,
+  "hit": 0.1133,
+  "payout": 14.78,
+  "odds": 1378,
+  "ev": 0.676,
   "type": "longshot",
   "label": "Long shot",
-  "made": "2026-11-15T11:15:44.458926-05:00"
+  "made": "2026-11-15T12:50:59.370986-05:00"
  }
 ]

@@ -202,12 +202,12 @@
    "hit_l10": "7/10",
    "hit_season": "7/8",
    "vs_opp": "0/0",
-   "minutes": 9.4,
+   "minutes": 9.6,
    "status": "ACTIVE",
    "season_avg": 3.8,
    "l10_avg": 4.8,
    "reasons": [
-    "Walker out: +0.4 targets, +3.4 carries",
+    "Ott, Walker out: +0.4 targets, +3.6 carries",
     "Over hit 5/5 last 5, 7/10 last 10 at 2.5",
     "Last game: 6 (over the line)"
    ],
@@ -245,74 +245,6 @@
    "dist": {
     "k": "count",
     "var": 4.165
-   }
-  },
-  {
-   "game_id": "401873060",
-   "game": "MIN @ GB",
-   "player": "Justin Jefferson",
-   "player_id": "4262921",
-   "team": "MIN",
-   "opp": "GB",
-   "stat": "REC_YDS",
-   "side": "UNDER",
-   "line": 82.5,
-   "line_source": "6 books",
-   "price": -110,
-   "projection": 68.1,
-   "prob": 0.618,
-   "edge": 0.094,
-   "score": 9.44,
-   "grade": "A",
-   "hit_l5": "5/5",
-   "hit_l10": "7/10",
-   "hit_season": "6/7",
-   "vs_opp": "1/3",
-   "minutes": 9.3,
-   "status": "ACTIVE",
-   "season_avg": 58.1,
-   "l10_avg": 53.5,
-   "reasons": [
-    "Implied team total 20.0 (low vs avg 22.4)",
-    "Hockenson, Jennings out: +1.3 targets",
-    "Under hit 5/5 last 5, 7/10 last 10 at 82.5",
-    "Last game: 58 (under the line)",
-    "Last 3 vs GB: 92, 101, 48"
-   ],
-   "actual": null,
-   "result": null,
-   "last_game": 58.0,
-   "open_line": null,
-   "open_price": null,
-   "books": {
-    "DraftKings": [
-     82.5,
-     -110
-    ],
-    "FanDuel": [
-     80.5,
-     -113
-    ],
-    "BetOnline.ag": [
-     83.5,
-     -114
-    ],
-    "BetRivers": [
-     82.5,
-     -114
-    ],
-    "BetMGM": [
-     84.5,
-     -115
-    ],
-    "Bovada": [
-     82.5,
-     -115
-    ]
-   },
-   "dist": {
-    "k": "gamma",
-    "cv": 0.622
    }
   },
   {
@@ -397,9 +329,9 @@
    "line_source": "6 books",
    "price": -130,
    "projection": 2.6,
-   "prob": 0.652,
-   "edge": 0.087,
-   "score": 8.71,
+   "prob": 0.649,
+   "edge": 0.084,
+   "score": 8.4,
    "grade": "A",
    "hit_l5": "4/5",
    "hit_l10": "7/10",
@@ -410,6 +342,7 @@
    "season_avg": 2.3,
    "l10_avg": 2.5,
    "reasons": [
+    "Weather: wind 13 mph: passing trimmed 1%",
     "Over hit 4/5 last 5, 7/10 last 10 at 1.5",
     "Last game: 2 (over the line)"
    ],
@@ -446,7 +379,7 @@
    },
    "dist": {
     "k": "count",
-    "var": 2.719
+    "var": 2.692
    }
   },
   {
@@ -712,6 +645,68 @@
    }
   },
   {
+   "game_id": "401873056",
+   "game": "HOU @ CLE",
+   "player": "Xavier Hutchinson",
+   "player_id": "4686422",
+   "team": "HOU",
+   "opp": "CLE",
+   "stat": "REC",
+   "side": "UNDER",
+   "line": 3.5,
+   "line_source": "6 books",
+   "price": -162,
+   "projection": 2.6,
+   "prob": 0.675,
+   "edge": 0.056,
+   "score": 5.62,
+   "grade": "B",
+   "hit_l5": "4/5",
+   "hit_l10": "8/10",
+   "hit_season": "7/8",
+   "vs_opp": "0/0",
+   "minutes": 5.0,
+   "status": "ACTIVE",
+   "season_avg": 2.7,
+   "l10_avg": 3.0,
+   "reasons": [
+    "Weather: wind 13 mph: passing trimmed 1%",
+    "Under hit 4/5 last 5, 8/10 last 10 at 3.5",
+    "Last game: 3 (under the line)"
+   ],
+   "actual": null,
+   "result": null,
+   "last_game": 3.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     3.5,
+     -162
+    ],
+    "FanDuel": [
+     2.5,
+     142
+    ],
+    "BetOnline.ag": [
+     3.5,
+     -164
+    ],
+    "BetMGM": [
+     3.5,
+     -175
+    ],
+    "Bovada": [
+     3.5,
+     -165
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 2.736
+   }
+  },
+  {
    "game_id": "401873062",
    "game": "SEA @ LV",
    "player": "Michael Mayer",
@@ -775,67 +770,6 @@
    "dist": {
     "k": "count",
     "var": 4.854
-   }
-  },
-  {
-   "game_id": "401873056",
-   "game": "HOU @ CLE",
-   "player": "Xavier Hutchinson",
-   "player_id": "4686422",
-   "team": "HOU",
-   "opp": "CLE",
-   "stat": "REC",
-   "side": "UNDER",
-   "line": 3.5,
-   "line_source": "6 books",
-   "price": -162,
-   "projection": 2.6,
-   "prob": 0.671,
-   "edge": 0.053,
-   "score": 5.29,
-   "grade": "B",
-   "hit_l5": "4/5",
-   "hit_l10": "8/10",
-   "hit_season": "7/8",
-   "vs_opp": "0/0",
-   "minutes": 5.1,
-   "status": "ACTIVE",
-   "season_avg": 2.7,
-   "l10_avg": 3.0,
-   "reasons": [
-    "Under hit 4/5 last 5, 8/10 last 10 at 3.5",
-    "Last game: 3 (under the line)"
-   ],
-   "actual": null,
-   "result": null,
-   "last_game": 3.0,
-   "open_line": null,
-   "open_price": null,
-   "books": {
-    "DraftKings": [
-     3.5,
-     -162
-    ],
-    "FanDuel": [
-     2.5,
-     142
-    ],
-    "BetOnline.ag": [
-     3.5,
-     -164
-    ],
-    "BetMGM": [
-     3.5,
-     -175
-    ],
-    "Bovada": [
-     3.5,
-     -165
-    ]
-   },
-   "dist": {
-    "k": "count",
-    "var": 2.763
    }
   },
   {
@@ -1032,75 +966,6 @@
    }
   },
   {
-   "game_id": "401873060",
-   "game": "MIN @ GB",
-   "player": "Jordan Addison",
-   "player_id": "4429205",
-   "team": "MIN",
-   "opp": "GB",
-   "stat": "REC_YDS",
-   "side": "UNDER",
-   "line": 49.5,
-   "line_source": "6 books",
-   "price": -110,
-   "projection": 47.7,
-   "prob": 0.568,
-   "edge": 0.044,
-   "score": 2.64,
-   "grade": "C",
-   "hit_l5": "2/5",
-   "hit_l10": "7/10",
-   "hit_season": "4/7",
-   "vs_opp": "3/3",
-   "minutes": 6.4,
-   "status": "QUESTIONABLE",
-   "season_avg": 41.0,
-   "l10_avg": 41.5,
-   "reasons": [
-    "Implied team total 20.0 (low vs avg 22.4)",
-    "Listed Questionable: Thumb Not Specified - Addison (thumb), who listed is questionable for Sunday's contest at Green Bay, is in line to be a game-time decision, Ian Rapoport of NFL Network reports.",
-    "Hockenson, Jennings out: +0.9 targets",
-    "Under hit 2/5 last 5, 7/10 last 10 at 49.5",
-    "Last game: 28 (under the line)",
-    "Last 3 vs GB: 0, 8, 0"
-   ],
-   "actual": null,
-   "result": null,
-   "last_game": 28.0,
-   "open_line": null,
-   "open_price": null,
-   "books": {
-    "DraftKings": [
-     49.5,
-     -110
-    ],
-    "FanDuel": [
-     48.5,
-     -113
-    ],
-    "BetOnline.ag": [
-     49.5,
-     -111
-    ],
-    "BetRivers": [
-     49.5,
-     -115
-    ],
-    "BetMGM": [
-     50.5,
-     -115
-    ],
-    "Bovada": [
-     49.5,
-     -115
-    ]
-   },
-   "dist": {
-    "k": "gamma",
-    "cv": 0.729
-   }
-  },
-  {
    "game_id": "401873056",
    "game": "HOU @ CLE",
    "player": "Dylan Sampson",
@@ -1113,9 +978,9 @@
    "line_source": "6 books",
    "price": -130,
    "projection": 3.0,
-   "prob": 0.604,
-   "edge": 0.039,
-   "score": 3.86,
+   "prob": 0.607,
+   "edge": 0.042,
+   "score": 4.21,
    "grade": "C",
    "hit_l5": "4/5",
    "hit_l10": "8/10",
@@ -1126,6 +991,7 @@
    "season_avg": 3.0,
    "l10_avg": 3.5,
    "reasons": [
+    "Weather: wind 13 mph: passing trimmed 1%",
     "Under hit 4/5 last 5, 8/10 last 10 at 3.5",
     "Last game: 3 (under the line)"
    ],
@@ -1158,7 +1024,7 @@
    },
    "dist": {
     "k": "count",
-    "var": 4.04
+    "var": 3.959
    }
   },
   {

@@ -49,10 +49,10 @@
    "pick": "GB ML",
    "side": "home",
    "line": null,
-   "price": -142,
-   "prob": 0.607,
+   "price": -148,
+   "prob": 0.612,
    "model_prob": 0.687,
-   "edge": 0.02,
+   "edge": 0.016,
    "grade": "C",
    "proj": "GB 20.4 \u2013 MIN 13.8",
    "mu_h": 20.4,
@@ -62,7 +62,7 @@
    "notes": [
     "MIN: backup QB Kirk Cousins starting (-3 pts)"
    ],
-   "score": 2.0
+   "score": 1.56
   },
   {
    "game_id": "401873060",
@@ -113,10 +113,10 @@
    "pick": "LV ML",
    "side": "home",
    "line": null,
-   "price": 235,
-   "prob": 0.319,
+   "price": 240,
+   "prob": 0.316,
    "model_prob": 0.38,
-   "edge": 0.021,
+   "edge": 0.022,
    "grade": "C",
    "proj": "LV 19.8 \u2013 SEA 23.9",
    "mu_h": 19.82,
@@ -126,7 +126,7 @@
    "notes": [
     "SEA: backup QB Drew Lock starting (-3 pts)"
    ],
-   "score": 2.07
+   "score": 2.22
   },
   {
    "game_id": "401873061",
@@ -135,18 +135,18 @@
    "pick": "ARI ML",
    "side": "home",
    "line": null,
-   "price": 370,
-   "prob": 0.242,
+   "price": 380,
+   "prob": 0.24,
    "model_prob": 0.314,
-   "edge": 0.03,
-   "grade": "C",
+   "edge": 0.031,
+   "grade": "B",
    "proj": "ARI 20.0 \u2013 LAR 26.5",
    "mu_h": 19.98,
    "mu_a": 26.54,
    "home": "ARI",
    "away": "LAR",
    "notes": [],
-   "score": 2.97
+   "score": 3.14
   },
   {
    "game_id": "401873061",
@@ -195,18 +195,18 @@
    "pick": "Over 38.5",
    "side": "over",
    "line": 38.5,
-   "price": -110,
-   "prob": 0.554,
+   "price": -115,
+   "prob": 0.561,
    "model_prob": 0.655,
-   "edge": 0.03,
-   "grade": "B",
+   "edge": 0.026,
+   "grade": "C",
    "proj": "BAL 23.3 \u2013 LAC 20.6",
    "mu_h": 23.28,
    "mu_a": 20.61,
    "home": "BAL",
    "away": "LAC",
    "notes": [],
-   "score": 3.05
+   "score": 2.65
   }
  ]
 }
