@@ -147,7 +147,13 @@ The NBA Parlays tab now has **Double up #2** next to Double up: the same even-mo
 players not on the first ticket, so one bad leg can't sink both. If the first ticket locks at tip-off, its
 players stay off #2. Each has its own record line. (`doubles=2` in `PL.update`; the NFL keeps one.)
 
-## NBA: over props only (Nov 11)
+## NBA: unders back (Nov 15)
+
+The over-only rule left about 3.5 picks a night, so grade A/B unders are graded again (real lines Nov 2–9: 45–25,
+64%, +14.5u). The other under rules still apply: no REB/RA/threes unders, nothing against the last game, no unders
+on depleted teams. Turn it off again with `NO_UNDERS = True` in `nba_props/model.py`.
+
+## NBA: over props only (Nov 11, reversed Nov 15)
 
 NBA unders are not graded, so top picks and parlays are overs only (`NO_UNDERS` in `nba_props/model.py`). On
 real lines Nov 2–9 (grades A/B, after the other rules) overs went 37–22 (62.7%, +13.8u) and unders 45–25

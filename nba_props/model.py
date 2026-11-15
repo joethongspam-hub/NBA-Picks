@@ -86,7 +86,7 @@ LAST_GAME_NOTE = "Goes against his last game: not graded (real-line record 32-57
 
 # Nov 11: user preference: NBA shows over props only. Real-line A/B record Nov 2-9: overs 37-22
 # (62.7%) +13.8u, unders 45-25 (64.3%) +14.5u, so this halves volume without hurting win rate.
-NO_UNDERS = True
+NO_UNDERS = False   # Nov 15: unders back (user wanted more picks); A/B unders were 45-25 on real lines
 UNDER_NOTE = "Unders not offered (NBA shows over props only)"
 C_NOTE = "Grade C: not shown (NBA shows grades A and B only; grade C went 16-14 on real lines)"
 CONF_NOTE = "Below the confidence bar (needs a minus-money price and 7+ hits in his last 10 at this line)"
