@@ -55,6 +55,521 @@
   "ev": 0.384,
   "type": "double",
   "label": "Double up",
-  "made": "2026-11-12T16:53:30.829151-05:00"
+  "made": "2026-11-12T16:53:30.829151-05:00",
+  "locked": true
+ },
+ {
+  "legs": [
+   {
+    "game_id": "401873061",
+    "game": "LAR @ ARI",
+    "player": "Bam Knight",
+    "player_id": "4427728",
+    "team": "ARI",
+    "opp": "LAR",
+    "stat": "RUSH_YDS",
+    "side": "UNDER",
+    "line": 29.5,
+    "price": -113,
+    "prob": 0.711,
+    "edge": 0.181,
+    "grade": "A",
+    "line_source": "2 books",
+    "books": {
+     "FanDuel": [
+      29.5,
+      -113
+     ],
+     "Bovada": [
+      31.5,
+      -120
+     ]
+    },
+    "projection": 17.1,
+    "dist": {
+     "k": "gamma",
+     "cv": 0.746
+    }
+   },
+   {
+    "game_id": "401873059",
+    "game": "MIA @ IND",
+    "player": "Ollie Gordon II",
+    "player_id": "4711533",
+    "team": "MIA",
+    "opp": "IND",
+    "stat": "REC",
+    "side": "UNDER",
+    "line": 1.5,
+    "price": -108,
+    "prob": 0.697,
+    "edge": 0.178,
+    "grade": "A",
+    "line_source": "4 books",
+    "books": {
+     "DraftKings": [
+      1.5,
+      -121
+     ],
+     "FanDuel": [
+      1.5,
+      -108
+     ],
+     "BetOnline.ag": [
+      1.5,
+      -119
+     ],
+     "Bovada": [
+      1.5,
+      -125
+     ]
+    },
+    "projection": 0.7,
+    "dist": {
+     "k": "count",
+     "var": 0.784
+    }
+   },
+   {
+    "game_id": "401873058",
+    "game": "KC @ ATL",
+    "player": "Jahan Dotson",
+    "player_id": "4361409",
+    "team": "ATL",
+    "opp": "KC",
+    "stat": "REC",
+    "side": "UNDER",
+    "line": 2.5,
+    "price": -186,
+    "prob": 0.698,
+    "edge": 0.047,
+    "grade": "C",
+    "line_source": "6 books",
+    "books": {
+     "DraftKings": [
+      2.5,
+      -186
+     ],
+     "FanDuel": [
+      2.5,
+      -210
+     ],
+     "BetOnline.ag": [
+      1.5,
+      135
+     ],
+     "BetMGM": [
+      2.5,
+      -200
+     ],
+     "Bovada": [
+      2.5,
+      -190
+     ]
+    },
+    "projection": 1.7,
+    "dist": {
+     "k": "count",
+     "var": 1.818
+    }
+   }
+  ],
+  "hit": 0.3459,
+  "payout": 5.58,
+  "odds": 458,
+  "ev": 0.931,
+  "type": "safe",
+  "label": "Safest",
+  "made": "2026-11-15T11:15:44.458926-05:00"
+ },
+ {
+  "legs": [
+   {
+    "game_id": "401873061",
+    "game": "LAR @ ARI",
+    "player": "Matthew Stafford",
+    "player_id": "12483",
+    "team": "LAR",
+    "opp": "ARI",
+    "stat": "PASS_YDS",
+    "side": "OVER",
+    "line": 208.5,
+    "price": -111,
+    "prob": 0.641,
+    "edge": 0.115,
+    "grade": "A",
+    "line_source": "6 books",
+    "books": {
+     "DraftKings": [
+      208.5,
+      -111
+     ],
+     "FanDuel": [
+      212.5,
+      -113
+     ],
+     "BetOnline.ag": [
+      207.5,
+      -115
+     ],
+     "BetRivers": [
+      211.5,
+      -120
+     ],
+     "BetMGM": [
+      213.5,
+      -115
+     ],
+     "Bovada": [
+      208.5,
+      -115
+     ]
+    },
+    "projection": 260.6,
+    "dist": {
+     "k": "gamma",
+     "cv": 0.293
+    }
+   },
+   {
+    "game_id": "401873058",
+    "game": "KC @ ATL",
+    "player": "Xavier Worthy",
+    "player_id": "4683062",
+    "team": "KC",
+    "opp": "ATL",
+    "stat": "REC",
+    "side": "OVER",
+    "line": 2.5,
+    "price": -125,
+    "prob": 0.668,
+    "edge": 0.112,
+    "grade": "A",
+    "line_source": "6 books",
+    "books": {
+     "DraftKings": [
+      2.5,
+      -146
+     ],
+     "FanDuel": [
+      2.5,
+      -130
+     ],
+     "BetOnline.ag": [
+      2.5,
+      -139
+     ],
+     "BetRivers": [
+      2.5,
+      -125
+     ],
+     "BetMGM": [
+      2.5,
+      -140
+     ],
+     "Bovada": [
+      2.5,
+      -150
+     ]
+    },
+    "projection": 4.0,
+    "dist": {
+     "k": "count",
+     "var": 4.165
+    }
+   },
+   {
+    "game_id": "401873060",
+    "game": "MIN @ GB",
+    "player": "Justin Jefferson",
+    "player_id": "4262921",
+    "team": "MIN",
+    "opp": "GB",
+    "stat": "REC_YDS",
+    "side": "UNDER",
+    "line": 82.5,
+    "price": -110,
+    "prob": 0.618,
+    "edge": 0.094,
+    "grade": "A",
+    "line_source": "6 books",
+    "books": {
+     "DraftKings": [
+      82.5,
+      -110
+     ],
+     "FanDuel": [
+      80.5,
+      -113
+     ],
+     "BetOnline.ag": [
+      83.5,
+      -114
+     ],
+     "BetRivers": [
+      82.5,
+      -114
+     ],
+     "BetMGM": [
+      84.5,
+      -115
+     ],
+     "Bovada": [
+      82.5,
+      -115
+     ]
+    },
+    "projection": 68.1,
+    "dist": {
+     "k": "gamma",
+     "cv": 0.622
+    }
+   }
+  ],
+  "hit": 0.2646,
+  "payout": 6.53,
+  "odds": 553,
+  "ev": 0.729,
+  "type": "value",
+  "label": "Best value",
+  "made": "2026-11-15T11:15:44.458926-05:00"
+ },
+ {
+  "legs": [
+   {
+    "game_id": "401873061",
+    "game": "LAR @ ARI",
+    "player": "Trey McBride",
+    "player_id": "4361307",
+    "team": "ARI",
+    "opp": "LAR",
+    "stat": "REC",
+    "side": "OVER",
+    "line": 6.5,
+    "price": -125,
+    "prob": 0.643,
+    "edge": 0.088,
+    "grade": "A",
+    "line_source": "6 books",
+    "books": {
+     "DraftKings": [
+      6.5,
+      -127
+     ],
+     "FanDuel": [
+      6.5,
+      -125
+     ],
+     "BetOnline.ag": [
+      6.5,
+      -130
+     ],
+     "BetRivers": [
+      6.5,
+      -143
+     ],
+     "BetMGM": [
+      6.5,
+      -125
+     ],
+     "Bovada": [
+      6.5,
+      -130
+     ]
+    },
+    "projection": 8.5,
+    "dist": {
+     "k": "count",
+     "var": 9.646
+    }
+   },
+   {
+    "game_id": "401873056",
+    "game": "HOU @ CLE",
+    "player": "Jerry Jeudy",
+    "player_id": "4241463",
+    "team": "CLE",
+    "opp": "HOU",
+    "stat": "REC",
+    "side": "OVER",
+    "line": 1.5,
+    "price": -130,
+    "prob": 0.652,
+    "edge": 0.087,
+    "grade": "A",
+    "line_source": "6 books",
+    "books": {
+     "DraftKings": [
+      1.5,
+      -144
+     ],
+     "FanDuel": [
+      1.5,
+      -140
+     ],
+     "BetOnline.ag": [
+      1.5,
+      -145
+     ],
+     "BetRivers": [
+      1.5,
+      -157
+     ],
+     "BetMGM": [
+      1.5,
+      -130
+     ],
+     "Bovada": [
+      1.5,
+      -145
+     ]
+    },
+    "projection": 2.6,
+    "dist": {
+     "k": "count",
+     "var": 2.719
+    }
+   },
+   {
+    "game_id": "401873062",
+    "game": "SEA @ LV",
+    "player": "Cooper Kupp",
+    "player_id": "2977187",
+    "team": "SEA",
+    "opp": "LV",
+    "stat": "REC_YDS",
+    "side": "OVER",
+    "line": 18.5,
+    "price": -113,
+    "prob": 0.603,
+    "edge": 0.072,
+    "grade": "B",
+    "line_source": "6 books",
+    "books": {
+     "DraftKings": [
+      18.5,
+      -113
+     ],
+     "FanDuel": [
+      18.5,
+      -113
+     ],
+     "BetOnline.ag": [
+      18.5,
+      -115
+     ],
+     "BetRivers": [
+      21.5,
+      -112
+     ],
+     "BetMGM": [
+      20.5,
+      -111
+     ],
+     "Bovada": [
+      18.5,
+      -115
+     ]
+    },
+    "projection": 28.2,
+    "dist": {
+     "k": "gamma",
+     "cv": 0.606
+    }
+   },
+   {
+    "game_id": "401873065",
+    "game": "LAC @ BAL",
+    "player": "Rashod Bateman",
+    "player_id": "4360939",
+    "team": "BAL",
+    "opp": "LAC",
+    "stat": "REC",
+    "side": "UNDER",
+    "line": 2.5,
+    "price": -160,
+    "prob": 0.682,
+    "edge": 0.067,
+    "grade": "B",
+    "line_source": "6 books",
+    "books": {
+     "DraftKings": [
+      2.5,
+      -189
+     ],
+     "FanDuel": [
+      2.5,
+      -182
+     ],
+     "BetOnline.ag": [
+      2.5,
+      -179
+     ],
+     "BetMGM": [
+      2.5,
+      -160
+     ],
+     "Bovada": [
+      2.5,
+      -190
+     ]
+    },
+    "projection": 1.8,
+    "dist": {
+     "k": "count",
+     "var": 1.867
+    }
+   },
+   {
+    "game_id": "401873063",
+    "game": "SF @ DAL",
+    "player": "George Kittle",
+    "player_id": "3040151",
+    "team": "SF",
+    "opp": "DAL",
+    "stat": "REC",
+    "side": "UNDER",
+    "line": 5.5,
+    "price": -152,
+    "prob": 0.635,
+    "edge": 0.032,
+    "grade": "C",
+    "line_source": "6 books",
+    "books": {
+     "DraftKings": [
+      5.5,
+      -152
+     ],
+     "FanDuel": [
+      5.5,
+      -158
+     ],
+     "BetOnline.ag": [
+      5.5,
+      -154
+     ],
+     "BetMGM": [
+      4.5,
+      115
+     ],
+     "Bovada": [
+      5.5,
+      -160
+     ]
+    },
+    "projection": 4.6,
+    "dist": {
+     "k": "count",
+     "var": 4.87
+    }
+   }
+  ],
+  "hit": 0.1095,
+  "payout": 16.17,
+  "odds": 1517,
+  "ev": 0.771,
+  "type": "longshot",
+  "label": "Long shot",
+  "made": "2026-11-15T11:15:44.458926-05:00"
  }
 ]

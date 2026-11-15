@@ -8220,6 +8220,375 @@
    "locked": true,
    "week": "2026-W08",
    "date": "2026-W08"
+  },
+  {
+   "game_id": "401873044",
+   "game": "NYG @ PHI",
+   "player": "Dameon Pierce",
+   "player_id": "4360238",
+   "team": "PHI",
+   "opp": "NYG",
+   "stat": "RUSH_YDS",
+   "side": "OVER",
+   "line": 21.5,
+   "line_source": "est.",
+   "price": 139,
+   "projection": 31.6,
+   "prob": 0.51,
+   "edge": 0.091,
+   "score": 9.11,
+   "grade": "A",
+   "hit_l5": "2/5",
+   "hit_l10": "2/8",
+   "hit_season": "2/3",
+   "vs_opp": "0/0",
+   "minutes": 11.4,
+   "status": "ACTIVE",
+   "season_avg": 17.8,
+   "l10_avg": 26.5,
+   "reasons": [
+    "Weather: wind 10 mph: passing trimmed 2%",
+    "NYG allows rushing yards to RBs (+10%)",
+    "Implied team total 17.8 (low vs avg 22.8)",
+    "Backup QB starting: receiving efficiency trimmed",
+    "Over hit 2/5 last 5, 2/8 last 10 at 21.5",
+    "Last game: 47 (over the line)"
+   ],
+   "actual": null,
+   "result": "VOID",
+   "last_game": 47.0,
+   "open_line": null,
+   "open_price": null,
+   "books": null,
+   "dist": {
+    "k": "gamma",
+    "cv": 0.756
+   },
+   "locked": true,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873041",
+   "game": "DEN @ CAR",
+   "player": "RJ Harvey",
+   "player_id": "4568490",
+   "team": "DEN",
+   "opp": "CAR",
+   "stat": "RUSH_YDS",
+   "side": "OVER",
+   "line": 19.5,
+   "line_source": "est.",
+   "price": 135,
+   "projection": 26.3,
+   "prob": 0.517,
+   "edge": 0.09,
+   "score": 6.33,
+   "grade": "B",
+   "hit_l5": "2/5",
+   "hit_l10": "6/10",
+   "hit_season": "2/6",
+   "vs_opp": "0/0",
+   "minutes": 10.4,
+   "status": "ACTIVE",
+   "season_avg": 21.3,
+   "l10_avg": 15.8,
+   "reasons": [
+    "Goes against his last game: grade lowered one level (live record 42% on these)",
+    "Over hit 2/5 last 5, 6/10 last 10 at 19.5",
+    "Last game: 6 (under the line)"
+   ],
+   "actual": null,
+   "result": "VOID",
+   "last_game": 6.0,
+   "open_line": null,
+   "open_price": null,
+   "books": null,
+   "dist": {
+    "k": "gamma",
+    "cv": 0.629
+   },
+   "locked": true,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873046",
+   "game": "HOU @ LAC",
+   "player": "Ladd McConkey",
+   "player_id": "4612826",
+   "team": "LAC",
+   "opp": "HOU",
+   "stat": "REC",
+   "side": "UNDER",
+   "line": 4.5,
+   "line_source": "6 books",
+   "price": -149,
+   "projection": 3.3,
+   "prob": 0.682,
+   "edge": 0.084,
+   "score": 8.36,
+   "grade": "A",
+   "hit_l5": "5/5",
+   "hit_l10": "9/10",
+   "hit_season": "5/6",
+   "vs_opp": "1/1",
+   "minutes": 5.2,
+   "status": "ACTIVE",
+   "season_avg": 3.3,
+   "l10_avg": 2.2,
+   "reasons": [
+    "Under hit 5/5 last 5, 9/10 last 10 at 4.5",
+    "Last game: 4 (under the line)",
+    "Last 1 vs HOU: 1"
+   ],
+   "actual": null,
+   "result": "VOID",
+   "last_game": 4.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     4.5,
+     -161
+    ],
+    "FanDuel": [
+     3.5,
+     128
+    ],
+    "BetOnline.ag": [
+     4.5,
+     -149
+    ],
+    "BetMGM": [
+     4.5,
+     -155
+    ],
+    "Bovada": [
+     4.5,
+     -165
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 3.501
+   },
+   "locked": true,
+   "week": "2026-W09",
+   "date": "2026-W09"
+  },
+  {
+   "game_id": "401873052",
+   "game": "WSH @ NYG",
+   "player": "J.J. McCarthy",
+   "player_id": "4433970",
+   "team": "NYG",
+   "opp": "WSH",
+   "stat": "PASS_YDS",
+   "side": "UNDER",
+   "line": 201.5,
+   "line_source": "6 books",
+   "price": -113,
+   "projection": 138.4,
+   "prob": 0.734,
+   "edge": 0.203,
+   "score": 12.18,
+   "grade": "A",
+   "hit_l5": "3/5",
+   "hit_l10": "7/10",
+   "hit_season": "2/4",
+   "vs_opp": "2/2",
+   "minutes": 20.0,
+   "status": "QUESTIONABLE",
+   "season_avg": 159.3,
+   "l10_avg": 155.5,
+   "reasons": [
+    "Weather: wind 10 mph (gusts 26): passing trimmed 8%",
+    "Implied team total 21.0 (low vs avg 22.4)",
+    "Listed Questionable: McCarthy (hip) was listed as a full participant in Tuesday's practice, Dan Salomone of the Giants' official site reports.",
+    "Under hit 3/5 last 5, 7/10 last 10 at 201.5",
+    "Last game: 127 (under the line)",
+    "Last 2 vs WSH: 0, 163"
+   ],
+   "actual": 293.0,
+   "result": "LOSS",
+   "last_game": 127.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     201.5,
+     -113
+    ],
+    "FanDuel": [
+     201.5,
+     -113
+    ],
+    "BetOnline.ag": [
+     201.5,
+     -114
+    ],
+    "BetRivers": [
+     199.5,
+     -114
+    ],
+    "BetMGM": [
+     201.5,
+     -115
+    ],
+    "Bovada": [
+     201.5,
+     -115
+    ]
+   },
+   "dist": {
+    "k": "gamma",
+    "cv": 0.365
+   },
+   "locked": true,
+   "actual_min": 36.0,
+   "week": "2026-W10",
+   "date": "2026-W10"
+  },
+  {
+   "game_id": "401873052",
+   "game": "WSH @ NYG",
+   "player": "Austin Ekeler",
+   "player_id": "3068267",
+   "team": "WSH",
+   "opp": "NYG",
+   "stat": "RUSH_YDS",
+   "side": "UNDER",
+   "line": 29.5,
+   "line_source": "6 books",
+   "price": -109,
+   "projection": 22.2,
+   "prob": 0.65,
+   "edge": 0.129,
+   "score": 11.27,
+   "grade": "A",
+   "hit_l5": "4/5",
+   "hit_l10": "6/7",
+   "hit_season": "4/5",
+   "vs_opp": "2/2",
+   "minutes": 7.2,
+   "status": "ACTIVE",
+   "season_avg": 18.8,
+   "l10_avg": 13.5,
+   "reasons": [
+    "Weather: wind 10 mph (gusts 26): passing trimmed 8%",
+    "NYG allows rushing yards to RBs (+9%)",
+    "Implied team total 19.5 (low vs avg 22.4)",
+    "Under hit 4/5 last 5, 6/7 last 10 at 29.5",
+    "Last game: 16 (under the line)",
+    "Last 2 vs NYG: -1, 26"
+   ],
+   "actual": 26.0,
+   "result": "WIN",
+   "last_game": 16.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     29.5,
+     -109
+    ],
+    "FanDuel": [
+     29.5,
+     -113
+    ],
+    "BetOnline.ag": [
+     28.5,
+     -114
+    ],
+    "BetRivers": [
+     28.5,
+     -113
+    ],
+    "BetMGM": [
+     30.5,
+     -115
+    ],
+    "Bovada": [
+     29.5,
+     -110
+    ]
+   },
+   "dist": {
+    "k": "gamma",
+    "cv": 0.623
+   },
+   "locked": true,
+   "actual_min": 13.0,
+   "week": "2026-W10",
+   "date": "2026-W10"
+  },
+  {
+   "game_id": "401873052",
+   "game": "WSH @ NYG",
+   "player": "Antonio Williams",
+   "player_id": "5081432",
+   "team": "WSH",
+   "opp": "NYG",
+   "stat": "REC",
+   "side": "UNDER",
+   "line": 3.5,
+   "line_source": "6 books",
+   "price": -102,
+   "projection": 3.0,
+   "prob": 0.589,
+   "edge": 0.084,
+   "score": 8.43,
+   "grade": "A",
+   "hit_l5": "4/5",
+   "hit_l10": "6/8",
+   "hit_season": "6/8",
+   "vs_opp": "1/1",
+   "minutes": 5.1,
+   "status": "ACTIVE",
+   "season_avg": 3.2,
+   "l10_avg": 3.5,
+   "reasons": [
+    "Weather: wind 10 mph (gusts 26): passing trimmed 8%",
+    "Under hit 4/5 last 5, 6/8 last 10 at 3.5",
+    "Last game: 3 (under the line)",
+    "Last 1 vs NYG: 3"
+   ],
+   "actual": 2.0,
+   "result": "WIN",
+   "last_game": 3.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     3.5,
+     -111
+    ],
+    "FanDuel": [
+     3.5,
+     -102
+    ],
+    "BetOnline.ag": [
+     3.5,
+     -120
+    ],
+    "BetMGM": [
+     3.5,
+     -110
+    ],
+    "Bovada": [
+     3.5,
+     -110
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 3.121
+   },
+   "locked": true,
+   "actual_min": 2.0,
+   "week": "2026-W10",
+   "date": "2026-W10"
   }
  ]
 }

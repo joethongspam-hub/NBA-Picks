@@ -225,6 +225,30 @@
    "score": 1.6,
    "date": "2026-W09",
    "result": "VOID"
+  },
+  {
+   "game_id": "401873052",
+   "game": "WSH @ NYG",
+   "market": "Total",
+   "pick": "Over 40.5",
+   "side": "over",
+   "line": 40.5,
+   "price": -115,
+   "prob": 0.559,
+   "model_prob": 0.65,
+   "edge": 0.025,
+   "grade": "C",
+   "proj": "NYG 24.6 \u2013 WSH 21.1",
+   "mu_h": 24.57,
+   "mu_a": 21.12,
+   "home": "NYG",
+   "away": "WSH",
+   "notes": [],
+   "score": 2.46,
+   "locked": true,
+   "date": "2026-W10",
+   "final": "NYG 21 \u2013 WSH 24",
+   "result": "WIN"
   }
  ]
 }
