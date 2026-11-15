@@ -2,81 +2,135 @@
  {
   "legs": [
    {
-    "game_id": "401909987",
-    "game": "CHA @ LAC",
-    "player": "Ryan Kalkbrenner",
-    "player_id": "4576060",
-    "team": "CHA",
-    "opp": "LAC",
-    "stat": "REB",
-    "side": "OVER",
-    "line": 4.5,
-    "price": -102,
-    "prob": 0.569,
-    "edge": 0.064,
-    "grade": "B",
+    "game_id": "401909991",
+    "game": "HOU @ WSH",
+    "player": "Reed Sheppard",
+    "player_id": "4711272",
+    "team": "HOU",
+    "opp": "WSH",
+    "stat": "PR",
+    "side": "UNDER",
+    "line": 17.5,
+    "price": -114,
+    "prob": 0.689,
+    "edge": 0.156,
+    "grade": "A",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
-      4.5,
-      -102
+      17.5,
+      -114
      ]
     },
-    "projection": 5.4,
+    "projection": 11.4,
     "dist": {
      "k": "normal",
-     "sd": 2.538
+     "sd": 6.823
     }
    }
   ],
-  "hit": 0.569,
-  "payout": 1.98,
-  "odds": -102,
-  "ev": 0.127,
+  "hit": 0.689,
+  "payout": 1.88,
+  "odds": -114,
+  "ev": 0.293,
   "type": "double",
   "label": "Double up",
-  "made": "2026-11-15T12:20:37.556029-05:00"
+  "made": "2026-11-15T14:29:57.927793-05:00"
+ },
+ {
+  "legs": [
+   {
+    "game_id": "401909986",
+    "game": "LAL @ PHX",
+    "player": "Quentin Grimes",
+    "player_id": "4397014",
+    "team": "LAL",
+    "opp": "PHX",
+    "stat": "PR",
+    "side": "UNDER",
+    "line": 15.5,
+    "price": -113,
+    "prob": 0.65,
+    "edge": 0.12,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      15.5,
+      -113
+     ]
+    },
+    "projection": 11.5,
+    "dist": {
+     "k": "normal",
+     "sd": 5.81
+    }
+   }
+  ],
+  "hit": 0.65,
+  "payout": 1.88,
+  "odds": -113,
+  "ev": 0.225,
+  "type": "double2",
+  "label": "Double up #2",
+  "made": "2026-11-15T14:29:57.927793-05:00"
  },
  {
   "legs": [
    {
     "game_id": "401909991",
     "game": "HOU @ WSH",
-    "player": "Alperen Sengun",
-    "player_id": "4871144",
+    "player": "Reed Sheppard",
+    "player_id": "4711272",
     "team": "HOU",
     "opp": "WSH",
-    "stat": "PTS",
-    "side": "OVER",
-    "line": 20.5,
-    "price": -104,
-    "prob": 0.563,
-    "edge": 0.053,
-    "grade": "B",
+    "stat": "PR",
+    "side": "UNDER",
+    "line": 17.5,
+    "price": -114,
+    "prob": 0.689,
+    "edge": 0.156,
+    "grade": "A",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
-      20.5,
-      -104
+      17.5,
+      -114
      ]
     },
-    "projection": 22.9,
+    "projection": 11.4,
     "dist": {
      "k": "normal",
-     "sd": 8.055
+     "sd": 6.823
     }
-   }
-  ],
-  "hit": 0.563,
-  "payout": 1.96,
-  "odds": -104,
-  "ev": 0.104,
-  "type": "double2",
-  "label": "Double up #2",
-  "made": "2026-11-15T12:20:37.556029-05:00"
- },
- {
-  "legs": [
+   },
+   {
+    "game_id": "401909986",
+    "game": "LAL @ PHX",
+    "player": "Quentin Grimes",
+    "player_id": "4397014",
+    "team": "LAL",
+    "opp": "PHX",
+    "stat": "PR",
+    "side": "UNDER",
+    "line": 15.5,
+    "price": -113,
+    "prob": 0.65,
+    "edge": 0.12,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      15.5,
+      -113
+     ]
+    },
+    "projection": 11.5,
+    "dist": {
+     "k": "normal",
+     "sd": 5.81
+    }
+   },
    {
     "game_id": "401909989",
     "game": "DAL @ BOS",
@@ -87,93 +141,208 @@
     "stat": "REB",
     "side": "OVER",
     "line": 2.5,
-    "price": -143,
-    "prob": 0.656,
-    "edge": 0.067,
+    "price": -137,
+    "prob": 0.652,
+    "edge": 0.074,
     "grade": "B",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
       2.5,
-      -143
+      -137
      ]
     },
-    "projection": 3.6,
+    "projection": 3.7,
     "dist": {
      "k": "normal",
-     "sd": 1.91
+     "sd": 1.911
+    }
+   }
+  ],
+  "hit": 0.292,
+  "payout": 6.12,
+  "odds": 512,
+  "ev": 0.787,
+  "type": "safe",
+  "label": "Safest",
+  "made": "2026-11-15T14:29:57.927793-05:00"
+ },
+ {
+  "legs": [
+   {
+    "game_id": "401909991",
+    "game": "HOU @ WSH",
+    "player": "Reed Sheppard",
+    "player_id": "4711272",
+    "team": "HOU",
+    "opp": "WSH",
+    "stat": "PR",
+    "side": "UNDER",
+    "line": 17.5,
+    "price": -114,
+    "prob": 0.689,
+    "edge": 0.156,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      17.5,
+      -114
+     ]
+    },
+    "projection": 11.4,
+    "dist": {
+     "k": "normal",
+     "sd": 6.823
+    }
+   },
+   {
+    "game_id": "401909989",
+    "game": "DAL @ BOS",
+    "player": "Sam Hauser",
+    "player_id": "4065804",
+    "team": "BOS",
+    "opp": "DAL",
+    "stat": "REB",
+    "side": "OVER",
+    "line": 2.5,
+    "price": -137,
+    "prob": 0.652,
+    "edge": 0.074,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      2.5,
+      -137
+     ]
+    },
+    "projection": 3.7,
+    "dist": {
+     "k": "normal",
+     "sd": 1.911
+    }
+   },
+   {
+    "game_id": "401909986",
+    "game": "LAL @ PHX",
+    "player": "Quentin Grimes",
+    "player_id": "4397014",
+    "team": "LAL",
+    "opp": "PHX",
+    "stat": "PR",
+    "side": "UNDER",
+    "line": 15.5,
+    "price": -113,
+    "prob": 0.65,
+    "edge": 0.12,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      15.5,
+      -113
+     ]
+    },
+    "projection": 11.5,
+    "dist": {
+     "k": "normal",
+     "sd": 5.81
     }
    },
    {
     "game_id": "401909987",
     "game": "CHA @ LAC",
-    "player": "Ryan Kalkbrenner",
-    "player_id": "4576060",
+    "player": "Brandon Miller",
+    "player_id": "4433287",
     "team": "CHA",
     "opp": "LAC",
-    "stat": "REB",
-    "side": "OVER",
-    "line": 4.5,
-    "price": -102,
-    "prob": 0.569,
-    "edge": 0.064,
-    "grade": "B",
+    "stat": "PA",
+    "side": "UNDER",
+    "line": 24.5,
+    "price": -120,
+    "prob": 0.634,
+    "edge": 0.089,
+    "grade": "A",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
-      4.5,
-      -102
+      24.5,
+      -120
      ]
     },
-    "projection": 5.4,
+    "projection": 20.0,
     "dist": {
      "k": "normal",
-     "sd": 2.538
+     "sd": 7.799
     }
    },
    {
-    "game_id": "401909991",
-    "game": "HOU @ WSH",
-    "player": "Alperen Sengun",
-    "player_id": "4871144",
-    "team": "HOU",
-    "opp": "WSH",
-    "stat": "PTS",
-    "side": "OVER",
-    "line": 20.5,
-    "price": -104,
-    "prob": 0.563,
-    "edge": 0.053,
+    "game_id": "401909990",
+    "game": "NY @ TOR",
+    "player": "Ja'Kobe Walter",
+    "player_id": "4684272",
+    "team": "TOR",
+    "opp": "NY",
+    "stat": "PRA",
+    "side": "UNDER",
+    "line": 16.5,
+    "price": -115,
+    "prob": 0.589,
+    "edge": 0.054,
     "grade": "B",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
-      20.5,
-      -104
+      16.5,
+      -115
      ]
     },
-    "projection": 22.9,
+    "projection": 14.3,
     "dist": {
      "k": "normal",
-     "sd": 8.055
+     "sd": 5.793
+    }
+   },
+   {
+    "game_id": "401909992",
+    "game": "ATL @ MIL",
+    "player": "Brayden Burries",
+    "player_id": "5082206",
+    "team": "MIL",
+    "opp": "ATL",
+    "stat": "PA",
+    "side": "UNDER",
+    "line": 14.5,
+    "price": -110,
+    "prob": 0.584,
+    "edge": 0.06,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      14.5,
+      -110
+     ]
+    },
+    "projection": 12.3,
+    "dist": {
+     "k": "normal",
+     "sd": 5.937
     }
    }
   ],
-  "hit": 0.2101,
-  "payout": 6.6,
-  "odds": 560,
-  "ev": 0.387,
+  "hit": 0.0637,
+  "payout": 40.05,
+  "odds": 3905,
+  "ev": 1.551,
   "type": "allgames",
   "label": "One per game",
   "missing": [
-   "401909985",
-   "401909986",
    "401909988",
-   "401909990",
-   "401909992",
    "401909993"
   ],
-  "games_total": 9,
-  "made": "2026-11-15T12:20:37.556029-05:00"
+  "games_total": 8,
+  "made": "2026-11-15T14:29:57.927793-05:00"
  }
 ]
