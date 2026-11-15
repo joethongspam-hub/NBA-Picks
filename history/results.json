@@ -13607,6 +13607,40 @@
    "date": "2026-11-13",
    "actual": 12.0,
    "result": "WIN"
+  },
+  {
+   "game_id": "401909981",
+   "game": "DAL @ CLE",
+   "player": "Zaccharie Risacher",
+   "player_id": "5211175",
+   "team": "DAL",
+   "opp": "CLE",
+   "stat": "REB",
+   "side": "OVER",
+   "line": 3.5,
+   "line_source": "DraftKings",
+   "projection": 3.9,
+   "prob": 0.515,
+   "edge": 0.061,
+   "grade": "B",
+   "score": 5.27,
+   "price": 120,
+   "minutes": 20.9,
+   "actual_min": 14.0,
+   "status": "ACTIVE",
+   "last_game": 6.0,
+   "open_line": 2.5,
+   "open_price": -166,
+   "hit_l10": "8/10",
+   "reasons": [
+    "Over hit 8/10 of last 10 at 3.5",
+    "Last game: 6 (over the line)",
+    "Last 3 vs CLE: 4, 3, 2"
+   ],
+   "locked": null,
+   "date": "2026-11-14",
+   "actual": 2.0,
+   "result": "LOSS"
   }
  ]
 }

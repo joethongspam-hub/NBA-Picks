@@ -2519,6 +2519,33 @@
    "date": "2026-11-13",
    "final": "SAC 107 \u2013 POR 120",
    "result": "LOSS"
+  },
+  {
+   "game_id": "401909980",
+   "game": "DEN @ NO",
+   "market": "Spread",
+   "pick": "NO +12.5",
+   "side": "home",
+   "line": 12.5,
+   "price": -111,
+   "prob": 0.541,
+   "model_prob": 0.614,
+   "edge": 0.015,
+   "grade": "C",
+   "proj": "NO 109.3 \u2013 DEN 118.1",
+   "mu_h": 109.26,
+   "mu_a": 118.14,
+   "home": "NO",
+   "away": "DEN",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "NO injuries (McGowens, III, Murray): -6.1 pts"
+   ],
+   "score": 1.52,
+   "locked": true,
+   "date": "2026-11-14",
+   "final": "NO 108 \u2013 DEN 116",
+   "result": "WIN"
   }
  ]
 }
