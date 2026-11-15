@@ -25,29 +25,6 @@
    ],
    "score": 2.09,
    "locked": true
-  },
-  {
-   "game_id": "401909988",
-   "game": "SA @ UTAH",
-   "market": "Spread",
-   "pick": "SA -15.5",
-   "side": "away",
-   "line": 15.5,
-   "price": -108,
-   "prob": 0.551,
-   "model_prob": 0.653,
-   "edge": 0.032,
-   "grade": "B",
-   "proj": "UTAH 97.5 \u2013 SA 118.0",
-   "mu_h": 97.55,
-   "mu_a": 117.98,
-   "home": "UTAH",
-   "away": "SA",
-   "notes": [
-    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
-    "UTAH injuries (Hayes, Markkanen): -3.1 pts"
-   ],
-   "score": 3.16
   }
  ]
 }

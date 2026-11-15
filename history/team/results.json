@@ -2546,6 +2546,34 @@
    "date": "2026-11-14",
    "final": "NO 108 \u2013 DEN 116",
    "result": "WIN"
+  },
+  {
+   "game_id": "401909985",
+   "game": "IND @ PHI",
+   "market": "Spread",
+   "pick": "IND +8.5",
+   "side": "away",
+   "line": -8.5,
+   "price": -110,
+   "prob": 0.545,
+   "model_prob": 0.628,
+   "edge": 0.021,
+   "grade": "C",
+   "proj": "PHI 112.4 \u2013 IND 108.0",
+   "mu_h": 112.38,
+   "mu_a": 107.95,
+   "home": "PHI",
+   "away": "IND",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "PHI injuries (Bona, Embiid): -5.1 pts",
+    "IND injuries (Nembhard): -4.3 pts"
+   ],
+   "score": 2.09,
+   "locked": true,
+   "date": "2026-11-15",
+   "final": "PHI 131 \u2013 IND 124",
+   "result": "WIN"
   }
  ]
 }

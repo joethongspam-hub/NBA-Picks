@@ -2,40 +2,40 @@
  {
   "legs": [
    {
-    "game_id": "401909991",
-    "game": "HOU @ WSH",
-    "player": "Reed Sheppard",
-    "player_id": "4711272",
-    "team": "HOU",
-    "opp": "WSH",
-    "stat": "PR",
+    "game_id": "401909989",
+    "game": "DAL @ BOS",
+    "player": "Cooper Flagg",
+    "player_id": "5041939",
+    "team": "DAL",
+    "opp": "BOS",
+    "stat": "PRA",
     "side": "UNDER",
-    "line": 17.5,
-    "price": -114,
-    "prob": 0.689,
-    "edge": 0.156,
+    "line": 35.5,
+    "price": -109,
+    "prob": 0.622,
+    "edge": 0.101,
     "grade": "A",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
-      17.5,
-      -114
+      35.5,
+      -109
      ]
     },
-    "projection": 11.4,
+    "projection": 29.7,
     "dist": {
      "k": "normal",
-     "sd": 6.823
+     "sd": 10.418
     }
    }
   ],
-  "hit": 0.689,
-  "payout": 1.88,
-  "odds": -114,
-  "ev": 0.293,
+  "hit": 0.622,
+  "payout": 1.92,
+  "odds": -109,
+  "ev": 0.193,
   "type": "double",
   "label": "Double up",
-  "made": "2026-11-15T14:29:57.927793-05:00"
+  "made": "2026-11-15T16:55:09.462903-05:00"
  },
  {
   "legs": [
@@ -73,7 +73,8 @@
   "ev": 0.225,
   "type": "double2",
   "label": "Double up #2",
-  "made": "2026-11-15T14:29:57.927793-05:00"
+  "made": "2026-11-15T14:29:57.927793-05:00",
+  "locked": true
  },
  {
   "legs": [
@@ -165,7 +166,8 @@
   "ev": 0.787,
   "type": "safe",
   "label": "Safest",
-  "made": "2026-11-15T14:29:57.927793-05:00"
+  "made": "2026-11-15T14:29:57.927793-05:00",
+  "locked": true
  },
  {
   "legs": [
@@ -343,6 +345,7 @@
    "401909993"
   ],
   "games_total": 8,
-  "made": "2026-11-15T14:29:57.927793-05:00"
+  "made": "2026-11-15T14:29:57.927793-05:00",
+  "locked": true
  }
 ]
