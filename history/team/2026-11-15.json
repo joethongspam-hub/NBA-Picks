@@ -1,0 +1,52 @@
+{
+ "made": "2026-11-15T12:20:37.556029-05:00",
+ "picks": [
+  {
+   "game_id": "401909985",
+   "game": "IND @ PHI",
+   "market": "Spread",
+   "pick": "IND +8.5",
+   "side": "away",
+   "line": -8.5,
+   "price": -110,
+   "prob": 0.545,
+   "model_prob": 0.628,
+   "edge": 0.021,
+   "grade": "C",
+   "proj": "PHI 112.4 \u2013 IND 108.0",
+   "mu_h": 112.38,
+   "mu_a": 107.95,
+   "home": "PHI",
+   "away": "IND",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "PHI injuries (Bona, Embiid): -5.1 pts",
+    "IND injuries (Nembhard): -4.3 pts"
+   ],
+   "score": 2.09
+  },
+  {
+   "game_id": "401909988",
+   "game": "SA @ UTAH",
+   "market": "Spread",
+   "pick": "SA -15.5",
+   "side": "away",
+   "line": 15.5,
+   "price": -114,
+   "prob": 0.561,
+   "model_prob": 0.657,
+   "edge": 0.028,
+   "grade": "C",
+   "proj": "UTAH 97.5 \u2013 SA 118.1",
+   "mu_h": 97.55,
+   "mu_a": 118.11,
+   "home": "UTAH",
+   "away": "SA",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "UTAH injuries (Hayes, Markkanen): -3.1 pts"
+   ],
+   "score": 2.8
+  }
+ ]
+}

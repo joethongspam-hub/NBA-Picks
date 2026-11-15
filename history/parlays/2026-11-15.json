@@ -1,0 +1,179 @@
+[
+ {
+  "legs": [
+   {
+    "game_id": "401909987",
+    "game": "CHA @ LAC",
+    "player": "Ryan Kalkbrenner",
+    "player_id": "4576060",
+    "team": "CHA",
+    "opp": "LAC",
+    "stat": "REB",
+    "side": "OVER",
+    "line": 4.5,
+    "price": -102,
+    "prob": 0.569,
+    "edge": 0.064,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      4.5,
+      -102
+     ]
+    },
+    "projection": 5.4,
+    "dist": {
+     "k": "normal",
+     "sd": 2.538
+    }
+   }
+  ],
+  "hit": 0.569,
+  "payout": 1.98,
+  "odds": -102,
+  "ev": 0.127,
+  "type": "double",
+  "label": "Double up",
+  "made": "2026-11-15T12:20:37.556029-05:00"
+ },
+ {
+  "legs": [
+   {
+    "game_id": "401909991",
+    "game": "HOU @ WSH",
+    "player": "Alperen Sengun",
+    "player_id": "4871144",
+    "team": "HOU",
+    "opp": "WSH",
+    "stat": "PTS",
+    "side": "OVER",
+    "line": 20.5,
+    "price": -104,
+    "prob": 0.563,
+    "edge": 0.053,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      20.5,
+      -104
+     ]
+    },
+    "projection": 22.9,
+    "dist": {
+     "k": "normal",
+     "sd": 8.055
+    }
+   }
+  ],
+  "hit": 0.563,
+  "payout": 1.96,
+  "odds": -104,
+  "ev": 0.104,
+  "type": "double2",
+  "label": "Double up #2",
+  "made": "2026-11-15T12:20:37.556029-05:00"
+ },
+ {
+  "legs": [
+   {
+    "game_id": "401909989",
+    "game": "DAL @ BOS",
+    "player": "Sam Hauser",
+    "player_id": "4065804",
+    "team": "BOS",
+    "opp": "DAL",
+    "stat": "REB",
+    "side": "OVER",
+    "line": 2.5,
+    "price": -143,
+    "prob": 0.656,
+    "edge": 0.067,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      2.5,
+      -143
+     ]
+    },
+    "projection": 3.6,
+    "dist": {
+     "k": "normal",
+     "sd": 1.91
+    }
+   },
+   {
+    "game_id": "401909987",
+    "game": "CHA @ LAC",
+    "player": "Ryan Kalkbrenner",
+    "player_id": "4576060",
+    "team": "CHA",
+    "opp": "LAC",
+    "stat": "REB",
+    "side": "OVER",
+    "line": 4.5,
+    "price": -102,
+    "prob": 0.569,
+    "edge": 0.064,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      4.5,
+      -102
+     ]
+    },
+    "projection": 5.4,
+    "dist": {
+     "k": "normal",
+     "sd": 2.538
+    }
+   },
+   {
+    "game_id": "401909991",
+    "game": "HOU @ WSH",
+    "player": "Alperen Sengun",
+    "player_id": "4871144",
+    "team": "HOU",
+    "opp": "WSH",
+    "stat": "PTS",
+    "side": "OVER",
+    "line": 20.5,
+    "price": -104,
+    "prob": 0.563,
+    "edge": 0.053,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      20.5,
+      -104
+     ]
+    },
+    "projection": 22.9,
+    "dist": {
+     "k": "normal",
+     "sd": 8.055
+    }
+   }
+  ],
+  "hit": 0.2101,
+  "payout": 6.6,
+  "odds": 560,
+  "ev": 0.387,
+  "type": "allgames",
+  "label": "One per game",
+  "missing": [
+   "401909985",
+   "401909986",
+   "401909988",
+   "401909990",
+   "401909992",
+   "401909993"
+  ],
+  "games_total": 9,
+  "made": "2026-11-15T12:20:37.556029-05:00"
+ }
+]
