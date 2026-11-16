@@ -1,0 +1,256 @@
+[
+ {
+  "legs": [
+   {
+    "game_id": "401910000",
+    "game": "GS @ NO",
+    "player": "Brandin Podziemski",
+    "player_id": "4709138",
+    "team": "GS",
+    "opp": "NO",
+    "stat": "PRA",
+    "side": "UNDER",
+    "line": 28.5,
+    "price": -105,
+    "prob": 0.632,
+    "edge": 0.12,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      28.5,
+      -105
+     ]
+    },
+    "projection": 23.6,
+    "dist": {
+     "k": "normal",
+     "sd": 7.893
+    }
+   }
+  ],
+  "hit": 0.632,
+  "payout": 1.95,
+  "odds": -105,
+  "ev": 0.234,
+  "type": "double",
+  "label": "Double up",
+  "made": "2026-11-16T12:45:28.744477-05:00"
+ },
+ {
+  "legs": [
+   {
+    "game_id": "401910000",
+    "game": "GS @ NO",
+    "player": "Draymond Green",
+    "player_id": "6589",
+    "team": "GS",
+    "opp": "NO",
+    "stat": "PR",
+    "side": "UNDER",
+    "line": 11.5,
+    "price": -112,
+    "prob": 0.622,
+    "edge": 0.093,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      11.5,
+      -112
+     ]
+    },
+    "projection": 9.1,
+    "dist": {
+     "k": "normal",
+     "sd": 4.336
+    }
+   }
+  ],
+  "hit": 0.622,
+  "payout": 1.89,
+  "odds": -112,
+  "ev": 0.177,
+  "type": "double2",
+  "label": "Double up #2",
+  "made": "2026-11-16T12:45:28.744477-05:00"
+ },
+ {
+  "legs": [
+   {
+    "game_id": "401910001",
+    "game": "PHX @ DEN",
+    "player": "Devin Booker",
+    "player_id": "3136193",
+    "team": "PHX",
+    "opp": "DEN",
+    "stat": "PRA",
+    "side": "UNDER",
+    "line": 32.5,
+    "price": -120,
+    "prob": 0.636,
+    "edge": 0.09,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      32.5,
+      -120
+     ]
+    },
+    "projection": 28.0,
+    "dist": {
+     "k": "normal",
+     "sd": 7.819
+    }
+   },
+   {
+    "game_id": "401910000",
+    "game": "GS @ NO",
+    "player": "Brandin Podziemski",
+    "player_id": "4709138",
+    "team": "GS",
+    "opp": "NO",
+    "stat": "PRA",
+    "side": "UNDER",
+    "line": 28.5,
+    "price": -105,
+    "prob": 0.632,
+    "edge": 0.12,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      28.5,
+      -105
+     ]
+    },
+    "projection": 23.6,
+    "dist": {
+     "k": "normal",
+     "sd": 7.893
+    }
+   },
+   {
+    "game_id": "401909995",
+    "game": "CHI @ CLE",
+    "player": "Jarrett Allen",
+    "player_id": "4066328",
+    "team": "CLE",
+    "opp": "CHI",
+    "stat": "PRA",
+    "side": "UNDER",
+    "line": 26.5,
+    "price": -120,
+    "prob": 0.632,
+    "edge": 0.087,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      26.5,
+      -120
+     ]
+    },
+    "projection": 21.8,
+    "dist": {
+     "k": "normal",
+     "sd": 8.269
+    }
+   },
+   {
+    "game_id": "401909997",
+    "game": "PHI @ BKN",
+    "player": "Joel Embiid",
+    "player_id": "3059318",
+    "team": "PHI",
+    "opp": "BKN",
+    "stat": "PR",
+    "side": "UNDER",
+    "line": 29.5,
+    "price": -109,
+    "prob": 0.619,
+    "edge": 0.097,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      29.5,
+      -109
+     ]
+    },
+    "projection": 25.0,
+    "dist": {
+     "k": "normal",
+     "sd": 8.35
+    }
+   },
+   {
+    "game_id": "401909996",
+    "game": "MEM @ WSH",
+    "player": "Cameron Boozer",
+    "player_id": "5041935",
+    "team": "MEM",
+    "opp": "WSH",
+    "stat": "PTS",
+    "side": "UNDER",
+    "line": 18.5,
+    "price": -110,
+    "prob": 0.605,
+    "edge": 0.081,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      18.5,
+      -110
+     ]
+    },
+    "projection": 15.7,
+    "dist": {
+     "k": "normal",
+     "sd": 6.003
+    }
+   },
+   {
+    "game_id": "401909999",
+    "game": "POR @ MIN",
+    "player": "LaMelo Ball",
+    "player_id": "4432816",
+    "team": "MIN",
+    "opp": "POR",
+    "stat": "PA",
+    "side": "UNDER",
+    "line": 27.5,
+    "price": -120,
+    "prob": 0.604,
+    "edge": 0.058,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      27.5,
+      -120
+     ]
+    },
+    "projection": 24.3,
+    "dist": {
+     "k": "normal",
+     "sd": 7.401
+    }
+   }
+  ],
+  "hit": 0.0575,
+  "payout": 44.04,
+  "odds": 4304,
+  "ev": 1.531,
+  "type": "allgames",
+  "label": "One per game",
+  "missing": [
+   "401909994",
+   "401909998"
+  ],
+  "games_total": 8,
+  "made": "2026-11-16T12:45:28.744477-05:00"
+ }
+]
