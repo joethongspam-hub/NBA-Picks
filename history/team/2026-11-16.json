@@ -4,6 +4,30 @@
   {
    "game_id": "401909995",
    "game": "CHI @ CLE",
+   "market": "Moneyline",
+   "pick": "CLE ML",
+   "side": "home",
+   "line": null,
+   "price": -344,
+   "prob": 0.793,
+   "model_prob": 0.882,
+   "edge": 0.018,
+   "grade": "C",
+   "proj": "CLE 122.0 \u2013 CHI 107.2",
+   "mu_h": 122.01,
+   "mu_a": 107.17,
+   "home": "CLE",
+   "away": "CHI",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "CLE injuries (Mobley): -2.5 pts",
+    "CHI injuries (Wilson): -2.7 pts"
+   ],
+   "score": 1.8
+  },
+  {
+   "game_id": "401909995",
+   "game": "CHI @ CLE",
    "market": "Spread",
    "pick": "CLE -8.5",
    "side": "home",
@@ -26,72 +50,27 @@
    "score": 4.16
   },
   {
-   "game_id": "401909996",
-   "game": "MEM @ WSH",
-   "market": "Spread",
-   "pick": "WSH +3.5",
-   "side": "home",
-   "line": 3.5,
-   "price": -110,
-   "prob": 0.571,
-   "model_prob": 0.702,
-   "edge": 0.047,
-   "grade": "B",
-   "proj": "WSH 114.4 \u2013 MEM 111.3",
-   "mu_h": 114.42,
-   "mu_a": 111.28,
-   "home": "WSH",
-   "away": "MEM",
-   "notes": [
-    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
-    "MEM injuries (Jackson, Jerome, Post): -6.6 pts"
-   ],
-   "score": 4.7
-  },
-  {
-   "game_id": "401909997",
-   "game": "PHI @ BKN",
-   "market": "Spread",
-   "pick": "BKN +5.5",
-   "side": "home",
-   "line": 5.5,
-   "price": -107,
-   "prob": 0.562,
-   "model_prob": 0.689,
-   "edge": 0.045,
-   "grade": "B",
-   "proj": "BKN 119.0 \u2013 PHI 118.4",
-   "mu_h": 119.04,
-   "mu_a": 118.36,
-   "home": "BKN",
-   "away": "PHI",
-   "notes": [
-    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
-   ],
-   "score": 4.52
-  },
-  {
    "game_id": "401909998",
    "game": "HOU @ MIA",
    "market": "Spread",
-   "pick": "MIA +2.5",
+   "pick": "MIA +1.5",
    "side": "home",
-   "line": 2.5,
-   "price": -105,
-   "prob": 0.575,
-   "model_prob": 0.735,
-   "edge": 0.063,
+   "line": 1.5,
+   "price": -106,
+   "prob": 0.567,
+   "model_prob": 0.709,
+   "edge": 0.053,
    "grade": "A",
    "proj": "MIA 118.8 \u2013 HOU 113.4",
    "mu_h": 118.8,
-   "mu_a": 113.44,
+   "mu_a": 113.42,
    "home": "MIA",
    "away": "HOU",
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
-    "HOU injuries (Smart): -1.2 pts"
+    "HOU injuries (Adams, Smart): -1.4 pts"
    ],
-   "score": 6.31
+   "score": 5.29
   }
  ]
 }

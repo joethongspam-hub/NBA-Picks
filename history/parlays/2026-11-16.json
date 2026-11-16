@@ -11,72 +11,99 @@
     "stat": "PRA",
     "side": "UNDER",
     "line": 28.5,
-    "price": -105,
-    "prob": 0.632,
-    "edge": 0.12,
+    "price": -106,
+    "prob": 0.633,
+    "edge": 0.119,
     "grade": "B",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
       28.5,
-      -105
+      -106
      ]
     },
     "projection": 23.6,
     "dist": {
      "k": "normal",
-     "sd": 7.893
+     "sd": 7.891
     }
    }
   ],
-  "hit": 0.632,
-  "payout": 1.95,
-  "odds": -105,
-  "ev": 0.234,
+  "hit": 0.633,
+  "payout": 1.94,
+  "odds": -106,
+  "ev": 0.23,
   "type": "double",
   "label": "Double up",
-  "made": "2026-11-16T12:45:28.744477-05:00"
+  "made": "2026-11-16T17:06:12.360503-05:00"
  },
  {
   "legs": [
    {
-    "game_id": "401910000",
-    "game": "GS @ NO",
-    "player": "Draymond Green",
-    "player_id": "6589",
-    "team": "GS",
-    "opp": "NO",
-    "stat": "PR",
+    "game_id": "401909997",
+    "game": "PHI @ BKN",
+    "player": "Joel Embiid",
+    "player_id": "3059318",
+    "team": "PHI",
+    "opp": "BKN",
+    "stat": "PRA",
     "side": "UNDER",
-    "line": 11.5,
-    "price": -112,
-    "prob": 0.622,
-    "edge": 0.093,
+    "line": 33.5,
+    "price": -110,
+    "prob": 0.626,
+    "edge": 0.103,
     "grade": "A",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
-      11.5,
-      -112
+      33.5,
+      -110
      ]
     },
-    "projection": 9.1,
+    "projection": 28.2,
     "dist": {
      "k": "normal",
-     "sd": 4.336
+     "sd": 9.207
     }
    }
   ],
-  "hit": 0.622,
-  "payout": 1.89,
-  "odds": -112,
-  "ev": 0.177,
+  "hit": 0.626,
+  "payout": 1.91,
+  "odds": -110,
+  "ev": 0.195,
   "type": "double2",
   "label": "Double up #2",
-  "made": "2026-11-16T12:45:28.744477-05:00"
+  "made": "2026-11-16T17:06:12.360503-05:00"
  },
  {
   "legs": [
+   {
+    "game_id": "401909996",
+    "game": "MEM @ WSH",
+    "player": "Cameron Boozer",
+    "player_id": "5041935",
+    "team": "MEM",
+    "opp": "WSH",
+    "stat": "PTS",
+    "side": "UNDER",
+    "line": 19.5,
+    "price": -120,
+    "prob": 0.648,
+    "edge": 0.102,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      19.5,
+      -120
+     ]
+    },
+    "projection": 15.7,
+    "dist": {
+     "k": "normal",
+     "sd": 6.001
+    }
+   },
    {
     "game_id": "401910001",
     "game": "PHX @ DEN",
@@ -89,7 +116,7 @@
     "line": 32.5,
     "price": -120,
     "prob": 0.636,
-    "edge": 0.09,
+    "edge": 0.091,
     "grade": "A",
     "line_source": "DraftKings",
     "books": {
@@ -98,10 +125,10 @@
       -120
      ]
     },
-    "projection": 28.0,
+    "projection": 27.9,
     "dist": {
      "k": "normal",
-     "sd": 7.819
+     "sd": 7.816
     }
    },
    {
@@ -114,21 +141,21 @@
     "stat": "PRA",
     "side": "UNDER",
     "line": 28.5,
-    "price": -105,
-    "prob": 0.632,
-    "edge": 0.12,
+    "price": -106,
+    "prob": 0.633,
+    "edge": 0.119,
     "grade": "B",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
       28.5,
-      -105
+      -106
      ]
     },
     "projection": 23.6,
     "dist": {
      "k": "normal",
-     "sd": 7.893
+     "sd": 7.891
     }
    },
    {
@@ -141,21 +168,21 @@
     "stat": "PRA",
     "side": "UNDER",
     "line": 26.5,
-    "price": -120,
-    "prob": 0.632,
-    "edge": 0.087,
+    "price": -118,
+    "prob": 0.631,
+    "edge": 0.09,
     "grade": "A",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
       26.5,
-      -120
+      -118
      ]
     },
     "projection": 21.8,
     "dist": {
      "k": "normal",
-     "sd": 8.269
+     "sd": 8.266
     }
    },
    {
@@ -165,92 +192,39 @@
     "player_id": "3059318",
     "team": "PHI",
     "opp": "BKN",
-    "stat": "PR",
+    "stat": "PRA",
     "side": "UNDER",
-    "line": 29.5,
-    "price": -109,
-    "prob": 0.619,
-    "edge": 0.097,
+    "line": 33.5,
+    "price": -110,
+    "prob": 0.626,
+    "edge": 0.103,
     "grade": "A",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
-      29.5,
-      -109
-     ]
-    },
-    "projection": 25.0,
-    "dist": {
-     "k": "normal",
-     "sd": 8.35
-    }
-   },
-   {
-    "game_id": "401909996",
-    "game": "MEM @ WSH",
-    "player": "Cameron Boozer",
-    "player_id": "5041935",
-    "team": "MEM",
-    "opp": "WSH",
-    "stat": "PTS",
-    "side": "UNDER",
-    "line": 18.5,
-    "price": -110,
-    "prob": 0.605,
-    "edge": 0.081,
-    "grade": "B",
-    "line_source": "DraftKings",
-    "books": {
-     "DraftKings": [
-      18.5,
+      33.5,
       -110
      ]
     },
-    "projection": 15.7,
+    "projection": 28.2,
     "dist": {
      "k": "normal",
-     "sd": 6.003
-    }
-   },
-   {
-    "game_id": "401909999",
-    "game": "POR @ MIN",
-    "player": "LaMelo Ball",
-    "player_id": "4432816",
-    "team": "MIN",
-    "opp": "POR",
-    "stat": "PA",
-    "side": "UNDER",
-    "line": 27.5,
-    "price": -120,
-    "prob": 0.604,
-    "edge": 0.058,
-    "grade": "B",
-    "line_source": "DraftKings",
-    "books": {
-     "DraftKings": [
-      27.5,
-      -120
-     ]
-    },
-    "projection": 24.3,
-    "dist": {
-     "k": "normal",
-     "sd": 7.401
+     "sd": 9.207
     }
    }
   ],
-  "hit": 0.0575,
-  "payout": 44.04,
-  "odds": 4304,
-  "ev": 1.531,
+  "hit": 0.103,
+  "payout": 23.04,
+  "odds": 2204,
+  "ev": 1.374,
   "type": "allgames",
   "label": "One per game",
   "missing": [
    "401909994",
-   "401909998"
+   "401909998",
+   "401909999"
   ],
   "games_total": 8,
-  "made": "2026-11-16T12:45:28.744477-05:00"
+  "made": "2026-11-16T17:06:12.360503-05:00"
  }
 ]
