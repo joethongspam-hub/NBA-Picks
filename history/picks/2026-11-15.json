@@ -1,5 +1,141 @@
 [
  {
+  "game_id": "401909992",
+  "game": "ATL @ MIL",
+  "player": "Brayden Burries",
+  "player_id": "5082206",
+  "team": "MIL",
+  "opp": "ATL",
+  "stat": "PA",
+  "side": "UNDER",
+  "line": 15.5,
+  "line_source": "DraftKings",
+  "price": -107,
+  "projection": 12.2,
+  "prob": 0.619,
+  "edge": 0.102,
+  "score": 7.59,
+  "grade": "A",
+  "hit_l5": "3/5",
+  "hit_l10": "8/10",
+  "hit_season": "11/13",
+  "vs_opp": "0/0",
+  "minutes": 26.3,
+  "status": "ACTIVE",
+  "season_avg": 11.4,
+  "l10_avg": 11.8,
+  "reasons": [
+   "Under hit 8/10 of last 10 at 15.5",
+   "Last game: 6 (under the line)"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 6.0,
+  "open_line": 14.5,
+  "open_price": -113,
+  "books": {
+   "DraftKings": [
+    15.5,
+    -107
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 5.93
+  }
+ },
+ {
+  "game_id": "401909992",
+  "game": "ATL @ MIL",
+  "player": "Tyler Herro",
+  "player_id": "4395725",
+  "team": "MIL",
+  "opp": "ATL",
+  "stat": "PRA",
+  "side": "UNDER",
+  "line": 32.5,
+  "line_source": "DraftKings",
+  "price": -115,
+  "projection": 28.8,
+  "prob": 0.609,
+  "edge": 0.074,
+  "score": 7.37,
+  "grade": "B",
+  "hit_l5": "2/5",
+  "hit_l10": "6/10",
+  "hit_season": "6/12",
+  "vs_opp": "2/2",
+  "minutes": 34.9,
+  "status": "ACTIVE",
+  "season_avg": 29.8,
+  "l10_avg": 28.2,
+  "reasons": [
+   "Under hit 6/10 of last 10 at 32.5",
+   "Last game: 21 (under the line)",
+   "Last 2 vs ATL: 23, 31"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 21.0,
+  "open_line": 31.5,
+  "open_price": -118,
+  "books": {
+   "DraftKings": [
+    32.5,
+    -115
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 7.827
+  }
+ },
+ {
+  "game_id": "401909992",
+  "game": "ATL @ MIL",
+  "player": "Nate Ament",
+  "player_id": "5164559",
+  "team": "MIL",
+  "opp": "ATL",
+  "stat": "PR",
+  "side": "UNDER",
+  "line": 12.5,
+  "line_source": "DraftKings",
+  "price": -103,
+  "projection": 10.8,
+  "prob": 0.586,
+  "edge": 0.079,
+  "score": 5.0,
+  "grade": "B",
+  "hit_l5": "4/5",
+  "hit_l10": "8/10",
+  "hit_season": "9/11",
+  "vs_opp": "0/0",
+  "minutes": 21.1,
+  "status": "ACTIVE",
+  "season_avg": 10.2,
+  "l10_avg": 10.8,
+  "reasons": [
+   "Under hit 8/10 of last 10 at 12.5",
+   "Last game: 12 (under the line)"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 12.0,
+  "open_line": 12.5,
+  "open_price": -128,
+  "books": {
+   "DraftKings": [
+    12.5,
+    -103
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 4.027
+  }
+ },
+ {
   "game_id": "401909991",
   "game": "HOU @ WSH",
   "player": "Reed Sheppard",
@@ -44,7 +180,8 @@
   "dist": {
    "k": "normal",
    "sd": 6.812
-  }
+  },
+  "locked": true
  },
  {
   "game_id": "401909989",
@@ -92,7 +229,8 @@
   "dist": {
    "k": "normal",
    "sd": 10.418
-  }
+  },
+  "locked": true
  },
  {
   "game_id": "401909990",
@@ -138,7 +276,8 @@
   "dist": {
    "k": "normal",
    "sd": 2.415
-  }
+  },
+  "locked": true
  },
  {
   "game_id": "401909989",
@@ -184,7 +323,8 @@
   "dist": {
    "k": "normal",
    "sd": 1.91
-  }
+  },
+  "locked": true
  },
  {
   "game_id": "401909991",
@@ -232,7 +372,8 @@
   "dist": {
    "k": "normal",
    "sd": 7.576
-  }
+  },
+  "locked": true
  },
  {
   "game_id": "401909991",
@@ -280,52 +421,8 @@
   "dist": {
    "k": "normal",
    "sd": 8.042
-  }
- },
- {
-  "game_id": "401909992",
-  "game": "ATL @ MIL",
-  "player": "Brayden Burries",
-  "player_id": "5082206",
-  "team": "MIL",
-  "opp": "ATL",
-  "stat": "PA",
-  "side": "UNDER",
-  "line": 14.5,
-  "line_source": "DraftKings",
-  "price": -109,
-  "projection": 12.3,
-  "prob": 0.584,
-  "edge": 0.063,
-  "score": 4.66,
-  "grade": "B",
-  "hit_l5": "3/5",
-  "hit_l10": "7/10",
-  "hit_season": "10/13",
-  "vs_opp": "0/0",
-  "minutes": 23.9,
-  "status": "ACTIVE",
-  "season_avg": 11.4,
-  "l10_avg": 11.8,
-  "reasons": [
-   "Under hit 7/10 of last 10 at 14.5",
-   "Last game: 6 (under the line)"
-  ],
-  "actual": null,
-  "result": null,
-  "last_game": 6.0,
-  "open_line": 14.5,
-  "open_price": -113,
-  "books": {
-   "DraftKings": [
-    14.5,
-    -109
-   ]
   },
-  "dist": {
-   "k": "normal",
-   "sd": 5.932
-  }
+  "locked": true
  },
  {
   "game_id": "401909986",
