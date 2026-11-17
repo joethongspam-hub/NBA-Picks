@@ -11,69 +11,161 @@
     "stat": "PRA",
     "side": "UNDER",
     "line": 29.5,
-    "price": -110,
-    "prob": 0.677,
-    "edge": 0.153,
+    "price": -114,
+    "prob": 0.681,
+    "edge": 0.148,
     "grade": "A",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
       29.5,
-      -110
+      -114
      ]
     },
     "projection": 23.8,
     "dist": {
      "k": "normal",
-     "sd": 6.721
+     "sd": 6.719
     }
    }
   ],
-  "hit": 0.677,
-  "payout": 1.91,
-  "odds": -110,
-  "ev": 0.292,
+  "hit": 0.681,
+  "payout": 1.88,
+  "odds": -114,
+  "ev": 0.278,
   "type": "double",
   "label": "Double up",
-  "made": "2026-11-17T16:38:05.581729-05:00"
+  "made": "2026-11-17T17:12:13.404450-05:00"
  },
  {
   "legs": [
    {
-    "game_id": "401910006",
-    "game": "UTAH @ LAC",
-    "player": "Darryn Peterson",
-    "player_id": "5041955",
-    "team": "UTAH",
-    "opp": "LAC",
-    "stat": "PA",
+    "game_id": "401910004",
+    "game": "DET @ SA",
+    "player": "Javonte Green",
+    "player_id": "2596112",
+    "team": "DET",
+    "opp": "SA",
+    "stat": "PR",
     "side": "UNDER",
-    "line": 25.5,
-    "price": -107,
-    "prob": 0.64,
-    "edge": 0.123,
-    "grade": "B",
+    "line": 10.5,
+    "price": -103,
+    "prob": 0.67,
+    "edge": 0.163,
+    "grade": "A",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
-      25.5,
-      -107
+      10.5,
+      -103
      ]
     },
-    "projection": 21.3,
+    "projection": 6.5,
     "dist": {
      "k": "normal",
-     "sd": 6.47
+     "sd": 4.7
     }
    }
   ],
-  "hit": 0.64,
-  "payout": 1.93,
-  "odds": -107,
-  "ev": 0.238,
+  "hit": 0.67,
+  "payout": 1.97,
+  "odds": -103,
+  "ev": 0.32,
   "type": "double2",
   "label": "Double up #2",
-  "made": "2026-11-17T16:38:05.581729-05:00"
+  "made": "2026-11-17T17:12:13.404450-05:00"
+ },
+ {
+  "legs": [
+   {
+    "game_id": "401910004",
+    "game": "DET @ SA",
+    "player": "Javonte Green",
+    "player_id": "2596112",
+    "team": "DET",
+    "opp": "SA",
+    "stat": "PR",
+    "side": "UNDER",
+    "line": 10.5,
+    "price": -103,
+    "prob": 0.67,
+    "edge": 0.163,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      10.5,
+      -103
+     ]
+    },
+    "projection": 6.5,
+    "dist": {
+     "k": "normal",
+     "sd": 4.7
+    }
+   },
+   {
+    "game_id": "401910003",
+    "game": "POR @ MIN",
+    "player": "Damian Lillard",
+    "player_id": "6606",
+    "team": "POR",
+    "opp": "MIN",
+    "stat": "PRA",
+    "side": "UNDER",
+    "line": 29.5,
+    "price": -114,
+    "prob": 0.681,
+    "edge": 0.148,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      29.5,
+      -114
+     ]
+    },
+    "projection": 23.8,
+    "dist": {
+     "k": "normal",
+     "sd": 6.719
+    }
+   },
+   {
+    "game_id": "401910005",
+    "game": "CHA @ LAL",
+    "player": "Sandro Mamukelashvili",
+    "player_id": "4278580",
+    "team": "LAL",
+    "opp": "CHA",
+    "stat": "PRA",
+    "side": "UNDER",
+    "line": 21.5,
+    "price": -109,
+    "prob": 0.662,
+    "edge": 0.14,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      21.5,
+      -109
+     ]
+    },
+    "projection": 15.9,
+    "dist": {
+     "k": "normal",
+     "sd": 7.334
+    }
+   }
+  ],
+  "hit": 0.3021,
+  "payout": 7.09,
+  "odds": 609,
+  "ev": 1.143,
+  "type": "safe",
+  "label": "Safest",
+  "made": "2026-11-17T17:12:13.404450-05:00"
  },
  {
   "legs": [
@@ -87,21 +179,48 @@
     "stat": "PRA",
     "side": "UNDER",
     "line": 29.5,
-    "price": -110,
-    "prob": 0.677,
-    "edge": 0.153,
+    "price": -114,
+    "prob": 0.681,
+    "edge": 0.148,
     "grade": "A",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
       29.5,
-      -110
+      -114
      ]
     },
     "projection": 23.8,
     "dist": {
      "k": "normal",
-     "sd": 6.721
+     "sd": 6.719
+    }
+   },
+   {
+    "game_id": "401910004",
+    "game": "DET @ SA",
+    "player": "Javonte Green",
+    "player_id": "2596112",
+    "team": "DET",
+    "opp": "SA",
+    "stat": "PR",
+    "side": "UNDER",
+    "line": 10.5,
+    "price": -103,
+    "prob": 0.67,
+    "edge": 0.163,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      10.5,
+      -103
+     ]
+    },
+    "projection": 6.5,
+    "dist": {
+     "k": "normal",
+     "sd": 4.7
     }
    },
    {
@@ -111,24 +230,24 @@
     "player_id": "4278580",
     "team": "LAL",
     "opp": "CHA",
-    "stat": "PR",
+    "stat": "PRA",
     "side": "UNDER",
-    "line": 19.5,
-    "price": -123,
-    "prob": 0.676,
-    "edge": 0.124,
+    "line": 21.5,
+    "price": -109,
+    "prob": 0.662,
+    "edge": 0.14,
     "grade": "A",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
-      19.5,
-      -123
+      21.5,
+      -109
      ]
     },
-    "projection": 14.2,
+    "projection": 15.9,
     "dist": {
      "k": "normal",
-     "sd": 6.767
+     "sd": 7.334
     }
    },
    {
@@ -141,61 +260,34 @@
     "stat": "PA",
     "side": "UNDER",
     "line": 25.5,
-    "price": -107,
-    "prob": 0.64,
-    "edge": 0.123,
+    "price": -112,
+    "prob": 0.645,
+    "edge": 0.116,
     "grade": "B",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
       25.5,
-      -107
+      -112
      ]
     },
     "projection": 21.3,
     "dist": {
      "k": "normal",
-     "sd": 6.47
-    }
-   },
-   {
-    "game_id": "401910004",
-    "game": "DET @ SA",
-    "player": "Daniss Jenkins",
-    "player_id": "5107199",
-    "team": "DET",
-    "opp": "SA",
-    "stat": "PA",
-    "side": "UNDER",
-    "line": 19.5,
-    "price": -109,
-    "prob": 0.598,
-    "edge": 0.077,
-    "grade": "B",
-    "line_source": "DraftKings",
-    "books": {
-     "DraftKings": [
-      19.5,
-      -109
-     ]
-    },
-    "projection": 15.9,
-    "dist": {
-     "k": "normal",
-     "sd": 8.025
+     "sd": 6.469
     }
    }
   ],
-  "hit": 0.1752,
-  "payout": 12.84,
-  "odds": 1184,
-  "ev": 1.249,
+  "hit": 0.1948,
+  "payout": 13.43,
+  "odds": 1243,
+  "ev": 1.616,
   "type": "allgames",
   "label": "One per game",
   "missing": [
    "401910002"
   ],
   "games_total": 5,
-  "made": "2026-11-17T16:38:05.581729-05:00"
+  "made": "2026-11-17T17:12:13.404450-05:00"
  }
 ]
