@@ -2574,6 +2574,62 @@
    "date": "2026-11-15",
    "final": "PHI 131 \u2013 IND 124",
    "result": "WIN"
+  },
+  {
+   "game_id": "401909995",
+   "game": "CHI @ CLE",
+   "market": "Moneyline",
+   "pick": "CLE ML",
+   "side": "home",
+   "line": null,
+   "price": -344,
+   "prob": 0.793,
+   "model_prob": 0.882,
+   "edge": 0.018,
+   "grade": "C",
+   "proj": "CLE 122.0 \u2013 CHI 107.2",
+   "mu_h": 122.01,
+   "mu_a": 107.17,
+   "home": "CLE",
+   "away": "CHI",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "CLE injuries (Mobley): -2.5 pts",
+    "CHI injuries (Wilson): -2.7 pts"
+   ],
+   "score": 1.8,
+   "locked": true,
+   "date": "2026-11-16",
+   "final": "CLE 126 \u2013 CHI 115",
+   "result": "WIN"
+  },
+  {
+   "game_id": "401909995",
+   "game": "CHI @ CLE",
+   "market": "Spread",
+   "pick": "CLE -8.5",
+   "side": "home",
+   "line": -8.5,
+   "price": -113,
+   "prob": 0.572,
+   "model_prob": 0.694,
+   "edge": 0.042,
+   "grade": "B",
+   "proj": "CLE 122.0 \u2013 CHI 107.2",
+   "mu_h": 122.01,
+   "mu_a": 107.17,
+   "home": "CLE",
+   "away": "CHI",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "CLE injuries (Mobley): -2.5 pts",
+    "CHI injuries (Wilson): -2.7 pts"
+   ],
+   "score": 4.16,
+   "locked": true,
+   "date": "2026-11-16",
+   "final": "CLE 126 \u2013 CHI 115",
+   "result": "WIN"
   }
  ]
 }
