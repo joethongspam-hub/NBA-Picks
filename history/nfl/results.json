@@ -9733,6 +9733,70 @@
    "actual_min": 9.0,
    "week": "2026-W10",
    "date": "2026-W10"
+  },
+  {
+   "game_id": "401873065",
+   "game": "LAC @ BAL",
+   "player": "Rashod Bateman",
+   "player_id": "4360939",
+   "team": "BAL",
+   "opp": "LAC",
+   "stat": "REC",
+   "side": "UNDER",
+   "line": 2.5,
+   "line_source": "6 books",
+   "price": -160,
+   "projection": 1.8,
+   "prob": 0.682,
+   "edge": 0.067,
+   "score": 6.7,
+   "grade": "B",
+   "hit_l5": "4/5",
+   "hit_l10": "8/10",
+   "hit_season": "7/9",
+   "vs_opp": "0/0",
+   "minutes": 2.9,
+   "status": "ACTIVE",
+   "season_avg": 2.0,
+   "l10_avg": 1.0,
+   "reasons": [
+    "Under hit 4/5 last 5, 8/10 last 10 at 2.5",
+    "Last game: 1 (under the line)"
+   ],
+   "actual": 3.0,
+   "result": "LOSS",
+   "last_game": 1.0,
+   "open_line": null,
+   "open_price": null,
+   "books": {
+    "DraftKings": [
+     2.5,
+     -189
+    ],
+    "FanDuel": [
+     2.5,
+     -182
+    ],
+    "BetOnline.ag": [
+     2.5,
+     -179
+    ],
+    "BetMGM": [
+     2.5,
+     -160
+    ],
+    "Bovada": [
+     2.5,
+     -190
+    ]
+   },
+   "dist": {
+    "k": "count",
+    "var": 1.867
+   },
+   "actual_min": 5.0,
+   "week": "2026-W10",
+   "date": "2026-W10"
   }
  ]
 }
