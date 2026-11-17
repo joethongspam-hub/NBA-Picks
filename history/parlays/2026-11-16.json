@@ -2,78 +2,78 @@
  {
   "legs": [
    {
-    "game_id": "401910000",
-    "game": "GS @ NO",
-    "player": "Brandin Podziemski",
-    "player_id": "4709138",
-    "team": "GS",
-    "opp": "NO",
-    "stat": "PRA",
-    "side": "UNDER",
-    "line": 28.5,
-    "price": -106,
-    "prob": 0.633,
-    "edge": 0.119,
-    "grade": "B",
-    "line_source": "DraftKings",
-    "books": {
-     "DraftKings": [
-      28.5,
-      -106
-     ]
-    },
-    "projection": 23.6,
-    "dist": {
-     "k": "normal",
-     "sd": 7.891
-    }
-   }
-  ],
-  "hit": 0.633,
-  "payout": 1.94,
-  "odds": -106,
-  "ev": 0.23,
-  "type": "double",
-  "label": "Double up",
-  "made": "2026-11-16T17:06:12.360503-05:00"
- },
- {
-  "legs": [
-   {
     "game_id": "401909997",
     "game": "PHI @ BKN",
-    "player": "Joel Embiid",
-    "player_id": "3059318",
-    "team": "PHI",
-    "opp": "BKN",
-    "stat": "PRA",
-    "side": "UNDER",
-    "line": 33.5,
-    "price": -110,
-    "prob": 0.626,
-    "edge": 0.103,
+    "player": "Danny Wolf",
+    "player_id": "5107173",
+    "team": "BKN",
+    "opp": "PHI",
+    "stat": "PTS",
+    "side": "OVER",
+    "line": 7.5,
+    "price": -111,
+    "prob": 0.642,
+    "edge": 0.115,
     "grade": "A",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
-      33.5,
-      -110
+      7.5,
+      -111
      ]
     },
-    "projection": 28.2,
+    "projection": 10.5,
     "dist": {
      "k": "normal",
-     "sd": 9.207
+     "sd": 4.616
     }
    }
   ],
-  "hit": 0.626,
-  "payout": 1.91,
-  "odds": -110,
-  "ev": 0.195,
+  "hit": 0.642,
+  "payout": 1.9,
+  "odds": -111,
+  "ev": 0.22,
+  "type": "double",
+  "label": "Double up",
+  "made": "2026-11-16T19:25:58.308135-05:00"
+ },
+ {
+  "legs": [
+   {
+    "game_id": "401910000",
+    "game": "GS @ NO",
+    "player": "De'Anthony Melton",
+    "player_id": "4066436",
+    "team": "GS",
+    "opp": "NO",
+    "stat": "PA",
+    "side": "UNDER",
+    "line": 16.5,
+    "price": -115,
+    "prob": 0.625,
+    "edge": 0.09,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      16.5,
+      -115
+     ]
+    },
+    "projection": 12.2,
+    "dist": {
+     "k": "normal",
+     "sd": 7.936
+    }
+   }
+  ],
+  "hit": 0.625,
+  "payout": 1.87,
+  "odds": -115,
+  "ev": 0.168,
   "type": "double2",
   "label": "Double up #2",
-  "made": "2026-11-16T17:06:12.360503-05:00"
+  "made": "2026-11-16T19:25:58.308135-05:00"
  },
  {
   "legs": [
@@ -225,6 +225,7 @@
    "401909999"
   ],
   "games_total": 8,
-  "made": "2026-11-16T17:06:12.360503-05:00"
+  "made": "2026-11-16T17:06:12.360503-05:00",
+  "locked": true
  }
 ]
