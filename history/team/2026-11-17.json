@@ -1,0 +1,98 @@
+{
+ "made": "2026-11-17T12:43:50.794334-05:00",
+ "picks": [
+  {
+   "game_id": "401910004",
+   "game": "DET @ SA",
+   "market": "Spread",
+   "pick": "SA -9.5",
+   "side": "home",
+   "line": -9.5,
+   "price": -116,
+   "prob": 0.553,
+   "model_prob": 0.629,
+   "edge": 0.016,
+   "grade": "C",
+   "proj": "SA 113.3 \u2013 DET 99.6",
+   "mu_h": 113.26,
+   "mu_a": 99.64,
+   "home": "SA",
+   "away": "DET",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "DET injuries (II, Prince, Robinson): -5.7 pts"
+   ],
+   "score": 1.59
+  },
+  {
+   "game_id": "401910006",
+   "game": "UTAH @ LAC",
+   "market": "Moneyline",
+   "pick": "LAC ML",
+   "side": "home",
+   "line": null,
+   "price": -238,
+   "prob": 0.727,
+   "model_prob": 0.82,
+   "edge": 0.023,
+   "grade": "C",
+   "proj": "LAC 109.6 \u2013 UTAH 98.2",
+   "mu_h": 109.63,
+   "mu_a": 98.17,
+   "home": "LAC",
+   "away": "UTAH",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "UTAH injuries (Hayes): -1.7 pts"
+   ],
+   "score": 2.27
+  },
+  {
+   "game_id": "401910006",
+   "game": "UTAH @ LAC",
+   "market": "Spread",
+   "pick": "LAC -6.5",
+   "side": "home",
+   "line": -6.5,
+   "price": -107,
+   "prob": 0.55,
+   "model_prob": 0.654,
+   "edge": 0.033,
+   "grade": "B",
+   "proj": "LAC 109.6 \u2013 UTAH 98.2",
+   "mu_h": 109.63,
+   "mu_a": 98.17,
+   "home": "LAC",
+   "away": "UTAH",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "UTAH injuries (Hayes): -1.7 pts"
+   ],
+   "score": 3.28
+  },
+  {
+   "game_id": "401910005",
+   "game": "CHA @ LAL",
+   "market": "Spread",
+   "pick": "LAL -7.5",
+   "side": "home",
+   "line": -7.5,
+   "price": -101,
+   "prob": 0.526,
+   "model_prob": 0.611,
+   "edge": 0.023,
+   "grade": "C",
+   "proj": "LAL 111.5 \u2013 CHA 100.4",
+   "mu_h": 111.48,
+   "mu_a": 100.44,
+   "home": "LAL",
+   "away": "CHA",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "LAL injuries (Kessler, Reaves): -7.2 pts",
+    "CHA injuries (Knueppel, Schroder): -1.2 pts"
+   ],
+   "score": 2.31
+  }
+ ]
+}
