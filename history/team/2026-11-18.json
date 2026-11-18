@@ -1,0 +1,210 @@
+{
+ "made": "2026-11-18T12:38:50.692110-05:00",
+ "picks": [
+  {
+   "game_id": "401910008",
+   "game": "HOU @ IND",
+   "market": "Spread",
+   "pick": "IND +7.5",
+   "side": "home",
+   "line": 7.5,
+   "price": -108,
+   "prob": 0.577,
+   "model_prob": 0.729,
+   "edge": 0.058,
+   "grade": "A",
+   "proj": "IND 117.4 \u2013 HOU 117.3",
+   "mu_h": 117.37,
+   "mu_a": 117.26,
+   "home": "IND",
+   "away": "HOU",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
+   ],
+   "score": 5.81
+  },
+  {
+   "game_id": "401910009",
+   "game": "MIL @ MIA",
+   "market": "Spread",
+   "pick": "MIA -11.5",
+   "side": "home",
+   "line": -11.5,
+   "price": -118,
+   "prob": 0.57,
+   "model_prob": 0.669,
+   "edge": 0.028,
+   "grade": "C",
+   "proj": "MIA 124.7 \u2013 MIL 107.7",
+   "mu_h": 124.67,
+   "mu_a": 107.72,
+   "home": "MIA",
+   "away": "MIL",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "MIL injuries (Dieng): -1.0 pts"
+   ],
+   "score": 2.82
+  },
+  {
+   "game_id": "401910010",
+   "game": "PHI @ ORL",
+   "market": "Moneyline",
+   "pick": "ORL ML",
+   "side": "home",
+   "line": null,
+   "price": -105,
+   "prob": 0.553,
+   "model_prob": 0.669,
+   "edge": 0.041,
+   "grade": "B",
+   "proj": "ORL 113.1 \u2013 PHI 107.7",
+   "mu_h": 113.11,
+   "mu_a": 107.65,
+   "home": "ORL",
+   "away": "PHI",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "PHI injuries (Brown): -5.9 pts"
+   ],
+   "score": 4.12
+  },
+  {
+   "game_id": "401910010",
+   "game": "PHI @ ORL",
+   "market": "Spread",
+   "pick": "ORL +1.5",
+   "side": "home",
+   "line": 1.5,
+   "price": -120,
+   "prob": 0.587,
+   "model_prob": 0.711,
+   "edge": 0.042,
+   "grade": "B",
+   "proj": "ORL 113.1 \u2013 PHI 107.7",
+   "mu_h": 113.11,
+   "mu_a": 107.65,
+   "home": "ORL",
+   "away": "PHI",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "PHI injuries (Brown): -5.9 pts"
+   ],
+   "score": 4.18
+  },
+  {
+   "game_id": "401910012",
+   "game": "WSH @ TOR",
+   "market": "Spread",
+   "pick": "WSH +6.5",
+   "side": "away",
+   "line": -6.5,
+   "price": -110,
+   "prob": 0.563,
+   "model_prob": 0.68,
+   "edge": 0.039,
+   "grade": "B",
+   "proj": "TOR 112.6 \u2013 WSH 112.0",
+   "mu_h": 112.63,
+   "mu_a": 111.96,
+   "home": "TOR",
+   "away": "WSH",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
+   ],
+   "score": 3.91
+  },
+  {
+   "game_id": "401910013",
+   "game": "DET @ NO",
+   "market": "Spread",
+   "pick": "NO +6.5",
+   "side": "home",
+   "line": 6.5,
+   "price": -112,
+   "prob": 0.568,
+   "model_prob": 0.686,
+   "edge": 0.04,
+   "grade": "B",
+   "proj": "NO 105.6 \u2013 DET 106.1",
+   "mu_h": 105.65,
+   "mu_a": 106.08,
+   "home": "NO",
+   "away": "DET",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "NO injuries (Mathurin, McGowens, Murray): -2.7 pts",
+    "DET injuries (Robinson): -3.2 pts"
+   ],
+   "score": 3.97
+  },
+  {
+   "game_id": "401910014",
+   "game": "ATL @ OKC",
+   "market": "Moneyline",
+   "pick": "OKC ML",
+   "side": "home",
+   "line": null,
+   "price": -249,
+   "prob": 0.735,
+   "model_prob": 0.828,
+   "edge": 0.022,
+   "grade": "C",
+   "proj": "OKC 112.0 \u2013 ATL 100.1",
+   "mu_h": 112.0,
+   "mu_a": 100.15,
+   "home": "OKC",
+   "away": "ATL",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "ATL injuries (Flemings, Landale, McCollum): -6.1 pts"
+   ],
+   "score": 2.18
+  },
+  {
+   "game_id": "401910014",
+   "game": "ATL @ OKC",
+   "market": "Spread",
+   "pick": "OKC -6.5",
+   "side": "home",
+   "line": -6.5,
+   "price": -107,
+   "prob": 0.554,
+   "model_prob": 0.666,
+   "edge": 0.037,
+   "grade": "B",
+   "proj": "OKC 112.0 \u2013 ATL 100.1",
+   "mu_h": 112.0,
+   "mu_a": 100.15,
+   "home": "OKC",
+   "away": "ATL",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "ATL injuries (Flemings, Landale, McCollum): -6.1 pts"
+   ],
+   "score": 3.69
+  },
+  {
+   "game_id": "401910015",
+   "game": "BOS @ DEN",
+   "market": "Spread",
+   "pick": "DEN +2.5",
+   "side": "home",
+   "line": 2.5,
+   "price": -110,
+   "prob": 0.539,
+   "model_prob": 0.612,
+   "edge": 0.015,
+   "grade": "C",
+   "proj": "DEN 109.0 \u2013 BOS 107.9",
+   "mu_h": 108.98,
+   "mu_a": 107.92,
+   "home": "DEN",
+   "away": "BOS",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
+   ],
+   "score": 1.54
+  }
+ ]
+}

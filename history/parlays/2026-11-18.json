@@ -1,0 +1,430 @@
+[
+ {
+  "legs": [
+   {
+    "game_id": "401910007",
+    "game": "MEM @ CLE",
+    "player": "Cam Spencer",
+    "player_id": "4433083",
+    "team": "MEM",
+    "opp": "CLE",
+    "stat": "PA",
+    "side": "UNDER",
+    "line": 21.5,
+    "price": -110,
+    "prob": 0.686,
+    "edge": 0.163,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      21.5,
+      -110
+     ]
+    },
+    "projection": 16.6,
+    "dist": {
+     "k": "normal",
+     "sd": 5.436
+    }
+   }
+  ],
+  "hit": 0.686,
+  "payout": 1.91,
+  "odds": -110,
+  "ev": 0.31,
+  "type": "double",
+  "label": "Double up",
+  "made": "2026-11-18T12:38:50.692110-05:00"
+ },
+ {
+  "legs": [
+   {
+    "game_id": "401910016",
+    "game": "GS @ DAL",
+    "player": "Brandin Podziemski",
+    "player_id": "4709138",
+    "team": "GS",
+    "opp": "DAL",
+    "stat": "PA",
+    "side": "UNDER",
+    "line": 22.5,
+    "price": -115,
+    "prob": 0.659,
+    "edge": 0.124,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      22.5,
+      -115
+     ]
+    },
+    "projection": 17.9,
+    "dist": {
+     "k": "normal",
+     "sd": 6.446
+    }
+   }
+  ],
+  "hit": 0.659,
+  "payout": 1.87,
+  "odds": -115,
+  "ev": 0.232,
+  "type": "double2",
+  "label": "Double up #2",
+  "made": "2026-11-18T12:38:50.692110-05:00"
+ },
+ {
+  "legs": [
+   {
+    "game_id": "401910007",
+    "game": "MEM @ CLE",
+    "player": "Cam Spencer",
+    "player_id": "4433083",
+    "team": "MEM",
+    "opp": "CLE",
+    "stat": "PA",
+    "side": "UNDER",
+    "line": 21.5,
+    "price": -110,
+    "prob": 0.686,
+    "edge": 0.163,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      21.5,
+      -110
+     ]
+    },
+    "projection": 16.6,
+    "dist": {
+     "k": "normal",
+     "sd": 5.436
+    }
+   },
+   {
+    "game_id": "401910014",
+    "game": "ATL @ OKC",
+    "player": "Luguentz Dort",
+    "player_id": "4397020",
+    "team": "ATL",
+    "opp": "OKC",
+    "stat": "PTS",
+    "side": "UNDER",
+    "line": 10.5,
+    "price": -116,
+    "prob": 0.664,
+    "edge": 0.127,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      10.5,
+      -116
+     ]
+    },
+    "projection": 7.3,
+    "dist": {
+     "k": "normal",
+     "sd": 4.284
+    }
+   },
+   {
+    "game_id": "401910016",
+    "game": "GS @ DAL",
+    "player": "Al Horford",
+    "player_id": "3213",
+    "team": "GS",
+    "opp": "DAL",
+    "stat": "PRA",
+    "side": "UNDER",
+    "line": 14.5,
+    "price": -121,
+    "prob": 0.674,
+    "edge": 0.126,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      14.5,
+      -121
+     ]
+    },
+    "projection": 9.3,
+    "dist": {
+     "k": "normal",
+     "sd": 6.647
+    }
+   }
+  ],
+  "hit": 0.307,
+  "payout": 6.49,
+  "odds": 549,
+  "ev": 0.993,
+  "type": "safe",
+  "label": "Safest",
+  "made": "2026-11-18T12:38:50.692110-05:00"
+ },
+ {
+  "legs": [
+   {
+    "game_id": "401910007",
+    "game": "MEM @ CLE",
+    "player": "Cam Spencer",
+    "player_id": "4433083",
+    "team": "MEM",
+    "opp": "CLE",
+    "stat": "PA",
+    "side": "UNDER",
+    "line": 21.5,
+    "price": -110,
+    "prob": 0.686,
+    "edge": 0.163,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      21.5,
+      -110
+     ]
+    },
+    "projection": 16.6,
+    "dist": {
+     "k": "normal",
+     "sd": 5.436
+    }
+   },
+   {
+    "game_id": "401910016",
+    "game": "GS @ DAL",
+    "player": "Al Horford",
+    "player_id": "3213",
+    "team": "GS",
+    "opp": "DAL",
+    "stat": "PRA",
+    "side": "UNDER",
+    "line": 14.5,
+    "price": -121,
+    "prob": 0.674,
+    "edge": 0.126,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      14.5,
+      -121
+     ]
+    },
+    "projection": 9.3,
+    "dist": {
+     "k": "normal",
+     "sd": 6.647
+    }
+   },
+   {
+    "game_id": "401910014",
+    "game": "ATL @ OKC",
+    "player": "Luguentz Dort",
+    "player_id": "4397020",
+    "team": "ATL",
+    "opp": "OKC",
+    "stat": "PTS",
+    "side": "UNDER",
+    "line": 10.5,
+    "price": -116,
+    "prob": 0.664,
+    "edge": 0.127,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      10.5,
+      -116
+     ]
+    },
+    "projection": 7.3,
+    "dist": {
+     "k": "normal",
+     "sd": 4.284
+    }
+   },
+   {
+    "game_id": "401910013",
+    "game": "DET @ NO",
+    "player": "Zion Williamson",
+    "player_id": "4395628",
+    "team": "NO",
+    "opp": "DET",
+    "stat": "PRA",
+    "side": "UNDER",
+    "line": 30.5,
+    "price": -121,
+    "prob": 0.654,
+    "edge": 0.107,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      30.5,
+      -121
+     ]
+    },
+    "projection": 27.0,
+    "dist": {
+     "k": "normal",
+     "sd": 5.197
+    }
+   },
+   {
+    "game_id": "401910017",
+    "game": "UTAH @ LAL",
+    "player": "Darryn Peterson",
+    "player_id": "5041955",
+    "team": "UTAH",
+    "opp": "LAL",
+    "stat": "PRA",
+    "side": "UNDER",
+    "line": 27.5,
+    "price": -116,
+    "prob": 0.644,
+    "edge": 0.107,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      27.5,
+      -116
+     ]
+    },
+    "projection": 23.1,
+    "dist": {
+     "k": "normal",
+     "sd": 6.812
+    }
+   },
+   {
+    "game_id": "401910012",
+    "game": "WSH @ TOR",
+    "player": "RJ Barrett",
+    "player_id": "4395625",
+    "team": "TOR",
+    "opp": "WSH",
+    "stat": "PTS",
+    "side": "UNDER",
+    "line": 22.5,
+    "price": -114,
+    "prob": 0.617,
+    "edge": 0.084,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      22.5,
+      -114
+     ]
+    },
+    "projection": 20.0,
+    "dist": {
+     "k": "normal",
+     "sd": 5.017
+    }
+   },
+   {
+    "game_id": "401910010",
+    "game": "PHI @ ORL",
+    "player": "Tristan da Silva",
+    "player_id": "4702382",
+    "team": "ORL",
+    "opp": "PHI",
+    "stat": "PTS",
+    "side": "OVER",
+    "line": 10.5,
+    "price": -115,
+    "prob": 0.594,
+    "edge": 0.059,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      10.5,
+      -115
+     ]
+    },
+    "projection": 13.1,
+    "dist": {
+     "k": "normal",
+     "sd": 6.664
+    }
+   },
+   {
+    "game_id": "401910015",
+    "game": "BOS @ DEN",
+    "player": "Derrick White",
+    "player_id": "3078576",
+    "team": "BOS",
+    "opp": "DEN",
+    "stat": "PR",
+    "side": "UNDER",
+    "line": 16.5,
+    "price": -107,
+    "prob": 0.574,
+    "edge": 0.057,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      16.5,
+      -107
+     ]
+    },
+    "projection": 14.7,
+    "dist": {
+     "k": "normal",
+     "sd": 5.188
+    }
+   },
+   {
+    "game_id": "401910009",
+    "game": "MIL @ MIA",
+    "player": "Pelle Larsson",
+    "player_id": "4601025",
+    "team": "MIA",
+    "opp": "MIL",
+    "stat": "PA",
+    "side": "OVER",
+    "line": 13.5,
+    "price": -108,
+    "prob": 0.573,
+    "edge": 0.054,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      13.5,
+      -108
+     ]
+    },
+    "projection": 15.7,
+    "dist": {
+     "k": "normal",
+     "sd": 6.586
+    }
+   }
+  ],
+  "hit": 0.0156,
+  "payout": 288.74,
+  "odds": 28774,
+  "ev": 3.501,
+  "type": "allgames",
+  "label": "One per game",
+  "missing": [
+   "401910008",
+   "401910011",
+   "401910018"
+  ],
+  "games_total": 12,
+  "made": "2026-11-18T12:38:50.692110-05:00"
+ }
+]
