@@ -12,9 +12,9 @@
     "side": "UNDER",
     "line": 29.5,
     "price": -114,
-    "prob": 0.681,
-    "edge": 0.148,
-    "grade": "A",
+    "prob": 0.684,
+    "edge": 0.151,
+    "grade": "B",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
@@ -22,20 +22,20 @@
       -114
      ]
     },
-    "projection": 23.8,
+    "projection": 23.7,
     "dist": {
      "k": "normal",
-     "sd": 6.719
+     "sd": 6.704
     }
    }
   ],
-  "hit": 0.681,
+  "hit": 0.684,
   "payout": 1.88,
   "odds": -114,
-  "ev": 0.278,
+  "ev": 0.284,
   "type": "double",
   "label": "Double up",
-  "made": "2026-11-17T17:12:13.404450-05:00"
+  "made": "2026-11-17T19:32:51.867437-05:00"
  },
  {
   "legs": [
@@ -49,31 +49,31 @@
     "stat": "PR",
     "side": "UNDER",
     "line": 10.5,
-    "price": -103,
-    "prob": 0.67,
-    "edge": 0.163,
+    "price": -107,
+    "prob": 0.674,
+    "edge": 0.157,
     "grade": "A",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
       10.5,
-      -103
+      -107
      ]
     },
     "projection": 6.5,
     "dist": {
      "k": "normal",
-     "sd": 4.7
+     "sd": 4.698
     }
    }
   ],
-  "hit": 0.67,
-  "payout": 1.97,
-  "odds": -103,
-  "ev": 0.32,
+  "hit": 0.674,
+  "payout": 1.93,
+  "odds": -107,
+  "ev": 0.304,
   "type": "double2",
   "label": "Double up #2",
-  "made": "2026-11-17T17:12:13.404450-05:00"
+  "made": "2026-11-17T19:32:51.867437-05:00"
  },
  {
   "legs": [
@@ -87,21 +87,21 @@
     "stat": "PR",
     "side": "UNDER",
     "line": 10.5,
-    "price": -103,
-    "prob": 0.67,
-    "edge": 0.163,
+    "price": -107,
+    "prob": 0.674,
+    "edge": 0.157,
     "grade": "A",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
       10.5,
-      -103
+      -107
      ]
     },
     "projection": 6.5,
     "dist": {
      "k": "normal",
-     "sd": 4.7
+     "sd": 4.698
     }
    },
    {
@@ -115,9 +115,9 @@
     "side": "UNDER",
     "line": 29.5,
     "price": -114,
-    "prob": 0.681,
-    "edge": 0.148,
-    "grade": "A",
+    "prob": 0.684,
+    "edge": 0.151,
+    "grade": "B",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
@@ -125,10 +125,10 @@
       -114
      ]
     },
-    "projection": 23.8,
+    "projection": 23.7,
     "dist": {
      "k": "normal",
-     "sd": 6.719
+     "sd": 6.704
     }
    },
    {
@@ -141,31 +141,31 @@
     "stat": "PRA",
     "side": "UNDER",
     "line": 21.5,
-    "price": -109,
-    "prob": 0.662,
-    "edge": 0.14,
+    "price": -117,
+    "prob": 0.669,
+    "edge": 0.13,
     "grade": "A",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
       21.5,
-      -109
+      -117
      ]
     },
     "projection": 15.9,
     "dist": {
      "k": "normal",
-     "sd": 7.334
+     "sd": 7.331
     }
    }
   ],
-  "hit": 0.3021,
-  "payout": 7.09,
-  "odds": 609,
-  "ev": 1.143,
+  "hit": 0.3084,
+  "payout": 6.74,
+  "odds": 574,
+  "ev": 1.077,
   "type": "safe",
   "label": "Safest",
-  "made": "2026-11-17T17:12:13.404450-05:00"
+  "made": "2026-11-17T19:32:51.867437-05:00"
  },
  {
   "legs": [
@@ -180,9 +180,9 @@
     "side": "UNDER",
     "line": 29.5,
     "price": -114,
-    "prob": 0.681,
-    "edge": 0.148,
-    "grade": "A",
+    "prob": 0.684,
+    "edge": 0.151,
+    "grade": "B",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
@@ -190,10 +190,10 @@
       -114
      ]
     },
-    "projection": 23.8,
+    "projection": 23.7,
     "dist": {
      "k": "normal",
-     "sd": 6.719
+     "sd": 6.704
     }
    },
    {
@@ -206,21 +206,21 @@
     "stat": "PR",
     "side": "UNDER",
     "line": 10.5,
-    "price": -103,
-    "prob": 0.67,
-    "edge": 0.163,
+    "price": -107,
+    "prob": 0.674,
+    "edge": 0.157,
     "grade": "A",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
       10.5,
-      -103
+      -107
      ]
     },
     "projection": 6.5,
     "dist": {
      "k": "normal",
-     "sd": 4.7
+     "sd": 4.698
     }
    },
    {
@@ -233,21 +233,21 @@
     "stat": "PRA",
     "side": "UNDER",
     "line": 21.5,
-    "price": -109,
-    "prob": 0.662,
-    "edge": 0.14,
+    "price": -117,
+    "prob": 0.669,
+    "edge": 0.13,
     "grade": "A",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
       21.5,
-      -109
+      -117
      ]
     },
     "projection": 15.9,
     "dist": {
      "k": "normal",
-     "sd": 7.334
+     "sd": 7.331
     }
    },
    {
@@ -260,34 +260,32 @@
     "stat": "PA",
     "side": "UNDER",
     "line": 25.5,
-    "price": -112,
-    "prob": 0.645,
-    "edge": 0.116,
+    "price": -124,
+    "prob": 0.653,
+    "edge": 0.1,
     "grade": "B",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
       25.5,
-      -112
+      -124
      ]
     },
     "projection": 21.3,
     "dist": {
      "k": "normal",
-     "sd": 6.469
+     "sd": 6.471
     }
    }
   ],
-  "hit": 0.1948,
-  "payout": 13.43,
-  "odds": 1243,
-  "ev": 1.616,
+  "hit": 0.2014,
+  "payout": 12.17,
+  "odds": 1117,
+  "ev": 1.45,
   "type": "allgames",
   "label": "One per game",
-  "missing": [
-   "401910002"
-  ],
-  "games_total": 5,
-  "made": "2026-11-17T17:12:13.404450-05:00"
+  "missing": [],
+  "games_total": 4,
+  "made": "2026-11-17T19:32:51.867437-05:00"
  }
 ]

@@ -31,10 +31,10 @@
    "pick": "LAC ML",
    "side": "home",
    "line": null,
-   "price": -238,
-   "prob": 0.727,
+   "price": -229,
+   "prob": 0.722,
    "model_prob": 0.82,
-   "edge": 0.023,
+   "edge": 0.026,
    "grade": "C",
    "proj": "LAC 109.6 \u2013 UTAH 98.2",
    "mu_h": 109.63,
@@ -45,7 +45,7 @@
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "UTAH injuries (Hayes): -1.7 pts"
    ],
-   "score": 2.27
+   "score": 2.57
   },
   {
    "game_id": "401910006",
@@ -54,10 +54,10 @@
    "pick": "LAC -6.5",
    "side": "home",
    "line": -6.5,
-   "price": -107,
-   "prob": 0.55,
+   "price": -101,
+   "prob": 0.541,
    "model_prob": 0.654,
-   "edge": 0.033,
+   "edge": 0.039,
    "grade": "B",
    "proj": "LAC 109.6 \u2013 UTAH 98.2",
    "mu_h": 109.63,
@@ -68,19 +68,19 @@
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "UTAH injuries (Hayes): -1.7 pts"
    ],
-   "score": 3.28
+   "score": 3.87
   },
   {
    "game_id": "401910005",
    "game": "CHA @ LAL",
    "market": "Spread",
-   "pick": "LAL -7.5",
+   "pick": "LAL -6.5",
    "side": "home",
-   "line": -7.5,
-   "price": -101,
-   "prob": 0.526,
-   "model_prob": 0.611,
-   "edge": 0.023,
+   "line": -6.5,
+   "price": -119,
+   "prob": 0.561,
+   "model_prob": 0.642,
+   "edge": 0.018,
    "grade": "C",
    "proj": "LAL 111.5 \u2013 CHA 100.4",
    "mu_h": 111.48,
@@ -92,7 +92,7 @@
     "LAL injuries (Kessler, Reaves): -7.2 pts",
     "CHA injuries (Knueppel, Schroder): -1.2 pts"
    ],
-   "score": 2.31
+   "score": 1.81
   }
  ]
 }
