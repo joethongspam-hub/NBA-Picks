@@ -1,5 +1,479 @@
 [
  {
+  "game_id": "401910016",
+  "game": "GS @ DAL",
+  "player": "Brandin Podziemski",
+  "player_id": "4709138",
+  "team": "GS",
+  "opp": "DAL",
+  "stat": "PA",
+  "side": "UNDER",
+  "line": 21.5,
+  "line_source": "DraftKings",
+  "price": -111,
+  "projection": 17.8,
+  "prob": 0.626,
+  "edge": 0.1,
+  "score": 9.69,
+  "grade": "A",
+  "hit_l5": "3/5",
+  "hit_l10": "5/10",
+  "hit_season": "6/12",
+  "vs_opp": "2/3",
+  "minutes": 34.2,
+  "status": "ACTIVE",
+  "season_avg": 19.0,
+  "l10_avg": 19.7,
+  "reasons": [
+   "Implied team total 109.5 (low vs slate avg 114.1)",
+   "DAL allows assists to Gs (+5% vs expected)",
+   "Under hit 5/10 of last 10 at 21.5",
+   "Last game: 18 (under the line)",
+   "Last 3 vs DAL: 26, 19, 17"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 18.0,
+  "open_line": 22.5,
+  "open_price": -124,
+  "books": {
+   "DraftKings": [
+    21.5,
+    -111
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 6.443
+  }
+ },
+ {
+  "game_id": "401910013",
+  "game": "DET @ NO",
+  "player": "Zion Williamson",
+  "player_id": "4395628",
+  "team": "NO",
+  "opp": "DET",
+  "stat": "PRA",
+  "side": "UNDER",
+  "line": 30.5,
+  "line_source": "DraftKings",
+  "price": -111,
+  "projection": 27.0,
+  "prob": 0.645,
+  "edge": 0.119,
+  "score": 9.55,
+  "grade": "B",
+  "hit_l5": "1/5",
+  "hit_l10": "5/10",
+  "hit_season": "8/14",
+  "vs_opp": "2/2",
+  "minutes": 31.8,
+  "status": "ACTIVE",
+  "season_avg": 29.6,
+  "l10_avg": 30.2,
+  "reasons": [
+   "Projected 30-34 minutes: grade lowered one level (21-25 on real lines)",
+   "Implied team total 110.5 (low vs slate avg 114.1)",
+   "DET limits assists to Fs (-6% vs expected)",
+   "Under hit 5/10 of last 10 at 30.5",
+   "Last game: 24 (under the line)",
+   "Last 2 vs DET: 29, 8"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 24.0,
+  "open_line": 31.5,
+  "open_price": -123,
+  "books": {
+   "DraftKings": [
+    30.5,
+    -111
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 5.199
+  }
+ },
+ {
+  "game_id": "401910014",
+  "game": "ATL @ OKC",
+  "player": "Luguentz Dort",
+  "player_id": "4397020",
+  "team": "ATL",
+  "opp": "OKC",
+  "stat": "PTS",
+  "side": "UNDER",
+  "line": 9.5,
+  "line_source": "DraftKings",
+  "price": -102,
+  "projection": 7.4,
+  "prob": 0.605,
+  "edge": 0.1,
+  "score": 9.03,
+  "grade": "A",
+  "hit_l5": "3/5",
+  "hit_l10": "6/10",
+  "hit_season": "9/14",
+  "vs_opp": "0/0",
+  "minutes": 27.5,
+  "status": "ACTIVE",
+  "season_avg": 8.5,
+  "l10_avg": 9.0,
+  "reasons": [
+   "Implied team total 111.0 (low vs slate avg 114.1)",
+   "Under hit 6/10 of last 10 at 9.5",
+   "Last game: 3 (under the line)"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 3.0,
+  "open_line": 9.5,
+  "open_price": -103,
+  "books": {
+   "DraftKings": [
+    9.5,
+    -102
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 4.286
+  }
+ },
+ {
+  "game_id": "401910017",
+  "game": "UTAH @ LAL",
+  "player": "Darryn Peterson",
+  "player_id": "5041955",
+  "team": "UTAH",
+  "opp": "LAL",
+  "stat": "PRA",
+  "side": "UNDER",
+  "line": 26.5,
+  "line_source": "DraftKings",
+  "price": -110,
+  "projection": 23.2,
+  "prob": 0.609,
+  "edge": 0.085,
+  "score": 8.49,
+  "grade": "A",
+  "hit_l5": "2/5",
+  "hit_l10": "5/10",
+  "hit_season": "10/15",
+  "vs_opp": "1/1",
+  "minutes": 29.2,
+  "status": "ACTIVE",
+  "season_avg": 24.9,
+  "l10_avg": 27.4,
+  "reasons": [
+   "Implied team total 109.0 (low vs slate avg 114.1)",
+   "LAL limits rebounds to Gs (-5% vs expected)",
+   "Back-to-back",
+   "Under hit 5/10 of last 10 at 26.5",
+   "Last game: 20 (under the line)",
+   "Last 1 vs LAL: 13"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 20.0,
+  "open_line": 27.5,
+  "open_price": -105,
+  "books": {
+   "DraftKings": [
+    26.5,
+    -110
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 6.814
+  }
+ },
+ {
+  "game_id": "401910013",
+  "game": "DET @ NO",
+  "player": "Kevin Huerter",
+  "player_id": "4066372",
+  "team": "DET",
+  "opp": "NO",
+  "stat": "PRA",
+  "side": "UNDER",
+  "line": 22.5,
+  "line_source": "DraftKings",
+  "price": -109,
+  "projection": 17.2,
+  "prob": 0.631,
+  "edge": 0.11,
+  "score": 7.28,
+  "grade": "B",
+  "hit_l5": "3/5",
+  "hit_l10": "8/10",
+  "hit_season": "11/13",
+  "vs_opp": "2/3",
+  "minutes": 31.5,
+  "status": "ACTIVE",
+  "season_avg": 15.2,
+  "l10_avg": 16.1,
+  "reasons": [
+   "Projected 30-34 minutes: grade lowered one level (21-25 on real lines)",
+   "Back-to-back",
+   "Under hit 8/10 of last 10 at 22.5",
+   "Last game: 17 (under the line)",
+   "Last 3 vs NO: 27, 20, 19"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 17.0,
+  "open_line": 20.5,
+  "open_price": -125,
+  "books": {
+   "DraftKings": [
+    22.5,
+    -109
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 8.829
+  }
+ },
+ {
+  "game_id": "401910013",
+  "game": "DET @ NO",
+  "player": "John Collins",
+  "player_id": "3908845",
+  "team": "DET",
+  "opp": "NO",
+  "stat": "PR",
+  "side": "UNDER",
+  "line": 19.5,
+  "line_source": "DraftKings",
+  "price": -114,
+  "projection": 16.0,
+  "prob": 0.603,
+  "edge": 0.071,
+  "score": 6.82,
+  "grade": "B",
+  "hit_l5": "4/5",
+  "hit_l10": "9/10",
+  "hit_season": "10/13",
+  "vs_opp": "1/4",
+  "minutes": 29.3,
+  "status": "ACTIVE",
+  "season_avg": 17.3,
+  "l10_avg": 14.1,
+  "reasons": [
+   "Back-to-back",
+   "Under hit 9/10 of last 10 at 19.5",
+   "Last game: 12 (under the line)",
+   "Last 4 vs NO: 26, 25, 22, 17"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 12.0,
+  "open_line": 19.5,
+  "open_price": -124,
+  "books": {
+   "DraftKings": [
+    19.5,
+    -114
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 7.743
+  }
+ },
+ {
+  "game_id": "401910013",
+  "game": "DET @ NO",
+  "player": "Herbert Jones",
+  "player_id": "4277813",
+  "team": "NO",
+  "opp": "DET",
+  "stat": "PRA",
+  "side": "UNDER",
+  "line": 13.5,
+  "line_source": "DraftKings",
+  "price": -107,
+  "projection": 11.2,
+  "prob": 0.592,
+  "edge": 0.075,
+  "score": 6.68,
+  "grade": "B",
+  "hit_l5": "4/5",
+  "hit_l10": "7/10",
+  "hit_season": "11/15",
+  "vs_opp": "0/1",
+  "minutes": 27.0,
+  "status": "ACTIVE",
+  "season_avg": 12.2,
+  "l10_avg": 11.2,
+  "reasons": [
+   "Implied team total 110.5 (low vs slate avg 114.1)",
+   "DET limits assists to Fs (-6% vs expected)",
+   "Under hit 7/10 of last 10 at 13.5",
+   "Last game: 13 (under the line)",
+   "Last 1 vs DET: 15"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 13.0,
+  "open_line": 13.5,
+  "open_price": -106,
+  "books": {
+   "DraftKings": [
+    13.5,
+    -107
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 5.387
+  }
+ },
+ {
+  "game_id": "401910016",
+  "game": "GS @ DAL",
+  "player": "Zaccharie Risacher",
+  "player_id": "5211175",
+  "team": "DAL",
+  "opp": "GS",
+  "stat": "PR",
+  "side": "OVER",
+  "line": 9.5,
+  "line_source": "DraftKings",
+  "price": -106,
+  "projection": 12.2,
+  "prob": 0.59,
+  "edge": 0.076,
+  "score": 6.55,
+  "grade": "B",
+  "hit_l5": "3/5",
+  "hit_l10": "5/10",
+  "hit_season": "9/14",
+  "vs_opp": "1/1",
+  "minutes": 20.3,
+  "status": "ACTIVE",
+  "season_avg": 13.4,
+  "l10_avg": 13.4,
+  "reasons": [
+   "Over hit 5/10 of last 10 at 9.5",
+   "Last game: 23 (over the line)",
+   "Last 1 vs GS: 19"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 23.0,
+  "open_line": 9.5,
+  "open_price": 100,
+  "books": {
+   "DraftKings": [
+    9.5,
+    -106
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 6.423
+  }
+ },
+ {
+  "game_id": "401910014",
+  "game": "ATL @ OKC",
+  "player": "Aaron Wiggins",
+  "player_id": "4397183",
+  "team": "ATL",
+  "opp": "OKC",
+  "stat": "PTS",
+  "side": "UNDER",
+  "line": 14.5,
+  "line_source": "DraftKings",
+  "price": -127,
+  "projection": 11.3,
+  "prob": 0.62,
+  "edge": 0.06,
+  "score": 6.01,
+  "grade": "B",
+  "hit_l5": "2/5",
+  "hit_l10": "5/10",
+  "hit_season": "6/14",
+  "vs_opp": "0/0",
+  "minutes": 29.1,
+  "status": "ACTIVE",
+  "season_avg": 11.6,
+  "l10_avg": 13.2,
+  "reasons": [
+   "Implied team total 111.0 (low vs slate avg 114.1)",
+   "Under hit 5/10 of last 10 at 14.5",
+   "Last game: 7 (under the line)"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 7.0,
+  "open_line": 13.5,
+  "open_price": -102,
+  "books": {
+   "DraftKings": [
+    14.5,
+    -127
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 6.77
+  }
+ },
+ {
+  "game_id": "401910015",
+  "game": "BOS @ DEN",
+  "player": "Sam Hauser",
+  "player_id": "4065804",
+  "team": "BOS",
+  "opp": "DEN",
+  "stat": "PTS",
+  "side": "OVER",
+  "line": 6.5,
+  "line_source": "DraftKings",
+  "price": -108,
+  "projection": 8.1,
+  "prob": 0.576,
+  "edge": 0.057,
+  "score": 4.92,
+  "grade": "B",
+  "hit_l5": "5/5",
+  "hit_l10": "7/10",
+  "hit_season": "10/14",
+  "vs_opp": "0/2",
+  "minutes": 20.1,
+  "status": "ACTIVE",
+  "season_avg": 8.7,
+  "l10_avg": 7.8,
+  "reasons": [
+   "Implied team total 111.0 (low vs slate avg 114.1)",
+   "Over hit 7/10 of last 10 at 6.5",
+   "Last game: 12 (over the line)",
+   "Last 2 vs DEN: 5, 6"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 12.0,
+  "open_line": 7.5,
+  "open_price": -118,
+  "books": {
+   "DraftKings": [
+    6.5,
+    -108
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 4.562
+  }
+ },
+ {
   "game_id": "401910012",
   "game": "WSH @ TOR",
   "player": "Immanuel Quickley",
@@ -46,7 +520,8 @@
   "dist": {
    "k": "normal",
    "sd": 7.66
-  }
+  },
+  "locked": true
  },
  {
   "game_id": "401910007",
@@ -92,52 +567,8 @@
   "dist": {
    "k": "normal",
    "sd": 5.44
-  }
- },
- {
-  "game_id": "401910014",
-  "game": "ATL @ OKC",
-  "player": "Luguentz Dort",
-  "player_id": "4397020",
-  "team": "ATL",
-  "opp": "OKC",
-  "stat": "PTS",
-  "side": "UNDER",
-  "line": 10.5,
-  "line_source": "DraftKings",
-  "price": -119,
-  "projection": 7.4,
-  "prob": 0.666,
-  "edge": 0.122,
-  "score": 10.99,
-  "grade": "A",
-  "hit_l5": "4/5",
-  "hit_l10": "7/10",
-  "hit_season": "10/14",
-  "vs_opp": "0/0",
-  "minutes": 27.5,
-  "status": "ACTIVE",
-  "season_avg": 8.5,
-  "l10_avg": 9.0,
-  "reasons": [
-   "Under hit 7/10 of last 10 at 10.5",
-   "Last game: 3 (under the line)"
-  ],
-  "actual": null,
-  "result": null,
-  "last_game": 3.0,
-  "open_line": 9.5,
-  "open_price": -103,
-  "books": {
-   "DraftKings": [
-    10.5,
-    -119
-   ]
   },
-  "dist": {
-   "k": "normal",
-   "sd": 4.288
-  }
+  "locked": true
  },
  {
   "game_id": "401910012",
@@ -186,103 +617,8 @@
   "dist": {
    "k": "normal",
    "sd": 7.073
-  }
- },
- {
-  "game_id": "401910013",
-  "game": "DET @ NO",
-  "player": "Zion Williamson",
-  "player_id": "4395628",
-  "team": "NO",
-  "opp": "DET",
-  "stat": "PRA",
-  "side": "UNDER",
-  "line": 30.5,
-  "line_source": "DraftKings",
-  "price": -110,
-  "projection": 27.1,
-  "prob": 0.644,
-  "edge": 0.12,
-  "score": 9.61,
-  "grade": "B",
-  "hit_l5": "1/5",
-  "hit_l10": "5/10",
-  "hit_season": "8/14",
-  "vs_opp": "2/2",
-  "minutes": 31.8,
-  "status": "ACTIVE",
-  "season_avg": 29.6,
-  "l10_avg": 30.2,
-  "reasons": [
-   "Projected 30-34 minutes: grade lowered one level (21-25 on real lines)",
-   "Implied team total 111.0 (low vs slate avg 114.3)",
-   "DET limits assists to Fs (-6% vs expected)",
-   "Under hit 5/10 of last 10 at 30.5",
-   "Last game: 24 (under the line)",
-   "Last 2 vs DET: 29, 8"
-  ],
-  "actual": null,
-  "result": null,
-  "last_game": 24.0,
-  "open_line": 31.5,
-  "open_price": -123,
-  "books": {
-   "DraftKings": [
-    30.5,
-    -110
-   ]
   },
-  "dist": {
-   "k": "normal",
-   "sd": 5.202
-  }
- },
- {
-  "game_id": "401910013",
-  "game": "DET @ NO",
-  "player": "John Collins",
-  "player_id": "3908845",
-  "team": "DET",
-  "opp": "NO",
-  "stat": "PR",
-  "side": "UNDER",
-  "line": 20.5,
-  "line_source": "DraftKings",
-  "price": -116,
-  "projection": 16.0,
-  "prob": 0.634,
-  "edge": 0.097,
-  "score": 9.3,
-  "grade": "A",
-  "hit_l5": "4/5",
-  "hit_l10": "9/10",
-  "hit_season": "10/13",
-  "vs_opp": "1/4",
-  "minutes": 29.3,
-  "status": "ACTIVE",
-  "season_avg": 17.3,
-  "l10_avg": 14.1,
-  "reasons": [
-   "Back-to-back",
-   "Under hit 9/10 of last 10 at 20.5",
-   "Last game: 12 (under the line)",
-   "Last 4 vs NO: 26, 25, 22, 17"
-  ],
-  "actual": null,
-  "result": null,
-  "last_game": 12.0,
-  "open_line": 19.5,
-  "open_price": -124,
-  "books": {
-   "DraftKings": [
-    20.5,
-    -116
-   ]
-  },
-  "dist": {
-   "k": "normal",
-   "sd": 7.734
-  }
+  "locked": true
  },
  {
   "game_id": "401910012",
@@ -332,247 +668,8 @@
   "dist": {
    "k": "normal",
    "sd": 5.055
-  }
- },
- {
-  "game_id": "401910017",
-  "game": "UTAH @ LAL",
-  "player": "Darryn Peterson",
-  "player_id": "5041955",
-  "team": "UTAH",
-  "opp": "LAL",
-  "stat": "PRA",
-  "side": "UNDER",
-  "line": 26.5,
-  "line_source": "DraftKings",
-  "price": -107,
-  "projection": 23.2,
-  "prob": 0.605,
-  "edge": 0.089,
-  "score": 8.86,
-  "grade": "A",
-  "hit_l5": "2/5",
-  "hit_l10": "5/10",
-  "hit_season": "10/15",
-  "vs_opp": "1/1",
-  "minutes": 29.2,
-  "status": "ACTIVE",
-  "season_avg": 24.9,
-  "l10_avg": 27.4,
-  "reasons": [
-   "Implied team total 109.5 (low vs slate avg 114.3)",
-   "LAL limits rebounds to Gs (-5% vs expected)",
-   "Back-to-back",
-   "Under hit 5/10 of last 10 at 26.5",
-   "Last game: 20 (under the line)",
-   "Last 1 vs LAL: 13"
-  ],
-  "actual": null,
-  "result": null,
-  "last_game": 20.0,
-  "open_line": 27.5,
-  "open_price": -105,
-  "books": {
-   "DraftKings": [
-    26.5,
-    -107
-   ]
   },
-  "dist": {
-   "k": "normal",
-   "sd": 6.817
-  }
- },
- {
-  "game_id": "401910016",
-  "game": "GS @ DAL",
-  "player": "Brandin Podziemski",
-  "player_id": "4709138",
-  "team": "GS",
-  "opp": "DAL",
-  "stat": "PA",
-  "side": "UNDER",
-  "line": 22.5,
-  "line_source": "DraftKings",
-  "price": -126,
-  "projection": 17.9,
-  "prob": 0.666,
-  "edge": 0.109,
-  "score": 8.42,
-  "grade": "B",
-  "hit_l5": "3/5",
-  "hit_l10": "6/10",
-  "hit_season": "7/12",
-  "vs_opp": "2/3",
-  "minutes": 31.9,
-  "status": "ACTIVE",
-  "season_avg": 19.0,
-  "l10_avg": 19.7,
-  "reasons": [
-   "Projected 30-34 minutes: grade lowered one level (21-25 on real lines)",
-   "Implied team total 110.5 (low vs slate avg 114.3)",
-   "DAL allows assists to Gs (+5% vs expected)",
-   "Under hit 6/10 of last 10 at 22.5",
-   "Last game: 18 (under the line)",
-   "Last 3 vs DAL: 26, 19, 17"
-  ],
-  "actual": null,
-  "result": null,
-  "last_game": 18.0,
-  "open_line": 22.5,
-  "open_price": -124,
-  "books": {
-   "DraftKings": [
-    22.5,
-    -126
-   ]
-  },
-  "dist": {
-   "k": "normal",
-   "sd": 6.453
-  }
- },
- {
-  "game_id": "401910013",
-  "game": "DET @ NO",
-  "player": "Kevin Huerter",
-  "player_id": "4066372",
-  "team": "DET",
-  "opp": "NO",
-  "stat": "PRA",
-  "side": "UNDER",
-  "line": 23.5,
-  "line_source": "DraftKings",
-  "price": -114,
-  "projection": 17.1,
-  "prob": 0.658,
-  "edge": 0.126,
-  "score": 8.32,
-  "grade": "B",
-  "hit_l5": "3/5",
-  "hit_l10": "8/10",
-  "hit_season": "11/13",
-  "vs_opp": "2/3",
-  "minutes": 31.5,
-  "status": "ACTIVE",
-  "season_avg": 15.2,
-  "l10_avg": 16.1,
-  "reasons": [
-   "Projected 30-34 minutes: grade lowered one level (21-25 on real lines)",
-   "Back-to-back",
-   "Under hit 8/10 of last 10 at 23.5",
-   "Last game: 17 (under the line)",
-   "Last 3 vs NO: 27, 20, 19"
-  ],
-  "actual": null,
-  "result": null,
-  "last_game": 17.0,
-  "open_line": 20.5,
-  "open_price": -125,
-  "books": {
-   "DraftKings": [
-    23.5,
-    -114
-   ]
-  },
-  "dist": {
-   "k": "normal",
-   "sd": 8.819
-  }
- },
- {
-  "game_id": "401910014",
-  "game": "ATL @ OKC",
-  "player": "Aaron Wiggins",
-  "player_id": "4397183",
-  "team": "ATL",
-  "opp": "OKC",
-  "stat": "PA",
-  "side": "UNDER",
-  "line": 16.5,
-  "line_source": "DraftKings",
-  "price": -103,
-  "projection": 13.5,
-  "prob": 0.579,
-  "edge": 0.072,
-  "score": 7.21,
-  "grade": "B",
-  "hit_l5": "2/5",
-  "hit_l10": "5/10",
-  "hit_season": "7/14",
-  "vs_opp": "0/0",
-  "minutes": 29.1,
-  "status": "ACTIVE",
-  "season_avg": 13.7,
-  "l10_avg": 16.1,
-  "reasons": [
-   "Under hit 5/10 of last 10 at 16.5",
-   "Last game: 10 (under the line)"
-  ],
-  "actual": null,
-  "result": null,
-  "last_game": 10.0,
-  "open_line": 17.5,
-  "open_price": -116,
-  "books": {
-   "DraftKings": [
-    16.5,
-    -103
-   ]
-  },
-  "dist": {
-   "k": "normal",
-   "sd": 7.755
-  }
- },
- {
-  "game_id": "401910016",
-  "game": "GS @ DAL",
-  "player": "Al Horford",
-  "player_id": "3213",
-  "team": "GS",
-  "opp": "DAL",
-  "stat": "PRA",
-  "side": "UNDER",
-  "line": 14.5,
-  "line_source": "DraftKings",
-  "price": -120,
-  "projection": 9.3,
-  "prob": 0.673,
-  "edge": 0.128,
-  "score": 6.96,
-  "grade": "A",
-  "hit_l5": "5/5",
-  "hit_l10": "9/10",
-  "hit_season": "11/12",
-  "vs_opp": "1/2",
-  "minutes": 16.8,
-  "status": "QUESTIONABLE",
-  "season_avg": 12.3,
-  "l10_avg": 10.0,
-  "reasons": [
-   "Implied team total 110.5 (low vs slate avg 114.3)",
-   "DAL allows assists to Cs (+5% vs expected)",
-   "Listed Day-To-Day: Back  - Horford (back) is questionable for Wednesday's game against Dallas.",
-   "Under hit 9/10 of last 10 at 14.5",
-   "Last game: 5 (under the line)",
-   "Last 2 vs DAL: 14, 20"
-  ],
-  "actual": null,
-  "result": null,
-  "last_game": 5.0,
-  "open_line": 15.5,
-  "open_price": -124,
-  "books": {
-   "DraftKings": [
-    14.5,
-    -120
-   ]
-  },
-  "dist": {
-   "k": "normal",
-   "sd": 6.652
-  }
+  "locked": true
  },
  {
   "game_id": "401910010",
@@ -619,99 +716,8 @@
   "dist": {
    "k": "normal",
    "sd": 6.664
-  }
- },
- {
-  "game_id": "401910014",
-  "game": "ATL @ OKC",
-  "player": "Nickeil Alexander-Walker",
-  "player_id": "4278039",
-  "team": "ATL",
-  "opp": "OKC",
-  "stat": "PA",
-  "side": "UNDER",
-  "line": 25.5,
-  "line_source": "DraftKings",
-  "price": -112,
-  "projection": 22.6,
-  "prob": 0.594,
-  "edge": 0.066,
-  "score": 6.59,
-  "grade": "B",
-  "hit_l5": "4/5",
-  "hit_l10": "6/10",
-  "hit_season": "9/14",
-  "vs_opp": "1/2",
-  "minutes": 39.7,
-  "status": "ACTIVE",
-  "season_avg": 24.0,
-  "l10_avg": 24.7,
-  "reasons": [
-   "Under hit 6/10 of last 10 at 25.5",
-   "Last game: 24 (under the line)",
-   "Last 2 vs OKC: 35, 19"
-  ],
-  "actual": null,
-  "result": null,
-  "last_game": 24.0,
-  "open_line": 25.5,
-  "open_price": -117,
-  "books": {
-   "DraftKings": [
-    25.5,
-    -112
-   ]
   },
-  "dist": {
-   "k": "normal",
-   "sd": 6.963
-  }
- },
- {
-  "game_id": "401910014",
-  "game": "ATL @ OKC",
-  "player": "Dyson Daniels",
-  "player_id": "4869342",
-  "team": "ATL",
-  "opp": "OKC",
-  "stat": "PA",
-  "side": "UNDER",
-  "line": 16.5,
-  "line_source": "DraftKings",
-  "price": -114,
-  "projection": 14.0,
-  "prob": 0.597,
-  "edge": 0.065,
-  "score": 6.47,
-  "grade": "B",
-  "hit_l5": "3/5",
-  "hit_l10": "8/10",
-  "hit_season": "10/14",
-  "vs_opp": "1/2",
-  "minutes": 37.6,
-  "status": "ACTIVE",
-  "season_avg": 16.0,
-  "l10_avg": 14.3,
-  "reasons": [
-   "Under hit 8/10 of last 10 at 16.5",
-   "Last game: 14 (under the line)",
-   "Last 2 vs OKC: 20, 9"
-  ],
-  "actual": null,
-  "result": null,
-  "last_game": 14.0,
-  "open_line": 16.5,
-  "open_price": -120,
-  "books": {
-   "DraftKings": [
-    16.5,
-    -114
-   ]
-  },
-  "dist": {
-   "k": "normal",
-   "sd": 5.866
-  }
+  "locked": true
  },
  {
   "game_id": "401910012",
@@ -759,150 +765,8 @@
   "dist": {
    "k": "normal",
    "sd": 7.353
-  }
- },
- {
-  "game_id": "401910013",
-  "game": "DET @ NO",
-  "player": "Herbert Jones",
-  "player_id": "4277813",
-  "team": "NO",
-  "opp": "DET",
-  "stat": "PRA",
-  "side": "UNDER",
-  "line": 13.5,
-  "line_source": "DraftKings",
-  "price": -116,
-  "projection": 11.2,
-  "prob": 0.6,
-  "edge": 0.063,
-  "score": 5.56,
-  "grade": "B",
-  "hit_l5": "4/5",
-  "hit_l10": "7/10",
-  "hit_season": "11/15",
-  "vs_opp": "0/1",
-  "minutes": 27.0,
-  "status": "ACTIVE",
-  "season_avg": 12.2,
-  "l10_avg": 11.2,
-  "reasons": [
-   "Implied team total 111.0 (low vs slate avg 114.3)",
-   "DET limits assists to Fs (-6% vs expected)",
-   "Under hit 7/10 of last 10 at 13.5",
-   "Last game: 13 (under the line)",
-   "Last 1 vs DET: 15"
-  ],
-  "actual": null,
-  "result": null,
-  "last_game": 13.0,
-  "open_line": 13.5,
-  "open_price": -106,
-  "books": {
-   "DraftKings": [
-    13.5,
-    -116
-   ]
   },
-  "dist": {
-   "k": "normal",
-   "sd": 5.389
-  }
- },
- {
-  "game_id": "401910016",
-  "game": "GS @ DAL",
-  "player": "Draymond Green",
-  "player_id": "6589",
-  "team": "GS",
-  "opp": "DAL",
-  "stat": "PA",
-  "side": "UNDER",
-  "line": 11.5,
-  "line_source": "DraftKings",
-  "price": -124,
-  "projection": 9.8,
-  "prob": 0.613,
-  "edge": 0.059,
-  "score": 3.17,
-  "grade": "B",
-  "hit_l5": "3/5",
-  "hit_l10": "7/10",
-  "hit_season": "9/12",
-  "vs_opp": "2/3",
-  "minutes": 25.8,
-  "status": "QUESTIONABLE",
-  "season_avg": 11.8,
-  "l10_avg": 10.0,
-  "reasons": [
-   "Implied team total 110.5 (low vs slate avg 114.3)",
-   "Listed Day-To-Day: Elbow Inflammation - Green is questionable for Wednesday's game in Dallas due to inflammation in his right elbow.",
-   "Under hit 7/10 of last 10 at 11.5",
-   "Last game: 7 (under the line)",
-   "Last 3 vs DAL: 17, 9, 10"
-  ],
-  "actual": null,
-  "result": null,
-  "last_game": 7.0,
-  "open_line": 11.5,
-  "open_price": -134,
-  "books": {
-   "DraftKings": [
-    11.5,
-    -124
-   ]
-  },
-  "dist": {
-   "k": "normal",
-   "sd": 3.79
-  }
- },
- {
-  "game_id": "401910015",
-  "game": "BOS @ DEN",
-  "player": "Derrick White",
-  "player_id": "3078576",
-  "team": "BOS",
-  "opp": "DEN",
-  "stat": "PR",
-  "side": "UNDER",
-  "line": 16.5,
-  "line_source": "DraftKings",
-  "price": -111,
-  "projection": 14.7,
-  "prob": 0.579,
-  "edge": 0.053,
-  "score": 4.94,
-  "grade": "B",
-  "hit_l5": "3/5",
-  "hit_l10": "6/10",
-  "hit_season": "8/14",
-  "vs_opp": "0/2",
-  "minutes": 28.3,
-  "status": "ACTIVE",
-  "season_avg": 17.6,
-  "l10_avg": 15.4,
-  "reasons": [
-   "Implied team total 110.5 (low vs slate avg 114.3)",
-   "Under hit 6/10 of last 10 at 16.5",
-   "Last game: 12 (under the line)",
-   "Last 2 vs DEN: 26, 21"
-  ],
-  "actual": null,
-  "result": null,
-  "last_game": 12.0,
-  "open_line": 16.5,
-  "open_price": -111,
-  "books": {
-   "DraftKings": [
-    16.5,
-    -111
-   ]
-  },
-  "dist": {
-   "k": "normal",
-   "sd": 5.183
-  }
+  "locked": true
  },
  {
   "game_id": "401910011",
@@ -949,6 +813,7 @@
   "dist": {
    "k": "normal",
    "sd": 7.532
-  }
+  },
+  "locked": true
  }
 ]

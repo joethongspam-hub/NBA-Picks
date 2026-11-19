@@ -35,45 +35,46 @@
   "ev": 0.354,
   "type": "double",
   "label": "Double up",
-  "made": "2026-11-18T17:08:14.220757-05:00"
+  "made": "2026-11-18T17:08:14.220757-05:00",
+  "locked": true
  },
  {
   "legs": [
    {
     "game_id": "401910013",
     "game": "DET @ NO",
-    "player": "Kevin Huerter",
-    "player_id": "4066372",
-    "team": "DET",
-    "opp": "NO",
+    "player": "Zion Williamson",
+    "player_id": "4395628",
+    "team": "NO",
+    "opp": "DET",
     "stat": "PRA",
     "side": "UNDER",
-    "line": 23.5,
-    "price": -114,
-    "prob": 0.658,
-    "edge": 0.126,
+    "line": 30.5,
+    "price": -111,
+    "prob": 0.645,
+    "edge": 0.119,
     "grade": "B",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
-      23.5,
-      -114
+      30.5,
+      -111
      ]
     },
-    "projection": 17.1,
+    "projection": 27.0,
     "dist": {
      "k": "normal",
-     "sd": 8.819
+     "sd": 5.199
     }
    }
   ],
-  "hit": 0.658,
-  "payout": 1.88,
-  "odds": -114,
-  "ev": 0.235,
+  "hit": 0.645,
+  "payout": 1.9,
+  "odds": -111,
+  "ev": 0.226,
   "type": "double2",
   "label": "Double up #2",
-  "made": "2026-11-18T17:08:14.220757-05:00"
+  "made": "2026-11-18T19:33:59.068052-05:00"
  },
  {
   "legs": [
@@ -165,7 +166,8 @@
   "ev": 1.028,
   "type": "safe",
   "label": "Safest",
-  "made": "2026-11-18T17:08:14.220757-05:00"
+  "made": "2026-11-18T17:08:14.220757-05:00",
+  "locked": true
  },
  {
   "legs": [
@@ -257,7 +259,8 @@
   "ev": 1.049,
   "type": "value",
   "label": "Best value",
-  "made": "2026-11-18T17:08:14.220757-05:00"
+  "made": "2026-11-18T17:08:14.220757-05:00",
+  "locked": true
  },
  {
   "legs": [
@@ -517,6 +520,7 @@
    "401910018"
   ],
   "games_total": 12,
-  "made": "2026-11-18T17:08:14.220757-05:00"
+  "made": "2026-11-18T17:08:14.220757-05:00",
+  "locked": true
  }
 ]

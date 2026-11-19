@@ -21,7 +21,8 @@
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
    ],
-   "score": 5.81
+   "score": 5.81,
+   "locked": true
   },
   {
    "game_id": "401910010",
@@ -44,7 +45,8 @@
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "PHI injuries (Brown): -5.9 pts"
    ],
-   "score": 4.02
+   "score": 4.02,
+   "locked": true
   },
   {
    "game_id": "401910010",
@@ -67,19 +69,20 @@
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "PHI injuries (Brown): -5.9 pts"
    ],
-   "score": 4.36
+   "score": 4.36,
+   "locked": true
   },
   {
    "game_id": "401910013",
    "game": "DET @ NO",
    "market": "Spread",
-   "pick": "NO +4.5",
+   "pick": "NO +5.5",
    "side": "home",
-   "line": 4.5,
-   "price": -110,
-   "prob": 0.564,
-   "model_prob": 0.682,
-   "edge": 0.04,
+   "line": 5.5,
+   "price": -115,
+   "prob": 0.58,
+   "model_prob": 0.71,
+   "edge": 0.046,
    "grade": "B",
    "proj": "NO 105.6 \u2013 DET 104.2",
    "mu_h": 105.65,
@@ -91,7 +94,7 @@
     "NO injuries (Mathurin, McGowens, Murray): -2.7 pts",
     "DET injuries (II, Prince, Robinson): -4.7 pts"
    ],
-   "score": 3.98
+   "score": 4.56
   },
   {
    "game_id": "401910014",
@@ -100,10 +103,10 @@
    "pick": "OKC ML",
    "side": "home",
    "line": null,
-   "price": -249,
-   "prob": 0.735,
+   "price": -264,
+   "prob": 0.743,
    "model_prob": 0.828,
-   "edge": 0.022,
+   "edge": 0.018,
    "grade": "C",
    "proj": "OKC 112.0 \u2013 ATL 100.1",
    "mu_h": 112.0,
@@ -114,19 +117,19 @@
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "ATL injuries (Flemings, Landale, McCollum): -6.1 pts"
    ],
-   "score": 2.18
+   "score": 1.77
   },
   {
    "game_id": "401910014",
    "game": "ATL @ OKC",
    "market": "Spread",
-   "pick": "OKC -5.5",
+   "pick": "OKC -6.5",
    "side": "home",
-   "line": -5.5,
-   "price": -119,
-   "prob": 0.58,
-   "model_prob": 0.694,
-   "edge": 0.037,
+   "line": -6.5,
+   "price": -110,
+   "prob": 0.558,
+   "model_prob": 0.666,
+   "edge": 0.034,
    "grade": "B",
    "proj": "OKC 112.0 \u2013 ATL 100.1",
    "mu_h": 112.0,
@@ -137,7 +140,7 @@
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "ATL injuries (Flemings, Landale, McCollum): -6.1 pts"
    ],
-   "score": 3.65
+   "score": 3.42
   },
   {
    "game_id": "401910015",
@@ -168,10 +171,10 @@
    "pick": "LAL -12.5",
    "side": "home",
    "line": -12.5,
-   "price": -105,
-   "prob": 0.56,
+   "price": -104,
+   "prob": 0.558,
    "model_prob": 0.691,
-   "edge": 0.047,
+   "edge": 0.048,
    "grade": "B",
    "proj": "LAL 119.5 \u2013 UTAH 100.7",
    "mu_h": 119.46,
@@ -182,7 +185,7 @@
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "LAL injuries (Reaves): -2.4 pts"
    ],
-   "score": 4.74
+   "score": 4.84
   }
  ]
 }
