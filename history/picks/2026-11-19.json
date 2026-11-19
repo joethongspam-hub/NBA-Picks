@@ -1,0 +1,524 @@
+[
+ {
+  "game_id": "401910022",
+  "game": "LAC @ SA",
+  "player": "Keldon Johnson",
+  "player_id": "4395723",
+  "team": "SA",
+  "opp": "LAC",
+  "stat": "PTS",
+  "side": "UNDER",
+  "line": 11.5,
+  "line_source": "DraftKings",
+  "price": -107,
+  "projection": 9.2,
+  "prob": 0.607,
+  "edge": 0.09,
+  "score": 8.6,
+  "grade": "A",
+  "hit_l5": "4/5",
+  "hit_l10": "8/10",
+  "hit_season": "12/15",
+  "vs_opp": "2/3",
+  "minutes": 25.6,
+  "status": "ACTIVE",
+  "season_avg": 9.9,
+  "l10_avg": 8.1,
+  "reasons": [
+   "Implied team total 120.5 (high vs slate avg 112.0)",
+   "Under hit 8/10 of last 10 at 11.5",
+   "Last game: 4 (under the line)",
+   "Last 3 vs LAC: 13, 8, 10"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 4.0,
+  "open_line": 11.5,
+  "open_price": -101,
+  "books": {
+   "DraftKings": [
+    11.5,
+    -107
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 4.815
+  }
+ },
+ {
+  "game_id": "401910019",
+  "game": "GS @ MEM",
+  "player": "Brandin Podziemski",
+  "player_id": "4709138",
+  "team": "GS",
+  "opp": "MEM",
+  "stat": "PA",
+  "side": "UNDER",
+  "line": 20.5,
+  "line_source": "DraftKings",
+  "price": -114,
+  "projection": 17.2,
+  "prob": 0.62,
+  "edge": 0.087,
+  "score": 8.39,
+  "grade": "A",
+  "hit_l5": "3/5",
+  "hit_l10": "5/10",
+  "hit_season": "6/13",
+  "vs_opp": "0/4",
+  "minutes": 29.5,
+  "status": "ACTIVE",
+  "season_avg": 18.7,
+  "l10_avg": 19.7,
+  "reasons": [
+   "Back-to-back",
+   "Under hit 5/10 of last 10 at 20.5",
+   "Last game: 14 (under the line)",
+   "Last 4 vs MEM: 21, 25, 21, 29"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 14.0,
+  "open_line": 20.5,
+  "open_price": -118,
+  "books": {
+   "DraftKings": [
+    20.5,
+    -114
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 6.21
+  }
+ },
+ {
+  "game_id": "401910022",
+  "game": "LAC @ SA",
+  "player": "De'Aaron Fox",
+  "player_id": "4066259",
+  "team": "SA",
+  "opp": "LAC",
+  "stat": "PA",
+  "side": "UNDER",
+  "line": 21.5,
+  "line_source": "DraftKings",
+  "price": -108,
+  "projection": 18.0,
+  "prob": 0.633,
+  "edge": 0.114,
+  "score": 8.12,
+  "grade": "B",
+  "hit_l5": "4/5",
+  "hit_l10": "8/10",
+  "hit_season": "10/14",
+  "vs_opp": "0/3",
+  "minutes": 30.0,
+  "status": "ACTIVE",
+  "season_avg": 20.6,
+  "l10_avg": 16.6,
+  "reasons": [
+   "Projected 30-34 minutes: grade lowered one level (21-25 on real lines)",
+   "Implied team total 120.5 (high vs slate avg 112.0)",
+   "Under hit 8/10 of last 10 at 21.5",
+   "Last game: 8 (under the line)",
+   "Last 3 vs LAC: 27, 24, 28"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 8.0,
+  "open_line": 20.5,
+  "open_price": -104,
+  "books": {
+   "DraftKings": [
+    21.5,
+    -108
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 5.712
+  }
+ },
+ {
+  "game_id": "401910021",
+  "game": "NY @ MIN",
+  "player": "LaMelo Ball",
+  "player_id": "4432816",
+  "team": "MIN",
+  "opp": "NY",
+  "stat": "PRA",
+  "side": "UNDER",
+  "line": 29.5,
+  "line_source": "DraftKings",
+  "price": -115,
+  "projection": 25.6,
+  "prob": 0.618,
+  "edge": 0.084,
+  "score": 8.11,
+  "grade": "A",
+  "hit_l5": "2/5",
+  "hit_l10": "4/10",
+  "hit_season": "9/15",
+  "vs_opp": "1/4",
+  "minutes": 27.5,
+  "status": "ACTIVE",
+  "season_avg": 29.3,
+  "l10_avg": 29.9,
+  "reasons": [
+   "Implied team total 107.0 (low vs slate avg 112.0)",
+   "NY limits assists to Gs (-9% vs expected)",
+   "Under hit 4/10 of last 10 at 29.5",
+   "Last game: 29 (under the line)",
+   "Last 4 vs NY: 32, 33, 51, 21"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 29.0,
+  "open_line": 29.5,
+  "open_price": -107,
+  "books": {
+   "DraftKings": [
+    29.5,
+    -115
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 7.594
+  }
+ },
+ {
+  "game_id": "401910020",
+  "game": "POR @ MIL",
+  "player": "Tyler Herro",
+  "player_id": "4395725",
+  "team": "MIL",
+  "opp": "POR",
+  "stat": "PRA",
+  "side": "UNDER",
+  "line": 27.5,
+  "line_source": "DraftKings",
+  "price": -107,
+  "projection": 23.9,
+  "prob": 0.596,
+  "edge": 0.079,
+  "score": 7.56,
+  "grade": "B",
+  "hit_l5": "4/5",
+  "hit_l10": "6/10",
+  "hit_season": "7/14",
+  "vs_opp": "0/0",
+  "minutes": 28.2,
+  "status": "ACTIVE",
+  "season_avg": 28.4,
+  "l10_avg": 24.7,
+  "reasons": [
+   "POR limits assists to Gs (-6% vs expected)",
+   "Back-to-back",
+   "Under hit 6/10 of last 10 at 27.5",
+   "Last game: 14 (under the line)"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 14.0,
+  "open_line": 28.5,
+  "open_price": -121,
+  "books": {
+   "DraftKings": [
+    27.5,
+    -107
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 8.177
+  }
+ },
+ {
+  "game_id": "401910022",
+  "game": "LAC @ SA",
+  "player": "Stephon Castle",
+  "player_id": "4845367",
+  "team": "SA",
+  "opp": "LAC",
+  "stat": "PRA",
+  "side": "UNDER",
+  "line": 30.5,
+  "line_source": "DraftKings",
+  "price": -111,
+  "projection": 26.2,
+  "prob": 0.623,
+  "edge": 0.097,
+  "score": 7.53,
+  "grade": "B",
+  "hit_l5": "3/5",
+  "hit_l10": "8/10",
+  "hit_season": "11/15",
+  "vs_opp": "2/3",
+  "minutes": 32.0,
+  "status": "ACTIVE",
+  "season_avg": 27.4,
+  "l10_avg": 24.7,
+  "reasons": [
+   "Projected 30-34 minutes: grade lowered one level (21-25 on real lines)",
+   "Implied team total 120.5 (high vs slate avg 112.0)",
+   "Under hit 8/10 of last 10 at 30.5",
+   "Last game: 19 (under the line)",
+   "Last 3 vs LAC: 29, 38, 22"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 19.0,
+  "open_line": 30.5,
+  "open_price": -116,
+  "books": {
+   "DraftKings": [
+    30.5,
+    -111
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 7.875
+  }
+ },
+ {
+  "game_id": "401910019",
+  "game": "GS @ MEM",
+  "player": "Yaxel Lendeborg",
+  "player_id": "5175737",
+  "team": "GS",
+  "opp": "MEM",
+  "stat": "PA",
+  "side": "UNDER",
+  "line": 25.5,
+  "line_source": "DraftKings",
+  "price": -121,
+  "projection": 21.2,
+  "prob": 0.608,
+  "edge": 0.061,
+  "score": 5.94,
+  "grade": "B",
+  "hit_l5": "3/5",
+  "hit_l10": "6/10",
+  "hit_season": "8/15",
+  "vs_opp": "1/1",
+  "minutes": 29.7,
+  "status": "ACTIVE",
+  "season_avg": 23.7,
+  "l10_avg": 22.3,
+  "reasons": [
+   "Back-to-back",
+   "Under hit 6/10 of last 10 at 25.5",
+   "Last game: 17 (under the line)",
+   "Last 1 vs MEM: 24"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 17.0,
+  "open_line": 25.5,
+  "open_price": -119,
+  "books": {
+   "DraftKings": [
+    25.5,
+    -121
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 9.561
+  }
+ },
+ {
+  "game_id": "401910020",
+  "game": "POR @ MIL",
+  "player": "Scoot Henderson",
+  "player_id": "4683678",
+  "team": "POR",
+  "opp": "MIL",
+  "stat": "PRA",
+  "side": "UNDER",
+  "line": 16.5,
+  "line_source": "DraftKings",
+  "price": -124,
+  "projection": 13.2,
+  "prob": 0.613,
+  "edge": 0.059,
+  "score": 5.84,
+  "grade": "B",
+  "hit_l5": "5/5",
+  "hit_l10": "9/10",
+  "hit_season": "12/14",
+  "vs_opp": "0/1",
+  "minutes": 23.2,
+  "status": "ACTIVE",
+  "season_avg": 15.3,
+  "l10_avg": 12.1,
+  "reasons": [
+   "Implied team total 120.0 (high vs slate avg 112.0)",
+   "Under hit 9/10 of last 10 at 16.5",
+   "Last game: 11 (under the line)",
+   "Last 1 vs MIL: 30"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 11.0,
+  "open_line": 16.5,
+  "open_price": -117,
+  "books": {
+   "DraftKings": [
+    16.5,
+    -124
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 7.161
+  }
+ },
+ {
+  "game_id": "401910020",
+  "game": "POR @ MIL",
+  "player": "Donovan Clingan",
+  "player_id": "5105565",
+  "team": "POR",
+  "opp": "MIL",
+  "stat": "PR",
+  "side": "UNDER",
+  "line": 25.5,
+  "line_source": "DraftKings",
+  "price": -113,
+  "projection": 22.8,
+  "prob": 0.585,
+  "edge": 0.055,
+  "score": 5.07,
+  "grade": "B",
+  "hit_l5": "5/5",
+  "hit_l10": "7/10",
+  "hit_season": "11/14",
+  "vs_opp": "1/2",
+  "minutes": 27.5,
+  "status": "ACTIVE",
+  "season_avg": 22.2,
+  "l10_avg": 22.7,
+  "reasons": [
+   "Implied team total 120.0 (high vs slate avg 112.0)",
+   "Under hit 7/10 of last 10 at 25.5",
+   "Last game: 24 (under the line)",
+   "Last 2 vs MIL: 29, 25"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 24.0,
+  "open_line": 25.5,
+  "open_price": -126,
+  "books": {
+   "DraftKings": [
+    25.5,
+    -113
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 7.255
+  }
+ },
+ {
+  "game_id": "401910019",
+  "game": "GS @ MEM",
+  "player": "Al Horford",
+  "player_id": "3213",
+  "team": "GS",
+  "opp": "MEM",
+  "stat": "PRA",
+  "side": "UNDER",
+  "line": 12.5,
+  "line_source": "DraftKings",
+  "price": -119,
+  "projection": 9.3,
+  "prob": 0.615,
+  "edge": 0.072,
+  "score": 3.92,
+  "grade": "B",
+  "hit_l5": "4/5",
+  "hit_l10": "6/10",
+  "hit_season": "8/12",
+  "vs_opp": "1/3",
+  "minutes": 16.1,
+  "status": "QUESTIONABLE",
+  "season_avg": 12.3,
+  "l10_avg": 10.0,
+  "reasons": [
+   "Listed Day-To-Day: Back  - Horford (back) is out for Wednesday's game against the Mavericks, but will play Thursday against the Grizzlies, Nick Friedell of The Athletic reports.",
+   "Back-to-back",
+   "Under hit 6/10 of last 10 at 12.5",
+   "Last game: 5 (under the line)",
+   "Last 3 vs MEM: 8, 20, 31"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 5.0,
+  "open_line": 13.5,
+  "open_price": -121,
+  "books": {
+   "DraftKings": [
+    12.5,
+    -119
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 6.629
+  }
+ },
+ {
+  "game_id": "401910021",
+  "game": "NY @ MIN",
+  "player": "Jonathan Kuminga",
+  "player_id": "4433247",
+  "team": "MIN",
+  "opp": "NY",
+  "stat": "PA",
+  "side": "UNDER",
+  "line": 15.5,
+  "line_source": "DraftKings",
+  "price": -115,
+  "projection": 13.1,
+  "prob": 0.599,
+  "edge": 0.065,
+  "score": 3.67,
+  "grade": "B",
+  "hit_l5": "3/5",
+  "hit_l10": "5/10",
+  "hit_season": "8/14",
+  "vs_opp": "3/5",
+  "minutes": 27.3,
+  "status": "QUESTIONABLE",
+  "season_avg": 14.9,
+  "l10_avg": 15.6,
+  "reasons": [
+   "Implied team total 107.0 (low vs slate avg 112.0)",
+   "Listed Day-To-Day: Shoulder  - Kuminga (shoulder) is questionable for Thursday's game against the Knicks, Charlie Walton of ZoneCoverage.com reports.",
+   "Under hit 5/10 of last 10 at 15.5",
+   "Last game: 14 (under the line)",
+   "Last 5 vs NY: 14, 14, 10, 21, 20"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 14.0,
+  "open_line": 15.5,
+  "open_price": -104,
+  "books": {
+   "DraftKings": [
+    15.5,
+    -115
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 5.681
+  }
+ }
+]

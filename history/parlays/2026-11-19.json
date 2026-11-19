@@ -1,0 +1,199 @@
+[
+ {
+  "legs": [
+   {
+    "game_id": "401910022",
+    "game": "LAC @ SA",
+    "player": "De'Aaron Fox",
+    "player_id": "4066259",
+    "team": "SA",
+    "opp": "LAC",
+    "stat": "PA",
+    "side": "UNDER",
+    "line": 21.5,
+    "price": -108,
+    "prob": 0.633,
+    "edge": 0.114,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      21.5,
+      -108
+     ]
+    },
+    "projection": 18.0,
+    "dist": {
+     "k": "normal",
+     "sd": 5.712
+    }
+   }
+  ],
+  "hit": 0.633,
+  "payout": 1.93,
+  "odds": -108,
+  "ev": 0.219,
+  "type": "double",
+  "label": "Double up",
+  "made": "2026-11-19T12:38:46.508549-05:00"
+ },
+ {
+  "legs": [
+   {
+    "game_id": "401910022",
+    "game": "LAC @ SA",
+    "player": "Stephon Castle",
+    "player_id": "4845367",
+    "team": "SA",
+    "opp": "LAC",
+    "stat": "PRA",
+    "side": "UNDER",
+    "line": 30.5,
+    "price": -111,
+    "prob": 0.623,
+    "edge": 0.097,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      30.5,
+      -111
+     ]
+    },
+    "projection": 26.2,
+    "dist": {
+     "k": "normal",
+     "sd": 7.875
+    }
+   }
+  ],
+  "hit": 0.623,
+  "payout": 1.9,
+  "odds": -111,
+  "ev": 0.184,
+  "type": "double2",
+  "label": "Double up #2",
+  "made": "2026-11-19T12:38:46.508549-05:00"
+ },
+ {
+  "legs": [
+   {
+    "game_id": "401910022",
+    "game": "LAC @ SA",
+    "player": "De'Aaron Fox",
+    "player_id": "4066259",
+    "team": "SA",
+    "opp": "LAC",
+    "stat": "PA",
+    "side": "UNDER",
+    "line": 21.5,
+    "price": -108,
+    "prob": 0.633,
+    "edge": 0.114,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      21.5,
+      -108
+     ]
+    },
+    "projection": 18.0,
+    "dist": {
+     "k": "normal",
+     "sd": 5.712
+    }
+   },
+   {
+    "game_id": "401910019",
+    "game": "GS @ MEM",
+    "player": "Brandin Podziemski",
+    "player_id": "4709138",
+    "team": "GS",
+    "opp": "MEM",
+    "stat": "PA",
+    "side": "UNDER",
+    "line": 20.5,
+    "price": -114,
+    "prob": 0.62,
+    "edge": 0.087,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      20.5,
+      -114
+     ]
+    },
+    "projection": 17.2,
+    "dist": {
+     "k": "normal",
+     "sd": 6.21
+    }
+   },
+   {
+    "game_id": "401910021",
+    "game": "NY @ MIN",
+    "player": "LaMelo Ball",
+    "player_id": "4432816",
+    "team": "MIN",
+    "opp": "NY",
+    "stat": "PRA",
+    "side": "UNDER",
+    "line": 29.5,
+    "price": -115,
+    "prob": 0.618,
+    "edge": 0.084,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      29.5,
+      -115
+     ]
+    },
+    "projection": 25.6,
+    "dist": {
+     "k": "normal",
+     "sd": 7.594
+    }
+   },
+   {
+    "game_id": "401910020",
+    "game": "POR @ MIL",
+    "player": "Scoot Henderson",
+    "player_id": "4683678",
+    "team": "POR",
+    "opp": "MIL",
+    "stat": "PRA",
+    "side": "UNDER",
+    "line": 16.5,
+    "price": -124,
+    "prob": 0.613,
+    "edge": 0.059,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      16.5,
+      -124
+     ]
+    },
+    "projection": 13.2,
+    "dist": {
+     "k": "normal",
+     "sd": 7.161
+    }
+   }
+  ],
+  "hit": 0.1487,
+  "payout": 12.21,
+  "odds": 1121,
+  "ev": 0.815,
+  "type": "allgames",
+  "label": "One per game",
+  "missing": [],
+  "games_total": 4,
+  "made": "2026-11-19T12:38:46.508549-05:00"
+ }
+]
