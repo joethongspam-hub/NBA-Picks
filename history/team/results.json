@@ -2945,6 +2945,32 @@
    "date": "2026-11-18",
    "final": "LAL 97 \u2013 UTAH 109",
    "result": "LOSS"
+  },
+  {
+   "game_id": "401910022",
+   "game": "LAC @ SA",
+   "market": "Spread",
+   "pick": "LAC +15.5",
+   "side": "away",
+   "line": -15.5,
+   "price": -112,
+   "prob": 0.576,
+   "model_prob": 0.708,
+   "edge": 0.047,
+   "grade": "B",
+   "proj": "SA 107.6 \u2013 LAC 98.9",
+   "mu_h": 107.6,
+   "mu_a": 98.94,
+   "home": "SA",
+   "away": "LAC",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "SA injuries (Harper): -4.3 pts"
+   ],
+   "score": 4.72,
+   "date": "2026-11-19",
+   "final": "SA 124 \u2013 LAC 112",
+   "result": "WIN"
   }
  ]
 }
