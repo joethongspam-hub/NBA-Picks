@@ -8,10 +8,10 @@
    "pick": "BKN +6.5",
    "side": "home",
    "line": 6.5,
-   "price": -109,
-   "prob": 0.562,
+   "price": -108,
+   "prob": 0.561,
    "model_prob": 0.683,
-   "edge": 0.041,
+   "edge": 0.042,
    "grade": "B",
    "proj": "BKN 112.0 \u2013 ORL 112.6",
    "mu_h": 112.01,
@@ -21,7 +21,7 @@
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
    ],
-   "score": 4.1
+   "score": 4.18
   },
   {
    "game_id": "401909307",
@@ -97,10 +97,10 @@
    "pick": "HOU +1.5",
    "side": "away",
    "line": -1.5,
-   "price": -110,
-   "prob": 0.56,
+   "price": -105,
+   "prob": 0.552,
    "model_prob": 0.67,
-   "edge": 0.036,
+   "edge": 0.04,
    "grade": "B",
    "proj": "DEN 110.5 \u2013 HOU 114.5",
    "mu_h": 110.46,
@@ -110,30 +110,7 @@
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
    ],
-   "score": 3.57
-  },
-  {
-   "game_id": "401909313",
-   "game": "SAC @ LAL",
-   "market": "Spread",
-   "pick": "SAC +14.5",
-   "side": "away",
-   "line": -14.5,
-   "price": -110,
-   "prob": 0.55,
-   "model_prob": 0.642,
-   "edge": 0.026,
-   "grade": "C",
-   "proj": "LAL 119.3 \u2013 SAC 109.3",
-   "mu_h": 119.27,
-   "mu_a": 109.33,
-   "home": "LAL",
-   "away": "SAC",
-   "notes": [
-    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
-    "LAL injuries (Reaves): -1.2 pts"
-   ],
-   "score": 2.61
+   "score": 4.03
   }
  ]
 }
