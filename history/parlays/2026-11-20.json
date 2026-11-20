@@ -1,0 +1,179 @@
+[
+ {
+  "legs": [
+   {
+    "game_id": "401909308",
+    "game": "TOR @ DET",
+    "player": "Jakob Poeltl",
+    "player_id": "3134908",
+    "team": "TOR",
+    "opp": "DET",
+    "stat": "PR",
+    "side": "UNDER",
+    "line": 18.5,
+    "price": -112,
+    "prob": 0.625,
+    "edge": 0.097,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      18.5,
+      -112
+     ]
+    },
+    "projection": 14.7,
+    "dist": {
+     "k": "normal",
+     "sd": 6.817
+    }
+   }
+  ],
+  "hit": 0.625,
+  "payout": 1.89,
+  "odds": -112,
+  "ev": 0.183,
+  "type": "double",
+  "label": "Double up",
+  "made": "2026-11-20T12:40:33.374837-05:00"
+ },
+ {
+  "legs": [
+   {
+    "game_id": "401909308",
+    "game": "TOR @ DET",
+    "player": "Cade Cunningham",
+    "player_id": "4432166",
+    "team": "DET",
+    "opp": "TOR",
+    "stat": "PRA",
+    "side": "UNDER",
+    "line": 39.5,
+    "price": -108,
+    "prob": 0.572,
+    "edge": 0.052,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      39.5,
+      -108
+     ]
+    },
+    "projection": 36.2,
+    "dist": {
+     "k": "normal",
+     "sd": 10.142
+    }
+   }
+  ],
+  "hit": 0.572,
+  "payout": 1.93,
+  "odds": -108,
+  "ev": 0.102,
+  "type": "double2",
+  "label": "Double up #2",
+  "made": "2026-11-20T12:40:33.374837-05:00"
+ },
+ {
+  "legs": [
+   {
+    "game_id": "401909311",
+    "game": "PHX @ UTAH",
+    "player": "Darryn Peterson",
+    "player_id": "5041955",
+    "team": "UTAH",
+    "opp": "PHX",
+    "stat": "PRA",
+    "side": "UNDER",
+    "line": 27.5,
+    "price": -119,
+    "prob": 0.633,
+    "edge": 0.089,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      27.5,
+      -119
+     ]
+    },
+    "projection": 23.5,
+    "dist": {
+     "k": "normal",
+     "sd": 7.122
+    }
+   },
+   {
+    "game_id": "401909308",
+    "game": "TOR @ DET",
+    "player": "Jakob Poeltl",
+    "player_id": "3134908",
+    "team": "TOR",
+    "opp": "DET",
+    "stat": "PR",
+    "side": "UNDER",
+    "line": 18.5,
+    "price": -112,
+    "prob": 0.625,
+    "edge": 0.097,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      18.5,
+      -112
+     ]
+    },
+    "projection": 14.7,
+    "dist": {
+     "k": "normal",
+     "sd": 6.817
+    }
+   },
+   {
+    "game_id": "401909313",
+    "game": "SAC @ LAL",
+    "player": "Malik Monk",
+    "player_id": "4066262",
+    "team": "SAC",
+    "opp": "LAL",
+    "stat": "PA",
+    "side": "UNDER",
+    "line": 15.5,
+    "price": -116,
+    "prob": 0.587,
+    "edge": 0.05,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      15.5,
+      -116
+     ]
+    },
+    "projection": 12.3,
+    "dist": {
+     "k": "normal",
+     "sd": 8.709
+    }
+   }
+  ],
+  "hit": 0.2322,
+  "payout": 6.49,
+  "odds": 549,
+  "ev": 0.506,
+  "type": "allgames",
+  "label": "One per game",
+  "missing": [
+   "401909305",
+   "401909306",
+   "401909307",
+   "401909309",
+   "401909310",
+   "401909312"
+  ],
+  "games_total": 9,
+  "made": "2026-11-20T12:40:33.374837-05:00"
+ }
+]

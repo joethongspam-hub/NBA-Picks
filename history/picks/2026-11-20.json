@@ -1,0 +1,284 @@
+[
+ {
+  "game_id": "401909311",
+  "game": "PHX @ UTAH",
+  "player": "Darryn Peterson",
+  "player_id": "5041955",
+  "team": "UTAH",
+  "opp": "PHX",
+  "stat": "PRA",
+  "side": "UNDER",
+  "line": 27.5,
+  "line_source": "DraftKings",
+  "price": -119,
+  "projection": 23.5,
+  "prob": 0.633,
+  "edge": 0.089,
+  "score": 8.75,
+  "grade": "A",
+  "hit_l5": "3/5",
+  "hit_l10": "5/10",
+  "hit_season": "11/16",
+  "vs_opp": "0/0",
+  "minutes": 28.9,
+  "status": "ACTIVE",
+  "season_avg": 24.2,
+  "l10_avg": 26.5,
+  "reasons": [
+   "Implied team total 110.5 (low vs slate avg 113.4)",
+   "Under hit 5/10 of last 10 at 27.5",
+   "Last game: 15 (under the line)"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 15.0,
+  "open_line": 27.5,
+  "open_price": -126,
+  "books": {
+   "DraftKings": [
+    27.5,
+    -119
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 7.122
+  }
+ },
+ {
+  "game_id": "401909308",
+  "game": "TOR @ DET",
+  "player": "Jakob Poeltl",
+  "player_id": "3134908",
+  "team": "TOR",
+  "opp": "DET",
+  "stat": "PR",
+  "side": "UNDER",
+  "line": 18.5,
+  "line_source": "DraftKings",
+  "price": -112,
+  "projection": 14.7,
+  "prob": 0.625,
+  "edge": 0.097,
+  "score": 7.93,
+  "grade": "A",
+  "hit_l5": "5/5",
+  "hit_l10": "7/10",
+  "hit_season": "10/13",
+  "vs_opp": "2/3",
+  "minutes": 27.8,
+  "status": "ACTIVE",
+  "season_avg": 15.7,
+  "l10_avg": 16.6,
+  "reasons": [
+   "Implied team total 105.0 (low vs slate avg 113.4)",
+   "Under hit 7/10 of last 10 at 18.5",
+   "Last game: 17 (under the line)",
+   "Last 3 vs DET: 17, 39, 15"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 17.0,
+  "open_line": 19.5,
+  "open_price": -121,
+  "books": {
+   "DraftKings": [
+    18.5,
+    -112
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 6.817
+  }
+ },
+ {
+  "game_id": "401909308",
+  "game": "TOR @ DET",
+  "player": "Scottie Barnes",
+  "player_id": "4433134",
+  "team": "TOR",
+  "opp": "DET",
+  "stat": "PA",
+  "side": "UNDER",
+  "line": 27.5,
+  "line_source": "DraftKings",
+  "price": -105,
+  "projection": 24.6,
+  "prob": 0.57,
+  "edge": 0.058,
+  "score": 5.81,
+  "grade": "B",
+  "hit_l5": "2/5",
+  "hit_l10": "3/10",
+  "hit_season": "3/10",
+  "vs_opp": "3/3",
+  "minutes": 39.9,
+  "status": "ACTIVE",
+  "season_avg": 26.3,
+  "l10_avg": 28.5,
+  "reasons": [
+   "Implied team total 105.0 (low vs slate avg 113.4)",
+   "DET limits assists to Fs (-5% vs expected)",
+   "Under hit 3/10 of last 10 at 27.5",
+   "Last game: 22 (under the line)",
+   "Last 3 vs DET: 17, 22, 22"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 22.0,
+  "open_line": 28.5,
+  "open_price": -116,
+  "books": {
+   "DraftKings": [
+    27.5,
+    -105
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 8.591
+  }
+ },
+ {
+  "game_id": "401909311",
+  "game": "PHX @ UTAH",
+  "player": "Jaxson Hayes",
+  "player_id": "4397077",
+  "team": "UTAH",
+  "opp": "PHX",
+  "stat": "PRA",
+  "side": "UNDER",
+  "line": 16.5,
+  "line_source": "DraftKings",
+  "price": -108,
+  "projection": 14.1,
+  "prob": 0.571,
+  "edge": 0.052,
+  "score": 4.4,
+  "grade": "B",
+  "hit_l5": "2/5",
+  "hit_l10": "5/10",
+  "hit_season": "7/13",
+  "vs_opp": "3/4",
+  "minutes": 21.1,
+  "status": "ACTIVE",
+  "season_avg": 14.5,
+  "l10_avg": 16.0,
+  "reasons": [
+   "Implied team total 110.5 (low vs slate avg 113.4)",
+   "Under hit 5/10 of last 10 at 16.5",
+   "Last game: 15 (under the line)",
+   "Last 4 vs PHX: 15, 3, 23, 8"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 15.0,
+  "open_line": 16.5,
+  "open_price": -125,
+  "books": {
+   "DraftKings": [
+    16.5,
+    -108
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 7.317
+  }
+ },
+ {
+  "game_id": "401909313",
+  "game": "SAC @ LAL",
+  "player": "Malik Monk",
+  "player_id": "4066262",
+  "team": "SAC",
+  "opp": "LAL",
+  "stat": "PA",
+  "side": "UNDER",
+  "line": 15.5,
+  "line_source": "DraftKings",
+  "price": -116,
+  "projection": 12.3,
+  "prob": 0.587,
+  "edge": 0.05,
+  "score": 3.42,
+  "grade": "B",
+  "hit_l5": "4/5",
+  "hit_l10": "6/10",
+  "hit_season": "9/13",
+  "vs_opp": "2/5",
+  "minutes": 17.7,
+  "status": "ACTIVE",
+  "season_avg": 13.5,
+  "l10_avg": 13.7,
+  "reasons": [
+   "Implied team total 107.5 (low vs slate avg 113.4)",
+   "Under hit 6/10 of last 10 at 15.5",
+   "Last game: 10 (under the line)",
+   "Last 5 vs LAL: 16, 12, 34, 13, 17"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 10.0,
+  "open_line": 15.5,
+  "open_price": -116,
+  "books": {
+   "DraftKings": [
+    15.5,
+    -116
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 8.709
+  }
+ },
+ {
+  "game_id": "401909308",
+  "game": "TOR @ DET",
+  "player": "Cade Cunningham",
+  "player_id": "4432166",
+  "team": "DET",
+  "opp": "TOR",
+  "stat": "PRA",
+  "side": "UNDER",
+  "line": 39.5,
+  "line_source": "DraftKings",
+  "price": -108,
+  "projection": 36.2,
+  "prob": 0.572,
+  "edge": 0.052,
+  "score": 2.97,
+  "grade": "B",
+  "hit_l5": "3/5",
+  "hit_l10": "5/10",
+  "hit_season": "7/13",
+  "vs_opp": "0/2",
+  "minutes": 38.0,
+  "status": "QUESTIONABLE",
+  "season_avg": 38.6,
+  "l10_avg": 40.1,
+  "reasons": [
+   "Listed Day-To-Day: Knee Soreness - Cunningham (knee) is expected to play in Friday's game against the Raptors, Blake Murphy of Sportsnet.ca reports.",
+   "Under hit 5/10 of last 10 at 39.5",
+   "Last game: 38 (under the line)",
+   "Last 2 vs TOR: 45, 44"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 38.0,
+  "open_line": 39.5,
+  "open_price": -111,
+  "books": {
+   "DraftKings": [
+    39.5,
+    -108
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 10.142
+  }
+ }
+]
