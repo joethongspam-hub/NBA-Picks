@@ -1,0 +1,228 @@
+[
+ {
+  "legs": [
+   {
+    "game_id": "401910024",
+    "game": "POR @ NY",
+    "player": "Josh Hart",
+    "player_id": "3062679",
+    "team": "NY",
+    "opp": "POR",
+    "stat": "PRA",
+    "side": "UNDER",
+    "line": 21.5,
+    "price": -110,
+    "prob": 0.687,
+    "edge": 0.163,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      21.5,
+      -110
+     ]
+    },
+    "projection": 15.8,
+    "dist": {
+     "k": "normal",
+     "sd": 6.281
+    }
+   }
+  ],
+  "hit": 0.687,
+  "payout": 1.91,
+  "odds": -110,
+  "ev": 0.312,
+  "type": "double",
+  "label": "Double up",
+  "made": "2026-11-21T12:25:34.590093-05:00"
+ },
+ {
+  "legs": [
+   {
+    "game_id": "401910024",
+    "game": "POR @ NY",
+    "player": "Jalen Brunson",
+    "player_id": "3934672",
+    "team": "NY",
+    "opp": "POR",
+    "stat": "PRA",
+    "side": "UNDER",
+    "line": 38.5,
+    "price": -107,
+    "prob": 0.617,
+    "edge": 0.1,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      38.5,
+      -107
+     ]
+    },
+    "projection": 34.3,
+    "dist": {
+     "k": "normal",
+     "sd": 7.797
+    }
+   }
+  ],
+  "hit": 0.617,
+  "payout": 1.93,
+  "odds": -107,
+  "ev": 0.194,
+  "type": "double2",
+  "label": "Double up #2",
+  "made": "2026-11-21T12:25:34.590093-05:00"
+ },
+ {
+  "legs": [
+   {
+    "game_id": "401910024",
+    "game": "POR @ NY",
+    "player": "Josh Hart",
+    "player_id": "3062679",
+    "team": "NY",
+    "opp": "POR",
+    "stat": "PRA",
+    "side": "UNDER",
+    "line": 21.5,
+    "price": -110,
+    "prob": 0.687,
+    "edge": 0.163,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      21.5,
+      -110
+     ]
+    },
+    "projection": 15.8,
+    "dist": {
+     "k": "normal",
+     "sd": 6.281
+    }
+   },
+   {
+    "game_id": "401910028",
+    "game": "BOS @ SAC",
+    "player": "Paul George",
+    "player_id": "4251",
+    "team": "BOS",
+    "opp": "SAC",
+    "stat": "PRA",
+    "side": "UNDER",
+    "line": 33.5,
+    "price": -121,
+    "prob": 0.67,
+    "edge": 0.123,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      33.5,
+      -121
+     ]
+    },
+    "projection": 27.4,
+    "dist": {
+     "k": "normal",
+     "sd": 8.06
+    }
+   },
+   {
+    "game_id": "401910025",
+    "game": "LAC @ DAL",
+    "player": "Kris Dunn",
+    "player_id": "2991139",
+    "team": "LAC",
+    "opp": "DAL",
+    "stat": "PR",
+    "side": "OVER",
+    "line": 7.5,
+    "price": -130,
+    "prob": 0.629,
+    "edge": 0.064,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      7.5,
+      -130
+     ]
+    },
+    "projection": 9.7,
+    "dist": {
+     "k": "normal",
+     "sd": 4.211
+    }
+   },
+   {
+    "game_id": "401910023",
+    "game": "MIL @ PHI",
+    "player": "Tyler Herro",
+    "player_id": "4395725",
+    "team": "MIL",
+    "opp": "PHI",
+    "stat": "PRA",
+    "side": "UNDER",
+    "line": 28.5,
+    "price": -108,
+    "prob": 0.613,
+    "edge": 0.094,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      28.5,
+      -108
+     ]
+    },
+    "projection": 24.7,
+    "dist": {
+     "k": "normal",
+     "sd": 7.404
+    }
+   },
+   {
+    "game_id": "401910026",
+    "game": "MEM @ MIN",
+    "player": "Cam Spencer",
+    "player_id": "4433083",
+    "team": "MEM",
+    "opp": "MIN",
+    "stat": "PA",
+    "side": "OVER",
+    "line": 15.5,
+    "price": -117,
+    "prob": 0.6,
+    "edge": 0.061,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      15.5,
+      -117
+     ]
+    },
+    "projection": 18.2,
+    "dist": {
+     "k": "normal",
+     "sd": 6.445
+    }
+   }
+  ],
+  "hit": 0.1065,
+  "payout": 22.04,
+  "odds": 2104,
+  "ev": 1.347,
+  "type": "allgames",
+  "label": "One per game",
+  "missing": [
+   "401910027"
+  ],
+  "games_total": 6,
+  "made": "2026-11-21T12:25:34.590093-05:00"
+ }
+]

@@ -1,0 +1,97 @@
+{
+ "made": "2026-11-21T12:25:34.590093-05:00",
+ "picks": [
+  {
+   "game_id": "401910025",
+   "game": "LAC @ DAL",
+   "market": "Spread",
+   "pick": "DAL -5.5",
+   "side": "home",
+   "line": -5.5,
+   "price": -110,
+   "prob": 0.539,
+   "model_prob": 0.612,
+   "edge": 0.016,
+   "grade": "C",
+   "proj": "DAL 114.1 \u2013 LAC 105.0",
+   "mu_h": 114.06,
+   "mu_a": 104.99,
+   "home": "DAL",
+   "away": "LAC",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
+   ],
+   "score": 1.56
+  },
+  {
+   "game_id": "401910026",
+   "game": "MEM @ MIN",
+   "market": "Moneyline",
+   "pick": "MIN ML",
+   "side": "home",
+   "line": null,
+   "price": -237,
+   "prob": 0.727,
+   "model_prob": 0.824,
+   "edge": 0.024,
+   "grade": "C",
+   "proj": "MIN 112.8 \u2013 MEM 101.2",
+   "mu_h": 112.82,
+   "mu_a": 101.2,
+   "home": "MIN",
+   "away": "MEM",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "MIN injuries (Clark): -0.5 pts",
+    "MEM injuries (Boozer, Grant, Jackson): -10.7 pts"
+   ],
+   "score": 2.41
+  },
+  {
+   "game_id": "401910026",
+   "game": "MEM @ MIN",
+   "market": "Spread",
+   "pick": "MIN -6.5",
+   "side": "home",
+   "line": -6.5,
+   "price": -108,
+   "prob": 0.553,
+   "model_prob": 0.659,
+   "edge": 0.034,
+   "grade": "B",
+   "proj": "MIN 112.8 \u2013 MEM 101.2",
+   "mu_h": 112.82,
+   "mu_a": 101.2,
+   "home": "MIN",
+   "away": "MEM",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "MIN injuries (Clark): -0.5 pts",
+    "MEM injuries (Boozer, Grant, Jackson): -10.7 pts"
+   ],
+   "score": 3.35
+  },
+  {
+   "game_id": "401910028",
+   "game": "BOS @ SAC",
+   "market": "Spread",
+   "pick": "SAC +13.5",
+   "side": "home",
+   "line": 13.5,
+   "price": -113,
+   "prob": 0.581,
+   "model_prob": 0.718,
+   "edge": 0.05,
+   "grade": "A",
+   "proj": "SAC 104.3 \u2013 BOS 110.6",
+   "mu_h": 104.29,
+   "mu_a": 110.56,
+   "home": "SAC",
+   "away": "BOS",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
+   ],
+   "score": 5.02
+  }
+ ]
+}
