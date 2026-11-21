@@ -35,45 +35,46 @@
   "ev": 0.15,
   "type": "double",
   "label": "Double up",
-  "made": "2026-11-20T17:06:27.740858-05:00"
+  "made": "2026-11-20T17:06:27.740858-05:00",
+  "locked": true
  },
  {
   "legs": [
    {
-    "game_id": "401909312",
-    "game": "HOU @ DEN",
-    "player": "Alperen Sengun",
-    "player_id": "4871144",
-    "team": "HOU",
-    "opp": "DEN",
+    "game_id": "401909311",
+    "game": "PHX @ UTAH",
+    "player": "Darryn Peterson",
+    "player_id": "5041955",
+    "team": "UTAH",
+    "opp": "PHX",
     "stat": "PRA",
     "side": "UNDER",
-    "line": 35.5,
-    "price": -106,
-    "prob": 0.598,
-    "edge": 0.084,
+    "line": 27.5,
+    "price": -114,
+    "prob": 0.629,
+    "edge": 0.096,
     "grade": "A",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
-      35.5,
-      -106
+      27.5,
+      -114
      ]
     },
-    "projection": 31.5,
+    "projection": 23.4,
     "dist": {
      "k": "normal",
-     "sd": 8.801
+     "sd": 7.12
     }
    }
   ],
-  "hit": 0.598,
-  "payout": 1.94,
-  "odds": -106,
-  "ev": 0.162,
+  "hit": 0.629,
+  "payout": 1.88,
+  "odds": -114,
+  "ev": 0.181,
   "type": "double2",
   "label": "Double up #2",
-  "made": "2026-11-20T17:06:27.740858-05:00"
+  "made": "2026-11-20T19:30:19.641110-05:00"
  },
  {
   "legs": [
@@ -252,6 +253,7 @@
    "401909309"
   ],
   "games_total": 9,
-  "made": "2026-11-20T17:06:27.740858-05:00"
+  "made": "2026-11-20T17:06:27.740858-05:00",
+  "locked": true
  }
 ]

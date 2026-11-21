@@ -21,7 +21,8 @@
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
    ],
-   "score": 4.18
+   "score": 4.18,
+   "locked": true
   },
   {
    "game_id": "401909307",
@@ -44,7 +45,31 @@
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "CLE injuries (Mobley, Tyson): -2.4 pts"
    ],
-   "score": 3.1
+   "score": 3.1,
+   "locked": true
+  },
+  {
+   "game_id": "401909309",
+   "game": "WSH @ CHI",
+   "market": "Spread",
+   "pick": "WSH +1.5",
+   "side": "away",
+   "line": -1.5,
+   "price": -102,
+   "prob": 0.54,
+   "model_prob": 0.649,
+   "edge": 0.035,
+   "grade": "B",
+   "proj": "CHI 111.4 \u2013 WSH 114.7",
+   "mu_h": 111.4,
+   "mu_a": 114.67,
+   "home": "CHI",
+   "away": "WSH",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "CHI injuries (Smith, Wilson): -3.6 pts"
+   ],
+   "score": 3.51
   },
   {
    "game_id": "401909311",
@@ -53,10 +78,10 @@
    "pick": "PHX ML",
    "side": "away",
    "line": null,
-   "price": -184,
-   "prob": 0.67,
+   "price": -192,
+   "prob": 0.676,
    "model_prob": 0.758,
-   "edge": 0.022,
+   "edge": 0.018,
    "grade": "C",
    "proj": "UTAH 104.2 \u2013 PHX 112.9",
    "mu_h": 104.17,
@@ -66,7 +91,7 @@
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
    ],
-   "score": 2.19
+   "score": 1.8
   },
   {
    "game_id": "401909311",
@@ -75,10 +100,10 @@
    "pick": "PHX -4.5",
    "side": "away",
    "line": 4.5,
-   "price": -110,
-   "prob": 0.547,
+   "price": -115,
+   "prob": 0.554,
    "model_prob": 0.634,
-   "edge": 0.023,
+   "edge": 0.019,
    "grade": "C",
    "proj": "UTAH 104.2 \u2013 PHX 112.9",
    "mu_h": 104.17,
@@ -88,7 +113,7 @@
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
    ],
-   "score": 2.3
+   "score": 1.89
   },
   {
    "game_id": "401909312",
