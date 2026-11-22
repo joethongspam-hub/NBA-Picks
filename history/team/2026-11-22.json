@@ -5,47 +5,92 @@
    "game_id": "401910032",
    "game": "DEN @ CHI",
    "market": "Spread",
-   "pick": "DEN -9.5",
+   "pick": "DEN -10.5",
    "side": "away",
-   "line": 9.5,
-   "price": -114,
-   "prob": 0.551,
-   "model_prob": 0.629,
-   "edge": 0.018,
-   "grade": "C",
-   "proj": "CHI 100.4 \u2013 DEN 114.0",
-   "mu_h": 100.38,
+   "line": 10.5,
+   "price": -104,
+   "prob": 0.552,
+   "model_prob": 0.674,
+   "edge": 0.042,
+   "grade": "B",
+   "proj": "CHI 97.9 \u2013 DEN 114.0",
+   "mu_h": 97.85,
    "mu_a": 114.0,
    "home": "CHI",
    "away": "DEN",
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
-    "CHI injuries (Powell): -5.4 pts"
+    "CHI injuries (Claxton, Powell): -7.4 pts"
    ],
-   "score": 1.81
+   "score": 4.21
+  },
+  {
+   "game_id": "401910033",
+   "game": "DAL @ UTAH",
+   "market": "Moneyline",
+   "pick": "DAL ML",
+   "side": "away",
+   "line": null,
+   "price": -135,
+   "prob": 0.608,
+   "model_prob": 0.713,
+   "edge": 0.034,
+   "grade": "B",
+   "proj": "UTAH 105.9 \u2013 DAL 113.0",
+   "mu_h": 105.93,
+   "mu_a": 112.97,
+   "home": "UTAH",
+   "away": "DAL",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
+   ],
+   "score": 3.36
+  },
+  {
+   "game_id": "401910033",
+   "game": "DAL @ UTAH",
+   "market": "Spread",
+   "pick": "DAL -2.5",
+   "side": "away",
+   "line": 2.5,
+   "price": -106,
+   "prob": 0.544,
+   "model_prob": 0.642,
+   "edge": 0.029,
+   "grade": "C",
+   "proj": "UTAH 105.9 \u2013 DAL 113.0",
+   "mu_h": 105.93,
+   "mu_a": 112.97,
+   "home": "UTAH",
+   "away": "DAL",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
+   ],
+   "score": 2.94
   },
   {
    "game_id": "401910034",
    "game": "IND @ NY",
    "market": "Spread",
-   "pick": "IND +8.5",
+   "pick": "IND +7.5",
    "side": "away",
-   "line": -8.5,
-   "price": -111,
-   "prob": 0.541,
-   "model_prob": 0.612,
-   "edge": 0.015,
-   "grade": "C",
-   "proj": "NY 109.9 \u2013 IND 104.9",
-   "mu_h": 109.87,
+   "line": -7.5,
+   "price": -110,
+   "prob": 0.577,
+   "model_prob": 0.721,
+   "edge": 0.054,
+   "grade": "A",
+   "proj": "NY 105.1 \u2013 IND 104.9",
+   "mu_h": 105.1,
    "mu_a": 104.92,
    "home": "NY",
    "away": "IND",
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "NY injuries (Anunoby): -3.4 pts",
     "IND injuries (McConnell): -2.2 pts"
    ],
-   "score": 1.52
+   "score": 5.35
   }
  ]
 }
