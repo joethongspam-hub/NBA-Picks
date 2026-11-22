@@ -3125,6 +3125,60 @@
    "date": "2026-11-20",
    "final": "DEN 133 \u2013 HOU 124",
    "result": "LOSS"
+  },
+  {
+   "game_id": "401910026",
+   "game": "MEM @ MIN",
+   "market": "Moneyline",
+   "pick": "MIN ML",
+   "side": "home",
+   "line": null,
+   "price": -218,
+   "prob": 0.716,
+   "model_prob": 0.824,
+   "edge": 0.031,
+   "grade": "B",
+   "proj": "MIN 112.8 \u2013 MEM 101.2",
+   "mu_h": 112.82,
+   "mu_a": 101.21,
+   "home": "MIN",
+   "away": "MEM",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "MIN injuries (Clark): -0.5 pts",
+    "MEM injuries (Boozer, Grant, Jackson): -9.6 pts"
+   ],
+   "score": 3.06,
+   "date": "2026-11-21",
+   "final": "MIN 104 \u2013 MEM 95",
+   "result": "WIN"
+  },
+  {
+   "game_id": "401910026",
+   "game": "MEM @ MIN",
+   "market": "Spread",
+   "pick": "MIN -5.5",
+   "side": "home",
+   "line": -5.5,
+   "price": -108,
+   "prob": 0.563,
+   "model_prob": 0.688,
+   "edge": 0.044,
+   "grade": "B",
+   "proj": "MIN 112.8 \u2013 MEM 101.2",
+   "mu_h": 112.82,
+   "mu_a": 101.21,
+   "home": "MIN",
+   "away": "MEM",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "MIN injuries (Clark): -0.5 pts",
+    "MEM injuries (Boozer, Grant, Jackson): -9.6 pts"
+   ],
+   "score": 4.36,
+   "date": "2026-11-21",
+   "final": "MIN 104 \u2013 MEM 95",
+   "result": "WIN"
   }
  ]
 }
