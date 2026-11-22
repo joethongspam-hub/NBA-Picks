@@ -87,7 +87,11 @@ LAST_GAME_NOTE = "Goes against his last game: not graded (real-line record 32-57
 # Nov 11: user preference: NBA shows over props only. Real-line A/B record Nov 2-9: overs 37-22
 # (62.7%) +13.8u, unders 45-25 (64.3%) +14.5u, so this halves volume without hurting win rate.
 NO_UNDERS = False   # Nov 15: unders back (user wanted more picks); A/B unders were 45-25 on real lines
-UNDER_NOTE = "Unders not offered (NBA shows over props only)"
+# Nov 22 (from the real-line record): players projected 35+ minutes drop one grade (A/B: 12-20,
+# -9.4u; 5-12 since Nov 9), and grade A means a 65%+ model probability (42-22, +11.8u).
+HEAVY_MIN = 35.0
+A_PROB = 0.65
+UNDER_NOTE ="Unders not offered (NBA shows over props only)"
 C_NOTE = "Grade C: not shown (NBA shows grades A and B only; grade C went 16-14 on real lines)"
 CONF_NOTE = "Below the confidence bar (needs a minus-money price and 7+ hits in his last 10 at this line)"
 
@@ -616,6 +620,8 @@ def evaluate(proj: Projection, stats: list[str], lines: dict[tuple[str, str], Pr
             soft.append("Assists: grade lowered one level (17-17 on real lines)")
         if 30 <= proj.minutes < 34:
             soft.append("Projected 30-34 minutes: grade lowered one level (21-25 on real lines)")
+        if proj.minutes >= HEAVY_MIN:
+            soft.append("Projected 35+ minutes: grade lowered one level (12-20 on real lines)")
         for _ in soft:
             grade, score = DEMOTE[grade], score * 0.8
         vs_last = against_last_game(p.logs, lambda g: g.get(s), side, line)
@@ -634,7 +640,11 @@ def evaluate(proj: Projection, stats: list[str], lines: dict[tuple[str, str], Pr
             grade, score = "-", 0.0
         if side == "UNDER" and proj.depleted:
             grade, score = "-", 0.0
-        reasons = list(proj.stat_reasons.get(s, [])) + list(proj.reasons)
+        # Nov 22: grade A = a shown pick with a 65%+ model probability (real lines, A/B: 42-22, 66%,
+        # +11.8u; 60-65% went 29-33 since Nov 9). Everything else that survives is B.
+        if grade in ("A", "B"):
+            grade = "A" if prob >= A_PROB else "B"
+        reasons =list(proj.stat_reasons.get(s, [])) + list(proj.reasons)
         if vs_last:
             reasons.insert(0, LAST_GAME_NOTE)
         if blocked:

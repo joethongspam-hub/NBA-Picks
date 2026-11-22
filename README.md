@@ -87,7 +87,7 @@ Hit chance = product of leg probabilities; value = hit chance × payout − 1. T
 are graded by the results runs (a pushed leg drops out), and have their own track record. The pregame notification
 includes the best-value ticket. Every page also has a **Double up** ticket: a single
 prop priced −115 to −101, or two legs (different games) whose combined odds land between −115 and +120, with the
-highest model hit chance and positive value. Legs must pass every rule, priced down to −400. The NBA page adds a fourth ticket, **One per game**: the most likely qualifying leg
+highest model hit chance and positive value. Legs must pass every rule, priced down to −400. The NBA page used to add a fourth ticket, **One per game** (turned off Nov 22, see below): the most likely qualifying leg
 from every game not yet started (it may reuse legs from the other tickets).
 
 ## Parlay checker
@@ -146,6 +146,17 @@ The NHL page, workflow, code and history were removed at the user's request.
 The NBA Parlays tab now has **Double up #2** next to Double up: the same even-money search, built only from
 players not on the first ticket, so one bad leg can't sink both. If the first ticket locks at tip-off, its
 players stay off #2. Each has its own record line. (`doubles=2` in `PL.update`; the NFL keeps one.)
+
+## NBA: Nov 22 changes (from the real-line record)
+
+* **Grade A = 65%+ model probability.** Shown picks (after every other rule) are grade A when the model gives them
+  65%+ and grade B otherwise. Real-line A/B picks at 65%+ went 42–22 (66%, +11.8u; 27–14 before Nov 9, 15–8 since),
+  while 60–65% went 29–33 (−7.8u) since Nov 9 and the old edge-based grade A went 15–18 after Nov 15.
+  `A_PROB` in `nba_props/model.py`.
+* **Players projected 35+ minutes drop one grade** (A/B 12–20, −9.4u; 5–12 since Nov 9). Several were projected at
+  exactly 40.0 minutes and played 28–37. Players at 34–35 minutes (13–5) are untouched. `HEAVY_MIN` in `nba_props/model.py`.
+* **One per game parlay turned off** (0–10, −10u since Nov 11; legs 18–24). Its past record still shows.
+  `all_games=` in `nba_props/main.py`.
 
 ## NBA: unders back (Nov 15)
 
