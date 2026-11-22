@@ -2,107 +2,16 @@
  "made": "2026-11-21T12:25:34.590093-05:00",
  "picks": [
   {
-   "game_id": "401910024",
-   "game": "POR @ NY",
-   "market": "Spread",
-   "pick": "POR +3.5",
-   "side": "away",
-   "line": -3.5,
-   "price": -120,
-   "prob": 0.582,
-   "model_prob": 0.695,
-   "edge": 0.036,
-   "grade": "B",
-   "proj": "NY 104.3 \u2013 POR 107.2",
-   "mu_h": 104.3,
-   "mu_a": 107.18,
-   "home": "NY",
-   "away": "POR",
-   "notes": [
-    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
-    "NY injuries (Anunoby): -4.2 pts"
-   ],
-   "score": 3.61
-  },
-  {
-   "game_id": "401910025",
-   "game": "LAC @ DAL",
-   "market": "Moneyline",
-   "pick": "DAL ML",
-   "side": "home",
-   "line": null,
-   "price": -196,
-   "prob": 0.682,
-   "model_prob": 0.766,
-   "edge": 0.019,
-   "grade": "C",
-   "proj": "DAL 114.1 \u2013 LAC 105.0",
-   "mu_h": 114.06,
-   "mu_a": 104.99,
-   "home": "DAL",
-   "away": "LAC",
-   "notes": [
-    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
-   ],
-   "score": 1.94
-  },
-  {
-   "game_id": "401910025",
-   "game": "LAC @ DAL",
-   "market": "Spread",
-   "pick": "DAL -4.5",
-   "side": "home",
-   "line": -4.5,
-   "price": -114,
-   "prob": 0.556,
-   "model_prob": 0.643,
-   "edge": 0.023,
-   "grade": "C",
-   "proj": "DAL 114.1 \u2013 LAC 105.0",
-   "mu_h": 114.06,
-   "mu_a": 104.99,
-   "home": "DAL",
-   "away": "LAC",
-   "notes": [
-    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
-   ],
-   "score": 2.29
-  },
-  {
    "game_id": "401910026",
    "game": "MEM @ MIN",
    "market": "Moneyline",
    "pick": "MIN ML",
    "side": "home",
    "line": null,
-   "price": -223,
-   "prob": 0.719,
+   "price": -218,
+   "prob": 0.716,
    "model_prob": 0.824,
-   "edge": 0.029,
-   "grade": "C",
-   "proj": "MIN 112.8 \u2013 MEM 101.2",
-   "mu_h": 112.82,
-   "mu_a": 101.21,
-   "home": "MIN",
-   "away": "MEM",
-   "notes": [
-    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
-    "MIN injuries (Clark): -0.5 pts",
-    "MEM injuries (Boozer, Grant, Jackson): -9.6 pts"
-   ],
-   "score": 2.88
-  },
-  {
-   "game_id": "401910026",
-   "game": "MEM @ MIN",
-   "market": "Spread",
-   "pick": "MIN -6.5",
-   "side": "home",
-   "line": -6.5,
-   "price": -104,
-   "prob": 0.547,
-   "model_prob": 0.659,
-   "edge": 0.037,
+   "edge": 0.031,
    "grade": "B",
    "proj": "MIN 112.8 \u2013 MEM 101.2",
    "mu_h": 112.82,
@@ -114,7 +23,31 @@
     "MIN injuries (Clark): -0.5 pts",
     "MEM injuries (Boozer, Grant, Jackson): -9.6 pts"
    ],
-   "score": 3.73
+   "score": 3.06
+  },
+  {
+   "game_id": "401910026",
+   "game": "MEM @ MIN",
+   "market": "Spread",
+   "pick": "MIN -5.5",
+   "side": "home",
+   "line": -5.5,
+   "price": -108,
+   "prob": 0.563,
+   "model_prob": 0.688,
+   "edge": 0.044,
+   "grade": "B",
+   "proj": "MIN 112.8 \u2013 MEM 101.2",
+   "mu_h": 112.82,
+   "mu_a": 101.21,
+   "home": "MIN",
+   "away": "MEM",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "MIN injuries (Clark): -0.5 pts",
+    "MEM injuries (Boozer, Grant, Jackson): -9.6 pts"
+   ],
+   "score": 4.36
   }
  ]
 }

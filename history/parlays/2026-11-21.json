@@ -2,78 +2,78 @@
  {
   "legs": [
    {
-    "game_id": "401910028",
-    "game": "BOS @ SAC",
-    "player": "Paul George",
-    "player_id": "4251",
-    "team": "BOS",
-    "opp": "SAC",
+    "game_id": "401910024",
+    "game": "POR @ NY",
+    "player": "Josh Hart",
+    "player_id": "3062679",
+    "team": "NY",
+    "opp": "POR",
     "stat": "PRA",
     "side": "UNDER",
-    "line": 36.5,
-    "price": -114,
-    "prob": 0.723,
-    "edge": 0.191,
+    "line": 22.5,
+    "price": -108,
+    "prob": 0.712,
+    "edge": 0.193,
     "grade": "A",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
-      36.5,
-      -114
+      22.5,
+      -108
      ]
     },
-    "projection": 27.3,
+    "projection": 15.7,
     "dist": {
      "k": "normal",
-     "sd": 8.046
+     "sd": 6.249
     }
    }
   ],
-  "hit": 0.723,
-  "payout": 1.88,
-  "odds": -114,
-  "ev": 0.357,
+  "hit": 0.712,
+  "payout": 1.93,
+  "odds": -108,
+  "ev": 0.371,
   "type": "double",
   "label": "Double up",
-  "made": "2026-11-21T16:58:36.606205-05:00"
+  "made": "2026-11-21T19:18:02.463077-05:00"
  },
  {
   "legs": [
    {
     "game_id": "401910028",
     "game": "BOS @ SAC",
-    "player": "Payton Pritchard",
-    "player_id": "4066354",
+    "player": "Baylor Scheierman",
+    "player_id": "4593841",
     "team": "BOS",
     "opp": "SAC",
-    "stat": "PA",
+    "stat": "PRA",
     "side": "UNDER",
-    "line": 27.5,
-    "price": -108,
-    "prob": 0.72,
-    "edge": 0.2,
+    "line": 17.5,
+    "price": -115,
+    "prob": 0.68,
+    "edge": 0.145,
     "grade": "A",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
-      27.5,
-      -108
+      17.5,
+      -115
      ]
     },
-    "projection": 18.6,
+    "projection": 10.6,
     "dist": {
      "k": "normal",
-     "sd": 7.701
+     "sd": 8.201
     }
    }
   ],
-  "hit": 0.72,
-  "payout": 1.93,
-  "odds": -108,
-  "ev": 0.387,
+  "hit": 0.68,
+  "payout": 1.87,
+  "odds": -115,
+  "ev": 0.271,
   "type": "double2",
   "label": "Double up #2",
-  "made": "2026-11-21T16:58:36.606205-05:00"
+  "made": "2026-11-21T19:18:02.463077-05:00"
  },
  {
   "legs": [
