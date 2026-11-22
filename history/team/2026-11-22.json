@@ -1,0 +1,51 @@
+{
+ "made": "2026-11-22T12:26:50.819087-05:00",
+ "picks": [
+  {
+   "game_id": "401910032",
+   "game": "DEN @ CHI",
+   "market": "Spread",
+   "pick": "DEN -9.5",
+   "side": "away",
+   "line": 9.5,
+   "price": -114,
+   "prob": 0.551,
+   "model_prob": 0.629,
+   "edge": 0.018,
+   "grade": "C",
+   "proj": "CHI 100.4 \u2013 DEN 114.0",
+   "mu_h": 100.38,
+   "mu_a": 114.0,
+   "home": "CHI",
+   "away": "DEN",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "CHI injuries (Powell): -5.4 pts"
+   ],
+   "score": 1.81
+  },
+  {
+   "game_id": "401910034",
+   "game": "IND @ NY",
+   "market": "Spread",
+   "pick": "IND +8.5",
+   "side": "away",
+   "line": -8.5,
+   "price": -111,
+   "prob": 0.541,
+   "model_prob": 0.612,
+   "edge": 0.015,
+   "grade": "C",
+   "proj": "NY 109.9 \u2013 IND 104.9",
+   "mu_h": 109.87,
+   "mu_a": 104.92,
+   "home": "NY",
+   "away": "IND",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "IND injuries (McConnell): -2.2 pts"
+   ],
+   "score": 1.52
+  }
+ ]
+}

@@ -1,0 +1,568 @@
+[
+ {
+  "game_id": "401910034",
+  "game": "IND @ NY",
+  "player": "Josh Hart",
+  "player_id": "3062679",
+  "team": "NY",
+  "opp": "IND",
+  "stat": "PRA",
+  "side": "UNDER",
+  "line": 21.5,
+  "line_source": "DraftKings",
+  "price": -119,
+  "projection": 16.8,
+  "prob": 0.668,
+  "edge": 0.124,
+  "score": 12.22,
+  "grade": "A",
+  "hit_l5": "5/5",
+  "hit_l10": "10/10",
+  "hit_season": "10/13",
+  "vs_opp": "1/3",
+  "minutes": 27.7,
+  "status": "ACTIVE",
+  "season_avg": 19.6,
+  "l10_avg": 13.7,
+  "reasons": [
+   "Back-to-back",
+   "Under hit 10/10 of last 10 at 21.5",
+   "Last game: 14 (under the line)",
+   "Last 3 vs IND: 9, 45, 37"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 14.0,
+  "open_line": 22.5,
+  "open_price": -123,
+  "books": {
+   "DraftKings": [
+    21.5,
+    -119
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 6.201
+  }
+ },
+ {
+  "game_id": "401910030",
+  "game": "OKC @ MIA",
+  "player": "Ajay Mitchell",
+  "player_id": "4900671",
+  "team": "OKC",
+  "opp": "MIA",
+  "stat": "PRA",
+  "side": "UNDER",
+  "line": 29.5,
+  "line_source": "DraftKings",
+  "price": -119,
+  "projection": 23.5,
+  "prob": 0.646,
+  "edge": 0.103,
+  "score": 10.22,
+  "grade": "A",
+  "hit_l5": "5/5",
+  "hit_l10": "7/10",
+  "hit_season": "10/14",
+  "vs_opp": "2/2",
+  "minutes": 28.9,
+  "status": "ACTIVE",
+  "season_avg": 22.9,
+  "l10_avg": 24.8,
+  "reasons": [
+   "Under hit 7/10 of last 10 at 29.5",
+   "Last game: 14 (under the line)",
+   "Last 2 vs MIA: 21, 21"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 14.0,
+  "open_line": 29.5,
+  "open_price": -109,
+  "books": {
+   "DraftKings": [
+    29.5,
+    -119
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 9.416
+  }
+ },
+ {
+  "game_id": "401910030",
+  "game": "OKC @ MIA",
+  "player": "Jared McCain",
+  "player_id": "4683778",
+  "team": "OKC",
+  "opp": "MIA",
+  "stat": "PA",
+  "side": "UNDER",
+  "line": 20.5,
+  "line_source": "DraftKings",
+  "price": -115,
+  "projection": 16.0,
+  "prob": 0.633,
+  "edge": 0.098,
+  "score": 9.82,
+  "grade": "A",
+  "hit_l5": "4/5",
+  "hit_l10": "6/10",
+  "hit_season": "10/16",
+  "vs_opp": "1/1",
+  "minutes": 28.6,
+  "status": "ACTIVE",
+  "season_avg": 13.5,
+  "l10_avg": 17.2,
+  "reasons": [
+   "Under hit 6/10 of last 10 at 20.5",
+   "Last game: 18 (under the line)",
+   "Last 1 vs MIA: 17"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 18.0,
+  "open_line": 20.5,
+  "open_price": -108,
+  "books": {
+   "DraftKings": [
+    20.5,
+    -115
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 7.697
+  }
+ },
+ {
+  "game_id": "401910035",
+  "game": "BOS @ GS",
+  "player": "Jayson Tatum",
+  "player_id": "4065648",
+  "team": "BOS",
+  "opp": "GS",
+  "stat": "PR",
+  "side": "UNDER",
+  "line": 35.5,
+  "line_source": "DraftKings",
+  "price": -111,
+  "projection": 29.3,
+  "prob": 0.7,
+  "edge": 0.174,
+  "score": 8.34,
+  "grade": "B",
+  "hit_l5": "3/5",
+  "hit_l10": "6/10",
+  "hit_season": "8/14",
+  "vs_opp": "1/1",
+  "minutes": 30.3,
+  "status": "QUESTIONABLE",
+  "season_avg": 32.7,
+  "l10_avg": 32.5,
+  "reasons": [
+   "Projected 30-34 minutes: grade lowered one level (21-25 on real lines)",
+   "Listed Day-To-Day: Rest  - Tatum (rest) has been ruled out for Saturday's game against the Kings.",
+   "Back-to-back",
+   "Under hit 6/10 of last 10 at 35.5",
+   "Last game: 32 (under the line)",
+   "Last 1 vs GS: 34"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 32.0,
+  "open_line": 35.5,
+  "open_price": -114,
+  "books": {
+   "DraftKings": [
+    35.5,
+    -111
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 6.242
+  }
+ },
+ {
+  "game_id": "401910033",
+  "game": "DAL @ UTAH",
+  "player": "Cooper Flagg",
+  "player_id": "5041939",
+  "team": "DAL",
+  "opp": "UTAH",
+  "stat": "PRA",
+  "side": "UNDER",
+  "line": 37.5,
+  "line_source": "DraftKings",
+  "price": -109,
+  "projection": 31.9,
+  "prob": 0.613,
+  "edge": 0.091,
+  "score": 7.1,
+  "grade": "B",
+  "hit_l5": "4/5",
+  "hit_l10": "6/10",
+  "hit_season": "7/15",
+  "vs_opp": "0/3",
+  "minutes": 30.1,
+  "status": "ACTIVE",
+  "season_avg": 35.2,
+  "l10_avg": 36.0,
+  "reasons": [
+   "Projected 30-34 minutes: grade lowered one level (21-25 on real lines)",
+   "Back-to-back",
+   "Under hit 6/10 of last 10 at 37.5",
+   "Last game: 36 (under the line)",
+   "Last 3 vs UTAH: 38, 44, 55"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 36.0,
+  "open_line": 38.5,
+  "open_price": -121,
+  "books": {
+   "DraftKings": [
+    37.5,
+    -109
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 10.946
+  }
+ },
+ {
+  "game_id": "401910035",
+  "game": "BOS @ GS",
+  "player": "Derrick White",
+  "player_id": "3078576",
+  "team": "BOS",
+  "opp": "GS",
+  "stat": "PRA",
+  "side": "UNDER",
+  "line": 23.5,
+  "line_source": "DraftKings",
+  "price": -122,
+  "projection": 18.8,
+  "prob": 0.673,
+  "edge": 0.124,
+  "score": 6.99,
+  "grade": "A",
+  "hit_l5": "4/5",
+  "hit_l10": "7/10",
+  "hit_season": "10/15",
+  "vs_opp": "2/2",
+  "minutes": 27.2,
+  "status": "QUESTIONABLE",
+  "season_avg": 22.6,
+  "l10_avg": 20.4,
+  "reasons": [
+   "Listed Day-To-Day: Shoulder  - White (shoulder) has been ruled out for Saturday's game against Sacramento.",
+   "Back-to-back",
+   "Under hit 7/10 of last 10 at 23.5",
+   "Last game: 23 (under the line)",
+   "Last 2 vs GS: 18, 23"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 23.0,
+  "open_line": 23.5,
+  "open_price": -122,
+  "books": {
+   "DraftKings": [
+    23.5,
+    -122
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 6.128
+  }
+ },
+ {
+  "game_id": "401910035",
+  "game": "BOS @ GS",
+  "player": "Brandin Podziemski",
+  "player_id": "4709138",
+  "team": "GS",
+  "opp": "BOS",
+  "stat": "AST",
+  "side": "UNDER",
+  "line": 4.5,
+  "line_source": "DraftKings",
+  "price": -151,
+  "projection": 3.1,
+  "prob": 0.69,
+  "edge": 0.089,
+  "score": 6.82,
+  "grade": "B",
+  "hit_l5": "5/5",
+  "hit_l10": "9/10",
+  "hit_season": "10/14",
+  "vs_opp": "0/2",
+  "minutes": 29.7,
+  "status": "ACTIVE",
+  "season_avg": 3.6,
+  "l10_avg": 3.1,
+  "reasons": [
+   "Assists: grade lowered one level (17-17 on real lines)",
+   "Implied team total 101.5 (low vs slate avg 111.5)",
+   "Under hit 9/10 of last 10 at 4.5",
+   "Last game: 2 (under the line)",
+   "Last 2 vs BOS: 5, 6"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 2.0,
+  "open_line": 4.5,
+  "open_price": -158,
+  "books": {
+   "DraftKings": [
+    4.5,
+    -151
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 1.865
+  }
+ },
+ {
+  "game_id": "401910035",
+  "game": "BOS @ GS",
+  "player": "Baylor Scheierman",
+  "player_id": "4593841",
+  "team": "BOS",
+  "opp": "GS",
+  "stat": "PRA",
+  "side": "UNDER",
+  "line": 13.5,
+  "line_source": "DraftKings",
+  "price": -107,
+  "projection": 10.0,
+  "prob": 0.594,
+  "edge": 0.078,
+  "score": 6.27,
+  "grade": "B",
+  "hit_l5": "3/5",
+  "hit_l10": "6/10",
+  "hit_season": "12/16",
+  "vs_opp": "1/2",
+  "minutes": 17.2,
+  "status": "ACTIVE",
+  "season_avg": 10.5,
+  "l10_avg": 11.8,
+  "reasons": [
+   "Back-to-back",
+   "Under hit 6/10 of last 10 at 13.5",
+   "Last game: 8 (under the line)",
+   "Last 2 vs GS: 14, 13"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 8.0,
+  "open_line": 13.5,
+  "open_price": -104,
+  "books": {
+   "DraftKings": [
+    13.5,
+    -107
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 7.99
+  }
+ },
+ {
+  "game_id": "401910031",
+  "game": "ORL @ WSH",
+  "player": "Jalen Suggs",
+  "player_id": "4432165",
+  "team": "ORL",
+  "opp": "WSH",
+  "stat": "PTS",
+  "side": "UNDER",
+  "line": 11.5,
+  "line_source": "DraftKings",
+  "price": -107,
+  "projection": 9.9,
+  "prob": 0.573,
+  "edge": 0.056,
+  "score": 5.4,
+  "grade": "B",
+  "hit_l5": "3/5",
+  "hit_l10": "7/10",
+  "hit_season": "4/7",
+  "vs_opp": "2/3",
+  "minutes": 27.1,
+  "status": "ACTIVE",
+  "season_avg": 11.7,
+  "l10_avg": 8.8,
+  "reasons": [
+   "Under hit 7/10 of last 10 at 11.5",
+   "Last game: 8 (under the line)",
+   "Last 3 vs WSH: 28, 10, 6"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 8.0,
+  "open_line": 11.5,
+  "open_price": -103,
+  "books": {
+   "DraftKings": [
+    11.5,
+    -107
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 4.724
+  }
+ },
+ {
+  "game_id": "401910033",
+  "game": "DAL @ UTAH",
+  "player": "Zaccharie Risacher",
+  "player_id": "5211175",
+  "team": "DAL",
+  "opp": "UTAH",
+  "stat": "REB",
+  "side": "OVER",
+  "line": 3.5,
+  "line_source": "DraftKings",
+  "price": -108,
+  "projection": 4.3,
+  "prob": 0.581,
+  "edge": 0.061,
+  "score": 5.37,
+  "grade": "B",
+  "hit_l5": "3/5",
+  "hit_l10": "6/10",
+  "hit_season": "12/16",
+  "vs_opp": "2/3",
+  "minutes": 21.5,
+  "status": "ACTIVE",
+  "season_avg": 4.4,
+  "l10_avg": 4.1,
+  "reasons": [
+   "Back-to-back",
+   "Over hit 6/10 of last 10 at 3.5",
+   "Last game: 7 (over the line)",
+   "Last 3 vs UTAH: 4, 6, 3"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 7.0,
+  "open_line": 3.5,
+  "open_price": -108,
+  "books": {
+   "DraftKings": [
+    3.5,
+    -108
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 2.17
+  }
+ },
+ {
+  "game_id": "401910035",
+  "game": "BOS @ GS",
+  "player": "Draymond Green",
+  "player_id": "6589",
+  "team": "GS",
+  "opp": "BOS",
+  "stat": "PA",
+  "side": "UNDER",
+  "line": 10.5,
+  "line_source": "DraftKings",
+  "price": -115,
+  "projection": 9.0,
+  "prob": 0.591,
+  "edge": 0.056,
+  "score": 4.95,
+  "grade": "B",
+  "hit_l5": "4/5",
+  "hit_l10": "6/10",
+  "hit_season": "8/13",
+  "vs_opp": "1/2",
+  "minutes": 23.8,
+  "status": "ACTIVE",
+  "season_avg": 11.5,
+  "l10_avg": 9.5,
+  "reasons": [
+   "Implied team total 101.5 (low vs slate avg 111.5)",
+   "Under hit 6/10 of last 10 at 10.5",
+   "Last game: 5 (under the line)",
+   "Last 2 vs BOS: 18, 3"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 5.0,
+  "open_line": 10.5,
+  "open_price": -103,
+  "books": {
+   "DraftKings": [
+    10.5,
+    -115
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 3.807
+  }
+ },
+ {
+  "game_id": "401910034",
+  "game": "IND @ NY",
+  "player": "Aaron Nesmith",
+  "player_id": "4396909",
+  "team": "IND",
+  "opp": "NY",
+  "stat": "PR",
+  "side": "UNDER",
+  "line": 16.5,
+  "line_source": "DraftKings",
+  "price": -123,
+  "projection": 13.5,
+  "prob": 0.602,
+  "edge": 0.05,
+  "score": 4.86,
+  "grade": "B",
+  "hit_l5": "4/5",
+  "hit_l10": "7/10",
+  "hit_season": "10/14",
+  "vs_opp": "2/4",
+  "minutes": 29.0,
+  "status": "ACTIVE",
+  "season_avg": 15.7,
+  "l10_avg": 13.7,
+  "reasons": [
+   "Implied team total 103.0 (low vs slate avg 111.5)",
+   "Under hit 7/10 of last 10 at 16.5",
+   "Last game: 12 (under the line)",
+   "Last 4 vs NY: 25, 15, 14, 19"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 12.0,
+  "open_line": 16.5,
+  "open_price": -122,
+  "books": {
+   "DraftKings": [
+    16.5,
+    -123
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 7.323
+  }
+ }
+]
