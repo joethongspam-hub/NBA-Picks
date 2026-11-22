@@ -19,7 +19,8 @@
    "home": "HOU",
    "away": "IND",
    "notes": [],
-   "score": 4.52
+   "score": 4.52,
+   "locked": true
   },
   {
    "game_id": "401873066",
@@ -39,7 +40,8 @@
    "home": "HOU",
    "away": "IND",
    "notes": [],
-   "score": 3.03
+   "score": 3.03,
+   "locked": true
   },
   {
    "game_id": "401873066",
@@ -59,7 +61,8 @@
    "home": "HOU",
    "away": "IND",
    "notes": [],
-   "score": 2.36
+   "score": 2.36,
+   "locked": true
   },
   {
    "game_id": "401873070",
@@ -68,10 +71,10 @@
    "pick": "MIA ML",
    "side": "away",
    "line": null,
-   "price": 850,
-   "prob": 0.132,
+   "price": 890,
+   "prob": 0.13,
    "model_prob": 0.191,
-   "edge": 0.027,
+   "edge": 0.029,
    "grade": "C",
    "proj": "BUF 29.2 \u2013 MIA 17.4",
    "mu_h": 29.19,
@@ -79,7 +82,7 @@
    "home": "BUF",
    "away": "MIA",
    "notes": [],
-   "score": 2.72
+   "score": 2.88
   },
   {
    "game_id": "401873070",
@@ -88,10 +91,10 @@
    "pick": "MIA +16.5",
    "side": "away",
    "line": -16.5,
-   "price": -112,
-   "prob": 0.551,
+   "price": -108,
+   "prob": 0.545,
    "model_prob": 0.636,
-   "edge": 0.023,
+   "edge": 0.026,
    "grade": "C",
    "proj": "BUF 29.2 \u2013 MIA 17.4",
    "mu_h": 29.19,
@@ -99,7 +102,7 @@
    "home": "BUF",
    "away": "MIA",
    "notes": [],
-   "score": 2.27
+   "score": 2.61
   },
   {
    "game_id": "401873071",
@@ -108,10 +111,30 @@
    "pick": "NO ML",
    "side": "away",
    "line": null,
-   "price": 448,
-   "prob": 0.211,
+   "price": 488,
+   "prob": 0.204,
    "model_prob": 0.278,
-   "edge": 0.029,
+   "edge": 0.034,
+   "grade": "B",
+   "proj": "CHI 27.9 \u2013 NO 20.0",
+   "mu_h": 27.92,
+   "mu_a": 19.99,
+   "home": "CHI",
+   "away": "NO",
+   "notes": [],
+   "score": 3.36
+  },
+  {
+   "game_id": "401873071",
+   "game": "NO @ CHI",
+   "market": "Spread",
+   "pick": "NO +11.5",
+   "side": "away",
+   "line": -11.5,
+   "price": -107,
+   "prob": 0.533,
+   "model_prob": 0.604,
+   "edge": 0.016,
    "grade": "C",
    "proj": "CHI 27.9 \u2013 NO 20.0",
    "mu_h": 27.92,
@@ -119,7 +142,7 @@
    "home": "CHI",
    "away": "NO",
    "notes": [],
-   "score": 2.88
+   "score": 1.6
   },
   {
    "game_id": "401873073",
@@ -128,10 +151,10 @@
    "pick": "TEN ML",
    "side": "away",
    "line": null,
-   "price": 307,
-   "prob": 0.264,
+   "price": 310,
+   "prob": 0.263,
    "model_prob": 0.316,
-   "edge": 0.018,
+   "edge": 0.019,
    "grade": "C",
    "proj": "DAL 31.1 \u2013 TEN 24.6",
    "mu_h": 31.08,
@@ -139,27 +162,7 @@
    "home": "DAL",
    "away": "TEN",
    "notes": [],
-   "score": 1.84
-  },
-  {
-   "game_id": "401873072",
-   "game": "TB @ DET",
-   "market": "Moneyline",
-   "pick": "TB ML",
-   "side": "away",
-   "line": null,
-   "price": 230,
-   "prob": 0.318,
-   "model_prob": 0.368,
-   "edge": 0.015,
-   "grade": "C",
-   "proj": "DET 25.4 \u2013 TB 20.9",
-   "mu_h": 25.4,
-   "mu_a": 20.86,
-   "home": "DET",
-   "away": "TB",
-   "notes": [],
-   "score": 1.52
+   "score": 1.91
   },
   {
    "game_id": "401873075",
@@ -168,10 +171,10 @@
    "pick": "LV ML",
    "side": "away",
    "line": null,
-   "price": 427,
-   "prob": 0.207,
+   "price": 445,
+   "prob": 0.203,
    "model_prob": 0.253,
-   "edge": 0.017,
+   "edge": 0.02,
    "grade": "C",
    "proj": "DEN 27.8 \u2013 LV 18.8",
    "mu_h": 27.81,
@@ -179,7 +182,7 @@
    "home": "DEN",
    "away": "LV",
    "notes": [],
-   "score": 1.73
+   "score": 1.97
   },
   {
    "game_id": "401873075",
@@ -188,10 +191,10 @@
    "pick": "Over 40.5",
    "side": "over",
    "line": 40.5,
-   "price": -107,
-   "prob": 0.557,
+   "price": -115,
+   "prob": 0.569,
    "model_prob": 0.675,
-   "edge": 0.04,
+   "edge": 0.034,
    "grade": "B",
    "proj": "DEN 27.8 \u2013 LV 18.8",
    "mu_h": 27.81,
@@ -199,7 +202,7 @@
    "home": "DEN",
    "away": "LV",
    "notes": [],
-   "score": 4.02
+   "score": 3.42
   },
   {
    "game_id": "401873078",
@@ -208,10 +211,10 @@
    "pick": "WSH ML",
    "side": "home",
    "line": null,
-   "price": 239,
-   "prob": 0.319,
+   "price": 241,
+   "prob": 0.318,
    "model_prob": 0.385,
-   "edge": 0.024,
+   "edge": 0.025,
    "grade": "C",
    "proj": "WSH 23.8 \u2013 CIN 27.7",
    "mu_h": 23.81,
@@ -219,7 +222,7 @@
    "home": "WSH",
    "away": "CIN",
    "notes": [],
-   "score": 2.43
+   "score": 2.48
   }
  ]
 }
