@@ -3179,6 +3179,85 @@
    "date": "2026-11-21",
    "final": "MIN 104 \u2013 MEM 95",
    "result": "WIN"
+  },
+  {
+   "game_id": "401910032",
+   "game": "DEN @ CHI",
+   "market": "Spread",
+   "pick": "DEN -10.5",
+   "side": "away",
+   "line": 10.5,
+   "price": -104,
+   "prob": 0.552,
+   "model_prob": 0.674,
+   "edge": 0.042,
+   "grade": "B",
+   "proj": "CHI 97.9 \u2013 DEN 114.0",
+   "mu_h": 97.85,
+   "mu_a": 114.0,
+   "home": "CHI",
+   "away": "DEN",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "CHI injuries (Claxton, Powell): -7.4 pts"
+   ],
+   "score": 4.21,
+   "locked": true,
+   "date": "2026-11-22",
+   "final": "CHI 145 \u2013 DEN 151",
+   "result": "LOSS"
+  },
+  {
+   "game_id": "401910033",
+   "game": "DAL @ UTAH",
+   "market": "Moneyline",
+   "pick": "DAL ML",
+   "side": "away",
+   "line": null,
+   "price": -135,
+   "prob": 0.608,
+   "model_prob": 0.713,
+   "edge": 0.034,
+   "grade": "B",
+   "proj": "UTAH 105.9 \u2013 DAL 113.0",
+   "mu_h": 105.93,
+   "mu_a": 112.97,
+   "home": "UTAH",
+   "away": "DAL",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
+   ],
+   "score": 3.36,
+   "locked": true,
+   "date": "2026-11-22",
+   "final": "UTAH 114 \u2013 DAL 116",
+   "result": "WIN"
+  },
+  {
+   "game_id": "401910033",
+   "game": "DAL @ UTAH",
+   "market": "Spread",
+   "pick": "DAL -2.5",
+   "side": "away",
+   "line": 2.5,
+   "price": -106,
+   "prob": 0.544,
+   "model_prob": 0.642,
+   "edge": 0.029,
+   "grade": "C",
+   "proj": "UTAH 105.9 \u2013 DAL 113.0",
+   "mu_h": 105.93,
+   "mu_a": 112.97,
+   "home": "UTAH",
+   "away": "DAL",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
+   ],
+   "score": 2.94,
+   "locked": true,
+   "date": "2026-11-22",
+   "final": "UTAH 114 \u2013 DAL 116",
+   "result": "LOSS"
   }
  ]
 }
