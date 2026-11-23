@@ -1,0 +1,715 @@
+[
+ {
+  "game_id": "401910044",
+  "game": "UTAH @ LAL",
+  "player": "Darryn Peterson",
+  "player_id": "5041955",
+  "team": "UTAH",
+  "opp": "LAL",
+  "stat": "PA",
+  "side": "UNDER",
+  "line": 23.5,
+  "line_source": "DraftKings",
+  "price": -106,
+  "projection": 18.9,
+  "prob": 0.65,
+  "edge": 0.136,
+  "score": 13.13,
+  "grade": "A",
+  "hit_l5": "4/5",
+  "hit_l10": "4/10",
+  "hit_season": "12/18",
+  "vs_opp": "2/2",
+  "minutes": 27.5,
+  "status": "ACTIVE",
+  "season_avg": 20.1,
+  "l10_avg": 23.1,
+  "reasons": [
+   "Implied team total 105.5 (low vs slate avg 113.0)",
+   "Back-to-back",
+   "Under hit 4/10 of last 10 at 23.5",
+   "Last game: 11 (under the line)",
+   "Last 2 vs LAL: 14, 10"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 11.0,
+  "open_line": 24.5,
+  "open_price": -122,
+  "books": {
+   "DraftKings": [
+    23.5,
+    -106
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 6.449
+  }
+ },
+ {
+  "game_id": "401910043",
+  "game": "LAC @ HOU",
+  "player": "Keaton Wagler",
+  "player_id": "5254165",
+  "team": "LAC",
+  "opp": "HOU",
+  "stat": "PRA",
+  "side": "OVER",
+  "line": 13.5,
+  "line_source": "DraftKings",
+  "price": -107,
+  "projection": 15.6,
+  "prob": 0.617,
+  "edge": 0.1,
+  "score": 9.4,
+  "grade": "B",
+  "hit_l5": "5/5",
+  "hit_l10": "10/10",
+  "hit_season": "15/15",
+  "vs_opp": "0/0",
+  "minutes": 20.0,
+  "status": "ACTIVE",
+  "season_avg": 18.5,
+  "l10_avg": 16.5,
+  "reasons": [
+   "Implied team total 105.5 (low vs slate avg 113.0)",
+   "HOU limits rebounds to Gs (-6% vs expected)",
+   "Over hit 10/10 of last 10 at 13.5",
+   "Last game: 17 (over the line)"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 17.0,
+  "open_line": 13.5,
+  "open_price": -103,
+  "books": {
+   "DraftKings": [
+    13.5,
+    -107
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 3.954
+  }
+ },
+ {
+  "game_id": "401910040",
+  "game": "BKN @ MIN",
+  "player": "Mikel Brown Jr.",
+  "player_id": "5101761",
+  "team": "BKN",
+  "opp": "MIN",
+  "stat": "PRA",
+  "side": "UNDER",
+  "line": 19.5,
+  "line_source": "DraftKings",
+  "price": -109,
+  "projection": 15.9,
+  "prob": 0.644,
+  "edge": 0.122,
+  "score": 8.76,
+  "grade": "B",
+  "hit_l5": "3/5",
+  "hit_l10": "6/10",
+  "hit_season": "7/11",
+  "vs_opp": "0/0",
+  "minutes": 23.3,
+  "status": "ACTIVE",
+  "season_avg": 17.2,
+  "l10_avg": 17.7,
+  "reasons": [
+   "Implied team total 106.0 (low vs slate avg 113.0)",
+   "Under hit 6/10 of last 10 at 19.5",
+   "Last game: 19 (under the line)"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 19.0,
+  "open_line": 19.5,
+  "open_price": -127,
+  "books": {
+   "DraftKings": [
+    19.5,
+    -109
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 5.447
+  }
+ },
+ {
+  "game_id": "401910045",
+  "game": "SA @ SAC",
+  "player": "Devin Vassell",
+  "player_id": "4395630",
+  "team": "SA",
+  "opp": "SAC",
+  "stat": "PRA",
+  "side": "UNDER",
+  "line": 21.5,
+  "line_source": "DraftKings",
+  "price": -109,
+  "projection": 18.5,
+  "prob": 0.629,
+  "edge": 0.108,
+  "score": 8.11,
+  "grade": "B",
+  "hit_l5": "4/5",
+  "hit_l10": "8/10",
+  "hit_season": "11/15",
+  "vs_opp": "1/4",
+  "minutes": 30.9,
+  "status": "ACTIVE",
+  "season_avg": 19.1,
+  "l10_avg": 16.9,
+  "reasons": [
+   "Projected 30-34 minutes: grade lowered one level (21-25 on real lines)",
+   "Implied team total 117.0 (high vs slate avg 113.0)",
+   "SAC allows assists to Gs (+6% vs expected)",
+   "Under hit 8/10 of last 10 at 21.5",
+   "Last game: 15 (under the line)",
+   "Last 4 vs SAC: 23, 26, 14, 26"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 15.0,
+  "open_line": 21.5,
+  "open_price": -122,
+  "books": {
+   "DraftKings": [
+    21.5,
+    -109
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 5.131
+  }
+ },
+ {
+  "game_id": "401910045",
+  "game": "SA @ SAC",
+  "player": "Stephon Castle",
+  "player_id": "4845367",
+  "team": "SA",
+  "opp": "SAC",
+  "stat": "PRA",
+  "side": "UNDER",
+  "line": 32.5,
+  "line_source": "DraftKings",
+  "price": -107,
+  "projection": 28.1,
+  "prob": 0.613,
+  "edge": 0.097,
+  "score": 7.73,
+  "grade": "B",
+  "hit_l5": "2/5",
+  "hit_l10": "7/10",
+  "hit_season": "14/17",
+  "vs_opp": "5/5",
+  "minutes": 30.9,
+  "status": "ACTIVE",
+  "season_avg": 27.8,
+  "l10_avg": 28.0,
+  "reasons": [
+   "Projected 30-34 minutes: grade lowered one level (21-25 on real lines)",
+   "Implied team total 117.0 (high vs slate avg 113.0)",
+   "SAC allows assists to Gs (+6% vs expected)",
+   "Under hit 7/10 of last 10 at 32.5",
+   "Last game: 28 (under the line)",
+   "Last 5 vs SAC: 29, 25, 16, 29, 9"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 28.0,
+  "open_line": 33.5,
+  "open_price": -123,
+  "books": {
+   "DraftKings": [
+    32.5,
+    -107
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 8.342
+  }
+ },
+ {
+  "game_id": "401910045",
+  "game": "SA @ SAC",
+  "player": "De'Aaron Fox",
+  "player_id": "4066259",
+  "team": "SA",
+  "opp": "SAC",
+  "stat": "PA",
+  "side": "UNDER",
+  "line": 22.5,
+  "line_source": "DraftKings",
+  "price": -121,
+  "projection": 17.6,
+  "prob": 0.686,
+  "edge": 0.139,
+  "score": 7.7,
+  "grade": "A",
+  "hit_l5": "4/5",
+  "hit_l10": "9/10",
+  "hit_season": "12/16",
+  "vs_opp": "3/5",
+  "minutes": 28.6,
+  "status": "QUESTIONABLE",
+  "season_avg": 20.1,
+  "l10_avg": 14.9,
+  "reasons": [
+   "Implied team total 117.0 (high vs slate avg 113.0)",
+   "SAC allows assists to Gs (+6% vs expected)",
+   "Listed Day-To-Day: Lower Leg Bruise - Fox is questionable for Monday's game against the Kings due to a right shin contusion, Jared Weiss of The Athletic reports.",
+   "Under hit 9/10 of last 10 at 22.5",
+   "Last game: 15 (under the line)",
+   "Last 5 vs SAC: 13, 17, 21, 23, 39"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 15.0,
+  "open_line": 21.5,
+  "open_price": -117,
+  "books": {
+   "DraftKings": [
+    22.5,
+    -121
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 5.768
+  }
+ },
+ {
+  "game_id": "401910045",
+  "game": "SA @ SAC",
+  "player": "Julian Champagnie",
+  "player_id": "4592479",
+  "team": "SA",
+  "opp": "SAC",
+  "stat": "PTS",
+  "side": "UNDER",
+  "line": 13.5,
+  "line_source": "DraftKings",
+  "price": -121,
+  "projection": 10.5,
+  "prob": 0.627,
+  "edge": 0.079,
+  "score": 7.56,
+  "grade": "B",
+  "hit_l5": "3/5",
+  "hit_l10": "7/10",
+  "hit_season": "13/17",
+  "vs_opp": "3/5",
+  "minutes": 27.2,
+  "status": "ACTIVE",
+  "season_avg": 10.7,
+  "l10_avg": 9.9,
+  "reasons": [
+   "Implied team total 117.0 (high vs slate avg 113.0)",
+   "Under hit 7/10 of last 10 at 13.5",
+   "Last game: 9 (under the line)",
+   "Last 5 vs SAC: 8, 26, 17, 8, 12"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 9.0,
+  "open_line": 12.5,
+  "open_price": -101,
+  "books": {
+   "DraftKings": [
+    13.5,
+    -121
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 5.768
+  }
+ },
+ {
+  "game_id": "401910036",
+  "game": "MEM @ CHA",
+  "player": "Ryan Kalkbrenner",
+  "player_id": "4576060",
+  "team": "CHA",
+  "opp": "MEM",
+  "stat": "REB",
+  "side": "OVER",
+  "line": 4.5,
+  "line_source": "DraftKings",
+  "price": 107,
+  "projection": 5.4,
+  "prob": 0.564,
+  "edge": 0.081,
+  "score": 6.64,
+  "grade": "B",
+  "hit_l5": "4/5",
+  "hit_l10": "6/10",
+  "hit_season": "9/15",
+  "vs_opp": "0/2",
+  "minutes": 21.1,
+  "status": "ACTIVE",
+  "season_avg": 5.3,
+  "l10_avg": 5.7,
+  "reasons": [
+   "Over hit 6/10 of last 10 at 4.5",
+   "Last game: 6 (over the line)",
+   "Last 2 vs MEM: 2, 4"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 6.0,
+  "open_line": 4.5,
+  "open_price": 118,
+  "books": {
+   "DraftKings": [
+    4.5,
+    107
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 2.552
+  }
+ },
+ {
+  "game_id": "401910039",
+  "game": "MIL @ TOR",
+  "player": "Jakob Poeltl",
+  "player_id": "3134908",
+  "team": "TOR",
+  "opp": "MIL",
+  "stat": "PR",
+  "side": "UNDER",
+  "line": 19.5,
+  "line_source": "DraftKings",
+  "price": -125,
+  "projection": 16.1,
+  "prob": 0.627,
+  "edge": 0.071,
+  "score": 6.36,
+  "grade": "B",
+  "hit_l5": "5/5",
+  "hit_l10": "7/10",
+  "hit_season": "11/14",
+  "vs_opp": "3/4",
+  "minutes": 25.1,
+  "status": "ACTIVE",
+  "season_avg": 15.9,
+  "l10_avg": 18.1,
+  "reasons": [
+   "Implied team total 116.5 (high vs slate avg 113.0)",
+   "Under hit 7/10 of last 10 at 19.5",
+   "Last game: 19 (under the line)",
+   "Last 4 vs MIL: 30, 14, 17, 11"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 19.0,
+  "open_line": 18.5,
+  "open_price": -114,
+  "books": {
+   "DraftKings": [
+    19.5,
+    -125
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 6.652
+  }
+ },
+ {
+  "game_id": "401910038",
+  "game": "OKC @ IND",
+  "player": "Aaron Nesmith",
+  "player_id": "4396909",
+  "team": "IND",
+  "opp": "OKC",
+  "stat": "PRA",
+  "side": "UNDER",
+  "line": 18.5,
+  "line_source": "DraftKings",
+  "price": -117,
+  "projection": 15.4,
+  "prob": 0.598,
+  "edge": 0.059,
+  "score": 5.85,
+  "grade": "B",
+  "hit_l5": "2/5",
+  "hit_l10": "5/10",
+  "hit_season": "9/15",
+  "vs_opp": "1/2",
+  "minutes": 27.4,
+  "status": "ACTIVE",
+  "season_avg": 17.6,
+  "l10_avg": 16.3,
+  "reasons": [
+   "Implied team total 108.5 (low vs slate avg 113.0)",
+   "OKC limits assists to Gs (-5% vs expected)",
+   "Back-to-back",
+   "Under hit 5/10 of last 10 at 18.5",
+   "Last game: 13 (under the line)",
+   "Last 2 vs OKC: 27, 12"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 13.0,
+  "open_line": 18.5,
+  "open_price": -119,
+  "books": {
+   "DraftKings": [
+    18.5,
+    -117
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 7.531
+  }
+ },
+ {
+  "game_id": "401910041",
+  "game": "CLE @ CHI",
+  "player": "James Harden",
+  "player_id": "3992",
+  "team": "CLE",
+  "opp": "CHI",
+  "stat": "PTS",
+  "side": "OVER",
+  "line": 18.5,
+  "line_source": "DraftKings",
+  "price": -103,
+  "projection": 21.2,
+  "prob": 0.566,
+  "edge": 0.058,
+  "score": 5.83,
+  "grade": "B",
+  "hit_l5": "3/5",
+  "hit_l10": "4/10",
+  "hit_season": "6/16",
+  "vs_opp": "2/3",
+  "minutes": 34.6,
+  "status": "ACTIVE",
+  "season_avg": 20.0,
+  "l10_avg": 19.4,
+  "reasons": [
+   "Implied team total 125.0 (high vs slate avg 113.0)",
+   "Over hit 4/10 of last 10 at 18.5",
+   "Last game: 51 (over the line)",
+   "Last 3 vs CHI: 9, 36, 24"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 51.0,
+  "open_line": 17.5,
+  "open_price": -118,
+  "books": {
+   "DraftKings": [
+    18.5,
+    -103
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 8.648
+  }
+ },
+ {
+  "game_id": "401910042",
+  "game": "PHX @ NO",
+  "player": "Zion Williamson",
+  "player_id": "4395628",
+  "team": "NO",
+  "opp": "PHX",
+  "stat": "PTS",
+  "side": "UNDER",
+  "line": 22.5,
+  "line_source": "DraftKings",
+  "price": -123,
+  "projection": 19.8,
+  "prob": 0.647,
+  "edge": 0.095,
+  "score": 5.72,
+  "grade": "B",
+  "hit_l5": "3/5",
+  "hit_l10": "4/10",
+  "hit_season": "8/16",
+  "vs_opp": "3/3",
+  "minutes": 29.1,
+  "status": "QUESTIONABLE",
+  "season_avg": 21.4,
+  "l10_avg": 22.3,
+  "reasons": [
+   "Listed Day-To-Day: Thigh Bruise - Williamson (thigh) is probable for Monday's game against Phoenix.",
+   "Under hit 4/10 of last 10 at 22.5",
+   "Last game: 22 (under the line)",
+   "Last 3 vs PHX: 19, 22, 20"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 22.0,
+  "open_line": 22.5,
+  "open_price": -115,
+  "books": {
+   "DraftKings": [
+    22.5,
+    -123
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 4.444
+  }
+ },
+ {
+  "game_id": "401910039",
+  "game": "MIL @ TOR",
+  "player": "Collin Murray-Boyles",
+  "player_id": "5093267",
+  "team": "TOR",
+  "opp": "MIL",
+  "stat": "PRA",
+  "side": "UNDER",
+  "line": 20.5,
+  "line_source": "DraftKings",
+  "price": -109,
+  "projection": 15.8,
+  "prob": 0.644,
+  "edge": 0.122,
+  "score": 5.54,
+  "grade": "B",
+  "hit_l5": "4/5",
+  "hit_l10": "6/10",
+  "hit_season": "10/14",
+  "vs_opp": "3/4",
+  "minutes": 24.9,
+  "status": "QUESTIONABLE",
+  "season_avg": 15.9,
+  "l10_avg": 16.7,
+  "reasons": [
+   "Implied team total 116.5 (high vs slate avg 113.0)",
+   "Listed Day-To-Day: Concussion  - Murray-Boyles (concussion) is listed as probable for Monday's game against Milwaukee, Blake Murphy of Sportsnet.ca reports.",
+   "Under hit 6/10 of last 10 at 20.5",
+   "Last game: 4 (under the line)",
+   "Last 4 vs MIL: 28, 12, 8, 3"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 4.0,
+  "open_line": 20.5,
+  "open_price": -118,
+  "books": {
+   "DraftKings": [
+    20.5,
+    -109
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 7.07
+  }
+ },
+ {
+  "game_id": "401910038",
+  "game": "OKC @ IND",
+  "player": "Isaiah Hartenstein",
+  "player_id": "4222252",
+  "team": "OKC",
+  "opp": "IND",
+  "stat": "PR",
+  "side": "UNDER",
+  "line": 20.5,
+  "line_source": "DraftKings",
+  "price": -113,
+  "projection": 17.9,
+  "prob": 0.581,
+  "edge": 0.051,
+  "score": 4.75,
+  "grade": "B",
+  "hit_l5": "3/5",
+  "hit_l10": "7/10",
+  "hit_season": "11/17",
+  "vs_opp": "1/1",
+  "minutes": 23.5,
+  "status": "ACTIVE",
+  "season_avg": 18.4,
+  "l10_avg": 18.3,
+  "reasons": [
+   "Back-to-back",
+   "Under hit 7/10 of last 10 at 20.5",
+   "Last game: 10 (under the line)",
+   "Last 1 vs IND: 19"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 10.0,
+  "open_line": 20.5,
+  "open_price": -104,
+  "books": {
+   "DraftKings": [
+    20.5,
+    -113
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 7.377
+  }
+ },
+ {
+  "game_id": "401910037",
+  "game": "POR @ PHI",
+  "player": "Anfernee Simons",
+  "player_id": "4351851",
+  "team": "PHI",
+  "opp": "POR",
+  "stat": "PTS",
+  "side": "OVER",
+  "line": 9.5,
+  "line_source": "DraftKings",
+  "price": -109,
+  "projection": 11.9,
+  "prob": 0.578,
+  "edge": 0.057,
+  "score": 4.41,
+  "grade": "B",
+  "hit_l5": "4/5",
+  "hit_l10": "5/10",
+  "hit_season": "9/17",
+  "vs_opp": "2/2",
+  "minutes": 23.4,
+  "status": "ACTIVE",
+  "season_avg": 12.3,
+  "l10_avg": 10.6,
+  "reasons": [
+   "Implied team total 117.0 (high vs slate avg 113.0)",
+   "Over hit 5/10 of last 10 at 9.5",
+   "Last game: 18 (over the line)",
+   "Last 2 vs POR: 12, 13"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 18.0,
+  "open_line": 8.5,
+  "open_price": 103,
+  "books": {
+   "DraftKings": [
+    9.5,
+    -109
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 7.026
+  }
+ }
+]

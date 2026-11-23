@@ -1,0 +1,78 @@
+[
+ {
+  "legs": [
+   {
+    "game_id": "401910044",
+    "game": "UTAH @ LAL",
+    "player": "Darryn Peterson",
+    "player_id": "5041955",
+    "team": "UTAH",
+    "opp": "LAL",
+    "stat": "PA",
+    "side": "UNDER",
+    "line": 23.5,
+    "price": -106,
+    "prob": 0.65,
+    "edge": 0.136,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      23.5,
+      -106
+     ]
+    },
+    "projection": 18.9,
+    "dist": {
+     "k": "normal",
+     "sd": 6.449
+    }
+   }
+  ],
+  "hit": 0.65,
+  "payout": 1.94,
+  "odds": -106,
+  "ev": 0.263,
+  "type": "double",
+  "label": "Double up",
+  "made": "2026-11-23T12:39:51.949503-05:00"
+ },
+ {
+  "legs": [
+   {
+    "game_id": "401910040",
+    "game": "BKN @ MIN",
+    "player": "Mikel Brown Jr.",
+    "player_id": "5101761",
+    "team": "BKN",
+    "opp": "MIN",
+    "stat": "PRA",
+    "side": "UNDER",
+    "line": 19.5,
+    "price": -109,
+    "prob": 0.644,
+    "edge": 0.122,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      19.5,
+      -109
+     ]
+    },
+    "projection": 15.9,
+    "dist": {
+     "k": "normal",
+     "sd": 5.447
+    }
+   }
+  ],
+  "hit": 0.644,
+  "payout": 1.92,
+  "odds": -109,
+  "ev": 0.235,
+  "type": "double2",
+  "label": "Double up #2",
+  "made": "2026-11-23T12:39:51.949503-05:00"
+ }
+]
