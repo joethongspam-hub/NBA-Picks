@@ -8,34 +8,34 @@
     "player_id": "3062679",
     "team": "NY",
     "opp": "IND",
-    "stat": "PRA",
+    "stat": "PR",
     "side": "UNDER",
-    "line": 22.5,
-    "price": -114,
-    "prob": 0.692,
-    "edge": 0.16,
+    "line": 17.5,
+    "price": -110,
+    "prob": 0.66,
+    "edge": 0.136,
     "grade": "A",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
-      22.5,
-      -114
+      17.5,
+      -110
      ]
     },
-    "projection": 16.8,
+    "projection": 13.0,
     "dist": {
      "k": "normal",
-     "sd": 6.193
+     "sd": 5.943
     }
    }
   ],
-  "hit": 0.692,
-  "payout": 1.88,
-  "odds": -114,
-  "ev": 0.299,
+  "hit": 0.66,
+  "payout": 1.91,
+  "odds": -110,
+  "ev": 0.26,
   "type": "double",
   "label": "Double up",
-  "made": "2026-11-22T16:59:39.636391-05:00"
+  "made": "2026-11-22T19:25:03.274778-05:00"
  },
  {
   "legs": [
@@ -73,6 +73,7 @@
   "ev": 0.185,
   "type": "double2",
   "label": "Double up #2",
-  "made": "2026-11-22T16:59:39.636391-05:00"
+  "made": "2026-11-22T16:59:39.636391-05:00",
+  "locked": true
  }
 ]

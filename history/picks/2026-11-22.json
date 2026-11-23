@@ -6,45 +6,45 @@
   "player_id": "3062679",
   "team": "NY",
   "opp": "IND",
-  "stat": "PRA",
+  "stat": "PR",
   "side": "UNDER",
-  "line": 22.5,
+  "line": 17.5,
   "line_source": "DraftKings",
-  "price": -114,
-  "projection": 16.8,
-  "prob": 0.692,
-  "edge": 0.16,
-  "score": 12.58,
+  "price": -110,
+  "projection": 13.0,
+  "prob": 0.66,
+  "edge": 0.136,
+  "score": 10.73,
   "grade": "A",
   "hit_l5": "5/5",
   "hit_l10": "10/10",
   "hit_season": "10/13",
   "vs_opp": "1/3",
-  "minutes": 31.3,
+  "minutes": 33.9,
   "status": "ACTIVE",
-  "season_avg": 19.6,
-  "l10_avg": 13.7,
+  "season_avg": 15.6,
+  "l10_avg": 10.1,
   "reasons": [
    "Projected 30-34 minutes: grade lowered one level (21-25 on real lines)",
    "Back-to-back",
-   "Under hit 10/10 of last 10 at 22.5",
-   "Last game: 14 (under the line)",
-   "Last 3 vs IND: 9, 45, 37"
+   "Under hit 10/10 of last 10 at 17.5",
+   "Last game: 8 (under the line)",
+   "Last 3 vs IND: 5, 40, 26"
   ],
   "actual": null,
   "result": null,
-  "last_game": 14.0,
-  "open_line": 22.5,
-  "open_price": -123,
+  "last_game": 8.0,
+  "open_line": 18.5,
+  "open_price": -128,
   "books": {
    "DraftKings": [
-    22.5,
-    -114
+    17.5,
+    -110
    ]
   },
   "dist": {
    "k": "normal",
-   "sd": 6.193
+   "sd": 5.943
   }
  },
  {
@@ -58,11 +58,11 @@
   "side": "UNDER",
   "line": 34.5,
   "line_source": "DraftKings",
-  "price": -117,
-  "projection": 30.1,
+  "price": -118,
+  "projection": 30.2,
   "prob": 0.655,
-  "edge": 0.116,
-  "score": 9.24,
+  "edge": 0.114,
+  "score": 9.08,
   "grade": "A",
   "hit_l5": "3/5",
   "hit_l10": "6/10",
@@ -87,12 +87,12 @@
   "books": {
    "DraftKings": [
     34.5,
-    -117
+    -118
    ]
   },
   "dist": {
    "k": "normal",
-   "sd": 6.327
+   "sd": 6.33
   }
  },
  {
@@ -110,7 +110,7 @@
   "projection": 16.4,
   "prob": 0.615,
   "edge": 0.091,
-  "score": 8.76,
+  "score": 8.74,
   "grade": "B",
   "hit_l5": "4/5",
   "hit_l10": "6/10",
@@ -121,7 +121,7 @@
   "season_avg": 18.7,
   "l10_avg": 18.7,
   "reasons": [
-   "Implied team total 101.5 (low vs slate avg 111.4)",
+   "Implied team total 101.5 (low vs slate avg 111.2)",
    "Under hit 6/10 of last 10 at 19.5",
    "Last game: 17 (under the line)",
    "Last 2 vs BOS: 15, 17"
@@ -139,7 +139,7 @@
   },
   "dist": {
    "k": "normal",
-   "sd": 5.967
+   "sd": 5.969
   }
  },
  {
@@ -153,11 +153,11 @@
   "side": "UNDER",
   "line": 23.5,
   "line_source": "DraftKings",
-  "price": -120,
+  "price": -116,
   "projection": 19.3,
-  "prob": 0.655,
-  "edge": 0.109,
-  "score": 8.23,
+  "prob": 0.651,
+  "edge": 0.114,
+  "score": 8.55,
   "grade": "A",
   "hit_l5": "4/5",
   "hit_l10": "7/10",
@@ -182,12 +182,59 @@
   "books": {
    "DraftKings": [
     23.5,
-    -120
+    -116
    ]
   },
   "dist": {
    "k": "normal",
-   "sd": 6.213
+   "sd": 6.215
+  }
+ },
+ {
+  "game_id": "401910035",
+  "game": "BOS @ GS",
+  "player": "Baylor Scheierman",
+  "player_id": "4593841",
+  "team": "BOS",
+  "opp": "GS",
+  "stat": "PRA",
+  "side": "UNDER",
+  "line": 13.5,
+  "line_source": "DraftKings",
+  "price": -106,
+  "projection": 10.0,
+  "prob": 0.594,
+  "edge": 0.08,
+  "score": 6.45,
+  "grade": "B",
+  "hit_l5": "3/5",
+  "hit_l10": "6/10",
+  "hit_season": "12/16",
+  "vs_opp": "1/2",
+  "minutes": 20.1,
+  "status": "ACTIVE",
+  "season_avg": 10.5,
+  "l10_avg": 11.8,
+  "reasons": [
+   "Back-to-back",
+   "Under hit 6/10 of last 10 at 13.5",
+   "Last game: 8 (under the line)",
+   "Last 2 vs GS: 14, 13"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 8.0,
+  "open_line": 13.5,
+  "open_price": -104,
+  "books": {
+   "DraftKings": [
+    13.5,
+    -106
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 7.982
   }
  },
  {
@@ -236,54 +283,8 @@
   "dist": {
    "k": "normal",
    "sd": 9.881
-  }
- },
- {
-  "game_id": "401910035",
-  "game": "BOS @ GS",
-  "player": "Baylor Scheierman",
-  "player_id": "4593841",
-  "team": "BOS",
-  "opp": "GS",
-  "stat": "PRA",
-  "side": "UNDER",
-  "line": 13.5,
-  "line_source": "DraftKings",
-  "price": -104,
-  "projection": 10.0,
-  "prob": 0.593,
-  "edge": 0.083,
-  "score": 6.72,
-  "grade": "B",
-  "hit_l5": "3/5",
-  "hit_l10": "6/10",
-  "hit_season": "12/16",
-  "vs_opp": "1/2",
-  "minutes": 20.1,
-  "status": "ACTIVE",
-  "season_avg": 10.5,
-  "l10_avg": 11.8,
-  "reasons": [
-   "Back-to-back",
-   "Under hit 6/10 of last 10 at 13.5",
-   "Last game: 8 (under the line)",
-   "Last 2 vs GS: 14, 13"
-  ],
-  "actual": null,
-  "result": null,
-  "last_game": 8.0,
-  "open_line": 13.5,
-  "open_price": -104,
-  "books": {
-   "DraftKings": [
-    13.5,
-    -104
-   ]
   },
-  "dist": {
-   "k": "normal",
-   "sd": 7.979
-  }
+  "locked": true
  },
  {
   "game_id": "401910031",
@@ -329,100 +330,7 @@
   "dist": {
    "k": "normal",
    "sd": 4.725
-  }
- },
- {
-  "game_id": "401910034",
-  "game": "IND @ NY",
-  "player": "Aaron Nesmith",
-  "player_id": "4396909",
-  "team": "IND",
-  "opp": "NY",
-  "stat": "PR",
-  "side": "UNDER",
-  "line": 16.5,
-  "line_source": "DraftKings",
-  "price": -123,
-  "projection": 13.5,
-  "prob": 0.602,
-  "edge": 0.05,
-  "score": 4.85,
-  "grade": "B",
-  "hit_l5": "4/5",
-  "hit_l10": "7/10",
-  "hit_season": "10/14",
-  "vs_opp": "2/4",
-  "minutes": 29.0,
-  "status": "ACTIVE",
-  "season_avg": 15.7,
-  "l10_avg": 13.7,
-  "reasons": [
-   "Implied team total 103.0 (low vs slate avg 111.4)",
-   "Under hit 7/10 of last 10 at 16.5",
-   "Last game: 12 (under the line)",
-   "Last 4 vs NY: 25, 15, 14, 19"
-  ],
-  "actual": null,
-  "result": null,
-  "last_game": 12.0,
-  "open_line": 16.5,
-  "open_price": -122,
-  "books": {
-   "DraftKings": [
-    16.5,
-    -123
-   ]
   },
-  "dist": {
-   "k": "normal",
-   "sd": 7.324
-  }
- },
- {
-  "game_id": "401910035",
-  "game": "BOS @ GS",
-  "player": "Draymond Green",
-  "player_id": "6589",
-  "team": "GS",
-  "opp": "BOS",
-  "stat": "PRA",
-  "side": "UNDER",
-  "line": 15.5,
-  "line_source": "DraftKings",
-  "price": -128,
-  "projection": 13.4,
-  "prob": 0.615,
-  "edge": 0.054,
-  "score": 4.78,
-  "grade": "B",
-  "hit_l5": "4/5",
-  "hit_l10": "6/10",
-  "hit_season": "8/13",
-  "vs_opp": "1/2",
-  "minutes": 23.8,
-  "status": "ACTIVE",
-  "season_avg": 16.6,
-  "l10_avg": 14.3,
-  "reasons": [
-   "Implied team total 101.5 (low vs slate avg 111.4)",
-   "Under hit 6/10 of last 10 at 15.5",
-   "Last game: 6 (under the line)",
-   "Last 2 vs BOS: 23, 5"
-  ],
-  "actual": null,
-  "result": null,
-  "last_game": 6.0,
-  "open_line": 15.5,
-  "open_price": -118,
-  "books": {
-   "DraftKings": [
-    15.5,
-    -128
-   ]
-  },
-  "dist": {
-   "k": "normal",
-   "sd": 4.622
-  }
+  "locked": true
  }
 ]

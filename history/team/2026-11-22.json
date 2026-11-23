@@ -22,7 +22,8 @@
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "CHI injuries (Claxton, Powell): -7.4 pts"
    ],
-   "score": 4.21
+   "score": 4.21,
+   "locked": true
   },
   {
    "game_id": "401910033",
@@ -44,7 +45,8 @@
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
    ],
-   "score": 3.36
+   "score": 3.36,
+   "locked": true
   },
   {
    "game_id": "401910033",
@@ -66,31 +68,8 @@
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
    ],
-   "score": 2.94
-  },
-  {
-   "game_id": "401910034",
-   "game": "IND @ NY",
-   "market": "Spread",
-   "pick": "IND +7.5",
-   "side": "away",
-   "line": -7.5,
-   "price": -110,
-   "prob": 0.577,
-   "model_prob": 0.721,
-   "edge": 0.054,
-   "grade": "A",
-   "proj": "NY 105.1 \u2013 IND 104.9",
-   "mu_h": 105.1,
-   "mu_a": 104.92,
-   "home": "NY",
-   "away": "IND",
-   "notes": [
-    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
-    "NY injuries (Anunoby): -3.4 pts",
-    "IND injuries (McConnell): -2.2 pts"
-   ],
-   "score": 5.35
+   "score": 2.94,
+   "locked": true
   }
  ]
 }
