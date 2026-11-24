@@ -35,7 +35,8 @@
   "ev": 0.225,
   "type": "double",
   "label": "Double up",
-  "made": "2026-11-23T17:10:27.781537-05:00"
+  "made": "2026-11-23T17:10:27.781537-05:00",
+  "locked": true
  },
  {
   "legs": [
@@ -49,30 +50,30 @@
     "stat": "PA",
     "side": "UNDER",
     "line": 21.5,
-    "price": -108,
-    "prob": 0.642,
-    "edge": 0.122,
+    "price": -107,
+    "prob": 0.641,
+    "edge": 0.124,
     "grade": "B",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
       21.5,
-      -108
+      -107
      ]
     },
     "projection": 17.7,
     "dist": {
      "k": "normal",
-     "sd": 5.782
+     "sd": 5.781
     }
    }
   ],
-  "hit": 0.642,
+  "hit": 0.641,
   "payout": 1.93,
-  "odds": -108,
-  "ev": 0.236,
+  "odds": -107,
+  "ev": 0.24,
   "type": "double2",
   "label": "Double up #2",
-  "made": "2026-11-23T17:10:27.781537-05:00"
+  "made": "2026-11-23T19:31:46.539374-05:00"
  }
 ]

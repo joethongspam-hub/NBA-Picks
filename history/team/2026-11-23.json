@@ -21,7 +21,8 @@
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
    ],
-   "score": 2.03
+   "score": 2.03,
+   "locked": true
   },
   {
    "game_id": "401910038",
@@ -43,52 +44,8 @@
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
    ],
-   "score": 1.76
-  },
-  {
-   "game_id": "401910042",
-   "game": "PHX @ NO",
-   "market": "Spread",
-   "pick": "NO +3.5",
-   "side": "home",
-   "line": 3.5,
-   "price": -115,
-   "prob": 0.568,
-   "model_prob": 0.675,
-   "edge": 0.033,
-   "grade": "B",
-   "proj": "NO 115.3 \u2013 PHX 113.1",
-   "mu_h": 115.27,
-   "mu_a": 113.1,
-   "home": "NO",
-   "away": "PHX",
-   "notes": [
-    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
-   ],
-   "score": 3.34
-  },
-  {
-   "game_id": "401910045",
-   "game": "SA @ SAC",
-   "market": "Spread",
-   "pick": "SAC +10.5",
-   "side": "home",
-   "line": 10.5,
-   "price": -105,
-   "prob": 0.572,
-   "model_prob": 0.725,
-   "edge": 0.06,
-   "grade": "A",
-   "proj": "SAC 107.4 \u2013 SA 110.4",
-   "mu_h": 107.43,
-   "mu_a": 110.44,
-   "home": "SAC",
-   "away": "SA",
-   "notes": [
-    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
-    "SA injuries (Harper): -2.6 pts"
-   ],
-   "score": 5.97
+   "score": 1.76,
+   "locked": true
   }
  ]
 }

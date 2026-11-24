@@ -1,52 +1,5 @@
 [
  {
-  "game_id": "401910043",
-  "game": "LAC @ HOU",
-  "player": "Keaton Wagler",
-  "player_id": "5254165",
-  "team": "LAC",
-  "opp": "HOU",
-  "stat": "PRA",
-  "side": "OVER",
-  "line": 13.5,
-  "line_source": "DraftKings",
-  "price": -105,
-  "projection": 15.6,
-  "prob": 0.615,
-  "edge": 0.103,
-  "score": 9.66,
-  "grade": "B",
-  "hit_l5": "5/5",
-  "hit_l10": "10/10",
-  "hit_season": "15/15",
-  "vs_opp": "0/0",
-  "minutes": 20.0,
-  "status": "ACTIVE",
-  "season_avg": 18.5,
-  "l10_avg": 16.5,
-  "reasons": [
-   "Implied team total 105.5 (low vs slate avg 113.1)",
-   "HOU limits rebounds to Gs (-6% vs expected)",
-   "Over hit 10/10 of last 10 at 13.5",
-   "Last game: 17 (over the line)"
-  ],
-  "actual": null,
-  "result": null,
-  "last_game": 17.0,
-  "open_line": 13.5,
-  "open_price": -103,
-  "books": {
-   "DraftKings": [
-    13.5,
-    -105
-   ]
-  },
-  "dist": {
-   "k": "normal",
-   "sd": 3.953
-  }
- },
- {
   "game_id": "401910044",
   "game": "UTAH @ LAL",
   "player": "Josh Green",
@@ -57,11 +10,11 @@
   "side": "UNDER",
   "line": 9.5,
   "line_source": "DraftKings",
-  "price": -105,
+  "price": -107,
   "projection": 7.0,
-  "prob": 0.619,
-  "edge": 0.107,
-  "score": 9.08,
+  "prob": 0.621,
+  "edge": 0.104,
+  "score": 8.82,
   "grade": "B",
   "hit_l5": "2/5",
   "hit_l10": "5/10",
@@ -87,12 +40,348 @@
   "books": {
    "DraftKings": [
     9.5,
-    -105
+    -107
    ]
   },
   "dist": {
    "k": "normal",
    "sd": 4.378
+  }
+ },
+ {
+  "game_id": "401910044",
+  "game": "UTAH @ LAL",
+  "player": "Mo Bamba",
+  "player_id": "4277919",
+  "team": "UTAH",
+  "opp": "LAL",
+  "stat": "PRA",
+  "side": "UNDER",
+  "line": 21.5,
+  "line_source": "DraftKings",
+  "price": -117,
+  "projection": 15.6,
+  "prob": 0.641,
+  "edge": 0.102,
+  "score": 8.51,
+  "grade": "B",
+  "hit_l5": "2/5",
+  "hit_l10": "7/10",
+  "hit_season": "10/14",
+  "vs_opp": "0/1",
+  "minutes": 21.8,
+  "status": "ACTIVE",
+  "season_avg": 13.1,
+  "l10_avg": 17.1,
+  "reasons": [
+   "Implied team total 106.0 (low vs slate avg 113.1)",
+   "Back-to-back",
+   "Under hit 7/10 of last 10 at 21.5",
+   "Last game: 17 (under the line)",
+   "Last 1 vs LAL: 22"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 17.0,
+  "open_line": 20.5,
+  "open_price": -111,
+  "books": {
+   "DraftKings": [
+    21.5,
+    -117
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 9.547
+  }
+ },
+ {
+  "game_id": "401910043",
+  "game": "LAC @ HOU",
+  "player": "Keaton Wagler",
+  "player_id": "5254165",
+  "team": "LAC",
+  "opp": "HOU",
+  "stat": "PRA",
+  "side": "OVER",
+  "line": 13.5,
+  "line_source": "DraftKings",
+  "price": -114,
+  "projection": 15.6,
+  "prob": 0.621,
+  "edge": 0.089,
+  "score": 8.34,
+  "grade": "B",
+  "hit_l5": "5/5",
+  "hit_l10": "10/10",
+  "hit_season": "15/15",
+  "vs_opp": "0/0",
+  "minutes": 20.0,
+  "status": "ACTIVE",
+  "season_avg": 18.5,
+  "l10_avg": 16.5,
+  "reasons": [
+   "Implied team total 105.0 (low vs slate avg 113.1)",
+   "HOU limits rebounds to Gs (-6% vs expected)",
+   "Over hit 10/10 of last 10 at 13.5",
+   "Last game: 17 (over the line)"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 17.0,
+  "open_line": 13.5,
+  "open_price": -103,
+  "books": {
+   "DraftKings": [
+    13.5,
+    -114
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 3.95
+  }
+ },
+ {
+  "game_id": "401910044",
+  "game": "UTAH @ LAL",
+  "player": "Darryn Peterson",
+  "player_id": "5041955",
+  "team": "UTAH",
+  "opp": "LAL",
+  "stat": "PRA",
+  "side": "UNDER",
+  "line": 26.5,
+  "line_source": "DraftKings",
+  "price": -113,
+  "projection": 22.7,
+  "prob": 0.612,
+  "edge": 0.082,
+  "score": 7.88,
+  "grade": "B",
+  "hit_l5": "4/5",
+  "hit_l10": "4/10",
+  "hit_season": "12/18",
+  "vs_opp": "2/2",
+  "minutes": 28.9,
+  "status": "ACTIVE",
+  "season_avg": 24.4,
+  "l10_avg": 27.8,
+  "reasons": [
+   "Implied team total 106.0 (low vs slate avg 113.1)",
+   "LAL limits rebounds to Gs (-6% vs expected)",
+   "Back-to-back",
+   "Under hit 4/10 of last 10 at 26.5",
+   "Last game: 14 (under the line)",
+   "Last 2 vs LAL: 15, 13"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 14.0,
+  "open_line": 29.5,
+  "open_price": -123,
+  "books": {
+   "DraftKings": [
+    26.5,
+    -113
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 7.647
+  }
+ },
+ {
+  "game_id": "401910045",
+  "game": "SA @ SAC",
+  "player": "De'Aaron Fox",
+  "player_id": "4066259",
+  "team": "SA",
+  "opp": "SAC",
+  "stat": "PA",
+  "side": "UNDER",
+  "line": 21.5,
+  "line_source": "DraftKings",
+  "price": -107,
+  "projection": 17.7,
+  "prob": 0.641,
+  "edge": 0.124,
+  "score": 6.89,
+  "grade": "B",
+  "hit_l5": "4/5",
+  "hit_l10": "9/10",
+  "hit_season": "12/16",
+  "vs_opp": "3/5",
+  "minutes": 28.6,
+  "status": "QUESTIONABLE",
+  "season_avg": 20.1,
+  "l10_avg": 14.9,
+  "reasons": [
+   "Implied team total 118.5 (high vs slate avg 113.1)",
+   "SAC allows assists to Gs (+6% vs expected)",
+   "Listed Day-To-Day: Lower Leg Bruise - Fox is questionable for Monday's game against the Kings due to a right shin contusion, Jared Weiss of The Athletic reports.",
+   "Under hit 9/10 of last 10 at 21.5",
+   "Last game: 15 (under the line)",
+   "Last 5 vs SAC: 13, 17, 21, 23, 39"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 15.0,
+  "open_line": 21.5,
+  "open_price": -117,
+  "books": {
+   "DraftKings": [
+    21.5,
+    -107
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 5.781
+  }
+ },
+ {
+  "game_id": "401910045",
+  "game": "SA @ SAC",
+  "player": "Devin Vassell",
+  "player_id": "4395630",
+  "team": "SA",
+  "opp": "SAC",
+  "stat": "PR",
+  "side": "UNDER",
+  "line": 18.5,
+  "line_source": "DraftKings",
+  "price": -125,
+  "projection": 15.7,
+  "prob": 0.641,
+  "edge": 0.085,
+  "score": 6.44,
+  "grade": "B",
+  "hit_l5": "4/5",
+  "hit_l10": "8/10",
+  "hit_season": "12/15",
+  "vs_opp": "2/4",
+  "minutes": 30.9,
+  "status": "ACTIVE",
+  "season_avg": 16.3,
+  "l10_avg": 14.4,
+  "reasons": [
+   "Projected 30-34 minutes: grade lowered one level (21-25 on real lines)",
+   "Implied team total 118.5 (high vs slate avg 113.1)",
+   "Under hit 8/10 of last 10 at 18.5",
+   "Last game: 13 (under the line)",
+   "Last 4 vs SAC: 21, 18, 11, 19"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 13.0,
+  "open_line": 18.5,
+  "open_price": -127,
+  "books": {
+   "DraftKings": [
+    18.5,
+    -125
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 4.744
+  }
+ },
+ {
+  "game_id": "401910041",
+  "game": "CLE @ CHI",
+  "player": "Isaac Okoro",
+  "player_id": "4432822",
+  "team": "CHI",
+  "opp": "CLE",
+  "stat": "PRA",
+  "side": "UNDER",
+  "line": 16.5,
+  "line_source": "DraftKings",
+  "price": -128,
+  "projection": 13.5,
+  "prob": 0.626,
+  "edge": 0.065,
+  "score": 5.4,
+  "grade": "B",
+  "hit_l5": "1/5",
+  "hit_l10": "5/10",
+  "hit_season": "11/16",
+  "vs_opp": "2/4",
+  "minutes": 29.6,
+  "status": "ACTIVE",
+  "season_avg": 12.6,
+  "l10_avg": 14.4,
+  "reasons": [
+   "Implied team total 116.0 (high vs slate avg 113.1)",
+   "Back-to-back",
+   "Under hit 5/10 of last 10 at 16.5",
+   "Last game: 14 (under the line)",
+   "Last 4 vs CLE: 21, 5, 15, 26"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 14.0,
+  "open_line": 16.5,
+  "open_price": -123,
+  "books": {
+   "DraftKings": [
+    16.5,
+    -128
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 5.858
+  }
+ },
+ {
+  "game_id": "401910045",
+  "game": "SA @ SAC",
+  "player": "Julian Champagnie",
+  "player_id": "4592479",
+  "team": "SA",
+  "opp": "SAC",
+  "stat": "PRA",
+  "side": "UNDER",
+  "line": 18.5,
+  "line_source": "DraftKings",
+  "price": -108,
+  "projection": 16.4,
+  "prob": 0.573,
+  "edge": 0.054,
+  "score": 5.1,
+  "grade": "B",
+  "hit_l5": "3/5",
+  "hit_l10": "8/10",
+  "hit_season": "13/17",
+  "vs_opp": "3/5",
+  "minutes": 27.2,
+  "status": "ACTIVE",
+  "season_avg": 16.9,
+  "l10_avg": 16.0,
+  "reasons": [
+   "Implied team total 118.5 (high vs slate avg 113.1)",
+   "Under hit 8/10 of last 10 at 18.5",
+   "Last game: 15 (under the line)",
+   "Last 5 vs SAC: 17, 32, 19, 15, 14"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 15.0,
+  "open_line": 18.5,
+  "open_price": -110,
+  "books": {
+   "DraftKings": [
+    18.5,
+    -108
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 6.399
   }
  },
  {
@@ -139,152 +428,8 @@
   "dist": {
    "k": "normal",
    "sd": 5.446
-  }
- },
- {
-  "game_id": "401910044",
-  "game": "UTAH @ LAL",
-  "player": "Darryn Peterson",
-  "player_id": "5041955",
-  "team": "UTAH",
-  "opp": "LAL",
-  "stat": "PRA",
-  "side": "UNDER",
-  "line": 26.5,
-  "line_source": "DraftKings",
-  "price": -111,
-  "projection": 22.7,
-  "prob": 0.61,
-  "edge": 0.084,
-  "score": 8.16,
-  "grade": "B",
-  "hit_l5": "4/5",
-  "hit_l10": "4/10",
-  "hit_season": "12/18",
-  "vs_opp": "2/2",
-  "minutes": 28.9,
-  "status": "ACTIVE",
-  "season_avg": 24.4,
-  "l10_avg": 27.8,
-  "reasons": [
-   "Implied team total 106.0 (low vs slate avg 113.1)",
-   "LAL limits rebounds to Gs (-6% vs expected)",
-   "Back-to-back",
-   "Under hit 4/10 of last 10 at 26.5",
-   "Last game: 14 (under the line)",
-   "Last 2 vs LAL: 15, 13"
-  ],
-  "actual": null,
-  "result": null,
-  "last_game": 14.0,
-  "open_line": 29.5,
-  "open_price": -123,
-  "books": {
-   "DraftKings": [
-    26.5,
-    -111
-   ]
   },
-  "dist": {
-   "k": "normal",
-   "sd": 7.647
-  }
- },
- {
-  "game_id": "401910045",
-  "game": "SA @ SAC",
-  "player": "Devin Vassell",
-  "player_id": "4395630",
-  "team": "SA",
-  "opp": "SAC",
-  "stat": "PR",
-  "side": "UNDER",
-  "line": 18.5,
-  "line_source": "DraftKings",
-  "price": -110,
-  "projection": 15.7,
-  "prob": 0.629,
-  "edge": 0.105,
-  "score": 7.94,
-  "grade": "B",
-  "hit_l5": "4/5",
-  "hit_l10": "8/10",
-  "hit_season": "12/15",
-  "vs_opp": "2/4",
-  "minutes": 30.9,
-  "status": "ACTIVE",
-  "season_avg": 16.3,
-  "l10_avg": 14.4,
-  "reasons": [
-   "Projected 30-34 minutes: grade lowered one level (21-25 on real lines)",
-   "Implied team total 118.5 (high vs slate avg 113.1)",
-   "Under hit 8/10 of last 10 at 18.5",
-   "Last game: 13 (under the line)",
-   "Last 4 vs SAC: 21, 18, 11, 19"
-  ],
-  "actual": null,
-  "result": null,
-  "last_game": 13.0,
-  "open_line": 18.5,
-  "open_price": -127,
-  "books": {
-   "DraftKings": [
-    18.5,
-    -110
-   ]
-  },
-  "dist": {
-   "k": "normal",
-   "sd": 4.744
-  }
- },
- {
-  "game_id": "401910044",
-  "game": "UTAH @ LAL",
-  "player": "Mo Bamba",
-  "player_id": "4277919",
-  "team": "UTAH",
-  "opp": "LAL",
-  "stat": "PRA",
-  "side": "UNDER",
-  "line": 20.5,
-  "line_source": "DraftKings",
-  "price": -111,
-  "projection": 15.6,
-  "prob": 0.615,
-  "edge": 0.089,
-  "score": 7.42,
-  "grade": "B",
-  "hit_l5": "2/5",
-  "hit_l10": "7/10",
-  "hit_season": "10/14",
-  "vs_opp": "0/1",
-  "minutes": 21.8,
-  "status": "ACTIVE",
-  "season_avg": 13.1,
-  "l10_avg": 17.1,
-  "reasons": [
-   "Implied team total 106.0 (low vs slate avg 113.1)",
-   "Back-to-back",
-   "Under hit 7/10 of last 10 at 20.5",
-   "Last game: 17 (under the line)",
-   "Last 1 vs LAL: 22"
-  ],
-  "actual": null,
-  "result": null,
-  "last_game": 17.0,
-  "open_line": 20.5,
-  "open_price": -111,
-  "books": {
-   "DraftKings": [
-    20.5,
-    -111
-   ]
-  },
-  "dist": {
-   "k": "normal",
-   "sd": 9.547
-  }
+  "locked": true
  },
  {
   "game_id": "401910036",
@@ -330,104 +475,8 @@
   "dist": {
    "k": "normal",
    "sd": 2.551
-  }
- },
- {
-  "game_id": "401910045",
-  "game": "SA @ SAC",
-  "player": "De'Aaron Fox",
-  "player_id": "4066259",
-  "team": "SA",
-  "opp": "SAC",
-  "stat": "PA",
-  "side": "UNDER",
-  "line": 21.5,
-  "line_source": "DraftKings",
-  "price": -108,
-  "projection": 17.7,
-  "prob": 0.642,
-  "edge": 0.122,
-  "score": 6.79,
-  "grade": "B",
-  "hit_l5": "4/5",
-  "hit_l10": "9/10",
-  "hit_season": "12/16",
-  "vs_opp": "3/5",
-  "minutes": 28.6,
-  "status": "QUESTIONABLE",
-  "season_avg": 20.1,
-  "l10_avg": 14.9,
-  "reasons": [
-   "Implied team total 118.5 (high vs slate avg 113.1)",
-   "SAC allows assists to Gs (+6% vs expected)",
-   "Listed Day-To-Day: Lower Leg Bruise - Fox is questionable for Monday's game against the Kings due to a right shin contusion, Jared Weiss of The Athletic reports.",
-   "Under hit 9/10 of last 10 at 21.5",
-   "Last game: 15 (under the line)",
-   "Last 5 vs SAC: 13, 17, 21, 23, 39"
-  ],
-  "actual": null,
-  "result": null,
-  "last_game": 15.0,
-  "open_line": 21.5,
-  "open_price": -117,
-  "books": {
-   "DraftKings": [
-    21.5,
-    -108
-   ]
   },
-  "dist": {
-   "k": "normal",
-   "sd": 5.782
-  }
- },
- {
-  "game_id": "401910041",
-  "game": "CLE @ CHI",
-  "player": "Isaac Okoro",
-  "player_id": "4432822",
-  "team": "CHI",
-  "opp": "CLE",
-  "stat": "PA",
-  "side": "UNDER",
-  "line": 13.5,
-  "line_source": "DraftKings",
-  "price": -131,
-  "projection": 10.7,
-  "prob": 0.647,
-  "edge": 0.08,
-  "score": 6.65,
-  "grade": "B",
-  "hit_l5": "3/5",
-  "hit_l10": "7/10",
-  "hit_season": "13/16",
-  "vs_opp": "2/4",
-  "minutes": 29.6,
-  "status": "ACTIVE",
-  "season_avg": 9.9,
-  "l10_avg": 11.1,
-  "reasons": [
-   "Implied team total 116.5 (high vs slate avg 113.1)",
-   "Back-to-back",
-   "Under hit 7/10 of last 10 at 13.5",
-   "Last game: 13 (under the line)",
-   "Last 4 vs CLE: 15, 3, 13, 22"
-  ],
-  "actual": null,
-  "result": null,
-  "last_game": 13.0,
-  "open_line": 12.5,
-  "open_price": -101,
-  "books": {
-   "DraftKings": [
-    13.5,
-    -131
-   ]
-  },
-  "dist": {
-   "k": "normal",
-   "sd": 4.712
-  }
+  "locked": true
  },
  {
   "game_id": "401910039",
@@ -475,7 +524,8 @@
   "dist": {
    "k": "normal",
    "sd": 7.068
-  }
+  },
+  "locked": true
  },
  {
   "game_id": "401910039",
@@ -521,7 +571,8 @@
   "dist": {
    "k": "normal",
    "sd": 2.684
-  }
+  },
+  "locked": true
  },
  {
   "game_id": "401910037",
@@ -568,6 +619,7 @@
   "dist": {
    "k": "normal",
    "sd": 7.023
-  }
+  },
+  "locked": true
  }
 ]
