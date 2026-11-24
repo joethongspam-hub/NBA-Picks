@@ -1,0 +1,50 @@
+{
+ "made": "2026-11-24T12:33:48.025966-05:00",
+ "picks": [
+  {
+   "game_id": "401909315",
+   "game": "BOS @ WSH",
+   "market": "Spread",
+   "pick": "WSH +10.5",
+   "side": "home",
+   "line": 10.5,
+   "price": -103,
+   "prob": 0.529,
+   "model_prob": 0.61,
+   "edge": 0.021,
+   "grade": "C",
+   "proj": "WSH 108.1 \u2013 BOS 115.1",
+   "mu_h": 108.09,
+   "mu_a": 115.09,
+   "home": "WSH",
+   "away": "BOS",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "BOS injuries (Robinson): -0.7 pts"
+   ],
+   "score": 2.13
+  },
+  {
+   "game_id": "401909316",
+   "game": "DAL @ DEN",
+   "market": "Spread",
+   "pick": "DAL +8.5",
+   "side": "away",
+   "line": -8.5,
+   "price": -112,
+   "prob": 0.559,
+   "model_prob": 0.66,
+   "edge": 0.031,
+   "grade": "B",
+   "proj": "DEN 116.3 \u2013 DAL 112.9",
+   "mu_h": 116.27,
+   "mu_a": 112.94,
+   "home": "DEN",
+   "away": "DAL",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
+   ],
+   "score": 3.07
+  }
+ ]
+}

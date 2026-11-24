@@ -1,0 +1,49 @@
+[
+ {
+  "game_id": "401909314",
+  "game": "DET @ ORL",
+  "player": "Jalen Suggs",
+  "player_id": "4432165",
+  "team": "ORL",
+  "opp": "DET",
+  "stat": "PTS",
+  "side": "UNDER",
+  "line": 11.5,
+  "line_source": "DraftKings",
+  "price": -130,
+  "projection": 8.8,
+  "prob": 0.649,
+  "edge": 0.084,
+  "score": 7.88,
+  "grade": "B",
+  "hit_l5": "3/5",
+  "hit_l10": "7/10",
+  "hit_season": "5/8",
+  "vs_opp": "4/5",
+  "minutes": 25.7,
+  "status": "ACTIVE",
+  "season_avg": 11.5,
+  "l10_avg": 8.7,
+  "reasons": [
+   "Implied team total 105.5 (low vs slate avg 111.1)",
+   "Under hit 7/10 of last 10 at 11.5",
+   "Last game: 9 (under the line)",
+   "Last 5 vs DET: 6, 7, 10, 5, 15"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 9.0,
+  "open_line": 10.5,
+  "open_price": -102,
+  "books": {
+   "DraftKings": [
+    11.5,
+    -130
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 4.462
+  }
+ }
+]
