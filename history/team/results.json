@@ -3258,6 +3258,58 @@
    "date": "2026-11-22",
    "final": "UTAH 114 \u2013 DAL 116",
    "result": "LOSS"
+  },
+  {
+   "game_id": "401910038",
+   "game": "OKC @ IND",
+   "market": "Moneyline",
+   "pick": "OKC ML",
+   "side": "away",
+   "line": null,
+   "price": -191,
+   "prob": 0.677,
+   "model_prob": 0.762,
+   "edge": 0.02,
+   "grade": "C",
+   "proj": "IND 108.3 \u2013 OKC 117.2",
+   "mu_h": 108.3,
+   "mu_a": 117.23,
+   "home": "IND",
+   "away": "OKC",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
+   ],
+   "score": 2.03,
+   "locked": true,
+   "date": "2026-11-23",
+   "final": "IND 125 \u2013 OKC 120",
+   "result": "LOSS"
+  },
+  {
+   "game_id": "401910038",
+   "game": "OKC @ IND",
+   "market": "Spread",
+   "pick": "OKC -4.5",
+   "side": "away",
+   "line": 4.5,
+   "price": -118,
+   "prob": 0.559,
+   "model_prob": 0.638,
+   "edge": 0.018,
+   "grade": "C",
+   "proj": "IND 108.3 \u2013 OKC 117.2",
+   "mu_h": 108.3,
+   "mu_a": 117.23,
+   "home": "IND",
+   "away": "OKC",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
+   ],
+   "score": 1.76,
+   "locked": true,
+   "date": "2026-11-23",
+   "final": "IND 125 \u2013 OKC 120",
+   "result": "LOSS"
   }
  ]
 }
