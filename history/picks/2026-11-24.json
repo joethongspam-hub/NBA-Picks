@@ -6,15 +6,15 @@
   "player_id": "4432165",
   "team": "ORL",
   "opp": "DET",
-  "stat": "PTS",
+  "stat": "PR",
   "side": "UNDER",
-  "line": 11.5,
+  "line": 15.5,
   "line_source": "DraftKings",
-  "price": -130,
-  "projection": 8.8,
-  "prob": 0.649,
-  "edge": 0.084,
-  "score": 7.88,
+  "price": -123,
+  "projection": 12.7,
+  "prob": 0.624,
+  "edge": 0.072,
+  "score": 6.77,
   "grade": "B",
   "hit_l5": "3/5",
   "hit_l10": "7/10",
@@ -22,28 +22,29 @@
   "vs_opp": "4/5",
   "minutes": 25.7,
   "status": "ACTIVE",
-  "season_avg": 11.5,
-  "l10_avg": 8.7,
+  "season_avg": 16.0,
+  "l10_avg": 13.9,
   "reasons": [
-   "Implied team total 105.5 (low vs slate avg 111.1)",
-   "Under hit 7/10 of last 10 at 11.5",
-   "Last game: 9 (under the line)",
-   "Last 5 vs DET: 6, 7, 10, 5, 15"
+   "Implied team total 105.5 (low vs slate avg 110.9)",
+   "DET limits rebounds to Gs (-6% vs expected)",
+   "Under hit 7/10 of last 10 at 15.5",
+   "Last game: 13 (under the line)",
+   "Last 5 vs DET: 10, 14, 12, 7, 18"
   ],
   "actual": null,
   "result": null,
-  "last_game": 9.0,
-  "open_line": 10.5,
-  "open_price": -102,
+  "last_game": 13.0,
+  "open_line": 15.5,
+  "open_price": -122,
   "books": {
    "DraftKings": [
-    11.5,
-    -130
+    15.5,
+    -123
    ]
   },
   "dist": {
    "k": "normal",
-   "sd": 4.462
+   "sd": 5.453
   }
  }
 ]
