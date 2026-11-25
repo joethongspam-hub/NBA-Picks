@@ -45,6 +45,7 @@
   "dist": {
    "k": "normal",
    "sd": 5.453
-  }
+  },
+  "locked": true
  }
 ]
