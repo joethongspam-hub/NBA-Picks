@@ -11,31 +11,31 @@
     "stat": "PTS",
     "side": "OVER",
     "line": 8.5,
-    "price": -104,
-    "prob": 0.674,
-    "edge": 0.164,
+    "price": -108,
+    "prob": 0.678,
+    "edge": 0.159,
     "grade": "A",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
       8.5,
-      -104
+      -108
      ]
     },
     "projection": 11.7,
     "dist": {
      "k": "normal",
-     "sd": 3.78
+     "sd": 3.784
     }
    }
   ],
-  "hit": 0.674,
-  "payout": 1.96,
-  "odds": -104,
-  "ev": 0.322,
+  "hit": 0.678,
+  "payout": 1.93,
+  "odds": -108,
+  "ev": 0.306,
   "type": "double",
   "label": "Double up",
-  "made": "2026-11-25T12:30:39.183082-05:00"
+  "made": "2026-11-25T17:16:02.258413-05:00"
  },
  {
   "legs": [
@@ -73,7 +73,8 @@
   "ev": 0.245,
   "type": "double2",
   "label": "Double up #2",
-  "made": "2026-11-25T12:30:39.183082-05:00"
+  "made": "2026-11-25T12:30:39.183082-05:00",
+  "locked": true
  },
  {
   "legs": [
@@ -165,6 +166,7 @@
   "ev": 1.028,
   "type": "safe",
   "label": "Safest",
-  "made": "2026-11-25T12:30:39.183082-05:00"
+  "made": "2026-11-25T12:30:39.183082-05:00",
+  "locked": true
  }
 ]
