@@ -1,0 +1,170 @@
+[
+ {
+  "legs": [
+   {
+    "game_id": "401909319",
+    "game": "CLE @ NY",
+    "player": "Meleek Thomas",
+    "player_id": "5041951",
+    "team": "CLE",
+    "opp": "NY",
+    "stat": "PTS",
+    "side": "OVER",
+    "line": 8.5,
+    "price": -104,
+    "prob": 0.674,
+    "edge": 0.164,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      8.5,
+      -104
+     ]
+    },
+    "projection": 11.7,
+    "dist": {
+     "k": "normal",
+     "sd": 3.78
+    }
+   }
+  ],
+  "hit": 0.674,
+  "payout": 1.96,
+  "odds": -104,
+  "ev": 0.322,
+  "type": "double",
+  "label": "Double up",
+  "made": "2026-11-25T12:30:39.183082-05:00"
+ },
+ {
+  "legs": [
+   {
+    "game_id": "401909317",
+    "game": "MIA @ PHI",
+    "player": "Giannis Antetokounmpo",
+    "player_id": "3032977",
+    "team": "MIA",
+    "opp": "PHI",
+    "stat": "PA",
+    "side": "UNDER",
+    "line": 36.5,
+    "price": -115,
+    "prob": 0.666,
+    "edge": 0.131,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      36.5,
+      -115
+     ]
+    },
+    "projection": 31.4,
+    "dist": {
+     "k": "normal",
+     "sd": 6.694
+    }
+   }
+  ],
+  "hit": 0.666,
+  "payout": 1.87,
+  "odds": -115,
+  "ev": 0.245,
+  "type": "double2",
+  "label": "Double up #2",
+  "made": "2026-11-25T12:30:39.183082-05:00"
+ },
+ {
+  "legs": [
+   {
+    "game_id": "401909319",
+    "game": "CLE @ NY",
+    "player": "Meleek Thomas",
+    "player_id": "5041951",
+    "team": "CLE",
+    "opp": "NY",
+    "stat": "PTS",
+    "side": "OVER",
+    "line": 8.5,
+    "price": -104,
+    "prob": 0.674,
+    "edge": 0.164,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      8.5,
+      -104
+     ]
+    },
+    "projection": 11.7,
+    "dist": {
+     "k": "normal",
+     "sd": 3.78
+    }
+   },
+   {
+    "game_id": "401909317",
+    "game": "MIA @ PHI",
+    "player": "Giannis Antetokounmpo",
+    "player_id": "3032977",
+    "team": "MIA",
+    "opp": "PHI",
+    "stat": "PA",
+    "side": "UNDER",
+    "line": 36.5,
+    "price": -115,
+    "prob": 0.666,
+    "edge": 0.131,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      36.5,
+      -115
+     ]
+    },
+    "projection": 31.4,
+    "dist": {
+     "k": "normal",
+     "sd": 6.694
+    }
+   },
+   {
+    "game_id": "401909324",
+    "game": "SAC @ GS",
+    "player": "Brandin Podziemski",
+    "player_id": "4709138",
+    "team": "GS",
+    "opp": "SAC",
+    "stat": "PA",
+    "side": "UNDER",
+    "line": 23.5,
+    "price": -126,
+    "prob": 0.687,
+    "edge": 0.13,
+    "grade": "A",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      23.5,
+      -126
+     ]
+    },
+    "projection": 18.3,
+    "dist": {
+     "k": "normal",
+     "sd": 6.218
+    }
+   }
+  ],
+  "hit": 0.3084,
+  "payout": 6.58,
+  "odds": 558,
+  "ev": 1.028,
+  "type": "safe",
+  "label": "Safest",
+  "made": "2026-11-25T12:30:39.183082-05:00"
+ }
+]

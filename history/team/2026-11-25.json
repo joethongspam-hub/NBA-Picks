@@ -1,0 +1,120 @@
+{
+ "made": "2026-11-25T12:30:39.183082-05:00",
+ "picks": [
+  {
+   "game_id": "401909321",
+   "game": "LAC @ MEM",
+   "market": "Moneyline",
+   "pick": "MEM ML",
+   "side": "home",
+   "line": null,
+   "price": -269,
+   "prob": 0.746,
+   "model_prob": 0.83,
+   "edge": 0.017,
+   "grade": "C",
+   "proj": "MEM 116.7 \u2013 LAC 104.8",
+   "mu_h": 116.74,
+   "mu_a": 104.79,
+   "home": "MEM",
+   "away": "LAC",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "MEM injuries (Boozer, Grant): -4.1 pts"
+   ],
+   "score": 1.66
+  },
+  {
+   "game_id": "401909321",
+   "game": "LAC @ MEM",
+   "market": "Spread",
+   "pick": "MEM -7.5",
+   "side": "home",
+   "line": -7.5,
+   "price": -112,
+   "prob": 0.551,
+   "model_prob": 0.639,
+   "edge": 0.023,
+   "grade": "C",
+   "proj": "MEM 116.7 \u2013 LAC 104.8",
+   "mu_h": 116.74,
+   "mu_a": 104.79,
+   "home": "MEM",
+   "away": "LAC",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "MEM injuries (Boozer, Grant): -4.1 pts"
+   ],
+   "score": 2.31
+  },
+  {
+   "game_id": "401909322",
+   "game": "BKN @ MIL",
+   "market": "Moneyline",
+   "pick": "MIL ML",
+   "side": "home",
+   "line": null,
+   "price": -117,
+   "prob": 0.573,
+   "model_prob": 0.676,
+   "edge": 0.034,
+   "grade": "B",
+   "proj": "MIL 114.9 \u2013 BKN 109.2",
+   "mu_h": 114.92,
+   "mu_a": 109.2,
+   "home": "MIL",
+   "away": "BKN",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "BKN injuries (Traore): -2.4 pts"
+   ],
+   "score": 3.4
+  },
+  {
+   "game_id": "401909322",
+   "game": "BKN @ MIL",
+   "market": "Spread",
+   "pick": "MIL -1.5",
+   "side": "home",
+   "line": -1.5,
+   "price": -111,
+   "prob": 0.548,
+   "model_prob": 0.632,
+   "edge": 0.022,
+   "grade": "C",
+   "proj": "MIL 114.9 \u2013 BKN 109.2",
+   "mu_h": 114.92,
+   "mu_a": 109.2,
+   "home": "MIL",
+   "away": "BKN",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "BKN injuries (Traore): -2.4 pts"
+   ],
+   "score": 2.23
+  },
+  {
+   "game_id": "401909325",
+   "game": "SA @ POR",
+   "market": "Spread",
+   "pick": "POR +2.5",
+   "side": "home",
+   "line": 2.5,
+   "price": -108,
+   "prob": 0.537,
+   "model_prob": 0.615,
+   "edge": 0.018,
+   "grade": "C",
+   "proj": "POR 111.0 \u2013 SA 109.9",
+   "mu_h": 111.01,
+   "mu_a": 109.86,
+   "home": "POR",
+   "away": "SA",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "SA injuries (Harper): -1.7 pts"
+   ],
+   "score": 1.82
+  }
+ ]
+}
