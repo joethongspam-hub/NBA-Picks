@@ -77,10 +77,10 @@
    "pick": "MIL -1.5",
    "side": "home",
    "line": -1.5,
-   "price": -106,
-   "prob": 0.541,
+   "price": -105,
+   "prob": 0.539,
    "model_prob": 0.632,
-   "edge": 0.026,
+   "edge": 0.027,
    "grade": "C",
    "proj": "MIL 114.9 \u2013 BKN 109.2",
    "mu_h": 114.92,
@@ -91,7 +91,30 @@
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "BKN injuries (Traore): -2.4 pts"
    ],
-   "score": 2.61
+   "score": 2.7
+  },
+  {
+   "game_id": "401909324",
+   "game": "SAC @ GS",
+   "market": "Spread",
+   "pick": "SAC +7.5",
+   "side": "away",
+   "line": -7.5,
+   "price": -114,
+   "prob": 0.558,
+   "model_prob": 0.649,
+   "edge": 0.025,
+   "grade": "C",
+   "proj": "GS 100.2 \u2013 SAC 97.5",
+   "mu_h": 100.19,
+   "mu_a": 97.47,
+   "home": "GS",
+   "away": "SAC",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "SAC injuries (LaVine): -3.9 pts"
+   ],
+   "score": 2.5
   },
   {
    "game_id": "401909325",
