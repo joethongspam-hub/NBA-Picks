@@ -19,7 +19,8 @@
    "home": "DET",
    "away": "CHI",
    "notes": [],
-   "score": 2.4
+   "score": 2.4,
+   "locked": true
   },
   {
    "game_id": "401873081",
@@ -39,7 +40,8 @@
    "home": "DET",
    "away": "CHI",
    "notes": [],
-   "score": 2.7
+   "score": 2.7,
+   "locked": true
   },
   {
    "game_id": "401873081",
@@ -59,7 +61,8 @@
    "home": "DET",
    "away": "CHI",
    "notes": [],
-   "score": 2.79
+   "score": 2.79,
+   "locked": true
   },
   {
    "game_id": "401873080",
@@ -79,7 +82,8 @@
    "home": "DAL",
    "away": "PHI",
    "notes": [],
-   "score": 5.08
+   "score": 5.08,
+   "locked": true
   },
   {
    "game_id": "401873080",
@@ -99,7 +103,8 @@
    "home": "DAL",
    "away": "PHI",
    "notes": [],
-   "score": 2.27
+   "score": 2.27,
+   "locked": true
   },
   {
    "game_id": "401873083",
@@ -108,10 +113,30 @@
    "pick": "PIT ML",
    "side": "home",
    "line": null,
-   "price": 170,
-   "prob": 0.39,
+   "price": 211,
+   "prob": 0.359,
    "model_prob": 0.452,
-   "edge": 0.019,
+   "edge": 0.037,
+   "grade": "B",
+   "proj": "PIT 21.0 \u2013 DEN 22.6",
+   "mu_h": 21.02,
+   "mu_a": 22.63,
+   "home": "PIT",
+   "away": "DEN",
+   "notes": [],
+   "score": 3.75
+  },
+  {
+   "game_id": "401873083",
+   "game": "DEN @ PIT",
+   "market": "Spread",
+   "pick": "PIT +4.5",
+   "side": "home",
+   "line": 4.5,
+   "price": 101,
+   "prob": 0.513,
+   "model_prob": 0.585,
+   "edge": 0.016,
    "grade": "C",
    "proj": "PIT 21.0 \u2013 DEN 22.6",
    "mu_h": 21.02,
@@ -119,7 +144,7 @@
    "home": "PIT",
    "away": "DEN",
    "notes": [],
-   "score": 1.94
+   "score": 1.59
   },
   {
    "game_id": "401873083",
@@ -128,10 +153,10 @@
    "pick": "Over 36.5",
    "side": "over",
    "line": 36.5,
-   "price": -114,
-   "prob": 0.577,
+   "price": -119,
+   "prob": 0.583,
    "model_prob": 0.702,
-   "edge": 0.044,
+   "edge": 0.04,
    "grade": "B",
    "proj": "PIT 21.0 \u2013 DEN 22.6",
    "mu_h": 21.02,
@@ -139,7 +164,7 @@
    "home": "PIT",
    "away": "DEN",
    "notes": [],
-   "score": 4.43
+   "score": 4.0
   },
   {
    "game_id": "401873087",
@@ -148,7 +173,7 @@
    "pick": "NO ML",
    "side": "away",
    "line": null,
-   "price": 422,
+   "price": 423,
    "prob": 0.218,
    "model_prob": 0.282,
    "edge": 0.027,
@@ -159,7 +184,7 @@
    "home": "CIN",
    "away": "NO",
    "notes": [],
-   "score": 2.69
+   "score": 2.7
   },
   {
    "game_id": "401873088",
@@ -168,30 +193,30 @@
    "pick": "IND ML",
    "side": "home",
    "line": null,
-   "price": 277,
-   "prob": 0.319,
+   "price": 236,
+   "prob": 0.34,
    "model_prob": 0.439,
-   "edge": 0.054,
-   "grade": "A",
+   "edge": 0.042,
+   "grade": "B",
    "proj": "IND 21.7 \u2013 NYG 23.8",
    "mu_h": 21.74,
    "mu_a": 23.81,
    "home": "IND",
    "away": "NYG",
    "notes": [],
-   "score": 5.4
+   "score": 4.22
   },
   {
    "game_id": "401873088",
    "game": "NYG @ IND",
    "market": "Spread",
-   "pick": "IND +6.5",
+   "pick": "IND +6",
    "side": "home",
-   "line": 6.5,
-   "price": -101,
-   "prob": 0.532,
-   "model_prob": 0.629,
-   "edge": 0.03,
+   "line": 6.0,
+   "price": -110,
+   "prob": 0.542,
+   "model_prob": 0.618,
+   "edge": 0.018,
    "grade": "C",
    "proj": "IND 21.7 \u2013 NYG 23.8",
    "mu_h": 21.74,
@@ -199,7 +224,7 @@
    "home": "IND",
    "away": "NYG",
    "notes": [],
-   "score": 2.98
+   "score": 1.82
   },
   {
    "game_id": "401873088",
@@ -228,10 +253,10 @@
    "pick": "MIA ML",
    "side": "home",
    "line": null,
-   "price": 169,
-   "prob": 0.435,
+   "price": 200,
+   "prob": 0.411,
    "model_prob": 0.578,
-   "edge": 0.063,
+   "edge": 0.077,
    "grade": "A",
    "proj": "MIA 23.0 \u2013 NYJ 20.3",
    "mu_h": 23.01,
@@ -239,27 +264,27 @@
    "home": "MIA",
    "away": "NYJ",
    "notes": [],
-   "score": 6.29
+   "score": 7.74
   },
   {
    "game_id": "401873089",
    "game": "NYJ @ MIA",
    "market": "Spread",
-   "pick": "MIA +3.5",
+   "pick": "MIA +4.5",
    "side": "home",
-   "line": 3.5,
+   "line": 4.5,
    "price": -104,
-   "prob": 0.554,
-   "model_prob": 0.676,
-   "edge": 0.044,
-   "grade": "B",
+   "prob": 0.563,
+   "model_prob": 0.702,
+   "edge": 0.053,
+   "grade": "A",
    "proj": "MIA 23.0 \u2013 NYJ 20.3",
    "mu_h": 23.01,
    "mu_a": 20.34,
    "home": "MIA",
    "away": "NYJ",
    "notes": [],
-   "score": 4.41
+   "score": 5.32
   },
   {
    "game_id": "401873093",
@@ -290,10 +315,10 @@
    "pick": "ARI ML",
    "side": "home",
    "line": null,
-   "price": 266,
-   "prob": 0.306,
+   "price": 282,
+   "prob": 0.299,
    "model_prob": 0.387,
-   "edge": 0.033,
+   "edge": 0.037,
    "grade": "B",
    "proj": "ARI 20.5 \u2013 WSH 24.4",
    "mu_h": 20.5,
@@ -301,7 +326,27 @@
    "home": "ARI",
    "away": "WSH",
    "notes": [],
-   "score": 3.28
+   "score": 3.71
+  },
+  {
+   "game_id": "401873086",
+   "game": "LV @ CLE",
+   "market": "Moneyline",
+   "pick": "LV ML",
+   "side": "away",
+   "line": null,
+   "price": 201,
+   "prob": 0.348,
+   "model_prob": 0.401,
+   "edge": 0.015,
+   "grade": "C",
+   "proj": "CLE 24.5 \u2013 LV 21.1",
+   "mu_h": 24.53,
+   "mu_a": 21.14,
+   "home": "CLE",
+   "away": "LV",
+   "notes": [],
+   "score": 1.54
   },
   {
    "game_id": "401873086",
@@ -310,10 +355,10 @@
    "pick": "Over 40.5",
    "side": "over",
    "line": 40.5,
-   "price": -107,
-   "prob": 0.549,
+   "price": -103,
+   "prob": 0.542,
    "model_prob": 0.649,
-   "edge": 0.032,
+   "edge": 0.035,
    "grade": "B",
    "proj": "CLE 24.5 \u2013 LV 21.1",
    "mu_h": 24.53,
@@ -321,7 +366,7 @@
    "home": "CLE",
    "away": "LV",
    "notes": [],
-   "score": 3.17
+   "score": 3.49
   }
  ]
 }
