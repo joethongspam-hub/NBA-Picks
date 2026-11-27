@@ -8,21 +8,45 @@
    "pick": "MIA +2.5",
    "side": "away",
    "line": -2.5,
-   "price": -105,
-   "prob": 0.542,
-   "model_prob": 0.641,
-   "edge": 0.03,
+   "price": -108,
+   "prob": 0.56,
+   "model_prob": 0.679,
+   "edge": 0.041,
    "grade": "B",
-   "proj": "NY 108.0 \u2013 MIA 110.0",
-   "mu_h": 107.97,
+   "proj": "NY 106.7 \u2013 MIA 110.0",
+   "mu_h": 106.68,
    "mu_a": 109.98,
    "home": "NY",
    "away": "MIA",
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
-    "NY injuries (Anunoby, Drummond): -2.6 pts"
+    "NY injuries (Anunoby, Drummond, McBride): -3.6 pts"
    ],
-   "score": 3.02
+   "score": 4.05
+  },
+  {
+   "game_id": "401909331",
+   "game": "MEM @ MIN",
+   "market": "Spread",
+   "pick": "MEM +2.5",
+   "side": "away",
+   "line": -2.5,
+   "price": -102,
+   "prob": 0.566,
+   "model_prob": 0.721,
+   "edge": 0.061,
+   "grade": "A",
+   "proj": "MIN 105.1 \u2013 MEM 110.0",
+   "mu_h": 105.12,
+   "mu_a": 109.96,
+   "home": "MIN",
+   "away": "MEM",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "MIN injuries (Ball): -4.6 pts",
+    "MEM injuries (Boozer, Grant): -2.7 pts"
+   ],
+   "score": 6.12
   },
   {
    "game_id": "401909335",

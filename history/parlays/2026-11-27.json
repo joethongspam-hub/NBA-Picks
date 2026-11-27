@@ -2,40 +2,40 @@
  {
   "legs": [
    {
-    "game_id": "401909329",
-    "game": "BKN @ TOR",
-    "player": "Mikel Brown Jr.",
-    "player_id": "5101761",
-    "team": "BKN",
-    "opp": "TOR",
+    "game_id": "401909331",
+    "game": "MEM @ MIN",
+    "player": "Bones Hyland",
+    "player_id": "4592492",
+    "team": "MIN",
+    "opp": "MEM",
     "stat": "PRA",
     "side": "UNDER",
-    "line": 20.5,
-    "price": -106,
-    "prob": 0.644,
-    "edge": 0.129,
+    "line": 19.5,
+    "price": -111,
+    "prob": 0.647,
+    "edge": 0.121,
     "grade": "B",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
-      20.5,
-      -106
+      19.5,
+      -111
      ]
     },
-    "projection": 16.3,
+    "projection": 13.9,
     "dist": {
      "k": "normal",
-     "sd": 6.224
+     "sd": 8.306
     }
    }
   ],
-  "hit": 0.644,
-  "payout": 1.94,
-  "odds": -106,
-  "ev": 0.252,
+  "hit": 0.647,
+  "payout": 1.9,
+  "odds": -111,
+  "ev": 0.23,
   "type": "double",
   "label": "Double up",
-  "made": "2026-11-27T12:38:13.793440-05:00"
+  "made": "2026-11-27T17:14:07.287867-05:00"
  },
  {
   "legs": [
@@ -49,30 +49,30 @@
     "stat": "PRA",
     "side": "UNDER",
     "line": 16.5,
-    "price": -103,
-    "prob": 0.63,
-    "edge": 0.123,
+    "price": -109,
+    "prob": 0.635,
+    "edge": 0.114,
     "grade": "B",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
       16.5,
-      -103
+      -109
      ]
     },
     "projection": 11.4,
     "dist": {
      "k": "normal",
-     "sd": 8.134
+     "sd": 8.135
     }
    }
   ],
-  "hit": 0.63,
-  "payout": 1.97,
-  "odds": -103,
-  "ev": 0.242,
+  "hit": 0.635,
+  "payout": 1.92,
+  "odds": -109,
+  "ev": 0.218,
   "type": "double2",
   "label": "Double up #2",
-  "made": "2026-11-27T12:38:13.793440-05:00"
+  "made": "2026-11-27T17:14:07.287867-05:00"
  }
 ]
