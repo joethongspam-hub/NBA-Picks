@@ -1,0 +1,50 @@
+{
+ "made": "2026-11-27T12:38:13.793440-05:00",
+ "picks": [
+  {
+   "game_id": "401909326",
+   "game": "MIA @ NY",
+   "market": "Spread",
+   "pick": "MIA +2.5",
+   "side": "away",
+   "line": -2.5,
+   "price": -105,
+   "prob": 0.542,
+   "model_prob": 0.641,
+   "edge": 0.03,
+   "grade": "B",
+   "proj": "NY 108.0 \u2013 MIA 110.0",
+   "mu_h": 107.97,
+   "mu_a": 109.98,
+   "home": "NY",
+   "away": "MIA",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "NY injuries (Anunoby, Drummond): -2.6 pts"
+   ],
+   "score": 3.02
+  },
+  {
+   "game_id": "401909335",
+   "game": "NO @ LAC",
+   "market": "Spread",
+   "pick": "NO +2.5",
+   "side": "away",
+   "line": -2.5,
+   "price": -110,
+   "prob": 0.543,
+   "model_prob": 0.623,
+   "edge": 0.019,
+   "grade": "C",
+   "proj": "LAC 114.4 \u2013 NO 115.9",
+   "mu_h": 114.45,
+   "mu_a": 115.86,
+   "home": "LAC",
+   "away": "NO",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
+   ],
+   "score": 1.92
+  }
+ ]
+}

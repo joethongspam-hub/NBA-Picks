@@ -1,0 +1,78 @@
+[
+ {
+  "legs": [
+   {
+    "game_id": "401909329",
+    "game": "BKN @ TOR",
+    "player": "Mikel Brown Jr.",
+    "player_id": "5101761",
+    "team": "BKN",
+    "opp": "TOR",
+    "stat": "PRA",
+    "side": "UNDER",
+    "line": 20.5,
+    "price": -106,
+    "prob": 0.644,
+    "edge": 0.129,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      20.5,
+      -106
+     ]
+    },
+    "projection": 16.3,
+    "dist": {
+     "k": "normal",
+     "sd": 6.224
+    }
+   }
+  ],
+  "hit": 0.644,
+  "payout": 1.94,
+  "odds": -106,
+  "ev": 0.252,
+  "type": "double",
+  "label": "Double up",
+  "made": "2026-11-27T12:38:13.793440-05:00"
+ },
+ {
+  "legs": [
+   {
+    "game_id": "401909329",
+    "game": "BKN @ TOR",
+    "player": "Allen Graves",
+    "player_id": "5149115",
+    "team": "TOR",
+    "opp": "BKN",
+    "stat": "PRA",
+    "side": "UNDER",
+    "line": 16.5,
+    "price": -103,
+    "prob": 0.63,
+    "edge": 0.123,
+    "grade": "B",
+    "line_source": "DraftKings",
+    "books": {
+     "DraftKings": [
+      16.5,
+      -103
+     ]
+    },
+    "projection": 11.4,
+    "dist": {
+     "k": "normal",
+     "sd": 8.134
+    }
+   }
+  ],
+  "hit": 0.63,
+  "payout": 1.97,
+  "odds": -103,
+  "ev": 0.242,
+  "type": "double2",
+  "label": "Double up #2",
+  "made": "2026-11-27T12:38:13.793440-05:00"
+ }
+]
