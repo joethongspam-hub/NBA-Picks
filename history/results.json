@@ -18112,6 +18112,42 @@
    "date": "2026-11-25",
    "actual": 36.0,
    "result": "WIN"
+  },
+  {
+   "game_id": "401909325",
+   "game": "SA @ POR",
+   "player": "De'Aaron Fox",
+   "player_id": "4066259",
+   "team": "SA",
+   "opp": "POR",
+   "stat": "PA",
+   "side": "UNDER",
+   "line": 20.5,
+   "line_source": "DraftKings",
+   "projection": 16.3,
+   "prob": 0.665,
+   "edge": 0.13,
+   "grade": "A",
+   "score": 7.23,
+   "price": -115,
+   "minutes": 27.9,
+   "actual_min": null,
+   "status": "QUESTIONABLE",
+   "last_game": 15.0,
+   "open_line": 21.5,
+   "open_price": -122,
+   "hit_l10": "8/10",
+   "reasons": [
+    "POR limits assists to Gs (-6% vs expected)",
+    "Listed Day-To-Day: Lower Leg Bruise - Fox (shin) is questionable to play Wednesday's game against the Trail Blazers.",
+    "Under hit 8/10 of last 10 at 20.5",
+    "Last game: 15 (under the line)",
+    "Last 5 vs POR: 14, 30, 35, 24, 21"
+   ],
+   "locked": null,
+   "date": "2026-11-25",
+   "actual": null,
+   "result": "VOID"
   }
  ]
 }
