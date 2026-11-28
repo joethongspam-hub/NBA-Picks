@@ -22,7 +22,8 @@
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "NY injuries (Anunoby, Drummond, McBride): -3.6 pts"
    ],
-   "score": 4.05
+   "score": 4.05,
+   "locked": true
   },
   {
    "game_id": "401909331",
@@ -31,44 +32,22 @@
    "pick": "MEM +2.5",
    "side": "away",
    "line": -2.5,
-   "price": -102,
-   "prob": 0.566,
-   "model_prob": 0.721,
-   "edge": 0.061,
-   "grade": "A",
-   "proj": "MIN 105.1 \u2013 MEM 110.0",
+   "price": -108,
+   "prob": 0.541,
+   "model_prob": 0.625,
+   "edge": 0.022,
+   "grade": "C",
+   "proj": "MIN 105.1 \u2013 MEM 106.6",
    "mu_h": 105.12,
-   "mu_a": 109.96,
+   "mu_a": 106.62,
    "home": "MIN",
    "away": "MEM",
    "notes": [
     "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
     "MIN injuries (Ball): -4.6 pts",
-    "MEM injuries (Boozer, Grant): -2.7 pts"
+    "MEM injuries (Boozer, Grant, Stewart): -4.7 pts"
    ],
-   "score": 6.12
-  },
-  {
-   "game_id": "401909335",
-   "game": "NO @ LAC",
-   "market": "Spread",
-   "pick": "NO +2.5",
-   "side": "away",
-   "line": -2.5,
-   "price": -110,
-   "prob": 0.543,
-   "model_prob": 0.623,
-   "edge": 0.019,
-   "grade": "C",
-   "proj": "LAC 114.4 \u2013 NO 115.9",
-   "mu_h": 114.45,
-   "mu_a": 115.86,
-   "home": "LAC",
-   "away": "NO",
-   "notes": [
-    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
-   ],
-   "score": 1.92
+   "score": 2.18
   }
  ]
 }

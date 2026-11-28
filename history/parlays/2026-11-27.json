@@ -2,40 +2,40 @@
  {
   "legs": [
    {
-    "game_id": "401909331",
-    "game": "MEM @ MIN",
-    "player": "Bones Hyland",
-    "player_id": "4592492",
-    "team": "MIN",
-    "opp": "MEM",
+    "game_id": "401909336",
+    "game": "GS @ POR",
+    "player": "Scoot Henderson",
+    "player_id": "4683678",
+    "team": "POR",
+    "opp": "GS",
     "stat": "PRA",
     "side": "UNDER",
-    "line": 19.5,
-    "price": -111,
-    "prob": 0.647,
-    "edge": 0.121,
+    "line": 20.5,
+    "price": -112,
+    "prob": 0.627,
+    "edge": 0.099,
     "grade": "B",
     "line_source": "DraftKings",
     "books": {
      "DraftKings": [
-      19.5,
-      -111
+      20.5,
+      -112
      ]
     },
-    "projection": 13.9,
+    "projection": 15.9,
     "dist": {
      "k": "normal",
-     "sd": 8.306
+     "sd": 8.027
     }
    }
   ],
-  "hit": 0.647,
-  "payout": 1.9,
-  "odds": -111,
-  "ev": 0.23,
+  "hit": 0.627,
+  "payout": 1.89,
+  "odds": -112,
+  "ev": 0.187,
   "type": "double",
   "label": "Double up",
-  "made": "2026-11-27T17:14:07.287867-05:00"
+  "made": "2026-11-27T19:32:58.606471-05:00"
  },
  {
   "legs": [
@@ -73,6 +73,7 @@
   "ev": 0.218,
   "type": "double2",
   "label": "Double up #2",
-  "made": "2026-11-27T17:14:07.287867-05:00"
+  "made": "2026-11-27T17:14:07.287867-05:00",
+  "locked": true
  }
 ]
