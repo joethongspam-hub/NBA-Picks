@@ -3517,6 +3517,60 @@
    "date": "2026-11-25",
    "final": "POR 116 \u2013 SA 111",
    "result": "WIN"
+  },
+  {
+   "game_id": "401909326",
+   "game": "MIA @ NY",
+   "market": "Spread",
+   "pick": "MIA +2.5",
+   "side": "away",
+   "line": -2.5,
+   "price": -108,
+   "prob": 0.56,
+   "model_prob": 0.679,
+   "edge": 0.041,
+   "grade": "B",
+   "proj": "NY 106.7 \u2013 MIA 110.0",
+   "mu_h": 106.68,
+   "mu_a": 109.98,
+   "home": "NY",
+   "away": "MIA",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "NY injuries (Anunoby, Drummond, McBride): -3.6 pts"
+   ],
+   "score": 4.05,
+   "locked": true,
+   "date": "2026-11-27",
+   "final": "NY 105 \u2013 MIA 108",
+   "result": "WIN"
+  },
+  {
+   "game_id": "401909331",
+   "game": "MEM @ MIN",
+   "market": "Spread",
+   "pick": "MEM +2.5",
+   "side": "away",
+   "line": -2.5,
+   "price": -108,
+   "prob": 0.541,
+   "model_prob": 0.625,
+   "edge": 0.022,
+   "grade": "C",
+   "proj": "MIN 105.1 \u2013 MEM 106.6",
+   "mu_h": 105.12,
+   "mu_a": 106.62,
+   "home": "MIN",
+   "away": "MEM",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "MIN injuries (Ball): -4.6 pts",
+    "MEM injuries (Boozer, Grant, Stewart): -4.7 pts"
+   ],
+   "score": 2.18,
+   "date": "2026-11-27",
+   "final": "MIN 109 \u2013 MEM 114",
+   "result": "WIN"
   }
  ]
 }
