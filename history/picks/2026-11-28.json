@@ -1,0 +1,99 @@
+[
+ {
+  "game_id": "401910048",
+  "game": "IND @ CHI",
+  "player": "Andrew Nembhard",
+  "player_id": "4395712",
+  "team": "IND",
+  "opp": "CHI",
+  "stat": "PRA",
+  "side": "UNDER",
+  "line": 26.5,
+  "line_source": "DraftKings",
+  "price": -117,
+  "projection": 23.8,
+  "prob": 0.605,
+  "edge": 0.065,
+  "score": 6.52,
+  "grade": "B",
+  "hit_l5": "5/5",
+  "hit_l10": "6/10",
+  "hit_season": "8/15",
+  "vs_opp": "2/3",
+  "minutes": 29.5,
+  "status": "ACTIVE",
+  "season_avg": 26.4,
+  "l10_avg": 24.7,
+  "reasons": [
+   "Implied team total 115.5 (high vs slate avg 111.2)",
+   "Back-to-back",
+   "Under hit 6/10 of last 10 at 26.5",
+   "Last game: 21 (under the line)",
+   "Last 3 vs CHI: 33, 24, 21"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 21.0,
+  "open_line": 25.5,
+  "open_price": -105,
+  "books": {
+   "DraftKings": [
+    26.5,
+    -117
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 6.081
+  }
+ },
+ {
+  "game_id": "401910048",
+  "game": "IND @ CHI",
+  "player": "Pascal Siakam",
+  "player_id": "3149673",
+  "team": "IND",
+  "opp": "CHI",
+  "stat": "PRA",
+  "side": "UNDER",
+  "line": 34.5,
+  "line_source": "DraftKings",
+  "price": -118,
+  "projection": 31.0,
+  "prob": 0.6,
+  "edge": 0.059,
+  "score": 5.85,
+  "grade": "B",
+  "hit_l5": "5/5",
+  "hit_l10": "7/10",
+  "hit_season": "12/18",
+  "vs_opp": "2/4",
+  "minutes": 29.5,
+  "status": "ACTIVE",
+  "season_avg": 32.5,
+  "l10_avg": 31.7,
+  "reasons": [
+   "Implied team total 115.5 (high vs slate avg 111.2)",
+   "CHI allows assists to Fs (+5% vs expected)",
+   "Back-to-back",
+   "Under hit 7/10 of last 10 at 34.5",
+   "Last game: 15 (under the line)",
+   "Last 4 vs CHI: 34, 28, 47, 37"
+  ],
+  "actual": null,
+  "result": null,
+  "last_game": 15.0,
+  "open_line": 33.5,
+  "open_price": -112,
+  "books": {
+   "DraftKings": [
+    34.5,
+    -118
+   ]
+  },
+  "dist": {
+   "k": "normal",
+   "sd": 8.454
+  }
+ }
+]

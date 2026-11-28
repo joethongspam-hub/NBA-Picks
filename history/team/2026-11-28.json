@@ -1,0 +1,74 @@
+{
+ "made": "2026-11-28T12:28:45.975597-05:00",
+ "picks": [
+  {
+   "game_id": "401910046",
+   "game": "ORL @ WSH",
+   "market": "Spread",
+   "pick": "WSH +3.5",
+   "side": "home",
+   "line": 3.5,
+   "price": -105,
+   "prob": 0.553,
+   "model_prob": 0.673,
+   "edge": 0.041,
+   "grade": "B",
+   "proj": "WSH 113.2 \u2013 ORL 111.1",
+   "mu_h": 113.16,
+   "mu_a": 111.07,
+   "home": "WSH",
+   "away": "ORL",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)"
+   ],
+   "score": 4.12
+  },
+  {
+   "game_id": "401910048",
+   "game": "IND @ CHI",
+   "market": "Spread",
+   "pick": "IND +2.5",
+   "side": "away",
+   "line": -2.5,
+   "price": -118,
+   "prob": 0.583,
+   "model_prob": 0.706,
+   "edge": 0.041,
+   "grade": "B",
+   "proj": "CHI 108.1 \u2013 IND 112.4",
+   "mu_h": 108.07,
+   "mu_a": 112.35,
+   "home": "CHI",
+   "away": "IND",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "CHI injuries (Powell): -2.1 pts",
+    "IND injuries (McConnell): -0.9 pts"
+   ],
+   "score": 4.14
+  },
+  {
+   "game_id": "401910049",
+   "game": "OKC @ MIL",
+   "market": "Spread",
+   "pick": "MIL +12.5",
+   "side": "home",
+   "line": 12.5,
+   "price": -114,
+   "prob": 0.583,
+   "model_prob": 0.72,
+   "edge": 0.05,
+   "grade": "A",
+   "proj": "MIL 107.9 \u2013 OKC 113.1",
+   "mu_h": 107.92,
+   "mu_a": 113.12,
+   "home": "MIL",
+   "away": "OKC",
+   "notes": [
+    "Projection = sum of each team's player projections (roster/injury aware, no Vegas input)",
+    "OKC injuries (Mara, Williams): -1.6 pts"
+   ],
+   "score": 5.0
+  }
+ ]
+}
